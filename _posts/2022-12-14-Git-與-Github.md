@@ -40,25 +40,27 @@ Git要怎麼跟雲端的repository溝通？如果沒有這個功能，你大概�
 USER: 你的github username
 REPO: 你在github上某個repository的名稱
 -------------
-via ssh
-:- 分成三個步驟
-:	1. 生成ssh key
-:	2. 到 github上貼上剛剛生成的ssh public key
-:	3. 回到local repositoy設定連線(在這邊會設定跟雲端的哪個branch對接）
-:- 生成ssh key
-:	1. `$ sshkey-gen`
-:	2. 跟隨著程式的流程，可以都按`Enter`。如果需要比較高的安全性可以在passphrase這個問題裡面輸入一些句子，類似password的效用。但之後每次遠端連線時只要用到這個鑰匙就要輸入passphrase一次。
-:	3. 用打開id_rsa.pub文件[^怎麼開?]，這個檔案被存在上面流程的第一個問題裡面，如果你在那邊按了`Enter`，則它預設存在~/.ssh/id_rsa。
-:- 到 github上貼上剛剛生成的ssh public key
-:> 這一步其實所有網站都是大同小異，只是複製貼上的地方不同而已，如果你的雲端是終端機，那你就需要去問IT管理員，這段密鑰要被貼在哪裡了。
-:> Github 是在網站*右上角的頭像*裡面的*settings*這個頁面裡面，進入到這個頁面在最左邊的那排選項裡面找到 *SSH and GOG Keys*，接下來應該就很明顯了。
-:- 回到local repositoy設定連線
-:	1. `git remote add origin git@github.com:USER/REPO.git`[^origin]
--------------
-via https
-:	`git remote add origin https://github.com/USER/REPO.git`[^origin]
--------------
-一些笨問題
+**via ssh**
+- 分成三個步驟
+	1. 生成ssh key
+	2. 到 github上貼上剛剛生成的ssh public key
+	3. 回到local repositoy設定連線(在這邊會設定跟雲端的哪個branch對接）
+- 生成ssh key
+	1. `$ sshkey-gen`
+	2. 跟隨著程式的流程，可以都按`Enter`。如果需要比較高的安全性可以在passphrase這個問題裡面輸入一些句子，類似password的效用。但之後每次遠端連線時只要用到這個鑰匙就要輸入passphrase一次。
+	3. 用打開id_rsa.pub文件[^怎麼開?]，這個檔案被存在上面流程的第一個問題裡面，如果你在那邊按了`Enter`，則它預設存在~/.ssh/id_rsa。
+- 到 github上貼上剛剛生成的ssh public key
+	> 這一步其實所有網站都是大同小異，只是複製貼上的地方不同而已，如果你的雲端是終端機，那你就需要去問IT管理員，這段密鑰要被貼在哪裡了。
+	> Github 是在網站*右上角的頭像*裡面的*settings*這個頁面裡面，進入到這個頁面在最左邊的那排選項裡面找到 *SSH and GOG Keys*，接下來應該就很明顯了。
+- 回到local repositoy設定連線
+	1. `git remote add origin git@github.com:USER/REPO.git`[^origin]
+
+-----------
+**via https**
+	`git remote add origin https://github.com/USER/REPO.git`[^origin]
+
+---------
+**一些笨問題**
 :- Q. 我可不可以設定多個連線方式？
 :> A. 當然可以，只要不要用同一個命名即可，換句話說，把origin改成別的名子就好。
 :- Q. 名子八字不好，可不可以改名？
