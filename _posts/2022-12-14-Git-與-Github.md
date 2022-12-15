@@ -1,7 +1,7 @@
 # Git 與 Github
 [^date_last_edit]
 
-## 
+## 關鍵字與關鍵指令
 
 - Git（專案版本控制器）, Github（雲端專門來存放專案的平台，[other alternative](https://www.softwaretestinghelp.com/github-alternatives/)）, branch（版本分支）, repository（概念等同於資料夾）, ssh（跟雲端平台的連線方式）, https（跟雲端平台的連線方式）。
 - Git的概念有點像是 Toyota-corolla-特仕板。你（Toyota）開了一個專案（corolla），而這個專案裡面有不同的版本分支（特仕板）。不同於汽車產線的開發流程，這些不同的分支是用來開發新功能或者做為 debug之用，所以最後都會匯集（merge）回到最主要的版本 master。至於這些不同的分支要怎麼管理，每間公司，每個團隊都有不一樣的作法，也都大同小異，你也可以嘗試設計你自己認為運作順暢的開發流程來管理你的版本分支。
