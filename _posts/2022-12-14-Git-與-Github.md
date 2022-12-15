@@ -46,9 +46,9 @@ Git要怎麼跟雲端的repository溝通？如果沒有這個功能，你大概�
 
 #### git remote
 
-[Github教學](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
-USER: 你的github username
-REPO: 你在github上某個repository的名稱
+- [Github教學](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
+- USER: 你的github username
+- REPO: 你在github上某個repository的名稱
 
 -------------
 **via ssh**
