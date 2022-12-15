@@ -1,6 +1,6 @@
 title: "Wayne Peng's"
 author: "Jun-Wen Wayne Peng"
-description: "Ghost" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "I am a mathematician and a software developer. Currently I am a post-doc in NCTS at National Taiwan University.<br> My primary langauge is Chinese/English/Python/Sage, and I can also understand html/css/JS/C. It won't be difficult for me to pick up a new language.<br> My research focus is on arithmetic dynamical systes and its computational problem.<br> A project that I am currently working on is to develop a fast algorithm to determine if two rational functions have any relation in composition." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
@@ -9,7 +9,7 @@ github_username: "junwenwaynepeng"
 #linkedin_username: "linkedinuser"
 #facebook_username: username
 #flickr_username: username
-#instagram_username: username
+instagram_username: peng173
 #pinterest_username: username
 #youtube_username: username
 #googleplus_username: +username
