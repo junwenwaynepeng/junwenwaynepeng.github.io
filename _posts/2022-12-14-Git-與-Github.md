@@ -44,7 +44,7 @@ Git要怎麼跟雲端的repository溝通？如果沒有這個功能，你大概�
 
 在終端機輸入上面的指令你就已經把你所在的資料夾變成一個本地端的repository了（你可以試試看在這個資料夾與他的子資料夾裡面執行`git add .`，還有在這個資料夾外面執行`git add .`，你會發現在資料夾外面無法執行這段指令，這表示離開了資料夾，你就離開了某個git環境，所以環境跟環境之間不會互相干擾）。
 
-#### git 
+#### git remote
 
 [Github教學](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
 USER: 你的github username
