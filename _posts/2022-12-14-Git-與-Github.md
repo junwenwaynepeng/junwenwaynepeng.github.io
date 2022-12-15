@@ -1,12 +1,12 @@
 # Git 與 Github
 [^date_last_edit]
 ## 關鍵字
-- Git(專案版本控制器), Github(雲端專門來存放專案的平台，[other alternative](https://www.softwaretestinghelp.com/github-alternatives/), branch（版本分支）, repository（概念等同於資料夾）, ssh（跟雲端平台的連線方式）, https（跟雲端平台的連線方式）。
-- Git的概念有點像是 Toyota-corolla-特仕板。你(Toyota)開了一個專案(corolla)，而這個專案裡面有不同的版本分支(特仕板)。不同於汽車產線的開發流程，這些不同的分支是用來開發新功能或者做為 debug之用，所以最後都會匯集（merge）回到最主要的版本 master。至於這些不同的分支要怎麼管理，每間公司，每個團隊都有不一樣的作法，也都大同小異，你也可以嘗試設計你自己認為運作順暢的開發流程來管理你的版本分支。
-- Cheat sheet(下面的`命令`基本上是依據使用流程排列):
+- Git（專案版本控制器）, Github（雲端專門來存放專案的平台，[other alternative](https://www.softwaretestinghelp.com/github-alternatives/)）, branch（版本分支）, repository（概念等同於資料夾）, ssh（跟雲端平台的連線方式）, https（跟雲端平台的連線方式）。
+- Git的概念有點像是 Toyota-corolla-特仕板。你（Toyota）開了一個專案（corolla），而這個專案裡面有不同的版本分支（特仕板）。不同於汽車產線的開發流程，這些不同的分支是用來開發新功能或者做為 debug之用，所以最後都會匯集（merge）回到最主要的版本 master。至於這些不同的分支要怎麼管理，每間公司，每個團隊都有不一樣的作法，也都大同小異，你也可以嘗試設計你自己認為運作順暢的開發流程來管理你的版本分支。
+- Cheat sheet（下面的`命令`基本上是依據使用流程排列）:
 	- `git init`: 初始化某個資料夾，讓他成為一個 git環境，這時後會同時產生 master這個版本分支。
 	- `git add .`, `git add file_names`: 將某檔案寫入git的版本控制裡面。
-	- `git commit -m "message"`: 確認執行前面做過得所有git add (感覺像是在說我前面的指令都已經ready to go了)。
+	- `git commit -m "message"`: 確認執行前面做過得所有git add （感覺像是在說我前面的指令都已經ready to go了）。
 	- `git remote add nick_name ssh@remote\.ssh\.server` or `git remote nick_name add https://remote\.https\.server`: 增加雲端連線。
 	- `git push`: 上傳。
 	- `git pull`: 下載。
@@ -32,10 +32,10 @@ Git要怎麼跟雲端的repository溝通？如果沒有這個功能，你大概�
 	$ git add .
 	$ git commit -m "initial"
 ```
-[^"initial"]
+[^initial]
 在終端機輸入上面的指令你就已經把你所在的資料夾變成一個本地端的repository了（你可以試試看在這個資料夾與他的子資料夾裡面執行`git add .`，還有在這個資料夾外面執行`git add .`，你會發現在資料夾外面無法執行這段指令，這表示離開了資料夾，你就離開了某個git環境，所以環境跟環境之間不會互相干擾）。
 #### git remote
-(Github教學)[https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories]
+[Github教學](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
 USER: 你的github username
 REPO: 你在github上某個repository的名稱
 ##### via ssh
@@ -58,7 +58,7 @@ REPO: 你在github上某個repository的名稱
 - Q. 我可不可以設定多個連線方式？
 > A. 當然可以，只要不要用同一個命名即可，換句話說，把origin改成別的名子就好。
 - Q. 名子八字不好，可不可以改名？
-> A. 當然可以，你還可以改連線位址，詳細請看(Github教學)[https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories]。
+> A. 當然可以，你還可以改連線位址，詳細請看[Github教學](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)。
 
 ### 第一次執行之後的流程
 我們這邊假設大家都是程式小白，只想要上傳下載而已，完全沒有版本控制的概念，你在上面的設定完成之後，只要到終端機做以下操作就可以上傳下載了。
@@ -75,8 +75,8 @@ REPO: 你在github上某個repository的名稱
 ```
 [^1]
 
-[^"initial"]: 你可以任意指定initial裡面的文字，中文也行。
+[^initial]: 你可以任意指定initial裡面的文字，中文也行。
 [^怎麼開?]: 它基本上就是一個文件夾，所以你可以用*任意方法*打開（你甚至可以用word），但是最保險的方法會是在終端機上下`cat ~/.ssh/ubuntu_id_rsa.pub `這個指令，然後用滑鼠複製那串亂碼。
 [^origin]: *origin* 可以換成任何名子，他就是後面那段網址的代稱。
 [^1]: `git fetch` can be ignore if it is a solo project.
-[^date_last_edit]: 12/15/2022
+[^date_last_edit]: 2022/12/15
