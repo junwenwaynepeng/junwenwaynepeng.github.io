@@ -10,7 +10,7 @@
 	- `git add .`, `git add file_names`: 將某檔案寫入git的版本控制裡面。
 	- `git commit -m "message"`: 確認執行前面做過得所有git add （感覺像是在說我前面的指令都已經ready to go了）。
 	- `git remote add nick_name ssh@remote\.ssh\.server` or `git remote nick_name add https://remote\.https\.server`: 增加雲端連線。
-	- `git push`: 上傳。
+	- `git push`: 上傳。	
 	- `git pull`: 下載。
 	- `git branch branch_name`: 創造一個新的版本分支叫做branch_name。
 	- `git checkout branch_name`: 換到branch_name這個版本分支。
