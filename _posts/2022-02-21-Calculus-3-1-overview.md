@@ -1,4 +1,4 @@
-# 2022-02-21-Calculus 3-1 overview
+# Calculus 3-1 overview
 
 Calculus 3 is a course that builds upon the concepts learned in Calculus 1 and 2, with a focus on multivariable functions. The main topics covered in this course include:
 
