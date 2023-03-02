@@ -1,9 +1,9 @@
-# Calculus 3-1 overview
+# Calculus 3-2 Graph and Derivative
 
 The main topics covered in this course included:
 
 1. Graphing surfaces: We learned how to graph a surface given by an equation of the form z=f(x,y). We used the section method and level curves to visualize the surface and gain insights into its properties.
-    * Section method: for $$x$$ (or $$y$$)$$ = 0, 1, 2, 3, ...$$, draw $$z=f(x,y)$$ on a yz(or yx)-plain.
+    * Section method: for $$x$$ (or \\(y\\)) = 0, 1, 2, 3, ...$$, draw $$z=f(x,y)$$ on a yz(or yx)-plain.
     * level curves: for $$z = 0, 1, 2, 3, ...$$, draw  on a xy-plain.
     * Important example: $$z^2 = x^2+y^2$$
 
