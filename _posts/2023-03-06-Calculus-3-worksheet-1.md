@@ -26,4 +26,5 @@ where $\|(u,v)\|=\sqrt{u^2+v^2}$ is the length of the vector $(u,v)$. Use the ab
 
 1. 
 	* $f_x=\dfrac{1}{x}\tan(xy) + \ln(xy)\sec^2(xy)y$, $f_y=\dfrac{1}{y}\tan(xy) + \ln(xy)\sec^2(xy)x$
-	* $\dfrac{\partial f}{\prtial x} = \dfrac{\partial f}{\partial u}\dfrac{\partial u}{\partial x} + \dfrac{\partial f}{\partial v}\dfrac{\partial v}{\partial x}$\n $ = 2(\sec(x))\sec(x)\tan(x) - 2(\tan(x))\sec^2(x) = 0$
+	* $\dfrac{\partial f}{\partial x} = \dfrac{\partial f}{\partial u}\dfrac{\partial u}{\partial x} + \dfrac{\partial f}{\partial v}\dfrac{\partial v}{\partial x}$\
+	$ = 2(\sec(x))\sec(x)\tan(x) - 2(\tan(x))\sec^2(x) = 0$
