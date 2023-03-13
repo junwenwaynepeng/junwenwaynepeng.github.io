@@ -1,5 +1,7 @@
 # Calculus 3 Worksheet 1
 
+## Questions
+
 1. Find partial derivative $\partial f/\partial x$ and $\partial f/\partial y$ of the following function
 
 	* $f(x,y) = \ln(xy)\tan(xy)$.
@@ -19,3 +21,9 @@ where $\|(u,v)\|=\sqrt{u^2+v^2}$ is the length of the vector $(u,v)$. Use the ab
 	* Observe that how the length of the gradient changes with respect to the point.
 	* Find the directional deriviative of $F$ at $(1,1)$ along the vector (3,4).
 	* Confirm that the largest directional derivative of $F$ at $(1,1)$ is along the vector $(1,1)$. 
+
+## Answers
+
+1. 
+	* $f_x=\dfrac{1}{x}\tan(xy) + \ln(xy)\sec^2(xy)y$, $f_y=\dfrac{1}{y}\tan(xy) + \ln(xy)\sec^2(xy)x$
+	* $\dfrac{\partial f}{\prtial x} = \dfrac{\partial f}{\partial u}\dfrac{\partial u}{\partial x} + \dfrac{\partial f}{\partial v}\dfrac{\partial v}{\partial x}$\n $ = 2(\sec(x))\sec(x)\tan(x) - 2(\tan(x))\sec^2(x) = 0$
