@@ -1,3 +1,0 @@
-I am a mathematician and software developer currently working as a post-doctoral researcher at NCTS, National Taiwan University. My primary languages are Chinese, English, Python, and Sage, and I have experience with HTML, CSS, JS, and C. I am well-equipped to learn new languages as needed.
-
-My research focuses on arithmetic dynamical systems and their computational problems. Currently, I am developing a fast algorithm to determine if two rational functions are compositionally related.
