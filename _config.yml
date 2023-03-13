@@ -22,6 +22,7 @@ author: Junwen Wayne Peng
 navbar-links:
   About Me: "aboutme"
   Resources:
+    - ChatGPT: "https://chat.openai.com/chat"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
   Publication: 
@@ -72,14 +73,14 @@ social-network-links:
 #  calendly: yourname
 #  mastodon: instance.url/@username
   ORCID: 0000-0001-5769-9519
-  google-scholar: https://scholar.google.com/citations?user=3x4-F3cAAAAJ&hl=en
+  google-scholar: junwen.wayne.peng@gmail.com
 #  discord: invite/invite_code or users/userid 
 #  kaggle: yourname
 #  hackerrank: yourname
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: Thanks alot
 
 ###########################
 # --- General options --- #
@@ -248,7 +249,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Asia/Taipei"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
