@@ -7,7 +7,7 @@
 	* Use either method to calculate the tangent space of $z=\dfrac{xy^2}{x^2+y^2}$ at $(1,1)$.
 
 2. Suppose
-	\[f(x,y)=\begin{cases}\dfrac{xy^2}{x^2+y^2}\ if (x,y)\neq (0,0)\\ \\ 0,\ if (x,y)=(0,0)\end{cases}.\]
+	\[f(x,y)=\begin{cases}\dfrac{xy^2}{x^2+y^2}\ if (x,y)\neq (0,0) \\\ 0,\ if (x,y)=(0,0)\end{cases}.\]
 	* Find $\dfrac{\partial^2 f}{\partial x\partial y}$
 	* Find $\dfrac{\partial^2 f}{\partial y\partial x}$
 	* Show that $\dfrac{\partial^2 f}{\partial x\partial y}(0,0)\neq \dfrac{\partial^2 f}{\partial y\partial x}(0,0).$
