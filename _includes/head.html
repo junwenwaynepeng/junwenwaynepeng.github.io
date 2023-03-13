@@ -3,9 +3,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="pandoc">
-  $if(author)$<meta name="author" content="$author$">$endif$
-  $if(description)$<meta name="description" content="$description$">$endif$
-  $if(title)$<title>$title$</title>$endif$
+  {%- if author -%}<meta name="author" content="$author$">{%- endif -%}
+  {%- if description -%}<meta name="description" content="$description$">{%- endif -%}
+  {%- if title -%}<title>$title$</title>{%- endif -%}
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
