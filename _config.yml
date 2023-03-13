@@ -9,7 +9,7 @@ github_username: "junwenwaynepeng"
 #linkedin_username: "linkedinuser"
 #facebook_username: username
 #flickr_username: username
-instagram_username: peng173
+instagram_username: peng1736
 #pinterest_username: username
 #youtube_username: username
 #googleplus_username: +username
@@ -22,13 +22,8 @@ theme: "minima"
 rss: rss
 
 kramdown:
-<<<<<<< HEAD
-  syntax_highlighter_opts:
-    math_engine: mathjax
-=======
   math_engine: mathjax
   syntax_highlighter_opts:
->>>>>>> origin/main
     disable: true
     
 plugins:
