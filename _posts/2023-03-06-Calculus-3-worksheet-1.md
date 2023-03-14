@@ -29,7 +29,7 @@ where $\|(u,v)\|=\sqrt{u^2+v^2}$ is the length of the vector $(u,v)$. Use the ab
 	* $\dfrac{\partial f}{\partial x} = \dfrac{\partial f}{\partial u}\dfrac{\partial u}{\partial x} + \dfrac{\partial f}{\partial v}\dfrac{\partial v}{\partial x}\\ = 2(\sec(x))\sec(x)\tan(x) - 2(\tan(x))\cdot 0 = 2\sec^2(x)\tan(x).$ Similarly, $\dfrac{\partial f}{\partial y} = -2\tan(y)\sec^2(y)$.
 
 2.
-	* $u=x^3+1$ and $v=2x$
+	* $u=x^3+1$ and $v=2x$.
 	* $f'(x) = \dfrac{\partial F}{\partial u}\dfrac{\partial u}{\partial x} + \dfrac{\partial F}{\partial v}\dfrac{\partial v}{\partial x} = G(x^3+1,2x)\cdot 3x^2 + H(x^3+1,2x)\cdot 2$.
 	* We set $u=x$ and $v=x$, so $f'(x) = G(x,x)+H(x,x)$.
 
