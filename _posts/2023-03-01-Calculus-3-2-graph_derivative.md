@@ -1,8 +1,8 @@
 ---
+title: Calculus 3-2 Overview
+subtitle: Graph and Derivative
 tags: ["Calculus 3", "class overview"]
 ---
-# Calculus 3-2 Graph and Derivative
-
 The main topics covered in this course included:
 
 1. Graphing surfaces: We learned how to graph a surface given by an equation of the form z=f(x,y). We used the section method and level curves to visualize the surface and gain insights into its properties.
