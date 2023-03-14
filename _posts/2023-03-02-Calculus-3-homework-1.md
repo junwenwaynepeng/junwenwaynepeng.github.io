@@ -1,3 +1,6 @@
+---
+tags: "Calculus 3", "homework"
+---
 # Calculus 3 Homework 1
 
 ## Question
