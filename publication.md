@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publication
-subtitle: I have a broad interest in anything. <br/> I enjoy both theory and application!
+subtitle: I have a broad interest in anything. <br> I enjoy both theory and application!
 ---
 1. W. Peng. Application of perfectoid spaces on dynamical system of lift of p-th power
 Journal of Number Theory, 2023 (To appear)
