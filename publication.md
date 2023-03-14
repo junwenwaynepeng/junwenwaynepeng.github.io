@@ -22,4 +22,4 @@ polynomials: iteration of shift and inversion maps over finite fields, 2019, 191
 (Submitted to DM)
 8. G. Grell and W. Peng. Wall’s conjecture and the abc conjecutre, 2015, 1511.01210
 
-[UniMath](https://sites.google.com/a/g2.nctu.edu.tw/unimath/): 由中興大學[陳宏賓教授](http://www.amath.nchu.edu.tw/member_detail.php?Key=65)創辦
+[UniMath](https://sites.google.com/a/g2.nctu.edu.tw/unimath/): UniMath 是台灣少數的數學電子媒體，其致力於推廣數學教育與傳播最新的數學話題。創辦人是中興大學[陳宏賓教授](http://www.amath.nchu.edu.tw/member_detail.php?Key=65)並與數個大學教授（交大[高竹嵐](https://stat.nycu.edu.tw/zh_tw/members/teacher/-%E9%AB%98%E7%AB%B9%E5%B5%90-16291129)，師大[郭君逸](https://scholar.lib.ntnu.edu.tw/zh/persons/jun-yi-guo)，與交大[魏澤人](https://scholar.nycu.edu.tw/zh/persons/tzer-jen-wei)）一起合力編輯。
