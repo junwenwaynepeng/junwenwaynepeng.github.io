@@ -12,7 +12,7 @@
 ## Answer
 1. 
 	* (Method 1) The formula or the area $A(a,b,h)=(a+b)h/2$. By the question, we know
-	\[\dfrac{\Delta a}{a}, \dfrac{\Delta b}{b}, and \dfrac{\Delta h}{h}< 1.\%\]
+	\[\dfrac{\Delta a}{a}, \dfrac{\Delta b}{b}, and \dfrac{\Delta h}{h}< 1\%.\]
 	In particular, we know the error of $a+b$ is at most $2\%$, i.e.
 	\[\dfrac{\Delta a+\Delta b}{a+b}<2\%\]
 	We want to find a bound for $\dfrac{\Delta A}{A}$, and
@@ -20,7 +20,7 @@
 	After ignoring all nonlinear term of $\Delta a$, $\Delta b$, and $\Delta h$, we arrive
 	\[A+\Delta A = \dfrac{(a+b)h+(\Delta a+\Delta b)h + (a+b)\Delta h}{2},\]
 	which implies
-	\[\left|\dfrac{\Delta A}{A}\right| = \left |\dfrac{(\Delta a +\Delta b) h + (a+b)\Delta h}{(a+b)h}\right| = \left|\dfrac{\Delta a+\Delta b}{a+b}+\dfrac{\Delta h}{h}\right|\leq 2% + 1%\]
+	\[\left|\dfrac{\Delta A}{A}\right| = \left |\dfrac{(\Delta a +\Delta b) h + (a+b)\Delta h}{(a+b)h}\right| = \left|\dfrac{\Delta a+\Delta b}{a+b}+\dfrac{\Delta h}{h}\right|\leq 2\% + 1\%\]
 
 	* (Method 2) We can find the linear approximation $L(x,y,z)$ of $A(x,y,z)$ at $(a,b,h)$ which is
 	\[L(a,b,h) = A(a,b,h)+\dfrac{h}{2}(x-a)+\dfrac{h}{2}(y-b)+\dfrac{(a+b)}{2}(z-h),\]
