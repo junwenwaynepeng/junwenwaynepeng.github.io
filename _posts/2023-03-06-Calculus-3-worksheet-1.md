@@ -1,5 +1,5 @@
 ---
-tags: "Calculus 3", "worksheet"
+tags: ["Calculus 3", "worksheet"]
 ---
 # Calculus 3 Worksheet 1
 

@@ -1,5 +1,5 @@
 ---
-tags: "Calculus 3", "class overview"
+tags: ["Calculus 3", "class overview"]
 ---
 # Calculus 3-1 overview
 
