@@ -1,5 +1,5 @@
 ---
-tags: "my note"
+tags: ["my note"]
 ---
 # 2023 Spring Day Slides Outline
 
