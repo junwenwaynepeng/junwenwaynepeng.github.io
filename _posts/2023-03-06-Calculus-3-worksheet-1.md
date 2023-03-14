@@ -33,7 +33,7 @@ where $\|(u,v)\|=\sqrt{u^2+v^2}$ is the length of the vector $(u,v)$. Use the ab
 	* $f'(x) = \dfrac{\partial F}{\partial u}\dfrac{\partial u}{\partial x} + \dfrac{\partial F}{\partial v}\dfrac{\partial v}{\partial x} = G(x^3+1,2x)\cdot 3x^2 + H(x^3+1,2x)\cdot 2$.
 	* We set $u=x$ and $v=x$, so $f'(x) = G(x,x) + H(x,x)$.
 
-3. The partial derivatives of $F$ are $\partial F/\partial x = 2x$ and $\partial F/\partial y=2y$.
+3. 
 	* $\nabla F(1,1) = (2,2)$.
 	
 	* $\nabla F(3,4)\dfrac{3}{|3|}$.
