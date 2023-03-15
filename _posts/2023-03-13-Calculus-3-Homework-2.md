@@ -1,3 +1,8 @@
+---
+title: Calculus 3 homework 2
+tags: ["Calculus 3", "homework"]
+---
+
 # Calculus 3 Homework 2
 
 1. To find tangent plain of the surface $z=f(x,y)$ at $(a,b)$, we can either consider using linear approximation or consider that the surface is a level surface of the function $w=F(x,y,z)$, where $F(x,y,z)=z-f(x,y)$, for $w=0$, and then we use the fact that a gradient is perpendicular to the level surface.

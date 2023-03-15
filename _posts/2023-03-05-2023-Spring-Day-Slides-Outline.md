@@ -1,3 +1,7 @@
+---
+title: 2023 Spring Day Slides Outline
+tags: ["my note"]
+---
 # 2023 Spring Day Slides Outline
 
 1. Title

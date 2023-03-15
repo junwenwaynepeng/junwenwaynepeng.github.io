@@ -1,5 +1,8 @@
-# Calculus 3 Worksheet 1
-
+---
+itle: Calculus 3 Worksheet 1
+subtitle: Linear approximation, Chain rule and Gradient
+tags: ["Calculus 3", "worksheet"]
+---
 ## Questions
 
 1. Find partial derivative $\partial f/\partial x$ and $\partial f/\partial y$ of the following function

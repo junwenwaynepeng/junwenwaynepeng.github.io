@@ -1,5 +1,8 @@
-# Calculus 3-1 overview
-
+---
+title: Calculus 3-1 Overview
+subtitle: Outline of this semester
+tags: ["Calculus 3", "class overview"]
+---
 Calculus 3 is a course that builds upon the concepts learned in Calculus 1 and 2, with a focus on multivariable functions. The main topics covered in this course include:
 
 * Multivariable functions: In Calculus 3, we extend the idea of a function from one input variable to multiple input variables. We will study the properties of multivariable functions and how they can be represented graphically.
