@@ -10,4 +10,4 @@
 	* Find $\dfrac{\partial^2 f}{\partial y\partial x}$.
 	* Show that $\dfrac{\partial^2 f}{\partial x\partial y}(0,0)\neq \dfrac{\partial^2 f}{\partial y\partial x}(0,0).$
 
-4. Find the Taylor expansion of $\sin(x)\ln(x)$ upto order 3.
+4. Find the Taylor expansion of $\sin(x)\ln(1-x)$ upto order 3.
