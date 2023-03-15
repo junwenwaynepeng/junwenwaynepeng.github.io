@@ -16,7 +16,7 @@ forms for degree three polynomials and rational functions, 2022, arXiv:2001.0616
 5. J. P. Bell, K. Huang, W. Peng, and T. J. Tucker. A tits alternative for rational
 functions, 2021, arXiv:2103.09994 (To appear in JEMS)
 6. W. Peng. Abc implies there are infinitely many non-fibonacci-wieferich primes.
-Journal of Number Theory, 2020
+Journal of Number Theory, 2020 ([link](https://www.sciencedirect.com/science/article/pii/S0022314X1930410X))
 7. A. Chlopecki, J. Levier-Gomes, W. Peng, A. Shearer, and A. Towsley. Permutation
 polynomials: iteration of shift and inversion maps over finite fields, 2019, 1910.12928
 (Submitted to DM)
