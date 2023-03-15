@@ -4,7 +4,7 @@ title: Publication
 subtitle: I have a broad interest in anything. <br> I enjoy both theory and application!
 ---
 1. W. Peng. Application of perfectoid spaces on dynamical system of lift of p-th power
-Journal of Number Theory, 2023 (To appear)
+Journal of Number Theory, 2023 ([link](https://www.sciencedirect.com/science/article/pii/S0022314X23000392))
 2. W. Peng. A unique chief series in the arboreal galois group of belyi maps, 2020,
 arXiv:2010.04846 (Submitted to Manuscripta Mathematica)
 3. H. Benham, A. Galaraga, B. Hutz, J. Lupo, W. Peng, and A. Towsley. Integrality
