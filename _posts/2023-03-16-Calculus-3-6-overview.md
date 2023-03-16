@@ -4,9 +4,9 @@ subtitle: Second Order Test and Lagrange Multipliers
 tags: ["Calculus 3", "class overview"]
 ---
 1. Second order test for extreme values: We learned how to use the second order test to determine whether a critical point of a two-variable function is a maximum, minimum, or saddle point. The first step is to set the gradient to be a zero vector, i.e.
-\[\nambla f(x,y) = (0,0)\]
+\[\numbla f(x,y) = (0,0)\]
 in order to find critical points. Then we compute its discriminant, namely
-\[ D(x,y) = \left|\begin{matrix}\dfrac{\partial^2 f}{\partial x^2} & \dfrac{\partial^2 f}{\partial x\partial y}\end{matrix}\\ \dfrac{\partial^2 f}{\partial x\partial y}\end{matrix} & \dfrac{\partial^2 f}{\partial y^2}\right|(x,y).\]
+\[ D(x,y) = \left|\begin{matrix}\dfrac{\partial^2 f}{\partial x^2} & \dfrac{\partial^2 f}{\partial x\partial y}\end{matrix}\\ \dfrac{\partial^2 f}{\partial x\partial y} & \dfrac{\partial^2 f}{\partial y^2}\end{matrix}\right|(x,y).\]
 Suppose $(a,b)$ is a critical point, then we can say:
 * $f$ has a minimum at $(a,b)$ if $D(a,b)>0$ and $\dfrac{\partial^2 f}{\partial x^2}>0$.
 * $f$ has a maximum at $(a,b)$ if $D(a,b)>0$ and $\dfrac{\partial^2 f}{\partial x^2}<0$.
