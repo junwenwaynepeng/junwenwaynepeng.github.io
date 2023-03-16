@@ -14,6 +14,6 @@ tags: ["Calculus 3", "homework"]
 	* Find $\dfrac{\partial^2 f}{\partial x\partial y}$.
 	* Find $\dfrac{\partial^2 f}{\partial y\partial x}$.
 	* Show that $\dfrac{\partial^2 f}{\partial x\partial y}(0,0)\neq \dfrac{\partial^2 f}{\partial y\partial x}(0,0).$
-	(Hint: You can assume $f(0,0)$ exists (actually, $f(0,0)=0$). You will first find $\partial f/\partial x$ and $\partial f/\partial y$. Then, we interpreate $\partial/\partial y$ as that we fix $x$, i.e. set $x=0$, apply $\partail/\partial y$ t, and plug in $y=0$. Following this way, we find $\partial^2 x/\partial y\partial x(0,0)$. Switching the order of differentiation and plugin $0$, we will find $\partail^2 f/\partial x\partial y$)
+	(Hint: Assume that $f(0,0)$ exists (which is actually equal to $0$). First, find $\partial f/\partial x$ and $\partial f/\partial y$. Then, to find $\partial^2 f/\partial y\partial x$, plug in $0$ for $x$ (since we will fix $x$ and calculate the derivative with respect to $y$), apply $\partial/\partial y$, and finally plug in $y=0$. Following this method, we can find $\partial^2 f/\partial y\partial x(0,0)$. To find $\partial^2 f/\partial x\partial y$, switch the order of differentiation and plug in $0$.)
 
 4. Find the Taylor expansion of $\sin(x)\ln(1-y)$ at $(0,0)$ upto order 3.
