@@ -16,5 +16,5 @@ Suppose $(a,b)$ is a critical point, then we can say:
 2. Least squares method: We applied the second order test to deduce a formula for the least squares method. The game theory in the textbook is also a very interesting application of the second-order test and worth reading.
 
 3. Constrained optimization with Lagrange multipliers: We introduced the method of Lagrange multipliers for finding extreme values of a function subject to constraints. We also discussed the interpretation of the Lagrange multipliers in terms of the geometry of the problem and learned how to set up the Lagrange equations and how to solve them to find the extreme values of the function. To summarize this method, if we want to find the extreme values of a function $g(x,y)$ subject to a constrain $f(x,y)=0$, the critical points $(a,b)$ are solutions of the following system of equations
-\[\begin{cases}\nabla g= \lambda\nabla f\\ f(x,y)=0\end{cases}.\]
+\[\begin{cases}\nabla g= \lambda\nabla f\\\ f(x,y)=0\end{cases}.\]
 The $\lambda$ is called **Lagrange multiplier** which is also an unknown in the equestion. 
