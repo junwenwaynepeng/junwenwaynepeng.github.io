@@ -20,4 +20,11 @@ minimize(f, [0.1, 0.3, 0.4])                    # find (a,b,c) such that f(a,b,c
 		* There are different algorithms to find extreme values of a function. The most basic version of these algorithms is [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method).
 	* (A challenge question) Make your code as general as possible. You can start by making a code that can find the best-fitting exponential function for any given set of data.
 
-2. test
+2. In this question, we will make sense of the equation
+[ \nabla g(x,y) = \lambda\nabla f(x,y)]
+in the theorem of Lagrange multipliers.
+
+	* Use the theorem of Lagrange multipliers to find the critical point of $z=xy$ with $x^2+y^2=1$.
+	* Draw the constraint $x^2+y^2=1$ and the level curve of $z=xy$ that passes through a critical point on the same coordinate system.
+	* Observe and explain what you see in the above graph.
+	* Interpret your observation using gradients. (Hint: a key word is "parallel.") Now you can see why the equation makes sense.
