@@ -14,7 +14,7 @@
     xhr.open("POST", url);
 
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.setRequestHeader("Authorization", "Bearer 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");
+    xhr.setRequestHeader("Authorization", "Bearer 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");
 
     xhr.onreadystatechange = function () {
        if (xhr.readyState === 4) {
