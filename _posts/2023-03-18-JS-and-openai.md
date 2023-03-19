@@ -23,7 +23,7 @@
           console.log(xhr.responseText);
           open_ai_response = xhr.responseText;
           console.log(open_ai_response);
-          const generatedText = open_ai_response.choices[0].text
+          const generatedText = open_ai_response.choices[0].text;
           // Display the response in the result-box div
           document.getElementById("result-box").innerHTML = generatedText;
        }};
