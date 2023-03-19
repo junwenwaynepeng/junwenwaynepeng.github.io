@@ -5,11 +5,10 @@
 <div id="result-box"></div>
 
 <script>
-  const apiKey = document.getElementById("api-key").value;
   let open_ai_response;
 
   async function openai_test() {
-    
+    const apiKey = document.getElementById("api-key").value;
     var url = "https://api.openai.com/v1/completions";
 
     var xhr = new XMLHttpRequest();
