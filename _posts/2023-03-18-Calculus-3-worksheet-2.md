@@ -70,7 +70,7 @@ in the theorem of Lagrange multipliers.
     var data = `{
       "prompt": "Compare answer to \"the only critical points to the surface that we are given are those who have gradient 0\"
 
-answer: " + answer,
+answer: {$answer}",
       "temperature": 0,
       "max_tokens": 60,
       "top_p": 1,
@@ -78,7 +78,7 @@ answer: " + answer,
       "presence_penalty": 0,
       "model": "text-davinci-002"
     }`;
-
+    console.log(data)
     xhr.send(data);
   }
 </script>
