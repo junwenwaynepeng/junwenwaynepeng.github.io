@@ -68,10 +68,12 @@ in the theorem of Lagrange multipliers.
        }};
 
     var data = {
-      "prompt": 'Compare answer to "the only critical points to the surface that we are given are those who have gradient 0"\
-\
-\
-answer: '+ answer,
+      "prompt": `\
+Decide whether a student\'s response is correct. 
+
+Correct answer : "the only critical points to the surface that we are given are those who have gradient 0"\
+student:` + answer + `
+Is correct:`,
       "temperature": 0,
       "max_tokens": 60,
       "top_p": 1,
