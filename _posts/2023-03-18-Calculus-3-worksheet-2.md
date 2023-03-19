@@ -68,11 +68,21 @@ in the theorem of Lagrange multipliers.
        }};
 
     var data = {
-      "prompt": `\
-Decide whether a student\'s response is correct. 
+      "prompt": `
+Decide whether a student\'s response is essentially correct. 
 
-Correct answer : "the only critical points to the surface that we are given are those who have gradient 0"\
+The followings are correct answers : 
+* The critical points on the surface are those who have gradient 0
+* Because we want to find extreme points and in this cases they have gradient 0
+* Because extreme value are critical points of a surface, we set gradient equal to zero vector to find critical points
+* Because we want to find critical points
+
+The followings are not accepted answer:
+* Because we want to find extreme points
+* Because we want to find minimal points
+
 student:` + answer + `
+
 Is correct:`,
       "temperature": 0,
       "max_tokens": 60,
