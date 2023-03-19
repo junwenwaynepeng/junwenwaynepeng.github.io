@@ -29,12 +29,14 @@ in the theorem of Lagrange multipliers.
   * Observe and explain what you see in the above graph.
   * Interpret your observation using gradients. (Hint: a key word is "parallel.") Now you can see why the equation makes sense.
 
-<h1>OpenAI Test</h1>
+## OpenAI Answer Check
 <label for="api-key">API Key:</label>
 <input type="text" id="api-key" name="api-key">
-<input type="text" id="1-2" name='1-2'>
-<button onclick="openai_test()">Test OpenAI</button>
-<div id="result-box"></div>
+
+1.
+  * On going ... 
+  * <input type="text" id="1-2" name='1-2'><button onclick="openai_test()">Submit</button><div id="result-box"></div>
+  *
 
 <script>
   let open_ai_response;
@@ -52,10 +54,7 @@ in the theorem of Lagrange multipliers.
 
     xhr.onreadystatechange = function () {
        if (xhr.readyState === 4) {
-          console.log(xhr.status);
-          console.log(xhr.responseText);
           open_ai_response = JSON.parse(xhr.responseText);
-          console.log(open_ai_response);
           if (open_ai_response.choices) {
             const generatedText = open_ai_response.choices[0].text;
             // Display the response in the result-box div
