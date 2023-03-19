@@ -1,0 +1,41 @@
+<h1>OpenAI Test</h1>
+<button onclick="openai_test()">Test OpenAI</button>
+<div id="result-box"></div>
+
+<script>
+  let open_ai_response;
+  openai_test();
+
+  async function openai_test() {
+    
+    var url = "https://api.openai.com/v1/engines/text-davinci-002/completions";
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url);
+
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.setRequestHeader("Authorization", "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");
+
+    xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4) {
+          console.log(xhr.status);
+          console.log(xhr.responseText);
+          open_ai_response = xhr.responseText;
+          console.log(open_ai_response);
+          
+          // Display the response in the result-box div
+          document.getElementById("result-box").innerHTML = open_ai_response;
+       }};
+
+    var data = `{
+      "prompt": "YOUR TEXT HERE.",
+      "temperature": 0.7,
+      "max_tokens": 256,
+      "top_p": 1,
+      "frequency_penalty": 0.75,
+      "presence_penalty": 0
+    }`;
+
+    xhr.send(data);
+  }
+</script>
