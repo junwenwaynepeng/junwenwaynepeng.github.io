@@ -70,13 +70,14 @@ in the theorem of Lagrange multipliers.
     var data = {
       "prompt": 'Compare answer to "the only critical points to the surface that we are given are those who have gradient 0"\
 \
+\
 answer: '+ answer,
       "temperature": 0,
       "max_tokens": 60,
       "top_p": 1,
-      "frequency_penalty": 0.75,
+      "frequency_penalty": 0.5,
       "presence_penalty": 0,
-      "model": "text-davinci-002"
+      "model": "text-davinci-003"
     };
     data = JSON.stringify(data)
     console.log(data)
