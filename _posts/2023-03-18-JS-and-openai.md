@@ -7,7 +7,6 @@
 <script>
   const apiKey = document.getElementById("api-key").value;
   let open_ai_response;
-  openai_test();
 
   async function openai_test() {
     
