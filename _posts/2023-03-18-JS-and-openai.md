@@ -8,7 +8,7 @@
 
   async function openai_test() {
     
-    var url = "https://api.openai.com/v1/engines/text-davinci-002/completions";
+    var url = "https://api.openai.com/v1/completions";
 
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url);
