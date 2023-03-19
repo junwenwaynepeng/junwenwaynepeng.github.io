@@ -21,11 +21,11 @@
        if (xhr.readyState === 4) {
           console.log(xhr.status);
           console.log(xhr.responseText);
-          open_ai_response = xhr.responseText;
+          open_ai_response = JSON.parse(xhr.responseText);
           console.log(open_ai_response);
           const generatedText = open_ai_response.id;
           // Display the response in the result-box div
-          document.getElementById("result-box").innerHTML = generatedText;
+          document.getElementById("result-box").innerHTML = xhr;
        }};
 
     var data = `{
