@@ -23,9 +23,9 @@
           console.log(xhr.responseText);
           open_ai_response = JSON.parse(xhr.responseText);
           console.log(open_ai_response);
-          const generatedText = open_ai_response.choice;
+          const generatedText = open_ai_response.choice[0].text;
           // Display the response in the result-box div
-          document.getElementById("result-box").innerHTML = open_ai_response;
+          document.getElementById("result-box").innerHTML = generatedText;
        }};
 
     var data = `{
