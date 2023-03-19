@@ -55,7 +55,7 @@ in the theorem of Lagrange multipliers.
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer YOUR_API_KEY',
+        'Authorization': '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',
       },
       body: JSON.stringify({
         prompt: inputText,
