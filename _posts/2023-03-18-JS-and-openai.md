@@ -34,7 +34,8 @@
       "max_tokens": 256,
       "top_p": 1,
       "frequency_penalty": 0.75,
-      "presence_penalty": 0
+      "presence_penalty": 0,
+      "model": "text-davinci-002"
     }`;
 
     xhr.send(data);
