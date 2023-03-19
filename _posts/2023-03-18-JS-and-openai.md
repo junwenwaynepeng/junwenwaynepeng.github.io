@@ -23,7 +23,13 @@
           console.log(xhr.responseText);
           open_ai_response = JSON.parse(xhr.responseText);
           console.log(open_ai_response);
-          const generatedText = open_ai_response.choice[0].text;
+          if (open_ai_response.choices) {
+            const generatedText = open_ai_response.choices[0].text;
+            // Display the response in the result-box div
+            document.getElementById("result-box").innerHTML = generatedText;
+          } else {
+            console.error('Error: No "choices" property in OpenAI response.');
+          }
           // Display the response in the result-box div
           document.getElementById("result-box").innerHTML = generatedText;
        }};
