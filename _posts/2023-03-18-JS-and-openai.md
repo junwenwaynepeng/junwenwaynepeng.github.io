@@ -14,7 +14,7 @@
     xhr.open("POST", url);
 
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.setRequestHeader("Authorization", "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");
+    xhr.setRequestHeader("Authorization", "Bearer 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");
 
     xhr.onreadystatechange = function () {
        if (xhr.readyState === 4) {
@@ -22,7 +22,7 @@
           console.log(xhr.responseText);
           open_ai_response = xhr.responseText;
           console.log(open_ai_response);
-          
+
           // Display the response in the result-box div
           document.getElementById("result-box").innerHTML = open_ai_response;
        }};
