@@ -28,3 +28,57 @@ in the theorem of Lagrange multipliers.
   * Draw the constraint $x^2+y^2=1$ and the level curve of $z=xy$ that passes through a critical point on the same coordinate system.
   * Observe and explain what you see in the above graph.
   * Interpret your observation using gradients. (Hint: a key word is "parallel.") Now you can see why the equation makes sense.
+
+<h1>OpenAI Test</h1>
+<label for="api-key">API Key:</label>
+<input type="text" id="api-key" name="api-key">
+<input type="text" id="1-2" name='1-2'>
+<button onclick="openai_test()">Test OpenAI</button>
+<div id="result-box"></div>
+
+<script>
+  let open_ai_response;
+
+  async function openai_test() {
+    const apiKey = document.getElementById("api-key").value;
+    const answer = document.getElementById('1-2').value;
+    var url = "https://api.openai.com/v1/completions";
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url);
+
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.setRequestHeader("Authorization", "Bearer " + apiKey);
+
+    xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4) {
+          console.log(xhr.status);
+          console.log(xhr.responseText);
+          open_ai_response = JSON.parse(xhr.responseText);
+          console.log(open_ai_response);
+          if (open_ai_response.choices) {
+            const generatedText = open_ai_response.choices[0].text;
+            // Display the response in the result-box div
+            document.getElementById("result-box").innerHTML = generatedText;
+          } else {
+            console.error('Error: No "choices" property in OpenAI response.');
+          }
+          // Display the response in the result-box div
+          document.getElementById("result-box").innerHTML = generatedText;
+       }};
+
+    var data = `{
+      "prompt": "Compare answer to \"the only critical points to the surface that we are given are those who have gradient 0\"
+
+answer: " + answer,
+      "temperature": 0,
+      "max_tokens": 60,
+      "top_p": 1,
+      "frequency_penalty": 0.75,
+      "presence_penalty": 0,
+      "model": "text-davinci-002"
+    }`;
+
+    xhr.send(data);
+  }
+</script>
