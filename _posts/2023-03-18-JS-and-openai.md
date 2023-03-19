@@ -1,8 +1,11 @@
 <h1>OpenAI Test</h1>
+<label for="api-key">API Key:</label>
+<input type="text" id="api-key" name="api-key">
 <button onclick="openai_test()">Test OpenAI</button>
 <div id="result-box"></div>
 
 <script>
+  const apiKey = document.getElementById("api-key").value;
   let open_ai_response;
   openai_test();
 
@@ -14,7 +17,7 @@
     xhr.open("POST", url);
 
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.setRequestHeader("Authorization", "Bearer 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");
+    xhr.setRequestHeader("Authorization", "Bearer " + apiKey);
 
     xhr.onreadystatechange = function () {
        if (xhr.readyState === 4) {
