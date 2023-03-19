@@ -75,5 +75,5 @@ in the theorem of Lagrange multipliers.
     resultElement.innerText = completedText;
   });
 </script>
-</body>
+
 
