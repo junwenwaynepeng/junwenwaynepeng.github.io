@@ -13,10 +13,10 @@ async function openai_0() {
 
   xhr.onreadystatechange = function () {
      if (xhr.readyState === 4) {
-        open_ai_response = JSON.parse(xhr.responseText);
-        console.log(open_ai_response);
-        if (open_ai_response.choices) {
-          const generatedText = open_ai_response.choices[0].text;
+        open_ai_response_0 = JSON.parse(xhr.responseText);
+        console.log(open_ai_response_0);
+        if (open_ai_response_0.choices) {
+          const generatedText = open_ai_response_0.choices[0].text;
           // Display the response in the result-box div
           document.getElementById("result-box-1-1").innerHTML = generatedText;
         } else {
