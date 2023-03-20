@@ -21,8 +21,6 @@ async function openai_test() {
         } else {
           console.error('Error: No "choices" property in OpenAI response.');
         }
-        // Display the response in the result-box div
-        document.getElementById("result-box-1-3").innerHTML = generatedText;
      }};
 
   var data = {

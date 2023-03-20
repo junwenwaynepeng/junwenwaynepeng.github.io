@@ -17,12 +17,10 @@ async function openai_test() {
         if (open_ai_response.choices) {
           const generatedText = open_ai_response.choices[0].text;
           // Display the response in the result-box div
-          document.getElementById("result-box").innerHTML = generatedText;
+          document.getElementById("result-box-1-2").innerHTML = generatedText;
         } else {
           console.error('Error: No "choices" property in OpenAI response.');
         }
-        // Display the response in the result-box div
-        document.getElementById("result-box-1-2").innerHTML = generatedText;
      }};
 
   var data = {
