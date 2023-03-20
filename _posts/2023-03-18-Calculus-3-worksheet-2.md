@@ -41,7 +41,7 @@ in the theorem of Lagrange multipliers.
   * Your answer: <input type="text" id="1-2" name='1-2'><button onclick="openai_test()">Submit</button>
     * <div id="result-box-1-2"></div>
   * Your answer: <input type="text" id="1-3" name='1-3'><button onclick="openai_test()">Submit</button>
-    * <div id="result-box-1-2"></div>
+    * <div id="result-box-1-3"></div>
   * Your answer: <input type="text" id="1-4" name='1-4'><button onclick="openai_test()">Submit</button>
     * <div id="result-box-1-4"></div>
 2. 
