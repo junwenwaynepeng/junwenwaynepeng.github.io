@@ -38,9 +38,9 @@ in the theorem of Lagrange multipliers.
 1. 
   Your answer of 1-1: <input type="text" id="1-1" name='1-1'><button onclick="openai_test()">Submit</button><br>
   <div id="result-box-1-1">\<ChatGPT will show your \></div>
-  Your answer of 1-2: <input type="text" id="1-2" name='1-2'><button onclick="openai_test()">Submit</button><br>
+  Your answer of 1-2: <input type="text" id="1-2" name='1-2'><button onclick="openai_1()">Submit</button><br>
   <div id="result-box-1-2"></div>
-  Your answer: <input type="text" id="1-3" name='1-3'><button onclick="openai_test()">Submit</button>
+  Your answer: <input type="text" id="1-3" name='1-3'><button onclick="openai_2()">Submit</button>
   <div id="result-box-1-3"></div>
   Your answer: <input type="text" id="1-4" name='1-4'><button onclick="openai_test()">Submit</button>
   <div id="result-box-1-4"></div>
