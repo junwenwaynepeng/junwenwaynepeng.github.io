@@ -1,8 +1,8 @@
-let open_ai_response;
+let open_ai_response_0;
 
-async function openai_test() {
+async function openai_0() {
   const apiKey = document.getElementById("api-key").value;
-  const answer = document.getElementById('1-3').value;
+  const answer = document.getElementById('1-1').value;
   var url = "https://api.openai.com/v1/completions";
 
   var xhr = new XMLHttpRequest();
@@ -26,14 +26,9 @@ async function openai_test() {
 
   var data = {
     "prompt": `
-Decide whether a student\'s response is essentially correct. 
+Decide whether a student\'s response is equivalent to the following function. 
 
-The followings are correct answers : 
-* We want to use second order test
-* If we can show that D(x,y)<0, then we know (x,y) is a minimal of the surface.
-
-The followings are not accepted answer:
-* We have to use D(x,y) to determine if (x,y) is maximal or minimal.
+Correct function: 4*k + e^(4*m) + e^(2*m) + e^m - 15
 
 student:` + answer + `
 

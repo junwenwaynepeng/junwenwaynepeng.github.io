@@ -3,6 +3,7 @@ itle: Calculus 3 Worksheet 1
 subtitle: Second Order Test and Lagrange Multipliers
 tags: ["Calculus 3", "worksheet"]
 customjs:
+  - ../assets/js/chatgpt/2023-03-20-0.js
   - ../assets/js/chatgpt/2023-03-20-1.js
   - ../assets/js/chatgpt/2023-03-20-2.js
 ---
