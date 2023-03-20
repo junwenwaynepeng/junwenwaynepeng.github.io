@@ -1,6 +1,6 @@
 let open_ai_response;
 
-async function openai_test() {
+async function openai_2() {
   const apiKey = document.getElementById("api-key").value;
   const answer = document.getElementById('1-3').value;
   var url = "https://api.openai.com/v1/completions";
