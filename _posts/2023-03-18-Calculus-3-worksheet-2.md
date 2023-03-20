@@ -35,7 +35,7 @@ in the theorem of Lagrange multipliers.
 <label for="api-key">API Key:</label>
 <input type="text" id="api-key" name="api-key">
 
-1.
+1. 
   * Your answer: <input type="text" id="1-1" name='1-1'><button onclick="openai_test()">Submit</button>
     * <div id="result-box-1-1"></div>
   * Your answer: <input type="text" id="1-2" name='1-2'><button onclick="openai_test()">Submit</button>
