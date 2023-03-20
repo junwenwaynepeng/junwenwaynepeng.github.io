@@ -22,7 +22,7 @@ async function openai_test() {
           console.error('Error: No "choices" property in OpenAI response.');
         }
         // Display the response in the result-box div
-        document.getElementById("result-box").innerHTML = generatedText;
+        document.getElementById("result-box-1-2").innerHTML = generatedText;
      }};
 
   var data = {
