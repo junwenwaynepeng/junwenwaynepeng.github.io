@@ -28,7 +28,7 @@ async function openai_0() {
     "prompt": `
 Decide whether a student\'s response is equivalent to the following function. 
 
-Correct function: 4*k + e^(4*m) + e^(2*m) + e^m - 15
+Correct function: (k + e^(4*m) - 6)^2 + (k + e^(2*m) - 5)^2 + (k + e^m - 3)^2 + (k - 1)^2
 
 student:` + answer + `
 
