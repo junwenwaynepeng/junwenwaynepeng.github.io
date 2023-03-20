@@ -1,4 +1,4 @@
-let open_ai_response;
+let open_ai_response_check;
 
 async function check4() {
   const apiKey = document.getElementById("api-key").value;
@@ -13,10 +13,10 @@ async function check4() {
 
   xhr.onreadystatechange = function () {
      if (xhr.readyState === 4) {
-        open_ai_response = JSON.parse(xhr.responseText);
-        console.log(open_ai_response);
-        if (open_ai_response.choices) {
-          const generatedText = open_ai_response.choices[0].text;
+        open_ai_response_check = JSON.parse(xhr.responseText);
+        console.log(open_ai_response_check);
+        if (open_ai_response_check.choices) {
+          const generatedText = open_ai_response_check.choices[0].text;
           // Display the response in the result-box div
           document.getElementById("result-box-1-4").innerHTML = generatedText;
         } else {
