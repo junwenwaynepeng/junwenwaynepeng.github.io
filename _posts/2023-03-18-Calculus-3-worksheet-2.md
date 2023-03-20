@@ -35,9 +35,10 @@ in the theorem of Lagrange multipliers.
   * Observe and explain what you see in the above graph.
   * Interpret your observation using gradients. (Hint: a key word is "parallel.") Now you can see why the equation makes sense.
 
-## OpenAI Answer Check
-<label for="api-key">API Key:</label>
+## OpenAI Answer Check (Beta)
+API Key: You can get your key by following the following steps [link](https://mrtang.tw/blog/post/how-to-apply-for-a-chatgpt-api-key)
 <input type="text" id="api-key" name="api-key">
+
 
 
 Your answer of 1-1: <input type="text" id="1-1" name='1-1'><button onclick="openai_0()">Submit</button><br>
