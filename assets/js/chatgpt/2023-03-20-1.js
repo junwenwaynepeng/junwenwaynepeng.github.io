@@ -14,6 +14,7 @@ async function openai_test() {
   xhr.onreadystatechange = function () {
      if (xhr.readyState === 4) {
         open_ai_response = JSON.parse(xhr.responseText);
+        console.log(open_ai_response);
         if (open_ai_response.choices) {
           const generatedText = open_ai_response.choices[0].text;
           // Display the response in the result-box div
