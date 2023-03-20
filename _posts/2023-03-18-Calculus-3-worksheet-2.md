@@ -36,19 +36,20 @@ in the theorem of Lagrange multipliers.
 <input type="text" id="api-key" name="api-key">
 
 1. 
-  * Your answer: <input type="text" id="1-1" name='1-1'><button onclick="openai_test()">Submit</button>
-    * <div id="result-box-1-1"></div>
-  * Your answer: <input type="text" id="1-2" name='1-2'><button onclick="openai_test()">Submit</button>
-    * <div id="result-box-1-2"></div>
-  * Your answer: <input type="text" id="1-3" name='1-3'><button onclick="openai_test()">Submit</button>
-    * <div id="result-box-1-3"></div>
-  * Your answer: <input type="text" id="1-4" name='1-4'><button onclick="openai_test()">Submit</button>
-    * <div id="result-box-1-4"></div>
+  Your answer of 1-1: <input type="text" id="1-1" name='1-1'><button onclick="openai_test()">Submit</button><br>
+  <div id="result-box-1-1">\<ChatGPT will show your \></div>
+  Your answer of 1-2: <input type="text" id="1-2" name='1-2'><button onclick="openai_test()">Submit</button><br>
+  <div id="result-box-1-2"></div>
+  Your answer: <input type="text" id="1-3" name='1-3'><button onclick="openai_test()">Submit</button>
+  <div id="result-box-1-3"></div>
+  Your answer: <input type="text" id="1-4" name='1-4'><button onclick="openai_test()">Submit</button>
+  <div id="result-box-1-4"></div>
+
 2. 
-  * See our lecture note
-  * You can use GeoGebra on this task
-  * Your answer: <input type="text" id="2-3" name='2-3'><button onclick="openai_test()">Submit</button>
-    * <div id="result-box-2-3"></div>
-  * Your answer: <input type="text" id="2-4" name='2-4'><button onclick="openai_test()">Submit</button>
-    * <div id="result-box-2-4"></div>
+  2-1: See our lecture note
+  2-2: You can use GeoGebra on this task
+  Your answer of 2-3: <input type="text" id="2-3" name='2-3'><button onclick="openai_test()">Submit</button><br>
+  <div id="result-box-2-3"></div>
+  Your answer 2-4: <input type="text" id="2-4" name='2-4'><button onclick="openai_test()">Submit</button>
+  <div id="result-box-2-4"></div>
 
