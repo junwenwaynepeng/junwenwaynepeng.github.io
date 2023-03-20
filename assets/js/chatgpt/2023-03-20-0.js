@@ -18,7 +18,7 @@ async function openai_0() {
         if (open_ai_response.choices) {
           const generatedText = open_ai_response.choices[0].text;
           // Display the response in the result-box div
-          document.getElementById("result-box-1-3").innerHTML = generatedText;
+          document.getElementById("result-box-1-1").innerHTML = generatedText;
         } else {
           console.error('Error: No "choices" property in OpenAI response.');
         }
