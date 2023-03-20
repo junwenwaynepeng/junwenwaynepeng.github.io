@@ -2,7 +2,7 @@ let open_ai_response;
 
 async function check4() {
   const apiKey = document.getElementById("api-key").value;
-  const answer = document.getElementById('1-2').value;
+  const answer = document.getElementById('1-4').value;
   var url = "https://api.openai.com/v1/completions";
 
   var xhr = new XMLHttpRequest();
@@ -18,7 +18,7 @@ async function check4() {
         if (open_ai_response.choices) {
           const generatedText = open_ai_response.choices[0].text;
           // Display the response in the result-box div
-          document.getElementById("result-box-1-2").innerHTML = generatedText;
+          document.getElementById("result-box-1-4").innerHTML = generatedText;
         } else {
           console.error('Error: No "choices" property in OpenAI response.');
         }
