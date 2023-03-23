@@ -11,7 +11,7 @@ async function openai_3() {
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.setRequestHeader("Authorization", "Bearer " + apiKey);
 
-  xhr.onreadystatechange = function () {
+  xhr.onreadystatechange = function () {  
      if (xhr.readyState === 4) {
         open_ai_response_3 = JSON.parse(xhr.responseText);
         console.log(open_ai_response_3);
