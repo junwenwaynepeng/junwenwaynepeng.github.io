@@ -10,7 +10,7 @@ tags: ["Calculus 3", "homework"]
 	* Use level surface to find the the tangent space again
 
 2. Suppose
-	\[f(x,y)=\begin{cases}\dfrac{xy(x^2-y^2)}{x^2+y^2}\ & if (x,y)\neq (0,0) \\\ 0,\ & if (x,y)=(0,0)\end{cases}.\]
+	\[f(x,y)=\begin{cases}\frac{xy(x^2-y^2)}{x^2+y^2}\ & if (x,y)\neq (0,0) \\\ 0,\ & if (x,y)=(0,0)\end{cases}.\]
 	* Find $\frac{\partial^2 f}{\partial x\partial y}$.
 	* Find $\frac{\partial^2 f}{\partial y\partial x}$.
 	* Show that $\frac{\partial^2 f}{\partial x\partial y}(0,0)\neq \frac{\partial^2 f}{\partial y\partial x}(0,0).$
