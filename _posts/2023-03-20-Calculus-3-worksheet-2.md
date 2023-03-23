@@ -10,7 +10,7 @@ customjs:
   - ../assets/js/chatgpt/2023-03-20-4.js
 ---
 1. In the following, we will guide you step-by-step through the process of finding the best-fitting exponential function $f(x) = e^{mx} + k$ for the set of data points $\{(0,2),(1,3),(2,5),(4,6)\}$ using the method of least squares.
-  * First, we will define the error function $E(m,k)$ (Hint: $E(m,k)=\sum_{i=1}^4(f(x_i)-y_i)$ where $(x_i,y_i)$ is a data point).
+  * First, we will define the error function $E(m,k)$ (Hint: $E(m,k)=\sum_{i=1}^4(f(x_i)-y_i)^2$ where $(x_i,y_i)$ is a data point).
   * Second, we will set up a system of equations by assuming that the gradient of $E(m,k)$ is the zero vector. Can you explain why we need to do this? You don't need to solve the equation.
   * Third, we will compute the discriminant $D(x,y)$ of $E(m,k)$. Can you explain how you plain to use $D(x,y)$ if you solve the system of equations above.
   * In the following, we will use python to solve $(m,k)$. Read the following code and modified to what you need. 
