@@ -1,8 +1,8 @@
 // Fetch the template text from file
 function gpt(id){
-  fetch('../assets/js/chatgpt/{id}.txt'.replace('{id}',id))
-    .then(response => response.text())
-    .then(text => {
+  fetch('../assets/js/chatgpt/{id}.json'.replace('{id}',id))
+    .then(response => response.json())
+    .then(data => {
       // Once the template is loaded, define the openai_0 function
       const apiKey = document.getElementById("api-key").value;
       const answer = document.getElementById("answer-{id}".replace('{id}',id)).value;
@@ -28,20 +28,10 @@ function gpt(id){
         }
       };
 
-      var data = {
-        "prompt": text,
-        "temperature": 0,
-        "max_tokens": 60,
-        "top_p": 1,
-        "frequency_penalty": 0.5,
-        "presence_penalty": 0,
-        "model": "text-davinci-003"
-      };
-      data = JSON.stringify(data);
+      data.prompt = data.prompt.replace('{input}', answer);
+      const  data = JSON.stringify(data);
       console.log(data);
       xhr.send(data);
 
-      // Assign the openai_0 function to the onclick event of the button
-      // document.getElementById(id).onclick = openai_0; 
     });
 }
