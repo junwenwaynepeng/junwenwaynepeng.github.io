@@ -4,9 +4,10 @@ function gpt(id){
     .then(response => response.text())
     .then(text => {
       // Once the template is loaded, define the openai_0 function
+      console.log("answer-${id}")
       const apiKey = document.getElementById("api-key").value;
       const answer = document.getElementById("answer-${id}").value;
-      var url = "https://api.openai.com/v1/completions";
+      const url = "https://api.openai.com/v1/completions";
 
       var xhr = new XMLHttpRequest();
       xhr.open("POST", url);
