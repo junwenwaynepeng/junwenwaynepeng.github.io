@@ -1,5 +1,4 @@
 // Fetch the template text from file
-const questionId = document.getElementBy('')
 function gpt(id){
   fetch('../assets/js/chatgpt/' + id)
     .then(response => response.text())
