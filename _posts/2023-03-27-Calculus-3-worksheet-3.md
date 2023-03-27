@@ -12,3 +12,15 @@ customjs:
 2. Explain $\int\int_{\Omega}1dxdy$ is the area of $\Omega$.
 3. Examine the region $\Omega$ bounded by the lines $x=4$, $y=\frac{1}{2}x+2$, and $y=-x$, as depicted in the figure below. Find the limits of $x$ and $y$ for $\Omega$.![figure 1](../assets/img/2022-Calculus-3/worksheet-3-1.png)
 4. Consider the region $\Omega$ defined by $0 < x < 2$ and $0 < y < x^2$. Rewrite the inequality so that instead of bounding $x$ by constants and bounding $y$ by functions, we will bound $y$ by constants and $x$ by functions.
+
+## ChatGPT Answer checking(beta)
+
+* API Key: You can get your key by following the following steps [link](https://mrtang.tw/blog/post/how-to-apply-for-a-chatgpt-api-key)
+<input type="text" id="api-key" name="api-key">
+
+1. 
+	* Your answer of 1-1: <input type="text" id="2022-3-3-1" name='2022-3-3-1'><button onclick="gpt('2022-3-3-1')">Submit</button><br><br><div id="result-box-2022-3-3-1">ChatGPT will show your answer is correct or not</div>
+	* Your answer of 1-2: <input type="text" id="2022-3-3-2" name='2022-3-3-2'><button onclick="gpt('2022-3-3-2')">Submit</button><br><br><div id="result-box-2022-3-3-2">ChatGPT will show your answer is correct or not</div>
+2. Your answer of 2: <input type="text" id="2022-3-3-3" name='2022-3-3-3'><button onclick="gpt('2022-3-3-3')">Submit</button><br><br><div id="result-box-2022-3-3-3">ChatGPT will show your answer is correct or not</div>
+3. Your answer of 3: <input type="text" id="2022-3-3-4" name='2022-3-3-4'><button onclick="gpt('2022-3-3-4')">Submit</button><br><br><div id="result-box-2022-3-3-4">ChatGPT will show your answer is correct or not</div>
+4. Your answer of 4: <input type="text" id="2022-3-3-5" name='2022-3-3-5'><button onclick="gpt('2022-3-3-5')">Submit</button><br><br><div id="result-box-2022-3-3-5">ChatGPT will show your answer is correct or not</div>
