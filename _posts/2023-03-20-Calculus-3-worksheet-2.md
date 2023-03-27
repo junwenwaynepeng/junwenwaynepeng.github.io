@@ -1,5 +1,5 @@
 ---
-itle: Calculus 3 Worksheet 1
+title: Calculus 3 Worksheet 1
 subtitle: Second Order Test and Lagrange Multipliers
 tags: ["Calculus 3", "worksheet"]
 customjs:
