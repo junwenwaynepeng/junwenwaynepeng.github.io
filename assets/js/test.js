@@ -43,5 +43,5 @@ fetch('../assets/js/chatgpt/template.txt')
     }
 
     // Assign the openai_0 function to the onclick event of the button
-    document.getElementById("submit-1-1").onclick = openai_0;
+    document.getElementById("submit-1-1").onclick = openai_0();
   });
