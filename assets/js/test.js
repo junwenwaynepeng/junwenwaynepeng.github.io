@@ -4,7 +4,6 @@ function gpt(id){
     .then(response => response.text())
     .then(text => {
       // Once the template is loaded, define the openai_0 function
-      console.log("answer-${id}")
       const apiKey = document.getElementById("api-key").value;
       const answer = document.getElementById("answer-{id}".replace('{id}',id)).value;
       const url = "https://api.openai.com/v1/completions";
@@ -29,7 +28,7 @@ function gpt(id){
         }
       };
 
-      const data = {
+      var data = {
         "prompt": text,
         "temperature": 0,
         "max_tokens": 60,
