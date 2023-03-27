@@ -1,0 +1,9 @@
+{
+	"prompt": "The correct answer of the limits of $\\Omega$:$-4/3\\leq x\\leq 4, -x\\leq y\\leq x/2+2$ ($\\leq$ can be replaced by $<$)\n\nstudent's answer:{input}\n\nIs correct:",
+	"temperature": 0,
+	"max_tokens": 60,
+	"top_p": 1,
+	"frequency_penalty": 0.5,
+	"presence_penalty": 0,
+	"model": "text-davinci-003"
+}
