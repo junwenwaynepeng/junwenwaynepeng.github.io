@@ -1,9 +1,0 @@
-{
-	"prompt": "The correct answer is:$C+Cx+Cy+\ln \left(1+x+y\right)+x\ln \left(1+x+y\right)+y\ln \left(1+x+y\right)-1-x-y+C$\n\nstudent's answer:{input}\n\nIs correct:",
-	"temperature": 0,
-	"max_tokens": 60,
-	"top_p": 1,
-	"frequency_penalty": 0.5,
-	"presence_penalty": 0,
-	"model": "text-davinci-003"
-}

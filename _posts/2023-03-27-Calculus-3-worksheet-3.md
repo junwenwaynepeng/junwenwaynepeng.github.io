@@ -20,16 +20,16 @@ customjs:
 
 1. 
 	* Your answer of 1-1: <input type="text" id="2022-3-3-1" name='2022-3-3-1'><button onclick="gpt('2022-3-3-1')">Submit</button>
-		<div id="result-box-2022-3-3-1">ChatGPT: Answer 1-1</div>
+		<div id="result-box-2022-3-3-1">[correct/incorrect]</div>
 
 	* Your answer of 1-2: <input type="text" id="2022-3-3-2" name='2022-3-3-2'><button onclick="gpt('2022-3-3-2')">Submit</button>
-		<div id="result-box-2022-3-3-2">ChatGPT: Answer 1-2</div>
+		<div id="result-box-2022-3-3-2">[correct/incorrect]</div>
 
 2. Your answer of 2: <input type="text" id="2022-3-3-3" name='2022-3-3-3'><button onclick="gpt('2022-3-3-3')">Submit</button>
-	<div id="result-box-2022-3-3-3">ChatGPT: Answer 2</div>
+	<div id="result-box-2022-3-3-3">[correct/incorrect]</div>
 
 3. Your answer of 3: <input type="text" id="2022-3-3-4" name='2022-3-3-4'><button onclick="gpt('2022-3-3-4')">Submit</button>
-	<div id="result-box-2022-3-3-4">ChatGPT: Answer 3</div>
+	<div id="result-box-2022-3-3-4">[correct/incorrect]</div>
 4. Your answer of 4: <input type="text" id="2022-3-3-5" name='2022-3-3-5'><button onclick="gpt('2022-3-3-5')">Submit</button>
 
-	<div id="result-box-2022-3-3-5">ChatGPT: Answer 4</div>
+	<div id="result-box-2022-3-3-5">[correct/incorrect]</div>
