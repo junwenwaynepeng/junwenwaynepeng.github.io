@@ -19,8 +19,8 @@ customjs:
 <input type="text" id="api-key" name="api-key">
 
 1. 
-	* Your answer of 1-1: <input type="text" id="2022-3-3-1" name='2022-3-3-1'><button onclick="gpt('2022-3-3-1')">Submit</button><br><br><div id="result-box-2022-3-3-1">ChatGPT will show your answer is correct or not</div>
-	* Your answer of 1-2: <input type="text" id="2022-3-3-2" name='2022-3-3-2'><button onclick="gpt('2022-3-3-2')">Submit</button><br><br><div id="result-box-2022-3-3-2">ChatGPT will show your answer is correct or not</div>
-2. Your answer of 2: <input type="text" id="2022-3-3-3" name='2022-3-3-3'><button onclick="gpt('2022-3-3-3')">Submit</button><br><br><div id="result-box-2022-3-3-3">ChatGPT will show your answer is correct or not</div>
-3. Your answer of 3: <input type="text" id="2022-3-3-4" name='2022-3-3-4'><button onclick="gpt('2022-3-3-4')">Submit</button><br><br><div id="result-box-2022-3-3-4">ChatGPT will show your answer is correct or not</div>
-4. Your answer of 4: <input type="text" id="2022-3-3-5" name='2022-3-3-5'><button onclick="gpt('2022-3-3-5')">Submit</button><br><br><div id="result-box-2022-3-3-5">ChatGPT will show your answer is correct or not</div>
+	* Your answer of 1-1: <input type="text" id="2022-3-3-1" name='2022-3-3-1'><button onclick="gpt('2022-3-3-1')">Submit</button><br> <div id="result-box-2022-3-3-1">ChatGPT will show your answer is correct or not</div>
+	* Your answer of 1-2: <input type="text" id="2022-3-3-2" name='2022-3-3-2'><button onclick="gpt('2022-3-3-2')">Submit</button><br> <div id="result-box-2022-3-3-2">ChatGPT will show your answer is correct or not</div>
+2. Your answer of 2: <input type="text" id="2022-3-3-3" name='2022-3-3-3'><button onclick="gpt('2022-3-3-3')">Submit</button><br> <div id="result-box-2022-3-3-3">ChatGPT will show your answer is correct or not</div>
+3. Your answer of 3: <input type="text" id="2022-3-3-4" name='2022-3-3-4'><button onclick="gpt('2022-3-3-4')">Submit</button><br> <div id="result-box-2022-3-3-4">ChatGPT will show your answer is correct or not</div>
+4. Your answer of 4: <input type="text" id="2022-3-3-5" name='2022-3-3-5'><button onclick="gpt('2022-3-3-5')">Submit</button><br> <div id="result-box-2022-3-3-5">ChatGPT will show your answer is correct or not</div>
