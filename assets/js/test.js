@@ -44,6 +44,7 @@ function gpt(id){
       }
 
       // Assign the openai_0 function to the onclick event of the button
-      document.getElementById(id).onclick = openai_0;
+      // document.getElementById(id).onclick = openai_0;
+      openai_0;
     });
 }
