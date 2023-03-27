@@ -1,6 +1,6 @@
 // Fetch the template text from file
 function gpt(id){
-  fetch('../assets/js/chatgpt/${id}')
+  fetch('../assets/js/chatgpt/${id}.txt')
     .then(response => response.text())
     .then(text => {
       // Once the template is loaded, define the openai_0 function
