@@ -29,7 +29,7 @@ function gpt(id){
       };
 
       data.prompt = data.prompt.replace('{input}', answer);
-      const  data = JSON.stringify(data);
+      data = JSON.stringify(data);
       console.log(data);
       xhr.send(data);
 
