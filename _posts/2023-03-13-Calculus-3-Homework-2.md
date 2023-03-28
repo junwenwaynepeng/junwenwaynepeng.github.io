@@ -5,7 +5,7 @@ tags: ["Calculus 3", "homework"]
 css: 
   - ../assets/css/collapse.css
 js:
-  - ../assets/js/collapse.js
+   q- ../assets/js/collapse.js
 ---
 
 # Calculus 3 Homework 2
@@ -27,7 +27,7 @@ js:
 
 <div class="collapse">
   <button class="collapse-btn">Show Answer</button>
-  <div class="collapse-content">
+  <div class="collapse-content.show">
     1. test
     2. test
     3. test
