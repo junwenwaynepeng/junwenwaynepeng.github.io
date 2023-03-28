@@ -25,7 +25,7 @@ tags: ["Calculus 3", "homework"]
 <summary> Expand </summary>
 
 1. We Let $f(x,y)=\frac{xy}{x^2+y^2}$, and we calculate
-	$$f_x=\frac{\partial f}{\partial x} = \frac{y^2(x^2+y^2)-2x^2y^2}{(x^2+y^2)^2} \text{ and }f_y=\frac{\partial f}{\partial y} = \frac{2xy(x^2+y^2)-2xy^3}{(x^2+y^2)^2}$$
+$$f_x=\frac{\partial f}{\partial x} = \frac{y^2(x^2+y^2)-2x^2y^2}{(x^2+y^2)^2} \text{ and }f_y=\frac{\partial f}{\partial y} = \frac{2xy(x^2+y^2)-2xy^3}{(x^2+y^2)^2}$$
 	
 	* By formula, it is $z-f(1,1) = f_x(1,1)(x-1)+f_y(1,1)(y-1)$ which is
 	$$z- \frac{1}{2} = \frac{1}{2}(y-1)$$
@@ -50,7 +50,7 @@ tags: ["Calculus 3", "homework"]
 	This shows that $f$ is continuous at $(0,0)$. We can use similar idea to show that $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$ exist.
 
 3. We know
-	$$\sin(x) = x-\frac{1}{3!}x^3+\cdots\text{ and }\ln(1-y) = y+\frac{1}{2}y^2+\frac{1}{3}y^3+\cdots.$$
+$$\sin(x) = x-\frac{1}{3!}x^3+\cdots\text{ and }\ln(1-y) = y+\frac{1}{2}y^2+\frac{1}{3}y^3+\cdots.$$
 Therefore, $\sin(x)\ln(1-y) = (x-\frac{1}{3!}x^3+\cdots)(y+\frac{1}{2}y^2+\frac{1}{3}y^3+\cdots)$. The order 3 expansion is $xy+\frac{1}{2}xy^2$.
 
 
