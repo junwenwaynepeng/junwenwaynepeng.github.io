@@ -23,15 +23,15 @@ tags: ["Calculus 3", "homework"]
 <summary> Expand </summary>
 
 1. We Let $f(x,y)=\frac{xy}{x^2+y^2}$, and we calculate
-$$f_x=\frac{\partial f}{\partial x} = \frac{y^2(x^2+y^2)-2x^2y^2}{(x^2+y^2)^2} \text{ and }f_y=\frac{\partial f}{\partial y} = \frac{2xy(x^2+y^2)-2xy^3}{(x^2+y^2)^2}$$
+$$f_x=\frac{\partial f}{\partial x} = \frac{y^2(x^2+y^2)-2x^2y^2}{(x^2+y^2)^2} \text{ and }f_y=\frac{\partial f}{\partial y} = \frac{2xy(x^2+y^2)-2xy^3}{(x^2+y^2)^2}.$$
 	* By formula, it is $z-f(1,1) = f_x(1,1)(x-1)+f_y(1,1)(y-1)$ which is
 	$$z- \frac{1}{2} = \frac{1}{2}(y-1)$$
 	* The tangent plain is also a tangent plain of the level surface $z-f(x,y)=0$. We compute the gradient of $F(x,y,z)=z-f(x,y)$ at $(1,1,f(1,1))$. They are
 	$$\frac{\partial F}{\partial x} = f_x\text{, }\frac{\partial F}{\partial y} = f_y\text{ and }\frac{\partial F}{\partial z} = 1.$$
-	Thus, by formula, the tangent plain is $F_x(1,1)(x-1) + F_y(1,1)(y-1) + F_z(1,1)(z-\frac{1}{2})=0$. 
+	Thus, by formula, the tangent plain is $F_x(1,1,1/2)(x-1) + F_y(1,1,1/2)(y-1) + F_z(1,1,1/2)(z-\frac{1}{2})=0$. 
 2. 
-	* $\frac{\partial^2 f}{\partial x\partial y} = \frac{x^6+9x^4y^2-9x^2y^4-y^6}{(x^2+y^2)^3}$	
-	* $\frac{\partial^2 f}{\partial x\partial y} = \frac{x^6+9x^4y^2-9x^2y^4-y^6}{(x^2+y^2)^3}$
+	* $\frac{\partial^2 f}{\partial x\partial y} = \frac{x^6+9x^4y^2-9x^2y^4-y^6}{(x^2+y^2)^3}$.	
+	* $\frac{\partial^2 f}{\partial x\partial y} = \frac{x^6+9x^4y^2-9x^2y^4-y^6}{(x^2+y^2)^3}$.
 	* We interpreter $\frac{\partial^2 f}{\partial x\partial y}(0,0)$ as the derivative of $\frac{\partial f}{\partial y}(x,y)$ along the $x$-axis. Thus, we can set $y=0$ in $\frac{\partial f}{\partial x}(x,y)$ and get
 	$$\frac{\partial}{\partial x}\frac{\partial f}{\partial y}(x,0)=1.$$
 	Similarly, we interpreter $\frac{\partial^2 f}{\partial y\partial x}(0,0)$ as the derivative of $\frac{\partial f}{\partial x}$ along the $y$-axis. Thus, we can set $x=0$ in $\frac{\partial f}{\partial y}(x, y)$ and get
