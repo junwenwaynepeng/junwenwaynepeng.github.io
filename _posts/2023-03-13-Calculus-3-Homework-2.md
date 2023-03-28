@@ -25,17 +25,11 @@ tags: ["Calculus 3", "homework"]
 <summary> Expand </summary>
 
 1. We Let $f(x,y)=\frac{xy}{x^2+y^2}$, and we calculate
-\[
-f_x=\frac{\partial f}{\partial x} = \frac{y^2(x^2+y^2)-2x^2y^2}{(x^2+y^2)^2} \text{ and }f_y=\frac{\partial f}{\partial y} = \frac{2xy(x^2+y^2)-2xy^3}{(x^2+y^2)^2}
-\]
+\[f_x=\frac{\partial f}{\partial x} = \frac{y^2(x^2+y^2)-2x^2y^2}{(x^2+y^2)^2} \text{ and }f_y=\frac{\partial f}{\partial y} = \frac{2xy(x^2+y^2)-2xy^3}{(x^2+y^2)^2}\]
 	* By formula, it is $z-f(1,1) = f_x(1,1)(x-1)+f_y(1,1)(y-1)$ which is
-	\[
-	z- \frac{1}{2} = \frac{1}{2}(y-1)
-	\]
+	\[z- \frac{1}{2} = \frac{1}{2}(y-1)\]
 	* The tangent plain is also a tangent plain of the level surface $z-f(x,y)=0$. We compute the gradient of $F(x,y,z)=z-f(x,y)$ at $(1,1,f(1,1))$. They are
-	\[
-	\frac{\partial F}{\partial x} = f_x\text{, }\frac{\partial F}{\partial y} = f_y\text{ and }\frac{\partial F}{\partial z} = 1.
-	\]
+	\[\frac{\partial F}{\partial x} = f_x\text{, }\frac{\partial F}{\partial y} = f_y\text{ and }\frac{\partial F}{\partial z} = 1.\]
 	Thus, by formula, the tangent plain is $F_x(1,1)(x-1) + F_y(1,1)(y-1) + F_z(1,1)(z-\frac{1}{2})=0$. 
 2. test
 3. We know
