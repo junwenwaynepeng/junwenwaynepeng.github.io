@@ -40,9 +40,9 @@ $$f_x=\frac{\partial f}{\partial x} = \frac{y^2(x^2+y^2)-2x^2y^2}{(x^2+y^2)^2} \
 	Similarly, we interpreter $\frac{\partial^2 f}{\partial y\partial x}(0,0)$ as the derivative of $\frac{\partial f}{\partial x}$ along the $y$-axis. Thus, we can set $x=0$ in $\frac{\partial f}{\partial y}(x, y)$ and get
 	$$\frac{\partial}{\partial y}\frac{\partial f}{\partial x}(x,0)=-1.$$
 	This shows that $\frac{\partial^2 f}{\partial x\partial y}(0,0)\neq\frac{\partial^2 f}{\partial y\partial x}(0,0)$.
-	* (Extra) We actually needs to show that the $f(x,y)$ at $(0,0)$ is continue and differentiable. To show, it is continue, we have to show that $f(x,y)\to 0$ as $(x,y)\to 0$. To achieve this, for any $t$, we let $y=tx$, so as $x\to 0$, $(x,y)$ converges to $(0,0)$ along $y=tx$. We examine 
+	* (Extra) It actually requires to show that the $f(x,y)$ at $(0,0)$ is continue and differentiable. To show, it is continue, we have to show that $f(x,y)\to 0$ as $(x,y)\to 0$. To achieve this, for any $t$, we let $y=tx$, so as $x\to 0$, $(x,y)$ converges to $(0,0)$ along $y=tx$. We examine 
 	$$\lim_{x\to 0}f(x,tx) = \lim_{x\to 0}\frac{t(1-t^2)x^4}{(1+t^2)x^2} = 0.$$
-	This shows that $f$ is continuous at $(0,0)$. We can use similar idea to show that $\frac{\partial f}{\partial x}$ and $\frac{\partail f}{\partial y}$ exist.
+	This shows that $f$ is continuous at $(0,0)$. We can use similar idea to show that $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$ exist.
 
 3. We know
 $$\sin(x) = x-\frac{1}{3!}x^3+\cdots\text{ and }\ln(1-y) = y+\frac{1}{2}y^2+\frac{1}{3}y^3+\cdots.$$
