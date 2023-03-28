@@ -256,8 +256,12 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
-kramdown:
-  input: GFM
+#kramdown:
+#  input: GFM
+commonmark:
+  options: ["UNSAFE", "SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+
 
 # Default YAML values (more information on Jekyll's site)
 defaults:

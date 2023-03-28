@@ -4,8 +4,6 @@ subtitle: Tangent spaces and Partial Derivative
 tags: ["Calculus 3", "homework"]
 ---
 
-# Calculus 3 Homework 2
-
 1. To find tangent plain of the surface $z=f(x,y)$ at $(a,b)$, we can either consider using linear approximation or consider that the surface is a level surface of the function $w=F(x,y,z)$, where $F(x,y,z)=z-f(x,y)$, for $w=0$, and then we use the fact that a gradient is perpendicular to the level surface.
 	* Use linear approximation to find the tangent space of $z=\frac{xy^2}{x^2+y^2}$ at $(1,1)$.
 	* Use level surface to find the the tangent space again
@@ -39,7 +37,7 @@ $$f_x=\frac{\partial f}{\partial x} = \frac{y^2(x^2+y^2)-2x^2y^2}{(x^2+y^2)^2} \
 	Similarly, we interpreter $\frac{\partial^2 f}{\partial y\partial x}(0,0)$ as the derivative of $\frac{\partial f}{\partial x}$ along the $y$-axis. Thus, we can set $x=0$ in $\frac{\partial f}{\partial y}(x, y)$ and get
 	$$\frac{\partial}{\partial y}\frac{\partial f}{\partial x}(x,0)=-1.$$
 	This shows that $\frac{\partial^2 f}{\partial x\partial y}(0,0)\neq\frac{\partial^2 f}{\partial y\partial x}(0,0)$.
-	* (Extra) It actually requires to show that the $f(x,y)$ at $(0,0)$ is continuous and differentiable. To show, it is continue, we have to show that $f(x,y)\to 0$ as $(x,y)\to 0$. To achieve this, for any $t$, we let $y=tx$, so as $x\to 0$, $(x,y)$ converges to $(0,0)$ along $y=tx$. We examine 
+	* (Extra) It actually requires to show that the $f(x,y)$ at $(0,0)$ is continuous and differentiable. To show, it is continuous, we have to show that $f(x,y)\to 0$ as $(x,y)\to 0$. To achieve this, for any $t$, we let $y=tx$, so as $x\to 0$, $(x,y)$ converges to $(0,0)$ along $y=tx$. We examine 
 	$$\lim_{x\to 0}f(x,tx) = \lim_{x\to 0}\frac{t(1-t^2)x^4}{(1+t^2)x^2} = 0.$$
 	This shows that $f$ is continuous at $(0,0)$. We can use similar idea to show that $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$ exist.
 
