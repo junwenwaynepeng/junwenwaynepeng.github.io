@@ -25,11 +25,9 @@ js:
 
 # Solutions
 
-<div class="collapse">
-  <button class="collapse-btn">Show Answer</button>
-  <div class="collapse-content.show">
-    1. test
-    2. test
-    3. test
-  </div>
-</div>
+<details>
+<summary> Expand </summary>
+1. test
+2. test
+3. test
+</details>
