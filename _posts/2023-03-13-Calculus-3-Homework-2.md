@@ -5,7 +5,7 @@ tags: ["Calculus 3", "homework"]
 css: 
   - ../assets/css/collapse.css
 js:
-   q- ../assets/js/collapse.js
+  - ../assets/js/collapse.js
 ---
 
 # Calculus 3 Homework 2
