@@ -3,9 +3,9 @@ title: Calculus 3 homework 2
 subtitle: Tangent spaces and Partial Derivative
 tags: ["Calculus 3", "homework"]
 css: 
-	- ../assets/css/collapse.css
+  - ../assets/css/collapse.css
 js:
-	- ../assets/js/collapse.js
+  - ../assets/js/collapse.js
 ---
 
 # Calculus 3 Homework 2
