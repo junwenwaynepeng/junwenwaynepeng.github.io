@@ -16,8 +16,8 @@ customjs:
   * In the following, we will use python to solve $(m,k)$. Read the following code and modified to what you need. 
       <div class="compute">
       vars = var("x y z")                                 # tell your computer to set x, y, and z to be variable
-  f = 100*(y-x^2)^2 + (1-x)^2+100*(z-y^2)^2 + (1-y)^2 # set-up functions
-  minimize(f, [0.1, 0.3, 0.4])                        # find (a,b,c) such that f(a,b,c) is a minimum of $f$.  
+    f = 100*(y-x^2)^2 + (1-x)^2+100*(z-y^2)^2 + (1-y)^2 # set-up functions
+    minimize(f, [0.1, 0.3, 0.4])                        # find (a,b,c) such that f(a,b,c) is a minimum of $f$.  
       </div>
 
     * The ```[0.1, 0.3, 0.4]``` is some randomly pick initial value. And, we can randomly choice one in this situation. For more details about ```minimize```, please refer to this [document](https://doc.sagemath.org/html/en/reference/numerical/sage/numerical/optimize.html#sage.numerical.optimize.minimize).
