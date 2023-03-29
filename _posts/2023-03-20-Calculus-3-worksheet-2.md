@@ -58,7 +58,7 @@ in the theorem of Lagrange multipliers.
         for x, y in point_list:
           f = f + (e^(x*m) +k - y)^2
         minimize(f, initial_vector)
-```
+        ```
 
 
 </details>
