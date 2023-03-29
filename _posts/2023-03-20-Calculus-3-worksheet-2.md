@@ -39,52 +39,52 @@ in the theorem of Lagrange multipliers.
 <details>
   <summary> Expand </summary>
  
-  1. 
-    * $E(m,k) = (e^{0}+k-2)^2 + (e^{m}+k-3)^2 + (e^{2m}+k-5)^2 +(e^{4m}+k-6)$.
-    * If a local extreme value happens at a point on a surface, then the tangent plain at the point will be parallel to the $xy$-plain, i.e. the derivative along $x$-axis and $y$-axis are zeros.
-    * We will plugin the critical points that we found in the second step to $D(x,y)$ and $\frac{\partial^2 f}{\partial x^2}$ and see if they are positive, negative, or zero. Then, we use the second order test to determine if the points are maximum, minimum, or saddle.
-    * code:
-        ```python
-        vars = var('m k')
-        f = (e^{0}+k-2)^2 + (e^{m}+k-3)^2 + (e^{2m}+k-5)^2 +(e^{4m}+k-6)
-        minimize(f, [0.1, 0.3])
-        ```
-    * code:
-        ```python
-        vars = var('m k')
-        initial_vector = [(0, 0)]
-        point_list = [(0, 2),(1, 3),(2, 5),(4, 6)]
-        f = 0
-        for x, y in point_list:
-          f = f + (e^(x*m) +k - y)^2
-        minimize(f, initial_vector)
-        ```
+1. 
+  * $E(m,k) = (e^{0}+k-2)^2 + (e^{m}+k-3)^2 + (e^{2m}+k-5)^2 +(e^{4m}+k-6)$.
+  * If a local extreme value happens at a point on a surface, then the tangent plain at the point will be parallel to the $xy$-plain, i.e. the derivative along $x$-axis and $y$-axis are zeros.
+  * We will plugin the critical points that we found in the second step to $D(x,y)$ and $\frac{\partial^2 f}{\partial x^2}$ and see if they are positive, negative, or zero. Then, we use the second order test to determine if the points are maximum, minimum, or saddle.
+  * code:
+      ```python
+      vars = var('m k')
+      f = (e^{0}+k-2)^2 + (e^{m}+k-3)^2 + (e^{2m}+k-5)^2 +(e^{4m}+k-6)
+      minimize(f, [0.1, 0.3])
+      ```
+  * code:
+      ```python
+      vars = var('m k')
+      initial_vector = [(0, 0)]
+      point_list = [(0, 2),(1, 3),(2, 5),(4, 6)]
+      f = 0
+      for x, y in point_list:
+        f = f + (e^(x*m) +k - y)^2
+      minimize(f, initial_vector)
+      ```
 
-  2. 
-    * Let us set up the system of equations.
-        $$
-        \begin{cases}
-        y = \lambda 2x\\
-        x = \lambda 2y\\
-        x^2+y^2=1
-        \end{cases}
-        $$
-        By dividing the first equation over the second equation, the system of equations becomes
-        $$
-        \begin{cases}
-        \frac{y}{x} = \frac{x}{y}\\
-        x^2+y^2=1
-        \end{cases}
-        $$
-        This one is easy to solve, and we will get $x=\pm\frac{1}{\sqrt{2}}$ and $y=\pm\frac{1}{\sqrt{2}}$.
-    * A level curve that passes throught one of the critical points is $\frac{1}{2}=xy$, and the other one is $-\frac{1}{2}=xy$. See the following for graph.
-        <div class="compute">
-        vars = var("x y")                                     # tell your computer to set x and y as variables
-        constrain = implicit_plot(x^2+y^2-1, (x,-4,4), (y,-4,4), color="red")     # draw x^2+y^2=1
-        level_curve_1 = implicit_plot(x*y-1/2, (x,-4,4), (y,-4,4), color="blue")  # draw a level curve
-        level_curve_2 = implicit_plot(x*y+1/2, (x,-4,4), (y,-4,4), color="green") # draw another level curve
-        (constrain+level_curve_1+level_curve_2).show()        # print out those curves
-        </div>
+2. 
+  * Let us set up the system of equations.
+      $$
+      \begin{cases}
+      y = \lambda 2x\\
+      x = \lambda 2y\\
+      x^2+y^2=1
+      \end{cases}
+      $$
+      By dividing the first equation over the second equation, the system of equations becomes
+      $$
+      \begin{cases}
+      \frac{y}{x} = \frac{x}{y}\\
+      x^2+y^2=1
+      \end{cases}
+      $$
+      This one is easy to solve, and we will get $x=\pm\frac{1}{\sqrt{2}}$ and $y=\pm\frac{1}{\sqrt{2}}$.
+  * A level curve that passes throught one of the critical points is $\frac{1}{2}=xy$, and the other one is $-\frac{1}{2}=xy$. See the following for graph.
+      <div class="compute">
+      vars = var("x y")                                     # tell your computer to set x and y as variables
+      constrain = implicit_plot(x^2+y^2-1, (x,-4,4), (y,-4,4), color="red")     # draw x^2+y^2=1
+      level_curve_1 = implicit_plot(x*y-1/2, (x,-4,4), (y,-4,4), color="blue")  # draw a level curve
+      level_curve_2 = implicit_plot(x*y+1/2, (x,-4,4), (y,-4,4), color="green") # draw another level curve
+      (constrain+level_curve_1+level_curve_2).show()        # print out those curves
+      </div>
 </details>
 
 ---
