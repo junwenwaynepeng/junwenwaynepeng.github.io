@@ -62,7 +62,6 @@ in the theorem of Lagrange multipliers.
 
 2. 
   * Let us set up the system of equations.
-
   This one is easy to solve, and we will get $x=\pm\frac{1}{\sqrt{2}}$ and $y=\pm\frac{1}{\sqrt{2}}$.
   * A level curve that passes throught one of the critical points is $\frac{1}{2}=xy$, and the other one is $-\frac{1}{2}=xy$. See the following for graph.
       <div class="compute">
