@@ -45,7 +45,7 @@ in the theorem of Lagrange multipliers.
 vars = var('m k')
 f = (e^{0}+k-2)^2 + (e^{m}+k-3)^2 + (e^{2m}+k-5)^2 +(e^{4m}+k-6)
 minimize(f, [0.1, 0.3])
-    ```
+```
     * ```python
 vars = var('m k')
 initial_vector = [(0, 0)]
@@ -54,7 +54,8 @@ f = 0
 for x, y in point_list:
   f = f + (e^(x*m) +k - y)^2
 minimize(f, initial_vector)
-    ```
+```
+
   2.
     * Let us set up the system of equations.
     $$
