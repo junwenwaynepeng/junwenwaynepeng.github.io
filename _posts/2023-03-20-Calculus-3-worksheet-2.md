@@ -14,13 +14,13 @@ customjs:
   * Second, we will set up a system of equations by assuming that the gradient of $E(m,k)$ is the zero vector. Can you explain why we need to do this? You don't need to solve the equation.
   * Third, we will compute the discriminant $D(x,y)$ of $E(m,k)$. Can you explain how you plain to use $D(x,y)$ if you solve the system of equations above.
   * In the following, we will use python to solve $(m,k)$. Read the following code and modified to what you need. 
-<div class="compute">
-vars = var("x y z")                                 # tell your computer to set x, y, and z to be variable
-f = 100*(y-x^2)^2 + (1-x)^2+100*(z-y^2)^2 + (1-y)^2 # set-up functions
-minimize(f, [0.1, 0.3, 0.4])                        # find (a,b,c) such that f(a,b,c) is a minimum of $f$.  
-</div>
+      <div class="compute">
+      vars = var("x y z")                                 # tell your computer to set x, y, and z to be variable
+      f = 100*(y-x^2)^2 + (1-x)^2+100*(z-y^2)^2 + (1-y)^2 # set-up functions
+      minimize(f, [0.1, 0.3, 0.4])                        # find (a,b,c) such that f(a,b,c) is a minimum of $f$.  
+      </div>
 
-    * The `[0.1, 0.3, 0.4]` is some randomly pick initial value. And, we can randomly choice one in this situation. For more details about `minimize`, please refer to this [document](https://doc.sagemath.org/html/en/reference/numerical/sage/numerical/optimize.html#sage.numerical.optimize.minimize).
+    * The ```[0.1, 0.3, 0.4]``` is some randomly pick initial value. And, we can randomly choice one in this situation. For more details about ```minimize```, please refer to this [document](https://doc.sagemath.org/html/en/reference/numerical/sage/numerical/optimize.html#sage.numerical.optimize.minimize).
     * There are different algorithms to find extreme values of a function. The most basic version of these algorithms is [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method).
   * (A challenge question) Make your code as general as possible. You can start by making a code that can find the best-fitting exponential function for any given set of data.
 
