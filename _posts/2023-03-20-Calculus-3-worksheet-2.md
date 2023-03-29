@@ -61,23 +61,22 @@ in the theorem of Lagrange multipliers.
         ```
   2. 
     * Let us set up the system of equations.
-    $$
-    \begin{cases}
-    y = \lambda 2x\\
-    x = \lambda 2y\\
-    x^2+y^2=1
-    \end{cases}
-    $$
-    By dividing the first equation over the second equation, the system of equations becomes
-    $$
-    \begin{cases}
-    \frac{y}{x} = \frac{x}{y}\\
-    x^2+y^2=1
-    \end{cases}
-    $$
-    This one is easy to solve, and we will get $x=\pm\frac{1}{\sqrt{2}}$ and $y=\pm\frac{1}{\sqrt{2}}$.
+        $$
+        \begin{cases}
+        y = \lambda 2x\\
+        x = \lambda 2y\\
+        x^2+y^2=1
+        \end{cases}
+        $$
+        By dividing the first equation over the second equation, the system of equations becomes
+        $$
+        \begin{cases}
+        \frac{y}{x} = \frac{x}{y}\\
+        x^2+y^2=1
+        \end{cases}
+        $$
+        This one is easy to solve, and we will get $x=\pm\frac{1}{\sqrt{2}}$ and $y=\pm\frac{1}{\sqrt{2}}$.
     * A level curve that passes throught one of the critical points is $\frac{1}{2}=xy$, and the other one is $-\frac{1}{2}=xy$. See the following for graph.
-
         <div class="compute">
         vars = var("x y")                                     # tell your computer to set x and y as variables
         constrain = implicit_plot(x^2+y^2-1, (x,-4,4), (y,-4,4), color="red")     # draw x^2+y^2=1
