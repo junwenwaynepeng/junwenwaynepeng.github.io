@@ -59,15 +59,15 @@ minimize(f, initial_vector)
     * Let us set up the system of equations.
     $$
     \begin{cases}
-    y = \lambda 2x\\
-    x = \lambda 2y\\
+    y = \lambda 2x\\\
+    x = \lambda 2y\\\
     x^2+y^2=1
     \end{cases}
     $$
     By dividing the first equation over the second equation, the system of equations becomes
     $$
     \begin{cases}
-    \frac{y}{x} = \frac{x}{y}\\
+    \frac{y}{x} = \frac{x}{y}\\\
     x^2+y^2=1
     \end{cases}
     $$
