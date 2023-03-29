@@ -61,14 +61,12 @@ in the theorem of Lagrange multipliers.
       ```
 
 2. 
-  * Let us set up the system of equations.
-  $$
-  \begin{cases}
+  * Let us set up the system of equations.\
+  $\begin{cases}
     y = \lambda 2x,\\
     x = \lambda 2y,\\
     x^2+y^2=1
-  \end{cases}
-  $$
+  \end{cases}$
   By dividing the first equation over the second equation, the system of equations becomes
   $$
   \begin{cases}
