@@ -80,10 +80,10 @@ in the theorem of Lagrange multipliers.
   * A level curve that passes throught one of the critical points is $\frac{1}{2}=xy$, and the other one is $-\frac{1}{2}=xy$. See the following for graph.
       <div class="compute">
       vars = var("x y")                                     # tell your computer to set x and y as variables
-      constrain = implicit_plot(x^2+y^2-1, (x,-4,4), (y,-4,4), color="red")     # draw x^2+y^2=1
-      level_curve_1 = implicit_plot(x*y-1/2, (x,-4,4), (y,-4,4), color="blue")  # draw a level curve
-      level_curve_2 = implicit_plot(x*y+1/2, (x,-4,4), (y,-4,4), color="green") # draw another level curve
-      (constrain+level_curve_1+level_curve_2).show()        # print out those curves
+    constrain = implicit_plot(x^2+y^2-1, (x,-4,4), (y,-4,4), color="red")     # draw x^2+y^2=1
+    level_curve_1 = implicit_plot(x*y-1/2, (x,-4,4), (y,-4,4), color="blue")  # draw a level curve
+    level_curve_2 = implicit_plot(x*y+1/2, (x,-4,4), (y,-4,4), color="green") # draw another level curve
+    (constrain+level_curve_1+level_curve_2).show()        # print out those curves
       </div>
 </details>
 
