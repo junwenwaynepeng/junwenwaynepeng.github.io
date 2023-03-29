@@ -62,14 +62,15 @@ in the theorem of Lagrange multipliers.
 
 2. 
   * Let us set up the system of equations.
-    $$
-    a=
-    \begin{cases}
-    y = \lambda 2x,\\
-    x = \lambda 2y,\\
-    x^2+y^2=1
-    \end{cases}
-    $$
+  
+  $$
+  a=
+  \begin{cases}
+  y = \lambda 2x,\\
+  x = \lambda 2y,\\
+  x^2+y^2=1
+  \end{cases}
+  $$
   By dividing the first equation over the second equation, the system of equations becomes
   $$
   c=
