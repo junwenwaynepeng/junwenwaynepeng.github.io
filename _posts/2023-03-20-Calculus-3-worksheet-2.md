@@ -59,9 +59,6 @@ in the theorem of Lagrange multipliers.
           f = f + (e^(x*m) +k - y)^2
         minimize(f, initial_vector)
         ```
-  2. 
-    * Let us set up the system of equations.
-
 </details>
 
 ---
