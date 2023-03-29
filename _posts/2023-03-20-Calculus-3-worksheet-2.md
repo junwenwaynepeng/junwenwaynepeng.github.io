@@ -60,7 +60,7 @@ in the theorem of Lagrange multipliers.
         minimize(f, initial_vector)
         ```
 
-  2.
+  2. 
     * Let us set up the system of equations.
     $$
     \begin{cases}
