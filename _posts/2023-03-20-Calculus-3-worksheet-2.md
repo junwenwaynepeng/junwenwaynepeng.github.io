@@ -64,8 +64,8 @@ in the theorem of Lagrange multipliers.
   * Let us set up the system of equations.\
   \[
   \begin{cases}
-    y = \lambda 2x,\\
-    x = \lambda 2y,\\
+    y = \lambda 2x,\\\\
+    x = \lambda 2y,\\\\
     x^2+y^2=1
   \end{cases}
   \]
