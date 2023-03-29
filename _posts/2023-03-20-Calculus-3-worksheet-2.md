@@ -41,14 +41,12 @@ in the theorem of Lagrange multipliers.
     * $E(m,k) = (e^{0}+k-2)^2 + (e^{m}+k-3)^2 + (e^{2m}+k-5)^2 +(e^{4m}+k-6)$.
     * If a local extreme value happens at a point on a surface, then the tangent plain at the point will be parallel to the $xy$-plain, i.e. the derivative along $x$-axis and $y$-axis are zeros.
     * We will plugin the critical points that we found in the second step to $D(x,y)$ and $\frac{\partial^2 f}{\partial x^2}$ and see if they are positive, negative, or zero. Then, we use the second order test to determine if the points are maximum, minimum, or saddle.
-    * 
-```python
+    * a ```python
 vars = var('m k')
 f = (e^{0}+k-2)^2 + (e^{m}+k-3)^2 + (e^{2m}+k-5)^2 +(e^{4m}+k-6)
 minimize(f, [0.1, 0.3])
 ```
-    * 
-```python
+    * b ```python
 vars = var('m k')
 initial_vector = [(0, 0)]
 point_list = [(0, 2),(1, 3),(2, 5),(4, 6)]
