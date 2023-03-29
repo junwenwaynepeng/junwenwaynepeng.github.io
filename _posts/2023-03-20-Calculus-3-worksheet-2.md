@@ -76,15 +76,15 @@ minimize(f, initial_vector)
     This one is easy to solve, and we will get $x=\pm\frac{1}{\sqrt{2}}$ and $y=\pm\frac{1}{\sqrt{2}}$.
     * A level curve that passes throught one of the critical points is $\frac{1}{2}=xy$, and the other one is $-\frac{1}{2}=xy$. See the following for graph.
       <div class="sage">
-      <script type="text/x-sage">
+        <script type="text/x-sage">
 @interact
 vars = var('x y')                                     # tell your computer to set x and y as variables
 constrain = implicit_plot(x^2+y^2=1, color='red')     # draw x^2+y^2=1
 level_curve_1 = implicit_plot(xy=1/2, color='blue')   # draw a level curve
 level_curve_2 = implicit_plot(xy=-1/2, color='green') # draw another level curve
 (constrain+level_curve_1+level_curve_2).show()        # print out those curves
-      </script>
-    </div>
+        </script>
+      </div>
 
 </details>
 
