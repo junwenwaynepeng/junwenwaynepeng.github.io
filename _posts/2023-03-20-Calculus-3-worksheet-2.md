@@ -33,6 +33,8 @@ in the theorem of Lagrange multipliers.
   * Observe and explain what you see in the above graph.
   * Interpret your observation using gradients. (Hint: a key word is "parallel.") Now you can see why the equation makes sense.
 
+---
+
 ## Answer
 <details>
   <summary> Expand </summary>
@@ -41,7 +43,7 @@ in the theorem of Lagrange multipliers.
     * $E(m,k) = (e^{0}+k-2)^2 + (e^{m}+k-3)^2 + (e^{2m}+k-5)^2 +(e^{4m}+k-6)$.
     * If a local extreme value happens at a point on a surface, then the tangent plain at the point will be parallel to the $xy$-plain, i.e. the derivative along $x$-axis and $y$-axis are zeros.
     * We will plugin the critical points that we found in the second step to $D(x,y)$ and $\frac{\partial^2 f}{\partial x^2}$ and see if they are positive, negative, or zero. Then, we use the second order test to determine if the points are maximum, minimum, or saddle.
-    * ```python
+    * ```
 vars = var('m k')
 f = (e^{0}+k-2)^2 + (e^{m}+k-3)^2 + (e^{2m}+k-5)^2 +(e^{4m}+k-6)
 minimize(f, [0.1, 0.3])
@@ -58,6 +60,8 @@ minimize(f, initial_vector)
 
 
 </details>
+
+---
 
 ## OpenAI Answer Check (Beta)
 API Key: You can get your key by following the following steps [link](https://mrtang.tw/blog/post/how-to-apply-for-a-chatgpt-api-key)
