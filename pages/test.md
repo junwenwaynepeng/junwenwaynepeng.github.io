@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Publication
+title: Test
 subtitle: I have a broad interest in anything. <br> I enjoy both theory and application!
 ---
+
 # head1
 
 test
