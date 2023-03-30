@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Test
-sidebar: true
 ---
 
 # head1
