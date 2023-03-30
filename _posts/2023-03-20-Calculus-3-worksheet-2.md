@@ -85,6 +85,7 @@ in the theorem of Lagrange multipliers.
     level_curve_2 = implicit_plot(x*y+1/2, (x,-4,4), (y,-4,4), color="green") # draw another level curve
     (constrain+level_curve_1+level_curve_2).show()        # print out those curves
       </div>
+  * The level curves and constrain are tangent at those points where have extreme values.
 </details>
 
 ---
