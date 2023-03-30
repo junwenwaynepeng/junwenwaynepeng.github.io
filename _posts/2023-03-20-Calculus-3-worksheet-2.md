@@ -72,7 +72,7 @@ in the theorem of Lagrange multipliers.
   By dividing the first equation over the second equation, the system of equations becomes
   $$
   \begin{cases}
-  \frac{y}{x} = \frac{x}{y},\\
+  \frac{y}{x} = \frac{x}{y},\\\\
   x^2+y^2=1
   \end{cases}
   $$
@@ -85,7 +85,11 @@ in the theorem of Lagrange multipliers.
     level_curve_2 = implicit_plot(x*y+1/2, (x,-4,4), (y,-4,4), color="green") # draw another level curve
     (constrain+level_curve_1+level_curve_2).show()        # print out those curves
       </div>
-  * The level curves and constrain are tangent at those points where have extreme values.
+  * The level curves and the constraint are tangent at the points where they have extreme values.
+  * At a critical point on the constraint, the gradient of the level curve and the gradient of the constraint are parallel since the tangent line of the constraint and a level curve at a point with an extreme value are the same. It deduces the desired equation
+  $$
+  \nambla f =\lambda\nambla g.
+  $$
 </details>
 
 ---
