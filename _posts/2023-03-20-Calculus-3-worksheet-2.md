@@ -88,7 +88,7 @@ in the theorem of Lagrange multipliers.
   * The level curves and the constraint are tangent at the points where they have extreme values.
   * At a critical point on the constraint, the gradient of the level curve and the gradient of the constraint are parallel since the tangent line of the constraint and a level curve at a point with an extreme value are the same. It deduces the desired equation
   $$
-  \nambla f =\lambda\nambla g.
+  \nabla f =\lambda\nabla g.
   $$
 </details>
 
