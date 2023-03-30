@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Test
-subtitle: I have a broad interest in anything. <br> I enjoy both theory and application!
+sidebar: true
 ---
 
 # head1
