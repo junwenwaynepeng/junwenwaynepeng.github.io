@@ -1,0 +1,9 @@
+<div class="sidebar">
+  <ul class="nav flex-column">
+    {% for heading in headings %}
+      <li class="nav-item">
+        <a class="nav-link" href="#{{ heading.id }}">{{ heading.text }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
