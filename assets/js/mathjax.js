@@ -12,9 +12,9 @@ MathJax.Hub.Config({
   messageStyle: "none"
 });
 
-if (window.MathJax) {
+/*if (window.MathJax) {
   MathJax.Hub.Queue(
     ["resetEquationNumbers",MathJax.InputJax.TeX],
     ["Typeset",MathJax.Hub]
   );
-}
+}*/
