@@ -1,5 +1,10 @@
-<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+---
+title: Pyscript and OpenAI
+subtitle: test pyscript
+tags: ["test", "pyscript", "openai"]
+pyscript: true
+---
+
 <div id="prompt"></div>
 <div id="completion"></div>
 <py-script>
