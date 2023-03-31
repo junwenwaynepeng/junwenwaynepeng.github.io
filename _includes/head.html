@@ -153,7 +153,22 @@
     {% endfor %}
   {% endif %}
 
-  <script type="text/x-mathjax-config" src="{{ '/assets/js/mathjax.js' | relative_url }}"></script>    
+  <!-- <script type="text/x-mathjax-config" src="{{ '/assets/js/mathjax.js' | relative_url }}"></script> -->
+  <script>
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { 
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ], 
+        displayMath: [ ["\[", "\]"], ["$$","$$"] ], 
+        processEscapes: true, 
+        ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { 
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+  </script>   
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
   
   {% if page.sagecell %}
@@ -166,7 +181,7 @@
   {% endif %}
   {% if page.pyscript %}
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
   {% endif %}
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
   <script type="text/javascript">
