@@ -1,23 +1,23 @@
 ###########################################################
-### Welcome to Beautiful Jekyll!
-### This config file is meant for settings that affect your entire website. When you first
-### set up your website you should go through all these settings and edit them, but after
-### the initial set up you won't need to come back to this file often.
+### 歡迎使用Beautiful Jekyll！
+### 這個配置文件的設置影響整個網站。在你第一次設置網站時，
+### 你應該仔細查看所有這些設置並進行編輯，
+### 但是在初始設置之後，你通常不需要再回到這個文件。
 ###########################################################
 
-############################
-# --- Required options --- #
-############################
+###################
+# --- 必要選項 --- #
+##################
 
-# Name of website
+# 網站名
 title: Wayne Peng's 
 
-# Your name to show in the footer
+# 你的名子，將會出現在頁角區域（網頁最下方）
 author: Junwen Wayne Peng
 
-###############################################
-# --- List of links in the navigation bar --- #
-###############################################
+######################################
+# --- 導航欄（網頁右上角）中的連結列表 --- #
+######################################
 
 navbar-links:
   About Me: "aboutme"
@@ -32,24 +32,24 @@ navbar-links:
 # --- Logo --- #
 ################
 
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
+# 顯示在導航欄中的圖片 - 最好使用正方形圖片
+# 如果您不想在導航欄中顯示圖片，請刪除此參數
 avatar: "/assets/img/DatArt.png"
 
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+# 默認情況下，圖像會被切成圓形。您可以通過設置“round-avatar：false”來禁用此行為。
 round-avatar: true
 
-# If you want to have an image logo in the top-left corner instead of having the title of the website,
-# then specify the following parameter
+# 如果您想要在左上角擁有圖像標誌，而不是使用網站標題，
+# 取消註釋（#）並指定以下參數
 #title-img: /path/to/image
 
 
-#####################################
-# --- Footer social media links --- #
-#####################################
+######################
+# --- 社交媒體鏈接 --- #
+######################
 
-# Select the social network links that you want to show in the footer.
-# Uncomment the links you want to show and add your information to each one.
+# 選擇您想在頁腳中顯示的社交網絡鏈接。
+# 取消對您想要顯示的鏈接的註釋（#），並將您的信息添加到每個鏈接中。
 social-network-links:
   email: "junwen.wayne.peng@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
@@ -79,15 +79,15 @@ social-network-links:
 #  kaggle: yourname
 #  hackerrank: yourname
 
-# If you want your website to generate an RSS feed, provide a description
-# The URL for the feed will be https://<your_website>/feed.xml
+# 如果您希望您的網站生成RSS訂閱，請提供一個描述
+# 訂閱鏈接的URL將為https://<您的網站>/feed.xml
 rss-description: Thanks alot
 
-###########################
-# --- General options --- #
-###########################
+###################
+# --- 一般選項 --- #
+##################
 
-# Select which social network share links to show in posts
+# 選擇要在文章中顯示的社交網絡分享鏈接
 share-links-active:
   twitter: true
   facebook: true
@@ -95,20 +95,20 @@ share-links-active:
   linkedin: true
   vk: false
 
-# How to display the link to your website in the footer
-# Remove this if you don't want a link in the footer
+# 如何在頁腳中顯示您的網站鏈接
+# 如果您不想在頁腳中顯示鏈接，請刪除此內容或註解（#）
 url-pretty: "junwenwaynepeng.github.io"
 
-# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+# 摘要詞長 - 將每篇文章的摘要在訂閱頁面上截斷為指定數量的詞
 excerpt_length: 50
 
-# Whether or not to show an excerpt for every blog post in the feed page
+# 是否在訂閱頁面中為每篇博客文章顯示摘要
 feed_show_excerpt: true
 
-# Whether or not to show a list of tags below each post preview in the feed page
+# 是否在訂閱頁面中在每篇文章預覽下方顯示標籤列表
 feed_show_tags: true
 
-# Add a search button to the navbar
+# 在導航欄中添加搜索按鈕
 post_search: true
 
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
@@ -256,6 +256,7 @@ markdown: CommonMarkGhPages
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+mathjax: true
 
 #kramdown:
 #  input: GFM
