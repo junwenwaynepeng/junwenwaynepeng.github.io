@@ -11,3 +11,10 @@ MathJax.Hub.Config({
     noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
   messageStyle: "none"
 });
+
+if (window.MathJax) {
+  MathJax.Hub.Queue(
+    ["resetEquationNumbers",MathJax.InputJax.TeX],
+    ["Typeset",MathJax.Hub]
+  );
+}
