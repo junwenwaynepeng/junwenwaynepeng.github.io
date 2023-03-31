@@ -153,11 +153,8 @@
     {% endfor %}
   {% endif %}
 
-  <script type="text/javascript"> hljs.highlightAll(); </script>
-  <!-- end highlight.js support -->
-
   <script type="text/x-mathjax-config" src="{{ '/assets/js/mathjax.js' | relative_url }}"></script>    
-  <script type="text/javascript" defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  
   {% if page.sagecell %}
     <script defer src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
     <script>
@@ -170,4 +167,12 @@
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
   {% endif %}
+  <script type="text/javascript" deferer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      hljs.highlightAll();
+    });
+  </script>
+
 </head>
