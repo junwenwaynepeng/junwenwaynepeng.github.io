@@ -244,18 +244,19 @@ date_format: "%B %d, %Y" # 目前格式 March 27, 2023
 # Facebook App ID
 #fb_app_id: ""
 
-#################################################################################
-# --- You don't need to touch anything below here (but you can if you want) --- #
-#################################################################################
+######################################################
+# --- 你無須更動下方所有參數，但是也可以根據你的需求做調整 --- #
+######################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "Asia/Taipei"
-# markdown: kramdown
+timezone: "Asia/Taipei"    # 設定時區
+# markdown: kramdown    # kramdown是jekyll原生的markdown引擎，但因為github選擇使用CommonMark，所以我們優先採用CommonMarkGhPages，如果你想要換回 kramdown僅須將markdown參數換成kramdown
 markdown: CommonMarkGhPages
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
-mathjax: true
+permalink: /:year-:month-:day-:title/    # permalink是用來設定網址是如何顯示的，不需要更動
+paginate: 5    # 部落格每頁顯現多少文章
+mathjax: true     # 是否啟用mathjax的功能
+
 
 #kramdown:
 #  input: GFM
@@ -295,6 +296,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-# Beautiful Jekyll / Dean Attali
+# 網站基礎是建立在 Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
+# 中文化工程由 junwenwaynepeng 彭俊文 台灣大學數學系專任助理教授完成
 
