@@ -157,9 +157,9 @@
   <!-- end highlight.js support -->
 
   <script type="text/x-mathjax-config" src="{{ '/assets/js/mathjax.js' | relative_url }}"></script>    
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/javascript" defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
   {% if page.sagecell %}
-    <script async src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script defer src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
     <script>
     sagecell.makeSagecell({inputLocation: 'div.compute',
                            evalButtonText: 'Evaluate'});
