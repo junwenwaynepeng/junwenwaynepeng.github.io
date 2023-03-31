@@ -112,21 +112,21 @@ feed_show_tags: true
 post_search: true
 
 # 在頁腳中添加一個按鈕，用於編輯當前頁面。僅當您的網站托管在GitHub上時才有效。
-edit_page_button: true
+#edit_page_button: true
 
 # Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
 # If this setting is off, then long sub-menu words might get cut off
 # See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
 navbar-var-length: false
 
-# The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+# 關鍵詞與您的網站相關聯，以便於搜索引擎優化（SEO）的目的
+keywords: "數學網站,台大數學,math,calculus,微積分,微分,積分,如何架設網站,mathjax,在網站上使用latex,markdown,數學"
 
-######################################
-# --- Colours / background image --- #
-######################################
+#######################
+# --- 顏色/背景圖像 --- #
+#######################
 
-# Personalize the colours in your website. Colour values can be any valid CSS colour
+# 個性化您網站中的顏色。顏色值可以是任何有效的CSS顏色。
 
 navbar-col: "#EAEAEA"
 navbar-text-col: "#404040"
@@ -140,51 +140,50 @@ footer-text-col: "#777777"
 footer-link-col: "#404040"
 footer-hover-col: "#0085A1"
 
-# Alternatively, the navbar, footer, and page background can be set to an image
-# instead of colour
+# 或者，可以將導航欄、頁腳和頁面背景設置為圖像。
+# 而不是顏色。
 
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
-# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
+# 建議為移動瀏覽器設置顏色作為瀏覽器主題。這僅受到少數移動瀏覽器的支持。
 #mobile-theme-col: "#0085A1"
 
-# For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
+# 為了進行額外的視覺定制，您可以在您網站的每個頁面中包含額外的CSS文件。在這裡列出任何自定義的CSS文件。
 #site-css:
 #  - "/assets/css/custom-styles.css"
 
-# If you have common JavaScript files that should be included in every page, list them here
+# 如果您有應該在每個頁面中包含的常見JavaScript文件，請在此處列出它們
 #site-js:
 #  - "/assets/js/custom-script.js"
 
-#################################
-# --- Web Analytics Section --- #
-#################################
+###################
+# --- 網頁分析 --- #
+##################
 
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
+# 填寫您的 Google Analytics gtag.js ID，以使用 gtag 跟踪您的網站，(https://analytics.google.com/)。
 gtag: "G-EL818RR92S"
 
-# Fill in your Google Analytics ID to track your website using Google Analytics
+# 填寫您的 Google Analytics ID，以使用 Google Analytics 跟踪您的網站（較為過時的方法）。
 #google_analytics: "358205790"
 
-# Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
+# 填寫您的 Cloudflare Analytics beacon token，以使用 Cloudflare Analytics 跟踪您的網站。
 #cloudflare_analytics: ""
 
 # Google Tag Manager ID
 #gtm: ""
 
 # Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
+# 取消註解以下部分以啟用 Matomo。 opt-out 參數控制是否允許用戶選擇退出跟踪。
 #matomo:
 #  site_id: "9"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
 
-####################
-# --- Comments --- #
-####################
+###################
+# --- 文章回覆 --- #
+##################
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 #disqus: ""
@@ -236,11 +235,11 @@ gtag: "G-EL818RR92S"
 #  theme: light
 
 ################
-# --- Misc --- #
-################
+# --- 雜項 --- #
+###############
 
-# Ruby Date Format to show dates of posts
-date_format: "%B %-d, %Y"
+# Ruby引擎生成部落格的日期格式 (你可以參考此網站根據你喜歡的格式換掉參數)
+date_format: "%B %d, %Y" # 目前格式 March 27, 2023
 
 # Facebook App ID
 #fb_app_id: ""
