@@ -156,21 +156,7 @@
   <script type="text/javascript"> hljs.highlightAll(); </script>
   <!-- end highlight.js support -->
 
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    jax: ["input/TeX", "output/HTML-CSS"],
-    extensions: ["tex2jax.js"],
-    "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
-    tex2jax: { 
-      inlineMath: [ ["$", "$"], ["\\(","\\)"] ], 
-      displayMath: [ ["\[", "\]"], ["$$","$$"] ], 
-      processEscapes: true, 
-      ignoreClass: "tex2jax_ignore|dno" },
-    TeX: { 
-      noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
-    messageStyle: "none"
-  });
-  </script>    
+  <script type="text/x-mathjax-config" async src="{{ '/assets/js/mathjax.js' | relative_url }}"></script>    
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
   {% if page.sagecell %}
     <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
