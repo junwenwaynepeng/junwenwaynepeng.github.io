@@ -166,4 +166,8 @@
     </script>
     <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
   {% endif %}
+  {% if page.pyscript %}
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  {% endif %}
 </head>
