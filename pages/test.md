@@ -3,7 +3,7 @@ layout: page
 title: Test
 toc: true
 css:
-	- ../assets/css/toc.css
+  - ../assets/css/toc.css
 ---
 
 # head1
