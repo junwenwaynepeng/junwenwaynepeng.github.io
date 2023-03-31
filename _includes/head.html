@@ -78,6 +78,10 @@
     {% endfor %}
   {% endif %}
 
+  {% if page.toc %}
+    <link rel="stylesheet" href="{{ /assets/css/toc.css | relative_url }}">
+  {% endif%}
+
   {% if site.fb_app_id %}
   <meta property="fb:app_id" content="{{ site.fb_app_id }}">
   {% endif %}
@@ -152,26 +156,14 @@
   <script type="text/javascript"> hljs.highlightAll(); </script>
   <!-- end highlight.js support -->
 
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    jax: ["input/TeX", "output/HTML-CSS"],
-    extensions: ["tex2jax.js"],
-    "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
-    tex2jax: { 
-      inlineMath: [ ["$", "$"], ["\\(","\\)"] ], 
-      displayMath: [ ["\[", "\]"], ["$$","$$"] ], 
-      processEscapes: true, 
-      ignoreClass: "tex2jax_ignore|dno" },
-    TeX: { 
-      noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
-    messageStyle: "none"
-  });
-  </script>    
+  <script type="text/x-mathjax-config" src="{{ '/assets/js/mathjax.js' | relative_url }}"></script>    
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
-  <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
-  <script>
-  sagecell.makeSagecell({inputLocation: 'div.compute',
-                         evalButtonText: 'Evaluate'});
-  </script>
-  <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+  {% if page.sagecell %}
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+  {% endif %}
 </head>
