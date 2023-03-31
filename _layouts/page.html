@@ -20,7 +20,9 @@ layout: base
         <div class="container">  
           <div class="contents">
             <article class="markdown-body">
+              {{ page.toc }}
               {{ content }}
+              }
             </article>
           </div>   
           <div class="table-of-contents">
@@ -30,6 +32,7 @@ layout: base
         </div>
       {% else %}
         <article class="markdown-body">
+          {{ page.toc }}
           {{ content }}
         </article>
       {% endif %}
