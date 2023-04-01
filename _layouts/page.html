@@ -22,7 +22,7 @@ layout: base
         {% if page.left-toc %}
         <nav class="col-lg-2 col-md-3 d-none d-md-block collapse" aria-label="Left TOC">
           <div class="position-sticky" style="top: 4rem;">
-            <h2>書目錄</h2>
+            <strong class="d-block h6 my-2 pb-2 border-bottom">Content</strong>
             {% include left-toc.html left-toc=left-toc %}
           </div>
         </nav>
@@ -35,8 +35,9 @@ layout: base
         </main>
 
         {% if page.right-toc %}
-        <nav class="col-lg-3 col-md-4 d-none d-md-block" aria-label="Right TOC">
+        <nav class="col-lg-3 col-md-4 d-none d-md-block collapse" aria-label="Right TOC">
           <div class="position-sticky" style="top: 4rem;">
+            <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
             {% include right-toc.html html=content %}
           </div>
         </nav>
