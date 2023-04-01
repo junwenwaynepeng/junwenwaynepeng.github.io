@@ -20,7 +20,7 @@ layout: base
     <div class="container">
       <div class="row">
         {% if page.left-toc %}
-        <nav class="col-lg-3 col-md-4 d-none d-md-block collapse" aria-label="Left TOC">
+        <nav class="col-lg-2 col-md-3 d-none d-md-block collapse" aria-label="Left TOC">
           <div class="position-sticky" style="top: 4rem;">
             <h2>書目錄</h2>
             {% include left-toc.html left-toc=left-toc %}
@@ -28,7 +28,7 @@ layout: base
         </nav>
         {% endif %}
 
-        <main class="col-12 col-md-6">
+        <main class="col-12 col-md-7">
           <article class="markdown-body">
             {{ content }}
           </article>
