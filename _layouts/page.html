@@ -20,13 +20,12 @@ layout: base
     <div class="container">
       <div class="row">
         {% if page.left-toc %}
-        <aside class=bd-sidbar>
-          <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
-            <div class="position-sticky" style="top: 4rem;">
+          <aside class=bd-sidbar>
+            <h2>書目錄</h2>
+            <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"> 
               {% include left-toc.html left-toc=left-toc %}
-            </div>
-          </nav>
-        </aside>
+            </nav>
+          </aside>
         {% endif %}
 
         <main class="col-12 col-md-6">
