@@ -1,0 +1,22 @@
+{% assign left_toc = left-toc %}
+{% if left_toc %}
+  <h2>Contents</h2>
+  <nav>
+    <ul class="list-unstyled">
+      {% for item in left_toc.content %}
+        <li>
+          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+          {% if item.content %}
+            <ul class="list-unstyled">
+              {% for subitem in item.content %}
+                <li>
+                  <a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}
