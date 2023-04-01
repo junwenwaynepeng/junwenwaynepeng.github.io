@@ -6,7 +6,7 @@ layout: base
 
 {% include header.html type="page" %}
 
-<div class="container-fluid" role="main">
+<div class="container-xxl my-md-4 bd-layout" role="main">
   <div class="row">
 
     {% if page.before-content %}
@@ -20,11 +20,13 @@ layout: base
     <div class="container">
       <div class="row">
         {% if page.left-toc %}
-        <nav class="col-lg-3 col-md-4 d-none d-md-block" aria-label="Left TOC">
-          <div class="position-sticky" style="top: 4rem;">
-            {% include left-toc.html left-toc=left-toc %}
-          </div>
-        </nav>
+        <aside class=bd-sidbar>
+          <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+            <div class="position-sticky" style="top: 4rem;">
+              {% include left-toc.html left-toc=left-toc %}
+            </div>
+          </nav>
+        </aside>
         {% endif %}
 
         <main class="col-12 col-md-6">
