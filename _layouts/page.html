@@ -6,9 +6,9 @@ layout: base
 
 {% include header.html type="page" %}
 
-<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
+<div class="container-fluid" role="main">
   <div class="row">
-    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+    <div class="col">
 
       {% if page.before-content %}
         <div class="before-content">
@@ -21,7 +21,7 @@ layout: base
       <div class="container">
         <div class="row">
           {% if page.left-toc %}
-          <nav class="col-lg-3 col-md-4 d-none d-md-block" aria-label="Left TOC">
+          <nav class="col-lg-2 col-md-4 d-none d-md-block" aria-label="Left TOC">
             <div class="position-sticky" style="top: 4rem;">
               {% include left-toc.html left-toc=left-toc %}
             </div>
@@ -35,7 +35,7 @@ layout: base
           </main>
 
           {% if page.right-toc %}
-          <nav class="col-lg-3 col-md-4 d-none d-md-block" aria-label="Right TOC">
+          <nav class="col-lg-2 col-md-4 d-none d-md-block" aria-label="Right TOC">
             <div class="position-sticky" style="top: 4rem;">
               {% include right-toc.html html=content %}
             </div>
