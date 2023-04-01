@@ -8,51 +8,49 @@ layout: base
 
 <div class="container-fluid" role="main">
   <div class="row">
-    <div class="col">
 
-      {% if page.before-content %}
-        <div class="before-content">
-          {% for file in page.before-content %}
-            {% include {{ file }} %}
-          {% endfor %}
-        </div>
-      {% endif %}
-
-      <div class="container">
-        <div class="row">
-          {% if page.left-toc %}
-          <nav class="col-lg-2 col-md-4 d-none d-md-block" aria-label="Left TOC">
-            <div class="position-sticky" style="top: 4rem;">
-              {% include left-toc.html left-toc=left-toc %}
-            </div>
-          </nav>
-          {% endif %}
-
-          <main class="col-12 col-md-6">
-            <article class="markdown-body">
-              {{ content }}
-            </article>
-          </main>
-
-          {% if page.right-toc %}
-          <nav class="col-lg-2 col-md-4 d-none d-md-block" aria-label="Right TOC">
-            <div class="position-sticky" style="top: 4rem;">
-              {% include right-toc.html html=content %}
-            </div>
-          </nav>
-          {% endif %}
-        </div>
+    {% if page.before-content %}
+      <div class="before-content">
+        {% for file in page.before-content %}
+          {% include {{ file }} %}
+        {% endfor %}
       </div>
-      
-      {% if page.after-content %}
-        <div class="after-content">
-          {% for file in page.after-content %}
-            {% include {{ file }} %}
-          {% endfor %}
-        </div>
-      {% endif %}
+    {% endif %}
 
-      {% include comments.html %}
+    <div class="container">
+      <div class="row">
+        {% if page.left-toc %}
+        <nav class="col-lg-3 col-md-4 d-none d-md-block" aria-label="Left TOC">
+          <div class="position-sticky" style="top: 4rem;">
+            {% include left-toc.html left-toc=left-toc %}
+          </div>
+        </nav>
+        {% endif %}
+
+        <main class="col-12 col-md-6">
+          <article class="markdown-body">
+            {{ content }}
+          </article>
+        </main>
+
+        {% if page.right-toc %}
+        <nav class="col-lg-3 col-md-4 d-none d-md-block" aria-label="Right TOC">
+          <div class="position-sticky" style="top: 4rem;">
+            {% include right-toc.html html=content %}
+          </div>
+        </nav>
+        {% endif %}
+      </div>
     </div>
+    
+    {% if page.after-content %}
+      <div class="after-content">
+        {% for file in page.after-content %}
+          {% include {{ file }} %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% include comments.html %}
   </div>
 </div>
