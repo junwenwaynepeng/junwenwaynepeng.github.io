@@ -2,6 +2,8 @@
 layout: base
 ---
 
+{% assign left-toc = site.data.book[page.book] %}
+
 {% include header.html type="page" %}
 
 <div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
@@ -16,24 +18,33 @@ layout: base
         </div>
       {% endif %}
 
-      {% if page.toc %}
-        <div class="container">  
-          <div class="contents">
+      
+      <div class="container">
+        <div class="row">
+          {% if left_toc_enabled %}
+          <nav class="col-lg-3 col-md-4 d-none d-md-block" aria-label="Left TOC">
+            <div class="position-sticky" style="top: 4rem;">
+              {% include left-toc.html left-toc=left-toc %}
+            </div>
+          </nav>
+          {% endif %}
+
+          <main class="col-lg-6">
             <article class="markdown-body">
               {{ content }}
             </article>
-          </div>   
-          <div class="table-of-contents">
-            <h2>Contents</h2>
-            {% include toc.html html=content %}
-          </div>
+          </main>
+
+          {% if right_toc_enabled %}
+          <nav class="col-lg-3 col-md-4 d-none d-md-block" aria-label="Right TOC">
+            <div class="position-sticky" style="top: 4rem;">
+              {% include right-toc.html html=content %}
+            </div>
+          </nav>
+          {% endif %}
         </div>
-      {% else %}
-        <article class="markdown-body">
-          {{ content }}
-        </article>
-      {% endif %}
-    
+      </div>
+      
       {% if page.after-content %}
         <div class="after-content">
           {% for file in page.after-content %}
