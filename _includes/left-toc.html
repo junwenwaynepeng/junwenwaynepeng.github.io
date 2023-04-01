@@ -1,14 +1,15 @@
 {% assign left_toc = left-toc %}
 {% if left_toc %}
+  <h2>書目錄</h2>
   <ul class="list-unstyled mb-0 py-3 pt-md-1">
     {% for item in left_toc.content %}
       <li>
-        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
         {% if item.content %}
-          <ul class="list-unstyled">
+          <ul class="list-unstyled mb-0 py-2 pt-md-0">
             {% for subitem in item.content %}
               <li>
-                <a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a>
+                <a href="{{ subitem.url  | relative_url }}">{{ subitem.title }}</a>
               </li>
             {% endfor %}
           </ul>
