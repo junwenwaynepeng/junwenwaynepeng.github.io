@@ -2,7 +2,7 @@
 layout: page
 title: 教學網站建立教學
 subtitle: 我們將用Github page建立簡單的教學網站，讓你也可以擁有自己的題庫。
-toc: true
+right-toc: true
 book: true
 ---
 
