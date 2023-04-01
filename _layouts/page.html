@@ -21,7 +21,7 @@ layout: base
       
       <div class="container">
         <div class="row">
-          {% if left_toc_enabled %}
+          {% if page.left-toc %}
           <nav class="col-lg-3 col-md-4 d-none d-md-block" aria-label="Left TOC">
             <div class="position-sticky" style="top: 4rem;">
               {% include left-toc.html left-toc=left-toc %}
@@ -35,7 +35,7 @@ layout: base
             </article>
           </main>
 
-          {% if right_toc_enabled %}
+          {% if page.right-toc %}
           <nav class="col-lg-3 col-md-4 d-none d-md-block" aria-label="Right TOC">
             <div class="position-sticky" style="top: 4rem;">
               {% include right-toc.html html=content %}
