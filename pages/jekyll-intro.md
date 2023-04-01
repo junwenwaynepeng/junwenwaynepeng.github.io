@@ -5,6 +5,7 @@ subtitle: 我們將用Github page建立簡單的教學網站，讓你也可以�
 right-toc: true
 left-toc: true
 book: jekyll-intro
+full-width: true
 ---
 
 # 概述
