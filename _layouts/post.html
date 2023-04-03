@@ -55,7 +55,7 @@ layout: base
         {% for category in page.question %}
           {% for pk in category %}
             {% assign questionSet = site.data.question[category][pk]  %}
-            <div class="question" id="{{ pk }}">{{ category }} | {{ pk }} | {{ questionSet }}{{ questionSet.question }}</div>
+            <div class="question" id="{{ pk }}">{{ category }} | {{ pk }} | {{ site.data.question[category] }} | {{ questionSet.question }}</div>
             {% if page.show-answer %}
               <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
             {% endif %}
