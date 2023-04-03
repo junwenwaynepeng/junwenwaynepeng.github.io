@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   var answers = document.querySelectorAll(".answer");
   for (var i = 0; i < answers.length; i++) {
-    var pk = answer[i].id;
+    var pk = answers[i].id;
     var target = document.getElementById(pk + "-answer");
     if (target) {
       target.innerHTML = answers[i].innerHTML;
