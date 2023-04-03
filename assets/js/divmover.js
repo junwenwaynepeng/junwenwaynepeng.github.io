@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
   var answers = document.querySelectorAll(".answer");
-  for (var i = 0; i < answer.length; i++) {
+  for (var i = 0; i < answers.length; i++) {
     var pk = answer[i].id;
     var target = document.getElementById(pk + "-answer");
     if (target) {
