@@ -51,7 +51,21 @@ layout: base
           {% endfor %}
         </div>
       {% endif %}
-
+      {% if page.question %}
+        {% for category in page.question %}
+          {% for pk in category %}
+            {$ assign questionSet = site.data.question.{{ category }}[pk]  $}
+            <div class="question" id="{{ pk }}">test{{ questionSet }}{{ questionSet.question }}</div>
+            {% if page.show-answer %}
+              <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
+      <!-- Custom JavaScript files set in YAML front matter -->
+      {% for js in page.customjs %}
+        <script async type="text/javascript" src="{{ js }}"></script>
+      {% endfor %}
       {% if page.after-content %}
         <div class="after-content">
           {% for file in page.after-content %}
@@ -80,20 +94,4 @@ layout: base
       {% include comments.html %}
     </div>
   </div>
-
-  {% if page.question %}
-    {% for category in page.question %}
-      {% for pk in category %}
-        {$ assign questionSet = site.data.question.{{ category }}[pk]  $}
-        <div class="question" id="{{ pk }}">{{ questionSet.question }}</div>
-        {% if page.show-answer %}
-          <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-  {% endif %}
-  <!-- Custom JavaScript files set in YAML front matter -->
-  {% for js in page.customjs %}
-    <script async type="text/javascript" src="{{ js }}"></script>
-  {% endfor %}
 </div>
