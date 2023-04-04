@@ -147,12 +147,6 @@
   <link rel="stylesheet" href="{{ '/assets/css/staticman.css' | relative_url }}">
   {% endif %}
 
-
-  {% include ext-css.html css=site.bootstrap-css %}
-  <!--{% if site.boostrap %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-f8yNysNEX9X4Qi3Nn+/v7fyJYDxd+H16wzIOIHm6vLR8DDJWQ2SVivE6Ux1gV+8uOY2QdLl0rvJ+0g7P5o+iHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  {% endif %}-->
-
   {% if page.head-extra %}
     {% for file in page.head-extra %}
       {% include {{ file }} %}
