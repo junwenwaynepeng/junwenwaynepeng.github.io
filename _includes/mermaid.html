@@ -1,10 +1,11 @@
+{% if page.mermaid.theme %}{% assign mermaid-theme = page.mermaid.theme %}{% else %}{% mermaid-theme = site.mermaid.theme %}{% endif %}
 {% if site.mermaid %}
-  <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js"></script>
+  <script src="{{ site.mermaid.src | absolute_url }}"></script>
   <script>
     $(document).ready(function () {
       mermaid.initialize({
         startOnLoad:true,
-        theme: "default",
+        theme: {{ mermaid-theme | default: "default"}},
       });
       window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
     });
