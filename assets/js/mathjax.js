@@ -3,7 +3,8 @@ window.MathJax = {
     load: ['[tex]/mathtools']
   },
   tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\[', '\]']]
   },
   packages: {
     '[+]': ['mathtools']
