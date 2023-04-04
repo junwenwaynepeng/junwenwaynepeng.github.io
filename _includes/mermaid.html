@@ -4,7 +4,7 @@
     $(document).ready(function () {
       mermaid.initialize({
         startOnLoad:true,
-        theme: {{ include.mermaid.theme | default: "default"}},
+        theme: {{ include.mermaid.theme | default: 'default' }},
       });
       window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
     });
