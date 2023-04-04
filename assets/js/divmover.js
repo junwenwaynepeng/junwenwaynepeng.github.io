@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var target = document.getElementById("question-" + pk);
     if (target) {
       target.innerHTML = questions[i].innerHTML;
+      questions[i].innerHTML = ''
     }
   }
   var answers = document.querySelectorAll(".answer");
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var target = document.getElementById("answer-" + pk);
     if (target) {
       target.innerHTML = answers[i].innerHTML;
+      answers[i].innerHTML = ''
     }
   }
 });
