@@ -52,16 +52,11 @@ layout: base
         </div>
       {% endif %}
       {% if page.data %}
-        {% for folder in page.data %}
-          {% for file in folder %}
-            {% for pk in file %}
-              {% assign questionSet = site.data[folder][file][pk]  %}
-              <div class="question" id="{{folder}}-{{file}}-{{ pk }}">{{ folder }} | {{ file }} | {{ pk }} | {{ site.data.question[category] }} | {{ questionSet.question }} | {{ testQuestionSet.question }}</div>
+        {% for data in page.data %}
+              {% assign questionSet = site.data[data.folder][data.file][data.id]  %}
+              <div class="question" id="{{folder}}-{{file}}-{{ pk }}">{{ data.folder }} | {{ data.file }} | {{ data.id }} | {{ questionSet.question }}</div>
               {% if page.show-answer %}
                 <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
         {% endfor %}
       {% endif %}
       <!-- Custom JavaScript files set in YAML front matter -->
