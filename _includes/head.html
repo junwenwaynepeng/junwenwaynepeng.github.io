@@ -149,7 +149,9 @@
   
   {% if site.head-package %}
     {% for plugin in site.head-package %}
-      {% include {{ plugin.file }} src=plugin.src %}
+      {% assign local-parameter = page[plugin.module]%}
+      {% include {{ plugin.file }} src=plugin.src local-parameter=local-parameter %}
+      }
     {% endfor %}
   {% endif %}
 
