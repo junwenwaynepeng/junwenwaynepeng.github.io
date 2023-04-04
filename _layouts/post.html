@@ -53,10 +53,11 @@ layout: base
       {% endif %}
       {% if page.data %}
         {% for data in page.data %}
-              {% assign questionSet = site.data[data.folder][data.file][data.id]  %}
-              <div class="question" id="{{folder}}-{{file}}-{{ pk }}">{{ data.folder }} | {{ data.file }} | {{ data.id }} | {{ questionSet.question }}</div>
-              {% if page.show-answer %}
-                <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
+          {% assign questionSet = site.data[data.folder][data.file][data.id]  %}
+          <div class="question" id="{{folder}}-{{file}}-{{ pk }}">{{ data.folder }} | {{ data.file }} | {{ data.id }} | {{ questionSet.question }}</div>
+          {% if page.show-answer %}
+            <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
+          {% endif %}
         {% endfor %}
       {% endif %}
       <!-- Custom JavaScript files set in YAML front matter -->
