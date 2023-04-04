@@ -157,9 +157,7 @@
     {% endfor %}
   {% endif %}
 
-  {% if site.mathjax %}
-    <script src="{{ '/assets/js/mathjax.js' | relative_url }}" async></script> 
-  {% endif %}
+  {% include mathjax.html %}
   
   {% if page.sagecell %}
     <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
