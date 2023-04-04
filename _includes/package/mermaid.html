@@ -1,12 +1,10 @@
-{% if include.src %}
-  <script type="module">
-  	import mermaid from "{{ include.src | absolute_url }}";
-    $(document).ready(function () {
-      mermaid.initialize({
-        startOnLoad:true,
-        theme: "{{ include.local-parameter.theme | default: 'default' }}",
-      });
-      mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+<script type="module">
+	import mermaid from "{{ include.src | absolute_url }}";
+  $(document).ready(function () {
+    mermaid.initialize({
+      startOnLoad:true,
+      theme: "{{ include.local-parameter.theme | default: 'default' }}",
     });
-  </script>
-{% endif %}
+    mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+  });
+</script>

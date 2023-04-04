@@ -41,14 +41,14 @@
   <script src="{{ '/assets/js/divmover.js' | relative_url }}"></script>
 {% endif %}
 
-{% if site.foot-package %}
-  {% for plugin in site.foot-package %}
-    {% include {{ plugin.file }} {% if plugin.src %}src={{ plugin.src }}{% endif %} {% if page[plugin.module] %}local-parameter={{ page[plugin.module] }} %}
+{% if page.foot-package %}
+  {% for plugin in page.foot-package %}
+    {% include {{ plugin.file }} parameter={{ plugin }}%}
   {% endfor %}
 {% endif %}
 
-{% if page.foot-package %}
-  {% for plugin in page.foot-package %}
-    {% include {{ plugin.file }} {% if plugin.parameter %}parameter={{ plugin.parameter }}{% endif %}%}
+{% if site.foot-package %}
+  {% for plugin in site.foot-package %}
+    {% include {{ plugin.file }} src={{ plugin.src }} local-parameter={{ page[plug.module] | default='' }} %}
   {% endfor %}
 {% endif %}
