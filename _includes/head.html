@@ -146,6 +146,12 @@
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
   <link rel="stylesheet" href="{{ '/assets/css/staticman.css' | relative_url }}">
   {% endif %}
+  
+  {% if site.head-package %}
+    {% for plugin in site.head-package %}
+      {% include {{ plugin.file }} %}
+    {% endfor %}
+  {% endif %}
 
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
   <script type="text/javascript">
