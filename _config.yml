@@ -244,9 +244,9 @@ date_format: "%B %d, %Y" # 目前格式 March 27, 2023
 # Facebook App ID
 #fb_app_id: ""
 
-######################################################
+###########################################################
 # --- 你無須更動下方所有參數，但是也可以根據你的需求做調整 --- #
-######################################################
+###########################################################
 
 # Output options (more information on Jekyll's site)
 timezone: "Asia/Taipei"    # 設定時區
@@ -300,6 +300,16 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+
+#######################
+# --- 全域套件管理 --- #
+#######################
+bootstrap-css:
+  href: "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+  sri: "sha512-f8yNysNEX9X4Qi3Nn+/v7fyJYDxd+H16wzIOIHm6vLR8DDJWQ2SVivE6Ux1gV+8uOY2QdLl0rvJ+0g7P5o+iHg=="
+bootstrap-js:
+  href: "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"
+  sri: "sha512-lO29SvOJyI87K1JXGONqNS4BX18+ZKlWlrPd/Lg6pJplwKjy6zhb8K9XQAgfrx0ckqmZKjWY+y8fHySBiJxbw=="
 
 ############################
 # --- Markdown 額外套件 --- #
