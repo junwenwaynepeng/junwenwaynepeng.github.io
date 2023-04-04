@@ -155,7 +155,7 @@
   
   {% if site.head-package %}
     {% for plugin in site.head-package %}
-      {% assign local-parameter = page[plugin.module]%}
+      {% assign local-parameter = page[plugin.module] %}
       {% include {{ plugin.file }} src=plugin.src local-parameter=local-parameter %}
       }
     {% endfor %}
