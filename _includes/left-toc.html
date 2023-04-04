@@ -6,7 +6,7 @@
       <li>
         <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
         {% if item.content %}
-          <ul class="list-unstyled mb-0 py-2 pt-md-0">
+          <ul class="list-unstyled mb-0 py-2 pt-md-0e">
             {% for subitem in item.content %}
               <li>
                 <a href="{{ subitem.url  | relative_url }}">{{ subitem.title }}</a>

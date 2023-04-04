@@ -255,8 +255,6 @@ markdown: CommonMarkGhPages
 highlighter: rouge
 permalink: /:year-:month-:day-:title/    # permalink是用來設定網址是如何顯示的，不需要更動
 paginate: 5    # 部落格每頁顯現多少文章
-mathjax: true     # 是否啟用mathjax的功能
-# mermaid: true     # 是否啟用mermaid的功能
 #kramdown:
 #  syntax_highlighter: rouge
 #  input: GFM
@@ -301,25 +299,22 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-#######################
-# --- 全域套件管理 --- #
-#######################
-bootstrap-css:
-  href: "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
-  sri: "sha512-f8yNysNEX9X4Qi3Nn+/v7fyJYDxd+H16wzIOIHm6vLR8DDJWQ2SVivE6Ux1gV+8uOY2QdLl0rvJ+0g7P5o+iHg=="
-bootstrap-js:
-  href: "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"
-  sri: "sha512-lO29SvOJyI87K1JXGONqNS4BX18+ZKlWlrPd/Lg6pJplwKjy6zhb8K9XQAgfrx0ckqmZKjWY+y8fHySBiJxbw=="
+########################
+# ---  額外套件管理 --- #
+########################
+package:
+  -
+    file: "package/mathjax.html"
+    parameter:
+      - 
+        src: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+  -
+    file: "package/mermaid.html"
+    parameter:
+      - 
+        src: "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs"
+        theme: "default"
 
-############################
-# --- Markdown 額外套件 --- #
-############################
-mathjax:
-  src: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
-
-mermaid:
-  src: "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs"
-  theme: "default"
 
 # 網站基礎是建立在 Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

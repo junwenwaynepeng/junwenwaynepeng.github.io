@@ -147,26 +147,18 @@
   <link rel="stylesheet" href="{{ '/assets/css/staticman.css' | relative_url }}">
   {% endif %}
 
-  {% if page.head-extra %}
-    {% for file in page.head-extra %}
-      {% include {{ file }} %}
+  {% if page.package %}
+    {% for file in page.package %}
+      {% include {{ file.file }} {% if file.parameter %}parameter={{ file.parameter }}{% endif %}%}
+    {% endfor %}
+  {% endif %}
+  
+  {% if site.package %}
+    {% for plugin in site.package %}
+      {% include {{ plugin.file }} {% if plugin.parameter %}parameter={{ plugin.parameter }}{% endif %} %}
     {% endfor %}
   {% endif %}
 
-  {% include mathjax.html mathjax=site.mathjax %}
-  
-  {% if page.sagecell %}
-    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
-    <script>
-    sagecell.makeSagecell({inputLocation: 'div.compute',
-                           evalButtonText: 'Evaluate'});
-    </script>
-    <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
-  {% endif %}
-  {% if page.pyscript %}
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-  {% endif %}
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {
