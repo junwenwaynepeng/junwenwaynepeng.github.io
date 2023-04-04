@@ -54,7 +54,7 @@ layout: base
       {% if page.data %}
         {% for data in page.data %}
           {% assign questionSet = site.data[data.folder][data.file][data.id]  %}
-          <div class="question" id="{{data.folder}}-{{data.file}}-{{ data.id }}" markdonw='1'">{{ data.folder }} | {{ data.file }} | {{ data.id }} | {{ questionSet.question }}</div>
+          <div class="question" id="{{data.folder}}-{{data.file}}-{{ data.id }}" markdonw="1">{{ data.folder }} | {{ data.file }} | {{ data.id }} | {{ questionSet.question }}</div>
           {% if page.show-answer %}
             <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
           {% endif %}
