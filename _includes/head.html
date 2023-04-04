@@ -147,15 +147,15 @@
   <link rel="stylesheet" href="{{ '/assets/css/staticman.css' | relative_url }}">
   {% endif %}
 
-  {% if page.package %}
-    {% for file in page.package %}
-      {% include {{ file.file }} {% if file.parameter %}parameter={{ file.parameter }}{% endif %}%}
+  {% if page.head-package %}
+    {% for plugin in page.head-package %}
+      {% include {{ plugin.file }} {% if plugin.parameter %}parameter={{ plugin.parameter }}{% endif %}%}
     {% endfor %}
   {% endif %}
   
-  {% if site.package %}
-    {% for plugin in site.package %}
-      {% include {{ plugin.file }} {% if plugin.parameter %}parameter={{ plugin.parameter }}{% endif %} %}
+  {% if site.head-package %}
+    {% for plugin in site.head-package %}
+      {% include {{ plugin.file }} {% if plugin.parameter %}src={{ plugin.src }}{% endif %} {% if page[plug.module] %}local-parameter={{ page[plug.module] }} %}
     {% endfor %}
   {% endif %}
 

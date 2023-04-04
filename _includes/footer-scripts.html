@@ -41,6 +41,14 @@
   <script src="{{ '/assets/js/divmover.js' | relative_url }}"></script>
 {% endif %}
 
-{% if page.mermaid %}
-  {% include package/mermaid.html mermaid=site.mermaid %}
+{% if site.foot-package %}
+  {% for plugin in site.foot-package %}
+    {% include {{ plugin.file }} {% if plugin.src %}src={{ plugin.src }}{% endif %} {% if page[plugin.module] %}local-parameter={{ page[plugin.module] }} %}
+  {% endfor %}
+{% endif %}
+
+{% if page.foot-package %}
+  {% for plugin in page.foot-package %}
+    {% include {{ plugin.file }} {% if plugin.parameter %}parameter={{ plugin.parameter }}{% endif %}%}
+  {% endfor %}
 {% endif %}

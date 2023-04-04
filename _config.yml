@@ -302,19 +302,17 @@ plugins:
 ########################
 # ---  額外套件管理 --- #
 ########################
-package:
+head-package:
   -
+    module: "mathjax"
     file: "package/mathjax.html"
-    parameter:
-      - 
-        src: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+    src: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+foot-package:
   -
+    module: "mermaid"
     file: "package/mermaid.html"
-    parameter:
-      - 
-        src: "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs"
-        theme: "default"
-
+    src: "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs"
+    
 
 # 網站基礎是建立在 Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
