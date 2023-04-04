@@ -1,7 +1,7 @@
 {% if include.mermaid.src %}
   <script src="{{ include.mermaid.src | absolute_url }}"></script>
   <script>
-    $(document).ready(function () {
+    $(document).onload(function () {
       mermaid.initialize({
         startOnLoad:true,
         theme: {{ include.mermaid.theme | default: "default"}},
