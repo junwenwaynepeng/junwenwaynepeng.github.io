@@ -2,6 +2,7 @@
   <script src="{{ include.mermaid.src | absolute_url }}"></script>
   <script>
     $(document).ready(function () {
+      console.log('run!!!')
       mermaid.initialize({
         startOnLoad:true,
         theme: {{ include.mermaid.theme | default: 'default' }},
