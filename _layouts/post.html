@@ -55,7 +55,7 @@ layout: base
         {% for folder in page.data %}
           {% for file in folder %}
             {% for pk in file %}
-              {% assign questionSet = site.data.[folder][file][pk]  %}
+              {% assign questionSet = site.data[folder][file][pk]  %}
               <div class="question" id="{{folder}}-{{file}}-{{ pk }}">{{ folder }} | {{ file }} | {{ pk }} | {{ site.data.question[category] }} | {{ questionSet.question }} | {{ testQuestionSet.question }}</div>
               {% if page.show-answer %}
                 <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
