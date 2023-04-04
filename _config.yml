@@ -257,11 +257,11 @@ permalink: /:year-:month-:day-:title/    # permalink是用來設定網址是如�
 paginate: 5    # 部落格每頁顯現多少文章
 mathjax: true     # 是否啟用mathjax的功能
 mermaid: true     # 是否啟用mermaid的功能
-kramdown:
-  syntax_highlighter: rouge
-  input: GFM
-  auto_ids:       true
-  toc_levels:     1..3
+#kramdown:
+#  syntax_highlighter: rouge
+#  input: GFM
+#  auto_ids:       true
+#  toc_levels:     1..3
 
 #kramdown:
 #  input: GFM
