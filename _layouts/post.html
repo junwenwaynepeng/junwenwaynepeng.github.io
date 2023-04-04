@@ -51,15 +51,16 @@ layout: base
           {% endfor %}
         </div>
       {% endif %}
-      {% if page.question %}
-        {% for category in page.question %}
-          {% for pk in category %}
-            {% assign questionSet = site.data.question[category][pk]  %}
-            {% assign testQuestionSet = site.data.question.calculus3[page.question.calculus3.a1] %}
-            <div class="question" id="{{ pk }}">{{ category }} | {{ pk }} | {{ site.data.question[category] }} | {{ questionSet.question }} | {{ testQuestionSet.question }}</div>
-            {% if page.show-answer %}
-              <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
-            {% endif %}
+      {% if page.data %}
+        {% for folder in page.data %}
+          {% for file in folder %}
+            {% for pk in file %}
+              {% assign questionSet = site.data.[folder][file][pk]  %}
+              <div class="question" id="{{folder}}-{{file}}-{{ pk }}">{{ folder }} | {{ file }} | {{ pk }} | {{ site.data.question[category] }} | {{ questionSet.question }} | {{ testQuestionSet.question }}</div>
+              {% if page.show-answer %}
+                <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
+              {% endif %}
+            {% endfor %}
           {% endfor %}
         {% endfor %}
       {% endif %}
