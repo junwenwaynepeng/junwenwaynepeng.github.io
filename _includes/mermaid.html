@@ -1,12 +1,12 @@
 {% if include.mermaid.src %}
   <script type="module">
-  	import * as mermaid from "{{ include.mermaid.src | absolute_url }}";
+  	import mermaid from "{{ include.mermaid.src | absolute_url }}";
     $(document).ready(function () {
       mermaid.initialize({
         startOnLoad:true,
         theme: "{{ include.mermaid.theme | default: 'default' }}",
       });
-      window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+      mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
     });
   </script>
 {% endif %}
