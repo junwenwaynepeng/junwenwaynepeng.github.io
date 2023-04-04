@@ -149,13 +149,13 @@
 
   {% if page.head-package %}
     {% for plugin in page.head-package %}
-      {% include {{ plugin.file }} parameter={{ plugin }}%}
+      {% include {{ plugin.file }} parameter=plugin %}
     {% endfor %}
   {% endif %}
   
   {% if site.head-package %}
     {% for plugin in site.head-package %}
-      {% include {{ plugin.file }} src={{ plugin.src }} local-parameter={{ page[plug.module] | default='' }} %}
+      {% include {{ plugin.file }} src=plugin.src local-parameter=page[plug.module] %}
     {% endfor %}
   {% endif %}
 

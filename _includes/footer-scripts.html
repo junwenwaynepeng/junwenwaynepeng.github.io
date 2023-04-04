@@ -43,7 +43,7 @@
 
 {% if page.foot-package %}
   {% for plugin in page.foot-package %}
-    {% include {{ plugin.file }} parameter={{ plugin }}%}
+    {% include {{ plugin.file }} parameter=plugin %}
   {% endfor %}
 {% endif %}
 
