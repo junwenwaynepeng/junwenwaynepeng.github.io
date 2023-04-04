@@ -40,16 +40,3 @@
 {% if page.data %}
   <script src="{{ '/assets/js/divmover.js' | relative_url }}"></script>
 {% endif %}
-<!--
-{% if page.foot-package %}
-  {% for plugin in page.foot-package %}
-    {% include {{ plugin.file }} parameter=plugin %}
-  {% endfor %}
-{% endif %}
-
-{% if site.foot-package %}
-  {% for plugin in site.foot-package %}
-    {% include {{ plugin.file }} src=plugin.src local-parameter=page[plugin.module] %}
-  {% endfor %}
-{% endif %}
--->

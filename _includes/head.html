@@ -146,19 +146,7 @@
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
   <link rel="stylesheet" href="{{ '/assets/css/staticman.css' | relative_url }}">
   {% endif %}
-<!--
-  {% if page.head-package %}
-    {% for plugin in page.head-package %}
-      {% include {{ plugin.file }} parameter=plugin %}
-    {% endfor %}
-  {% endif %}
-  
-  {% if site.head-package %}
-    {% for plugin in site.head-package %}
-      {% include {{ plugin.file }} src=plugin.src local-parameter=page[plugin.module] %}
-    {% endfor %}
-  {% endif %}
--->
+
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {
