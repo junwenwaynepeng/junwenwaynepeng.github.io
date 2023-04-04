@@ -3,9 +3,9 @@ title: Calculus 3-6 Overview
 subtitle: Second Order Test and Lagrange Multipliers
 tags: ["Calculus 3", "class overview"]
 ---
-1. Second order test for extreme values: We learned how to use the second order test to determine whether a critical point of a two-variable function is a maximum, minimum, or saddle point. The first step is to set the gradient to be a zero vector, i.e.
+1. Second order test for extreme values: We learned how to use the second order test to determine whether a critical point of a two-variable function is a maximum, minimum, or saddle point. The first step is to set the gradient to be a zero vector, i.e.\
 $$\nabla f(x,y) = (0,0)$$
-in order to find critical points. Then we compute its discriminant, namely
+in order to find critical points. Then we compute its discriminant, namely\
 $$
 D(x,y) = \left|\begin{matrix}
 \frac{\partial^2 f}{\partial x^2} & \frac{\partial^2 f}{\partial x\partial y}\\\\
