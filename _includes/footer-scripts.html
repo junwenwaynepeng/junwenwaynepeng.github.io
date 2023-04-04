@@ -49,6 +49,6 @@
 
 {% if site.foot-package %}
   {% for plugin in site.foot-package %}
-    {% include {{ plugin.file }} src=plugin.src local-parameter=page[plug.module] %}
+    {% include {{ plugin.file }} src=plugin.src local-parameter=page[plugin.module] %}
   {% endfor %}
 {% endif %}
