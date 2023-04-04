@@ -41,6 +41,17 @@ layout: base
 
       <article role="main" class="blog-post">
         {{ content }}
+
+        {% if page.data %}
+          {% for data in page.data %}
+            {% assign questionSet = site.data[data.folder][data.file][data.id]  %}
+            <div class="question" id="{{data.folder}}-{{data.file}}-{{ data.id }}" markdonw="1">{{ data.folder }} | {{ data.file }} | {{ data.id }} | {{ questionSet.question }}</div>
+            {% if page.show-answer %}
+              <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
       </article>
 
       {% if page.tags.size > 0 %}
@@ -51,15 +62,7 @@ layout: base
           {% endfor %}
         </div>
       {% endif %}
-      {% if page.data %}
-        {% for data in page.data %}
-          {% assign questionSet = site.data[data.folder][data.file][data.id]  %}
-          <div class="question" id="{{data.folder}}-{{data.file}}-{{ data.id }}" markdonw="1">{{ data.folder }} | {{ data.file }} | {{ data.id }} | {{ questionSet.question }}</div>
-          {% if page.show-answer %}
-            <div class="answer" id="{{ pk }}">{{ questionSet.answer }}</div>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
+
       <!-- Custom JavaScript files set in YAML front matter -->
       {% for js in page.customjs %}
         <script async type="text/javascript" src="{{ js }}"></script>
