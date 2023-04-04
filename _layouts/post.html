@@ -49,9 +49,16 @@ layout: base
               {{ questionSet.question | markdownify }}
             </div>
             {% if page.show-answer %}
-              <div class="answer" id="{{data.folder}}-{{data.file}}-{{ data.id }}"><details>
-                {{ questionSet.answer | markdownify }}
-              </details></div>
+              <div class="answer" id="{{data.folder}}-{{data.file}}-{{ data.id }}">
+                {% if page.expandable-answer %}
+                  <details>
+                    <summary>{{ page.expandable-answer-title | default: 'Answer'}}<summary>
+                    {{ questionSet.answer | markdownify }}
+                  </details>
+                {% else %}
+                  {{ questionSet.answer | markdownify }}
+                {% endif %}
+              </div>
             {% endif %}
           {% endfor %}
         {% endif %}
