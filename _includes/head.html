@@ -149,13 +149,13 @@
 
   {% if page.head-package %}
     {% for plugin in page.head-package %}
-      {% include {{ plugin.file }} {% if plugin.parameter %}parameter={{ plugin.parameter }}{% endif %}%}
+      {% include {{ plugin.file }} parameter={{ plugin }}%}
     {% endfor %}
   {% endif %}
   
   {% if site.head-package %}
     {% for plugin in site.head-package %}
-      {% include {{ plugin.file }} {% if plugin.parameter %}src={{ plugin.src }}{% endif %} {% if page[plug.module] %}local-parameter={{ page[plug.module] }} %}
+      {% include {{ plugin.file }} src={{ plugin.src }} local-parameter={{ page[plug.module] | default='' }} %}
     {% endfor %}
   {% endif %}
 
