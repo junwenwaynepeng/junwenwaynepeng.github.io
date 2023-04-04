@@ -149,7 +149,7 @@
   
   {% if site.head-package %}
     {% for plugin in site.head-package %}
-      {% include {{ plugin.file }} src={{ plugin.src }} %}
+      {% include {{ plugin.file }} src=plugin.src %}
     {% endfor %}
   {% endif %}
 
