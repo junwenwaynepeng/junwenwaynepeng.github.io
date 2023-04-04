@@ -1,5 +1,5 @@
 {% if page.mermaid.theme %}{% assign mermaid-theme = page.mermaid.theme %}{% else %}{% mermaid-theme = site.mermaid.theme %}{% endif %}
-{% if site.mermaid %}
+{% if site.mermaid or page.mermaid %}
   <script src="{{ site.mermaid.src | absolute_url }}"></script>
   <script>
     $(document).ready(function () {

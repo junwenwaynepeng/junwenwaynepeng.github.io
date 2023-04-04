@@ -256,7 +256,7 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/    # permalink是用來設定網址是如何顯示的，不需要更動
 paginate: 5    # 部落格每頁顯現多少文章
 mathjax: true     # 是否啟用mathjax的功能
-mermaid: true     # 是否啟用mermaid的功能
+#mermaid: true     # 是否啟用mermaid的功能
 #kramdown:
 #  syntax_highlighter: rouge
 #  input: GFM
