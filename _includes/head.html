@@ -157,7 +157,7 @@
     {% endfor %}
   {% endif %}
 
-  {% include mathjax.html %}
+  {% include mathjax.html mathjax=site.mathjax %}
   
   {% if page.sagecell %}
     <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
