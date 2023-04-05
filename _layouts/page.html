@@ -19,28 +19,47 @@ layout: base
 
     <div class="container">
       <div class="row">
-        
-        <nav class="col-md-2 d-none d-md-block collapse" aria-label="Left TOC">
-          {% if page.left-toc %}
-            <div class="position-sticky" style="top: 4rem;">
-              <strong class="d-block h6 my-2 pb-2 border-bottom">Content</strong>
-              {% include left-toc.html left-toc=left-toc %}
+        {% if page.left-toc or page.right-toc %}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top w-100 mb-3">
+          <div class="container-fluid">
+            {% if page.left-toc %}
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#leftTocCollapse" aria-controls="leftTocCollapse" aria-expanded="false" aria-label="Toggle Left TOC">
+              Left TOC
+            </button>
+            {% endif %}
+
+            {% if page.right-toc %}
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rightTocCollapse" aria-controls="rightTocCollapse" aria-expanded="false" aria-label="Toggle Right TOC">
+              Right TOC
+            </button>
+            {% endif %}
+
+            <div class="collapse navbar-collapse" id="leftTocCollapse">
+              {% if page.left-toc %}
+              <div class="navbar-nav">
+                <strong class="d-block h6 my-2 pb-2 border-bottom">Content</strong>
+                {% include left-toc.html left-toc=left-toc %}
+              </div>
+              {% endif %}
             </div>
-          {% endif %}
+
+            <div class="collapse navbar-collapse" id="rightTocCollapse">
+              {% if page.right-toc %}
+              <div class="navbar-nav">
+                <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                {% include right-toc.html html=content %}
+              </div>
+              {% endif %}
+            </div>
+          </div>
         </nav>
-        <main class="col-md-8">
+        {% endif %}
+
+        <main class="col-12 col-md-7">
           <article class="markdown-body">
             {{ content }}
           </article>
         </main>
-        <nav class="col-md-2 d-none d-md-block collapse" aria-label="Right TOC">
-          {% if page.right-toc %}
-            <div class="position-sticky" style="top: 4rem;">
-              <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-              {% include right-toc.html html=content %}
-            </div>
-          {% endif %}
-        </nav>
       </div>
     </div>
     
