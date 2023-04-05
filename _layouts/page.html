@@ -19,9 +19,9 @@ layout: base
 
     <!-- Show/hide nav on small screens -->
     {% if page.left-toc or page.right-toc %}
-      <nav class="d-md-none navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="d-md-none navbar navbar-expand-lg navbar-light bg-light space-around">
         {% if page.left-toc %}
-        <div class="d-flex float-start ">
+        <div class="d-flex">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#leftToC" aria-controls="leftToC" aria-expanded="false" aria-label="Toggle navigation">
             目錄
           </button>
@@ -32,7 +32,7 @@ layout: base
         {% endif %}
 
         {% if page.right-toc %}
-        <div class="d-flex float-end">
+        <div class="d-flex">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rightToC" aria-controls="rightToC" aria-expanded="false" aria-label="Toggle navigation">
             On this page
           </button>
@@ -55,7 +55,7 @@ layout: base
           {% endif %}
         </div>
 
-        <main class="col-md-7">
+        <main class="col-md-7 ">
           <article class="markdown-body">
             {{ content }}
           </article>
