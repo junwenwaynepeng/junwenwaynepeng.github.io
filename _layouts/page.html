@@ -19,6 +19,28 @@ layout: base
 
     <div class="container">
       <div class="row">
+        <!-- Show/hide nav on small screens -->
+        <div class="col-12 d-sm-block d-md-none">
+          {% if page.left-toc or page.right-toc %}
+          <div class="dropdown mb-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Table of contents
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+              {% if page.left-toc %}
+              <h6 class="dropdown-header">Content</h6>
+              {% include left-toc.html left-toc=left-toc %}
+              {% endif %}
+
+              {% if page.right-toc %}
+              <h6 class="dropdown-header">On this page</h6>
+              {% include right-toc.html html=content %}
+              {% endif %}
+            </div>
+          </div>
+          {% endif %}
+        </div>
+        
         <div class="col-md-3 d-none d-md-block">
           {% if page.left-toc %}
           <nav class="position-sticky" style="top: 4rem;">
@@ -43,27 +65,7 @@ layout: base
           {% endif %}
         </div>
 
-        <!-- Show/hide nav on small screens -->
-        <div class="col-12 d-sm-block d-md-none">
-          {% if page.left-toc or page.right-toc %}
-          <div class="dropdown mb-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-              Table of contents
-            </button>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-              {% if page.left-toc %}
-              <h6 class="dropdown-header">Content</h6>
-              {% include left-toc.html left-toc=left-toc %}
-              {% endif %}
-
-              {% if page.right-toc %}
-              <h6 class="dropdown-header">On this page</h6>
-              {% include right-toc.html html=content %}
-              {% endif %}
-            </div>
-          </div>
-          {% endif %}
-        </div>
+        
       </div>
     </div>
 
