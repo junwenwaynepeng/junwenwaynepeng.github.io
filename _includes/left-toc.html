@@ -1,6 +1,5 @@
 {% assign left_toc = left-toc %}
 
-
 {% if left_toc %}
   <ul class="list-unstyled mb-0 py-3 pt-md-1">
     {% for item in left_toc.content %}
@@ -10,7 +9,7 @@
           <ul class="list-unstyled mb-0 py-2 pt-md-0e">
             {% for subitem in item.content %}
               <li>
-                <a class="px-1" href="{{ subitem.url  | relative_url }}">-{{ subitem.title }}</a>
+                <a class="px-2" href="{{ subitem.url  | relative_url }}">-{{ subitem.title }}</a>
               </li>
             {% endfor %}
           </ul>
