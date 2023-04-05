@@ -22,7 +22,7 @@ layout: base
         <!-- Show/hide nav on small screens -->
         {% if page.left-toc or page.right-toc %}
         <div class="col-12 d-sm-block d-md-none">
-          <div class="btn-group" role="group">
+          <div class="clearfix">
             {% if page.left-toc %}
             <div class="d-flex float-start">
               <button class="btn btn-secondary" type="button" id="left-toc-button" data-bs-toggle="dropdown" aria-expanded="false">
