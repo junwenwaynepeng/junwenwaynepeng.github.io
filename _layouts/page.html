@@ -22,11 +22,11 @@ layout: base
         <!-- Show/hide nav on small screens -->
         <div class="col-12 d-sm-block d-md-none">
           {% if page.left-toc or page.right-toc %}
-          <div class="btn-group mb-3" role="group">
+          <div class="btn-group ms-auto" role="group">
             {% if page.left-toc %}
             <div class="d-flex">
               <button class="btn btn-secondary" type="button" id="left-toc-button" data-bs-toggle="dropdown" aria-expanded="false">
-                Content
+                書目錄
               </button>
               <div class="dropdown-menu" aria-labelledby="left-toc-button">
                 {% include left-toc.html left-toc=left-toc %}
@@ -35,7 +35,7 @@ layout: base
             {% endif %}
 
             {% if page.right-toc %}
-            <div class="d-flex ms-auto">
+            <div class="d-flex me-auto">
               <button class="btn btn-secondary" type="button" id="right-toc-button" data-bs-toggle="dropdown" aria-expanded="false">
                 On this page
               </button>
