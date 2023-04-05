@@ -22,25 +22,32 @@ layout: base
         <!-- Show/hide nav on small screens -->
         <div class="col-12 d-sm-block d-md-none">
           {% if page.left-toc or page.right-toc %}
-          <div class="dropdown mb-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-              Table of contents
-            </button>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-              {% if page.left-toc %}
-              <h6 class="dropdown-header">Content</h6>
-              {% include left-toc.html left-toc=left-toc %}
-              {% endif %}
-
-              {% if page.right-toc %}
-              <h6 class="dropdown-header">On this page</h6>
-              {% include right-toc.html html=content %}
-              {% endif %}
+          <div class="btn-group mb-3" role="group">
+            {% if page.left-toc %}
+            <div class="d-flex">
+              <button class="btn btn-secondary" type="button" id="left-toc-button" data-bs-toggle="dropdown" aria-expanded="false">
+                Content
+              </button>
+              <div class="dropdown-menu" aria-labelledby="left-toc-button">
+                {% include left-toc.html left-toc=left-toc %}
+              </div>
             </div>
+            {% endif %}
+
+            {% if page.right-toc %}
+            <div class="d-flex ms-auto">
+              <button class="btn btn-secondary" type="button" id="right-toc-button" data-bs-toggle="dropdown" aria-expanded="false">
+                On this page
+              </button>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="right-toc-button">
+                {% include right-toc.html html=content %}
+              </div>
+            </div>
+            {% endif %}
           </div>
           {% endif %}
         </div>
-        
+
         <div class="col-md-3 d-none d-md-block">
           {% if page.left-toc %}
           <nav class="position-sticky" style="top: 4rem;">
