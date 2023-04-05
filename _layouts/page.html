@@ -21,11 +21,11 @@ layout: base
     {% if page.left-toc or page.right-toc %}
       <nav class="d-md-none navbar navbar-expand-lg navbar-light bg-light">
         {% if page.left-toc %}
-        <div class="d-flex float-start">
+        <div class="d-flex float-start ">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#leftToC" aria-controls="leftToC" aria-expanded="false" aria-label="Toggle navigation">
             目錄
           </button>
-          <div class="collapse navbar-collapse" id="leftToC" aria-labelledby="left-toc-button">
+          <div class="collapse navbar-collapse me-4" id="leftToC" aria-labelledby="left-toc-button">
             {% include left-toc.html left-toc=left-toc %}
           </div>
         </div>
