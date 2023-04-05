@@ -20,11 +20,11 @@ layout: base
     <div class="container">
       <div class="row">
         <!-- Show/hide nav on small screens -->
+        {% if page.left-toc or page.right-toc %}
         <div class="col-12 d-sm-block d-md-none">
-          {% if page.left-toc or page.right-toc %}
-          <div class="btn-group ms-auto" role="group">
+          <div class="btn-group" role="group">
             {% if page.left-toc %}
-            <div class="d-flex">
+            <div class="d-flex flex-grow-0 flex-shrink-0">
               <button class="btn btn-secondary" type="button" id="left-toc-button" data-bs-toggle="dropdown" aria-expanded="false">
                 書目錄
               </button>
@@ -35,7 +35,7 @@ layout: base
             {% endif %}
 
             {% if page.right-toc %}
-            <div class="d-flex me-auto">
+            <div class="d-flex flex-grow-0 flex-shrink-0">
               <button class="btn btn-secondary" type="button" id="right-toc-button" data-bs-toggle="dropdown" aria-expanded="false">
                 On this page
               </button>
@@ -45,8 +45,8 @@ layout: base
             </div>
             {% endif %}
           </div>
-          {% endif %}
         </div>
+        {% endif %}
 
         <div class="col-md-3 d-none d-md-block">
           {% if page.left-toc %}
