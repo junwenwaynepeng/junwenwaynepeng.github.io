@@ -22,10 +22,10 @@ layout: base
       <nav class="d-none d-sm-block d-md-none navbar navbar-expand-lg navbar-light bg-light">
         {% if page.left-toc %}
         <div class="d-flex float-start">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            On this page
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#leftToC" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            目錄
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" aria-labelledby="left-toc-button">
+          <div class="collapse navbar-collapse" id="leftToC" aria-labelledby="left-toc-button">
             {% include left-toc.html left-toc=left-toc %}
           </div>
         </div>
@@ -33,10 +33,10 @@ layout: base
 
         {% if page.right-toc %}
         <div class="d-flex float-end">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rightToC" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             On this page
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" aria-labelledby="right-toc-button">
+          <div class="collapse navbar-collapse" id="rightToC" aria-labelledby="right-toc-button">
             {% include right-toc.html html=content %}
           </div>
         </div>
