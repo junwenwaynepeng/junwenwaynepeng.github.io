@@ -1,39 +1,30 @@
 {% assign left_toc = left-toc %}
-{% assign nav = nav %}
-{% if left_toc and nav == 0 %}
-  <ul class="list-unstyled mb-0 py-3 pt-md-1">
-    {% for item in left_toc.content %}
+{% assign in_nav = in_nav %}
+
+{% macro toc_list(content, level=0) %}
+  <ul class="list-unstyled mb-0 py-3 pt-md-1" style="margin-left: {{ level }}rem">
+    {% for item in content %}
       <li>
-        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        <a href="{{ item.url | relative_url }}">
+          {% if level == 0 %}&#8226;{% elif level == 1 %}&bull;{% else %}&minus;{% endif %}
+          {{ item.title }}
+        </a>
         {% if item.content %}
-          <ul class="list-unstyled mb-0 py-2 pt-md-0e">
-            {% for subitem in item.content %}
-              <li>
-                <a href="{{ subitem.url  | relative_url }}">{{ subitem.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
+          {{ toc_list(item.content, level+1) }}
         {% endif %}
       </li>
     {% endfor %}
   </ul>
-{% endif %}
+{% endmacro %}
 
-{% if left_toc and nav == 1 %}
-  <ul class="navbar-nav ms-auto">
-    {% for item in left_toc.content %}
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        {% if item.content %}
-          <ul class="navbar-nav dropdown ms-auto">
-           {% for subitem in item.content %}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ subitem.url  | relative_url }}">{{ subitem.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-       </li>
-     {% endfor %}
-  </ul>
+{% if left_toc %}
+  {% if in_nav %}
+    <div class="d-flex flex-column">
+      {{ toc_list(left_toc.content) }}
+    </div>
+  {% else %}
+    <div class="d-flex flex-column">
+      {{ toc_list(left_toc.content) }}
+    </div>
+  {% endif %}
 {% endif %}
