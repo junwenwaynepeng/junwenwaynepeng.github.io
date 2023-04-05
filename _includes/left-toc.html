@@ -1,5 +1,6 @@
 {% assign left_toc = left-toc %}
-{% if left_toc %}
+{% assign nav = nav %}
+{% if left_toc and nav == 0 %}
   <ul class="list-unstyled mb-0 py-3 pt-md-1">
     {% for item in left_toc.content %}
       <li>
@@ -15,5 +16,23 @@
         {% endif %}
       </li>
     {% endfor %}
+  </ul>
+{% endif %}
+
+{% if left_toc and nav %}
+  <ul class="navbar-nav ms-auto">
+    {%- for link in left_toc.content -%}
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% if item.content %}
+          <ul class="navbar-nav dropdown ms-auto">
+            {% for subitem in item.content %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ subitem.url  | relative_url }}">{{ subitem.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
   </ul>
 {% endif %}
