@@ -19,49 +19,54 @@ layout: base
 
     <div class="container">
       <div class="row">
-        {% if page.left-toc or page.right-toc %}
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top w-100 mb-3">
-          <div class="container-fluid">
-            {% if page.left-toc %}
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#leftTocCollapse" aria-controls="leftTocCollapse" aria-expanded="false" aria-label="Toggle Left TOC">
-              Left TOC
-            </button>
-            {% endif %}
+        <div class="col-md-3 d-none d-md-block">
+          {% if page.left-toc %}
+          <nav class="position-sticky" style="top: 4rem;">
+            <strong class="d-block h6 my-2 pb-2 border-bottom">Content</strong>
+            {% include left-toc.html left-toc=left-toc %}
+          </nav>
+          {% endif %}
+        </div>
 
-            {% if page.right-toc %}
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rightTocCollapse" aria-controls="rightTocCollapse" aria-expanded="false" aria-label="Toggle Right TOC">
-              Right TOC
-            </button>
-            {% endif %}
-
-            <div class="collapse navbar-collapse" id="leftTocCollapse">
-              {% if page.left-toc %}
-              <div class="navbar-nav">
-                <strong class="d-block h6 my-2 pb-2 border-bottom">Content</strong>
-                {% include left-toc.html left-toc=left-toc %}
-              </div>
-              {% endif %}
-            </div>
-
-            <div class="collapse navbar-collapse" id="rightTocCollapse">
-              {% if page.right-toc %}
-              <div class="navbar-nav">
-                <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-                {% include right-toc.html html=content %}
-              </div>
-              {% endif %}
-            </div>
-          </div>
-        </nav>
-        {% endif %}
-
-        <main class="col-12 col-md-7">
+        <main class="col-md-6">
           <article class="markdown-body">
             {{ content }}
           </article>
         </main>
+
+        <div class="col-md-3 d-none d-md-block">
+          {% if page.right-toc %}
+          <nav class="position-sticky" style="top: 4rem;">
+            <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+            {% include right-toc.html html=content %}
+          </nav>
+          {% endif %}
+        </div>
+
+        <!-- Show/hide nav on small screens -->
+        <div class="col-12 d-sm-block d-md-none">
+          {% if page.left-toc or page.right-toc %}
+          <div class="dropdown mb-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Table of contents
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+              {% if page.left-toc %}
+              <h6 class="dropdown-header">Content</h6>
+              {% include left-toc.html left-toc=left-toc %}
+              {% endif %}
+
+              {% if page.right-toc %}
+              <h6 class="dropdown-header">On this page</h6>
+              {% include right-toc.html html=content %}
+              {% endif %}
+            </div>
+          </div>
+          {% endif %}
+        </div>
       </div>
     </div>
+
     
     {% if page.after-content %}
       <div class="after-content">
