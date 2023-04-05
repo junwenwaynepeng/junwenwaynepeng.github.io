@@ -28,16 +28,12 @@ layout: base
             </div>
           {% endif %}
         </nav>
-        
-
         <main class="col-md-7">
           <article class="markdown-body">
             {{ content }}
           </article>
         </main>
-
-        
-        <nav class="col-md-4 d-none d-md-block collapse" aria-label="Right TOC">
+        <nav class="col-md-3 d-none d-md-block collapse" aria-label="Right TOC">
           {% if page.right-toc %}
             <div class="position-sticky" style="top: 4rem;">
               <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
@@ -45,7 +41,6 @@ layout: base
             </div>
           {% endif %}
         </nav>
-
       </div>
     </div>
     
