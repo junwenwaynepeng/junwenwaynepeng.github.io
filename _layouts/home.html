@@ -109,13 +109,13 @@ layout: base
           </li>
           {% endif %}
           {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-              <em>{{ page }}</em>
-            {% elsif page == 1 %}
-              <a href="{{ '/' | relative_url }}">{{ page }}</a>
+          <li class="page-item{% if page == paginator.page %} active{% endif %}">
+            {% if page == 1 %}
+              <a class="page-link" href="{{ '/' | relative_url }}">{{ page }}</a>
             {% else %}
-              <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+              <a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
             {% endif %}
+          </li>
           {% endfor %}
           {% if paginator.next_page %}
           <li class="page-item">
