@@ -19,7 +19,7 @@
   </ul>
 {% endif %}
 
-{% if left_toc and nav %}
+{% if left_toc and nav == 1 %}
   <ul class="navbar-nav ms-auto">
     {% for item in left_toc.content %}
       <li class="nav-item dropdown">
