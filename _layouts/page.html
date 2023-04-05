@@ -26,7 +26,7 @@ layout: base
             目錄
           </button>
           <div class="collapse navbar-collapse" id="leftToC" aria-labelledby="left-toc-button">
-            {% include left-toc.html left-toc=left-toc in_nav=true%}
+            {% include left-toc.html left-toc=left-toc %}
           </div>
         </div>
         {% endif %}
@@ -50,7 +50,7 @@ layout: base
           {% if page.left-toc %}
           <nav class="position-sticky" style="top: 4rem;">
             <strong class="d-block h6 my-2 pb-2 border-bottom">書目錄</strong>
-            {% include left-toc.html left-toc=left-toc in_nav=false %}
+            {% include left-toc.html left-toc=left-toc %}
           </nav>
           {% endif %}
         </div>
