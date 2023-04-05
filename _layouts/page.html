@@ -20,7 +20,7 @@ layout: base
     <div class="container">
       <div class="row">
         {% if page.left-toc %}
-        <nav class="col-lg-2 col-md-3 d-none d-md-block collapse" aria-label="Left TOC">
+        <nav class="col-md-2 d-none d-md-block collapse" aria-label="Left TOC">
           <div class="position-sticky" style="top: 4rem;">
             <strong class="d-block h6 my-2 pb-2 border-bottom">Content</strong>
             {% include left-toc.html left-toc=left-toc %}
@@ -28,14 +28,14 @@ layout: base
         </nav>
         {% endif %}
 
-        <main class="col-12 col-md-7">
+        <main class="col-md-7">
           <article class="markdown-body">
             {{ content }}
           </article>
         </main>
 
         {% if page.right-toc %}
-        <nav class="col-lg-3 col-md-4 d-none d-md-block collapse" aria-label="Right TOC">
+        <nav class="col-md-4 d-none d-md-block collapse" aria-label="Right TOC">
           <div class="position-sticky" style="top: 4rem;">
             <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
             {% include right-toc.html html=content %}
