@@ -24,7 +24,7 @@ layout: base
         <div class="col-12 d-sm-block d-md-none">
           <div class="btn-group" role="group">
             {% if page.left-toc %}
-            <div class="d-flex flex-grow-0 flex-shrink-0">
+            <div class="d-flex float-start">
               <button class="btn btn-secondary" type="button" id="left-toc-button" data-bs-toggle="dropdown" aria-expanded="false">
                 書目錄
               </button>
@@ -35,7 +35,7 @@ layout: base
             {% endif %}
 
             {% if page.right-toc %}
-            <div class="d-flex flex-grow-0 flex-shrink-0">
+            <div class="d-flex float-end">
               <button class="btn btn-secondary" type="button" id="right-toc-button" data-bs-toggle="dropdown" aria-expanded="false">
                 On this page
               </button>
