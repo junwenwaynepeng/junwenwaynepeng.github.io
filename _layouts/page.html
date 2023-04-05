@@ -19,25 +19,27 @@ layout: base
 
     <!-- Show/hide nav on small screens -->
     {% if page.left-toc or page.right-toc %}
-      <nav class="d-md-none navbar navbar-expand-lg navbar-light bg-light space-around">
+      <nav class="d-md-none navbar navbar-expand-lg navbar-light bg-light">
         {% if page.left-toc %}
-        <div class="d-flex">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#leftToC" aria-controls="leftToC" aria-expanded="false" aria-label="Toggle navigation">
-            目錄
-          </button>
-          <div class="collapse navbar-collapse me-4" id="leftToC" aria-labelledby="left-toc-button">
-            {% include left-toc.html left-toc=left-toc %}
+        <div class="space-around">
+          <div class="d-flex">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#leftToC" aria-controls="leftToC" aria-expanded="false" aria-label="Toggle navigation">
+              目錄
+            </button>
+            <div class="collapse navbar-collapse me-4" id="leftToC" aria-labelledby="left-toc-button">
+              {% include left-toc.html left-toc=left-toc %}
+            </div>
           </div>
-        </div>
-        {% endif %}
+          {% endif %}
 
-        {% if page.right-toc %}
-        <div class="d-flex">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rightToC" aria-controls="rightToC" aria-expanded="false" aria-label="Toggle navigation">
-            On this page
-          </button>
-          <div class="collapse navbar-collapse" id="rightToC" aria-labelledby="right-toc-button">
-            {% include right-toc.html html=content %}
+          {% if page.right-toc %}
+          <div class="d-flex">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rightToC" aria-controls="rightToC" aria-expanded="false" aria-label="Toggle navigation">
+              On this page
+            </button>
+            <div class="collapse navbar-collapse" id="rightToC" aria-labelledby="right-toc-button">
+              {% include right-toc.html html=content %}
+            </div>
           </div>
         </div>
         {% endif %}
