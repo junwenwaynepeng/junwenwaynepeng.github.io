@@ -22,10 +22,10 @@ layout: base
       <nav class="d-none d-sm-block d-md-none navbar navbar-expand-lg navbar-light bg-light">
         {% if page.left-toc %}
         <div class="d-flex float-start">
-          <button class="btn btn-secondary" type="button" id="left-toc-button" data-bs-toggle="dropdown" aria-expanded="false">
-            書目錄
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            On this page
           </button>
-          <div class="collapse navbar-collapse" aria-labelledby="left-toc-button">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" aria-labelledby="left-toc-button">
             {% include left-toc.html left-toc=left-toc %}
           </div>
         </div>
