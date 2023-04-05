@@ -18,3 +18,22 @@
     {% endfor %}
   </ul>
 {% endif %}
+
+{% if left_toc and nav %}
+  <ul class="navbar-nav ms-auto">
+    {% for item in left_toc.content %}
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% if item.content %}
+          <ul class="navbar-nav dropdown ms-auto">
+           {% for subitem in item.content %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ subitem.url  | relative_url }}">{{ subitem.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+       </li>
+     {% endfor %}
+  </ul>
+{% endif %}
