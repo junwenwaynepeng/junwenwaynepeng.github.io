@@ -40,7 +40,7 @@
             * class         (string) :   ''   - a CSS class assigned to the TOC
             * id            (string) :   ''   - an ID to assigned to the TOC
             * h_min         (int)    :   1    - the minimum TOC header level to use; any header lower than this value will be ignored
-            * h_max         (int)    :   6    - the maximum TOC header level to use; any header greater than this value will be ignored
+            * h_max         (int)    :   2    - the maximum TOC header level to use; any header greater than this value will be ignored
             * ordered       (bool)   : false  - when set to true, an ordered list will be outputted instead of an unordered list
             * item_class    (string) :   ''   - add custom class(es) for each list item; has support for '%level%' placeholder, which is the current heading level
             * submenu_class (string) :   ''   - add custom class(es) for each child group of headings; has support for '%level%' placeholder which is the current "submenu" heading level
@@ -73,9 +73,9 @@
     {% assign baseURL = include.base_url | default: include.baseurl | default: '' %}
     {% assign skipNoIDs = include.skip_no_ids | default: include.skipNoIDs | default: false %}
     {% assign minHeader = include.h_min | default: 1 %}
-    {% assign maxHeader = include.h_max | default: 6 %}
+    {% assign maxHeader = include.h_max | default: 2 %}
     {% assign nodes = include.html | strip | split: '<h' %}
-    {% assign use_head_url = include.use_head_url | default: false%}
+    {% assign use_head_url = include.use_head_url | default: false %}
 
     {% assign firstHeader = true %}
     {% assign currLevel = 0 %}
@@ -127,7 +127,7 @@
         {% capture anchorBody %}{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}{% endcapture %}
 
         {% if htmlID %}
-            {% capture anchorAttributes %} href="{% if baseURL and use_head_url %}{{ baseURL }}{% endif %}#{{ htmlID }}"{% endcapture %}
+            {% capture anchorAttributes %} href="{% if baseURL and use_head_url == true %}{{ baseURL }}{% endif %}#hellow-world{{ htmlID }}"{% endcapture %}
 
             {% if include.anchor_class %}
                 {% capture anchorAttributes %}{{ anchorAttributes }} class="{{ include.anchor_class | split: '.' | join: ' ' }}"{% endcapture %}
