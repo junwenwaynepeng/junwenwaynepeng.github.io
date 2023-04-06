@@ -2,7 +2,9 @@
 layout: page
 title: 教學網站建立教學
 subtitle: 我們將用Github page建立簡單的教學網站，讓你也可以擁有自己的題庫。
-toc: true
+right-toc: true
+left-toc: true
+book: jekyll-intro
 preview_page: ..
 next_page: choice_of_ide
 ---
@@ -11,9 +13,11 @@ next_page: choice_of_ide
 
 Git是一個開放原始碼的分散式版本控制系統，通過它你可以輕鬆的追蹤、記錄你的程式碼變更以及合併這些變更。而Github 則是一個基於Git的網路托管服務，透過它你可以將你的程式碼上傳到網路上，並與他人進行協作或者分享。
 
-如果你只是個人使用，而不需要進行任何的協作，那麼你只需要前往Git的官方網站，下載安裝Git，即可開始使用Git的基本功能。
+在這個步驟你將完成兩個動作。
 
-接下來，我們將請你先申請一個Github的帳戶，並且將[我的模板](https://github.com/junwenwaynepeng/jekyll-template)複製一份到你的Github帳戶底下。
+第一步，我們將請你先申請一個Github的帳戶，並且將[我的模板](https://github.com/junwenwaynepeng/jekyll-template)複製(Fork)一份到你的Github帳戶底下。
+
+第二步，請下載並安裝Git。
 
 ## 申請 Github 帳戶與Fork我的模板
 
