@@ -3,5 +3,8 @@ content:
     title: 1. 概述
     url: ./pages/jekyll-intro/intro
   - 
-    title: 2. Git與Github
+    title: 2. Git 與 Github
     url: ./pages/jekyll-intro/git_and_github
+  -
+    title: 3. 編輯器選擇
+    url: ./pages/jekyll-intro/choice_of_ide
