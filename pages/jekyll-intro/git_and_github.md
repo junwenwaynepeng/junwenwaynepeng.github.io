@@ -69,7 +69,7 @@ vi id_ed25510.pub
 
 1. 登入 GitHub 帳戶後，點擊右上角的頭像圖示，從選單中選擇「Settings」。
 ![profile photo](/img/github_ssh_1.jpg)
-![setting](/img/github_ssh_2.jpg)
+![setting](/img/github_ssh_2.png)
 
 
 2. 在頁面左側的選單中選擇「SSH and GPG keys」，再點擊「New SSH Key」。

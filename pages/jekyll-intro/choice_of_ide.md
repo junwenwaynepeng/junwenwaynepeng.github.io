@@ -33,8 +33,29 @@ Sublime Merge 是一個由 Sublime Text 團隊開發的 Git 圖形化使用者�
 
 ### 開啟 Sublime 編輯器與使用 Sublime Merge
 
+1. 開啟 Sublime Text 軟體，點選「File」，再點選「Open Folder」，選擇要編輯的檔案所在的資料夾。
+![File](/img/choice_of_ide_1.jpg)
+![Opne Folder](/img/choice_of_ide_2.png)
 
+2. 開啟檔案後，就可以直接在 Sublime Text 上編輯了。如果需要新增檔案，可以在左側資料夾列表上按右鍵，選擇「New File」。
+3. 編輯完成後，可以儲存檔案。點選「File」，再點選「Save」或「Save As」(`ctrl+s`)，選擇要儲存的位置與檔案名稱。
+4. 我們先打開 `_post` 資料夾裡面的任一個檔案進行編輯並存檔。
+![edit file in post](/img/choice_of_ide_3.jpg)
 
-* [Visual Studio](https://code.visualstudio.com/Download)
+5. 先確定 Sublime Merge 已經安裝好。
+6. 點選 Sublime Text 視窗右下角的 main。開啟 Sublime Merge。
+![Sublime Merge](/img/choice_of_ide_4.jpg)
+7. 如果要把本地端更改的結果上傳，需要完成下面兩個動作。
+	* `git commit` 再次確認所有檔案變更，此步驟須點擊右側 Stage All **兩次**
+	![git commit](/img/choice_of_ide_5.jpg)
+	* `git push` 上傳同步到雲端，此步驟需要對你的變更做簡單描述，接著點擊「向上的箭頭」即可
+	![git pus](/img/choice_of_ide_6.jpg)
+8. 如果要把雲端的並更結果同步到本地端僅須點擊「向下的箭頭」即可
+![git pull](/img/choice_of_ide_7.jpg)
 
-## Sublime 的 Git 套件
+到這裡，你已經學會了更動你部落格所有資料的方法了。
+
+## Visual Studio 詳細介紹
+
+首先請先到 Visual Studio 的官網[下載](https://code.visualstudio.com/Download)並安裝，安裝過程中你可能需要選擇安裝位置和一些設定選項，建議選擇預設值即可。(More will be coming...)
+
