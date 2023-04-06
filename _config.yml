@@ -25,7 +25,7 @@ navbar-links:
     - ChatGPT: "https://chat.openai.com/chat"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-    - Build yourown blog: "pages/jekyll-intro/intro"
+    - Build yourown blog: "pages/jekyll-intro/0-intro"
   Publication: "publication"
 
 ################
