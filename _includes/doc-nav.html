@@ -1,5 +1,9 @@
 <!-- Document navigation shows the table of contents of a book and on the page. This navigation bar will only show on small screen. For larger screen, we use left table of conetns and right table of contents.-->
 
+{% assign content=include.content %}
+{% assign sanitize=include.content %}
+{% assign left-toc=left-toc %}
+
 <nav class="d-md-none navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">

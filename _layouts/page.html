@@ -19,7 +19,7 @@ layout: base
 
     <!-- Show/hide nav on small screens -->
     {% if page.left-toc or page.right-toc %}
-      {% include doc-nav.html %}
+      {% include doc-nav.html content=content sanitize=true left-toc=left-toc %}
     {% endif %}
 
     <div class="container">
@@ -43,7 +43,7 @@ layout: base
           {% if page.right-toc %}
           <nav class="position-sticky" style="top: 4rem;">
             <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-            {% include right-toc.html html=content %}
+            {% include right-toc.html html=content sanitize=true %}
           </nav>
           {% endif %}
         </div>
