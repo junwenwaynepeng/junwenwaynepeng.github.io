@@ -127,7 +127,7 @@
         {% capture anchorBody %}{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}{% endcapture %}
 
         {% if htmlID %}
-            {% capture anchorAttributes %} href="{% if baseURL and use_head_url == true %}{{ baseURL }}{% endif %}#hellow-world{{ htmlID }}"{% endcapture %}
+            {% capture anchorAttributes %} href="{% if baseURL and use_head_url == true %}{{ baseURL }}{% else %}#{{ htmlID }}{% endif %}"{% endcapture %}
 
             {% if include.anchor_class %}
                 {% capture anchorAttributes %}{{ anchorAttributes }} class="{{ include.anchor_class | split: '.' | join: ' ' }}"{% endcapture %}
