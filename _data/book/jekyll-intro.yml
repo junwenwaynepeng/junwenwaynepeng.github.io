@@ -1,14 +1,7 @@
 content:
   - 
-    title: First Item
-    url: /pages/first-item.html
-    content:
-      - 
-        title: Subitem 1
-        url: /pages/subitem-1.html
-      - 
-        title: Subitem 2
-        url: /pages/subitem-2.html
+    title: 1. 概述
+    url: ./pages/jekyll-intro/intro
   - 
-    title: Second Item
-    url: /pages/second-item.html
+    title: 2. Git與Github
+    url: ./pages/jekyll-intro/git_and_github
