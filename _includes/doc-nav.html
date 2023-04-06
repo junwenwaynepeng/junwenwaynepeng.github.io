@@ -1,8 +1,8 @@
 <!-- Document navigation shows the table of contents of a book and on the page. This navigation bar will only show on small screen. For larger screen, we use left table of conetns and right table of contents.-->
 
 {% assign content=include.content %}
-{% assign sanitize=include.content %}
-{% assign left-toc=left-toc %}
+{% assign sanitize=include.sanitize %}
+{% assign left-toc=include.left-toc %}
 
 <nav class="d-md-none navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
@@ -21,7 +21,7 @@
           On this page
         </button>
         <div class="collapse navbar-collapse" id="rightToC" aria-labelledby="right-toc-button">
-          {% include right-toc.html html=content %}
+          {% include right-toc.html html=content sanitize=sanitize %}
         </div>
       {% endif %}
     </div>
