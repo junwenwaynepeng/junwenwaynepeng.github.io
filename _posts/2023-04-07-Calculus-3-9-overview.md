@@ -13,7 +13,7 @@ In our latest class, we delved deeper into integration and introduced the concep
 ## Area enlosed by a polar curve
 
 Suppose $r=r(\theta)$ is a simple curve surrounding the origin. The enclosed area $\Sigma$ is
-$$\Sigma: 0\leq \theta 2\pi,\ 0<r\leq r(\theta).$$
+$$\Sigma: 0\leq \theta\leq 2\pi,\ 0<r\leq r(\theta).$$
 Then, the area $A(\Sigma)$ is
 $$\int\int_\Sigma rdrd\theta.$$
 
