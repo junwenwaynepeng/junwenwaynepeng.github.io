@@ -13,7 +13,7 @@ In our latest class, we delved deeper into integration and introduced the concep
 ## Area enlosed by a polar curve
 
 Suppose $r=r(\theta)$ is a simple curve surrounding the origin. The enclosed area $\Sigma$ is
-$$\Sigma: 0\leq \theta 2pi,\ 0<r\leq r(\theta).$$
+$$\Sigma: 0\leq \theta 2\pi,\ 0<r\leq r(\theta).$$
 Then, the area $A(\Sigma)$ is
 $$\int\int_\Sigma rdrd\theta.$$
 
@@ -35,6 +35,7 @@ J_{F}(u,v)=\det\left|
 \begin{matrix}
 \frac{\partial x}{\partial u} & \frac{\partial x}{\partial v}\\\\
 \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v}
+\end{matrix}
 \right|
 $$
 where $F(u,v)=(x(u,v),y(u,v))$ is a change of variable.
