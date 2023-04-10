@@ -21,9 +21,9 @@ sagecell: true
 4. Evaluate $\int_0^4\int_{\frac{\sqrt{y}}{2}}^1\sqrt{x^3+3}dxdy$.
 
 5. Calculate the area of the region inside a half cardioid
-$$r=1-\sin(\theta)$$
-    <div class="compute">
+$$r=1-\sin(\theta)$$ 	
+    <div class="compute"><script>
     polar_plot(1-sin(x), (x,-pi,pi), color='blue')
-    </div>
+    </script></div>
 
 6. Evaluate $\int\int_\Omega (x^2-y^2)dxdy$ where $\Omega$ is enclosed by $y-x=1$, $y-x=0$, $xy=2$ and $xy=1$. 
