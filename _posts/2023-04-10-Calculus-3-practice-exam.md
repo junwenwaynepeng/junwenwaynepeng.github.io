@@ -17,7 +17,7 @@ head-package:
 2. Let $f(x,y)=x^2y-xy^2$. Suppose both $x$ and $y$ are functions of $t$. Say $x(t)=\ln(t)$ and $y(t)=\tan(t)$. Find $\frac{\partial F}{\partial t}$.
 
 
-3. Suppose the function $f(x,y)=ax^2+bxy+cy^2+3x$ has a saddle point when $x = -\frac{6}{5} and y = -\frac{3}/{5}$. 
+3. Suppose the function $f(x,y)=ax^2+bxy+cy^2+3x$ has a saddle point when $x = -\frac{6}{5} and y = -\frac{3}{5}$. 
 	1. Find $a$, $b$, and $c$.
 	2. Find the local maximal and local minimal on the region $x^2+y^2\leq 9$.  
 
