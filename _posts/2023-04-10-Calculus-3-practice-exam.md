@@ -3,6 +3,9 @@ title: Calculus 3 Practice Exam
 subtitle: 
 tags: Calculus 3, Practice
 sagecell: true
+head-package:
+	-
+		file: "package/sagecell.html"
 ---
 
 1. Let $f(x,y)=\sqrt{1+x+2y}$.
