@@ -14,7 +14,7 @@ head-package:
 	3. Find an equation of the tangent plain to the graph $z=f(x,y)$ when $x=2$ and $y=3$.
 	3. Use the linearization of $f$ at $(2,3)$ to estimate the value of $f(2.01,2.99)$.
 
-2. Let $f(x,y)=x^2y-xy^2$. Suppose both $x$ and $y$ are functions of $t$. Say $x(t)=ln(t)$ and $y(t)=\tan(t)$. Find $\frac{\partial F}{\partial t}$.
+2. Let $f(x,y)=x^2y-xy^2$. Suppose both $x$ and $y$ are functions of $t$. Say $x(t)=\ln(t)$ and $y(t)=\tan(t)$. Find $\frac{\partial F}{\partial t}$.
 
 
 3. Suppose the function $f(x,y)=ax^2+bxy+cy^2+3x$ has a saddle point when $x = -\frac{6}{5} and y = -\frac{3}/{5}$. 
