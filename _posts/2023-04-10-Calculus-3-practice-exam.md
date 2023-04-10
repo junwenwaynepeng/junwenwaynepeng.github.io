@@ -4,8 +4,8 @@ subtitle:
 tags: Calculus 3, Practice
 sagecell: true
 head-package:
-	-
-		file: "package/sagecell.html"
+  -
+    file: "package/sagecell.html"
 ---
 
 1. Let $f(x,y)=\sqrt{1+x+2y}$.
@@ -25,8 +25,8 @@ head-package:
 
 5. Calculate the area of the region inside a half cardioid
 $$r=1-\sin(\theta)$$ 	
-    <div class="compute"><script>
+    <div class="compute">
     polar_plot(1-sin(x), (x,-pi,pi), color='blue')
-    </script></div>
+    </div>
 
 6. Evaluate $\int\int_\Omega (x^2-y^2)dxdy$ where $\Omega$ is enclosed by $y-x=1$, $y-x=0$, $xy=2$ and $xy=1$. 
