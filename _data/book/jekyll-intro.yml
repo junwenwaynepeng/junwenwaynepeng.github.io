@@ -11,3 +11,6 @@ content:
   -
     title: 4. 用 Markdown 新增你的第一篇文章
     url: ./pages/jekyll-intro/3-the-first-post
+  -
+    title: 5. Jekyll 網站參數調整
+    url: ./pages/jekyll-intro/4-jekyll-config
