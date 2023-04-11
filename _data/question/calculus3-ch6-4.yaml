@@ -2,4 +2,7 @@ s-1:
   question: |
     Evaluate $\int\int_\Omega (x^2-y^2)dxdy$ where $\Omega$ is enclosed by $y-x=1$, $y-x=0$, $xy=2$ and $xy=1$. 
   answer: |
-    Consider a change of variable $(u,\ v)\Phe(x,y) = (y-x,\ xy)$.
+    Consider a change of variable $(u,\ v) = \Phi(x,y) = (y-x,\ xy)$. Then, we have
+    $$\Omega' = \Phi(\Omega): 0\leq u\leq 1,\ 1\leq v\leq 2.$$
+
+    If we desire to change variables from $x$ and $y$ to $u$ and $v$, we have to find "inverse" function of $\Phi$
