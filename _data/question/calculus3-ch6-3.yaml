@@ -7,13 +7,11 @@ s-1:
     </div>
 
   answer: |
-    The area is the following double integral:
+    The area is the following double integral $\frac{1}{3}$:
     $$
     \begin{aligned}
     \int_{-\pi/2}^{\pi/2}\int_0^{1-\sin(\theta)} r drd\theta &= \frac{1}{2}\int_{-\pi/2}^{\pi/2} (1-\sin\theta)^2 d\theta\\\\
     &= -\int_{-\pi/2}^{\pi/2} \sin\theta d\theta + \frac{1}{2}\int_{-\pi/2}^{\pi/2} 1 + \sin^2\theta d\theta\\\\
-    &= \left. \cos\theta \right|_{-\pi/2}^{\pi/2} + \int_{-\pi/2}^{\pi/2}- \frac{1}{2} + \sin^2\theta d\theta\\\\
-    &= 0 + \left. \theta \right|_{-\pi/2}^{\pi/2} + \int_{-\pi/2}^{\pi/2} \frac{1}{2}\cos2\theta d\theta\\\\
-    &= \pi + \left. \frac{-1}{4}\sin 2\theta \right|_{-\pi/2}^{\pi/2} = \pi.
+    &= \left. \cos\theta \right|_{-\pi/2}^{\pi/2} + \int_{-\pi/2}^{\pi/2} 
     \end{aligned}
     $$
