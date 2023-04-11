@@ -27,7 +27,6 @@ data:
   	folder: question
   	file: calculus3-ch6-3
   	id: s-1
-
 show-answer: true
 expandable-answer: true
 ---
@@ -52,4 +51,6 @@ expandable-answer: true
 
 		<div id='answer-question-calculus3-ch6-3-s-1'></div>
 
-6. Evaluate $\int\int_\Omega (x^2-y^2)dxdy$ where $\Omega$ is enclosed by $y-x=1$, $y-x=0$, $xy=2$ and $xy=1$. 
+6. <div id='question-question-calculus3-ch6-4-s-1'></div>
+		
+		<div id='answer-question-calculus3-ch6-4-s-1'></div>
