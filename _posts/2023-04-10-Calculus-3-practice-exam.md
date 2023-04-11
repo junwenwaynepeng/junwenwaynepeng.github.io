@@ -37,7 +37,6 @@ expandable-answer: true
 
 		<div id='answer-question-calculus3-ch6-2-s-1'></div>
 
-
 5. <div id='question-question-calculus3-ch6-3-s-1'></div>
 
 		<div id='answer-question-calculus3-ch6-3-s-1'></div>
