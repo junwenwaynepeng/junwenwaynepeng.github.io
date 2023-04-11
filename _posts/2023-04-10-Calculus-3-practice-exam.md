@@ -58,3 +58,9 @@ expandable-answer: true
 6. <div id='question-question-calculus3-ch6-4-s-1'></div>
 
     <div id='answer-question-calculus3-ch6-4-s-1'></div>
+
+## Remark
+
+1. In Question 3, we use simply compare values to determine the maximum or minimum on the boundary. While we acknowledge that this method is not entirely rigorous, we have not covered a more rigorous method in this course.
+2. It is recommended that you review the **double angle formula** before the midterm.
+3. We did not explicitly introduce the second method used in Question 6. We suggest that you review the method.
