@@ -20,3 +20,11 @@ s-1:
       &= \int\int_{\Omega'}(x^2-y^2)J_{\Phi}(x,y)^{-1}dudv.
       \end{aligned}
       $$
+      where
+      $$
+      J_{\Phi}(x,y) = -x-y.
+      $$
+      Thus, it follows that
+      $$
+      \int\int_{\Omega'}(x^2-y^2)J_{\Phi}(x,y)^{-1}dudv = \int\int_{\Omega'}-(x-y)dudv = \int_1^2\int_0^1 ududv = 1.
+      $$
