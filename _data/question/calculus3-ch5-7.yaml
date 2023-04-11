@@ -1,0 +1,42 @@
+m1:
+  question: |
+    Suppose the function $f(x,y)=ax^2+bxy+cy^2+3x$ has a saddle point when $x = -\frac{6}{5} and y = \frac{3}{5}$, and suppose $f(0,1)=1$. 
+      1. Find $a$, $b$, and $c$.
+      2. Find the local maximal and local minimal on the region $x^2+y^2\leq 9$.  
+  answer: |
+    1. Since $\left(-\frac{6}{5},\frac{3}{5}\right)$ is a critical point of $f$, so we may set the following system of equations
+    $$
+    \nabla f\left(-\frac{6}{5},\frac{3}{5}\right) = (0,0)\ Rightarrow
+    \begin{cases}
+    4a-b=3\\\\
+    b-c=0
+    \end{cases}.
+    $$
+    Moreover, $c=1$ follows $f(0,1)=1$. Hence, we have $a=1$ and $b=1$.
+    2. We already know $\left(-\frac{6}{5},\frac{3}{5}\right)$ is a critical point in the region $x^2+y^2\leq 9$. It remains to identify critical points on the boundary. By Lagrange method, we have to solve, for $g(x,y)=x^2+y^2$,
+    $$
+    \begin{cases}
+    \nabla f =\lambda\nabla g\\\\
+    g = 9
+    \end{cases}\Rightarrow
+    \begin{cases}
+    2x + y + 3 = \lambda 2x\\\\
+    x + 2y = \lambda 2y\\\\
+    x^2 + y^2 = 9
+    \end{cases}.
+    $$
+    We devide the first equation by the second, and derive
+    $$
+    \begin{cases}
+    \frac{2x+y+3}{x+2y}=\frac{x}{y}\\\\
+    x^2 + y^2 = 9
+    \end{cases}\Rightarrow
+    \begin{cases}
+    x^2 - y^2 = 3y\\\\
+    x^2 + y^2 = 9
+    \end{cases}\Rightarrow
+    2y^2 + 3y - 9 = 0.
+    $$
+    Therefore, we have $y=\frac{3}{2}$ or $-3$, and $x=\pm\frac{3\sqrt{3}}{2}$ or $0$ respectively.\
+    For $(x,y) = (\frac{3\sqrt{3}}{2},\frac{3}{2})$, $f(x,y) = \frac{27(1+\sqrt{3})}{4}$ (max).\
+    For $(x,y) = (0,3)$, $f(x,y) = 9$ (min).\

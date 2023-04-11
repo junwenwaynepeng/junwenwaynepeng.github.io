@@ -1,0 +1,5 @@
+s-1:
+  question: |
+    Let $f(x,y)=x^2y-xy^2$. Suppose both $x$ and $y$ are functions of $t$. Say $x(t)=\ln(t)$ and $y(t)=\tan(t)$. Find $\frac{\partial F}{\partial t}$.
+  answer: |
+    $\frac{\partial f}{\partial t} = \frac{\partial f}{\partial x}\frac{\partial x}{\partial t} + \frac{\partial f}{\partial y}\frac{\partial y}{\partial t} = \frac{2\ln(t)-\tan^2(t)}{t} + (2\ln(t)\tan(t)-\tan^2(t))\sec^2(t)$.
