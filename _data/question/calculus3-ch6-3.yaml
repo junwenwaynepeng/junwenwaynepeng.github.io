@@ -16,5 +16,4 @@ s-1:
     &= 0 + \left. \theta \right\vert_{-\pi/2}^{\pi/2} + \int_{-\pi/2}^{\pi/2} \frac{1}{2}\cos2\theta d\theta\\\\
     &= \pi + \left. \frac{-1}{4}\sin 2\theta \right\vert_{-\pi/2}^{\pi/2} = \pi.
     \end{aligned}
-    \end{aligned}
     $$
