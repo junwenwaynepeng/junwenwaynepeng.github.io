@@ -11,6 +11,7 @@ s-1:
     $$
     \begin{aligned}
     \int_{-\pi/2}^{\pi/2}\int_0^{1-\sin(\theta)} r drd\theta &= \frac{1}{2}\int_{-\pi/2}^{\pi/2} (1-\sin\theta)^2 d\theta\\\\
-    &= -\int_{-\pi/2}^{\pi/2}\sin\theta d\theta + \int_{-\pi/2}^{\pi/2} 1 + \sin^2\theta d\theta
+    &= -\int_{-\pi/2}^{\pi/2} \sin\theta d\theta + \int_{-\pi/2}^{\pi/2} 1 + \sin^2\theta d\theta\\\\
+    &= \left. \cos\theta \right|_{-\pi/2}^{\pi/2} + \int_{-\pi/2}^{\pi/2} \frac{3}{2} - \frac{1}{2} + \sin^2\theta d\theta
     \end{aligned}
     $$
