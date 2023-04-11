@@ -15,6 +15,7 @@ s-1:
     &= \left. \cos\theta \right|_{-\pi/2}^{\pi/2} + \int_{-\pi/2}^{\pi/2} 
     \end{aligned}
     $$
+    test
     $$
     \begin{aligned}
     \frac{3}{2} - \frac{1}{2} + \sin^2\theta d\theta\\\\
