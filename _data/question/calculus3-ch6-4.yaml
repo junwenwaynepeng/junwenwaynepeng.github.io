@@ -14,4 +14,9 @@ s-1:
       It follows that the value of the double integral is $1$.
     * Method 2:
       Observing $dxdy = J_{\Psi}(u,v)dudv$ and $dudv = J_{\Phi}dxdy$, we notice that $J_{\Psi}(u,v) = J_{\Phi}(x,y)^{-1}$. Therefore, we have
-      $$\int\int_\Omega (x^2-y^2)dxdy = \int\int_{\Omega'}(x^2-y^2)J_{\Psi}(u,v)dudv = \int\int_{\Omega'}(x^2-y^2)J_{\Phi}(x,y)^{-1}dudv.$$
+      $$
+      \begin{aligned}
+      \int\int_\Omega (x^2-y^2)dxdy &= \int\int_{\Omega'}(x^2-y^2)J_{\Psi}(u,v)dudv\\\\
+      &= \int\int_{\Omega'}(x^2-y^2)J_{\Phi}(x,y)^{-1}dudv.
+      \end{aligned}
+      $$
