@@ -9,5 +9,7 @@ s-1:
   answer: |
     The area is the following double integral:
     $$
-    \int_{-\pi/2}^{\pi/2}\int_0^{1-\sin(\theta)}rdrd\theta
+    \begin{aligned}
+    \int_{-\pi/2}^{\pi/2}\int_0^{1-\sin(\theta)} r drd\theta &= \frac{1}{2}\int_{-\pi/2}^{\pi/2} (1-\sin\theta)^2 d\theta
+    \end{aligned}
     $$
