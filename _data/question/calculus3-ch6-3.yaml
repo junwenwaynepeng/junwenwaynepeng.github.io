@@ -10,6 +10,7 @@ s-1:
     The area is the following double integral:
     $$
     \begin{aligned}
-    \int_{-\pi/2}^{\pi/2}\int_0^{1-\sin(\theta)} r drd\theta &= \frac{1}{2}\int_{-\pi/2}^{\pi/2} (1-\sin\theta)^2 d\theta
+    \int_{-\pi/2}^{\pi/2}\int_0^{1-\sin(\theta)} r drd\theta &= \frac{1}{2}\int_{-\pi/2}^{\pi/2} (1-\sin\theta)^2 d\theta\\\\
+    &= -\int_{-\pi/2}^{\pi/2}\sin\theta d\theta + \int_{-\pi/2}^{\pi/2} 1 + \sin^2\theta d\theta
     \end{aligned}
     $$
