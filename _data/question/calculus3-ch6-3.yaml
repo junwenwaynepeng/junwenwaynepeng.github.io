@@ -14,6 +14,6 @@ s-1:
     &= -\int_{-\pi/2}^{\pi/2} \sin\theta d\theta + \frac{1}{2}\int_{-\pi/2}^{\pi/2} 1 + \sin^2\theta d\theta\\\\
     &= \left. \cos\theta\right\vert_{-\pi/2}^{\pi/2} + \frac{1}{2}\int_{-\pi/2}^{\pi/2}\frac{3}{2} - \frac{1}{2} + \sin^2\theta d\theta\\\\
     &= 0 + \left. \frac{3}{4}\theta \right\vert_{-\pi/2}^{\pi/2} - \frac{1}{2}\int_{-\pi/2}^{\pi/2} \cos2\theta d\theta\\\\
-    &= \frac{3}{4}\pi + \left. \frac{1}{4}\sin 2\theta \right\vert_{-\pi/2}^{\pi/2} = \pi.
+    &= \frac{3}{4}\pi + \left. \frac{1}{4}\sin 2\theta \right\vert_{-\pi/2}^{\pi/2} = \frac{3}{4}\pi.
     \end{aligned}
     $$
