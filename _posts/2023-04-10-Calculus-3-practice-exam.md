@@ -25,7 +25,6 @@ expandable-answer: true
 
     <div id='answer-question-calculus3-ch5-4-m-1'></div>
 
-
 2. <div id='question-question-calculus3-ch5-3-s-1'></div>
 
     <div id='answer-question-calculus3-ch5-3-s-1'></div>
@@ -39,10 +38,8 @@ expandable-answer: true
 		<div id='answer-question-calculus3-ch6-2-s-1'></div>
 
 
-5. Calculate the area of the region inside a half cardioid
-$$r=1-\sin(\theta)$$ 	
-    <div class="compute">
-    polar_plot(1-sin(x), (x,-pi/2,pi/2), color='blue')
-    </div>
+5. <div id='question-question-calculus3-ch6-3-s-1'></div>
+
+		<div id='answer-question-calculus3-ch6-3-s-1'></div>
 
 6. Evaluate $\int\int_\Omega (x^2-y^2)dxdy$ where $\Omega$ is enclosed by $y-x=1$, $y-x=0$, $xy=2$ and $xy=1$. 
