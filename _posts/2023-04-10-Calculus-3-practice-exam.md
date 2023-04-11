@@ -20,13 +20,6 @@ expandable-answer: true
     <div id='answer-question-calculus3-ch5-7-1'></div>
 
 
-
-1. Let $f(x,y)=\sqrt{1+x+2y}$.
-	1. Find Gradient of $f$, and explain what the meaning of gradient.
-	2. Find vectors $\vec{v}$ such that the directional derivative of $f$ along the vector $\vec{v}$ at $(2,3)$ is $0$.
-	3. Find an equation of the tangent plain to the graph $z=f(x,y)$ when $x=2$ and $y=3$.
-	3. Use the linearization of $f$ at $(2,3)$ to estimate the value of $f(2.01,2.99)$.
-
 2. Let $f(x,y)=x^2y-xy^2$. Suppose both $x$ and $y$ are functions of $t$. Say $x(t)=\ln(t)$ and $y(t)=\tan(t)$. Find $\frac{\partial F}{\partial t}$.
 
 
