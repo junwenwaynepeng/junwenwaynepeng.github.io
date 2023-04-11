@@ -6,7 +6,7 @@ m-1:
   answer: |
     1. Since $\left(-\frac{6}{5},\frac{3}{5}\right)$ is a critical point of $f$, so we may set the following system of equations
     $$
-    \nabla f\left(-\frac{6}{5},\frac{3}{5}\right) = (0,0)\ Rightarrow
+    \nabla f\left(-\frac{6}{5},\frac{3}{5}\right) = (0,0)\Rightarrow
     \begin{cases}
     4a-b=3\\\\
     b-c=0
