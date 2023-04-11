@@ -19,4 +19,5 @@ ch5-7-1:
   answer: |
     1. $f_x = \frac{1}{\sqrt{1+x+2y}}$, $f_y = \frac{2}{\sqrt{1+x+2y}}$. The gradient of a function $f$ at a point $(a,b)$ is a vector pointing to the direction where has largest directional derivative at the point, i.e.
     $$\frac{\partial f}{\partial\nabla f} = \max_\vec{v}\left{\frac{\partial f}{\partial \vec{v}}\right\right}.$$
-    2. 
+    2. We notice that $\vec{v} being perpendicular to $\nabla f$ follows from the following equation 
+    $$\frac{\partial f}{\partial\vec{v}} = \vec{v}\cdot\nabla f =0.$$
