@@ -11,6 +11,8 @@ data:
     folder: question
     file: calculus3
     id: ch5-7-1
+show-answer: true
+expandable-answer: true
 ---
 
 1. <div id='question-question-calculus3-ch5-7-1'></div>
