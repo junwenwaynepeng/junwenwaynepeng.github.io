@@ -1,0 +1,8 @@
+s1:
+  question: |
+    Evaluate $\int_0^4\int_{\frac{\sqrt{y}}{2}}^1\sqrt{x^3+3}dxdy$.
+  answer: |
+    To interchange the order of integration, we have to rewrite the limits of $\Omega: 0<y<4,\ \frac{\sqrt{y}}{2}<x<1$. It is
+    $$\Omega: 0<x<1,\ 0<y<4x^2.$$ 
+    Thus, the integral is
+    $$\int_0^1\int_0^4x^2 \sqrt{x^3+3}dydx = \int_0^1 4x^2\sqrt{x^3+3}dx = \left.\frac{8}{9}(x^3+3)^{3/2}\right|^1_0.$$
