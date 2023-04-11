@@ -8,3 +8,14 @@ a1:
     - [ ] 選項四
   answer: |
     選項一
+
+ch5-7-1:
+  question: |
+    Let $f(x,y)=\sqrt{1+x+2y}$.
+      1. Find Gradient of $f$, and explain what the meaning of gradient.
+      2. Find vectors $\vec{v}$ such that the directional derivative of $f$ along the vector $\vec{v}$ at $(2,3)$ is $0$.
+      3. Find an equation of the tangent plain to the graph $z=f(x,y)$ when $x=2$ and $y=3$.
+      4. Use the linearization of $f$ at $(2,3)$ to estimate the value of $f(2.01,2.99)$.
+  answer: |
+    1. $f_x = \frac{1}{\sqrt{1+x+2y}}$, $f_y = \frac{2}{\sqrt{1+x+2y}}$. The gradient of a function $f$ at a point $(a,b)$ is a vector pointing to the direction where has largest directional derivative at the point, i.e.
+    $$\frac{\partial f}{\partial\nabla f} = \max_\vec{v}\left{\frac{\partial f}{\partial \vec{v}}\right}.$$

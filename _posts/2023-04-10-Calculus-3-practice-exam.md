@@ -6,7 +6,19 @@ sagecell: true
 head-package:
   -
     file: "package/sagecell.html"
+data:
+  - 
+    folder: question
+    file: calculus3
+    id: ch5-7-1
 ---
+
+1. <div id='question-question-calculus3-ch5-7-1'></div>
+		<details>
+			<summary>Answer</summary>
+    	<div id='answer-question-calculus3-ch5-7-1'></div>
+    </details>
+
 
 1. Let $f(x,y)=\sqrt{1+x+2y}$.
 	1. Find Gradient of $f$, and explain what the meaning of gradient.
@@ -17,7 +29,7 @@ head-package:
 2. Let $f(x,y)=x^2y-xy^2$. Suppose both $x$ and $y$ are functions of $t$. Say $x(t)=\ln(t)$ and $y(t)=\tan(t)$. Find $\frac{\partial F}{\partial t}$.
 
 
-3. Suppose the function $f(x,y)=ax^2+bxy+cy^2+3x$ has a saddle point when $x = -\frac{6}{5} and y = -\frac{3}{5}$. 
+3. Suppose the function $f(x,y)=ax^2+bxy+cy^2+3x$ has a saddle point when $x = -\frac{6}{5} and y = -\frac{3}{5}$, and suppose $f(0,1)=1$. 
 	1. Find $a$, $b$, and $c$.
 	2. Find the local maximal and local minimal on the region $x^2+y^2\leq 9$.  
 
