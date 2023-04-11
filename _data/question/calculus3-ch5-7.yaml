@@ -39,4 +39,4 @@ m-1:
     $$
     Therefore, we have $y=\frac{3}{2}$ or $-3$, and $x=\pm\frac{3\sqrt{3}}{2}$ or $0$ respectively.\
     For $(x,y) = (\frac{3\sqrt{3}}{2},\frac{3}{2})$, $f(x,y) = \frac{27(1+\sqrt{3})}{4}$ (max).\
-    For $(x,y) = (0,3)$, $f(x,y) = 9$ (min).\
+    For $(x,y) = (0,3)$, $f(x,y) = 9$ (min).
