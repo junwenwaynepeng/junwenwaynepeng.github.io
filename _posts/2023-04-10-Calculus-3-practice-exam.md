@@ -16,9 +16,9 @@ data:
 1. <div id='question-question-calculus3-ch5-7-1'></div>
 		<details>
 			<summary>Answer</summary>
-
     	<div id='answer-question-calculus3-ch5-7-1'></div>
     </details>
+    <div id='answer-question-calculus3-ch5-7-1'></div>
 
 
 1. Let $f(x,y)=\sqrt{1+x+2y}$.
