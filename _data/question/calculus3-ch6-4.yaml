@@ -7,12 +7,11 @@ s-1:
     * Method 1:
       If we desire to change variables from $x$ and $y$ to $u$ and $v$, we have to find "inverse" function of $\Phi$. We notice that
       $$y+x = \sqrt{u^2+4v}.$$
-      Thus, we can consider $\Rho(u,v) = \left(\frac{\sqrt{u^2+4v}-u}{2},\frac{u+\sqrt{u^2+4v}}{2}\right)$, and note that $\Phi\circ\Rho = Id(u,v)$, the identity map on $uv$-coordinate. We compute Jacobian for the change of variable
-      $$J_{\Rho}(u,v) = \frac{1}{\sqrt{u^2+4v}}.$$
+      Thus, we can consider $\Psi(u,v) = \left(\frac{\sqrt{u^2+4v}-u}{2},\frac{u+\sqrt{u^2+4v}}{2}\right)$, and note that $\Phi\circ\Psi = Id(u,v)$, the identity map on $uv$-coordinate. We compute Jacobian for the change of variable
+      $$J_{\Psi}(u,v) = \frac{1}{\sqrt{u^2+4v}}.$$
       Then, the double integral is
       $$\int_1^2\int_0^1 u(\sqrt{u^2+4v})\frac{1}{\sqrt{u^2+4v}}dudv = \int_1^2\int_0^1 u dudv.$$
       It follows that the value of the double integral is $1$.
     * Method 2:
-      Observing $dxdy = J_{\Rho}(u,v)dudv$ and $dudv = J_{\Phi}dxdy$, we notice that $J_{\Rho}(u,v) = J_{\Phi}(x,y)^{-1}$. Therefore, we have
-      $$\int\int_\Omega (x^2-y^2)dxdy = \int\int_{\Omega'}(x^2-y^2)J_{\Rho}(u,v)dudv = \int\int_{\Omega'}(x^2-y^2)J_{\Phi}(x,y)^{-1}dudv.$$
-      
+      Observing $dxdy = J_{\Psi}(u,v)dudv$ and $dudv = J_{\Phi}dxdy$, we notice that $J_{\Psi}(u,v) = J_{\Phi}(x,y)^{-1}$. Therefore, we have
+      $$\int\int_\Omega (x^2-y^2)dxdy = \int\int_{\Omega'}(x^2-y^2)J_{\Psi}(u,v)dudv = \int\int_{\Omega'}(x^2-y^2)J_{\Phi}(x,y)^{-1}dudv.$$
