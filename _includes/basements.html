@@ -1,0 +1,7 @@
+{% for basement in site.basements %}
+    {% if include.name contains basement.slide %}
+    <section>
+        {{ basement.content }}
+    </section>
+    {% endif %}
+{% endfor %}
