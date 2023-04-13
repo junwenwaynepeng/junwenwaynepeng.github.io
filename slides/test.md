@@ -23,7 +23,7 @@ slide
 - slide with
 - some
 - bullet points
-___
+
 # Basement 1
 
 Hey, you can still go down
@@ -31,8 +31,6 @@ Hey, you can still go down
 ```
 test
 ```
-
-___
 
 # Basement 2
 
