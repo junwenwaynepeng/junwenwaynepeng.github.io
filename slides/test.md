@@ -15,13 +15,16 @@ tags:
 <section data-markdown>
     # First
     slide
-    ---
+    ___
     <!-- .slide: data-background-image="/assets/img/2022-05-11-git-github-workshop/mangotime2.jpg" -->
     ## A slide with a background image
-    ---
+    ___
     ## Third
     - slide with
     - some
     - bullet points
     ---
+
+    # Second
+    slide
 </section>
