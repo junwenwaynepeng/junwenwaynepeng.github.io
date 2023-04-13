@@ -12,14 +12,16 @@ tags:
 ---
 
 
-# First
-slide
----
-<!-- .slide: data-background-image="/assets/img/2022-05-11-git-github-workshop/mangotime2.jpg" -->
-## A slide with a background image
----
-## Third
-- slide with
-- some
-- bullet points
----
+<section data-markdown>
+    # First
+    slide
+    ---
+    <!-- .slide: data-background-image="/assets/img/2022-05-11-git-github-workshop/mangotime2.jpg" -->
+    ## A slide with a background image
+    ---
+    ## Third
+    - slide with
+    - some
+    - bullet points
+    ---
+</section>
