@@ -26,6 +26,8 @@ navbar-links:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Build yourown blog: "pages/jekyll-intro/0-intro"
+  Slides:
+    - test: "slides/test"
   Publication: "publication"
 
 ################
@@ -319,3 +321,27 @@ foot-package:
 # 2fc73a3a967e97599c9763d05e564189
 # 中文化工程由 junwenwaynepeng 彭俊文 台灣大學數學系兼任助理教授完成
 
+# SITE CONFIGURATION
+# baseurl: "/Reveal-Jekyll"
+# favicon: assets/favicon.ico                             # Icon displayed in the tab
+
+reveal:
+  title: "Reveal-jekyll"
+  transition: "slide" # none/fade/slide/convex/concave/zoom
+  theme: "black" # beige/blood/league/moon/night/serif/simple/sky/solarized/white
+  number: true
+  numberType: "c" # "h.v" / "h/v" / "c/t"
+
+# Slides
+collections:
+  slides:
+    output: true
+    permalink: /:collection/:name
+  basements:
+    output: true
+    permalink: /:collection/:name
+
+# BUILD SETTINGS
+sass:
+  sass_dir: _sass
+  style: :compressed
