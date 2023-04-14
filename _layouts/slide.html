@@ -15,10 +15,8 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-markdown data-separator="---", data-separator-vertical="___">
-          <textarea data-template>
-            {{ content }}
-          </textarea>
+        <section data-markdown="{{ page.path }}" data-separator="---", data-separator-vertical="___">
+          {{ content }}
         </section>
       </div>
     </div>
