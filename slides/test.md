@@ -36,13 +36,13 @@ tags:
 	# Math
 
 	test a math inline $a^2+\frac{c}{d}=0$, and let us test a display
-	$$
+	\[
 	a = \left(
 	\begin{matrix}
 	1 & 2\\
 	3 & 4
 	\end{matrix}
 	\right)
-	$$
+	\]
 
-	------
+------
