@@ -64,13 +64,7 @@
           transition: 'slide', // none/fade/slide/convex/concave/zoom
         {% endif %}
         // Optional reveal.js plugins
-        dependencies: [
-          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js', condition: () => { return !!document.querySelector( '[data-markdown]' );
-          }},
-          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js', async: true },
-          { src: '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/zoom/zoom.min.js" | prepend: site.baseurl }}', async: true },
-          { src: '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.min.js" | prepend: site.baseurl }}', async: true }
-        ]
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
       });
     </script>
 
