@@ -65,7 +65,16 @@
           transition: 'slide', // none/fade/slide/convex/concave/zoom
         {% endif %}
         // Optional reveal.js plugins
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+        mathjax3: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          tex: {
+            inlineMath: [ [ '$', '$' ], [ '\\(', '\\)' ]  ]
+          },
+          options: {
+            skipHtmlTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
+          },
+        },
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3 ]
       });
     </script>
 
