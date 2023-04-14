@@ -41,11 +41,14 @@
   </head>
 
   <body>
-  
+    {%- capture rawContent -%}
+      {%- include_relative 2021-03-15-md-file-to-display-as-raw.md -%}
+    {%- endcapture -%}
+    
     <div class="reveal">
       <div class="slides">
         <section data-markdown data-separator="---", data-separator-vertical="___">
-        {{ content }}
+          <pre>{{- rawContent -}}</pre>
         </section>
       </div>
     </div>
