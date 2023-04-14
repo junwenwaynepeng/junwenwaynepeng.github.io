@@ -11,39 +11,39 @@ tags:
   - slides
 ---
 <section data-markdown data-separator="------" data-separator-vertical="---">
-  <textarea data-template>
-	# First
-	slide
+  <script type="text/template">
+    # First
+    slide
 
-	---
-	<!-- .slide: data-background-image="/assets/img/2022-05-11-git-github-workshop/mangotime2.jpg" -->
-	## A slide with a background image
-	background image
-	---
-	## Third
-	- slide with
-	- some
-	- bullet points
-	------
-	# Second
-	slide
-	---
-	## Test 1
-	test test
-	---
-	## Test 2
-	test test
-	------
-	# Math
+    ---
+    <!-- .slide: data-background-image="/assets/img/2022-05-11-git-github-workshop/mangotime2.jpg" -->
+    ## A slide with a background image
+    background image
+    ---
+    ## Third
+    - slide with
+    - some
+    - bullet points
+    ------
+    # Second
+    slide
+    ---
+    ## Test 1
+    test test
+    ---
+    ## Test 2
+    test test
+    ------
+    # Math
 
-	test a math inline $a^2+\frac{c}{d}=0$, and let us test a display
-	\\[
-	a = \left(
-	\begin{matrix}
-	1 & 2\\\\
-	3 & 4
-	\end{matrix}
-	\right)
-	\\]  
-  </textarea>
+    test a math inline $a^2+\frac{c}{d}=0$, and let us test a display
+    \\[
+    a = \left(
+    \begin{matrix}
+    1 & 2\\\\
+    3 & 4
+    \end{matrix}
+    \right)
+    \\]  
+  </script>
 </section>
