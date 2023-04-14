@@ -12,6 +12,7 @@ tags:
 ---
 <section data-markdown data-separator="------" data-separator-vertical="---">
   <script type="text/template">
+  	------
     ## First
     slide
     ---
