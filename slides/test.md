@@ -44,5 +44,6 @@ tags:
 	3 & 4
 	\end{matrix}
 	\right)
-	\\]  </textarea>
+	\\]  
+  </textarea>
 </section>
