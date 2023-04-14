@@ -11,32 +11,30 @@ tags:
   - slides
 ---
 
+# First
+slide
 
 
-    # First
-    slide
-    
-
-    <!-- .slide: data-background-image="/assets/img/2022-05-11-git-github-workshop/mangotime2.jpg" -->
-    ## A slide with a background image
-    
-
-    ## Third
-    - slide with
-    - some
-    - bullet points
-    
-
-    # Second
-    slide
-    
+<!-- .slide: data-background-image="/assets/img/2022-05-11-git-github-workshop/mangotime2.jpg" -->
+## A slide with a background image
 
 
-    ## Test 1
-    test test
-    
+## Third
+- slide with
+- some
+- bullet points
 
 
-    ## Test 2
-    test test
+# Second
+slide
+
+
+
+## Test 1
+test test
+
+
+
+## Test 2
+test test
 </section>
