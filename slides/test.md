@@ -11,8 +11,7 @@ tags:
   - slides
 ---
 
-
-{% raw %}
+<textarea data-template>
 # First
 slide
 
@@ -33,4 +32,4 @@ test test
 ___
 ## Test 2
 test test
-{% endraw %}
+</textarea>
