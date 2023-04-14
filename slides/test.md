@@ -44,5 +44,4 @@ tags:
 	\end{matrix}
 	\right)
 	\\]
-
-------
+	
