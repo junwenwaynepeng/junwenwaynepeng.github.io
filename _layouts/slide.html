@@ -29,15 +29,12 @@
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/css/print/pdf.css" | prepend: site.baseurl }}' : '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/css/print/paper.css" | prepend: site.baseurl }}';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/print/pdf.min.css" | prepend: site.baseurl }}' : '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/print/paper.min.css" | prepend: site.baseurl }}';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -49,8 +46,10 @@
       </div>
     </div>
 
-    <script src="{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/lib/js/head.min.js" | prepend: site.baseurl }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.js" integrity="sha512-9dFFU5pcR8K4bvw4ng6mLMW5IjslYbA57amHEMtHn3TT9RkKivsDabKffqjUUJ4pCaojAyH05T1OESld199Gcw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js" integrity="sha512-MZ7Ehjbh2soaeCZJGaw6vBNAa7+eunl0SUmRPNESchLlboH73lHLEeUa6pZJ2Pcui4NcpDFatr6M+VlcmaH1QA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js" integrity="sha512-yov8LabSFTQgFrb/4/hhVYXR2zdZRXiMPj2M/gGPPBBpHdbMDDzKXnOcuiAYsXEsmpKucbl8qadb7Fp3nh5kqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js" integrity="sha512-RCedMo/DOyawQOh4zYtqEHTZAfgrrVQctN3LVCX5kELGsN52TOdwZ8inRY0l9Mo4vtyDFn6oOAgRUilWXgb+wA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
@@ -68,10 +67,9 @@
         {% endif %}
         // Optional reveal.js plugins
         dependencies: [
-          { src: '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/lib/js/classList.js" | prepend: site.baseurl }}', condition: function() { return !document.body.classList; } },
-          { src: '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/markdown/marked.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/highlight/highlight.js" | prepend: site.baseurl }}', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js', condition: () => { return !!document.querySelector( '[data-markdown]' );
+          }},
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js', async: true },
           { src: '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/zoom/zoom.min.js" | prepend: site.baseurl }}', async: true },
           { src: '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/mathjax3.min.js" | prepend: site.baseurl }}', async: true }
         ]
