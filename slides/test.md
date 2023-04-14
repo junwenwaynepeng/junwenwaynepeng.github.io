@@ -10,7 +10,8 @@ tags:
   - workshop
   - slides
 ---
-
+<section data-markdown data-separator="------", data-separator-vertical="---">
+  <textarea data-template>
 	# First
 	slide
 
@@ -44,4 +45,5 @@ tags:
 	\end{matrix}
 	\right)
 	\\]
-	
+  </textarea>
+</section>
