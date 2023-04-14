@@ -41,12 +41,15 @@
   </head>
 
   <body>
+    <pre>
+    {%- capture rawContent -%}
+      {{ content }}
+    {%- endcapture -%}
+    </pre>
     <div class="reveal">
       <div class="slides">
         <section data-markdown data-separator="---", data-separator-vertical="___">
-        <pre>
-        {{ content }}
-        </pre>
+        {{ rawContent }}
         </section>
       </div>
     </div>
