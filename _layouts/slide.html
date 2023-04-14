@@ -16,9 +16,7 @@
     <div class="reveal">
       <div class="slides">
         <section data-markdown data-separator="---", data-separator-vertical="___">
-          <plaintext>
-            {{ content }}
-          </plaintext>
+          {{ content | escape }}
         </section>
       </div>
     </div>
