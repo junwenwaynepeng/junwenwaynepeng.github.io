@@ -12,6 +12,7 @@ tags:
 ---
 
 <textarea data-template>
+---
 # First
 slide
 
