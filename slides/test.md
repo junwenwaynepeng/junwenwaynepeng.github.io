@@ -11,8 +11,6 @@ tags:
   - slides
 ---
 
-<textarea data-template>
-
 	# First
 	slide
 
@@ -34,4 +32,3 @@ tags:
 	---
 	## Test 2
 	test test
-</textarea>
