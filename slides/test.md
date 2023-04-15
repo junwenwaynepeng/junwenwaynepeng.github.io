@@ -1,22 +1,22 @@
 ---
 layout: slide
-title: Slides for a git and GitHub workshop
-date: 2022-05-10 02:30
-author: Raimund Rittnauer
+title: An Efficient Algorithm for Determining the Composition Relationship of Polarized Morphisms
+date: 2023-04-18
+author: Wayne Peng
 description: Some slides for a git and GitHub workshop using reveal.js
-categories: education
+categories: academic
 tags:
-  - education
-  - workshop
+  - research
+  - acdemic
   - slides
 ---
 <section data-markdown data-separator="------" data-separator-vertical="---">
   <script type="text/template">
   	------
-    ## First
-    slide
-    ---
-    <!-- .slide: data-background-image="/assets/img/2022-05-11-git-github-workshop/mangotime2.jpg" -->
+    ## Question
+    
+    Performing composition with rational functions $f$ and $g$ is straightforward. However, decomposing a function $F$ can be a challenging task.
+
     ## A slide with a background image
     background image
     ---
