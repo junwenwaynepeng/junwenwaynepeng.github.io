@@ -12,9 +12,8 @@ tags:
 ---
 <section data-markdown data-separator="------" data-separator-vertical="---">
   <script type="text/template">
-  	------
     ## Question
-    
+
     Performing composition with rational functions $f$ and $g$ is straightforward. However, decomposing a function $F$ can be a challenging task.
 
     ## A slide with a background image
