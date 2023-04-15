@@ -49,8 +49,6 @@
         {{ content }}
       </div>
     </div>
-
-    <script src="/assets/reveal.js/dist/reveal.js"></script>
     <script src="/assets/reveal.js/plugin/zoom/zoom.js"></script>
     <script src="/assets/reveal.js/plugin/search/search.js"></script>
     <script src="/assets/reveal.js/plugin/markdown/markdown.js"></script>
@@ -58,8 +56,10 @@
     <script src="/assets/reveal.js/plugin/highlight/highlight.js"></script>
     <script src="/assets/reveal.js/plugin/math/math.js"></script>
     <script>
-      // Full list of configuration options available at:
-      // https://github.com/hakimel/reveal.js#configuration
+        import Reveal from '/assets/reveal.js/dist/reveal.esm.js';
+        import Markdown from '/assets/reveal.js/plugin/markdown/markdown.esm.js';
+        import MathJax3 from '/assets/reveal.js/plugin/math/math.esm.js';
+
       Reveal.initialize({
         controls: true,
         progress: true,
@@ -82,7 +82,7 @@
             skipHtmlTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
           },
         },
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3 ]
+        plugins: [ Markdown, RevealHighlight, RevealNotes, MathJax3 ]
       });
     </script>
 
