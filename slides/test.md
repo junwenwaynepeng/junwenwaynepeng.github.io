@@ -3,6 +3,7 @@ layout: slide
 title: An Efficient Algorithm for Determining the Composition Relationship of Polarized Morphisms
 date: 2023-04-18
 author: Wayne Peng
+to: National Chung Hsing University
 description: Some slides for a git and GitHub workshop using reveal.js
 categories: academic
 tags:
@@ -12,6 +13,7 @@ tags:
 ---
 <section data-markdown data-separator="------" data-separator-vertical="---">
   <script type="text/template">
+  	------
     ## Question
 
     Performing composition with rational functions $f$ and $g$ is straightforward. However, decomposing a function $F$ can be a challenging task.
