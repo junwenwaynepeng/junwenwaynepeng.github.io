@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="reveal-full-page">
   <head>
     <meta charset="utf-8">
     <title>{% if page.title %} {{ page.title }} | {{ site.title }} {% else %} {{ site.title }} {% endif %}</title>
@@ -23,7 +23,7 @@
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/zenburn.min.css" integrity="sha512-JPxjD2t82edI35nXydY/erE9jVPpqxEJ++6nYEoZEpX2TRsmp2FpZuQqZa+wBCen5U16QZOkMadGXHCfp+tUdg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous">
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
@@ -41,10 +41,10 @@
     <div class="reveal">
       <div class="slides">
         <section>
-            <h3>{{page.title}}</h3>
-            <h4>{{page.subtitle}}</h4>
-            <p>{{page.author}}</p>
-            <p>{{page.to}}</p>
+          <h3>{{page.title}}</h3>
+          <h4>{{page.subtitle}}</h4>
+          <p>{{page.author}}</p>
+          <p>{{page.to}}</p>
         </section>
         {{ content }}
       </div>
@@ -80,6 +80,17 @@
           },
         },
         plugins: [ Markdown, Highlight, MathJax3, Note, Search, Zoom ]
+      });
+      Reveal.addEventListener('ready', function (/*e*/) {
+        const aTags = document.getElementsByTagName('a');
+        for (let i = 0; i < aTags.length; i++) {
+          aTags[i].setAttribute('target', '_blank');
+          aTags[i].setAttribute('rel', 'noopener noreferrer');
+        }
+        const vals = document.querySelectorAll('code');
+        vals.forEach(function (c) {
+          c.classList.add('hljs');
+        });
       });
     </script>
 
