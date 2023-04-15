@@ -49,17 +49,14 @@
         {{ content }}
       </div>
     </div>
-    <script src="/assets/reveal.js/plugin/zoom/zoom.js"></script>
-    <script src="/assets/reveal.js/plugin/search/search.js"></script>
-    <script src="/assets/reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="/assets/reveal.js/plugin/notes/notes.js"></script>
-    <script src="/assets/reveal.js/plugin/math/math.js"></script>
     <script type="module">
         import Reveal from '/assets/reveal.js/dist/reveal.esm.js';
         import Markdown from '/assets/reveal.js/plugin/markdown/markdown.esm.js';
         import MathJax3 from '/assets/reveal.js/plugin/math/math.esm.js';
         import Highlight from '/assets/reveal.js/plugin/highlight/highlight.esm.js';
-
+        import Note from '/assets/reveal.js/plugin/notes/notes.esm.js'
+        import Zoom from '/assets/reveal.js/plugin/zoom/zoom.esm.js'
+        import Search from '/assets/reveal.js/plugin/search/search.esm.js'
       Reveal.initialize({
         controls: true,
         progress: true,
@@ -82,7 +79,7 @@
             skipHtmlTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
           },
         },
-        plugins: [ Markdown, Highlight, RevealNotes, MathJax3 ]
+        plugins: [ Markdown, Highlight, RevealNotes, MathJax3, Note ]
       });
     </script>
 
