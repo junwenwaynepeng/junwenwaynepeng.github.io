@@ -53,6 +53,32 @@
       .reveal ol {
         display: block;
       }
+      <style type="text/css">
+      /* Theorem styles */
+      .theorem {
+        display: block;
+        font-style: italic;
+        font-size: 24px;
+        font-family: "Times New Roman";
+        color: black;
+        border-radius: 10px;
+        background-color: rgb(222,222,231);
+        box-shadow: 5px 10px 8px #888888;
+      }
+      .theorem::before {
+        content: "Theorem. ";
+        font-weight: bold;
+        font-style: normal;
+        display: inline-block;
+        width: -webkit-fill-available;
+        color: white;
+        border-radius: 10px 10px 0 0;
+        padding: 10px 5px 5px 15px;
+        background-color: rgb(38, 38, 134);
+      }
+      .theorem p {
+        padding: 15px 15px 15px 15px;
+      }
     </style>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
