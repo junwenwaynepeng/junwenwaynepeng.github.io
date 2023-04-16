@@ -33,6 +33,15 @@
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
     <style type="text/css">
+      /* Center front page content */
+      .slides .front-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Apply styles to slides */
       .reveal p {
         text-align: left;
       }
@@ -41,7 +50,7 @@
       }
       .reveal ol {
         display: block;
-      }  
+      }
     </style>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
@@ -49,7 +58,7 @@
 
   <body>
     <div class="reveal">
-      <div class="slides">
+      <div class="slides front-page">
         <section>
           <h3>{{page.title}}</h3>
           <h4>{{page.subtitle}}</h4>
