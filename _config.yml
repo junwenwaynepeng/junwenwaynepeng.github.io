@@ -27,7 +27,7 @@ navbar-links:
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Build yourown blog: "pages/jekyll-intro/0-intro"
   Slides:
-    - test: "slides/test"
+    - test: "slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms"
   Publication: "publication"
 
 ################
