@@ -32,6 +32,7 @@
       link.href = window.location.search.match( /print-pdf/gi ) ? '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/print/pdf.min.css" | prepend: site.baseurl }}' : '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/print/paper.min.css" | prepend: site.baseurl }}';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
+    <link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
     <style type="text/css">
       /* Center front page content */
       .slides .front-page {
@@ -147,6 +148,7 @@
         {{ content }}
       </div>
     </div>
+    <script src="https://tikzjax.com/v1/tikzjax.js"></script>
     <script type="module">
         import Reveal from '/assets/reveal.js/dist/reveal.esm.js';
         import Markdown from '/assets/reveal.js/plugin/markdown/markdown.esm.js';
