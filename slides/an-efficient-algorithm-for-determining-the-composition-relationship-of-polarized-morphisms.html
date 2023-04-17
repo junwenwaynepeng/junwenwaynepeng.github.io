@@ -27,7 +27,7 @@ tags:
 		<div class="example fragment" data-fragment-index="3">
 			<p>We call $a$ a <em>preperiodic point</em> of $f$ if $f^m(a)=f^n(a)$ for some distinct integer $m$ and $n$, and call it <em>periodic point</em> if $f^m(a)=a$ for some integer $m$.<br>
 			We would like to know the size of 
-			$$\text{Preper}(f,\mathbb{Q})=\{a\in\mathbb{Q}\mid a\text{ is a preperiodic point of }f\}$$
+			$$\text{Prep}(f,\mathbb{Q})=\{a\in\mathbb{Q}\mid a\text{ is a preperiodic point of }f\}$$
 			and
 			$$\text{Per}(f,\mathbb{Q})=\{a\in\mathbb{Q}\mid a\text{ is a periodic point of }f\}$$
 			</p>
@@ -114,15 +114,16 @@ tags:
 		$$f\circ g\circ f=g\circ f\circ g?$$</p>
 	</section>
 	<section>
+		<h4>Our Result</h4>
 		<div class="theorem" data-name="Bell-Huang-P.-Tucker, JEMS, 2021">
 			$h_f\neq h_g$ if and only if there exists an integer $j$ such that $\langle f^j,g^j\rangle$ is a rank 2 free generated semigroup.
 		</div>
 		<div class="corollary fragment" data-fragment-index="2">
 			The followings are equivalent:
 			<ul>
-				<li>$\Prep(f)\cap\Prep(g)$ is infinite;</li>
-     		<li>$\Prep(f)=\Prep(g)$;</li>
-    		<li>for any $w_1,w_2\in\langle f,g\rangle$, we have $\Prep(w_1)=\Prep(w_2)$;</li>
+				<li>$\text{Prep}(f)\cap\text{Prep}(g)$ is infinite;</li>
+     		<li>$\text{Prep}(f)=\text{Prep}(g)$;</li>
+    		<li>for any $w_1,w_2\in\langle f,g\rangle$, we have $\text{Prep}(w_1)=\text{Prep}(w_2)$;</li>
     		<li>$\langle f,g\rangle$ has polynomial growth;</li>
     		<li>$\langle f,g\rangle$ does not contain a nonabelian free semigroup;</li>
     		<li>for any $l>0$, the semigroup $\langle f^l,g^l\rangle$ is not a free semigroup on two generators.</li>
