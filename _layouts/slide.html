@@ -32,9 +32,6 @@
       link.href = window.location.search.match( /print-pdf/gi ) ? '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/print/pdf.min.css" | prepend: site.baseurl }}' : '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/print/paper.min.css" | prepend: site.baseurl }}';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.js">
-    </script>
     <style type="text/css">
       /* Center front page content */
       .slides .front-page {
@@ -248,9 +245,6 @@
           c.classList.add('hljs');
         });
       });
-    </script>
-    <script>
-      pseudocode.renderClass("pseudocode");
     </script>
   </body>
 </html>
