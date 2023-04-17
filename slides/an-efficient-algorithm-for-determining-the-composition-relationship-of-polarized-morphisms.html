@@ -94,7 +94,7 @@ tags:
     <p class="fragment" data-fragment-index="3">p.s. If we further consider the addition of functions, then we call the structure near ring.</p>
 	</section>
 	<section>
-		<h4>Composition relation: commutative</h4>
+		<h4>Composition relation: commutativity</h4>
 		<div class="definition">
 			<p>A rational map $f$ of degree two or more will be called a finite quotient of an affine map if there is a flat surface $\mathbb{C}/\Lambda$, an affine map $L(t) = at+b$ from $\mathbb{C}/\Lambda$ to itself, and a finite-to-one holomorphic map $\theta: \mathbb{C}/\Lambda \to \mathbb{C}\setminus \mathcal{E}_f$ which satisfies the semiconjugacy relation $f \circ \theta = \theta \circ L$, i.e. the following diagram commute:</p>
 			<iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXG1hdGhiYntDfS9cXExhbWJkYSJdLFsxLDAsIlxcbWF0aGJie0N9L1xcTGFtYmRhIl0sWzAsMSwiXFxtYXRoYmJ7Q31cXHNldG1pbnVzXFxtYXRoY2Fse0V9X2YiXSxbMSwxLCJcXG1hdGhiYntDfVxcc2V0bWludXNcXG1hdGhjYWx7RX1fZiJdLFswLDEsIkwiXSxbMCwyLCJcXHRoZXRhIl0sWzEsMywiXFx0aGV0YSJdLFsyLDMsImYiLDJdXQ==&embed" width="344" height="290" style="border-radius: 8px; border: none;"></iframe>
@@ -113,4 +113,27 @@ tags:
 		<p class="fragment" data-fragment-index="3">Is there any $f$ and $g$ where their Julia sets are not the "same" and satisfy
 		$$f\circ g\circ f=g\circ f\circ g?$$</p>
 	</section>
+	<section>
+		<div class="theorem" data-name="Bell-Huang-P.-Tucker, JEMS, 2021">
+			$h_f\neq h_g$ if and only if there exists an integer $j$ such that $\langle f^j,g^j\rangle$ is a rank 2 free generated semigroup.
+		</div>
+	</section>
+</section>
+	<section>
+		<h3> Height and Canonical Height</h3>
+		<p class="fragment" data-fragment-index="2">
+			Let $\alpha=\frac{p}{q}\in\mathbb{Q}$ be a rational number in lowest terms. The naive height $h:\Q\to\R_{\geq 0}$ is
+			$$
+			h(\alpha)=\log(\max\{|p|,|q|\}).
+			$$
+		</p>
+		<p class="fragment" data-fragment-index="3">
+			If we allow $\alpha$ not in lowest terms, the naive height is equivalent to
+			$$
+			h(\alpha) = \sum_{p\in M_{\mathbb{Q}}} \log(\max\{1,|\alpha|_p\})
+			$$
+			where $M_{\mathbb{Q}}$ is the set of all places (absolute values) over $\mathbb{Q}$.  
+		</p>
+	</section>
+<section>
 </section>
