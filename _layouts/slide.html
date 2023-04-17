@@ -177,7 +177,18 @@
           },
           options: {
             skipHtmlTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
-          },
+          }
+          loader: {load: ['[tex]/amscd']},
+          tex: {packages: {'[+]': ['amscd']}},
+          tex: {
+            amscd: {
+              colspace: '5pt',
+              rowspace: '5pt',
+              harrowsize: '2.75em',
+              varrowsize: '1.75em',
+              hideHorizontalLabels: false
+            }
+          }
         },
         plugins: [ Markdown, Highlight, MathJax3, Note, Search, Zoom ]
       });
