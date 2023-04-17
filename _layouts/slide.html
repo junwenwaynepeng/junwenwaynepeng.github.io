@@ -173,18 +173,9 @@
         // Optional reveal.js plugins
         mathjax3: {
           mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-          loader: {load: ['[tex]/amscd']},
           tex: {
             inlineMath: [ [ '$', '$' ], [ '\\(', '\\)' ]  ],
-            amscd: {
-              colspace: '5pt',
-              rowspace: '5pt',
-              harrowsize: '2.75em',
-              varrowsize: '1.75em',
-              hideHorizontalLabels: false
-            }
           },
-          packages: {'[+]': ['amscd']},
           options: {
             skipHtmlTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
           }
