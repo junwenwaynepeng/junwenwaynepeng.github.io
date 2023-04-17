@@ -1,0 +1,10 @@
+---
+layout: minimal
+---
+{% for slide in site.slides %}
+  <h2>
+    <a href="{{ slide.url }}">
+      {{ slide.title }}
+    </a>
+  </h2>
+{% endfor %}

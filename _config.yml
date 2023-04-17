@@ -26,8 +26,7 @@ navbar-links:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Build yourown blog: "pages/jekyll-intro/0-intro"
-  Slides:
-    - slides1: "slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms"
+  Slides: "all-slides"
   Publication: "publication"
 
 ################
@@ -337,11 +336,5 @@ collections:
   slides:
     output: true
     permalink: /:collection/:name
-  basements:
-    output: true
-    permalink: /:collection/:name
 
-# BUILD SETTINGS
-sass:
-  sass_dir: _sass
-  style: :compressed
+
