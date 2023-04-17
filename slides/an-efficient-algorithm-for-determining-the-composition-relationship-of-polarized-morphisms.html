@@ -203,6 +203,23 @@ tags:
 <section>
 	<section>
 		<h3>Algorithm</h3>
+		<p>Input: polarized morphism $f$ and $g$, and an integer $n$</p>
+		<p>Output: $f$ or $g$ have/have no relation, or indeterminable upto level $n$</p>
+	</section>
+	<section>
+		<h4>Idea of Algorithm</h4>
+		<ol>
+			<li class="fragment"> For simplicity, we assume $\deg f=\deg g$.</li>
+			<li class="fragment"> Composition has right cancellation, i.e.				\[
+				h_1\circ f = h_2\circ f\implies h_1=h_2.
+				\]
+				Therefore, to check if we have nontrivial composition relation, we can simply assume that the first (the most right) function is not the same.</li>
+			<li class="fragment"> By previews lemma, if there exists some $\alpha$ such that
+				\[
+				 	B\left(h\left(\dfrac{A(\alpha)}{d^n}\right),\dfrac{C}{(d-1)d^n}\right)\bigcap B\left(h\left(\dfrac{B(\alpha)}{d^n}\right),\dfrac{C}{(d-1)d^n}\right)=\emptyset
+				\] 
+        where $C=\max\{C_f, C_g\}$, $A=A_n\circ\cdots\circ A_1$ and $B=B_n\circ\cdots\circ B_1$, then any composition that starts with $A_n\circ\cdots\circ A_1$ won't be equal to one that starts with $B_n\circ\cdots\circ B_1$.</li>
+    </ol>
 	</section>
 	<section>
 		<h4>Search on a binary tree</h4>
