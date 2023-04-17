@@ -183,5 +183,31 @@ tags:
 </section>
 <section>
 	<section>
+		<div class="lemma">
+		<p>
+		Let $f$ and $g$ be rational functions of degrees greater than $1$. Let $\omega=\phi_m\cdots\phi_1$ where $\phi_j$ is equal to $f$ or $g$ for each $i$. Let $s_j=\phi_j\cdots \phi_1$ for $j\leq m$.<p><p class="fragment" data-fragment-index="2"> With the notation as above, we have
+		$$
+		\left|\dfrac{h(w(\alpha))}{\deg\omega}-\dfrac{h(s_j(\alpha))}{\deg s_j}\right|<\dfrac{\max\{C_f,C_g\}}{\min\{\deg(f),\deg(g)\}^j}
+		$$
+		for $j=1,\ldots,m$.<p>
+		</div>
+	</section>
+	<section>
+		<script type="text/tikz">
+			\node (top) at (8.5,9) {$\vdots$};
+    	\node (0) at (8.5,0) {$\bullet$};
+    	\foreach \x in {15,16,...,30}
+    		\node (\x) at (\x -22.5 +8.5,8) [inner sep=0.5pt] {$\bullet$};
+    	\foreach \x in {7,8,...,14}
+    		\node (\x) at (2*\x - 21 +8.5,6) [inner sep=3pt] {$\bullet$};
+    	\foreach \x in {3,4,5,6}
+    		\node (\x) at (4*\x-18 +8.5,4) [inner sep=3pt] {$\bullet$};
+    	\foreach \x in {1,2}
+    		\node(\x) at (8*\x - 12 +8.5,2) [inner sep=3pt]  {$\bullet$};
+    	\foreach \x [evaluate=\x as \y using int(2*\x + 1),evaluate=\x as \z using int(2*\x + 2)] in {0,1,...,14}{
+    		\draw[line width=.6pt] (\x.center) -- (\y.center);
+    		\draw[line width=.6pt] (\x.center) -- (\z.center);
+    	}
+		</script>
 	</section>	
 </section>

@@ -159,6 +159,32 @@
       .collorary p {
         padding: 15px;
       }
+      .lemma {
+        display: block;
+        font-style: italic;
+        font-size: 24px;
+        font-family: "Times New Roman";
+        color: black;
+        border-radius: 10px;
+        background-color: rgb(211, 227, 255);
+        box-shadow: 5px 10px 8px #888888;
+      }
+      .lemma::before {
+        content: "Lemma. ";
+        font-weight: bold;
+        font-style: normal;
+        display: inline-block;
+        width: -webkit-fill-available;
+        color: white;
+        border-radius: 10px 10px 0 0;
+        padding: 10px 5px 5px 15px;
+        background-color: rgb(0, 51, 204);
+        text-align: left;
+      }
+      .lemma p {
+        padding: 15px 15px 15px 15px;
+      }
+      You can use this block to create a lemma section in your HTML document, similar to how you would use the theorem, definition, and corollary blocks we created earlier.
     </style>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
