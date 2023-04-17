@@ -6,7 +6,7 @@ head-package:
   -
     file: "package/sagecell.html"
 ---
-<div class="compute">
+<div class="compute"><script type="text/x-sage">
     P.<x,y> = ProjectiveSpace(ZZ,1)
     f = DynamicalSystem_projective([
             x^3 + 2*x^2*y + 3*y^3,
@@ -67,4 +67,4 @@ head-package:
         if i>10:
             break
     print("No relation")
-</div>
+</script></div>
