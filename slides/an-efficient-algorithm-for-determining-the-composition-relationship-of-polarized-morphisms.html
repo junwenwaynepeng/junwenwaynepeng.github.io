@@ -236,13 +236,13 @@ tags:
 	<section data-markdown>
 		<script data-template>
 			```py [1-2|3|4-5|6-8]
-			Q = random()
-      check_list = [(f,g)] 
-      while check\_list != []:
-        a_pair = check_list.pop(0)
-        check_list.extend(check(a_pair))
-        if a_pair>n:
-          return "Undecidable"
+Q = random()
+check_list = [(f,g)] 
+while check\_list != []:
+  a_pair = check_list.pop(0)
+  check_list.extend(check(a_pair))
+  if a_pair>n:
+    return "Undecidable"
 			```
 		</script>
 	</section>
