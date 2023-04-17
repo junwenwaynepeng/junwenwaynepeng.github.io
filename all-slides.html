@@ -1,19 +1,20 @@
 ---
 layout: base
 ---
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  {% for slide in site.slides %}
-    <div class="col">
-      <a href="{{ slide.url }}">
-        <div class="card border-dark mb-3" style="max-width: 18rem;">
-          <img src="{{ slide.image }}" class="card-img-top" alt="{{ slide.title }}">
-          <div class="card-header">{{ slide.date | date: "%B %d, %Y" }}</div>
-          <div class="card-body text-dark">
-            <h5 class="card-title">{{ slide.title }}</h5>
-            <p class="card-text">{{ slide.abstract }}</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  {% endfor %}
+<div class="container-fluid mt-5">
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+	  {% for slide in site.slides %}
+	    <div class="col">
+	      <a href="{{ slide.url }}">
+	        <div class="card border-dark mb-3" style="max-width: 18rem;">
+	          <img src="{{ slide.image }}" class="card-img-top" alt="{{ slide.title | truncatewords: 5 }}...">
+	          <div class="card-header">{{ slide.date | date: "%B %d, %Y" }}</div>
+	          <div class="card-body text-dark">
+	            <p class="card-text">{{ slide.abstract | truncatewords: 50 }}...</p>
+	          </div>
+	        </div>
+	      </a>
+	    </div>
+	  {% endfor %}
+	</div>
 </div>
