@@ -10,6 +10,7 @@ layout: base
 	          <img src="{{ slide.front-img }}" class="card-img-top" alt="{{ slide.title | truncatewords: 5 }}">
 	          <div class="card-header">{{ slide.date | date: "%B %d, %Y" }}</div>
 	          <div class="card-body text-dark">
+	          	<h5 class="card-title">{{ slide.title | truncatewords: 5 }}</h5>
 	            <p class="card-text">{{ slide.abstract | truncatewords: 50 }}</p>
 	          </div>
 	        </div>
