@@ -194,21 +194,6 @@ tags:
 	</section>
 	<section>
 		<h4>Search on a binary tree</h4>
-		<script type="text/tikz">
-			\node (top) at (8.5,9) {$\vdots$};
-    	\node (0) at (8.5,0) {$.$};
-    	\foreach \x in {15,16,...,30}
-    		\node (\x) at (\x -22.5 +8.5,8) [inner sep=0.5pt] {$.$};
-    	\foreach \x in {7,8,...,14}
-    		\node (\x) at (2*\x - 21 +8.5,6) [inner sep=3pt] {$.$};
-    	\foreach \x in {3,4,5,6}
-    		\node (\x) at (4*\x-18 +8.5,4) [inner sep=3pt] {$.$};
-    	\foreach \x in {1,2}
-    		\node(\x) at (8*\x - 12 +8.5,2) [inner sep=3pt]  {$.$};
-    	\foreach \x [evaluate=\x as \y using int(2*\x + 1),evaluate=\x as \z using int(2*\x + 2)] in {0,1,...,14}{
-    		\draw[line width=.6pt] (\x.center) -- (\y.center);
-    		\draw[line width=.6pt] (\x.center) -- (\z.center);
-    	}
-		</script>
+		<img src=/asserts/img/slides/binary-tree.png width="420" height="330">
 	</section>	
 </section>
