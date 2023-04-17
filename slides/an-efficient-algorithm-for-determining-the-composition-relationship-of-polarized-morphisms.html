@@ -271,6 +271,7 @@ def check(a_pair):
 <section>
 	<section>
 		<h3>Datas and Discussion</h3>
+		<p>We conducted an experiment on 10,000 cases, randomly selecting coefficients for degree 3 rational functions. For each case, we randomly chose a value for alpha and set the limit level to 9, before performing a test. We continued the test until we either achieved success or reached 10 attempts, after which we deemed the result indeterminable</p>
 	</section>
 	<section>
 		<h4>Datas: Time</h4>
@@ -279,5 +280,14 @@ def check(a_pair):
 	<section>
 		<h3>Datas: Level</h3>
 		<img src="/assets/img/slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms/success-level.png" width="600">
+	</section>
+	<section>
+		<ol>
+			<li class="fragment">Out of 10,000 cases tested, 82 (1.38%) failed the check but did not demonstrate any composition relation</li>
+    	<li>The algorithm is forced to be efficient. It is hard to determine the lower bound of
+    	$$|h_f(\alpha)-h_g(\alpha)|$$
+    	when the difference is zero.</li>
+</li>
+		</ol>
 	</section>
 </section>
