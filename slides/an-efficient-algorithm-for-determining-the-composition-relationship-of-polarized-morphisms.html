@@ -197,14 +197,12 @@ tags:
 		<h4>Prove a direction of our theorem</h4>
 		<p class="fragment">By the assumption, we choose an $\varepsilon< |h_f(\alpha)-h_g(\alpha)|/2\neq 0$. Then $B(h_f,\varepsilon)\cap B(h_g,\varepsilon)=\emptyset$.</p><p class="fragment"> By the previews lemma, we know there is a $j$ such that, for all words starting with $j$ many $f$, their canonical heights at $\alpha$ will stay in $B(h_f,\varepsilon)$.</p><p class="fragment"> Similarly, for all words starting with $j$ many $g$, their canonical heights at $\alpha$ will stay in $B(h_g,\varepsilon)$.</p><p class="fragment"> Thus we can conclude that any word starting with $j$ many $f$ won't equal to one starting with $j$ many $g$.</p>
 	</section>
-	<section>
-	</section>
 </section>
 <section>
 	<section>
 		<h3>Algorithm</h3>
-		<p>Input: polarized morphism $f$ and $g$, and an integer $n$</p>
-		<p>Output:  A Boolean indicating whether $f$ and $g$ have a composition relation, or "indeterminable" if the algorithm cannot determine by the binary tree under level $n$.</p>
+		<p class="fragment">Input: polarized morphism $f$ and $g$, and an integer $n$</p>
+		<p class="fragment">Output:  A Boolean indicating whether $f$ and $g$ have a composition relation, or "indeterminable" if the algorithm cannot determine by the binary tree under level $n$.</p>
 	</section>
 	<section>
 		<h4>Idea of Algorithm</h4>
@@ -230,7 +228,7 @@ tags:
 	</section>
 	<section>
 		<ol start="4">
-			<li><br><img src=/assets/img/slides/binary-tree.png width="540" height="420"></li>
+			<li><br><img src=/assets/img/slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms/binary-tree.png width="540" height="420"></li>
 		</ol>
 	</section>
 	<section data-markdown>
@@ -269,7 +267,13 @@ def check(a_pair):
 			[demo](/2023-04-17-algorithm-to-determine-composition-relation/)
 		</textarea>
 	<section>
+</section>
+<section>
 	<section>
-		<h4>Datas</h4>
+		<h3>Datas and Discussion</h3>
+	</section>
+	<section>
+		<h4>Datas: Time</h4>
+		<img src="/assets/img/slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms/sucess-time.png" width=960 height=720>
 	</section>
 </section>
