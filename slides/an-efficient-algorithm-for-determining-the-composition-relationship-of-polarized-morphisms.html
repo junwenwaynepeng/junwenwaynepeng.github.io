@@ -99,7 +99,14 @@ tags:
 			<p>A rational map $f$ of degree two or more will be called a finite quotient of an affine map if there is a flat surface $\mathbb{C}/\Lambda$, an affine map $L(t) = at+b$ from $\mathbb{C}/\Lambda$ to itself, and a finite-to-one holomorphic map $\theta: \mathbb{C}/\Lambda \to \mathbb{C}\setminus \mathcal{E}_f$ which satisfies the semiconjugacy relation $f \circ \theta = \theta \circ L$. Thus the following diagram must commute:</p>
 	    <script type="text/tikz">
 			  \begin{tikzpicture}
-			    \draw (0,0) circle (1in);
+			    \node (A) at (0,0) {$\mathbb{C}/\Lambda$};
+			    \node (B) at (2.5,0) {$\mathbb{C}/\Lambda$};
+			    \node (C) at (0,-2) {$\mathbb{C}\setminus\mathcal{E}_f$};
+			    \node (D) at (2.5,-2) {$\mathbb{C}\setminus\mathcal{E}_f$};
+			    \draw[->] (A) -- node[above]{$L$} (B);
+			    \draw[->] (A) -- node[left]{$\theta$} (C);
+			    \draw[->] (B) -- node[right]{$\theta$} (D);
+			    \draw[->] (C) -- node[below]{$f$} (D);
 			  \end{tikzpicture}
 			</script>
 		</div>
