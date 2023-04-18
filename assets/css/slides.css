@@ -1,0 +1,20 @@
+/* Center front page content */
+.slides .front-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reveal .front-page p {
+  text-align: center;
+}
+/* Apply styles to slides */
+.reveal p {
+  text-align: left;
+}
+.reveal ul {
+  display: block;
+}
+.reveal ol {
+  display: block;
+}

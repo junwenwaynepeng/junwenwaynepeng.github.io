@@ -6,8 +6,8 @@
     <meta name="author" content="{{ site.author }}" />
 
     <!-- Description -->
-    {% if page.description %}
-      <meta name="description" content="{{ page.description }}" />
+    {% if page.abstract %}
+      <meta name="description" content="{{ page.abstract }}" />
     {% else %}
       <meta name="description" content="{{ site.description }}">
     {% endif %}
@@ -32,159 +32,8 @@
       link.href = window.location.search.match( /print-pdf/gi ) ? '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/print/pdf.min.css" | prepend: site.baseurl }}' : '{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/print/paper.min.css" | prepend: site.baseurl }}';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script> 
-    <style type="text/css">
-      /* Center front page content */
-      .slides .front-page {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .reveal .front-page p {
-        text-align: center;
-      }
-      /* Apply styles to slides */
-      .reveal p {
-        text-align: left;
-      }
-      .reveal ul {
-        display: block;
-      }
-      .reveal ol {
-        display: block;
-      }
-      /* Theorem styles */
-      .theorem {
-        display: block;
-        font-style: italic;
-        font-size: 24px;
-        font-family: "Times New Roman";
-        color: black;
-        border-radius: 10px;
-        background-color: rgb(222,222,231);
-        box-shadow: 5px 10px 8px #888888;
-      }
-      .theorem::before {
-        content: "Theorem. ";
-        font-weight: bold;
-        font-style: normal;
-        display: inline-block;
-        width: -webkit-fill-available;
-        color: white;
-        border-radius: 10px 10px 0 0;
-        padding: 10px 5px 5px 15px;
-        background-color: rgb(38, 38, 134);
-        text-align: left;
-      }
-      .theorem p {
-        padding: 15px 15px 15px 15px;
-      }
-      .example {
-        display: block;
-        font-size: 24px;
-        font-family: "Times New Roman";
-        color: black;
-        border-radius: 10px;
-        background-color: rgb(222, 222, 231);
-        box-shadow: 5px 10px 8px #888888;
-      }
-
-      .example::before {
-        content: "Example. ";
-        font-weight: bold;
-        font-style: normal;
-        display: inline-block;
-        width: -webkit-fill-available;
-        color: white;
-        border-radius: 10px 10px 0 0;
-        padding: 10px 5px 5px 15px;
-        background-color: rgb(64, 142, 156); 
-        text-align: left;
-      }
-
-      .example p {
-        padding: 15px 15px 15px 15px;
-      }
-      .definition {
-        display: block;
-        font-size: 24px;
-        font-family: "Times New Roman";
-        color: black;
-        border-radius: 10px;
-        background-color: rgb(219, 233, 252);
-        box-shadow: 5px 10px 8px #888888;
-      }
-
-      .definition::before {
-        content: "Definition. ";
-        font-weight: bold;
-        font-style: normal;
-        display: inline-block;
-        width: -webkit-fill-available;
-        color: white;
-        border-radius: 10px 10px 0 0;
-        padding: 10px 5px 5px 15px;
-        background-color: rgb(37, 124, 189);
-        text-align: left;
-      }
-
-      .definition p {
-        padding: 15px;
-      }
-      .collorary {
-        display: block;
-        font-style: italic;
-        font-size: 24px;
-        font-family: "Times New Roman";
-        color: black;
-        border-radius: 10px;
-        background-color: rgb(190, 150, 220);
-        box-shadow: 5px 10px 8px #888888;
-      }
-
-      .collorary::before {
-        content: "Collorary. ";
-        font-weight: bold;
-        font-style: normal;
-        display: inline-block;
-        width: -webkit-fill-available;
-        color: white;
-        border-radius: 10px 10px 0 0;
-        padding: 10px 5px 5px 15px;
-        background-color: rgb(80, 20, 120);
-        text-align: left;
-      }
-
-      .collorary p {
-        padding: 15px;
-      }
-      .lemma {
-        display: block;
-        font-style: italic;
-        font-size: 24px;
-        font-family: "Times New Roman";
-        color: black;
-        border-radius: 10px;
-        background-color: rgb(211, 227, 255);
-        box-shadow: 5px 10px 8px #888888;
-      }
-      .lemma::before {
-        content: "Lemma. ";
-        font-weight: bold;
-        font-style: normal;
-        display: inline-block;
-        width: -webkit-fill-available;
-        color: white;
-        border-radius: 10px 10px 0 0;
-        padding: 10px 5px 5px 15px;
-        background-color: rgb(0, 51, 204);
-        text-align: left;
-      }
-      .lemma p {
-        padding: 15px 15px 15px 15px;
-      }
-      You can use this block to create a lemma section in your HTML document, similar to how you would use the theorem, definition, and corollary blocks we created earlier.
-    </style>
+    <link rel="stylesheet" href="{{ '/assets/css/slides.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/statement-block.css' | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   </head>
@@ -201,7 +50,6 @@
         {{ content }}
       </div>
     </div>
-    <script src="https://tikzjax.com/v1/tikzjax.js"></script>
     <script type="module">
         import Reveal from '/assets/reveal.js/dist/reveal.esm.js';
         import Markdown from '/assets/reveal.js/plugin/markdown/markdown.esm.js';
