@@ -15,9 +15,9 @@ title: Wayne Peng's
 # 你的名子，將會出現在頁角區域（網頁最下方）
 author: Junwen Wayne Peng
 
-######################################
+#########################################
 # --- 導航欄（網頁右上角）中的連結列表 --- #
-######################################
+#########################################
 
 navbar-links:
   About Me: "aboutme"
@@ -25,7 +25,7 @@ navbar-links:
     - ChatGPT: "https://chat.openai.com/chat"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-    - Build yourown blog: "pages/jekyll-intro/0-intro"
+    - Build yourown blog: "books/jekyll-intro/0-intro"
   Slides: "all-slides"
   Publication: "publication"
 
@@ -319,10 +319,6 @@ foot-package:
 # 網站基礎是建立在 Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 # 中文化工程由 junwenwaynepeng 彭俊文 台灣大學數學系兼任助理教授完成
-
-# SITE CONFIGURATION
-# baseurl: "/Reveal-Jekyll"
-# favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 reveal:
   title: "Reveal-jekyll"
