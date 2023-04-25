@@ -15,6 +15,15 @@ title: Wayne Peng's
 # 你的名子，將會出現在頁角區域（網頁最下方）
 author: Junwen Wayne Peng
 
+
+##############
+# --- SEO ---#
+##############
+
+# 關鍵詞與您的網站相關聯，以便於搜索引擎優化（SEO）的目的
+keywords: "數學網站,台大數學,math,calculus,微積分,微分,積分,如何架設網站,mathjax,在網站上使用latex,markdown,數學"
+description: "Junwen Wayne Peng的個人網站，我目前任職於 台大理論中心 NCTS 數學組，我會用這個網站來分享我的上課資訊，以及整理一些網頁與程式DIY的技巧。你也可以在這個網頁找到我的研究結果。我的研究重點是算數動態系統 Arithmetic dynamic 與 數論裡面的演算法。"
+
 #########################################
 # --- 導航欄（網頁右上角）中的連結列表 --- #
 #########################################
@@ -28,6 +37,14 @@ navbar-links:
     - Build yourown blog: "books/jekyll-intro/0-intro"
   Slides: "all-slides"
   Publication: "publication"
+
+# 在導航欄中添加搜索按鈕
+post_search: true
+
+# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
+# If this setting is off, then long sub-menu words might get cut off
+# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+navbar-var-length: true
 
 ################
 # --- Logo --- #
@@ -110,19 +127,8 @@ feed_show_excerpt: true
 # 是否在訂閱頁面中在每篇文章預覽下方顯示標籤列表
 feed_show_tags: true
 
-# 在導航欄中添加搜索按鈕
-post_search: true
-
 # 在頁腳中添加一個按鈕，用於編輯當前頁面。僅當您的網站托管在GitHub上時才有效。
 #edit_page_button: true
-
-# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
-# If this setting is off, then long sub-menu words might get cut off
-# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
-navbar-var-length: false
-
-# 關鍵詞與您的網站相關聯，以便於搜索引擎優化（SEO）的目的
-keywords: "數學網站,台大數學,math,calculus,微積分,微分,積分,如何架設網站,mathjax,在網站上使用latex,markdown,數學"
 
 #######################
 # --- 顏色/背景圖像 --- #
@@ -166,9 +172,6 @@ footer-hover-col: "#0085A1"
 
 # 填寫您的 Google Analytics gtag.js ID，以使用 gtag 跟踪您的網站，(https://analytics.google.com/)。
 gtag: "G-EL818RR92S"
-
-# 填寫您的 Google Analytics ID，以使用 Google Analytics 跟踪您的網站（較為過時的方法）。
-#google_analytics: "358205790"
 
 # 填寫您的 Cloudflare Analytics beacon token，以使用 Cloudflare Analytics 跟踪您的網站。
 #cloudflare_analytics: ""
