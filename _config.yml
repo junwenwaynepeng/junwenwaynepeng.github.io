@@ -100,7 +100,7 @@ social-network-links:
 
 # 如果您希望您的網站生成RSS訂閱，請提供一個描述
 # 訂閱鏈接的URL將為https://<您的網站>/feed.xml
-rss-description: Thanks alot
+rss-description: 歡迎來到 Junwen Wayne Peng 的個人網站！我是台大理論中心 NCTS 數學組的研究員，此網站將分享我的上課資訊和網頁與程式 DIY 技巧，以及我的研究成果。我的研究專長為算數動態系統與數論演算法。
 
 ###################
 # --- 一般選項 --- #
