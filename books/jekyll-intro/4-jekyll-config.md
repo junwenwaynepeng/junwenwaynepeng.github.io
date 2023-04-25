@@ -54,6 +54,10 @@ keywords: "數學網站,台大,理論中心,NCTS,數學,math,calculus,微積分,
 
 # 導航欄中的連結列表
 
+![Navbar](/img/4-jekyll-config/3.jpg)
+
+我們用下面的文字檔來實現上方的導航欄結構
+
 ```yaml
 navbar-links:
   About Me: "aboutme"
@@ -64,10 +68,63 @@ navbar-links:
     - Build yourown blog: "books/jekyll-intro/0-intro"
   Slides: "all-slides"
   Publication: "publication"
-```
-![Navbar](/img/4-jekyll-config/3.jpg)
 
-用以上的導航欄作為範例，`About Me: "aboutme"`{:.yaml}
+# 在導航欄中添加搜索按鈕
+post_search: true
+
+# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
+# If this setting is off, then long sub-menu words might get cut off
+# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+navbar-var-length: true
+```
+
+對照我們的目錄結構
+
+```
+githubAccount.github.io
+│   README.md
+│   _config.yml
+│   aboutme.md
+│   all-slides.html
+│	publication
+│   ...    
+│
+└───books
+│   │ 
+│   └───jekyll-intro
+│       │   0-intro.md
+│       │   1-git_and_github.md
+│       │   ...
+│   
+└───folder2
+    │   file021.txt
+    │   file022.txt
+```
+
+相信讀者可以自行判斷並且設計自己的目錄結構與導航欄結構。以下我們快速地整理重點：
+
+* 副檔名不重要 `.html` 與 `.md` 皆可以省略
+* `:` 如果是放檔案的"絕對路徑"，那導航欄就會產生一個連結到那個檔案，如果是網址，就會產生連結到外部網站
+* 不可以在 `:` 後同時放置"連結位址"與"子導航欄"
+
+# Logo
+
+```yaml
+################
+# --- Logo --- #
+################
+
+# 顯示在導航欄中的圖片 - 最好使用正方形圖片
+# 如果您不想在導航欄中顯示圖片，請刪除此參數
+avatar: "/assets/img/DatArt.png"
+
+# 默認情況下，圖像會被切成圓形。您可以通過設置“round-avatar：false”來禁用此行為。
+round-avatar: true
+
+# 如果您想要在左上角擁有圖像標誌，而不是使用網站標題，
+# 取消註釋（#）並指定以下參數
+#title-img: /path/to/image
+```
 
 ![Social Network](/img/4-jekyll-config/4.jpg)
 
