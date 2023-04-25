@@ -50,6 +50,14 @@
     </a>
   {% endif %}
 
+  {% if site.share-links-active.line %}
+    <a href="https://social-plugins.line.me/lineit/share?url={{ page.url | absolute_url | url_encode }}" 
+       class="btn btn-social-icon btn-line" 
+       title="Share on Line">
+      <span class="fab fa-fw fa-line" aria-hidden="true"></span>
+      <span class="sr-only">Line</span>
+    </a>
+  {% endif %}
 </section>
 
 {% endif %}

@@ -68,16 +68,16 @@ vi id_ed25510.pub
 最後，你需要將公鑰（`id_ed25519.pub`）添加到你的 GitHub 帳戶中。將 SSH Key 插入 GitHub 帳戶是將本地端 SSH Key 與 GitHub 帳戶進行連結，讓你的本地端 Git 與 GitHub 進行通訊和操作的必要步驟。以下是一個詳細的步驟解說：
 
 1. 登入 GitHub 帳戶後，點擊右上角的頭像圖示，從選單中選擇「Settings」。
-![profile photo](/img/github-ssh-1.jpg)
-![setting](/img/github-ssh-2.png)
+![profile photo](/img/1-git-and-github/1.jpg)
+![setting](/img/1-git-and-github/2.png)
 
 
 2. 在頁面左側的選單中選擇「SSH and GPG keys」，再點擊「New SSH Key」。
-![SSH and GPG Keys](/img/github-ssh-3.png)
-![New SSH Key](/img/github-ssh-4.jpg)
+![SSH and GPG Keys](/img/1-git-and-github/3.png)
+![New SSH Key](/img/1-git-and-github/4.jpg)
 
 3. （等同於生成 SSH Key 的步驟5）開啟你之前使用 ssh-keygen 指令產生的公鑰檔案（通常是 ~/.ssh/id_rsa.pub 或是 ~/.ssh/id_ed25519.pub）。複製整個檔案的內容，包含開頭的 ssh-rsa 或是 ssh-ed25519，到 GitHub 頁面的「Key」欄位中。
-![Add Key](/img/github-ssh-5.png)
+![Add Key](/img/1-git-and-github5.png)
 
 4. 為這個 SSH Key 取一個描述性的名稱，例如「My Personal Laptop」或是「Work Desktop」，並輸入到「Title」欄位中。
 

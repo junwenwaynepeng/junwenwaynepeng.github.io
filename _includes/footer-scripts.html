@@ -51,6 +51,5 @@
   {% for plugin in site.foot-package %}
     {% assign local-parameter=page[plugin.module] %}
     {% include {{ plugin.file }} src=plugin.src local-parameter=local-parameter %}
-  }
   {% endfor %}
 {% endif %}

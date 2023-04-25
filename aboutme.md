@@ -14,7 +14,7 @@ My name is Wayne Peng. Nice to meet you.
 
 ## Coding Skills
 * Languages: Python, JavaScript (if necessary), C (previously learned)
-* Tools/Frameworks: Sagemath, Django, Data Science (with a focus on data visualization)
+* Tools/Frameworks: Sagemath, Django, Jekyll, Data Science (with a focus on data visualization)
 * Recent Project: Developed a universal algorithm to determine if two rational functions have any composition relationship and helping maintain Sagemath's Carlitz and Drinfield module library. We want to use this library to generate some interesting example about Carlitz and Drinfield module.
 
 I am looking for opportunities to work with others who share similar interests. Shoot me an email if you are the same.
