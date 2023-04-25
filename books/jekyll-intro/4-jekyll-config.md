@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 教學網站建立教學
-subtitle: 用 Markdown 新增你的第一篇文章
+subtitle: Jekyll 網站參數調整
 right-toc: true
 left-toc: true
 book: jekyll-intro
