@@ -133,6 +133,12 @@
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
   <link rel="stylesheet" href="{{ '/assets/css/staticman.css' | relative_url }}">
   {% endif %}
+
+  {% if page.head-package %}
+    {% for plugin in page.head-package %}
+      {% include {{ plugin.file }} parameter=plugin %}
+    {% endfor %}
+  {% endif %}
   
   {% if site.head-package %}
     {% for plugin in site.head-package %}
