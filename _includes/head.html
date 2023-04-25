@@ -64,8 +64,8 @@
   {%- endcapture -%}
   {%- assign img=img | strip -%}
 
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
 
   {% if img != "" %}
   <meta property="og:image" content="{{ img | absolute_url }}">
@@ -90,8 +90,8 @@
   {% endif %}
   <meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
   <meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
-  <meta property="twitter:title" content="{{ site.title }}">
-  <meta property="twitter:description" content="{{ site.description }}">
+  <meta property="twitter:title" content="{{ title }}">
+  <meta property="twitter:description" content="{{ description }}">
 
   {% if img != "" %}
   <meta name="twitter:image" content="{{ img | absolute_url }}">
@@ -133,7 +133,6 @@
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
   <link rel="stylesheet" href="{{ '/assets/css/staticman.css' | relative_url }}">
   {% endif %}
-
   
   {% if site.head-package %}
     {% for plugin in site.head-package %}
