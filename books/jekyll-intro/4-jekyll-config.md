@@ -33,8 +33,10 @@ author: Junwen Wayne Peng
 ```
 ---
 ![Title](/img/4-jekyll-config/1.jpg)
+
 ---
 ![Author](/img/4-jekyll-config/2.jpg)
+
 ---
 
 # SEO 與搜索關鍵字
