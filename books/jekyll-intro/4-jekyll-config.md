@@ -48,14 +48,27 @@ author: Junwen Wayne Peng
 
 # 關鍵詞與您的網站相關聯，以便於搜索引擎優化（SEO）的目的
 keywords: "數學網站,台大,理論中心,NCTS,數學,math,calculus,微積分,微分,積分,如何架設網站,Jekyll,arithmetic,dynamics,galois group"
-description: "Junwen Wayne Peng的個人網站，我目前任職於 台大理論中心 NCTS 數學組，我會用這個網站來分享我的上課資訊，以及整理一些網頁與程式DIY的技巧。你也可以在這個網頁找到我的研究結果。我的研究重點是算數動態系統 Arithmetic dynamic 與 數論裡面的演算法。"
 ```
 
-關鍵字與網站敘述的描述會出現在網站的 html 標頭檔內，並不會顯示在網頁的內容部分。網路上有很多免費的資訊[^1]告訴你如何優化網站的 SEO 可以多多參考並設定你自己嘗試。
+關鍵字與網站敘述的描述會出現在網站的 html 標頭檔內，並不會顯示在網頁的內容部分。網路上有很多免費的資訊[^1]告訴你如何優化網站的 SEO ，可以多多參考，並嘗試設定。另外你也可以請 ChatGPT 告訴你該如何做，我相信效果不會太差。
 
+# 導航欄中的連結列表
 
-
+```yaml
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - ChatGPT: "https://chat.openai.com/chat"
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+    - Build yourown blog: "books/jekyll-intro/0-intro"
+  Slides: "all-slides"
+  Publication: "publication"
+```
 ![Navbar](/img/4-jekyll-config/3.jpg)
+
+用以上的導航欄作為範例，`About Me: "aboutme"`{:.yaml}
+
 ![Social Network](/img/4-jekyll-config/4.jpg)
 
 
