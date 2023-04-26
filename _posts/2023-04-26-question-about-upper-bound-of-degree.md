@@ -13,7 +13,7 @@ Let me set the notations.
 
 We want to find a positive integer $B$ such that if 
 
-$\mathbb{F}(T)\times\pi\mathbb{F}$ 
+$\mathbb{F}(T)\times\pi^{n-1}\mathbb{F}$ 
 
 is a solution of
 
