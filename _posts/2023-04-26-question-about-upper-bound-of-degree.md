@@ -12,7 +12,7 @@ Let me set the notations.
 * $\pi$ is an irreducible element in $\mathbb{F}_q[T]$
 * 
 
-We want to find an positive integer $B$ such that if 
+We want to find an positive integer $B$ such that if $(x_1, x_2,\ldots, x_r)\in \mathbb{F}_{q^r}(T)\times \pi^{n-1}\mathbb{F}_{q^r}(T)\times\cdots\times\mathbb{F}_{q^r}(T)$ is a solution of
 
 $$
 \det\left(\begin{matrix}
@@ -20,9 +20,9 @@ x_1 & x_2 & \cdots & x_r\\\\
 \pi\sigma(x_r) & \sigma(x_1) & \cdots & \sigma(x_{r-1})\\\\
 \ldots & \ldots & \ddots & \ldots\\\\
 \pi\sigma^{r-1}(x_2) & \pi\sigma^{r-1}(x_3) & \cdots & \sigma^{r-1}(x_1)
-\end{matrix}\right) = f
+\end{matrix}\right) = f,
 $$
-where, for $i=2,\ldots, r$, $x_i$ satisfies $x_i\equiv 0\mod\pi^{n-1}$, then $n$, $\deg(x_1)$, $\cdots$, and $\deg(x_r)$ are bounded by $B$.
+then $n$, $\deg(x_1)$, $\cdots$, and $\deg(x_r)$ are bounded by $B$.
 
 For example, we can consider the following settings:
 * $f=X^2+TX+1$
