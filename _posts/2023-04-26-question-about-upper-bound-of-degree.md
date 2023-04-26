@@ -13,7 +13,7 @@ Let me set the notations.
 
 We want to find a positive integer $B$ such that if 
 
-$\mathbb{F}_\{q^r\}(T)\times\pi^\{n-1\}\mathbb{F}_\{q^r\}$ 
+$\mathbb{F}(T)\times\pi\mathbb{F}$ 
 
 is a solution of
 
