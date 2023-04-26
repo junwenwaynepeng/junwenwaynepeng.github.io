@@ -50,7 +50,7 @@ author: Junwen Wayne Peng
 keywords: "數學網站,台大,理論中心,NCTS,數學,math,calculus,微積分,微分,積分,如何架設網站,Jekyll,arithmetic,dynamics,galois group"
 ```
 
-關鍵字與網站敘述的描述會出現在網站的 html 標頭檔內，並不會顯示在網頁的內容部分。網路上有很多免費的資訊[^1]告訴你如何優化網站的 SEO ，可以多多參考，並嘗試設定。另外你也可以請 ChatGPT 告訴你該如何做，我相信效果不會太差。
+關鍵字與網站敘述的描述會出現在網站的 html 標頭檔內，並不會顯示在網頁的內容部分。網路上有很多免費的資訊[^1]告訴你如何優化網站的 SEO ，可以多多參考，並嘗試設定。另外你也可以請 ChatGPT 告訴你該如何做，我相信效果不會太差。如果你想深入了解標頭檔的 `meta` 設定，我們將在後續章節深入講解
 
 # 導航欄中的連結列表
 
@@ -59,6 +59,10 @@ keywords: "數學網站,台大,理論中心,NCTS,數學,math,calculus,微積分,
 我們用下面的文字檔來實現上方的導航欄結構
 
 ```yaml
+#########################################
+# --- 導航欄（網頁右上角）中的連結列表 --- #
+#########################################
+
 navbar-links:
   About Me: "aboutme"
   Resources:
@@ -82,32 +86,34 @@ navbar-var-length: true
 
 ```
 githubAccount.github.io
-│   README.md
-│   _config.yml
-│   aboutme.md
-│   all-slides.html
-│	publication
-│   ...    
-│
-└───books
-│   │ 
-│   └───jekyll-intro
-│       │   0-intro.md
-│       │   1-git_and_github.md
-│       │   ...
-│   
-└───folder2
-    │   file021.txt
-    │   file022.txt
+ ├─ README.md
+ ├─ _config.yml
+ ├─ aboutme.md
+ ├─ all-slides.html
+ ├─	publication
+ ├─   ...    
+ ├─ books
+ │   │ 
+ │   └─ jekyll-intro
+ │       ├─ 0-intro.md
+ │       ├─ 1-git_and_github.md
+ │       ├─ ...
+ │   
+ ├─ folder2
+ │   ├─ file021.txt
+ │   ├─ file022.txt
+ │   ├─ ...
 ```
 
-相信讀者可以自行判斷並且設計自己的目錄結構與導航欄結構。以下我們快速地整理重點：
+相信讀者可以透過比較生成的結果、文檔設定與目錄結構理解如何調整自己的目錄結構與導航欄結構。以下我們快速地整理重點：
 
 * 副檔名不重要 `.html` 與 `.md` 皆可以省略
 * `:` 如果是放檔案的"絕對路徑"，那導航欄就會產生一個連結到那個檔案，如果是網址，就會產生連結到外部網站
 * 不可以在 `:` 後同時放置"連結位址"與"子導航欄"
 
 # Logo
+
+![avatar](/img/4-jekyll-config/5.jpg)
 
 ```yaml
 ################
