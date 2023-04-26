@@ -12,7 +12,7 @@ Let me set the notations.
 * $\pi$ is an irreducible element in $\mathbb{F}_q[T]$
 * 
 
-We want to find an positive integer $B$ such that if $(x_1, x_2,\ldots, x_r)\in \mathbb{F}_{q^r}(T)\times \pi^{n-1}\mathbb{F}_{q^r}(T)\times\cdots\times\mathbb{F}_{q^r}(T)$ is a solution of
+We want to find an positive integer $B$ such that if $(x_1, x_2,\ldots, x_r)\in \mathbb{F}_{q^r}(T)\times\pi^{n-1}\mathbb{F}_{q^r}(T)\times\cdots\times\pi^{n-1}\mathbb{F}_{q^r}(T)$ is a solution of
 
 $$
 \det\left(\begin{matrix}
