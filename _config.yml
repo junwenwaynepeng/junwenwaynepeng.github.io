@@ -61,6 +61,7 @@ round-avatar: true
 # 取消註釋（#）並指定以下參數
 #title-img: /path/to/image
 
+# Favicon 是網站的小圖示，出現在瀏覽器的標籤頁上
 favicon: "/assets/img/favicon.png"
 
 
@@ -104,17 +105,16 @@ social-network-links:
 # 訂閱鏈接的URL將為https://<您的網站>/feed.xml
 rss-description: 歡迎來到 Junwen Wayne Peng 的個人網站！我是台大理論中心 NCTS 數學組的研究員，此網站將分享我的上課資訊和網頁與程式 DIY 技巧，以及我的研究成果。我的研究專長為算數動態系統與數論演算法。
 
-###################
-# --- 一般選項 --- #
-##################
-
 # 選擇要在文章中顯示的社交網絡分享鏈接
 share-links-active:
   twitter: true
   facebook: true
   line: true
   linkedin: true
-  vk: false
+
+###################
+# --- 一般選項 --- #
+##################
 
 # 如何在頁腳中顯示您的網站鏈接
 # 如果您不想在頁腳中顯示鏈接，請刪除此內容或註解（#）
@@ -123,7 +123,7 @@ url-pretty: "junwenwaynepeng.github.io"
 # 摘要詞長 - 將每篇文章的摘要在訂閱頁面上截斷為指定數量的詞
 excerpt_length: 50
 
-# 是否在訂閱頁面中為每篇博客文章顯示摘要
+# 是否在訂閱頁面中為每篇文章顯示摘要
 feed_show_excerpt: true
 
 # 是否在訂閱頁面中在每篇文章預覽下方顯示標籤列表
@@ -131,6 +131,9 @@ feed_show_tags: true
 
 # 在頁腳中添加一個按鈕，用於編輯當前頁面。僅當您的網站托管在GitHub上時才有效。
 #edit_page_button: true
+
+# 是否在訂閱頁面中為每篇文章顯示所需閱讀時間
+show_readtime: true
 
 #######################
 # --- 顏色/背景圖像 --- #
