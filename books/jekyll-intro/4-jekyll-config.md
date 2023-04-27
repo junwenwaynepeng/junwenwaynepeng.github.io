@@ -139,9 +139,10 @@ favicon: "/assets/img/favicon.png"
 
 ![Social Network](/img/4-jekyll-config/4.jpg)
 
+---
 ![Share Social Links](/img/4-jekyll-config/6.jpg)
-```
 
+```yaml
 ######################
 # --- 社交媒體鏈接 --- #
 ######################
@@ -190,5 +191,6 @@ share-links-active:
   linkedin: true
 ```
 
+```
 
 [^1]: [SEO check](https://www.seobility.net/en/seocheck/)
