@@ -99,9 +99,9 @@ githubAccount.github.io
  │       ├─ 1-git_and_github.md
  │       ├─ ...
  │   
- ├─ folder2
- │   ├─ file021.txt
- │   ├─ file022.txt
+ ├─ folder
+ │   ├─ file1.txt
+ │   ├─ file2.txt
  │   ├─ ...
 ```
 
@@ -111,14 +111,14 @@ githubAccount.github.io
 * `:` 如果是放檔案的"絕對路徑"，那導航欄就會產生一個連結到那個檔案，如果是網址，就會產生連結到外部網站
 * 不可以在 `:` 後同時放置"連結位址"與"子導航欄"
 
-# Logo
+# Logo and Favicon
 
 ![avatar](/img/4-jekyll-config/5.jpg)
 
 ```yaml
-################
-# --- Logo --- #
-################
+############################
+# --- Logo and Favicon --- #
+############################
 
 # 顯示在導航欄中的圖片 - 最好使用正方形圖片
 # 如果您不想在導航欄中顯示圖片，請刪除此參數
@@ -130,9 +130,65 @@ round-avatar: true
 # 如果您想要在左上角擁有圖像標誌，而不是使用網站標題，
 # 取消註釋（#）並指定以下參數
 #title-img: /path/to/image
+
+# Favicon 是網站的小圖示，出現在瀏覽器的標籤頁上
+favicon: "/assets/img/favicon.png"
 ```
 
+# 社交媒體鏈接
+
 ![Social Network](/img/4-jekyll-config/4.jpg)
+
+![Share Social Links](/img/4-jekyll-config/6.jpg)
+```
+
+######################
+# --- 社交媒體鏈接 --- #
+######################
+
+# 選擇您想在頁腳中顯示的社交網絡鏈接。
+# 取消對您想要顯示的鏈接的註釋（#），並將您的信息添加到每個鏈接中。
+social-network-links:
+  email: "junwen.wayne.peng@gmail.com"
+  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+#  facebook: deanattali
+  github: junwenwaynepeng
+#  twitter: daattali
+#  patreon: DeanAttali
+#  youtube: c/daattali
+#  medium: yourname
+#  reddit: yourname
+#  linkedin: daattali
+#  xing: yourname
+#  stackoverflow: "3943160/daattali"
+#  snapchat: deanat78
+  instagram: peng1736
+#  spotify: yourname
+#  telephone: +14159998888
+#  steam: deanat78
+#  twitch: yourname
+#  yelp: yourname
+#  telegram: yourname
+  calendly: junwen-wayne-peng               # 相當好用的預約網站，預設串接 google calendar，且支援多人預約
+#  mastodon: instance.url/@username
+  ORCID: 0000-0001-5769-9519                # 學者 ID
+  google-scholar: junwen.wayne.peng@gmail.com
+#  discord: invite/invite_code or users/userid 
+#  kaggle: yourname
+#  hackerrank: yourname
+  line: 2gzInYq
+
+# 如果您希望您的網站生成RSS訂閱，請提供一個描述
+# 訂閱鏈接的URL將為https://<您的網站>/feed.xml
+rss-description: 歡迎來到 Junwen Wayne Peng 的個人網站！我是台大理論中心 NCTS 數學組的研究員，此網站將分享我的上課資訊和網頁與程式 DIY 技巧，以及我的研究成果。我的研究專長為算數動態系統與數論演算法。
+
+# 選擇要在文章中顯示的社交網絡分享鏈接
+share-links-active:
+  twitter: true
+  facebook: true
+  line: true
+  linkedin: true
+```
 
 
 [^1]: [SEO check](https://www.seobility.net/en/seocheck/)
