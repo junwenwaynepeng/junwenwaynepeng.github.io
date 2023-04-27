@@ -191,6 +191,26 @@ share-links-active:
   linkedin: true
 ```
 
+```yaml
+###################
+# --- 一般選項 --- #
+##################
+
+# 如何在頁腳中顯示您的網站鏈接
+# 如果您不想在頁腳中顯示鏈接，請刪除此內容或註解（#）
+url-pretty: "junwenwaynepeng.github.io"
+
+# 摘要詞長 - 將每篇文章的摘要在訂閱頁面上截斷為指定數量的詞
+excerpt_length: 50
+
+# 是否在訂閱頁面中為每篇博客文章顯示摘要
+feed_show_excerpt: true
+
+# 是否在訂閱頁面中在每篇文章預覽下方顯示標籤列表
+feed_show_tags: true
+
+# 在頁腳中添加一個按鈕，用於編輯當前頁面。僅當您的網站托管在GitHub上時才有效。
+#edit_page_button: true
 ```
 
 [^1]: [SEO check](https://www.seobility.net/en/seocheck/)
