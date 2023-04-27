@@ -303,6 +303,7 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 ########################
 # ---  額外套件管理 --- #
