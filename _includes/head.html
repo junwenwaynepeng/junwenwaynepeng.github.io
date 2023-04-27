@@ -131,10 +131,12 @@
   {% endif %}
 
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <link rel="stylesheet" href="{{ '/assets/css/staticman.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/staticman.css' | relative_url }}">
   {% endif %}
-
-  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+  
+  {% if site.favicon %}
+    <link rel="shortcut icon" type="image/png" href="{{ site.favicon | relative_url }}">
+  {% endif %}
 
   {% if page.head-package %}
     {% for plugin in page.head-package %}

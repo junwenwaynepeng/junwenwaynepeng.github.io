@@ -61,6 +61,8 @@ round-avatar: true
 # 取消註釋（#）並指定以下參數
 #title-img: /path/to/image
 
+favicon: "/assets/img/favicon.png"
+
 
 ######################
 # --- 社交媒體鏈接 --- #
