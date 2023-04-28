@@ -15,10 +15,10 @@ For convenience, we let $A=\mathbb{F}_{q^r}[T]$. We want to find a positive inte
 
 $$
 \det\left(\begin{matrix}
-x_1 & x_2 & \cdots & x_r\\\\
-\pi\sigma(x_r) & \sigma(x_1) & \cdots & \sigma(x_{r-1})\\\\
+x_1-X & x_2 & \cdots & x_r\\\\
+\pi\sigma(x_r) & \sigma(x_1)-X & \cdots & \sigma(x_{r-1})\\\\
 \ldots & \ldots & \ddots & \ldots\\\\
-\pi\sigma^{r-1}(x_2) & \pi\sigma^{r-1}(x_3) & \cdots & \sigma^{r-1}(x_1)
+\pi\sigma^{r-1}(x_2) & \pi\sigma^{r-1}(x_3) & \cdots & \sigma^{r-1}(x_1)-X
 \end{matrix}\right) = f,
 $$
 then $n$, $\deg(x_1)$, $\cdots$, and $\deg(x_r)$ are bounded by $B$.
