@@ -28,3 +28,7 @@ For example, we can consider the following settings:
 * $\pi = T$
 * $r = 3$
 * $p = 5$
+
+## Answer
+
+We can set $B$ to be $n$ because if there is no solution for lower degree, then it won't have solution for higher degree. 
