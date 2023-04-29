@@ -20,6 +20,14 @@ next_page: 4-jekyll-config
 這些設置可以根據您的需要進行編輯，初次設置完成後，通常您不需要再次編輯此文件。 以下我們將詳細的介紹這些設置。
 
 # 網站標題與作者
+
+---
+![Title](/img/4-jekyll-config/1.jpg)
+
+---
+![Author](/img/4-jekyll-config/2.jpg)
+
+---
 ```yaml
 ###################
 # --- 必要選項 --- #
@@ -31,13 +39,6 @@ title: Wayne Peng's
 # 你的名子，將會出現在頁角區域（網頁最下方）
 author: Junwen Wayne Peng
 ```
----
-![Title](/img/4-jekyll-config/1.jpg)
-
----
-![Author](/img/4-jekyll-config/2.jpg)
-
----
 
 # SEO 與搜索關鍵字
 
@@ -191,6 +192,10 @@ share-links-active:
   linkedin: true
 ```
 
+# 一般選項
+
+![general options](/img/4-jekyll-config/7.jpg)
+
 ```yaml
 ###################
 # --- 一般選項 --- #
@@ -212,5 +217,6 @@ feed_show_tags: true
 # 在頁腳中添加一個按鈕，用於編輯當前頁面。僅當您的網站托管在GitHub上時才有效。
 #edit_page_button: true
 ```
+
 
 [^1]: [SEO check](https://www.seobility.net/en/seocheck/)
