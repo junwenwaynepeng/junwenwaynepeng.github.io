@@ -354,9 +354,9 @@ date_format: "%B %d, %Y" # 目前格式 March 27, 2023
 #fb_app_id: ""
 # --- 你無須更動下方所有參數，但是也可以根據你的需求做調整 --- 
 
-# Output options (more information on Jekyll's site)
 
-# Markdown 引擎
+# Markdown 引擎選擇:
+# Output options (more information on Jekyll's site)
 # markdown: kramdown    # kramdown是jekyll原生的markdown引擎，但因為github選擇使用CommonMark，所以我們優先採用CommonMarkGhPages，如果你想要換回 kramdown僅須將markdown參數換成kramdown
 markdown: CommonMarkGhPages
 highlighter: rouge
