@@ -199,7 +199,7 @@ share-links-active:
 ```yaml
 ###################
 # --- 一般選項 --- #
-##################
+###################
 
 # 如何在頁腳中顯示您的網站鏈接
 # 如果您不想在頁腳中顯示鏈接，請刪除此內容或註解（#）
@@ -218,5 +218,225 @@ feed_show_tags: true
 #edit_page_button: true
 ```
 
+# 顏色/背景圖像
+
+```yaml
+########################
+# --- 顏色/背景圖像 --- #
+########################
+
+# 個性化您網站中的顏色。顏色值可以是任何有效的CSS顏色。
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
+
+# 或者，可以將導航欄、頁腳和頁面背景設置為圖像。
+# 而不是顏色。
+
+#navbar-img: "/assets/img/bgimage.png"
+#footer-img: "/assets/img/bgimage.png"
+#page-img: "/assets/img/bgimage.png"
+
+# 建議為移動瀏覽器設置顏色作為瀏覽器主題。這僅受到少數移動瀏覽器的支持。
+#mobile-theme-col: "#0085A1"
+
+# 為了進行額外的視覺定制，您可以在您網站的每個頁面中包含額外的CSS文件。在這裡列出任何自定義的CSS文件。
+#site-css:
+#  - "/assets/css/custom-styles.css"
+
+# 如果您有應該在每個頁面中包含的常見JavaScript文件，請在此處列出它們
+#site-js:
+#  - "/assets/js/custom-script.js"
+```
+
+# 網頁分析
+
+```yaml
+###################
+# --- 網頁分析 --- #
+###################
+
+# 填寫您的 Google Analytics gtag.js ID，以使用 gtag 跟踪您的網站，(https://analytics.google.com/)。
+gtag: "G-EL818RR92S"
+
+# 填寫您的 Cloudflare Analytics beacon token，以使用 Cloudflare Analytics 跟踪您的網站。
+#cloudflare_analytics: ""
+
+# Google Tag Manager ID
+#gtm: ""
+
+# Matomo (aka Piwik) Web statistics
+# 取消註解以下部分以啟用 Matomo。 opt-out 參數控制是否允許用戶選擇退出跟踪。
+#matomo:
+#  site_id: "9"
+#  uri: "demo.wiki.pro"
+#  opt-out: true
+```
+
+# 文章回覆
+
+```yaml
+###################
+# --- 文章回覆 --- #
+##################
+
+# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
+#disqus: ""
+
+# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
+#fb_comment_id: ""
+
+# To use CommentBox, sign up for a Project ID on https://commentbox.io
+#commentbox: "" # Project ID, e.g. "5694267682979840-proj"
+
+# To use Utterances comments: (0) uncomment the following section, (1) fill in
+# "repository" (make sure the repository is public), (2) Enable Issues in your repository,
+# (3) Install the Utterances app in your repository https://github.com/apps/utterances
+# See more details about the parameters below at https://utteranc.es/
+#utterances:
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  issue-term: title   # Mapping between blog posts and GitHub issues
+#  theme: github-light # Utterances theme
+#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
+
+# To use Staticman comments, uncomment the following section. You may leave the reCaptcha
+# section commented if you aren't using reCaptcha for spam protection. 
+# Using Staticman requires advanced knowledge, please consult 
+# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further 
+# instructions. For any support with staticman please direct questions to staticman and 
+# not to BeautifulJekyll.
+#staticman:
+#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+#  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
+#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
+#    siteKey  : # You need to apply for a site key on Google
+#    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
+
+# To use giscus comments:
+# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository, 
+# (2) Install the giscus app in your repository (details at https://giscus.app),
+# (3) Fill in *all* the parameters below 
+# See more details about giscus and each of the following parameters at https://giscus.app
+#giscus:
+#  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  repository-id: # ID of your repository, retrieve this info from https://giscus.app
+#  category: Announcements # Category name of your GitHub Discussion posts
+#  category-id: # ID of your category, retrieve this info from https://giscus.app
+#  mapping: pathname
+#  reactions-enabled: 1
+#  emit-metadata: 0
+#  theme: light
+```
+
+# 雜項
+
+```yaml
+################
+# --- 雜項 --- #
+###############
+
+# Ruby引擎生成部落格的日期格式 (你可以參考此網站根據你喜歡的格式換掉參數)
+timezone: "Asia/Taipei"    # 設定時區
+date_format: "%B %d, %Y" # 目前格式 March 27, 2023
+
+# Facebook App ID
+#fb_app_id: ""
+# --- 你無須更動下方所有參數，但是也可以根據你的需求做調整 --- 
+
+# Output options (more information on Jekyll's site)
+
+# Markdown 引擎
+# markdown: kramdown    # kramdown是jekyll原生的markdown引擎，但因為github選擇使用CommonMark，所以我們優先採用CommonMarkGhPages，如果你想要換回 kramdown僅須將markdown參數換成kramdown
+markdown: CommonMarkGhPages
+highlighter: rouge
+permalink: /:year-:month-:day-:title/    # permalink是用來設定網址是如何顯示的，不需要更動
+paginate: 5    # 部落格每頁顯現多少文章
+#kramdown:
+#  syntax_highlighter: rouge
+#  input: GFM
+#  auto_ids:       true
+#  toc_levels:     1..3
+
+#kramdown:
+#  input: GFM
+commonmark:
+  options: ["UNSAFE", "SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+```
+
+# 額外套件管理
+
+```yaml
+########################
+# ---  額外套件管理 --- #
+########################
+head-package:
+  -
+    module: "mathjax"
+    file: "package/mathjax.html"
+    src: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+foot-package:
+  -
+    module: "mermaid"
+    file: "package/mermaid.html"
+    src: "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs"
+    
+reveal:
+  title: "Reveal-jekyll"
+  transition: "slide" # none/fade/slide/convex/concave/zoom
+  theme: "black" # beige/blood/league/moon/night/serif/simple/sky/solarized/white
+  number: true
+  numberType: "c" # "h.v" / "h/v" / "c/t"
+
+# Slides
+collections:
+  slides:
+    output: true
+    permalink: /:collection/:name
+```
 
 [^1]: [SEO check](https://www.seobility.net/en/seocheck/)
