@@ -59,12 +59,6 @@ expandable-answer: true
 
     <div id='answer-question-calculus3-ch6-4-s-1'></div>
 
-## 測試
-
-{% raw %}
-  {{ site.data[page.data[2].folder][page.data[2].file][page.data[2].id].questionSet.question | markdownify }}
-{% endraw %}
-
 ## Remark
 
 1. In Question 3, we use simply compare values to determine the maximum or minimum on the boundary. While we acknowledge that this method is not entirely rigorous, we have not covered a more rigorous method in this course.
