@@ -33,7 +33,7 @@ next_page: 1-git-and-github
 
 圖形界面的網頁編輯器也許非常直覺，但是對於一個專住在內容的網站上，過多的編輯只是會增加閱讀的困難而已，如果只是輕量化的編輯， Markdown 完全可以勝任這個工作。這個章節將會教你如何使用 Markdown 撰寫你的第一篇文章。 Markdown 是一個輕量級標記語言，可以讓你簡單地撰寫格式良好的文章。
 
-# Jekyll 網站參數調整
+# [Jekyll 網站參數調整](4-jekyll-config.md)
 
 Jekyll 是一個靜態網站生成器，可以讓你把你的 Markdown 文件轉換為 HTML 、 CSS 和 JavaScript 文件。在本節中，我們會介紹如何安裝和設定 Jekyll ，以及如何使用 Jekyll 的一些高級功能，如佈局、主題和插件等。我們也會介紹如何自定義你的網站配置和外觀。
 
