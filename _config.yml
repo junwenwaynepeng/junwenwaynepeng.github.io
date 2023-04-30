@@ -6,7 +6,7 @@
 ###########################################################
 test: abc
 
-variable_test: "this is a variable test ${test}"
+variable_test: this is a variable test ${test}
 
 anchor_test: &anchor 123
 alias_Test: *anchor_test
