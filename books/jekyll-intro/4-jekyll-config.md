@@ -197,7 +197,7 @@ author: Junwen Wayne Peng
 ##############
 
 # 關鍵詞與您的網站相關聯，以便於搜索引擎優化（SEO）的目的
-keywords: "數學網站,台大,理論中心,NCTS,數學,math,calculus,微積分,微分,積分,如何架設網站,Jekyll,arithmetic,dynamics,galois group"
+keywords: "Junwen, Wayne, Peng, Junwen Peng, Wayne Peng, Junwen Wayne Peng, 數學網站,台大,理論中心,NCTS,數學,math,calculus,微積分,微分,積分,如何架設網站,Jekyll,arithmetic,dynamics,galois group"
 ```
 
 關鍵字與網站敘述的描述會出現在網站的 html 標頭檔內，並不會顯示在網頁的內容部分。網路上有很多免費的資訊[^seo]告訴你如何優化網站的 SEO ，可以多多參考，並嘗試設定。另外你也可以請 ChatGPT 告訴你該如何做，我相信效果不會太差。如果你想深入了解標頭檔的 `meta` 設定，我們將在後續章節深入講解
@@ -226,9 +226,9 @@ navbar-links:
 # 在導航欄中添加搜索按鈕
 post_search: true
 
-# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
-# If this setting is off, then long sub-menu words might get cut off
-# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+# 允許子菜單項目（第二層導航菜單項目）比頂級菜單項目更長
+# 如果此設置關閉，則長子菜單單詞可能會被截斷
+# 請參閱 https://github.com/daattali/beautiful-jekyll/issues/765 以了解此設置可以解決的問題
 navbar-var-length: true
 ```
 
@@ -265,6 +265,7 @@ githubAccount.github.io
 
 ![avatar](/img/4-jekyll-config/5.jpg)
 
+---
 ```yaml
 ############################
 # --- Logo and Favicon --- #
@@ -292,6 +293,7 @@ favicon: "/assets/img/favicon.png"
 ---
 ![Share Social Links](/img/4-jekyll-config/6.jpg)
 
+---
 ```yaml
 ######################
 # --- 社交媒體鏈接 --- #
@@ -345,6 +347,7 @@ share-links-active:
 
 ![general options](/img/4-jekyll-config/7.jpg)
 
+---
 ```yaml
 ###################
 # --- 一般選項 --- #
@@ -407,7 +410,15 @@ footer-hover-col: "#0085A1"
 #  - "/assets/js/custom-script.js"
 ```
 
+`site-css` 與 `site-js` 為進階用法，可以暫時不予理會。
+
 ## 網頁分析
+
+提供四種網路解析方式：
+  * [Google Analytics]((https://analytics.google.com/analytics/web/provision/#/provision))：如果不是太在意網路流量，但是好奇有多人少人會來觀看網站（例如我），那 Google Analytics 就相當好用了。 
+  * [CloudFlare Analytics](https://www.cloudflare.com/zh-tw/)： 提供專門為網站安全服務的服務供應商
+  * [Google Tag Manager](https://tagmanager.google.com/#/home)：如果你在乎瀏覽者的特地行為，例如是否有檢視某張照片，或者是否有使用某個功能，你可以使用 Google Tag Manager 去做這些更細部的追蹤，這個[網站](https://transbiz.com.tw/google-tag-manager-gtm-%e6%95%99%e5%ad%b8)提供了不錯的簡介。
+  * [Matomo](https://matomo.org/)：這是一個開源的網頁應用服務，提供比 Google Analytics 更強大的分析功能 。
 
 ```yaml
 ###################
@@ -432,6 +443,14 @@ gtag: "G-EL818RR92S"
 ```
 
 ## 文章回覆
+
+我們提供六種留言系統：
+  * [Disqus](https://disqus.com/)：應該是最為強大的留言系統，因為它允許使用各家社群媒體帳號進行留言。
+  * [Facebook Comments](https://developers.facebook.com/docs/plugins/comments/)：只為 Facebook 帳戶提供的留言系統。
+  * [CommentBox](https://commentbox.io/)：沒有廣告，不追蹤用戶信息，簡單的留言系統。
+  * [Utterances](https://www.jkg.tw/p3350/)：內建於 Github 的瀏覽系統，留言訊息也會同時儲存到你的 Github Repository 內。
+  * [Staticman](https://staticman.net/)：專門為 Jekyll + Github Page 設計的留言系統，但是 Utterances 似乎比較強大。
+  * [giscus](https://giscus.app/zh-TW)：giscus 是 Utterances 的分支，我相信它跟 Uterances 沒有太多的區別。優點是，它的官方網站還活著。
 
 ```yaml
 ###################
@@ -489,6 +508,8 @@ gtag: "G-EL818RR92S"
 ```
 
 ## 雜項
+
+以下內容你無須做任何變動。唯一可能會想要改動的是`paginate`這項參數，它控制首頁會顯示幾篇文章。
 
 ```yaml
 ################
@@ -558,6 +579,8 @@ plugins:
 ```
 
 ## 額外套件管理
+
+這部分也無需做任何更改，如果你希望關掉某些套件的功能，那可以將他們註解掉。我們會在後續的章節簡介我設計了那些額外套件。
 
 ```yaml
 ########################
