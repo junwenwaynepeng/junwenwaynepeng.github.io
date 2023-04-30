@@ -9,21 +9,13 @@ preview_page: 3-the-first-post
 next_page: 4-jekyll-config
 ---
 
-這個章節我們將來詳細介紹如何對這個部落格做客製化的參數設定，請你先打開 `_config.yml` 這是一個Jekyll網站的配置文件範例，通過更改該文件，你可以設置以下內容：
-
-1. 網站標題和作者名字
-2. 網站 SEO 與 Google Analytics 追蹤網站流量
-3. 導航欄中的連結列表
-4. 網站標誌和社交媒體鏈接，可用於在網站中添加個人品牌，以及在文章中顯示社交媒體分享鏈接的選項
-5. 文章的留言系統，與添加額外套件。
-
-這些設置可以根據您的需要進行編輯，初次設置完成後，通常您不需要再次編輯此文件。 `_config.yml` 使用一種叫做 YAML 的語言進行編輯，以下我們將先介紹 YAML 檔是什麼，編輯的格式，再介紹 `_config.yml` 裡面的配置細節。
+這個章節我們將來詳細介紹如何對這個部落格做客製化的參數設定，配置文件是部落格根目錄裡的 `_config.yml` ，他 使用一種叫做 YAML 的語言進行編輯，以下我們將先介紹 YAML 是什麼，編輯的格式，再介紹 `_config.yml` 裡面的配置細節。
 
 # YAML 簡介
 
 ## 什麼是 YAML
 
-YAML 是一種常見的資料序列化格式，其名稱是「YAML Ain't Markup Language」的縮略語。它的設計旨在使資料易於閱讀和撰寫，並且可以被用於許多不同的程式語言中，包括 Python、Ruby、Java、JavaScript 等等。在 YAML 中，資料以層次結構的形式表示，並使用*縮排*表示層次關係。這使得 YAML 檔案相對容易閱讀。
+YAML 是一種常見的資料序列化格式，其名稱是「YAML Ain't Markup Language」的縮略語。它的設計旨在使資料易於閱讀和撰寫，並且可以被用於許多不同的程式語言中，包括 Python、Ruby、Java、JavaScript 等等。在 YAML 中，資料以層次結構的形式表示，並使用*縮排*表示層次關係。這使得 YAML 檔案相對容易閱讀。以下我們只對必要的概念做介紹，如果你有更細節的需求，可以參考這個網站[^yaml]。
 
 ## YAML 的基本元素
 
@@ -153,33 +145,30 @@ message: 'Hello,\nWorld!'
 message: "Hello,\nWorld!"
 ```
 
-在使用雙引號字串時，可以使用反斜杠（\）來表示特殊字符，例如 `\n` 表示換行符號。此外，還可以使用 `$` 和 `"` 來進行變數的插值。
+在使用雙引號字串時，可以使用反斜杠（\）來表示特殊字符，例如 `\n` 表示換行符號。以下我們列出 YAML 的特殊字符。
 
-需要注意的是，使用引號可能會影響字串的值，因為它們會影響 YAML 對字串的解析方式。因此，在使用引號時需要仔細檢查字串的值，以確保它們符合預期。
+* 塊狀純值：使用分隔線（`|`）可以讓下方縮排部分的內容依照其排版輸出。
 
-## 錨點和引用
-
-除了支持不同類型的資料表示方式之外，YAML 還支持*錨點*和*引用*等特性，這些特性可以使 YAML 文件更加靈活和易讀。
-
-*錨點*可以在 YAML 文件中用來定義一個可重複使用的資料片段，以便在文件的其他位置*引用*它。在 YAML 中，可以使用 `&` 符號來定義一個錨點，並使用 `*` 符號來引用它。
-
-以下是一個包含錨點和引用的 YAML 文件的例子：
-
-```yaml
-# Define an anchor
-&color_anchor Red
-
-# Use the anchor
-Favorite Color: *color_anchor
-Least Favorite Color: *color_anchor
+```ymal
+message: |
+  YAML 
+    (YAML Ain't Markup Language)
+  is a data-serialization language
 ```
 
-在這個例子中，第一行使用 `&` 符號定義了一個錨點 `color_anchor`，其值為 `"Red"`。接著，在第四行和第六行使用 `*` 符號引用了這個錨點，分別表示 "Favorite Color" 和 "Least Favorite Color" 都是 `"Red"`。
+# Jekyll 配置檔
 
-你可以把錨點想象成一個變數名稱，把 & 符號理解成定義變數的關鍵字，把 * 符號理解成使用變數的操作符。但需要注意的是，錨點和變數還是有一些區別的，例如在 YAML 中無法使用變數的邏輯運算、函數調用等功能。
+請你先打開 `_config.yml` 這是一個Jekyll網站的配置文件範例，通過更改該文件，你可以設置以下內容：
 
+1. 網站標題和作者名字
+2. 網站 SEO 與 Google Analytics 追蹤網站流量
+3. 導航欄中的連結列表
+4. 網站標誌和社交媒體鏈接，可用於在網站中添加個人品牌，以及在文章中顯示社交媒體分享鏈接的選項
+5. 文章的留言系統，與添加我設計的額外套件。
 
-# 網站標題與作者
+這些設置可以根據您的需要進行編輯，初次設置完成後，通常您不需要再次編輯此文件。
+
+## 網站標題與作者
 
 ---
 ![Title](/img/4-jekyll-config/1.jpg)
@@ -200,7 +189,7 @@ title: Wayne Peng's
 author: Junwen Wayne Peng
 ```
 
-# SEO 與搜索關鍵字
+## SEO 與搜索關鍵字
 
 ```yaml
 ##############
@@ -211,9 +200,9 @@ author: Junwen Wayne Peng
 keywords: "數學網站,台大,理論中心,NCTS,數學,math,calculus,微積分,微分,積分,如何架設網站,Jekyll,arithmetic,dynamics,galois group"
 ```
 
-關鍵字與網站敘述的描述會出現在網站的 html 標頭檔內，並不會顯示在網頁的內容部分。網路上有很多免費的資訊[^1]告訴你如何優化網站的 SEO ，可以多多參考，並嘗試設定。另外你也可以請 ChatGPT 告訴你該如何做，我相信效果不會太差。如果你想深入了解標頭檔的 `meta` 設定，我們將在後續章節深入講解
+關鍵字與網站敘述的描述會出現在網站的 html 標頭檔內，並不會顯示在網頁的內容部分。網路上有很多免費的資訊[^seo]告訴你如何優化網站的 SEO ，可以多多參考，並嘗試設定。另外你也可以請 ChatGPT 告訴你該如何做，我相信效果不會太差。如果你想深入了解標頭檔的 `meta` 設定，我們將在後續章節深入講解
 
-# 導航欄中的連結列表
+## 導航欄中的連結列表
 
 ![Navbar](/img/4-jekyll-config/3.jpg)
 
@@ -272,7 +261,7 @@ githubAccount.github.io
 * `:` 如果是放檔案的"絕對路徑"，那導航欄就會產生一個連結到那個檔案，如果是網址，就會產生連結到外部網站
 * 不可以在 `:` 後同時放置"連結位址"與"子導航欄"
 
-# Logo and Favicon
+## Logo and Favicon
 
 ![avatar](/img/4-jekyll-config/5.jpg)
 
@@ -296,7 +285,7 @@ round-avatar: true
 favicon: "/assets/img/favicon.png"
 ```
 
-# 社交媒體鏈接
+## 社交媒體鏈接
 
 ![Social Network](/img/4-jekyll-config/4.jpg)
 
@@ -352,7 +341,7 @@ share-links-active:
   linkedin: true
 ```
 
-# 一般選項
+## 一般選項
 
 ![general options](/img/4-jekyll-config/7.jpg)
 
@@ -368,7 +357,7 @@ url-pretty: "junwenwaynepeng.github.io"
 # 摘要詞長 - 將每篇文章的摘要在訂閱頁面上截斷為指定數量的詞
 excerpt_length: 50
 
-# 是否在訂閱頁面中為每篇博客文章顯示摘要
+# 是否在訂閱頁面中為每篇部落格文章顯示摘要
 feed_show_excerpt: true
 
 # 是否在訂閱頁面中在每篇文章預覽下方顯示標籤列表
@@ -378,7 +367,7 @@ feed_show_tags: true
 #edit_page_button: true
 ```
 
-# 顏色/背景圖像
+## 顏色/背景圖像
 
 ```yaml
 ########################
@@ -418,7 +407,7 @@ footer-hover-col: "#0085A1"
 #  - "/assets/js/custom-script.js"
 ```
 
-# 網頁分析
+## 網頁分析
 
 ```yaml
 ###################
@@ -442,7 +431,7 @@ gtag: "G-EL818RR92S"
 #  opt-out: true
 ```
 
-# 文章回覆
+## 文章回覆
 
 ```yaml
 ###################
@@ -499,7 +488,7 @@ gtag: "G-EL818RR92S"
 #  theme: light
 ```
 
-# 雜項
+## 雜項
 
 ```yaml
 ################
@@ -568,7 +557,7 @@ plugins:
   - jekyll-seo-tag
 ```
 
-# 額外套件管理
+## 額外套件管理
 
 ```yaml
 ########################
@@ -599,4 +588,5 @@ collections:
     permalink: /:collection/:name
 ```
 
-[^1]: [SEO check](https://www.seobility.net/en/seocheck/)
+[^yaml]: [YAML Introduction](https://tutorialreference.com/yaml/yaml-tutorial)
+[^seo]: [SEO check](https://www.seobility.net/en/seocheck/)
