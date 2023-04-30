@@ -17,7 +17,100 @@ next_page: 4-jekyll-config
 4. 網站標誌和社交媒體鏈接，可用於在網站中添加個人品牌，以及在文章中顯示社交媒體分享鏈接的選項
 5. 文章的留言系統，與添加額外套件。
 
-這些設置可以根據您的需要進行編輯，初次設置完成後，通常您不需要再次編輯此文件。 以下我們將詳細的介紹這些設置。
+這些設置可以根據您的需要進行編輯，初次設置完成後，通常您不需要再次編輯此文件。 以下我們先介紹 YAML 檔是什麼，編輯的格式，再介紹 `_config.yml` 裡面的配置細節。
+
+# YAML 簡介
+
+## 什麼是 YAML
+
+YAML 是一種常見的資料序列化格式，其名稱是「YAML Ain't Markup Language」的縮略語。它的設計旨在使資料易於閱讀和撰寫，並且可以被用於許多不同的程式語言中，包括 Python、Ruby、Java、JavaScript等等。在 YAML 中，資料以層次結構的形式表示，並使用*縮排*表示層次關係。這使得 YAML 檔案對人類來說非常易於閱讀和理解。
+
+## YAML 的基本元素
+
+* 純量（Scalar）：表示單一值，可以是數字、布林值、字串、日期等。
+```yaml
+age: 30
+married: true
+name: John
+birthdate: 1990-01-01
+```
+
+* 數組（Sequence）：表示有序集合，
+
+  - 使用破折號（-）表示。
+```yaml
+fruits:
+  - apple
+  - banana
+  - orange
+```
+
+  - 使用使用行內列表（ Inline List ）
+```yaml
+fruits: [apple, banana, orange]
+```
+
+* 映射（Mapping）：表示鍵值對的集合，使用冒號（:）表示。
+```yaml
+person:
+  name: John
+  age: 30
+  married: true
+```
+
+## 註釋
+
+除了支持不同類型的資料表示方式之外，YAML 還支持註釋、錨點和引用等特性，這些特性可以使 YAML 文件更加靈活和易讀。
+
+以下是這些特性的解釋：
+
+1. 註釋（Comments）
+
+註釋可以在 YAML 文件中用來提供對資料的說明或說明 YAML 文件的結構。在 YAML 中，註釋以井號（#）開始，直到該行的結束。井號之後的所有內容都會被當作註釋並被忽略。
+
+以下是一個包含註釋的 YAML 文件的例子：
+
+```
+# This is a YAML document with comments
+name: John # The name of the person
+age: 30   # The age of the person
+```
+
+在這個例子中，第一行是一個註釋，用來說明該 YAML 文件的作用。第二行和第三行分別是鍵值對，其中第二行的註釋說明了鍵 `name` 的含義，第三行的註釋說明了鍵 `age` 的含義。
+
+2. 錨點（Anchors）
+
+錨點可以在 YAML 文件中用來定義一個可重複使用的資料片段，以便在文件的其他位置引用它。在 YAML 中，可以使用 `&` 符號來定義一個錨點，並使用 `*` 符號來引用它。
+
+以下是一個包含錨點和引用的 YAML 文件的例子：
+
+```
+# Define an anchor
+- &color_anchor Red
+
+# Use the anchor
+- Favorite Color: *color_anchor
+- Least Favorite Color: *color_anchor
+```
+
+在這個例子中，第一行使用 `&` 符號定義了一個錨點 `color_anchor`，其值為 `"Red"`。接著，在第四行和第六行使用 `*` 符號引用了這個錨點，分別表示 "Favorite Color" 和 "Least Favorite Color" 都是 `"Red"`。
+
+3. 引用（References）
+
+引用可以在 YAML 文件中用來表示對其他資料的引用，以便重複使用資料。在 YAML 中，可以使用 `*` 符號來引用一個錨點，也可以使用 `&` 符號來定義一個新的錨點。
+
+以下是一個包含引用的 YAML 文件的例子：
+
+```
+# Define an anchor
+- &name_anchor John
+
+# Use the anchor
+- Name: *name_anchor
+- Message: Hello, *name_anchor!
+```
+
+在這個例子中，第一行使用 `&` 符號定義了一個錨點 `name_anchor`，
 
 # 網站標題與作者
 

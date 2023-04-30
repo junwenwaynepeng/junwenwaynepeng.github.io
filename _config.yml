@@ -4,7 +4,12 @@
 ### 你應該仔細查看所有這些設置並進行編輯，
 ### 但是在初始設置之後，你通常不需要再回到這個文件。
 ###########################################################
+test: abc
 
+variable_test: "this is a variable test ${test}"
+
+&anchor 123
+anchor_Test: *anchor
 ###################
 # --- 必要選項 --- #
 ##################
@@ -135,9 +140,9 @@ feed_show_tags: true
 # 是否在訂閱頁面中為每篇文章顯示所需閱讀時間
 show_readtime: true
 
-#######################
+########################
 # --- 顏色/背景圖像 --- #
-#######################
+########################
 
 # 個性化您網站中的顏色。顏色值可以是任何有效的CSS顏色。
 
@@ -173,7 +178,7 @@ footer-hover-col: "#0085A1"
 
 ###################
 # --- 網頁分析 --- #
-##################
+###################
 
 # 填寫您的 Google Analytics gtag.js ID，以使用 gtag 跟踪您的網站，(https://analytics.google.com/)。
 gtag: "G-EL818RR92S"
@@ -249,17 +254,17 @@ gtag: "G-EL818RR92S"
 ###############
 
 # Ruby引擎生成部落格的日期格式 (你可以參考此網站根據你喜歡的格式換掉參數)
+timezone: "Asia/Taipei"    # 設定時區
 date_format: "%B %d, %Y" # 目前格式 March 27, 2023
 
 # Facebook App ID
 #fb_app_id: ""
 
-###########################################################
-# --- 你無須更動下方所有參數，但是也可以根據你的需求做調整 --- #
-###########################################################
 
+# --- 你無須更動下方所有參數，但是也可以根據你的需求做調整 --- #
+
+# Markdown 引擎選擇:
 # Output options (more information on Jekyll's site)
-timezone: "Asia/Taipei"    # 設定時區
 # markdown: kramdown    # kramdown是jekyll原生的markdown引擎，但因為github選擇使用CommonMark，所以我們優先採用CommonMarkGhPages，如果你想要換回 kramdown僅須將markdown參數換成kramdown
 markdown: CommonMarkGhPages
 highlighter: rouge
@@ -324,11 +329,6 @@ foot-package:
     file: "package/mermaid.html"
     src: "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs"
     
-
-# 網站基礎是建立在 Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
-# 中文化工程由 junwenwaynepeng 彭俊文 台灣大學數學系兼任助理教授完成
-
 reveal:
   title: "Reveal-jekyll"
   transition: "slide" # none/fade/slide/convex/concave/zoom
@@ -343,3 +343,6 @@ collections:
     permalink: /:collection/:name
 
 
+# 網站基礎是建立在 Beautiful Jekyll / Dean Attali
+# 2fc73a3a967e97599c9763d05e564189
+# 中文化工程由 junwenwaynepeng 彭俊文 台灣大學數學系兼任助理教授完成
