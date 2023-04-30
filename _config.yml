@@ -8,8 +8,8 @@ test: abc
 
 variable_test: "this is a variable test ${test}"
 
-&anchor 123
-anchor_Test: *anchor
+anchor_test: &anchor 123
+alias_Test: *anchor_test
 ###################
 # --- 必要選項 --- #
 ##################
