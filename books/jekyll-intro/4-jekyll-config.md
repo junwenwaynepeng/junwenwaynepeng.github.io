@@ -347,8 +347,11 @@ share-links-active:
 
 ![general options](/img/4-jekyll-config/7.jpg)
 
+<<<<<<< Updated upstream
 ---
 
+=======
+>>>>>>> Stashed changes
 ```yaml
 ###################
 # --- 一般選項 --- #
@@ -361,6 +364,10 @@ url-pretty: "junwenwaynepeng.github.io"
 # 摘要詞長 - 將每篇文章的摘要在訂閱頁面上截斷為指定數量的詞
 excerpt_length: 50
 
+<<<<<<< Updated upstream
+=======
+# 是否在訂閱頁面中為每篇文章顯示摘要
+>>>>>>> Stashed changes
 feed_show_excerpt: true
 
 # 是否在訂閱頁面中在每篇文章預覽下方顯示標籤列表
@@ -438,7 +445,10 @@ gtag: "G-EL818RR92S"
 #  site_id: "9"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 ```
 
 [^yaml]: [YAML Introduction](https://tutorialreference.com/yaml/yaml-tutorial)
