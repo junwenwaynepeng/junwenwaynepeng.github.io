@@ -1,7 +1,7 @@
 ---
-Title: "Periodic Points and Dynatomic Fileds: A Study of Lehmer's Conjecture"
-Subtitle: The Existence of Finite Periodic Points Despite Infinite Sequences with Converging Heights to 0
-Tags: Research, Academic, Number Fields, Dynamical Systems, Periodic Points, Canonical Height, Lehmer's Conjecture
+title: "Periodic Points and Dynatomic Fileds: A Study of Lehmer's Conjecture"
+subtitle: The Existence of Finite Periodic Points Despite Infinite Sequences with Converging Heights to 0
+tags: Research, Academic, Number Fields, Dynamical Systems, Periodic Points, Canonical Height, Lehmer's Conjecture
 ---
 
 In 1998, Francesco Amoroso and Roberto Dvornicich proved Lehmer's conjecture to be true for abelian extensions. This implies that there exists an absolute gap between the Weil height of non-torsion points and torsion points in any abelian extension.
