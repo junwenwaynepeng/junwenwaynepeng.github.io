@@ -240,7 +240,7 @@ githubAccount.github.io
  ├─ _config.yml
  ├─ aboutme.md
  ├─ all-slides.html
- ├─	publication
+ ├─ publication
  ├─   ...    
  ├─ books
  │   │ 
@@ -343,15 +343,11 @@ share-links-active:
   linkedin: true
 ```
 
-# 一般選項
+## 一般選項
 
 ![general options](/img/4-jekyll-config/7.jpg)
 
-<<<<<<< Updated upstream
 ---
-
-=======
->>>>>>> Stashed changes
 ```yaml
 ###################
 # --- 一般選項 --- #
@@ -364,10 +360,7 @@ url-pretty: "junwenwaynepeng.github.io"
 # 摘要詞長 - 將每篇文章的摘要在訂閱頁面上截斷為指定數量的詞
 excerpt_length: 50
 
-<<<<<<< Updated upstream
-=======
-# 是否在訂閱頁面中為每篇文章顯示摘要
->>>>>>> Stashed changes
+# 是否在訂閱頁面中為每篇部落格文章顯示摘要
 feed_show_excerpt: true
 
 # 是否在訂閱頁面中在每篇文章預覽下方顯示標籤列表
@@ -375,20 +368,14 @@ feed_show_tags: true
 
 # 在頁腳中添加一個按鈕，用於編輯當前頁面。僅當您的網站托管在GitHub上時才有效。
 #edit_page_button: true
-
-# 是否在訂閱頁面中為每篇文章顯示所需閱讀時間
-show_readtime: true
-
 ```
 
-`url-pretty` 是在頁角顯示的連結，其實沒什麼用。
-
-# 網站顏色與背景
+## 顏色/背景圖像
 
 ```yaml
-#######################
+########################
 # --- 顏色/背景圖像 --- #
-#######################
+########################
 
 # 個性化您網站中的顏色。顏色值可以是任何有效的CSS顏色。
 
@@ -423,12 +410,20 @@ footer-hover-col: "#0085A1"
 #  - "/assets/js/custom-script.js"
 ```
 
-# 網頁
+`site-css` 與 `site-js` 為進階用法，可以暫時不予理會。
+
+## 網頁分析
+
+提供四種網路解析方式：
+  * [Google Analytics]((https://analytics.google.com/analytics/web/provision/#/provision))：如果不是太在意網路流量，但是好奇有多人少人會來觀看網站（例如我），那 Google Analytics 就相當好用了。 
+  * [CloudFlare Analytics](https://www.cloudflare.com/zh-tw/)： 提供專門為網站安全服務的服務供應商
+  * [Google Tag Manager](https://tagmanager.google.com/#/home)：如果你在乎瀏覽者的特地行為，例如是否有檢視某張照片，或者是否有使用某個功能，你可以使用 Google Tag Manager 去做這些更細部的追蹤，這個[網站](https://transbiz.com.tw/google-tag-manager-gtm-%e6%95%99%e5%ad%b8)提供了不錯的簡介。
+  * [Matomo](https://matomo.org/)：這是一個開源的網頁應用服務，提供比 Google Analytics 更強大的分析功能 。
 
 ```yaml
 ###################
 # --- 網頁分析 --- #
-##################
+###################
 
 # 填寫您的 Google Analytics gtag.js ID，以使用 gtag 跟踪您的網站，(https://analytics.google.com/)。
 gtag: "G-EL818RR92S"
@@ -445,10 +440,175 @@ gtag: "G-EL818RR92S"
 #  site_id: "9"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
-<<<<<<< Updated upstream
+```
 
-=======
->>>>>>> Stashed changes
+## 文章回覆
+
+我們提供六種留言系統：
+  * [Disqus](https://disqus.com/)：應該是最為強大的留言系統，因為它允許使用各家社群媒體帳號進行留言。
+  * [Facebook Comments](https://developers.facebook.com/docs/plugins/comments/)：只為 Facebook 帳戶提供的留言系統。
+  * [CommentBox](https://commentbox.io/)：沒有廣告，不追蹤用戶信息，簡單的留言系統。
+  * [Utterances](https://www.jkg.tw/p3350/)：內建於 Github 的瀏覽系統，留言訊息也會同時儲存到你的 Github Repository 內。
+  * [Staticman](https://staticman.net/)：專門為 Jekyll + Github Page 設計的留言系統，但是 Utterances 似乎比較強大。
+  * [giscus](https://giscus.app/zh-TW)：giscus 是 Utterances 的分支，我相信它跟 Uterances 沒有太多的區別。優點是，它的官方網站還活著。
+
+```yaml
+###################
+# --- 文章回覆 --- #
+##################
+
+# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
+#disqus: ""
+
+# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
+#fb_comment_id: ""
+
+# To use CommentBox, sign up for a Project ID on https://commentbox.io
+#commentbox: "" # Project ID, e.g. "5694267682979840-proj"
+
+# To use Utterances comments: (0) uncomment the following section, (1) fill in
+# "repository" (make sure the repository is public), (2) Enable Issues in your repository,
+# (3) Install the Utterances app in your repository https://github.com/apps/utterances
+# See more details about the parameters below at https://utteranc.es/
+#utterances:
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  issue-term: title   # Mapping between blog posts and GitHub issues
+#  theme: github-light # Utterances theme
+#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
+
+# To use Staticman comments, uncomment the following section. You may leave the reCaptcha
+# section commented if you aren't using reCaptcha for spam protection. 
+# Using Staticman requires advanced knowledge, please consult 
+# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further 
+# instructions. For any support with staticman please direct questions to staticman and 
+# not to BeautifulJekyll.
+#staticman:
+#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+#  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
+#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
+#    siteKey  : # You need to apply for a site key on Google
+#    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
+
+# To use giscus comments:
+# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository, 
+# (2) Install the giscus app in your repository (details at https://giscus.app),
+# (3) Fill in *all* the parameters below 
+# See more details about giscus and each of the following parameters at https://giscus.app
+#giscus:
+#  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  repository-id: # ID of your repository, retrieve this info from https://giscus.app
+#  category: Announcements # Category name of your GitHub Discussion posts
+#  category-id: # ID of your category, retrieve this info from https://giscus.app
+#  mapping: pathname
+#  reactions-enabled: 1
+#  emit-metadata: 0
+#  theme: light
+```
+
+## 雜項
+
+以下內容你無須做任何變動。唯一可能會想要改動的是`paginate`這項參數，它控制首頁會顯示幾篇文章。
+
+```yaml
+################
+# --- 雜項 --- #
+###############
+
+# Ruby引擎生成部落格的日期格式 (你可以參考此網站根據你喜歡的格式換掉參數)
+timezone: "Asia/Taipei"    # 設定時區
+date_format: "%B %d, %Y" # 目前格式 March 27, 2023
+
+# Facebook App ID
+#fb_app_id: ""
+# --- 你無須更動下方所有參數，但是也可以根據你的需求做調整 --- 
+
+
+# Markdown 引擎選擇:
+# Output options (more information on Jekyll's site)
+# markdown: kramdown    # kramdown是jekyll原生的markdown引擎，但因為github選擇使用CommonMark，所以我們優先採用CommonMarkGhPages，如果你想要換回 kramdown僅須將markdown參數換成kramdown
+markdown: CommonMarkGhPages
+highlighter: rouge
+permalink: /:year-:month-:day-:title/    # permalink是用來設定網址是如何顯示的，不需要更動
+paginate: 5    # 部落格每頁顯現多少文章
+#kramdown:
+#  syntax_highlighter: rouge
+#  input: GFM
+#  auto_ids:       true
+#  toc_levels:     1..3
+
+#kramdown:
+#  input: GFM
+commonmark:
+  options: ["UNSAFE", "SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+```
+
+## 額外套件管理
+
+這部分也無需做任何更改，如果你希望關掉某些套件的功能，那可以將他們註解掉。我們會在後續的章節簡介我設計了那些額外套件。
+
+```yaml
+########################
+# ---  額外套件管理 --- #
+########################
+head-package:
+  -
+    module: "mathjax"
+    file: "package/mathjax.html"
+    src: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+foot-package:
+  -
+    module: "mermaid"
+    file: "package/mermaid.html"
+    src: "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs"
+    
+reveal:
+  title: "Reveal-jekyll"
+  transition: "slide" # none/fade/slide/convex/concave/zoom
+  theme: "black" # beige/blood/league/moon/night/serif/simple/sky/solarized/white
+  number: true
+  numberType: "c" # "h.v" / "h/v" / "c/t"
+
+# Slides
+collections:
+  slides:
+    output: true
+    permalink: /:collection/:name
 ```
 
 [^yaml]: [YAML Introduction](https://tutorialreference.com/yaml/yaml-tutorial)
