@@ -53,3 +53,8 @@ If ${a_n}$ is not eventually stable, then it cannot be a preperiodic sequence un
 
 **proof.** If ${a_n}$ is a preperiodic sequence under $f$ with period $k$, then we have ${a_{m+ik}}$ is an eventually coherent backward orbit of $f^k$ for $m=0,1,\ldots, k-1$. Note that ${a_{m+ik}}$ is a subsequence of a coherent backward orbit of $f$, so $\lim_i a_{m+ik}$ either diverges or converges to a fixed point of $f$.
 
+###### Proposition 3.
+
+There are infinitely many backward sequences converge to a periodic point of $f$.
+
+## There are no new periodic points in a dynamical field
