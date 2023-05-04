@@ -32,12 +32,14 @@ If we adjoin all conjugates of $2^{-n^k}$, the resulting field is called the dyn
 
 Moreover, we notice that the sequence ${2,\ 2^{-n},\ 2^{-n^2},\ \ldots}$ is a branch on the dynamical tree $\mathbb{T}_f(2)$ that is fixed by some subgroup of the dynamical group $G_f(2)$.
 
-We can summarize our observations with the following questions. Let $f$ be a polynomial and $\alpha\in\mathbb{Q}$. If $f^n(\alpha_n)=\alpha$, then the canonical height $h_f(\alpha_n)=\frac{1}{d^n}(\alpha)$, where $d$ is the degree of $f$. Thus, $0$ is dense in $h_f(\mathbb{Q}(f^{-\infty}(\alpha)))$, which is the field we want to study. Based on the example we considered, we may ask:
+We can summarize our observations with the following questions. Let $f$ be a polynomial and $\alpha\in\mathbb{Q}$. If $f^n(\alpha_n)=\alpha$, then the canonical height $h_f(\alpha_n)=\frac{1}{d^n}(\alpha)$, where $d$ is the degree of $f$. Thus, $0$ is dense in $h_f(\mathbb{Q}(f^{-\infty}(\alpha)))$, which is a field that has the property that we want to study. Based on the example we considered, we may ask:
 - Are there infinitely many periodic points of $f$ in $\mathbb{Q}(f^{-\infty}(\alpha))$? If not, can we conclude that $\mathbb{Q}(\text{Per}(f))\cap \mathbb{Q}(f^{-\infty}(\alpha))$ has finite degree over $\mathbb{Q}$?
 - Are there infinitely many preperiodic points of $f$ in $\mathbb{Q}(f^{-\infty}(\alpha))$? Similarly, can we determine the degree of the field intersection $\mathbb{Q}(\text{PrePer}(f))\cap \mathbb{Q}(f^{-\infty}(\alpha))$?
-- Can we construct an inverse dynamical sequence that converges to any periodic point of $f$?
+- Can we construct a backward dynamical sequence that converges to any periodic point of $f$?
 
-## Some observations
+A backward dynamical sequence of $f$ at $\alpha$ is a sequence $(a_n)$ satisfies $f^n(a_n)=\alpha$.
+
+## Construction seems impossible
 
 We have made some observations about inverse dynamical sequences:
 
@@ -59,3 +61,10 @@ There are infinitely many backward sequences converge to a periodic point of $f$
 
 ## There are no new periodic points in some dynamical fields
 
+###### Theorem.
+Let $f$ be a polynomial of degree $d$ that satisfies that there exists a mobius transformation $l$ such that $f^l\equiv x^d\mod p$.
+Then, for any periodic point $a\in\mathbb{Q}_f(\alpha)$, $a$ is a rational number.
+
+**proof** Let us first assume the second condition, because it illustrate the idea. Since $f^l\equiv x^d\mod p$, we notice that $(f^l)^{\circ n}-x\equiv x^{d^n}-x\mod p$. Therefore, a periodic point of period $k$ modulo $p$ will be a solution of a cyclotomic polynomial. Hence, we can conclude that any periodic point of period greater than $2$ is not defined over $\Q$.
+
+Using this theorem, we can conclude that if $f$ is a normalized Belyi map of any degree or an Eisenstein polynomials, then $\text{Per}(f)\cap \mathbb{Q}_f(\alpha)\subset \mathbb{Q}$.
