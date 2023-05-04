@@ -65,6 +65,6 @@ There are infinitely many backward sequences converge to a periodic point of $f$
 Let $f$ be a polynomial of degree $d$ that satisfies that there exists a mobius transformation $l$ such that $f^l\equiv x^d\mod p$.
 Then, for any periodic point $a\in\mathbb{Q}_f(\alpha)$, $a$ is a rational number.
 
-**proof** Let us first assume the second condition, because it illustrate the idea. Since $f^l\equiv x^d\mod p$, we notice that $(f^l)^{\circ n}-x\equiv x^{d^n}-x\mod p$. Therefore, a periodic point of period $k$ modulo $p$ will be a solution of a cyclotomic polynomial. Hence, we can conclude that any periodic point of period greater than $2$ is not defined over $\Q$.
+**proof** Let us first assume the second condition, because it illustrate the idea. Since $f^l\equiv x^d\mod p$, we notice that $(f^l)^{\circ n}-x\equiv x^{d^n}-x\mod p$. Therefore, a periodic point of period $k$ modulo $p$ will be a solution of a cyclotomic polynomial. Hence, we can conclude that any periodic point of period greater than $2$ is not defined over $\mathbb{Q}$.
 
 Using this theorem, we can conclude that if $f$ is a normalized Belyi map of any degree or an Eisenstein polynomials, then $\text{Per}(f)\cap \mathbb{Q}_f(\alpha)\subset \mathbb{Q}$.
