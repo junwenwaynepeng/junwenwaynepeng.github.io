@@ -14,9 +14,9 @@ What happens if $0$ is no longer an isolated point in $h(K)$? Let us consider an
 
 ###### Example 1
 
-Consider $\mathbb{Q}(\sqrt{\infty}{2})$, where $\sqrt{\infty}{2}$ is an abbreviation for the sequence ${\sqrt{2},\ \sqrt{3}{2},\ \sqrt{4}{2},\ \cdots }\subset \mathbb{R}$. Here, the only height $0$ elements in $\mathbb{Q}(\sqrt{\infty}{2})$ are $1$ and $-1$. Combining this observation with the fact that $\mathbb{Q}(\sqrt{\infty}{2})$ is totally real, every convergent sequence $(\alpha_n)$ with $(h(\alpha_n))$ converging to $0$ converges to either $1$ or $-1$.
+Consider $\mathbb{Q}(\sqrt[\infty]{2})$, where $\sqrt[\infty]{2}$ is an abbreviation for the sequence ${\sqrt{2},\ \sqrt[3]{2},\ \sqrt[4]{2},\ \cdots }\subset \mathbb{R}$. Here, the only height $0$ elements in $\mathbb{Q}(\sqrt[\infty]{2})$ are $1$ and $-1$. Combining this observation with the fact that $\mathbb{Q}(\sqrt{\infty}{2})$ is totally real, every convergent sequence $(\alpha_n)$ with $(h(\alpha_n))$ converging to $0$ converges to either $1$ or $-1$.
 
-However, $\mathbb{Q}(sqrt{\infty}{2})$ is not a Galois field. If we consider the field extension obtained by adding all conjugations of $\sqrt{\infty}{2}$, then we naturally get all torsion points of $\bar{\mathbb{Q}}$. In this case, a convergent sequence with height converging to $0$ might converge to some transcendental elements.
+However, $\mathbb{Q}(sqrt[\infty]{2})$ is not a Galois field. If we consider the field extension obtained by adding all conjugations of $\sqrt{\infty}{2}$, then we naturally get all torsion points of $\bar{\mathbb{Q}}$. In this case, a convergent sequence with height converging to $0$ might converge to some transcendental elements.
 
 Now, let us introduce dynamical structure into this question and see if we can gain any additional insights.
 
@@ -57,4 +57,5 @@ If ${a_n}$ is not eventually stable, then it cannot be a preperiodic sequence un
 
 There are infinitely many backward sequences converge to a periodic point of $f$.
 
-## There are no new periodic points in a dynamical field
+## There are no new periodic points in some dynamical fields
+
