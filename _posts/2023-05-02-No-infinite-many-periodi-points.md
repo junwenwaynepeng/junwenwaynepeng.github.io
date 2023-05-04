@@ -10,9 +10,7 @@ Later, in 2001, Bombieri and Zannier demonstrated the truth of the Northcott the
 
 The overall aim of this problem is to understand the relationship between field extensions, height, and the number of torsion points. For any finite extension $K$ over a number field, the Northcott theorem allows us to deduce that the height $h(K)$ is not dense in $K$, so we should aim of infinite extension over a number field such like the field studied by Amoroso-Dvornicich or Bombieri-Zannier. We are especially interested in the distribution of torsion points which are exactly height-$0$ points in $K$. Amoroso and Dvornicich showed that even though there are infinitely many torsion points, 0 is still an isolated point in $h(K)$. Bombieri and Zannier extended this result to a more general setting by demonstrating that $0$ is always an isolated point, no matter how small the gap is. Furthermore, we won't obtain infinitely many torsion points by adding infinitely many non-torsion points.
 
-What happens if $0$ is no longer an isolated point in $h(K)$? Can we find a sequence of points $(\alpha_n)$ such that if $(\alpha_n)$ converges and $h(\alpha_n)$ converges to $0$, then $(\alpha_n)$ converges to a torsion point? Without restricting the field where $(\alpha_n)$ converges to, the convergence $\lim_n\alpha_n$ obviously has height $0$ because the height function $h$ is a finite product which combines loagrithm, maximality, and absolute values which are commute with limit operation. Therefore, we can easily concldue that $\lim_{n}\alpha_n$ is a torsion point.
-
-Let us consider an oversimplified example.
+What happens if $0$ is no longer an isolated point in $h(K)$? Let us consider an oversimplified example.
 
 ###### Example 1
 
