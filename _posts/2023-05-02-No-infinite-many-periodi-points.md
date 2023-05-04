@@ -24,10 +24,10 @@ Now, let us introduce dynamical structure into this question and see if we can g
 
 Consider the polynomial $f(x)=x^n$. Let $\mathbb{Q}(2^{n^{-\infty}})$ be an infinite field extension obtained by adjoining the inverse dynamical system $\{2,\ 2^{-n},\ 2^{-n^2},\ \ldots\}$. We can reach the same conclusion as above.
 
-If we adjoin all conjugates of $2^{-n^k}$, the resulting field is called the dynamical field of $f$ at $2$ over $\mathbb{Q}$, denoted by $\mathbb{\Q}(f^{-\infty}(2))$. We can make the following observations:
+If we adjoin all conjugates of $2^{-n^k}$, the resulting field is called the dynamical field of $f$ at $2$ over $\mathbb{Q}$, denoted by $\mathbb{Q}(f^{-\infty}(2))$. We can make the following observations:
 
-- The roots of unity in $\mathbb{\Q}(f^{-\infty}(2))$ are $\zeta_{n^k}$ for $k=1,2,3,\ldots$. These points are not only torsion points in the field but also preperiodic points of $f$, as $f^k(\zeta_{n^k})=1$.
-- Except for $\pm 1$, there are no other periodic points of $f$ in the field $\mathbb{\Q}(f^{-\infty}(2))$.
+- The roots of unity in $\mathbb{Q}(f^{-\infty}(2))$ are $\zeta_{n^k}$ for $k=1,2,3,\ldots$. These points are not only torsion points in the field but also preperiodic points of $f$, as $f^k(\zeta_{n^k})=1$.
+- Except for $\pm 1$, there are no other periodic points of $f$ in the field $\mathbb{Q}(f^{-\infty}(2))$.
 - Since $f^{-n}(2)$ converges to the unit circle, a convergent sequence with height converging to $0$ not only converges to some transcendental elements but also to periodic points of $f$.
 
 Moreover, we notice that the sequence ${2,\ 2^{-n},\ 2^{-n^2},\ \ldots}$ is a branch on the dynamical tree $\mathbb{T}_f(2)$ that is fixed by some subgroup of the dynamical group $G_f(2)$.
@@ -37,6 +37,19 @@ We can summarize our observations with the following questions. Let $f$ be a pol
 - Are there infinitely many preperiodic points of $f$ in $\mathbb{Q}(f^{-\infty}(\alpha))$? Similarly, can we determine the degree of the field intersection $\mathbb{Q}(\text{PrePer}(f))\cap \mathbb{Q}(f^{-\infty}(\alpha))$?
 - Can we construct an inverse dynamical sequence that converges to any periodic point of $f$?
 
-## Construct a periodic and not periodic inverse dyanmical sequence
+## Some observations
 
-The third question of questions that we list above can be easily answered. 
+We have made some observations about inverse dynamical sequences:
+
+###### Proposition 1.
+
+Let ${a_n}$ be a coherent backward orbit, meaning $f(a_n) = a_{n-1}$ for all $n > 1$. If ${a_n}$ is convergent, it converges to a fixed point of $f$. In particular, if ${a_n}$ converges to a periodic point of $f$ with exact period greater than $1$, then ${a_n}$ cannot be an eventually coherent backward orbit.
+
+**proof.** Since $f$ is continuous everywhere except possibly at poles, we have $f(\lim_n a_n) = \lim_n f(a_n) = \lim_n a_{n-1} = \lim_n a_n$. An eventually coherent backward orbit means that there exists some integer $m$ such that ${a_n}_{n\geq m}$ is a coherent backward orbit, so the last statement follows naturally.
+
+###### Proposition 2.
+
+If ${a_n}$ is not eventually stable, then it cannot be a preperiodic sequence under $f$, i.e., there is no $m$ and $k$ such that ${f^m(a_n)}={f^{m+ik}(a_n)}$ for all $i\geq 0$.
+
+**proof.** If ${a_n}$ is a preperiodic sequence under $f$ with period $k$, then we have ${a_{m+ik}}$ is an eventually coherent backward orbit of $f^k$ for $m=0,1,\ldots, k-1$. Note that ${a_{m+ik}}$ is a subsequence of a coherent backward orbit of $f$, so $\lim_i a_{m+ik}$ either diverges or converges to a fixed point of $f$.
+
