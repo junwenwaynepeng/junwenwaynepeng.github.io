@@ -45,15 +45,15 @@ We have made some observations about inverse dynamical sequences:
 
 ###### Proposition 1.
 
-Let ${a_n}$ be a coherent backward orbit, meaning $f(a_n) = a_{n-1}$ for all $n > 1$. If ${a_n}$ is convergent, it converges to a fixed point of $f$. In particular, if ${a_n}$ converges to a periodic point of $f$ with exact period greater than $1$, then ${a_n}$ cannot be an eventually coherent backward orbit.
+Let $\{a_n\}$ be a coherent backward orbit, meaning $f(a_n) = a_{n-1}$ for all $n > 1$. If $\{a_n\}$ is convergent, it converges to a fixed point of $f$. In particular, if $\{a_n\}$ converges to a periodic point of $f$ with exact period greater than $1$, then $\{a_n\}$ cannot be an eventually coherent backward orbit.
 
-**proof.** Since $f$ is continuous everywhere except possibly at poles, we have $f(\lim_n a_n) = \lim_n f(a_n) = \lim_n a_{n-1} = \lim_n a_n$. An eventually coherent backward orbit means that there exists some integer $m$ such that ${a_n}_{n\geq m}$ is a coherent backward orbit, so the last statement follows naturally.
+**proof.** Since $f$ is continuous everywhere except possibly at poles, we have $f(\lim_n a_n) = \lim_n f(a_n) = \lim_n a_{n-1} = \lim_n a_n$. An eventually coherent backward orbit means that there exists some integer $m$ such that $\{a_n\}_{n\geq m}$ is a coherent backward orbit, so the last statement follows naturally.
 
 ###### Proposition 2.
 
-If ${a_n}$ is not eventually stable, then it cannot be a preperiodic sequence under $f$, i.e., there is no $m$ and $k$ such that ${f^m(a_n)}={f^{m+ik}(a_n)}$ for all $i\geq 0$.
+If $\{a_n\}$ is not eventually coherent, then it cannot be a preperiodic sequence under $f$, i.e., there is no $m$ and $k$ such that ${f^m(a_n)}={f^{m+ik}(a_n)}$ for all $i\geq 0$.
 
-**proof.** If ${a_n}$ is a preperiodic sequence under $f$ with period $k$, then we have ${a_{m+ik}}$ is an eventually coherent backward orbit of $f^k$ for $m=0,1,\ldots, k-1$. Note that ${a_{m+ik}}$ is a subsequence of a coherent backward orbit of $f$, so $\lim_i a_{m+ik}$ either diverges or converges to a fixed point of $f$.
+**proof.** If $\{a_n\}$ is a preperiodic sequence under $f$ with period $k$, then we have $\{a_{m+ik}\}$ is an eventually coherent backward orbit of $f^k$ for $m=0,1,\ldots, k-1$. Note that $\{a_{m+ik}\}$ is a subsequence of a coherent backward orbit of $f$, so $\lim_i a_{m+ik}$ either diverges or converges to a fixed point of $f$.
 
 ###### Proposition 3.
 
