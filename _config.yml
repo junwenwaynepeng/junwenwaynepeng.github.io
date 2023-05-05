@@ -336,6 +336,9 @@ collections:
   slides:
     output: true
     permalink: /:collection/:name
+  draft:
+    output: true
+    permalink: /:collection/:year-:month-:day-:title/
 
 # 網站基礎是建立在 Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
