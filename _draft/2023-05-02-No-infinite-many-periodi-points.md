@@ -1,5 +1,5 @@
 ---
-title: "Periodic Points and Dynatomic Fileds: A Study of Lehmer's Conjecture"
+title: "Periodic Points and Dynamical Fields: A Study of Lehmer's Conjecture"
 subtitle: The Existence of Finite Periodic Points Despite Infinite Sequences with Converging Heights to 0
 tags: Research, Academic, Number Fields, Dynamical Systems, Periodic Points, Canonical Height, Lehmer's Conjecture
 ---
