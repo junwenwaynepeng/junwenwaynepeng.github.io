@@ -2,6 +2,9 @@
 title: A research question
 subtitle: Searching solutions in a function field over a finite field 
 tags: Research, Academic, Question, Finite Field, Function Field, Drinfeld Module
+head-package:
+  -
+    file: "package/sagecell.html"
 ---
 
 Let me set the notations.
@@ -32,3 +35,36 @@ For example, we can consider the following settings:
 ## Answer
 
 We can set $B$ to be $n$ because if there is no solution for lower degree, then it won't have solution for higher degree. 
+
+<div class="compute">
+r = 3
+q = 5
+field_of_coefficients = GF(q,'a')
+F.<t> = FunctionField(field_of_coefficients)
+FT.<X> = F[]
+monic_minima_poly = FT([2*t^6, 0, 0, 1])
+K.<s> = F.extension(monic_minima_poly)
+pi = t
+matrix_space = MatrixSpace(FT,r)
+def generate_matrix(row: tuple or list, q):
+    matrix = [row]
+    r = len(row)
+    for n in range(r-1):
+        new_row = [pi*row[r-1]^q] + [ l^q for l in row[:r-1]]
+        matrix.append(new_row)
+        row = new_row
+    return matrix_space(matrix).charpoly().list()
+d = max([c.degree() for c in monic_minima_poly.coefficients()])
+print(d)
+for n in range(d+1):
+    print(n)
+    coefficients_range = cartesian_product([field_of_coefficients for i in range(d+1)])
+    polynomial_range = [F(list(a)) for a in coefficients_range]
+    pi_polynomial_range = [pi^n*F(list(a)) for a in coefficients_range if pi^n*F(list(a)).degree()<=d]
+    matrix_range = [polynomial_range] + [pi_polynomial_range for i in range(r-1)]
+    print(len(cartesian_product(matrix_range)))
+    for a in cartesian_product(matrix_range):
+        print(generate_matrix(a, q))
+        print(generate_matrix(a, q)==monic_minima_poly.list())
+
+</div>
