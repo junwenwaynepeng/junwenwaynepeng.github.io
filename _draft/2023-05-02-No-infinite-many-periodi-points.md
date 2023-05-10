@@ -31,6 +31,17 @@ If we adjoin all conjugates of $2^{-n^k}$, the resulting field is called the dyn
 
 Moreover, we notice that the sequence ${2,\ 2^{-n},\ 2^{-n^2},\ \ldots}$ is a branch on the dynamical tree $\mathbb{T}_f(2)$ that is fixed by some subgroup of the dynamical group $G_f(2)$.
 
+###### Example 3
+
+Consider Chebyshev polynomial
+
+###### Example 4
+
+A rational map $f$ of degree two or more will be called a finite quotient of an affine map, or Lattes map, if there is a flat surface $\mathbb{C}/\Lambda$, an affine map $L(t) = at+b$ from $\mathbb{C}/\Lambda$ to itself, and a finite-to-one holomorphic map $\theta: \mathbb{C}/\Lambda \to \mathbb{C}\setminus \mathcal{E}_f$ which satisfies the semiconjugacy relation $f \circ \theta = \theta \circ L$, i.e. the following diagram commute:
+<iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXG1hdGhiYntDfS9cXExhbWJkYSJdLFsxLDAsIlxcbWF0aGJie0N9L1xcTGFtYmRhIl0sWzAsMSwiXFxtYXRoYmJ7Q31cXHNldG1pbnVzXFxtYXRoY2Fse0V9X2YiXSxbMSwxLCJcXG1hdGhiYntDfVxcc2V0bWludXNcXG1hdGhjYWx7RX1fZiJdLFswLDEsIkwiXSxbMCwyLCJcXHRoZXRhIl0sWzEsMywiXFx0aGV0YSJdLFsyLDMsImYiLDJdXQ==&embed" width="344" height="290" style="border-radius: 8px; border: none;"></iframe>
+
+Let $E$ be some elliptic curve defined over $\mathbb{Q}$, and let $[2]$ be the multiplication-by-$2$ endomorphism of $E$. We consider $f=[2]_x$ to be the rational function obtaining by projecting $[2]$ onto $x$-coordinate. Now we notice that the torsion points $P=(P_x,P_y)\in E$ provides periodic points of $f$. We let $O$ be the identity on $E$. Let $Q$ be a non-torsion point. Note that if $Q_1$ and $Q_2$ are distinct and satisfy $[2^n](Q_1) = [2^n](Q_2) = Q$ for some positive integer $n$, then $[2^n](Q_1-Q_2) = O$ 
+
 We can summarize our observations with the following questions. Let $f$ be a polynomial and $\alpha\in\mathbb{Q}$. If $f^n(\alpha_n)=\alpha$, then the canonical height $h_f(\alpha_n)=\frac{1}{d^n}(\alpha)$, where $d$ is the degree of $f$. Thus, $0$ is dense in $h_f(\mathbb{Q}(f^{-\infty}(\alpha)))$, which is a field that has the property that we want to study. Based on the example we considered, we may ask:
 - Are there infinitely many periodic points of $f$ in $\mathbb{Q}(f^{-\infty}(\alpha))$? If not, can we conclude that $\mathbb{Q}(\text{Per}(f))\cap \mathbb{Q}(f^{-\infty}(\alpha))$ has finite degree over $\mathbb{Q}$?
 - Are there infinitely many preperiodic points of $f$ in $\mathbb{Q}(f^{-\infty}(\alpha))$? Similarly, can we determine the degree of the field intersection $\mathbb{Q}(\text{PrePer}(f))\cap \mathbb{Q}(f^{-\infty}(\alpha))$?
