@@ -5,11 +5,9 @@ subtitle: The Existence of Finite Periodic Points Despite Infinite Sequences wit
 tags: Research, Academic, Number Fields, Dynamical Systems, Periodic Points, Canonical Height, Lehmer's Conjecture
 ---
 
-In 1998, Francesco Amoroso and Roberto Dvornicich proved Lehmer's conjecture to be true for abelian extensions. This implies that there exists an absolute gap between the Weil height of non-torsion points and torsion points in any abelian extension.
+In 1998, Francesco Amoroso and Roberto Dvornicich proved that there exists an absolute gap between the Weil height of non-torsion points and torsion points in any abelian extension. Later, in 2001, Bombieri and Zannier demonstrated the truth of the Northcott theorem for any subfield of $K^{(d)}$, where $K^{(d)}$ denotes the composition of all degree-$d$ field extensions of $K$. Clayton Petsche and Emerald Stacy later provided different approaches to this result.
 
-Later, in 2001, Bombieri and Zannier demonstrated the truth of the Northcott theorem for any subfield of $K^{(d)}$, where $K^{(d)}$ denotes the composition of all degree-$d$ field extensions of $K$. Clayton Petsche and Emerald Stacy later provided different approaches to this result.
-
-The overall aim of this problem is to understand the relationship between field extensions, height, and the number of torsion points. For any finite extension $K$ over a number field, the Northcott theorem allows us to deduce that the height $h(K)$ is not dense in $K$, so we should aim of infinite extension over a number field such like the field studied by Amoroso-Dvornicich or Bombieri-Zannier. We are especially interested in the distribution of torsion points which are exactly height-$0$ points in $K$. Amoroso and Dvornicich showed that even though there are infinitely many torsion points, 0 is still an isolated point in $h(K)$. Bombieri and Zannier extended this result to a more general setting by demonstrating that $0$ is always an isolated point, no matter how small the gap is. Furthermore, we won't obtain infinitely many torsion points by adding infinitely many non-torsion points.
+The overall aim of this problem is to understand the relationship between field extensions, height, and the number of torsion points. For any finite extension $K$ over a number field, the Northcott theorem allows us to deduce that the height $h(K)$ is not dense in $K$, so we should aim of infinite extension over a number field such like the field studied by Amoroso-Dvornicich or Bombieri-Zannier. We are especially interested in torsion points which are exactly height-$0$ points in $K$. Amoroso and Dvornicich showed that even though there are infinitely many torsion points, 0 is still an isolated point in $h(K)$. Bombieri and Zannier extended this result to a more general setting by demonstrating that $0$ is always an isolated point, no matter how small the gap is. Furthermore, we won't obtain infinitely many torsion points by adding infinitely many non-torsion points.
 
 What happens if $0$ is no longer an isolated point in $h(K)$? Let us consider an oversimplified example.
 
@@ -63,9 +61,10 @@ There are infinitely many backward sequences converge to a periodic point of $f$
 ## There are no new periodic points in some dynamical fields
 
 ###### Theorem.
-Let $f$ be a polynomial of degree $d$ that satisfies that there exists a mobius transformation $l$ such that $f^l\equiv x^d\mod p$.
-Then, for any periodic point $a\in\mathbb{Q}_f(\alpha)$, $a$ is a rational number.
+Let $f$ be a polynomial of degree $d$ that satisfies that there exists a mobius transformation $l$ such that $f^l\equiv x^d\mod p$. Then, for any periodic point $a\in\mathbb{Q}_f(\alpha)$, $a$ is a rational number. Moreover, $\mathbb{Q}_f(\alpha)\cap \mathbb{Q}(\text{Per}(f)) = \mathbb{Q}$.
 
 **proof** Let us first assume the second condition, because it illustrate the idea. Since $f^l\equiv x^d\mod p$, we notice that $(f^l)^{\circ n}-x\equiv x^{d^n}-x\mod p$. Therefore, a periodic point of period $k$ modulo $p$ will be a solution of a cyclotomic polynomial. Hence, we can conclude that any periodic point of period greater than $2$ is not defined over $\mathbb{Q}$.
+
+Let $\alpha_n$ be a root of $(f^l)^{\circ n}(\alpha_n)=\alpha$. We notice that $p$ is totally ramified in $\mathbb{Q}(\alpha_n)$. On the other hand, for any periodic point $a\in \text{Per}(f)$, $p$ is splits in $\mathbb{Q}(a)$. Thus, $\mathbb{Q}(\alpha)\cap \mathbb{Q}(a) = \mathbb{\Q}$. It follows that $\mathbb{Q}_f(\alpha)\cap \mathbb{Q}(\text{Pre}(f))=\mathbb{Q}$.
 
 Using this theorem, we can conclude that if $f$ is a normalized Belyi map of any degree or an Eisenstein polynomials, then $\text{Per}(f)\cap \mathbb{Q}_f(\alpha)\subset \mathbb{Q}$.
