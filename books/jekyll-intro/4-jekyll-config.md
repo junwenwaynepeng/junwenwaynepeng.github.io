@@ -343,11 +343,18 @@ share-links-active:
   linkedin: true
 ```
 
+<<<<<<< Updated upstream
 ## 一般選項
 
 ![general options](/img/4-jekyll-config/7.jpg)
 
 ---
+=======
+# 一般選項
+
+![general options](/img/4-jekyll-config/7.jpg)
+
+>>>>>>> Stashed changes
 ```yaml
 ###################
 # --- 一般選項 --- #
@@ -360,7 +367,11 @@ url-pretty: "junwenwaynepeng.github.io"
 # 摘要詞長 - 將每篇文章的摘要在訂閱頁面上截斷為指定數量的詞
 excerpt_length: 50
 
+<<<<<<< Updated upstream
 # 是否在訂閱頁面中為每篇部落格文章顯示摘要
+=======
+# 是否在訂閱頁面中為每篇文章顯示摘要
+>>>>>>> Stashed changes
 feed_show_excerpt: true
 
 # 是否在訂閱頁面中在每篇文章預覽下方顯示標籤列表
@@ -368,6 +379,76 @@ feed_show_tags: true
 
 # 在頁腳中添加一個按鈕，用於編輯當前頁面。僅當您的網站托管在GitHub上時才有效。
 #edit_page_button: true
+
+# 是否在訂閱頁面中為每篇文章顯示所需閱讀時間
+show_readtime: true
+
+```
+
+`url-pretty` 是在頁角顯示的連結，其實沒什麼用。
+
+# 網站顏色與背景
+
+```yaml
+#######################
+# --- 顏色/背景圖像 --- #
+#######################
+
+# 個性化您網站中的顏色。顏色值可以是任何有效的CSS顏色。
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
+
+# 或者，可以將導航欄、頁腳和頁面背景設置為圖像。
+# 而不是顏色。
+
+#navbar-img: "/assets/img/bgimage.png"
+#footer-img: "/assets/img/bgimage.png"
+#page-img: "/assets/img/bgimage.png"
+
+# 建議為移動瀏覽器設置顏色作為瀏覽器主題。這僅受到少數移動瀏覽器的支持。
+#mobile-theme-col: "#0085A1"
+
+# 為了進行額外的視覺定制，您可以在您網站的每個頁面中包含額外的CSS文件。在這裡列出任何自定義的CSS文件。
+#site-css:
+#  - "/assets/css/custom-styles.css"
+
+# 如果您有應該在每個頁面中包含的常見JavaScript文件，請在此處列出它們
+#site-js:
+#  - "/assets/js/custom-script.js"
+```
+
+# 網頁
+
+```yaml
+###################
+# --- 網頁分析 --- #
+##################
+
+# 填寫您的 Google Analytics gtag.js ID，以使用 gtag 跟踪您的網站，(https://analytics.google.com/)。
+gtag: "G-EL818RR92S"
+
+# 填寫您的 Cloudflare Analytics beacon token，以使用 Cloudflare Analytics 跟踪您的網站。
+#cloudflare_analytics: ""
+
+# Google Tag Manager ID
+#gtm: ""
+
+# Matomo (aka Piwik) Web statistics
+# 取消註解以下部分以啟用 Matomo。 opt-out 參數控制是否允許用戶選擇退出跟踪。
+#matomo:
+#  site_id: "9"
+#  uri: "demo.wiki.pro"
+#  opt-out: true
 ```
 
 ## 顏色/背景圖像
