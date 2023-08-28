@@ -10,7 +10,7 @@ My name is Wayne Peng. Nice to meet you.
 * Name: Wayne Peng, Ph.D.
 * Education: Graduate from the [University of Rochester](https://www.sas.rochester.edu/mth/)
 ![Beautiful Rochester](./assets/img/rochester.jpg)
-* Research Topic: Number theory, specifically arithmetic dynamical systems, Galois Theory, and Group Theory. You can find my research result [here]({% link publication.md %}).
+* Research Topic: Number theory, specifically arithmetic dynamical systems, Galois Theory, specifically arboreal representation, and Group Theory, sepecially Tit's alternative. You can find my research result [here]({% link publication.md %}).
 
 ## Coding Skills
 * Languages: Python, JavaScript (if necessary), C (previously learned)
