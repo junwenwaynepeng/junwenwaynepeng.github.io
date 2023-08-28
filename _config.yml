@@ -35,6 +35,8 @@ navbar-links:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Build yourown blog: "books/jekyll-intro/0-intro"
+    - Connections: "connections"
+    - Database: "database"
   Slides: "all-slides"
   Publication: "publication"
 
