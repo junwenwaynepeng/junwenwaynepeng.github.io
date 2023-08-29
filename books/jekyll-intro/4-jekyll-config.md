@@ -344,16 +344,22 @@ share-links-active:
 ```
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## 一般選項
 
 ![general options](/img/4-jekyll-config/7.jpg)
 
 ---
 =======
+=======
+>>>>>>> Stashed changes
 # 一般選項
 
 ![general options](/img/4-jekyll-config/7.jpg)
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 ```yaml
 ###################
@@ -368,7 +374,11 @@ url-pretty: "junwenwaynepeng.github.io"
 excerpt_length: 50
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 # 是否在訂閱頁面中為每篇部落格文章顯示摘要
+=======
+# 是否在訂閱頁面中為每篇文章顯示摘要
+>>>>>>> Stashed changes
 =======
 # 是否在訂閱頁面中為每篇文章顯示摘要
 >>>>>>> Stashed changes
@@ -449,6 +459,7 @@ gtag: "G-EL818RR92S"
 #  site_id: "9"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
+<<<<<<< Updated upstream
 ```
 
 ## 顏色/背景圖像
@@ -690,6 +701,8 @@ collections:
   slides:
     output: true
     permalink: /:collection/:name
+=======
+>>>>>>> Stashed changes
 ```
 
 [^yaml]: [YAML Introduction](https://tutorialreference.com/yaml/yaml-tutorial)
