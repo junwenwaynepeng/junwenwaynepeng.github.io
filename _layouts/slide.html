@@ -49,8 +49,11 @@
                 {{ page.coauthors }}
               {% else %}
                 {% for author in page.coauthors %}
-                  {{ author }},
-                  {% if forloop.last == true %} and {{author}} {% endif %}
+                  {% if forloop.last == false %} 
+                    {{ author }},
+                  {% else %} 
+                    and {{author}} 
+                  {% endif %}
                 {% endfor %}
               {% endif %}
             </p>
