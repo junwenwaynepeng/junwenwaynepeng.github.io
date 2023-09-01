@@ -160,24 +160,10 @@ def check(a_pair):
 <section>
   <section>
     <h3>Algorithm:$\langle f,g\rangle$ doesn't contains free semigroup</h3>
-    <p class="fragment">Input: polarized morphism $f$ and $g$, and an integer $n$</p>
-    <p class="fragment">Output:  A Boolean indicating whether $f$ and $g$ have a composition relation, or "indeterminable" if the algorithm cannot determine by the binary tree under level $n$.</p>
-  <section>
-    <h4>Datas: Time(ms)</h4>
-    <img src="/assets/img/slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms/success-time.png" width="960" height="720">
-  </section>
-  <section>
-    <h4>Datas: Level</h4>
-    <img src="/assets/img/slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms/success-level.png" width="600">
-    <figcaption>level-number</figcaption>
-  </section>
-  <section>
-    <h4>Discussion</h4>
     <ol>
-      <li class="fragment">Out of 10,000 cases tested, 82 (1.38%) failed the check but did not demonstrate any composition relation</li>
-      <li class="fragment">The algorithm is forced to be efficient. It is hard to determine the lower bound of
-      $$|h_f(\alpha)-h_g(\alpha)|$$
-      when the difference is not zero.</li>
+      <li class="fragment" data-fragment-index="1">If one of the functions $f$ or $g$ in $\mathbb{C}(x)$ is not special, and $\langle f,g\rangle$ exhibits polynomial bounded growth, then it ultimately demonstrates linear growth.</li>
+      <li class="fragment" data-fragment-index="2">Linear growth implies that for some positive integer n, $f^n=g^n$.</li>
+      <li class="fragment" data-fragment-index="3">The cases that require special attention are when both $f$ and $ g$ are special.</li>
     </ol>
   </section>
 </section>
