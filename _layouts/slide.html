@@ -50,7 +50,7 @@
               {% else %}
                 {% for author in page.coauthors %}
                   {{ author }},
-                  {% unless forloop.last %} and {{author}} {% endunless %}
+                  {% unless forloop.last == true %} and {{author}} {% endunless %}
                 {% endfor %}
               {% endif %}
             </p>
