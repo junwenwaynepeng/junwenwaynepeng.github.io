@@ -108,4 +108,4 @@ Take a look at the graph. Notice that the line $x=0$ (the $y$-axis) serves as a 
 
 $$\lim_{x\to a^+}f(x)=\pm\infty\text{ or }\lim_{x\to a^-}f(x)=\pm\infty.$$
 
-**Remark.** <span style="color:red;">Diverging to infinity is a category of DNE.</span>
+**Remark.** <span style="color:red;">"Diverging to infinity" is a category within the classification of "does not exist" (DNE)</span>
