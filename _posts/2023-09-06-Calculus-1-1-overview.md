@@ -106,4 +106,6 @@ Take a look at the graph. Notice that the line $x=0$ (the $y$-axis) serves as a 
 
 **Definition.** We say $x=a$ is a vertical asysmptote of a curve $y=f(x)$ if one of the following is true:
 
-$$\lim_{x\to a^+}f(x)=\pm\infty\text{ or }\lim_{x\to a^-}f(x)=\pm\infty$$
+$$\lim_{x\to a^+}f(x)=\pm\infty\text{ or }\lim_{x\to a^-}f(x)=\pm\infty.$$
+
+**Remark.** <span style="color:red;">Diverging to infinity is a category of DNE.</span>
