@@ -8,9 +8,9 @@ head-package:
     file: "package/sagecell.html"
 ---
 
-## Precise Definition of Limits
+## Precise Definition of Limits (from English to Mathematics)
 
-Let's commence by revisiting the intuitive concept of limits. We define the limit of a function as $x$ approaches $a$ to be equal to $L$ if, by getting $x$ sufficiently close to $a$ (while ensuring that $x$ is not equal to $a$), we can make the values of $f(x)$ arbitrarily close to $L$. In other words, 
+Let's commence by revisiting the intuitive concept of limits. We define the limit of a function as $x$ approaches $a$ to be equal to $L$ if we can make the values of $f(x)$ arbitrarily close to $L$ by restricting $x$ to be sufficiently close to $a$ but not equal to $a$. In other words, 
 
 <center><p style="font-size:larger;">for any given margin of error $\varepsilon > 0$, we can ensure that $|f(x) - L| < \varepsilon$ by restricting $x$ to be sufficiently close to $a$.</p></center>
 
@@ -20,9 +20,10 @@ Now, let's delve into the concept of "sufficiency" within this context. In forma
 
 Furthermore, we can directly translate the notion of "$x$ is within a neighborhood of $a$" to mean "$x$ is within an open interval containing $a$" with $a$ serving as the center of this open interval. Why? If $a$ resides in an open interval $(c_1, c_2)$, we can determine $\delta = \min(a - c_1, c_2 - a)$, which allows us to substitute the original open interval with $(a - \delta, a + \delta)$. Consequently, after a series of clarifications, the initial statement is equivalent to saying 
 
-<center><p style="font-size:larger;">if $x$ is in $(a - \delta, a + \delta)$, then $|f(x) - L| < \varepsilon.</p></center>
+<center><p style="font-size:larger;">if $x$ is in $(a - \delta, a + \delta)$, then $|f(x) - L| < \varepsilon.$</p></center>
 
+This is how we get the precise definition of limits.
 
-
+**Definition.** $\displaystyle_{x\to a}f(x) = L$ exists if for any $\varepsilon>0$, there exists $\delta$ such that $|f(x)-L|<\varepsilon$ while $|x-a|<\delta$ ($|x-a|<\delta$ $\Rightarrow$ $|f(x)-L|<\delta$). 
 
 ## Limits Law
