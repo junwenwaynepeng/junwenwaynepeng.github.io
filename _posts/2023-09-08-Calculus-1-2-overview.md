@@ -26,7 +26,7 @@ This is how we get the precise definition of limits.
 
 ---
 
-**Definition.** $\displaystyle\lim_{x\to a}f(x) = L$ exists if for any $\varepsilon>0$, there exists $\delta$ such that $|f(x)-L|<\varepsilon$ while $|x-a|<\delta$ ($|x-a|<\delta$ $\Rightarrow$ $|f(x)-L|<\delta$).
+**Definition.** $\displaystyle\lim_{x\to a}f(x) = L$ exists if for any $\varepsilon>0$, there exists $\delta$ such that $|f(x)-L|<\varepsilon$ while $|x-a|<\delta$ ($|x-a|<\delta$ $\Rightarrow$ $|f(x)-L|<\varepsilon$).
 
 ----
 
