@@ -32,8 +32,8 @@ This is how we get the precise definition of limits.
 
 Let's utilize this definition to illustrate why it's impossible for $f(x) = 0$ to occur infinitely close to $a$ when $\lim_{x\to a} f(x) = L > 0$.
 
-According to the definition, since the limit exists, we have the statement: "for any $\varepsilon > 0$, there exists $\delta > 0$ ...blablabla." In particular, this statement holds true if we choose $\varepsilon = L/2$. Consequently, there exists some $\delta_0 > 0$ such that for all $x$ satisfying $|x - a| < \delta_0$, we have:
-$|f(x)-L|<\frac{L}{2}.$
+According to the definition, since the limit exists, we have the statement: "for any $\varepsilon > 0$, there exists $\delta > 0$ ...blablabla." In particular, this statement holds true if we choose $\varepsilon = L/2$. Consequently, there exists some $\delta_0 > 0$ such that for all $x$ satisfying $|x - a| < \delta_0$, we have
+$$|f(x)-L|<\frac{L}{2}.$$
 It follows $|f(x)|>L-\frac{L}{2}>0$.  
 
 ## Limits Law
