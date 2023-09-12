@@ -24,10 +24,6 @@ data:
     folder: question
     file: calculus1-ch2
     id: q1
-  -
-    folder: question
-    file: calculus1-ch2
-    id: q2
 show-answer: false
 expandable-answer: true
 ---
