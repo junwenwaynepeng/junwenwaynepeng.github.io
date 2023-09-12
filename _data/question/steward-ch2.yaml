@@ -39,6 +39,6 @@
 2.4-5:
   question: |
     Use a graph to find a number $\delta$ such that
-    <center>if $|x-2|<\delta$ then |\sqrt{x^2+5}-3|<0.3</center>
+    <center>if $|x-2|<\delta$ then $|\sqrt{x^2+5}-3|<0.3$</center>
   short-answer: $\sqrt{(3.3)^2-5}$
   answer: Not Yet
