@@ -22,3 +22,23 @@
     &= \frac{-2}{x^3}
     \end{align*}
     $$
+2.3-42:
+  question: |
+    Prove that $\displaystyle\lim_{x\to 0^+}\sqrt{x}e^{\sin(\pi/x)}=0$.
+  short-answer: Conclusion of the sqeeze theorem
+  answer: |
+    Since $\sin(\pi/x)$ is bounded between $-1$ and $1$ for $x\neq 0$, we have
+    $$
+    e^{-1}\leq e^{\sin(\pi/x)}\leq e,
+    $$
+    and
+    $$
+    e^{-1}\sqrt{x}\leq \sqrt{x}e^{\sin(\pi/x)}\leq e\sqrt{x}.
+    $$
+    Since both $e^{-1}\sqrt{x}$ and $e\sqrt{x}$ converges to $0$, as $x$ approaches $0$ from the left, we can conclude that the desired limit is zero by the sqeeze theorem
+2.4-5:
+  question: |
+    Use a graph to find a number $\delta$ such that
+    <center>if $|x-2|<\delta$ then |\sqrt{x^2+5}-3|<0.3</center>
+  short-answer: $\sqrt{(3.3)^2-5}$
+  answer: Not Yet
