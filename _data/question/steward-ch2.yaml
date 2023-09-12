@@ -1,0 +1,24 @@
+2.3-11:
+  question: |
+    Evaluate the limit $\displaystyle\lim_{h\to 0}\frac{\sqrt{9+h}-3}{h}$
+  short-answer: $1$
+  answer: |
+    $$
+    \begin{align*}
+    \lim_{h\to 0}\frac{\sqrt{9+h}-3}{h} &= \lim_{h\to 0}\frac{(\sqrt{9+h}-3)(\sqrt{9+h}+3)}{h(\sqrt{9+h}+3)}\ \text{(rationalization)}\\
+    &= \lim_{h\to 0}\frac{9+h-9}{h(\sqrt{9+h}+3)} = \lim_{h\to 0}\frac{1}{\sqrt{9+h}+3}\\
+    &= 1
+    \end{align*}
+    $$
+2.3-34:
+  question: |
+    Evaluate the limit $\displaystyle\lim_{h\to 0}\frac{\frac{1}{(x+h)^2}-\frac{1}{x^2}}{h}$
+  short-answer: $\frac{-2}{x^3}$
+  answer: |
+    $$
+    \begin{align*}
+    \lim_{h\to 0}\frac{\frac{1}{(x+h)^2}-\frac{1}{x^2}}{h} &= \lim_{h\to 0}\frac{x^2-(x+h)^2}{h(x+h)^2x^2} \\
+    &= \lim_{h\to 0}\frac{-2xh-h^2}{h(x+h)^2x^2} = \lim_{h\to 0}\frac{-2x-h}{(x+h)^2x^2} \\
+    &= \frac{-2}{x^3}
+    \end{align*}
+    $$
