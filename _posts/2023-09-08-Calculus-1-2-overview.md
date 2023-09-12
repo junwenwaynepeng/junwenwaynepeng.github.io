@@ -55,7 +55,7 @@ exist. Then,
 Limit problems are often considered challenging when they involve one of the following forms during direct evaluation:
 
 $$
-\frac{0}{0},\ \frac{\infty}{\infty},\ 0\cdot \infty,\ \text{and }0^0.
+0-0,\ \frac{0}{0},\ \frac{\infty}{\infty},\ 0\cdot \infty,\ \text{and }0^0.
 $$
 
 To address cases of $\frac{0}{0}$ or $\frac{\infty}{\infty}$, one effective strategy is to begin by applying algebraic manipulations, including techniques such as cancellation and rationalization. (I will provide examples of these techniques in our next class.)
