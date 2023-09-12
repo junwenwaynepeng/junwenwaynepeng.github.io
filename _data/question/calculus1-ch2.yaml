@@ -1,0 +1,11 @@
+q1:
+  question: |
+    Evaluate the limit $\displaystyle\lim_{t\to 0}\left(\frac{1}{t\sqrt{1+|t|}-\frac{1}{t}}\right)$
+  short-answer: DNE
+  answer: not yet
+
+q2:
+  question: |
+    Evaluate the limit $\displaystyle\lim_{x\to\infty}\sqrt{2x^2+1}\sin\left(\frac{1}{x}\right)$
+  short-answer: $\sqrt{2}$
+  answer: not yet
