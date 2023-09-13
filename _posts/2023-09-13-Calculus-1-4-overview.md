@@ -35,8 +35,8 @@ To compute $\lim_{x\to 0}\frac{\sin(x)}{x}$, we rely on the squeeze theorem. It 
 
 Let's consider the concept of infinity as a symbol, one that holds a unique place in mathematics—it surpasses any finite number. Embracing this idea, we can establish a precise definition for limits such as $\lim_{x\to a}f(x)=\infty$ and $\lim_{x\to \infty}f(x)=L$. In computational terms, this symbol exhibits the following algebraic properties:
 
-1. $\frac{1}{\infty} = 0$;
-2. $\infty + \infty = \infty$;
-3. $\infty\cdot\infty = \infty$;
+1. $\frac{1}{\infty} = 0$
+2. $\infty + \infty = \infty$
+3. $\infty\cdot\infty = \infty$
 
 Of particular interest is the first property, which leads to a valuable technique for evaluating limits as $x$ approaches infinity by focusing on the dominant term in the expression.
