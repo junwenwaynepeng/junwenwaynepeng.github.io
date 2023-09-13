@@ -1,7 +1,7 @@
 ---
 title: 大部分人是不道德的論證
 subtitle: 整理 Peter Singer 一篇充滿爭議的哲學論文 
-tags: Philosophy, Ethical, Peter Singer, take away, youtube
+tags: [philosophy, ethical, Pter Singer, take away, youtube]
 ---
 
 test

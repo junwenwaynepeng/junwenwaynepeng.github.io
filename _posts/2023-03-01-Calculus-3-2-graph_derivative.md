@@ -1,7 +1,7 @@
 ---
 title: Calculus 3-2 Overview
 subtitle: Graph and Derivative
-tags: ["Calculus 3", "class overview"]
+tags: ["calculus", "calculus 3", "overview"]
 ---
 The main topics covered in this course included:
 

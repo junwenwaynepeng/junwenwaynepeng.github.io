@@ -1,7 +1,7 @@
 ---
 itle: Calculus 3 Worksheet 1
 subtitle: Linear approximation, Chain rule and Gradient
-tags: ["Calculus 3", "worksheet"]
+tags: ["calculus", "calculus 3", "worksheet"]
 ---
 ## Questions
 

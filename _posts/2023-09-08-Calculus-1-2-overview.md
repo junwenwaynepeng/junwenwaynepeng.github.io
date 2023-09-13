@@ -1,7 +1,7 @@
 ---
 title: Precise Definition of Limits and Limits Laws
 subtitle: 
-tags: [calculus, calculus-1, overview]
+tags: [calculus, calculus 1, overview]
 sagecell: true
 head-package:
   -

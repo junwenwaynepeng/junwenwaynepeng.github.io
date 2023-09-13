@@ -1,7 +1,7 @@
 ---
 title: Calculus 3 Worksheet 2
 subtitle: Second Order Test and Lagrange Multipliers
-tags: ["Calculus 3", "worksheet"]
+tags: ["calculus", "calculus 3", "worksheet"]
 sagecell: true
 customjs:
   - ../assets/js/chatgpt/2023-03-20-0.js

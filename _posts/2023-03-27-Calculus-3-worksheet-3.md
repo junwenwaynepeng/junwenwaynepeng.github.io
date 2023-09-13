@@ -1,7 +1,7 @@
 ---
 title: Calculus 3 Worksheet 3
 subtitle: Double Integral, Fubini Theorem
-tags: ["Calculus 3", "Worksheet"]
+tags: ["calculus", "calculus 3", "worksheet"]
 customjs: 
   - ../assets/js/gpt.js
 ---

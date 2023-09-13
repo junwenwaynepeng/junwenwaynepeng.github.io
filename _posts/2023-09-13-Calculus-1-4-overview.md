@@ -1,7 +1,7 @@
 ---
 title: Limits at infinity; Horizontal Asympototes
 subtitle: Concepts of infinity
-tags: [calculus, calculus-1, overview]
+tags: [calculus, calculus 1, overview]
 sagecell: true
 head-package:
   -

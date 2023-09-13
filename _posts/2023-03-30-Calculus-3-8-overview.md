@@ -1,7 +1,7 @@
 ---
 title: Calculus 3-8 Overview
 subtitle: Switching the order of integration and polar coordinate
-tags: ["Calculus 3", "Overview"]
+tags: ["calculus", "calculus 3", "overview"]
 ---
 
 In the 8th class, we went over a few examples to practice the technique of definite and indefinite integrating a function. The order of integration **won't** change the value of an integral. However, we discussed how the order of integration can sometimes be important, and that it is essential to determine the limits (boundary conditions) of x and y of an area $\Omega$ in order to evaluate a definite double integral correctly.

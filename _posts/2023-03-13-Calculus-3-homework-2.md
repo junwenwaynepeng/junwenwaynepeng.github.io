@@ -1,7 +1,7 @@
 ---
 title: Calculus 3 homework 2
 subtitle: Tangent spaces and Partial Derivative
-tags: ["Calculus 3", "homework"]
+tags: ["calculus", "calculus 3", "homework"]
 ---
 
 1. To find tangent plain of the surface $z=f(x,y)$ at $(a,b)$, we can either consider using linear approximation or consider that the surface is a level surface of the function $w=F(x,y,z)$, where $F(x,y,z)=z-f(x,y)$, for $w=0$, and then we use the fact that a gradient is perpendicular to the level surface.

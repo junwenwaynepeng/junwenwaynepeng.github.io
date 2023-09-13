@@ -1,7 +1,7 @@
 ---
 title: Calculus 3 Practice Exam
 subtitle: 
-tags: Calculus 3, Practice
+tags: ["calculus", calculus 3, practice exam]
 sagecell: true
 head-package:
   -

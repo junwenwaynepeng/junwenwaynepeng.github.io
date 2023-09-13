@@ -1,7 +1,7 @@
 ---
 title: Why Calculus
 subtitle: Motivation, Intuition, and Try to Be Precise
-tags: [calculus, calculus-1, overview]
+tags: [calculus, calculus 1, overview]
 sagecell: true
 head-package:
   -

@@ -1,7 +1,7 @@
 ---
 title: Calculus 3-9 Overview
 subtitle: 
-tags: Calculus 3, Overview
+tags: ["calculus", calculus 3, overview]
 customjs:
   - 
 ---

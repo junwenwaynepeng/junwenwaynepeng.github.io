@@ -1,7 +1,7 @@
 ---
 title: A research question
 subtitle: Searching solutions in a function field over a finite field 
-tags: Research, Academic, Question, Finite Field, Function Field, Drinfeld Module
+tags: [research, academic, question, finite field, function field, Drinfeld module]
 head-package:
   -
     file: "package/sagecell.html"
