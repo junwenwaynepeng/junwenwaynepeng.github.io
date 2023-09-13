@@ -1,7 +1,7 @@
 ---
-title: Calculus 3 Practice Exam
-subtitle: 
-tags: Calculus 3, Practice
+title: Calculus 1 Homework 1
+subtitle: 2023 Class 6
+tags: calculus 1, calculus, homework
 sagecell: true
 data:
   - 
