@@ -27,7 +27,7 @@ To illustrate these scenarios, let's explore two typical examples.
 
 # An important application of the squeeze theorem
 
-To evaluate $\lim_{x\to 0}\frac{\sin(x)}{x}$, we need the squeeze theorem. And, turn out $\lim_{x\to 0}\frac{\sin(x)}{x}=1$ is also a very important tool to evaluate some limit.
+To compute $\lim_{x\to 0}\frac{\sin(x)}{x}$, we rely on the squeeze theorem. It turns out that $\lim_{x\to 0}\frac{\sin(x)}{x}=1$ serves as a tool for evaluating various limits involving the sine function.
 
 **Example 3.** <div id="question-question-calculus1-ch2-q2"></div>
 
