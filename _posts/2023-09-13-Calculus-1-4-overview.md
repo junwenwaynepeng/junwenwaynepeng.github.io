@@ -21,13 +21,13 @@ There are two scenarios where you might want to consider employing this techniqu
 
 To illustrate these scenarios, let's explore two typical examples.
 
-**Example 1.** $\lim_{x\to}\frac{x^2}{\sqrt{|x^2+2|}-\sqrt{|x^2-2|}}$
+**Example 1.** $\displaystyle\lim_{x\to 0}\frac{x^2}{\sqrt{|x^2+2|}-\sqrt{|x^2-2|}}$
 
-**Example 2.** $\lim_{x\to\infty}\sqrt{x}-\sqrt{x+1}$
+**Example 2.** $\displaystyle\lim_{x\to\infty}\sqrt{x}-\sqrt{x+1}$
 
 # An important application of the squeeze theorem
 
-To compute $\lim_{x\to 0}\frac{\sin(x)}{x}$, we rely on the squeeze theorem. It turns out that $\lim_{x\to 0}\frac{\sin(x)}{x}=1$ serves as a tool for evaluating various limits involving the sine function.
+To compute $\displaystyle\lim_{x\to 0}\frac{\sin(x)}{x}$, we rely on the squeeze theorem. It turns out that $\lim_{x\to 0}\frac{\sin(x)}{x}=1$ serves as a tool for evaluating various limits involving the sine function.
 
 **Example 3.** <div id="question-question-calculus1-ch2-q2"></div>
 
