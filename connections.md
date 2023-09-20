@@ -16,6 +16,7 @@ The subsequent list is organized alphabetically.
 7. L.-C. Hsia
 8. Ben Hutz (The main project director of arithmeitcal dynamics package for sagemath): [https://mathstat.slu.edu/~hutzba/](https://mathstat.slu.edu/~hutzba/)
 9. K.-P. Huang: [https://scholar.google.com/citations?user=vplugG4AAAAJ&hl=en](https://scholar.google.com/citations?user=vplugG4AAAAJ&hl=en)
+22. Trevor Hyde: [https://math.uchicago.edu/~tghyde/](https://math.uchicago.edu/~tghyde/)
 10. Patrick Ingram: [https://www.yorku.ca/professor/pingram/])(https://www.yorku.ca/professor/pingram/)
 11. Rafe Jones: [https://people.carleton.edu/~rfjones/](https://people.carleton.edu/~rfjones/)
 12. Jamie Juul: [https://sites.google.com/view/jamiejuul](https://sites.google.com/view/jamiejuul)
