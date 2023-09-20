@@ -10,11 +10,11 @@ head-package:
 
 # Derivative Formulas Cheat Sheet:
 
-1. Addition/substraction rule: $\frac{d}{dx}(f+g) = \frac{df}{dx} + \frac{dg}{dx}$
-2. Constant rule: $\frac{d}{dx}(cf) = c\frac{d}{dx}$
-3. Product rule: $\frac{d}{dx}(fg)=\frac{df}{dx}g+f\frac{dg}{dx}$ (前微後不微 加 後微前不微)
-4. Chain rule: $\frac{d}{dx}(f\circ g) = \frac{df}{dx}\circ g\frac{dg}{dx}$ (前微乘後微)
-5. Quotient rule: $\frac{d}{dx}(\frac{f}{g}) = \frac{\frac{df}{dx}g-f\frac{dg}{dx}}{g^2}$ (上微減下微除以下面平方)
+1. Addition/substraction rule: $(f\pm g)' = f' \pm g'$
+2. Constant rule: $(cf)' = cf'$
+3. Product rule: $(fg)'=f'g+fg'$ (前微後不微 加 後微前不微)
+4. Chain rule: $(f\circ g)' = f'\circ g\cdot g'$ (前微乘後微)
+5. Quotient rule: $(\frac{f}{g})' = \frac{f'g-fg'}{g^2}$ (上微減下微除以下面平方)
 
 | Function $f(x)$          | Derivative $\frac{d}{dx} (f(x))$         |
 |--------------------------|----------------------------------------|
