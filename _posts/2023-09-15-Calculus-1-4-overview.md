@@ -23,6 +23,6 @@ head-package:
 
 2. We represent the $n$-th derivative using various notations. It can be denoted as $f'$, $f''$, $f'''$, and $f^{(n)}$ for $n>3$. Another notation involves the use of the differential operator $\frac{d}{dx}$, where the $n$-th derivative is expressed as $\frac{d^n f}{dx^n}$.
 
-3. Differential operations exhibit some convenient algebraic rules that coincidentally align with fraction multiplication and division. These rules include: $$\frac{d}{dx}\frac{d^{n-1}f}{dx^{n-1}}=\frac{d^nx}{dx^n},\ \frac{df}{dt}\frac{dt}{dx} = \frac{df}{dx}\text{ and }\frac{dy/dt}{dx/dt}=\frac{dy}{dx}.$$ These rules are helpful for simplifying expressions involving derivatives and differentials.
+3. Differential operations exhibit some convenient algebraic rules that coincidentally align with fraction multiplication and division. These rules include: $$\frac{d}{dx}\frac{d^{n-1}f}{dx^{n-1}}=\frac{d^nx}{dx^n},\ \frac{df}{dt}\frac{dt}{dx} = \frac{df}{dx}\text{ and }\frac{dy/dt}{dx/dt}=\frac{dy}{dx}.$$ These rules are helpful for simplifying expressions involving derivatives.
 
 4. We calculuate the derivatives of some basic functions.
