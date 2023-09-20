@@ -1,5 +1,5 @@
 ---
-title: Continuity and Derivative
+title: Derivative Formulas Cheat Sheet
 subtitle: 
 tags: [calculus, calculus-1, overview]
 sagecell: true
