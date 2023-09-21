@@ -9,3 +9,40 @@ q2:
     Evaluate $\displaystyle\lim_{x\to\infty}\sqrt{2x^2+1}\sin\left(\frac{1}{x}\right)$.
   short-answer: $\sqrt{2}$
   answer: not yet
+
+q3:
+  question: |
+    Which of the following statements is true?
+
+    1. If $g(x)$ is continuous, then $\lim_{x\to 0}f(g(x)) = \lim_{x\to 0}f(\lim_{x\to 0}g(x))$.
+    2. If $f$ is one-to-one and onto, then $f$ is strictly increasing or decreasing.
+    3. $\lim_{x\to a}f(x)+g(x)=\lim_{x\to a}f(x)+\lim_{x\to a}g(x)$ only if both $f$ and $g$ are continuous.
+    4. If a function is continuous on a closed interval $[a, b]$, then it attains its maximum and minimum values on that interval.
+    5. There exists an example where either $f$ or $g$ is not continuous, but $f(x)g(x)$ is continuous.
+    6. If $f$ is not differentiable at $x=0$, then $f^2$ is not differentiable at $x=0$.
+  answer: 5
+
+q4:
+  question: |
+    Evaluate $\displaystyle\lim_{x\to 0}\frac{x\sin(2x)}{\sqrt{1+3x^2}-\sqrt{1-3x^2}}$.
+  answer: not yet
+
+q5:
+  question: |
+    Evaluate $\displaystyle\lim_{x\to -\infty}\ln(|x^3-2x+1|)-\ln(|2x^3+5x-1|) = 0$.
+  answer: not yet
+
+q6:
+  question: |
+    Evaluate $\displaystyle\lim_{x\to\infty}\ln\left(\frac{\lfloor x\rfloor}{x}\right)\cos(x)$ where $\lfloor x\rfloor$ represents the largest integer less than or equal to $x$, i.e. we have $x-1\leq \lfloor x\rfloor\leq x$.
+  answer: not yet
+
+q7:
+  question: |
+    Use the definition of limit to prove that if $\lim_{x\to \infty} f(x) = L>0$, we can find a number $N$ such that $f(x)>0$ for all $x>N$.\
+  answer: not yet
+
+q8:
+  question: |
+    We say a real function (i.e., both the domain and the codomain of $f$ are subsets of real numbers) has the intermediate value property if for any two values $a$ and $b$ in the domain of $f$, and any $y$ between $f(a)$ and $f(b)$, there exists some $c$ such that $f(c)=y$. Such a function is referred to as a *Darboux function*. Is it always the case that a Darboux function is continuous? If not, please provide an example. (Hint: you have already seen this function.)
+  answer: not yet
