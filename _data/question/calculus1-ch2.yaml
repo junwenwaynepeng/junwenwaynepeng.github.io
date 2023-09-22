@@ -14,9 +14,9 @@ q3:
   question: |
     Which of the following statements is true?
 
-    1. If $g(x)$ is continuous, then $\lim_{x\to 0}f(g(x)) = \lim_{x\to 0}f(\lim_{x\to 0}g(x))$.
+    1. If $g(x)$ is continuous, then $\displaystyle\lim_{x\to 0}f(g(x)) = f(\lim_{x\to 0}g(x))$.
     2. If $f$ is one-to-one and onto, then $f$ is strictly increasing or decreasing.
-    3. $\lim_{x\to a}f(x)+g(x)=\lim_{x\to a}f(x)+\lim_{x\to a}g(x)$ only if both $f$ and $g$ are continuous.
+    3. $\displaystyle\lim_{x\to a}f(x)+g(x)=\lim_{x\to a}f(x)+\lim_{x\to a}g(x)$ only if both $f$ and $g$ are continuous.
     4. If a function is continuous on a closed interval $[a, b]$, then it attains its maximum and minimum values on that interval.
     5. There exists an example where either $f$ or $g$ is not continuous, but $f(x)g(x)$ is continuous.
     6. If $f$ is not differentiable at $x=0$, then $f^2$ is not differentiable at $x=0$.
@@ -29,7 +29,7 @@ q4:
 
 q5:
   question: |
-    Evaluate $\displaystyle\lim_{x\to -\infty}\ln(|x^3-2x+1|)-\ln(|2x^3+5x-1|) = 0$.
+    Evaluate $\displaystyle\lim_{x\to -\infty}\ln(|x^3-2x+1|)-\ln(|2x^3+5x-1|)$.
   answer: not yet
 
 q6:
@@ -39,7 +39,7 @@ q6:
 
 q7:
   question: |
-    Use the definition of limit to prove that if $\lim_{x\to \infty} f(x) = L>0$, we can find a number $N$ such that $f(x)>0$ for all $x>N$.\
+    Use the definition of limit to prove that if $\displaystyle\lim_{x\to \infty} f(x) = L>0$, we can find a number $N$ such that $f(x)>0$ for all $x>N$.
   answer: not yet
 
 q8:
