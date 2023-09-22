@@ -1,5 +1,5 @@
 ---
-title: Derivative Formulas Cheat Sheet
+title: Implicit Differentiation
 subtitle: 
 tags: [calculus, calculus-1, overview]
 sagecell: true
