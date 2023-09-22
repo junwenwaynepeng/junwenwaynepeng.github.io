@@ -20,7 +20,7 @@ q3:
     4. If a function is continuous on a closed interval $[a, b]$, then it attains its maximum and minimum values on that interval.
     5. There exists an example where either $f$ or $g$ is not continuous, but $f(x)g(x)$ is continuous.
     6. If $f$ is not differentiable at $x=0$, then $f^2$ is not differentiable at $x=0$.
-  answer: 5
+  answer: 4, 5
 
 q4:
   question: |
