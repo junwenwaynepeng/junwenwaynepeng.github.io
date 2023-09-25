@@ -3,7 +3,7 @@ q1:
     Evaluate $\displaystyle\lim_{t\to 0}\left(\frac{1}{t\sqrt{1+|t|}-\frac{1}{t}}\right)$.
   short-answer: DNE
   answer: |
-    $\lim_{t\to0}\frac{1}{t\sqrt{1+|t|}-\frac{1}{t}}=\lim_{t\to 0}\frac{t}{t^2\sqrt{1+|t|}-1}=\frac{0}{0\sqrt{1}-1}=0$
+    $\displaystyle\lim_{t\to0}\frac{1}{t\sqrt{1+|t|}-\frac{1}{t}}=\lim_{t\to 0}\frac{t}{t^2\sqrt{1+|t|}-1}=\frac{0}{0\sqrt{1}-1}=0$
 
 q2:
   question: |
