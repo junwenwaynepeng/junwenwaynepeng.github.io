@@ -5,7 +5,7 @@
   answer: |
     $$
     \begin{align*}
-    \lim_{h\to 0}\frac{\sqrt{9+h}-3}{h} &= \lim_{h\to 0}\frac{(\sqrt{9+h}-3)(\sqrt{9+h}+3)}{h(\sqrt{9+h}+3)}\ \text{(rationalization)}\\
+    \lim_{h\to 0}\frac{\sqrt{9+h}-3}{h} &= \lim_{h\to 0}\frac{(\sqrt{9+h}-3)(\sqrt{9+h}+3)}{h(\sqrt{9+h}+3)}\text{ (rationalization)}\\
     &= \lim_{h\to 0}\frac{9+h-9}{h(\sqrt{9+h}+3)} = \lim_{h\to 0}\frac{1}{\sqrt{9+h}+3}\\
     &= 1.
     \end{align*}
