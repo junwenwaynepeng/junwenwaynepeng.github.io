@@ -49,5 +49,5 @@
     lower_bound = plot(2.7)
     g = curve + limit + upper_bound + lower_bound
     g.show()
-    </script></div>
+    </div>
     Referring to the graph, it becomes apparent that the function $f(x) = \sqrt{x^2+5}$ exceeds $2.7$ when $x$ is greater than $(2.7^2-5)^{1/2} = 1.5132745950421558...$, and it falls below $3.3$ when $x$ is less than $(3.3^2-5)^{1/2} = 2.4269322199023193...$. As a result, we can select $\delta = \min\left(2-(2.7^2-5)^{1/2}, (3.3^2-5)^{1/2}-2\right) = (3.3^2-5)^{1/2}-2$.
