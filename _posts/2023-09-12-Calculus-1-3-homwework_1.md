@@ -28,7 +28,7 @@ data:
     file: calculus1-ch2
     id: q1
 show-answer: true
-expandable-answer: false
+expandable-answer: true
 ---
 <span style="color:red;">All works must be seen!</span>
 
