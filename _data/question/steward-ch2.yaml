@@ -5,8 +5,8 @@
   answer: |
     $$
     \begin{align*}
-    \lim_{h\to 0}\frac{\sqrt{9+h}-3}{h} &= \lim_{h\to 0}\frac{(\sqrt{9+h}-3)(\sqrt{9+h}+3)}{h(\sqrt{9+h}+3)}\text{ (rationalization)}\\
-    &= \lim_{h\to 0}\frac{9+h-9}{h(\sqrt{9+h}+3)} = \lim_{h\to 0}\frac{1}{\sqrt{9+h}+3}\\
+    \lim_{h\to 0}\frac{\sqrt{9+h}-3}{h} &= \lim_{h\to 0}\frac{(\sqrt{9+h}-3)(\sqrt{9+h}+3)}{h(\sqrt{9+h}+3)}\text{ (rationalization)}\\\\
+    &= \lim_{h\to 0}\frac{9+h-9}{h(\sqrt{9+h}+3)} = \lim_{h\to 0}\frac{1}{\sqrt{9+h}+3}\\\\
     &= 1.
     \end{align*}
     $$
@@ -17,8 +17,8 @@
   answer: |
     $$
     \begin{align*}
-    \lim_{h\to 0}\frac{\frac{1}{(x+h)^2}-\frac{1}{x^2}}{h} &= \lim_{h\to 0}\frac{x^2-(x+h)^2}{h(x+h)^2x^2} \\
-    &= \lim_{h\to 0}\frac{-2xh-h^2}{h(x+h)^2x^2} = \lim_{h\to 0}\frac{-2x-h}{(x+h)^2x^2} \\
+    \lim_{h\to 0}\frac{\frac{1}{(x+h)^2}-\frac{1}{x^2}}{h} &= \lim_{h\to 0}\frac{x^2-(x+h)^2}{h(x+h)^2x^2} \\\\
+    &= \lim_{h\to 0}\frac{-2xh-h^2}{h(x+h)^2x^2} = \lim_{h\to 0}\frac{-2x-h}{(x+h)^2x^2} \\\\
     &= \frac{-2}{x^3}.
     \end{align*}
     $$
@@ -50,4 +50,4 @@
     g = curve + limit + upper_bound + lower_bound
     g.show()
     </script></div>
-    According to the graph, the value of the function $f(x)=\sqrt{x^2+5}$ will be greater than $2.7$ if $x>(2.7^2-5)^{1/2}=1.5132745950421558...$, and less than $3.3$ if $x<(3.3^2-5)^{1/2}=2.4269322199023193...$. Therefore, we may choose $\delta = \min(2-(2.7^2-5)^{1/2}, (3.3^2-5)^{1/2}-2)=(3.3^2-5)^{1/2}-2$.
+    Referring to the graph, it becomes apparent that the function $f(x) = \sqrt{x^2+5}$ exceeds $2.7$ when $x$ is greater than $(2.7^2-5)^{1/2} = 1.5132745950421558...$, and it falls below $3.3$ when $x$ is less than $(3.3^2-5)^{1/2} = 2.4269322199023193...$. As a result, we can select $\delta = \min\left(2-(2.7^2-5)^{1/2}, (3.3^2-5)^{1/2}-2\right) = (3.3^2-5)^{1/2}-2$.
