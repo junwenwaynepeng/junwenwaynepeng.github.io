@@ -24,7 +24,7 @@ data:
     folder: question
     file: calculus1-ch2
     id: q1
-show-answer: false
+show-answer: true
 expandable-answer: true
 ---
 <span style="color:red;">All works must be seen!</span>
