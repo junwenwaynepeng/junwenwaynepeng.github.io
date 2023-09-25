@@ -3,6 +3,9 @@ title: Calculus 1 Homework 1
 subtitle: 2023 Class 6
 tags: [calculus 1, calculus, homework]
 sagecell: true
+head-package:
+  -
+    file: "package/sagecell.html"
 data:
   - 
     folder: question
@@ -31,10 +34,20 @@ expandable-answer: true
 
 1. <div id='question-question-steward-ch2-2.3-11'></div>
 
+    <div id='answer-question-steward-ch2-2.3-11'></div>
+
 2. <div id='question-question-steward-ch2-2.3-34'></div>
+
+    <div id='answer-question-steward-ch2-2.3-34'></div>
 
 3. <div id='question-question-steward-ch2-2.3-42'></div>
 
+    <div id='answer-question-steward-ch2-2.3-42'></div>
+
 4. <div id='question-question-steward-ch2-2.4-5'></div>
 
+    <div id='answer-question-steward-ch2-2.4-5'></div>
+
 5. <div id='question-question-calculus1-ch2-q1'></div>
+
+    <div id='answer-question-calculus1-ch2-q1'></div>
