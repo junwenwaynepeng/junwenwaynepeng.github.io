@@ -50,4 +50,4 @@
     g = curve + limit + upper_bound + lower_bound
     g.show()
     </script></div>
-    According to the graph, the value of the function $f(x)=\sqrt{x^2+5}$ will be greater than $2.7$ if $x>(2.7^2-5)^(1/2)=1.5132745950421558...$, and less than $3.3$ if $x<(3.3^2-5)^(1/2)=2.4269322199023193...$. Therefore, we may choose $\delta = \min(2-(2.7^2-5)^(1/2), (3.3^2-5)^(1/2)-2)=(3.3^2-5)^(1/2)-2$.
+    According to the graph, the value of the function $f(x)=\sqrt{x^2+5}$ will be greater than $2.7$ if $x>(2.7^2-5)^{1/2}=1.5132745950421558...$, and less than $3.3$ if $x<(3.3^2-5)^{1/2}=2.4269322199023193...$. Therefore, we may choose $\delta = \min(2-(2.7^2-5)^{1/2}, (3.3^2-5)^{1/2}-2)=(3.3^2-5)^{1/2}-2$.
