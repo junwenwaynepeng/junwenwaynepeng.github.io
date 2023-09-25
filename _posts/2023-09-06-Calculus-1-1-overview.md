@@ -54,7 +54,7 @@ f(t) = ((t^2+9)^(0.5)-3)/ t^2
 label = [('t','f(t)')]
 result = []
 for x in [10^(-i) for i in range(1,10)]:
-    result.append((x.n(100), f(x.n(100))))   ＃ Note the difference between f(x.n(100)) and f(x).n(100)
+    result.append((x.n(100), f(x.n(100))))   #Note the difference between f(x.n(100)) and f(x).n(100)
 printout = label + result
 table(printout, header_row=True, frame=True)
 </div>
