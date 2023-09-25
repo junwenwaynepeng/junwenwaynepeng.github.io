@@ -45,7 +45,7 @@ expandable-answer: true
     <div id='answer-question-steward-ch2-2.3-42'></div>
 
 4. <div id='question-question-steward-ch2-2.4-5'></div>
-
+    <iframe src='https://www.desmos.com/calculator/onnzbieghc?embed' width='500' height='500' style='border: 1px solid #ccc' frameborder=0></iframe>
     <div id='answer-question-steward-ch2-2.4-5'></div>
 
 5. <div id='question-question-calculus1-ch2-q1'></div>
