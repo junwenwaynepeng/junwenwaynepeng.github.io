@@ -1,0 +1,23 @@
+3-3:
+  question: Calculate y'. $y=\frac{x^2-x+2}{\sqrt{x}}$
+  answer: not yet
+3-4:
+  qeustion: Calculate y'. $y=\frac{\tan x}{1+\cos x}$
+  answer: not yet
+3-8:
+  question: Calculate y'. $xe^y=y\sinx$
+3-9:
+  quesiton: Calculate y'. $y=\ln(x\ln(x))$
+  answer: not yet
+3-20:
+  question: Calculate y'. $y=e^{x\sec x}$
+3-25:
+  question: Calculate y'. $\sin(xy)=x^2-y$
+  answer: not yet
+3-33:
+  question: Calculate y'. $y=\ln|\sec 5x+\tan 5x|$
+  answer: not yet
+3-71:
+  question: |
+    If $f(x)=(x-a)(x-b)(x-c)$, show that 
+    $$\frac{f'(x)}{f(x)}=\frac{1}{(x-a)} + \frac{1}{x-b} + \frac{1}{x-c}$$
