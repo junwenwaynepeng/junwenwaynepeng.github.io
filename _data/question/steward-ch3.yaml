@@ -21,4 +21,4 @@
 3-71:
   question: |
     If $f(x)=(x-a)(x-b)(x-c)$, show that 
-    $$\frac{f'(x)}{f(x)}=\frac{1}{(x-a)} + \frac{1}{x-b} + \frac{1}{x-c}$$
+    $$\frac{f'(x)}{f(x)}=\frac{1}{x-a} + \frac{1}{x-b} + \frac{1}{x-c}$$
