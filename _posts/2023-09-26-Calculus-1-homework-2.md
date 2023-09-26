@@ -22,10 +22,6 @@ data:
   -
     folder: question
     file: steward-ch3
-    id: 3-8
-  -
-    folder: question
-    file: steward-ch3
     id: 3-9
   -
     folder: question
