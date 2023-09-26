@@ -1,0 +1,32 @@
+q1:
+  question: |
+    Use the definition of the derivative to show that $\frac{d}{dx}(\cos(x))=-\sin(x)$
+  answer: not yet
+q2:
+  question: |
+    Find $\frac{d^n}{dx^n}\left(\frac{1+x}{\sqrt{1-x}}\right)$
+  answer: not yet
+q3:
+  question: |
+    Find the $n$th derivative of the function $f(x)=\frac{x^n}{1-x}$.
+  answer: not yet
+q4:
+  question: |
+    Suppose $f$ is differentiable on $\mathbb{R}$. Show that $\frac{d}{dx}f^n(x)=\prod_{i=1}^{n-1}f'(f^{n-1}(x))$ where, conventionally, we define $f^0(x)=x$. 
+  answer: not yet
+q5:
+  question: |
+    Find the $n$th derivative of the function $f(x)=x^{n-1}\ln(x)$
+  answer: not yet
+q7:
+  question: |
+    Find the tangent line and the normal line to the curve $y^x=x^y$ at the point $(1,1)$.
+  answer: not yet
+q8:
+  question: |
+    Calculate $y'$.
+    1. $y=\log_10|\sec(x)|$
+    2. $y=x^{x^x}$
+    3. $y=\frac{10^x}{\sqrt[3]{x+\sqrt{x}}}$
+    4. $y=\sec^{-1}(x)$
+  answer: not yet

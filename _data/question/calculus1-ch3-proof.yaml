@@ -1,0 +1,27 @@
+mvt1:
+  question: |
+    Suppose that $f(x)$ and $g(x)$ are differentiable on an open interval containing $[a,b]$ with $f(a)>g(a)$ and $f(b)>g(b)$. If $f(x)=g(x)$ has exactly one solution on $[a,b]$, denoted by $x_0\in [a,b]$, then $f$ and $g$ have the same tangent line at $x=x_0$.
+  answer: Not yet
+mvt2:
+  question: |
+    Suppose that the function $f$ is differentiable on an open interval containing $[a,b]$ with $a>0$. If $f(a)=ka$ and $f(b)=kb$ for some $k$, then there exists $c\in (a,b)$ such that the tangent line of $y=f(x)$ at $c$ passes through the origin.
+  answer: Not yet
+mvt3:
+  question: |
+    Suppose that $f$ is a differentiable function on an open interval containing $[a,b]$. If $f'(a)>0$ and $f'(b)<0$, then there exists $c\in(a,b)$ such that $f'(c)=0$.
+  answer: Not yet
+mvt4:
+  question: |
+    Let $a<b$. A function $f$ is said to be contractive on $[a,b]$ if there exists $K$ with $0<k<1$ such that for all $x_1,\ x_2\in[a,b]$, we have
+    $$|f(x_1)-f(x_2)|\leq k|x_1-x_2|$$.
+    1. If $f$ is contractive on $[a,b]$, then  $f$ is continuous on $[a,b]$.
+    2. If $f$ is continuous and differentiable on $[a,b]$ with $|f'(x)|\leq q$, $0<q<1$, for all $x\in(a,b)$, then $f$ is contractive on $[a,b]$ and has at most one fixed point on $[a,b]$
+  answer: Not yet
+mvt6:
+  question: |
+    If $f$ is differentiable on an open interval containing $[0,1]$ with $f(0)=1$ and $f(1)=0$, then there exists $c\in (0,1)$ such that $f'(c)=-\frac{f(c)}{c}$.
+  answer: Not yet
+mvt7:
+  question: |
+    If $f(x)$ is differentiable and $f'(x)\neq 1$ for all real numbers $x$, then $f$ has at most one fixed point.
+  answer: Not yet
