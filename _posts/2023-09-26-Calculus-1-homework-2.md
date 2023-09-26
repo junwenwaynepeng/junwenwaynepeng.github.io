@@ -52,22 +52,20 @@ expandable-answer: true
 ---
 <span style="color:red;">All works must be seen!</span>
 
-0. <div id='question-question-calculus1-ch3-q1'></div>
+1. <div id='question-question-calculus1-ch3-q1'></div>
 
-1. <div id='question-question-steward-ch3-3-3'></div>
+2. <div id='question-question-steward-ch3-3-3'></div>
 
-2. <div id='question-question-steward-ch3-3-4'></div>
+3. <div id='question-question-steward-ch3-3-4'></div>
 
-3. <div id='question-question-steward-ch3-3-20'></div>
+4. <div id='question-question-steward-ch3-3-20'></div>
 
-4. <div id='question-question-steward-ch3-3-25'></div>
+5. <div id='question-question-steward-ch3-3-25'></div>
 
-5. <div id='question-question-steward-ch3-3-33'></div>
+6. <div id='question-question-steward-ch3-3-33'></div>
 
-6. <div id='question-question-steward-ch3-3-71'></div>
+7. <div id='question-question-steward-ch3-3-71'></div>
 
-7. <div id='question-question-steward-ch3-3-4'></div>
+9. <div id='question-question-calculus1-ch3-q5'></div>
 
-8. <div id='question-question-calculus1-ch3-q5'></div>
-
-9. <div id='question-question-calculus1-ch3-proof'></div>
+10. <div id='question-question-calculus1-ch3-proof-mvt1'></div>
