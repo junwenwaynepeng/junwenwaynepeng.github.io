@@ -1,7 +1,6 @@
 ivt1:
   question: |
     1. State the intermediate value theorem
-    2. Develop a pseudocode for approximating a solution of $\sqrt{x^2-5}-3$ with an error less than $10^{-8}$ utilizing the Intermediate Value Theorem and the Bisection Method.
+    2. Develop a pseudocode for approximating a solution of $\sqrt{x^2-5}-3$ with an error less than $10^{-8}$ utilizing the Intermediate Value Theorem and the Bisection Method. Elaborate on the importance of selecting the initial endpoints carefully.
     3. Implement the pseudocode in Sage/Python.
-    4. Elaborate on the importance of selecting the initial endpoints carefully when modifying the function to $\frac{x^2-9}{x}$.
   answer: Not yet
