@@ -2,6 +2,10 @@
 title: Calculus 1 Homework 1
 subtitle: 2023 Class 6
 tags: [calculus 1, calculus, homework]
+sagecell: true
+head-package:
+  -
+    file: "package/sagecell.html"
 data:
   -
     folder: question
@@ -43,6 +47,10 @@ data:
     folder: question
     file: calculus1-ch3-proof
     id: mvt1
+  -
+    folder: question
+    file: calculus1-algorithm
+    id: ivt1
 show-answer: false
 expandable-answer: true
 ---
@@ -65,3 +73,9 @@ expandable-answer: true
 9. <div id='question-question-calculus1-ch3-q5'></div>
 
 10. <div id='question-question-calculus1-ch3-proof-mvt1'></div>
+
+Algorithm Homework:
+
+<div id='question-question-calculus1-algorithm-ivt1'></div>
+
+<div class='compute'>You can try your code here!</div>
