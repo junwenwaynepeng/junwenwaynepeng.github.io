@@ -1,5 +1,5 @@
 ---
-title: Calculus 1 Homework 1
+title: Calculus 1 Homework 2
 subtitle: 2023 Class 6
 tags: [calculus 1, calculus, homework]
 sagecell: true
