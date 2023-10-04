@@ -12,8 +12,8 @@ head-package:
 
 1. Application in handling functions of the form $f(x)^{g(x)}$
 2. Two-Step Process:
-  * Step 1: Take the natural logarithm $\ln$ of the given equation
-  * Step 2: Apply implicit differentiation to find the derivative
+    * Step 1: Take the natural logarithm $\ln$ of the given equation
+    * Step 2: Apply implicit differentiation to find the derivative
 
 ## Review technique of differentiation
 
