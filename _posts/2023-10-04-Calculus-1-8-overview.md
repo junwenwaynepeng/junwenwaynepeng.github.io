@@ -32,9 +32,9 @@ head-package:
 | Inverse Sine (arcsin(x))     | $\frac{d}{dx}(\arcsin(x)) = \frac{1}{\sqrt{1-x^2}}$ |
 | Inverse Cosine (arccos(x))   | $\frac{d}{dx}(\arccos(x)) = -\frac{1}{\sqrt{1-x^2}}$ |
 | Inverse Tangent (arctan(x))   | $\frac{d}{dx}(\arctan(x)) = \frac{1}{1+x^2}$ |
-| Inverse Cotangent (arccot(x)) | $\frac{d}{dx}(\text{arccot}(x)) = -\frac{1}{1+x^2}$ |
-| Inverse Secant (arcsec(x))     | $\frac{d}{dx}(\text{arcsec}(x)) = \frac{1}{|x|\sqrt{x^2-1}}$ |
-| Inverse Cosecant (arccsc(x))   | $\frac{d}{dx}(\text{arccsc}(x)) = -\frac{1}{|x|\sqrt{x^2-1}}$ |
+| Inverse Cotangent (arccot(x)) | $\frac{d}{dx}(\arccot(x)) = -\frac{1}{1+x^2}$ |
+| Inverse Secant (arcsec(x))     | $\frac{d}{dx}(\arcsec(x)) = \frac{1}{|x|\sqrt{x^2-1}}$ |
+| Inverse Cosecant (arccsc(x))   | $\frac{d}{dx}(\arccsc(x)) = -\frac{1}{|x|\sqrt{x^2-1}}$ |
 
 2. differential rules:
   2.1. Sum/Difference Rule: $\frac{d}{dx}(f(x) \pm g(x)) = \frac{d}{dx}(f(x)) \pm \frac{d}{dx}(g(x))$.
