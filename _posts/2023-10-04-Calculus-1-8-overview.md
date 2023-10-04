@@ -37,13 +37,13 @@ head-package:
 | Inverse Cosecant (arccsc(x))   | $\frac{d}{dx}(\text{arccsc}(x)) = -\frac{1}{|x|\sqrt{x^2-1}}$ |
 
 2. differential rules:
-  i. Sum/Difference Rule: $\frac{d}{dx}(f(x) \pm g(x)) = \frac{d}{dx}(f(x)) \pm \frac{d}{dx}(g(x))$.
-  ii. Product Rule: $\frac{d}{dx}(f(x) \cdot g(x)) = f'(x) \cdot g(x) + f(x) \cdot g'(x)$.
-  iii. Quotient Rule: $\frac{d}{dx}\left(\frac{f(x)}{g(x)}\right) = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{(g(x))^2}$.
-  iv. Chain Rule: $\frac{d}{dx}(f(g(x))) = f'(g(x)) \cdot g'(x)$.
+  2.1. Sum/Difference Rule: $\frac{d}{dx}(f(x) \pm g(x)) = \frac{d}{dx}(f(x)) \pm \frac{d}{dx}(g(x))$.
+  2.2. Product Rule: $\frac{d}{dx}(f(x) \cdot g(x)) = f'(x) \cdot g(x) + f(x) \cdot g'(x)$.
+  2.3. Quotient Rule: $\frac{d}{dx}\left(\frac{f(x)}{g(x)}\right) = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{(g(x))^2}$.
+  2.4. Chain Rule: $\frac{d}{dx}(f(g(x))) = f'(g(x)) \cdot g'(x)$.
 3. implicit differentiation (inverse functions and logarithmetic differentiation):
-  i. inverse functions: set $f(y)=x$.
-  ii. logarithmetic differentiation: $\ln(y)=g(x)\ln(f(x))$.
+  3.1. inverse functions: set $f(y)=x$.
+  3.2. logarithmetic differentiation: $\ln(y)=g(x)\ln(f(x))$.
 
 ## Relative rate
 
