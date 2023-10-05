@@ -42,8 +42,8 @@ head-package:
     3. Quotient Rule: $\frac{d}{dx}\left(\frac{f(x)}{g(x)}\right) = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{(g(x))^2}$.
     4. Chain Rule: $\frac{d}{dx}(f(g(x))) = f'(g(x)) \cdot g'(x)$.
 3. implicit differentiation (inverse functions and logarithmetic differentiation):
-    1. inverse functions: set $f(y)=x$.
-    2. logarithmetic differentiation: $\ln(y)=g(x)\ln(f(x))$.
+    1. inverse functions: $y=f^{-1}(x)$ implies $f(y)=x$.
+    2. logarithmetic differentiation: $y=f(x)^{g(x)}$ implies $\ln(y)=g(x)\ln(f(x))$.
 
 ## Relative rate
 
