@@ -26,7 +26,7 @@ Moreover, <span style="color:red;">we know that $r:h = 2:4$ using similar triang
 
 $$\frac{dV}{dt} = \frac{1}{4}h^2\frac{dh}{dt},$$
 
-so $\frac{dh}{dt}\mid_{h=3} = 2\cdot 4\cdot 3^2$.
+so $\frac{dh}{dt}\mid_{h=3} = 2\cdot 4\cdot \frac{1}{3^2}$.
 
 ## Linear Approximation
 
