@@ -22,7 +22,7 @@ Related rate problems typically present a scenario where the rate of one change 
 
 $$V = \frac{1}{3}\pi r^2h.$$
 
-Moreover, <p style="color:rad;">we know that $r:h = 2:4$ using similar triangles, which implies $V = \frac{1}{3}\pi\left(\frac{1}{2}h\right)^2 h$. Since $r$ also changes as water is pumped in, $r$ is a function of time $t$, and we cannot treat it as a constant.</p> Now, applying implicit differentiation, we find:
+Moreover, <span style="color:red;">we know that $r:h = 2:4$ using similar triangles, which implies $V = \frac{1}{3}\pi\left(\frac{1}{2}h\right)^2 h$. Since $r$ also changes as water is pumped in, $r$ is a function of time $t$, and we cannot treat it as a constant.</span> Now, applying implicit differentiation, we find:
 
 $$\frac{dV}{dt} = \frac{1}{4}h^2\frac{dh}{dt},$$
 
