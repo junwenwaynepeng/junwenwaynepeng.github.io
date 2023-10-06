@@ -5,7 +5,8 @@ mvt1:
 mvt2:
   question: |
     Suppose that the function $f$ is differentiable on an open interval containing $[a,b]$ with $a>0$. If $f(a)=ka$ and $f(b)=kb$ for some $k$, then there exists $c\in (a,b)$ such that the tangent line of $y=f(x)$ at $c$ passes through the origin.
-  answer: Not yet
+  answer: |
+    Considering the function $g(x)=\frac{f(x)}{x}$, we have $g(a)=g(b)=k$. By the mean value theorem, there exists $c\in(a,b)$ such that $g'(c)=\frac{f'(c)c-f(c)}{c^2}=0$. It implies $cf'(c)=f(c)$ which is equivalent to say the tangent line at $(c,f(c))$ passes thought the origin.
 mvt3:
   question: |
     Suppose that $f$ is a differentiable function on an open interval containing $[a,b]$. If $f'(a)>0$ and $f'(b)<0$, then there exists $c\in(a,b)$ such that $f'(c)=0$.
@@ -25,3 +26,12 @@ mvt7:
   question: |
     If $f(x)$ is differentiable and $f'(x)\neq 1$ for all real numbers $x$, then $f$ has at most one fixed point.
   answer: Not yet
+mvt8:
+  question: |
+    Let $0<a<b$. Show that $\dfrac{b-a}{b}<\ln\dfrac{b}{a}<\dfrac{b-a}{a}.$
+  answer: |
+    Consider the function $f(x)=\ln(x)$. By the mean value theorem, there exists a real number $c$ with $a<c<b$ such that
+    $$
+    \ln\left(\frac{b}{a}\right)=\ln(b)-\ln(a)=\frac{1}{c}(b-a).
+    $$
+    Note that $a<c<b$ implies $\frac{1}{a}>\frac{1}{c}>\frac{a}{b}$. Putting everything together, we have the desired conclusion.
