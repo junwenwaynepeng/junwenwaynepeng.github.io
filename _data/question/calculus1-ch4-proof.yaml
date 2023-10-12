@@ -35,3 +35,10 @@ mvt8:
     \ln\left(\frac{b}{a}\right)=\ln(b)-\ln(a)=\frac{1}{c}(b-a).
     $$
     Note that $a<c<b$ implies $\frac{1}{a}>\frac{1}{c}>\frac{a}{b}$. Putting everything together, we have the desired conclusion.
+111-0612-5:
+  question: 
+    1. Prove that $|\sin b-\sin a|\leq|b-a|$ for all real numbers $a$ and $b$.
+    2. Use $(a)$ to compute $\displaystyle\lim_{x\to\infty}\left(\sin\sqrt{x+\sqrt{x+\sqrt{x}}}-\sin\sqrt{x+\sqrt{x}}\right)$.
+mvt9:
+  question:
+    Show that if $f$ is a continuous function on an open interval contaning $[a,b]$ with $f(a)f(b)<0$ and $f'(x)>0$ for all $x\in [a,b]$, then $f$ has a unique zero (solution of $f(x)=0$) in $[a,b]$.

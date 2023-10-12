@@ -46,4 +46,4 @@ q7:
 q8:
   question: |
     We say a real function (i.e., both the domain and the codomain of $f$ are subsets of real numbers) has the intermediate value property if for any two values $a$ and $b$ in the domain of $f$, and any $y$ between $f(a)$ and $f(b)$, there exists some $c$ such that $f(c)=y$. Such a function is referred to as a *Darboux function*. Is it always the case that a Darboux function is continuous? If not, please provide an example. (Hint: you have already seen this function.)
-  answer: not yet
+  answer: $\sin(\frac{1}{x})$

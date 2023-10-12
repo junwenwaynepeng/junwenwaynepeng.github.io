@@ -1,0 +1,12 @@
+q1:
+  question: Evaluate $\lim_{x\to \infty}\sin\left(\frac{1}{x}\right)^{\tan^{-1}(\frac{1}{x})}$.
+  answer:
+q2:
+  question: |
+    Answer the following questions about $f(x)=x\left(\ln(x)\right^2$:
+    1. Is $f$ an odd function or even function?
+    2. Find all critical points of $f$, and determine local maximal and local minimal values of $f(x)$.
+    3. Find the intervals of increase/decrease of $f$.
+    4. Find the interval on which f(x) is concave upward/downward.
+    5. Find tye asymptotes (vertical, horizontal, or slant) of $y=f(x)$
+    6. Sketch the graph of $f(x)$

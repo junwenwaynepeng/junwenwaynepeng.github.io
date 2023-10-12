@@ -30,3 +30,24 @@ q8:
     3. $y=\frac{10^x}{\sqrt[3]{x+\sqrt{x}}}$
     4. $y=\sec^{-1}(x)$
   answer: not yet
+111-0612-1-3:
+  question: |
+    Suppose $f:\mathbb{R}\to\mathbb{R}$ is a function that satisfies
+    $$f(x+y)=e^{-2y}f(x)+e^{2x}f(y)\text{ for all real numbers $x,y$.}$$
+    1. Find $f(0)$.
+    2. Prove that $f(x)$ is an odd function.
+    3. Assume in addition that $\displaystyle\lim_{x\to 0 }\frac{f(x)}{x} = 3$.
+      1. Find $f'(0)$
+      2. If $f(a)=b$, find $f'(a)$ in terms of $a$ and $b$.
+  answer: Not yet
+q9:
+  question: |
+    A person is walking away from a streetlight at a constant speed of 1 meter per second. The person's height is 1.8 meters, and there is a streetlight that is 5 meters above the ground. The person casts a shadow on the ground.
+    1. At what rate is the person's shadow length changing when they are 10 meters away from the streetlight?
+    2. Find the rate of change of the angle of elevation of the person's line of sight to the streetlight when they are 10 meters away from the streetlight.
+  answer: Not yet
+q10:
+  question: |
+    Show that $\ln(1+x)\approx x$ when $x$ is near $0$.
+  answer: |
+    Let $f(x)=\ln(1+x)$, so $f'(x)=\frac{1}{1+x}$. Thus, $\ln(1+x)\approx f(0)+f'(0)(x-0)=x$.
