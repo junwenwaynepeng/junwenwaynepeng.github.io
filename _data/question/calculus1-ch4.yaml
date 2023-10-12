@@ -3,7 +3,7 @@ q1:
   answer:
 q2:
   question: |
-    Answer the following questions about $f(x)=x\left(\ln(x)\right^2$:
+    Answer the following questions about $f(x)=x\left(\ln(x)\right)^2$:
     1. Is $f$ an odd function or even function?
     2. Find all critical points of $f$, and determine local maximal and local minimal values of $f(x)$.
     3. Find the intervals of increase/decrease of $f$.
