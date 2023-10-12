@@ -1,5 +1,5 @@
 ---
-title: logarithmetic differentiation, Review, and Related Rate
+title: Linear Approximation, Differential, and Extreme Values
 subtitle: 
 tags: [calculus, calculus-1, overview]
 sagecell: true
