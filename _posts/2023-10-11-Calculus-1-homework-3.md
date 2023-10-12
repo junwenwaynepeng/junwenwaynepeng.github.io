@@ -48,7 +48,7 @@ expandable-answer: true
 
 2. <div id='question-question-steward-ch3-10-31'></div>
 
-3. <div id='question-question-steward-ch3-10-34'></div>
+3. <div id='question-question-steward-ch3-10-43'></div>
 
 4. <div id='question-question-calculus1-ch4-proof-mvt9'></div>
 
