@@ -50,9 +50,9 @@ expandable-answer: true
 
 3. <div id='question-question-steward-ch3-10-34'></div>
 
-4. <div id='question-question-calculus-ch4-proof-mvt9'></div>
+4. <div id='question-question-calculus1-ch4-proof-mvt9'></div>
 
-5. <div id='question-question-calculus-ch4-proof-mvt6'></div>
+5. <div id='question-question-calculus1-ch4-proof-mvt6'></div>
 
 6. <div id='question-question-calculus1-ch4-q1'></div>
 
