@@ -45,6 +45,6 @@ head-package:
     1. inverse functions: $y=f^{-1}(x)$ implies $f(y)=x$.
     2. logarithmetic differentiation: $y=f(x)^{g(x)}$ implies $\ln(y)=g(x)\ln(f(x))$.
 
-## Relative rate
+## Related rate
 
 Investigate scenarios where we are given one rate of change and are tasked with determining another rate of change. Understand the concept of relative rates and how to calculate them.
