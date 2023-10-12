@@ -64,5 +64,5 @@ Algorithm Homework:
 
 <div class='compute'>
   print(diff(sin(x^2), x, 1))
-  print(diff(sin(x^2), x, 2))
+print(diff(sin(x^2), x, 2))
 </div>
