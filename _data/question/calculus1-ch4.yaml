@@ -1,5 +1,5 @@
 q1:
-  question: Evaluate $\lim_{x\to \infty}\sin\left(\frac{1}{x}\right)^{\tan^{-1}(\frac{1}{x})}$.
+  question: Evaluate $\displaystyle\lim_{x\to \infty}\sin\left(\frac{1}{x}\right)^{\tan^{-1}(\frac{1}{x})}$.
   answer:
 q2:
   question: |
