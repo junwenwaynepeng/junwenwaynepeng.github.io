@@ -4,3 +4,26 @@ ivt1:
     2. Develop a pseudocode for approximating a solution of $\sqrt{x^2-5}-3=0$ with an error less than $10^{-8}$ utilizing the Intermediate Value Theorem and the Bisection Method. Elaborate on the importance of selecting the initial endpoints carefully.
     3. Implement the pseudocode in Sage/Python.
   answer: Not yet
+newton-method:
+  question: |
+    Newton's method is an iterative numerical technique used to approximate solutions for equations, often employed to find the roots of real-valued functions. Below is a pseudocode representation of Newton's method:
+
+    ```python
+    Goal: Find an approximate solution x1 to the equation f(x) = 0.
+    Input: A function (f), an initial value (x0), a tolerance error (err), and a maximum number of iterations (m).
+    Return: An approximate solution x1 with |f(x1)| less than err or reaching the maximum number of iterations.
+    Code:
+    def NewtonMethod(f, x0, err, m):
+        x = x0
+        iteration = 0
+        while iteration < m:
+            if abs(f(x)) < err:
+                return x
+            if f'(x) == 0:
+                return "No solution found"
+            x = x - f(x) / f'(x)  # Find the x-intercept of the tangent line to the curve y = f(x) at (x, f(x))
+            iteration = iteration + 1
+        return "Exceeded the maximum number of iterations"
+    ```
+
+    Your task is to implement the provided pseudocode in Sage/Python or any language you are used to use and use your code to approximate the solution of the equation $\cos(x) = x^2 - 4$ to six decimal places.

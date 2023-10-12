@@ -1,6 +1,6 @@
 ---
 title: Calculus 1 Homework 2
-subtitle: 2023 Class 6
+subtitle: Differential techique, and Intermediate Value Theorem
 tags: [calculus 1, calculus, homework]
 sagecell: true
 head-package:
@@ -18,34 +18,34 @@ data:
   - 
     folder: question
     file: steward-ch3
-    id: 3-3
+    id: review-3
   -
     folder: question
     file: steward-ch3
-    id: 3-4
+    id: review-4
   -
     folder: question
     file: steward-ch3
-    id: 3-9
+    id: review-9
   -
     folder: question
     file: steward-ch3
-    id: 3-20
+    id: review-20
   -
     folder: question
     file: steward-ch3
-    id: 3-25
+    id: review-25
   -
     folder: question
     file: steward-ch3
-    id: 3-33
+    id: review-33
   -
     folder: question
     file: steward-ch3
-    id: 3-71
+    id: review-71
   -
     folder: question
-    file: calculus1-ch3-proof
+    file: calculus1-ch4-proof
     id: mvt1
   -
     folder: question
@@ -58,21 +58,21 @@ expandable-answer: true
 
 1. <div id='question-question-calculus1-ch3-q1'></div>
 
-2. <div id='question-question-steward-ch3-3-3'></div>
+2. <div id='question-question-steward-ch3-review-3'></div>
 
-3. <div id='question-question-steward-ch3-3-4'></div>
+3. <div id='question-question-steward-ch3-review-4'></div>
 
-4. <div id='question-question-steward-ch3-3-20'></div>
+4. <div id='question-question-steward-ch3-review-20'></div>
 
-5. <div id='question-question-steward-ch3-3-25'></div>
+5. <div id='question-question-steward-ch3-review-25'></div>
 
-6. <div id='question-question-steward-ch3-3-33'></div>
+6. <div id='question-question-steward-ch3-review-33'></div>
 
-7. <div id='question-question-steward-ch3-3-71'></div>
+7. <div id='question-question-steward-ch3-review-71'></div>
 
 9. <div id='question-question-calculus1-ch3-q5'></div>
 
-10. <div id='question-question-calculus1-ch3-proof-mvt1'></div>
+10. <div id='question-question-calculus1-ch4-proof-mvt1'></div>
 
 Algorithm Homework:
 
