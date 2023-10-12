@@ -22,7 +22,7 @@ We also introduce the concept of using differentials to estimate errors. In real
 
 $$\text{Volume} = \text{Width}\times\text{Length}\times\text{Height}.$$
 
-When we measure $x$, we obtain a result denoted as $y$. We use the equation $y=f(x)$ to establish the connection between $x$ and $y. However, when measuring $x$, we may obtain a value, let's say $c$, but the actual value could fall within a range of $(c-\varepsilon, c+\varepsilon)$, where $\varepsilon$ represents the margin of error. We aim to estimate the error that exists between the actual result $f(x)$ and the result $f(c)$ due to the measurement process.
+When we measure $x$, we obtain a result denoted as $y$. We use the equation $y=f(x)$ to establish the connection between $x$ and $y$. However, when measuring $x$, we may obtain a value, let's say $c$, but the actual value could fall within a range of $(c-\varepsilon, c+\varepsilon)$, where $\varepsilon$ represents the margin of error. We aim to estimate the error that exists between the actual result $f(x)$ and the result $f(c)$ due to the measurement process.
 
 To do this, we denote the error of actual value $f(x)$ in relation to the measured result $f(c)$ as $\Delta y$. It's important to note that
 
