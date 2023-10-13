@@ -27,7 +27,7 @@ expandable-answer: false
 
 **proof.** Let $a_0=a$ and $b_0=b$. We will recursively define $a_i$ and $b_i$. First, we consider two intervals $[a_0,\frac{a_0+b_0}{2}]$ and $[\frac{a_0+b_0}{2},b_0]$. Since $\{x_n\}$ has infinitely many terms, one of the intervals, denoted by $I=[a_1,b_1]$, contains infinitely many terms of the sequence. We then can find the smallest integer $n_1$ such that $x_{n_1}$ is in $I$. By iterating the above process, we will get three sequences $\{a_i\}$, $\{b_i\}$, and $\{x_{n_i}\}$, where $\{x_{n_i}\}$ is a subsequence of $\{x_n\}$. Note that $a_i\leq x_i\leq b_i$ and
 $$\lim_{i\to\infty}a_i =\lim_{i\to\infty} b_i.$$
-By the squeeze theorem, $\lim_{i}x_{n_i}$ exists.<div style="text-align: right;">∎</div>
+By the squeeze theorem, $\displaystyle\lim_{i\to\infty}x_{n_i}$ exists.<div style="text-align: right;">∎</div>
 
 **Theorem(Weierstrass's extreme value theorem)** If $f(x)$ is a continuous function on a closed interval $[a,b]$, then $f(x)$ attains its local extreme values on $[a,b]$.
 
