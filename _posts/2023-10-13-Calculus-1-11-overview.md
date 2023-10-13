@@ -40,19 +40,21 @@ Then, there exists $c\in (a,b)$ such that $f'(c)=0$.
 $$f'(c)=\frac{f(a)-f(b)}{a-b}$$.
 **proof.** Let $g(x)=f(x)-f(a)-\frac{f(b)-f(a)}{b-a}(x-a)$. We note that $g(a)=g(b)=0$. By Roll's theorem, there exists $c\in(a,b)$ such that $g'(c)=0$. Furthermore, $g'(x)=f'(x)-\frac{f(b)-f(a)}{b-a}$, so $g'(c)=0$ implies $f'(x)=\frac{f(b)-f(a)}{b-a}$.<div style="text-align: right;">∎</div>
 
-These theorems show the beauty of mathematics. Indeed, we see the coherent of the statements
+These theorems exemplify the elegance of mathematics. In a cohesive progression, we observe the relationships among these fundamental statements:
 $$
-\begin{cases}
-\text{Bolzano-Weierstrass theorem}\\
-\Downarrow\\
-\text{Weierestrass's extreme value theorem}\\
-\Downarrow\\
-\text{Fermat's theorem}\\
-\Downarrow\\
-\text{Roll's theorem}\\
-\Downarrow\\
-\text{Mean value theorem}
-\end{cases}
+\begin{equation}
+  \begin{array}{c}
+    \text{Bolzano-Weierstrass theorem}\\
+    \Downarrow\\
+    \text{Weierestrass's extreme value theorem}\\
+    \Downarrow\\
+    \text{Fermat's theorem}\\
+    \Downarrow\\
+    \text{Roll's theorem}\\
+    \Downarrow\\
+    \text{Mean value theorem}
+  \end{array}
+\end{equation}
 $$
 
 
