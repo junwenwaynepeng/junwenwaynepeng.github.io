@@ -56,7 +56,7 @@ These theorems exemplify the elegance of mathematics. In a cohesive progression,
 $$
 \begin{equation}
   \begin{array}[c]
-    \text{Bolzano-Weierstrass theorem}\\\\
+    \mbox{Bolzano-Weierstrass theorem}\\\\
     \Downarrow\\\\
     \text{Weierestrass's extreme value theorem}\\\\
     \Downarrow\\\\
@@ -74,9 +74,9 @@ $$
 Many applications of the mean value theorem (MVT) employ a strategy similar to the one used in proving MVT itself. This strategy typically involves defining a second function, denoted as $h(x)$, which incorporates the function of interest, $f(x)$, along with other variables. Subsequently, MVT is applied to $h(x)$ to derive the desired outcome for $f(x). To illustrate this concept, let's delve into the following example.
 
 **Example.** Show the following statement: <div id='question-question-calculus1-ch4-proof-mvt7'></div>
-**proof.** <div id='answer-question-calculus1-ch4-proof-mvt7'></div>
+**proof.** <div id='answer-question-calculus1-ch4-proof-mvt7'></div></p><div style="text-align: right;">∎</div>
 
-<p style="color:red">Of course, the approach outlined above is not the sole way to utilize the Mean Value Theorem. Another valuable application of this theorem is to directly derive useful inequalities.</p><div style="text-align: right;">∎</div>
+<p style="color:red">Of course, the approach outlined above is not the sole way to utilize the Mean Value Theorem. Another valuable application of this theorem is to directly derive useful inequalities.
 
 **Example.** Show the following statement: <div id='question-question-calculus1-ch4-proof-mvt8'></div>
 **proof.** <div id='answer-question-calculus1-ch4-proof-mvt8'></div><div style="text-align: right;">∎</div>
