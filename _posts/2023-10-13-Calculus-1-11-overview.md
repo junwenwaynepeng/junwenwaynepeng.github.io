@@ -42,20 +42,21 @@ $$f'(c)=\frac{f(a)-f(b)}{a-b}$$.
 
 These theorems exemplify the elegance of mathematics. In a cohesive progression, we observe the relationships among these fundamental statements:
 $$
-\begin{equation}
-  \begin{array}{c}
-    \text{Bolzano-Weierstrass theorem}\\
-    \Downarrow\\
-    \text{Weierestrass's extreme value theorem}\\
-    \Downarrow\\
-    \text{Fermat's theorem}\\
-    \Downarrow\\
-    \text{Roll's theorem}\\
-    \Downarrow\\
-    \text{Mean value theorem}
-  \end{array}
-\end{equation}
+\begin{align}
+  \text{Bolzano-Weierstrass theorem}\\\\
+  \Downarrow\\\\
+  \text{Weierestrass's extreme value theorem}\\\\
+  \Downarrow\\\\
+  \text{Fermat's theorem}\\\\
+  \Downarrow\\\\
+  \text{Roll's theorem}\\\\
+  \Downarrow\\\\
+  \text{Mean value theorem}
+\end{align}
 $$
 
+### Stratgy of using MVT
+
+Many application of MVT use the same stratgy as the stratgy of proving MVT. We always start by define a second function, say $g(x)$, in terms of $f(x)$, and apply MVT on $g(x)$ to derive a desired result for $f(x)$. Let me use the following example to illustrate the ideal.
 
 
