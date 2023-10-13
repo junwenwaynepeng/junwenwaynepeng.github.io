@@ -46,7 +46,7 @@ data:
   -
     folder: question
     file: calculus1-ch4-proof
-    id: mvt1
+    id: 104-1-8a
   -
     folder: question
     file: calculus1-algorithm
@@ -72,7 +72,7 @@ expandable-answer: true
 
 9. <div id='question-question-calculus1-ch3-q5'></div>
 
-10. <div id='question-question-calculus1-ch4-proof-mvt1'></div>
+10. <div id='question-question-calculus1-ch4-proof-104-1-8a'></div>
 
 Algorithm Homework:
 

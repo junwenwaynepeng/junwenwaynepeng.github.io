@@ -1,0 +1,5 @@
+109-0105-3:
+  question: |
+    1. Suppose that $f(x)\leq g(x)\leq h(x)$ and $f(x)$, $h(x)$ are differentiable at $a$ with $f(a)=h(a)$. Show that $g(x)$ is differentiable at $a$ and find $g'(a)$.
+    2. Give an example of functions $f(x)$, $g(x)$, and $h(x)$ such that $f(x)\leq g(x)\leq h(x)$, $f'(a)=h'(a)$ but $g(x)$ is not differentiable at $a$.
+  answer: not yet

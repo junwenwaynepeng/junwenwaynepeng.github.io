@@ -66,7 +66,7 @@ $$
 
 ### Stratgy of using MVT
 
-Many application of MVT use the same stratgy as the stratgy of proving MVT. We always start by define a second function, say $h(x)$, in terms of $f(x)$ and other terms, and apply MVT on $h(x)$ to derive a desired result for $f(x)$. Let me use the following example to illustrate the ideal.
+Many applications of the Mean Value Theorem (MVT) employ a strategy similar to the one used in proving MVT itself. This strategy typically involves defining a second function, denoted as $h(x)$, which incorporates the function of interest, $f(x), along with other variables. Subsequently, MVT is applied to $h(x)$ to derive the desired outcome for $f(x). To illustrate this concept, let's delve into the following example.
 
 **Example.** Show the following statement: <div id='question-question-calculus1-ch4-proof-mvt7'></div>
 **proof.** <div id='answer-question-calculus1-ch4-proof-mvt7'></div>
