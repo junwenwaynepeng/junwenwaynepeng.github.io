@@ -6,6 +6,13 @@ sagecell: true
 head-package:
   -
     file: "package/sagecell.html"
+data:
+  -
+    folder: question
+    file: calculus1-ch4-proof
+    id: mvt7
+show-answer: false
+expandable-answer: false
 ---
 
 ## Mean Value Theorem
@@ -42,21 +49,25 @@ $$f'(c)=\frac{f(a)-f(b)}{a-b}$$.
 
 These theorems exemplify the elegance of mathematics. In a cohesive progression, we observe the relationships among these fundamental statements:
 $$
-\begin{align}
-  \text{Bolzano-Weierstrass theorem}\\\\
-  \Downarrow\\\\
-  \text{Weierestrass's extreme value theorem}\\\\
-  \Downarrow\\\\
-  \text{Fermat's theorem}\\\\
-  \Downarrow\\\\
-  \text{Roll's theorem}\\\\
-  \Downarrow\\\\
-  \text{Mean value theorem}
+\begin{equation}
+  \begin{array}[c]
+    \text{Bolzano-Weierstrass theorem}\\\\
+    \Downarrow\\\\
+    \text{Weierestrass's extreme value theorem}\\\\
+    \Downarrow\\\\
+    \text{Fermat's theorem}\\\\
+    \Downarrow\\\\
+    \text{Roll's theorem}\\\\
+    \Downarrow\\\\
+    \text{Mean value theorem}
+  \end{array}
 \end{align}
 $$
 
 ### Stratgy of using MVT
 
-Many application of MVT use the same stratgy as the stratgy of proving MVT. We always start by define a second function, say $g(x)$, in terms of $f(x)$, and apply MVT on $g(x)$ to derive a desired result for $f(x)$. Let me use the following example to illustrate the ideal.
+Many application of MVT use the same stratgy as the stratgy of proving MVT. We always start by define a second function, say $h(x)$, in terms of $f(x)$ and other terms, and apply MVT on $h(x)$ to derive a desired result for $f(x)$. Let me use the following example to illustrate the ideal.
 
+**Example.** Show the following statement: <div id='question-question-calculus1-ch4-proof-mvt7'></div>
+**proof.** <div id='answer-question-calculus1-ch4-proof-mvt7'></div>
 
