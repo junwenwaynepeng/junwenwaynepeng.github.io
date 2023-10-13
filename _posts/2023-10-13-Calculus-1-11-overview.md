@@ -93,7 +93,7 @@ Many applications of the mean value theorem (MVT) employ a strategy similar to t
 The determination of whether a function is increasing or decreasing can be made through the use of the first derivative.
 **Theorem.** A differentiable function $f$ defined on an open interval $I$ satisfies $f'(x) > 0$ for all $x$ in $I$ if and only if $f$ is increasing on $I$.
 
-#### Increasing => slope becomes larger
+#### Increasing <=> slopes are positive
 <div class='compute'>
 exp = plot(e^x+100,x,5,10)
 l1 = plot(e^7*(x-7)+e^7+100,x,6,8,color='red')
@@ -102,7 +102,7 @@ l3 = plot(e^9*(x-9)+e^9+100,x,8,10,color='red')
 (exp+l1+l2+l3).show()
 </div>
 
-#### Decreasing => slope becomes smaller 
+#### Decreasing <=> slopes are negative 
 <div class='compute'>
 exp = plot(-(e^x+100),x,5,10)
 l1 = plot(-e^7*(x-7)-(e^7+100),x,6,8,color='red')
@@ -129,7 +129,7 @@ Note that the point $c$ in the above test is a critical point of $f$, meaning $f
 
 The Second Derivative Test offers a convenient way to determine the concavity of the graph at a critical point and can help identify local extrema with ease. However, it might be inconclusive for some cases, such as functions like $f(x) = x^4$. In such scenarios, we have to revert to using the First Derivative Test to make a definitive determination regarding local extrema.
 
-#### Convex => slope is increasing
+#### Convex <=> slope is increasing
 <div class='compute'>
 f(x)=x^2+1
 @interact
@@ -141,7 +141,7 @@ def _(n=(5,[3,4,5,6,7,8,9,10])):
     show(P+sum(tangent_lines))
 </div>
 
-#### concave => slope is decreasing
+#### Concave <=> slope is decreasing
 <div class='compute'>
 f(x)=-(x^2+1)
 @interact
