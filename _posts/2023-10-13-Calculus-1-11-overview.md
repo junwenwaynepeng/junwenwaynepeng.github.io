@@ -56,7 +56,7 @@ These theorems exemplify the elegance of mathematics. In a cohesive progression,
 $$
 \begin{equation}
   \begin{array}[c]
-    \mbox{Bolzano-Weierstrass theorem}\\\\
+  \text{Bolzano-Weierstrass theorem}\\\\
     \Downarrow\\\\
     \text{Weierestrass's extreme value theorem}\\\\
     \Downarrow\\\\
