@@ -54,7 +54,7 @@ $$f'(c)=\frac{f(a)-f(b)}{a-b}$$.
 These theorems exemplify the elegance of mathematics. In a cohesive progression, we observe the relationships among these fundamental statements:
 $$
 \begin{equation}
-\begin{array}[c]
+\begin{array}{c}
 \text{Bolzano-Weierstrass theorem}\\\\
 \Downarrow\\\\
 \text{Weierestrass's extreme value theorem}\\\\
