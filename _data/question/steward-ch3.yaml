@@ -35,7 +35,7 @@ review-71:
     We have $g'(x)= \frac{1}{3}(1+x)^{-2/3}$ and $g'(0)=\frac{1}{3}$. Thus, $g(x)\approx g(0)+g'(0)(x-0) = 1+\frac{1}{3}x$. We then conclude that $\sqrt[3]{0.95}=g(-0.05)\approx 1-\frac{0.05}{3}$ and $\sqrt[3]{1.1} = g(0.1)\approx 1+\frac{0.1}{3}$.
 10-31:
   question: |
-    Use a linear approximation to estimate the given number.
+    Use a linear approximation to estimate the given number, and use concavity to determine if your estimate is an over or under estimate.
     1. (1.999)^4
     2. 1/4.002
   answer: |
