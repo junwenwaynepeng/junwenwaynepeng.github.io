@@ -78,7 +78,7 @@ Many applications of the mean value theorem (MVT) employ a strategy similar to t
 
 <p style="color:red">Of course, the approach outlined above is not the sole way to utilize the Mean Value Theorem. Another valuable application of this theorem is to directly derive useful inequalities.
 
-**Example.** Show the following statement: <div id='question-question-calculus1-ch4-proof-mvt8'></div>
+**Example.** <div id='question-question-calculus1-ch4-proof-mvt8'></div>
 **proof.** <div id='answer-question-calculus1-ch4-proof-mvt8'></div><div style="text-align: right;">∎</div>
 
 ## What does derivatives tell us about the graph of a function
