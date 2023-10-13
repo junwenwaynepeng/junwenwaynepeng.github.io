@@ -63,6 +63,6 @@ Algorithm Homework:
 <div id='question-question-calculus1-algorithm-newton-method'></div>
 
 <div class='compute'>
-  print(diff(sin(x^2), x, 1))
+print(diff(sin(x^2), x, 1))
 print(diff(sin(x^2), x, 2))
 </div>
