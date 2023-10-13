@@ -35,7 +35,7 @@ By the squeeze theorem, $\lim_{i}x_{n_i}$ exists.<div style="text-align: right;"
 
 **Theorem(Fermat)** If $f(x)$ is a continuous function on a closed interval with $f(c)$ an extreme values of $f$, and $f'(c)$ exists, then $f'(c)=0$.
 
-**Theorem(Fermat's theorem in terms of critical points)** If $f(x)$ is a continuous function on a closed interval with $f(c)$ an extreme values of $f$, then $f$ is a critical points. In particular, $\{x|f(x) is a local extreme\}\subseteq\{x|x\text{ is a critical point of }f\}$.
+**Theorem(Fermat's theorem in terms of critical points)** If $f(x)$ is a continuous function on a closed interval with $f(c)$ an extreme values of $f$, then $f$ is a critical points. In particular, $\{x|f(x)\text{ is a local extreme}\}\subseteq\{x|x\text{ is a critical point of }f\}$.
 
 **proof.** Weierstrass's theorem implies that such a $c$ exists. Thus, we only need to show that $f'(c)=0$. We suppose it is a local maximum, i.e. $f(c)\geq f(x)$ for all $x$ near $c$. We then have
 $$\frac{f(x)-f(c)}{x-c}\geq 0$$
