@@ -13,7 +13,7 @@ head-package:
 ### From Bolzano-Weierstrass to Roll's theorem
 
 **Theorem(Bolzano-Weierstrass)** Let $\{x_n\}$ is a sequence in an closed interval $[a,b]$, then there exists a convergent subsequence of $\{x_n\}$.
-**proof.** Let $a_0=a$ and $b_0=b$. We will recursively define $a_i$ and $b_i$. First, we consider two interval $[a_0,\frac{a_0+b_0}{2}]$ and $[\frac{a_0+b_0}{2},b_0]$. Since $\{x_n\} has infinitely many terms, one of the intervals, denoted by $I=[a_1,b_1]$, contains infinitely many terms of the sequence. We then can find the smallest integer $n_1$ such that $x_{n_1}$ is in $I$. By iterating the above process, we will get three sequences $\{a_i\}$, $\{b_i\}$, and $\{x_{n_i}\}$, where $\{x_{n_i}\}$ is a subsequence of $\{x_n\}$. Note that $a_i\leq x_i\leq b_i$ and
+**proof.** Let $a_0=a$ and $b_0=b$. We will recursively define $a_i$ and $b_i$. First, we consider two interval $[a_0,\frac{a_0+b_0}{2}]$ and $[\frac{a_0+b_0}{2},b_0]$. Since $\{x_n\}$ has infinitely many terms, one of the intervals, denoted by $I=[a_1,b_1]$, contains infinitely many terms of the sequence. We then can find the smallest integer $n_1$ such that $x_{n_1}$ is in $I$. By iterating the above process, we will get three sequences $\{a_i\}$, $\{b_i\}$, and $\{x_{n_i}\}$, where $\{x_{n_i}\}$ is a subsequence of $\{x_n\}$. Note that $a_i\leq x_i\leq b_i$ and
 $$\lim_{i\to\infty}a_i =\lim_{i\to\infty} b_i.$$
 By the squeeze theorem, $\lim_{i}x_{n_i}$ exists.<div style="text-align: right;">∎</div>
 
@@ -34,4 +34,5 @@ Since we assume $f'(c)$ exists, the left limit has to be equal to the right limi
 2. $f'(x)$ exists on $(a,b)$.
 3. $f(a)=f(b)$.
 Then, there exists $c\in (a,b)$ such that $f'(c)=0$.
-**proof.**
+**proof.** Such a $c$ exists in $[a,b]$ by Fermat's theorem. We only need to show that $c$ is not $a$ or $b$. Suppose $f$ is a constant function, then we have $f'(x)=0$ at any point in $(a,b)$. Otherwise, $f(a)$ and $f(b)$ cannot be a globel maximum or minimum. Suppose it is not a globel maximum, then there exists $c\in(a,b)$ such that $f(c)$ is a local maximum and $f(c)>f(a)=f(b)$. Thus, we find a $c$ in the interial of $[a,b]$. Similar argument will work if we assume $f(a)$ and $f(b)$ is not a globle minimum.
+
