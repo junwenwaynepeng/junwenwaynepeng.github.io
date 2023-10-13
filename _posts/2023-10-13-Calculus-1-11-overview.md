@@ -42,7 +42,7 @@ $$f'(c)=\frac{f(a)-f(b)}{a-b}$$.
 
 These theorems show the beauty of mathematics. Indeed, we see the coherent of the statements
 $$
-\begin{align}
+\begin{cases}
 \text{Bolzano-Weierstrass theorem}\\
 \Downarrow\\
 \text{Weierestrass's extreme value theorem}\\
@@ -52,7 +52,7 @@ $$
 \text{Roll's theorem}\\
 \Downarrow\\
 \text{Mean value theorem}
-\end{align}
+\end{cases}
 $$
 
 
