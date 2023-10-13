@@ -26,12 +26,12 @@ mvt7:
   question: |
     If $f(x)$ is differentiable and $f'(x)\neq 1$ for all real numbers $x$, then $f$ has at most one fixed point.
   answer: |
-    We need to show that if $f$ has fixed points, then $f$ has at most one fixed point. Let $g(x)=f(x)-x$. Then, it is equivalent to show that $g(x)=0$ has at most one solution. If there exists two solutions $a$ and $b$, then there exists a $c$ between $a$ and $b$ such that $g'(c)=0$ by mean value theorem. However, $g'(c)=0$ implies $f'(c)=1$, which contradicts to the assumption. Thus, we can conclude that $f(x)$ has at most one fixed point.
+    We need to show that if $f$ has fixed points, then $f$ has at most one fixed point. Let $g(x)=f(x)-x$ where $g$ is also continuous and differentiable due to its construction. Then, it is equivalent to show that $g(x)=0$ has at most one solution. If there exists two solutions $a$ and $b$, then there exists a $c$ between $a$ and $b$ such that $g'(c)=0$ by mean value theorem. However, $g'(c)=0$ implies $f'(c)=1$, which contradicts to the assumption. Thus, we can conclude that $f(x)$ has at most one fixed point.
 mvt8:
   question: |
     Let $0<a<b$. Show that $\dfrac{b-a}{b}<\ln\dfrac{b}{a}<\dfrac{b-a}{a}.$
   answer: |
-    Consider the function $f(x)=\ln(x)$. By the mean value theorem, there exists a real number $c$ with $a<c<b$ such that
+    Consider the function $f(x)=\ln(x)$ which is continuous and differentiable on $(0,\infty)$. By the mean value theorem, there exists a real number $c$ with $a<c<b$ such that
     $$
     \ln\left(\frac{b}{a}\right)=\ln(b)-\ln(a)=\frac{1}{c}(b-a).
     $$

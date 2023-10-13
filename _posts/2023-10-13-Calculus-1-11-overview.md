@@ -76,7 +76,27 @@ Many applications of the mean value theorem (MVT) employ a strategy similar to t
 **Example.** Show the following statement: <div id='question-question-calculus1-ch4-proof-mvt7'></div>
 **proof.** <div id='answer-question-calculus1-ch4-proof-mvt7'></div>
 
-<p style="color:red">Of course, this is not the only stratge to use the mean value theorem. We can also directly use the mean value theorem to derive some useful inequality</p>
+<p style="color:red">Of course, the approach outlined above is not the sole way to utilize the Mean Value Theorem. Another valuable application of this theorem is to directly derive useful inequalities.</p><div style="text-align: right;">∎</div>
 
 **Example.** Show the following statement: <div id='question-question-calculus1-ch4-proof-mvt8'></div>
-**proof.** <div id='answer-question-calculus1-ch4-proof-mvt8'></div>
+**proof.** <div id='answer-question-calculus1-ch4-proof-mvt8'></div><div style="text-align: right;">∎</div>
+
+## What does derivatives tell us about the graph of a function
+
+### The first derivative
+
+**Definition.** A real function $f$ defined on an interval $I$ is characterized as follows:
+- If for any $x_1$ and $x_2$ in $I$ where $x_1 < x_2$, it holds that $f(x_1) \leq f(x_2)$, then $f$ is referred to as an increasing function.
+- If for any $x_1$ and $x_2$ in $I$ where $x_1 < x_2$, it holds that $f(x_1) \geq f(x_2)$, then $f$ is described as a decreasing function.
+- In the case that $f(x_1) < f(x_2)$ ($f(x_2) > f(x_2)$), where $x_1$ and $x_2$ are in $I$ and $x_1 < x_2$, then $f$ is classified as strictly increasing (decreasing).
+
+The determination of whether a function is increasing or decreasing can be made through the use of the first derivative.
+**Theorem.** A differentiable function $f$ defined on an open interval $I$ satisfies $f'(x) > 0$ for all $x$ in $I$ if and only if $f$ is increasing on $I$.
+
+**The first derivative test.** Suppose $f$ is a differentiable function defined on an open interval $I$, and let $c$ belong to $I$.
+1. If $f'(x) < 0$ for $x < c$ in the vicinity of $c$ and $f'(x) > 0$ for $x > c$ in the vicinity of $c$, then $f(c)$ represents a local minimum value.
+2. If $f'(x) > 0$ for $x < c$ in the vicinity of $c$ and $f'(x) < 0$ for $x > c$ in the vicinity of $c`, then $f(c)$ represents a local maximum value.
+
+Note that the point $c$ in the above test is a critical point of $f$, meaning $f'(c) = 0$.
+
+### The second derivative
