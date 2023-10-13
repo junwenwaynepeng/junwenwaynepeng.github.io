@@ -24,15 +24,19 @@ expandable-answer: false
 ### From Bolzano-Weierstrass to Roll's theorem
 
 **Theorem(Bolzano-Weierstrass)** Let $\{x_n\}$ is a sequence in an closed interval $[a,b]$, then there exists a convergent subsequence of $\{x_n\}$.
+
 **proof.** Let $a_0=a$ and $b_0=b$. We will recursively define $a_i$ and $b_i$. First, we consider two intervals $[a_0,\frac{a_0+b_0}{2}]$ and $[\frac{a_0+b_0}{2},b_0]$. Since $\{x_n\}$ has infinitely many terms, one of the intervals, denoted by $I=[a_1,b_1]$, contains infinitely many terms of the sequence. We then can find the smallest integer $n_1$ such that $x_{n_1}$ is in $I$. By iterating the above process, we will get three sequences $\{a_i\}$, $\{b_i\}$, and $\{x_{n_i}\}$, where $\{x_{n_i}\}$ is a subsequence of $\{x_n\}$. Note that $a_i\leq x_i\leq b_i$ and
 $$\lim_{i\to\infty}a_i =\lim_{i\to\infty} b_i.$$
 By the squeeze theorem, $\lim_{i}x_{n_i}$ exists.<div style="text-align: right;">∎</div>
 
 **Theorem(Weierstrass's extreme value theorem)** If $f(x)$ is a continuous function on a closed interval $[a,b]$, then $f(x)$ attains its local extreme values on $[a,b]$.
+
 **proof.** For the sake of contradiction, we suppose we cannot find a maximum of $f$ on $[a,b]$. It is equivalent to say, for any positive integer $n$, we can find an $x_n\in[a,b]$ such that $f(x_n)>n$. By Bolzano-Weierstrass's theorem, we have a convergent subsequence $\{x_{n_i}\}$ of $\{x_n\}$. Note that $f(x_{n_i})\geq n_i$, so $f(x_{n_i})\to\infty$ as $x_{n_i}\to x'$ for some $x'\in [a,b]$. This contradicts to the fact that $f(x)$ is continuous on $[a,b]$. Therefore, we must have a local maximum. Since $-f$ also satisfyies the assumption of this theorem, $-f$ has a local maximum in $[a,b]$, which implies $f$ has a local minimum in $[a,b]$.<div style="text-align: right;">∎</div>
 
 **Theorem(Fermat)** If $f(x)$ is a continuous function on a closed interval with $f(c)$ an extreme values of $f$, and $f'(c)$ exists, then $f'(c)=0$.
+
 **Theorem(Fermat's theorem in terms of critical points)** If $f(x)$ is a continuous function on a closed interval with $f(c)$ an extreme values of $f$, then $f$ is a critical points. In particular, $\{x|f(x) is a local extreme\}\subseteq\{x|x\text{ is a critical point of }f\}$.
+
 **proof.** Weierstrass's theorem implies that such a $c$ exists. Thus, we only need to show that $f'(c)=0$. We suppose it is a local maximum, i.e. $f(c)\geq f(x)$ for all $x$ near $c$. We then have
 $$\frac{f(x)-f(c)}{x-c}\geq 0$$
 when $x<c$ and $x$ is near $c$. Thus, $\displaystyle\lim_{x\to c^-}\frac{f(x)-f(c)}{x-c}\geq 0$. On the other hand, we have
@@ -49,6 +53,7 @@ Then, there exists $c\in (a,b)$ such that $f'(c)=0$.
 
 **Theorem(Mean value theorem)** If $f(x)$ is continuous on $[a,b]$ and is differentiable on $(a,b)$, then there exists $c\in(a,b)$ such that 
 $$f'(c)=\frac{f(a)-f(b)}{a-b}$$.
+
 **proof.** Let $g(x)=f(x)-f(a)-\frac{f(b)-f(a)}{b-a}(x-a)$. We note that $g(a)=g(b)=0$. By Roll's theorem, there exists $c\in(a,b)$ such that $g'(c)=0$. Furthermore, $g'(x)=f'(x)-\frac{f(b)-f(a)}{b-a}$, so $g'(c)=0$ implies $f'(x)=\frac{f(b)-f(a)}{b-a}$.<div style="text-align: right;">∎</div>
 
 These theorems exemplify the elegance of mathematics. In a cohesive progression, we observe the relationships among these fundamental statements:
@@ -73,11 +78,13 @@ $$
 Many applications of the mean value theorem (MVT) employ a strategy similar to the one used in proving MVT itself. This strategy typically involves defining a second function, denoted as $h(x)$, which incorporates the function of interest, $f(x)$, along with other variables. Subsequently, MVT is applied to $h(x)$ to derive the desired outcome for $f(x). To illustrate this concept, let's delve into the following example.
 
 **Example.** Show the following statement: <div id='question-question-calculus1-ch4-proof-mvt7'></div>
+
 **proof.** <div id='answer-question-calculus1-ch4-proof-mvt7'></div></p><div style="text-align: right;">∎</div>
 
 <p style="color:red">Of course, the approach outlined above is not the sole way to utilize the Mean Value Theorem. Another valuable application of this theorem is to directly derive useful inequalities.
 
 **Example.** <div id='question-question-calculus1-ch4-proof-mvt8'></div>
+
 **proof.** <div id='answer-question-calculus1-ch4-proof-mvt8'></div><div style="text-align: right;">∎</div>
 
 ## What does derivatives tell us about the graph of a function
