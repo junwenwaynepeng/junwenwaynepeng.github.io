@@ -35,13 +35,13 @@ By the squeeze theorem, $\lim_{i}x_{n_i}$ exists.<div style="text-align: right;"
 
 **Theorem(Fermat)** If $f(x)$ is a continuous function on a closed interval with $f(c)$ an extreme values of $f$, and $f'(c)$ exists, then $f'(c)=0$.
 
-**Theorem(Fermat's theorem in terms of critical points)** If $f(x)$ is a continuous function on a closed interval with $f(c)$ an extreme values of $f$, then $f$ is a critical points. In particular, $\{x|f(x)\text{ is a local extreme}\}\subseteq\{x|x\text{ is a critical point of }f\}$.
+**Theorem(Fermat's theorem in terms of critical points)** If $f(x)$ is a continuous function on a closed interval with $f(c)$ an extreme values of $f$, then $f$ is a critical points. In particular, $\\{x|f(x)\text{ is a local extreme}\\}\subseteq\\{x|x\text{ is a critical point of }f\\}$.
 
 **proof.** Weierstrass's theorem implies that such a $c$ exists. Thus, we only need to show that $f'(c)=0$. We suppose it is a local maximum, i.e. $f(c)\geq f(x)$ for all $x$ near $c$. We then have
 $$\frac{f(x)-f(c)}{x-c}\geq 0$$
 when $x<c$ and $x$ is near $c$. Thus, $\displaystyle\lim_{x\to c^-}\frac{f(x)-f(c)}{x-c}\geq 0$. On the other hand, we have
 $$\frac{f(x)-f(c)}{x-c}\leq 0$$
-when $x>c$ and $x$. Thus, $\displaystyle\lim_{x\to c^+}\frac{f(x)-f(c)}{x-c}\leq 0$.
+when $x>c$ and $x$ is near $c$. Thus, $\displaystyle\lim_{x\to c^+}\frac{f(x)-f(c)}{x-c}\leq 0$.
 Since we assume $f'(c)$ exists, the left limit has to be equal to the right limit, and we conclude that $f'(c)=0$.<div style="text-align: right;">∎</div>
 
 **Theorem(Roll)** Suppose $f(x)$ satisfies the following three hypotheses:
@@ -49,6 +49,7 @@ Since we assume $f'(c)$ exists, the left limit has to be equal to the right limi
 2. $f'(x)$ exists on $(a,b)$.
 3. $f(a)=f(b)$.
 Then, there exists $c\in (a,b)$ such that $f'(c)=0$.
+
 **proof.** Such a $c$ exists in $[a,b]$ by Fermat's theorem. We only need to show that $c$ is not $a$ or $b$. Suppose $f$ is a constant function, then we have $f'(x)=0$ at any point in $(a,b)$. Otherwise, $f(a)$ and $f(b)$ cannot be a globel maximum or minimum. Suppose it is not a globel maximum, then there exists $c\in(a,b)$ such that $f(c)$ is a local maximum and $f(c)>f(a)=f(b)$. Thus, we find a $c$ in the interial of $[a,b]$. Similar argument will work if we assume $f(a)$ and $f(b)$ is not a globle minimum.<div style="text-align: right;">∎</div>
 
 **Theorem(Mean value theorem)** If $f(x)$ is continuous on $[a,b]$ and is differentiable on $(a,b)$, then there exists $c\in(a,b)$ such that 
