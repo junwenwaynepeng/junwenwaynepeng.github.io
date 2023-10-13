@@ -39,8 +39,8 @@ review-71:
     1. (1.999)^4
     2. 1/4.002
   answer: |
-    1. Let f(x)=(2+x)^4. Then, $(1.999)^4 = f(-0.001)\approx f(0)+f'(0)(x-0) = 16-32\cdot 0.001$.
-    2. Let g(x)=\frac{1}{4+x}. Then, $\frac{1}{4.002}=g(0.002)\approx g(0)+g'(0)(x-0) = \frac{1}{4}+\frac{1}{16}\cdot 0.002$. 
+    1. Let f(x)=(2+x)^4. Then, $(1.999)^4 = f(-0.001)\approx f(0)+f'(0)(x-0) = 16-32\cdot 0.001$. Since $f''$ is positive near $0$, the graph of $f(x)$ is concave upward, and so the estimate is an under estimate.
+    2. Let g(x)=\frac{1}{4+x}. Then, $\frac{1}{4.002}=g(0.002)\approx g(0)+g'(0)(x-0) = \frac{1}{4}+\frac{1}{16}\cdot 0.002$. Since $f''$ is negative near $0$, the graph of $g(x)$ is concave downward, and so the estimate is an over estimate.
 10-43:
   question: |
     The circumference of a sphere was measured to be 84 cm with a possible error of 0.5 cm.
