@@ -54,17 +54,17 @@ $$f'(c)=\frac{f(a)-f(b)}{a-b}$$.
 These theorems exemplify the elegance of mathematics. In a cohesive progression, we observe the relationships among these fundamental statements:
 $$
 \begin{equation}
-  \begin{array}[c]
-  \text{Bolzano-Weierstrass theorem}\\\\
-    \Downarrow\\\\
-    \text{Weierestrass's extreme value theorem}\\\\
-    \Downarrow\\\\
-    \text{Fermat's theorem}\\\\
-    \Downarrow\\\\
-    \text{Roll's theorem}\\\\
-    \Downarrow\\\\
-    \text{Mean value theorem}
-  \end{array}
+\begin{array}[c]
+\text{Bolzano-Weierstrass theorem}\\\\
+\Downarrow\\\\
+\text{Weierestrass's extreme value theorem}\\\\
+\Downarrow\\\\
+\text{Fermat's theorem}\\\\
+\Downarrow\\\\
+\text{Roll's theorem}\\\\
+\Downarrow\\\\
+\text{Mean value theorem}
+\end{array}
 \end{equation}
 $$
 
