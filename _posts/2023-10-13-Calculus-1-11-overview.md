@@ -61,7 +61,7 @@ $$
     \Downarrow\\\\
     \text{Mean value theorem}
   \end{array}
-\end{align}
+\end{equation}
 $$
 
 ### Stratgy of using MVT
