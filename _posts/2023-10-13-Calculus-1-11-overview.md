@@ -93,6 +93,14 @@ Many applications of the mean value theorem (MVT) employ a strategy similar to t
 The determination of whether a function is increasing or decreasing can be made through the use of the first derivative.
 **Theorem.** A differentiable function $f$ defined on an open interval $I$ satisfies $f'(x) > 0$ for all $x$ in $I$ if and only if $f$ is increasing on $I$.
 
+<div class='compute'>
+e = plot(e^x,x,0.5,10)
+l1 = plot(e^2(x-2)+e^2,x,0,4,color=['red'])
+l2 = plot(e^5(x-5)+e^5,x,3,7,color=['red'])
+l3 = plot(e^8(x-8)+e^8,x,6,10,color=['red'])
+(e+l1+l2+l3).show()
+</div>
+
 **The first derivative test.** Suppose $f$ is a differentiable function defined on an open interval $I$, and let $c$ belong to $I$.
 1. If $f'(x) < 0$ for $x < c$ in the vicinity of $c$ and $f'(x) > 0$ for $x > c$ in the vicinity of $c$, then $f(c)$ represents a local minimum value.
 2. If $f'(x) > 0$ for $x < c$ in the vicinity of $c$ and $f'(x) < 0$ for $x > c$ in the vicinity of $c`, then $f(c)$ represents a local maximum value.
@@ -100,3 +108,13 @@ The determination of whether a function is increasing or decreasing can be made 
 Note that the point $c$ in the above test is a critical point of $f$, meaning $f'(c) = 0$.
 
 ### The second derivative
+
+**Definition.** If $f$ is twice differentiable, the second derivative tells us about the concavity of the graph. Specifically:
+- If $f''(x) > 0$, the graph is concave upward (convex) at $x$.
+- If $f''(x) < 0$, the graph is concave down(concave) at $x$.
+
+**Second Derivative Test.** Let $f$ be a twice-differentiable function on an open interval $I$ with a critical point at $c$.
+1. If $f'(c) = 0$ and $f''(c) > 0$, then $f(c)$ is a local minimum value.
+2. If $f'(c) = 0$ and $f''(c) < 0$, then $f(c)$ is a local maximum value.
+
+The Second Derivative Test offers a convenient way to determine the concavity of the graph at a critical point and can help identify local extrema with ease. However, it might be inconclusive for some cases, such as functions like $f(x) = x^4$. In such scenarios, we have to revert to using the First Derivative Test to make a definitive determination regarding local extrema.
