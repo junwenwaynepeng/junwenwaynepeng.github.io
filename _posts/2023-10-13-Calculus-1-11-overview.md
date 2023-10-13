@@ -91,6 +91,7 @@ Many applications of the mean value theorem (MVT) employ a strategy similar to t
 - In the case that $f(x_1) < f(x_2)$ ($f(x_2) > f(x_2)$), where $x_1$ and $x_2$ are in $I$ and $x_1 < x_2$, then $f$ is classified as strictly increasing (decreasing).
 
 The determination of whether a function is increasing or decreasing can be made through the use of the first derivative.
+
 **Theorem.** A differentiable function $f$ defined on an open interval $I$ satisfies $f'(x) > 0$ for all $x$ in $I$ if and only if $f$ is increasing on $I$.
 
 #### Increasing <=> slopes are positive
