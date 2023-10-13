@@ -131,9 +131,24 @@ The Second Derivative Test offers a convenient way to determine the concavity of
 
 #### Convex => slope is increasing
 <div class='compute'>
-sqare = plot(x^2+1,x,-1,1)
-tangent lines = [plot(derivative(x^2+1,a)*(x-a)+a^2+1) for a in [-0.8,-0.5,0,0.5,0.8]]
-sum([sqare]+tangent lines).show()
+f(x)=x^2+1
+@interact
+def _(n=(5,[3,4,5,6,7,8,9,10])):
+    P=plot(f,(x,-1,1))
+    fprime=derivative(f,x)
+    points = [-1+2*(k)/n for k in range(n+1)]
+    tangent_lines = [plot(fprime(c)*(x-c)+f(c),x,c-0.5,c+0.5,color="red") for c in points]
+    show(P+sum(tangent_lines))
 </div>
 
 #### concave => slope is decreasing
+<div class='compute'>
+f(x)=-(x^2+1)
+@interact
+def _(n=(5,[3,4,5,6,7,8,9,10])):
+    P=plot(f,(x,-1,1))
+    fprime=derivative(f,x)
+    points = [-1+2*(k)/n for k in range(n+1)]
+    tangent_lines = [plot(fprime(c)*(x-c)+f(c),x,c-0.5,c+0.5,color="red") for c in points]
+    show(P+sum(tangent_lines))
+</div>
