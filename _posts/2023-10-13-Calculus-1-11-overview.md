@@ -11,7 +11,6 @@ data:
     folder: question
     file: calculus1-ch4-proof
     id: mvt7
-data:
   -
     folder: question
     file: calculus1-ch4-proof
