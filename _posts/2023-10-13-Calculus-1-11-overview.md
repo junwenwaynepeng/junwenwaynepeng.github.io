@@ -1,6 +1,6 @@
 ---
 title: Roll's theorem, Mean Value Theorem, and the Shape of a Graph
-subtitle: the beauty of mathematical thoery
+subtitle: The beauty of mathematical thoery
 tags: [calculus, calculus-1, overview]
 sagecell: true
 head-package:
@@ -50,7 +50,7 @@ Since we assume $f'(c)$ exists, the left limit has to be equal to the right limi
 3. $f(a)=f(b)$.
 Then, there exists $c\in (a,b)$ such that $f'(c)=0$.
 
-**proof.** Such a $c$ exists in $[a,b]$ by Fermat's theorem. We only need to show that $c$ is not $a$ or $b$. Suppose $f$ is a constant function, then we have $f'(x)=0$ at any point in $(a,b)$. Otherwise, $f(a)$ and $f(b)$ cannot be a globel maximum or minimum. Suppose it is not a globel maximum, then there exists $c\in(a,b)$ such that $f(c)$ is a local maximum and $f(c)>f(a)=f(b)$. Thus, we find a $c$ in the interial of $[a,b]$. Similar argument will work if we assume $f(a)$ and $f(b)$ is not a globle minimum.<div style="text-align: right;">∎</div>
+**proof.** Such a $c$ exists in $[a,b]$ by Fermat's theorem. We only need to show that $c$ is not $a$ or $b$. Suppose $f$ is a constant function, then we have $f'(x)=0$ at any point in $(a,b)$. Otherwise, $f(a)$ and $f(b)$ cannot be a global maximum or minimum. Suppose it is not a globel maximum, then there exists $c\in(a,b)$ such that $f(c)$ is a local maximum and $f(c)>f(a)=f(b)$. Thus, we find a $c$ in the interial of $[a,b]$. Similar argument will work if we assume $f(a)$ and $f(b)$ is not a globle minimum.<div style="text-align: right;">∎</div>
 
 **Theorem(Mean value theorem)** If $f(x)$ is continuous on $[a,b]$ and is differentiable on $(a,b)$, then there exists $c\in(a,b)$ such that 
 $$f'(c)=\frac{f(a)-f(b)}{a-b}$$.
@@ -76,7 +76,7 @@ $$
 
 ### Stratgy of using MVT
 
-Many applications of the mean value theorem (MVT) employ a strategy similar to the one used in proving MVT itself. This strategy typically involves defining a second function, denoted as $h(x)$, which incorporates the function of interest, $f(x)$, along with other variables. Subsequently, MVT is applied to $h(x)$ to derive the desired outcome for $f(x). To illustrate this concept, let's delve into the following example.
+Many applications of the mean value theorem (MVT) employ a strategy similar to the one used in proving MVT itself. This strategy typically involves defining a second function, denoted as $h(x)$, which incorporates the function of interest, $f(x)$, along with other variables. Subsequently, MVT is applied to $h(x)$ to derive the desired outcome for $f(x)$. To illustrate this concept, let's delve into the following example.
 
 **Example.** Show the following statement: <div id='question-question-calculus1-ch4-proof-mvt7'></div>
 
@@ -121,7 +121,7 @@ l3 = plot(-e^9*(x-9)-(e^9+100),x,8,10,color='red')
 
 **The first derivative test.** Suppose $f$ is a differentiable function defined on an open interval $I$, and let $c$ belong to $I$.
 1. If $f'(x) < 0$ for $x < c$ in the vicinity of $c$ and $f'(x) > 0$ for $x > c$ in the vicinity of $c$, then $f(c)$ represents a local minimum value.
-2. If $f'(x) > 0$ for $x < c$ in the vicinity of $c$ and $f'(x) < 0$ for $x > c$ in the vicinity of $c`, then $f(c)$ represents a local maximum value.
+2. If $f'(x) > 0$ for $x < c$ in the vicinity of $c$ and $f'(x) < 0$ for $x > c$ in the vicinity of $c$, then $f(c)$ represents a local maximum value.
 
 Note that the point $c$ in the above test is a critical point of $f$, meaning $f'(c) = 0$.
 
