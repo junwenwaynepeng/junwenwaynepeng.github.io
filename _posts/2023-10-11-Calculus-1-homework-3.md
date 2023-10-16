@@ -46,17 +46,31 @@ expandable-answer: true
 
 1. <div id='question-question-calculus1-ch3-q9'></div>
 
+    <div id='answer-question-calculus1-ch3-q9'></div>
+
 2. <div id='question-question-steward-ch3-10-31'></div>
+
+    <div id='answer-question-steward-ch3-10-31'></div>
 
 3. <div id='question-question-steward-ch3-10-43'></div>
 
+    <div id='answer-question-steward-ch3-10-43'></div>
+
 4. <div id='question-question-calculus1-ch4-proof-mvt9'></div>
+
+    <div id='answer-question-calculus1-ch4-proof-mvt9'></div>
 
 5. <div id='question-question-calculus1-ch4-proof-109-0612-5'></div>
 
+    <div id='answer-question-calculus1-ch4-proof-109-0612-5'></div>
+
 6. <div id='question-question-calculus1-ch4-q1'></div>
 
+    <div id='answer-question-calculus1-ch4-q1'></div>
+
 7. <div id='question-question-calculus1-ch4-q2'></div>
+
+    <div id='answer-question-calculus1-ch4-q2'></div>
 
 Algorithm Homework:
 
