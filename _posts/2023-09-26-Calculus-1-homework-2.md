@@ -1,6 +1,6 @@
 ---
 title: Calculus 1 Homework 2
-subtitle: Differential techique, and Intermediate Value Theorem
+subtitle: Differential techniques, and the intermediate value theorem
 tags: [calculus 1, calculus, homework]
 sagecell: true
 head-package:
