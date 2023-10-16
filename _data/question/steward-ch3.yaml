@@ -12,10 +12,10 @@ review-9:
   answer: Applying the chain rule and the multiplication rule, we get $y' = \frac{1}{x\ln(x)}(\ln(x)+1)$.
 review-20:
   question: Calculate y'. $y=e^{x\sec x}$
-  answer: Applying the chain rule and the multiplication rule, we get $y' = e^{x\sex x}(\sec x+x\sec x\tan x)$.
+  answer: Applying the chain rule and the multiplication rule, we get $y' = e^{x\sec x}(\sec x+x\sec x\tan x)$.
 review-25:
   question: Calculate y'. $\sin(xy)=x^2-y$
-  answer: Applying the implicit differentiation, we have \cos(xy)(y+xy') = 2x - y', so $y' =\frac{2x-\cos(xy)y}{x+1}$.
+  answer: Applying the implicit differentiation, we have $\cos(xy)(y+xy') = 2x - y'$, so $y' =\frac{2x-\cos(xy)y}{x+1}$.
 review-33:
   question: Calculate y'. $y=\ln|\sec 5x+\tan 5x|$
   answer: Applying the chain rule, we have $y' = \frac{1}{\sec 5x +\tan 5x}(5\sec 5x\tan 5x+5\sec^2 5x)$.
