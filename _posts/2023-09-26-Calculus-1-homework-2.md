@@ -51,7 +51,7 @@ data:
     folder: question
     file: calculus1-algorithm
     id: ivt1
-show-answer: false
+show-answer: true
 expandable-answer: true
 ---
 <span style="color:red;">All works must be seen!</span>
