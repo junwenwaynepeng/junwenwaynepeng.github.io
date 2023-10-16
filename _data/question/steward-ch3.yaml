@@ -1,28 +1,30 @@
 review-3:
   question: Calculate y'. $y=\frac{x^2-x+2}{\sqrt{x}}$
-  answer: not yet
+  answer: We simplify $y=\frac{x^2-x+2}{\sqrt{x}} = x^{3/2}-x^{1/2}+2x^{-1/2}$, so $y' = \frac{3}{2}x^{1/2}-\frac{1}{2}x^{-1/2}-x^{-3/2}$.
 review-4:
   question: Calculate y'. $y=\frac{\tan x}{1+\cos x}$
-  answer: not yet
+  answer: Applying the quotient rule, we have $y' = \frac{\sec^2x(1+\cos x) +\tan(x)\sin(x)}{(1+\cos x)^2}$.
 review-8:
   question: Calculate y'. $xe^y=y\sin x$
-  answer: not yet
+  answer: Applying the implicit differentiation, we have $e^y+xe^yy' = y'\sin x + y\cos x$. We solve for $y'$. We get $y' = \frac{e^y-y\cos x}{\sin x-xe^y}.$ 
 review-9:
   quesiton: Calculate y'. $y=\ln(x\ln(x))$
-  answer: not yet
+  answer: Applying the chain rule and the multiplication rule, we get $y' = \frac{1}{x\ln(x)}(\ln(x)+1)$.
 review-20:
   question: Calculate y'. $y=e^{x\sec x}$
+  answer: Applying the chain rule and the multiplication rule, we get $y' = e^{x\sex x}(\sec x+x\sec x\tan x)$.
 review-25:
   question: Calculate y'. $\sin(xy)=x^2-y$
-  answer: not yet
+  answer: Applying the implicit differentiation, we have \cos(xy)(y+xy') = 2x - y', so $y' =\frac{2x-\cos(xy)y}{x+1}$.
 review-33:
   question: Calculate y'. $y=\ln|\sec 5x+\tan 5x|$
-  answer: not yet
+  answer: Applying the chain rule, we have $y' = \frac{1}{\sec 5x +\tan 5x}(5\sec 5x\tan 5x+5\sec^2 5x)$.
 review-71:
   question: |
     If $f(x)=(x-a)(x-b)(x-c)$, show that 
     $$\frac{f'(x)}{f(x)}=\frac{1}{x-a} + \frac{1}{x-b} + \frac{1}{x-c}$$
-  answer: not yet
+  answer: |
+    We have $f'(x) = (x-b)(x-c) + (x-a)(x-c) + (x-a)(x-b)$ by the general multiplication rule, so we can attain the conclusion by trivial algebraic manipulation.
 9-39:
   question: |
     If two resistors with resistances $R_1$ and $R_2$ are connected in parallel, as shown in the figure, then the total resistance $R$, measured in ohms $(\Omega)$, is given by

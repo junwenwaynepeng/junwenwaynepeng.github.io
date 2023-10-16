@@ -5,9 +5,9 @@ q1:
     By the definition, we directly compute
     $$
     \begin{align}
-    \frac{d}{dx}(\cos(x))=\lim_{h\to 0}\frac{\cos(x+h)-\cos(x)}{h}=\lim_{h\to 0}\frac{-2\sin\left(\frac{2x+h}{2}\right)\sin\left(\frac{h}{2}\right)}{h}\\\\
-    =\lim_{h\to 0}\frac{-\sin\left(x+\frac{h}{2}\right)\sin\left(\frac{h}{2}\right)}{\frac{h}{2}}\\\\
-    =-\sin(x).
+    \frac{d}{dx}(\cos(x))& =\lim_{h\to 0}\frac{\cos(x+h)-\cos(x)}{h}=\lim_{h\to 0}\frac{-2\sin\left(\frac{2x+h}{2}\right)\sin\left(\frac{h}{2}\right)}{h}\\\\
+    & =\lim_{h\to 0}\frac{-\sin\left(x+\frac{h}{2}\right)\sin\left(\frac{h}{2}\right)}{\frac{h}{2}}\\\\
+    & =-\sin(x).
     \end{align}
     $$
 q2:
