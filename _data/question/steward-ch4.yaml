@@ -1,0 +1,10 @@
+ProblemPlus-15:
+  question: |
+    The line $y=mx+b$ intersects the parabola $y=x^2$ in points $A$ and $B$. Find the point $P$ on the arc $AOB$ of the parabola that maximizes the area of the triangle $PAB$.
+review-51:
+  question: |
+    Show that the shortest distance from the point $(x_1,y_1)$ to the straight line $Ax+By+C=0$ is
+    $$
+    \frac{|Ax_1+By_1+C|}{\sqrt{A^2+B^2}}.
+    $$
+  answer: Not yet
