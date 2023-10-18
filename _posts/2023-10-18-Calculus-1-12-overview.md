@@ -52,7 +52,7 @@ $$
 \lim_{x\to\infty}\frac{f(x)}{x}
 $$
 
-(or $\lim_{x\to-\infty}\frac{f(x)}{x}$). If this limit exists, it implies that there may be a slant asymptote of the form $ax + b$, where $a$ is the limit. However, the existence of a slant asymptote is not guaranteed, and finding the value of $b$ can be challenging in some cases.
+(or $\lim_{x\to-\infty}\frac{f(x)}{x}$). If this limit exists, it implies that there may be a slant asymptote of the form $ax + b$, where $a$ is the limit and $b=\displaystyle\lim_{x\to\infty}f(x)-ax$.
 
 ### Curve Sketching in Calculus 1
 
