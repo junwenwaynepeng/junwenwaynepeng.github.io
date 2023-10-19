@@ -10,7 +10,7 @@ head-package:
 
 ## Logarithmetic differentiation
 
-1. Application in handling functions of the form $f(x)^{g(x)}$
+1. Application in handling functions of the form $f(x)^{g(x)}$ or $\frac{f_1(x)f_2(x)\cdots f_n(x)}{g_1(x)g_2(x)\cdots g_m(x)}$
 2. Two-Step Process:
     * Step 1: Take the natural logarithm $\ln$ of the given equation
     * Step 2: Apply implicit differentiation to find the derivative
