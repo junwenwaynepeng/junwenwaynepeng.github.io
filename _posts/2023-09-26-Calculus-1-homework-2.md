@@ -1,6 +1,6 @@
 ---
 title: Calculus 1 Homework 2
-subtitle: Differential techique, and Intermediate Value Theorem
+subtitle: Differential techniques, and the intermediate value theorem
 tags: [calculus 1, calculus, homework]
 sagecell: true
 head-package:
@@ -51,28 +51,46 @@ data:
     folder: question
     file: calculus1-algorithm
     id: ivt1
-show-answer: false
+show-answer: true
 expandable-answer: true
 ---
 <span style="color:red;">All works must be seen!</span>
 
-1. <div id='question-question-calculus1-ch3-q1'></div>
+1. <div id='question-question-calculus1-ch3-q1'>
+  
+    </div><div id='answer-question-calculus1-ch3-q1'></div>
 
 2. <div id='question-question-steward-ch3-review-3'></div>
 
+    <div id='answer-question-steward-ch3-review-3'></div>
+
 3. <div id='question-question-steward-ch3-review-4'></div>
+
+    <div id='answer-question-steward-ch3-review-4'></div>
 
 4. <div id='question-question-steward-ch3-review-20'></div>
 
+    <div id='answer-question-steward-ch3-review-20'></div>
+
 5. <div id='question-question-steward-ch3-review-25'></div>
+
+    <div id='answer-question-steward-ch3-review-25'></div>
 
 6. <div id='question-question-steward-ch3-review-33'></div>
 
+    <div id='answer-question-steward-ch3-review-33'></div>
+
 7. <div id='question-question-steward-ch3-review-71'></div>
+
+    <div id='answer-question-steward-ch3-review-71'></div>
 
 9. <div id='question-question-calculus1-ch3-q5'></div>
 
+    <div id='answer-question-calculus1-ch3-q5'></div>
+
 10. <div id='question-question-calculus1-ch4-proof-104-1-8a'></div>
+
+    <div id='answer-question-calculus1-ch4-proof-104-1-8a'></div>
 
 Algorithm Homework:
 

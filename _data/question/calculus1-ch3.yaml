@@ -1,7 +1,15 @@
 q1:
   question: |
     Use the definition of the derivative to show that $\frac{d}{dx}(\cos(x))=-\sin(x)$
-  answer: not yet
+  answer: |
+    By the definition, we directly compute
+    $$
+    \begin{align}
+    \frac{d}{dx}(\cos(x))& =\lim_{h\to 0}\frac{\cos(x+h)-\cos(x)}{h}=\lim_{h\to 0}\frac{-2\sin\left(\frac{2x+h}{2}\right)\sin\left(\frac{h}{2}\right)}{h}\\\\
+    & =\lim_{h\to 0}\frac{-\sin\left(x+\frac{h}{2}\right)\sin\left(\frac{h}{2}\right)}{\frac{h}{2}}\\\\
+    & =-\sin(x).
+    \end{align}
+    $$
 q2:
   question: |
     Find $\frac{d^n}{dx^n}\left(\frac{1+x}{\sqrt{1-x}}\right)$
@@ -17,7 +25,8 @@ q4:
 q5:
   question: |
     Find the $n$th derivative of the function $f(x)=x^{n-1}\ln(x)$
-  answer: not yet
+  answer: |
+    We process by induction to show that the requested derivative is $\frac{(n-1)!}{d}$. Consider $n=1$. The first derivative of $f(x)$ is $\frac{1}{x}$. Suppose the statement is true for some $n$. Let us prove the statement is true for $n+1$. The $n+1$ derivative is the $n$th derivative of the first dierivative of $x^{n}\ln(x)$, so it is the $n$th derivative of $nx^{n-1}+x^{n-1}$. The $n$th derivative of $x^{n-1}\ln(x)$ is $\frac{(n-1)!}{x}$ by the induction hypothesis, so we can conclude that the $n+1$th derivative is $\frac{n!}{x}$.
 q7:
   question: |
     Find the tangent line and the normal line to the curve $y^x=x^y$ at the point $(1,1)$.
