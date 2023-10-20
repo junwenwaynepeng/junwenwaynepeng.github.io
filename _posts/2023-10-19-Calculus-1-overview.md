@@ -11,7 +11,7 @@ mermaid: true
 
 ```mermaid
 %%{init: {"flowchart":{"useMaxWidth": 0}}}%%
-flowchart TB;
+flowchart LR;
     Limit["Definition of Limit"];
     LimitLaw["Limit laws"];
     LimitTech["Useful algebraic techniques of evaluating limits"];
