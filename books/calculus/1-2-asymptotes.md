@@ -20,7 +20,7 @@ $$\lim_{x\to a^+}f(x)=\pm\infty\text{ or }\lim_{x\to a^-}f(x)=\pm\infty.$$
 
 We say $y=a$ is a *horizontal asymptote* of a curve $y=f(x)$ if one of the following is true:
 
-$$\lim_{x\to \infty}f(x)=a$$\text{ or }\lim_{x\to-\infty}f(x)=a.$$
+$$\lim_{x\to \infty}f(x)=a\text{ or }\lim_{x\to-\infty}f(x)=a.$$
 
 ## Slant Asymptotes
 
