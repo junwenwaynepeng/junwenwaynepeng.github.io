@@ -42,51 +42,58 @@ flowchart LR;
     Fermat["Fermat's theorem"];
     Roll["Roll's theorem"];
     MVT["Mean value theorem"];
-
-    subgraph LimitHow [Evaluatate a limit];
-      direction LR;
-      LimitLaw~~~LimitTech;
-      LimitTech~~~Squeeze;
-      Squeeze-->LHopital;
-    end;
-    Limit-->LimitHow;
     subgraph LimitApplication [Application of limit];
       direction LR;
-      Asymptote~~~Continuity;
-      Continuity~~~Diff;
+      Asymptote;
+      Continuity;
+      Diff;
     end;
     Limit-->LimitApplication;
-    subgraph ContinuityTheorems [Theorems assume continuity];
+    subgraph LimitHow [Evaluatate a limit];
       direction LR;
-      EVT~~~IVT;
+      LimitLaw;
+      LimitTech;
+      Squeeze;
+      LHopital;
+    end;
+    Limit-->LimitHow;
+   
+    subgraph ContinuityTheorems [Theorems assume continuity];
+      direction TB;
+      EVT;
+      IVT;
     end;
     Continuity-->ContinuityTheorems;
+    subgraph DiffTheorems [Theorems assume differentiability];
+      direction BT;
+      Fermat-->Roll-->MVT;
+    end;
     subgraph DiffHow [How to take differentiation?];
-      direction LR;
+      direction TB;
       BasicFunction & BasicRules-->ImplicitDiff;
       ImplicitDiff-->DiffInverse & LogDiff;
     end;
     Diff-->DiffHow;
+    
     subgraph DiffApplication [What applications use differentiation?];
-      direction LR;
+      direction TB;
       TangentLine-->LinearApprox;
       RelatedRate~~~Increasing & Concavity;
       Increasing & Concavity-->CurveSketch;
-      CriticalPt-->ExtremValue;
+      CriticalPt-->ExtremeValue;
       InflectionPt & ExtremeValue --> CurveSketch;
-      Increasing-->|The first derivative test|ExtremeValue;
-      Concavity-->|The second derivative test|ExtremeValue;
+      Increasing-.->|The first derivative test|ExtremeValue;
+      Concavity-.->|The second derivative test|ExtremeValue;
+      Concavity-->InflectionPt
       ExtremeValue-->OptimizationProblem;
+      Concavity-.->LinearApprox
     end;
     Diff-->DiffApplication;
     ImplicitDiff-.->TangentLine;
     ImplicitDiff-.->RelatedRate;
     Asymptote-->CurveSketch;
-    subgraph DiffTheorems [Theorems assume differentiability];
-      direction LR;
-      Fermat-->Roll-->MVT;
-      Roll-->MVT;
-    end;
+    
     Fermat-->CriticalPt;
     Diff-->DiffTheorems;
+    EVT-->Fermat
 ```
