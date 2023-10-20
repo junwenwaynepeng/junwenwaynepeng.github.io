@@ -16,7 +16,7 @@ flowchart LR;
     LimitLaw[<a herf='../books/calculus/1-1-how-to-evaluate-limits#limit-laws'>Limit laws</a>];
     LimitTech[<a herf='../books/calculus/1-1-how-to-evaluate-limits#algebraic-tricks'>Useful algebraic techniques of evaluating limits</a>];
     Squeeze[<a herf='../books/calculus/1-1-how-to-evaluate-limits#the-squeeze-theorem'>The squeeze theorem</a>];
-    LHopital[<a herf='../books/calculus/1-1-how-to-evaluate-limits#lhopital-rule'>"L'Hopital Rule"</a>];
+    LHopital[<a herf='../books/calculus/1-1-how-to-evaluate-limits#lhopital-rule'>L'Hopital Rule</a>];
     Asymptote[<a href='../books/calculus/1-2-asymptotes'>Vertical asymptote
     Horizontal asymptote
     Slant asymptote</a>];
@@ -97,5 +97,4 @@ flowchart LR;
     Diff-->DiffTheorems;
     EVT-->Fermat;        
     LHopital<-.-DiffApplication;
-
 ```
