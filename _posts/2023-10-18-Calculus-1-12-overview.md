@@ -25,25 +25,14 @@ An *inflection point* of the curve $y = f(x)$ is defined as a point $(x, f(x))$ 
 A *slant asymptote* of a function $f(x)$ is defined by the following condition:
 
 $$
-\lim_{x\to\infty} [f(x) - (ax + b)] = 0
+\lim_{x\to\infty} [f(x) - (ax + b)] = 0.
 $$
 
-or
-
-$$
-\lim_{x\to-\infty} [f(x) - (ax + b)] = 0
-$$
 
 For rational functions, where $f(x) = \frac{F(x)}{G(x)}$, with both $F$ and $G$ being polynomials, a slant asymptote exists when the degree of the numerator $F$ is one greater than the degree of the denominator $G$ (i.e., $\deg(F) = \deg(G) + 1$). In such cases, $f(x)$ can be expressed as $ax + \frac{R(x)}{G(x)}$, and the slant asymptotes can be given as:
 
 $$
-y = ax + \lim_{x\to\infty}\frac{R(x)}{G(x)}
-$$
-
-and
-
-$$
-y = ax + \lim_{x\to-\infty}\frac{R(x)}{G(x)}
+y = ax + \lim_{x\to\infty}\frac{R(x)}{G(x)}.
 $$
 
 For non-rational functions, the existence of slant asymptotes can be determined by checking the limit:
