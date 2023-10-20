@@ -12,7 +12,7 @@ mermaid: true
 ```mermaid
 %%{init: {"flowchart":{"useMaxWidth": 0}}}%%
 flowchart LR;
-    Limit[<a herf='../books/calculus/1-definition-of-limit'>Definition of Limit</a>];
+    Limit[<a herf='../books/calculus/1-definition-of-limits'>Definition of Limit</a>];
     LimitLaw[<a herf='../books/calculus/1-1-how-to-evaluate-limits#limit-laws'>Limit laws</a>];
     LimitTech[<a herf='../books/calculus/1-1-how-to-evaluate-limits#algebraic-tricks'>Useful algebraic techniques of evaluating limits</a>];
     Squeeze[<a herf='../books/calculus/1-1-how-to-evaluate-limits#the-squeeze-theorem'>The squeeze theorem</a>];

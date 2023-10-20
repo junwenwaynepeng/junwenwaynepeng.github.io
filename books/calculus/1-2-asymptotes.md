@@ -5,7 +5,8 @@ subtitle: Horizonta, vertical and slant asymptotes
 right-toc: true
 left-toc: true
 book: calculus
-next_page: 1-git-and-github
+preview_page: 1-1-how-to-evaluate-limits
+next_page: 2-definition-of-continuity
 ---
 
 # Asymptotes

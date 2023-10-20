@@ -60,3 +60,9 @@ q10:
     Show that $\ln(1+x)\approx x$ when $x$ is near $0$.
   answer: |
     Let $f(x)=\ln(1+x)$, so $f'(x)=\frac{1}{1+x}$. Thus, $\ln(1+x)\approx f(0)+f'(0)(x-0)=x$.
+q11:
+  question: |
+    A conical tank has a radius of 4 meters and a height of 10 meters. Water is being pumped into the tank at a constant rate of 2 cubic meters per minute.
+    1. At what rate is the water level in the tank rising when the water is 6 meters deep?
+    2. At what rate is the radius of the water's surface changing at that same moment?
+  
