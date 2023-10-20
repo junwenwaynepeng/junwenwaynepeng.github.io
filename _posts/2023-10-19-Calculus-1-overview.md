@@ -17,9 +17,9 @@ flowchart LR;
     LimitTech["Useful algebraic techniques of evaluating limits"];
     Squeeze["The squeeze theorem"];
     LHopital["L'Hopital Rule"];
-    Asymptote["Vertical asymptote
+    Asymptote["![Vertical asymptote
     Horizontal asymptote
-    Slant asymptote"];
+    Slant asymptote](/books/calculus1/asymptote.md)"];
     Continuity["Definition of continuity"];
     EVT["Extreme value theorem"];
     IVT["Intermediate value theorem"];
