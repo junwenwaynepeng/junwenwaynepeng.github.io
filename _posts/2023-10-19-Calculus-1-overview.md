@@ -96,5 +96,6 @@ flowchart LR;
     Fermat-->CriticalPt;
     Diff-->DiffTheorems;
     EVT-->Fermat
-    DiffApplication-.->LHopital
+    LHopital<-.-DiffApplication;
+    
 ```
