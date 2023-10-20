@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Asymptotes
+---
 subtitle: Horizonta, vertical and slant asymptotes
 right-toc: true
 left-toc: true
