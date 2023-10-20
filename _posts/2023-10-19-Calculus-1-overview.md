@@ -10,6 +10,7 @@ mermaid: true
 ---
 
 ```mermaid
+%%{init: {"flowchart":{"useMaxWidth": 0}}}%%
 flowchart TB;
     Limit["Definition of Limit"];
     LimitLaw["Limit laws"];
