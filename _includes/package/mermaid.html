@@ -1,8 +1,10 @@
 <script>
   window.$docsify = {
+    ...,
     mermaidConfig: {
       querySelector: ".mermaid",
-    },
+    }
+    ...,
   };
 </script>
 <!-- Import D3.js -->
@@ -10,12 +12,15 @@
 <!-- Import Mermaid -->
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-  mermaid.initialize({ 
-    startOnLoad: true,
-    theme: "neutral",
+  $(document).ready(function () {
+    mermaid.initialize({
+      startOnLoad:true,
+      theme: "neutral",
+    });
+    mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
   });
-  window.mermaid = mermaid;
 </script>
+
 <!-- Import Docsify-mermaid-zoom -->
 <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
 <script src="//unpkg.com/docsify-mermaid-zoom/dist/docsify-mermaid-zoom.js"></script>
