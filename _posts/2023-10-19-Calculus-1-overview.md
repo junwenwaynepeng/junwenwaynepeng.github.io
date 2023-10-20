@@ -1,5 +1,5 @@
 ---
-title: logarithmetic differentiation, Review, and Related Rate
+title: Mindmap of Calculus 1
 subtitle: 
 tags: [calculus, calculus-1, overview]
 sagecell: true
