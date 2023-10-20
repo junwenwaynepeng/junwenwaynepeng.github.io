@@ -9,7 +9,7 @@ head-package:
 ---
 
 We say a limit $\displaystyle\lim_{x\to a}\frac{f(x)}{g(x)}$ is called an indeterminate form if the fraction $\displaystyle\frac{\lim_{x\to a}f(x)}{\lim_{x\to a}g(x)}$ is of one of the following form
-$$\frac{0}{0},\\ \pm\infty.$$
+$$\frac{0}{0},\text{or } \pm\frac{\infty}{\infty}.$$
 
 **Theorem(L'Hôpital's rule)**
 Let $f(x)$ and $g(x)$ be differentiable at $x=a$, and $g'(x)\neq 0$ for some interval containing $a$. If the limit $\displaystyle\lim_{x\to a}\frac{f(x)}{g(x)}$ is indeterminate form and $\displaystyle\lim_{x\to a}\frac{f'(x)}{g'(x)}$ is DNE and not equal to $\pm\infty$, then
