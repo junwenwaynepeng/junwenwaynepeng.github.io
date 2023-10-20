@@ -20,7 +20,7 @@ flowchart LR;
     Asymptote[<a href='../books/calculus/1-2-asymptotes'>Vertical asymptote
     Horizontal asymptote
     Slant asymptote</a>];
-    Continuity[[<a herf='../books/calculus/2-definition-of-continuity'>Definition of continuity</a>];
+    Continuity[<a herf='../books/calculus/2-definition-of-continuity'>Definition of continuity</a>];
     EVT[<a herf='../books/calculus/2-1-theorems-assuming-continuity#EVT'>Extreme value theorem</a>];
     IVT[<a herf='../books/calculus/2-1-theorems-assuming-continuity#IVT'>Intermediate value theorem</a>];
     Diff[<a herf='../books/calculus/3-definition-of-derivative'>Definition of derivative</a>];
@@ -37,7 +37,7 @@ flowchart LR;
     LinearApprox[<a herf='../books/calculus/3-3-application-of-differentiation#linear-approximation>Linear Approximation</a>];
     RelatedRate[<a herf='../books/calculus/3-3-application-of-differentiation#related-rate>Related Rate</a>];
     CurveSketch[<a herf='../books/calculus/3-3-application-of-differentiation#curve-sketch>Curve Sketch</a>];
-    ExtremeValue[<a herf='../books/calculus/3-3-application-of-differentiation#extreme-values>"Extreme Values</a>];
+    ExtremeValue[<a herf='../books/calculus/3-3-application-of-differentiation#extreme-values>Extreme Values</a>];
     InflectionPt[<a herf='../books/calculus/3-3-application-of-differentiation#inflection-points>Inflection Points</a>];
     Increasing[<a herf='../books/calculus/3-3-application-of-differentiation#increasing-and-decreasing-intervals>Increasing and Decreasing Intervals</a>];
     Concavity[<a herf='../books/calculus/3-3-application-of-differentiation#concavity>Concave and Convex</a>];
