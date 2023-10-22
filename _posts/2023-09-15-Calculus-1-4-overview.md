@@ -15,7 +15,7 @@ head-package:
 
 2. Continuity is a local property, and there exist examples where a function is continuous at a specific point but nowhere else. Although I didn't explicitly mention it in class, it should be apparent that if we say $f(x)$ is defined for $x \geq a$ and we assert that $f$ is continuous at $a$, this implies that $\lim_{x\to a^{+}}f(x)=f(a)$.
 
-3. Intermediate value thorem
+3. Intermediate value theorem
 
 # Derivative
 
@@ -25,4 +25,4 @@ head-package:
 
 3. Differential operations exhibit some convenient algebraic rules that coincidentally align with fraction multiplication and division. These rules include: $$\frac{d}{dx}\frac{d^{n-1}f}{dx^{n-1}}=\frac{d^nx}{dx^n},\ \frac{df}{dt}\frac{dt}{dx} = \frac{df}{dx}\text{ and }\frac{dy/dt}{dx/dt}=\frac{dy}{dx}.$$ These rules are helpful for simplifying expressions involving derivatives.
 
-4. We calculuate the derivatives of some basic functions.
+4. We calculate the derivatives of some basic functions.

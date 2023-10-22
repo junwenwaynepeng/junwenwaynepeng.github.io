@@ -31,7 +31,7 @@ To compute $\displaystyle\lim_{x\to 0}\frac{\sin(x)}{x}$, we rely on the squeeze
 
 **Example 3.** <div id="question-question-calculus1-ch2-q2"></div>
 
-# Concepts of infinte
+# Concepts of infinite
 
 Let's consider the concept of infinity as a symbol, one that holds a unique place in mathematics—it surpasses any finite number. Embracing this idea, we can establish a precise definition for limits such as $\lim_{x\to a}f(x)=\infty$ and $\lim_{x\to \infty}f(x)=L$. In computational terms, this symbol exhibits the following algebraic properties:
 
