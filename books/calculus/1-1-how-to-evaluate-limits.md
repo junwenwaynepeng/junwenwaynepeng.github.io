@@ -42,6 +42,18 @@ The following limits are useful when we tried to evaluate other limits:
 - $\displaystyle\lim_{x\to 0}\frac{\sin(x)}{x}=1$.
 	> **Example.** $\displaystyle\lim_{x\to 0}\frac{\sin(2x)}{\sin(3x)} = \lim_{x\to 0}\frac{\sin(2x)\cdot 3x}{2x\cdot\sin(3x)}\cdot\frac{3x}{2x} = \frac{3}{2}$.
 
+## Change of variables
+
+A change of variables allows us to simplify the expression of a limit, making it easier to evaluate. One of the most commonly used changes of variables is $t = \frac{1}{x}$. Using this substitution, we can rewrite a limit, such as $\lim_{x\to \infty}\sin\left(\frac{1}{x}\right)^{\ln\left(\frac{1}{x}\right)}$, as $\lim_{t\to 0}\sin(t)^{\ln(t)}$. This new form is much simpler to apply L'Hôpital's rule to.
+
+## Continuous functions
+
+If $f(x)$ is a continuous function, then we have
+
+$$\lim_{x\to a}f(g(x)) = f(\lim_{x\to a}g(x)).$$
+
+This theorem enables us to temporarily disregard the outermost continuous function and concentrate on evaluating the limit based on the inner function.
+
 # The Squeeze theorem
 
 **Theorem.** Let $I$ be an interval containing the point $a$. Let $g$, $f$, and $h$ be functions defined on $I$, except possibly at $a$ itself. Suppose that for every $x$ in $I$ not equal to $a$, we have
