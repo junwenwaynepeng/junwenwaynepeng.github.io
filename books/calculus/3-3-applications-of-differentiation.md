@@ -20,7 +20,7 @@ $$y-y_0 = -\left.\frac{dx}{dy}\right|_{(x_0,y_0)}(x-x_0).$$
 
 A linear function $L(x)=mx+b$ is called the linearization of a function $f(x)$ at $x=a$ if $y=L(x)$ is the tangent line to the curve $y=f(x)$ at $x=a$. We can use estimate the value $f(a')$ by evaluating $L(a')$ when $a'$ is near $a$.
 
-## Related Rates
+# Related Rates
 
 Related rate problems typically present a scenario where the rate of one change is given, and you are asked to determine the rate of another change when a specific event occurs. These problems often involve geometric relationships. Let's illustrate this with an example:
 
