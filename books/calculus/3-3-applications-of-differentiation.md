@@ -20,6 +20,26 @@ $$y-y_0 = -\left.\frac{dx}{dy}\right|_{(x_0,y_0)}(x-x_0).$$
 
 A linear function $L(x)=mx+b$ is called the linearization of a function $f(x)$ at $x=a$ if $y=L(x)$ is the tangent line to the curve $y=f(x)$ at $x=a$. We can use estimate the value $f(a')$ by evaluating $L(a')$ when $a'$ is near $a$.
 
+## Related Rates
+
+Related rate problems typically present a scenario where the rate of one change is given, and you are asked to determine the rate of another change when a specific event occurs. These problems often involve geometric relationships. Let's illustrate this with an example:
+
+**Example.** Consider a water tank in the shape of an inverted circular cone with a base radius of 2 m and a height of 4 m. Water is being pumped into the tank at a rate of 2 $\text{m}^3/\text{min}$. Find the rate at which the water level is rising when the water depth is 3 m.
+
+* Given rate: $\frac{dV}{dt} = 2$ ($\text{m}^3/\text{min}$).
+* Required rate: $\frac{dh}{dt}\mid_{h=3}$.
+* The relationship between $V$ and $h$ is determined by the cone's geometry.
+
+**Solution:** The volume of a cone with height $h$ and base radius $r$ is given by:
+
+$$V = \frac{1}{3}\pi r^2h.$$
+
+Moreover, <span style="color:red;">we know that $r:h = 2:4$ using similar triangles, which implies $V = \frac{1}{3}\pi\left(\frac{1}{2}h\right)^2 h$. Since $r$ also changes as water is pumped in, $r$ is a function of time $t$, and we cannot treat it as a constant.</span> Now, applying implicit differentiation, we find:
+
+$$\frac{dV}{dt} = \frac{1}{4}\pi h^2\frac{dh}{dt},$$
+
+so $\frac{dh}{dt}\mid_{h=3} = 2\cdot 4\cdot \frac{1}{3^2\pi}$.
+
 ## Concavity v.s. over(under)estimation 
 
 **Proposition.** If $f''$ is positive over an interval containing both $a$ and $a'$, then $L(a')$ is an overestimation. Conversely, if $f''$ is negative over an interval containing both $a$ and $a'$, then $L(a')$ is an underestimation.
