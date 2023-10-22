@@ -8,7 +8,7 @@ head-package:
     file: "package/sagecell.html"
 ---
 
-## Logarithmetic differentiation
+## Logarithmic differentiation
 
 1. Application in handling functions of the form $f(x)^{g(x)}$ or $\frac{f_1(x)f_2(x)\cdots f_n(x)}{g_1(x)g_2(x)\cdots g_m(x)}$
 2. Two-Step Process:

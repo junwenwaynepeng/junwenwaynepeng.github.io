@@ -74,7 +74,7 @@ $$
 \end{equation}
 $$
 
-### Stratgy of using MVT
+### Strategy of using MVT
 
 Many applications of the mean value theorem (MVT) employ a strategy similar to the one used in proving MVT itself. This strategy typically involves defining a second function, denoted as $h(x)$, which incorporates the function of interest, $f(x)$, along with other variables. Subsequently, MVT is applied to $h(x)$ to derive the desired outcome for $f(x)$. To illustrate this concept, let's delve into the following example.
 
