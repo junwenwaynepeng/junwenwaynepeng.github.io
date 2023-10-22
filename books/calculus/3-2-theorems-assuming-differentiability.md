@@ -16,6 +16,11 @@ expandable-answer: false
 ## Fermat's Theorem
 **Theorem(Fermat)** If $f(x)$ is a continuous function on a closed interval with $f(c)$ an extreme values of $f$, and $f'(c)$ exists, then $f'(c)=0$.
 
+## Critical Points
+Fermat's theorem shows that if $x$ is an extreme value of $f$, then either $f'(x)$ doesn't exist or $f'(x) = 0$. Therefore, we naturally define a *critical point* of $f$ as a point where the derivative either doesn't exist or is equal to $0$.
+
+**Example.** The derivative of $y=x^{1/3}-x^{5/3}$ is $\frac{1}{3}x^{-2/3}-\frac{5}{3}x^{2/3}$. Since $(0,0)$ is defined on the curve and $f'(0)$ doesn't defined at $x=0$, $(0,0)$ is a critical point of $y=x^{1/3}-x^{5/3}$. By setting the derivative equal to zero, the other two real critical points are $\pm\left(\frac{1}{5}\right)^{3/4}$.
+
 ## Roll's Theorem
 **Theorem(Roll)** Suppose $f(x)$ satisfies the following three hypotheses:
 1. $f(x)$ is a continuous function on $[a,b]$.
