@@ -67,7 +67,7 @@ We call $\Delta y$ the *Absolute error*, and $\frac{\Delta y}{y}$ the *relative 
 
 We say a point $(a,f(a))$ is a *local maximum* (*minimum*) if $f(a)\geq f(x)$ ($f(a)\leq f(x)$) for $x$ near $a$. 
 
-![Fermat's theorem](../books/calculus/3-2-theorems-assuming-differentiability#fermats-theorem) implies that the set of $c$ such that $f(c)$ is a local extreme values is a subset of the critical points of $f$. Therefore, to identify local extreme values, our initial step is to find all critical points of $f$. The largest/smallest value among the set of local extreme values $f(c)$ corresponds to the *global(absolute) maximum/minimum* of $f$. 
+[Fermat's theorem](../books/calculus/3-2-theorems-assuming-differentiability#fermats-theorem) implies that the set of $c$ such that $f(c)$ is a local extreme values is a subset of the critical points of $f$. Therefore, to identify local extreme values, our initial step is to find all critical points of $f$. The largest/smallest value among the set of local extreme values $f(c)$ corresponds to the *global(absolute) maximum/minimum* of $f$. 
 
 **Remark.** Note that if $f$ is defined on a closed interval $[a,b]$, the boundary points, namely, $a$ and $b$, may also serve as critical points.
 
