@@ -33,7 +33,7 @@ expandable-answer: false
 Then, there exists $c\in (a,b)$ such that $f'(c)=0$.
 
 
-## Mean Value Theorem
+## The Mean Value Theorem
 **Theorem(Mean value theorem)** If $f(x)$ is continuous on $[a,b]$ and is differentiable on $(a,b)$, then there exists $c\in(a,b)$ such that 
 $$f'(c)=\frac{f(a)-f(b)}{a-b}$$.
 

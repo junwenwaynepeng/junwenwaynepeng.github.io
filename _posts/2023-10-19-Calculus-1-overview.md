@@ -23,8 +23,8 @@ flowchart LR;
     Horizontal asymptote
     Slant asymptote</a>];
     Continuity[<a href='../books/calculus/2-definition-of-continuity'>Definition of continuity</a>];
-    EVT[<a href='../books/calculus/2-1-theorems-assuming-continuity#EVT'>Extreme value theorem</a>];
-    IVT[<a href='../books/calculus/2-1-theorems-assuming-continuity#IVT'>Intermediate value theorem</a>];
+    EVT[<a href='../books/calculus/2-1-theorems-assuming-continuity#extreme-value-theorem'>Extreme value theorem</a>];
+    IVT[<a href='../books/calculus/2-1-theorems-assuming-continuity#intermediate-value-theorem'>Intermediate value theorem</a>];
     Diff[<a href='../books/calculus/3-definition-of-derivatives'>Definition of derivative</a>];
     BasicFunction[<a href='../books/calculus/3-1-how-to-find-derivatives#derivatives-of-basic-functions'>Derivative of basic functions</a>];
     BasicRules[<a href='../books/calculus/3-1-how-to-find-derivatives#differential-rules'>Differentiation v.s. operation of functions</a>];
