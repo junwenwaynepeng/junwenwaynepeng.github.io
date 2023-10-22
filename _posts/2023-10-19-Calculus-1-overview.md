@@ -28,7 +28,7 @@ flowchart LR;
     BasicRules[<a href='../books/calculus/3-1-how-to-find-derivatives#differential-rules'>Differentiation v.s. operation of functions</a>];
     ImplicitDiff[<a href='../books/calculus/3-1-how-to-find-derivatives#implicit-differentiation'>Implicit Differentiation</a>];
     DiffInverse[<a href='../books/calculus/3-1-how-to-find-derivatives#derivatives-of-inverse-functions'>Derivatives of inverse functions</a>];
-    LogDiff[<a href='../books/calculus/3-1-how-to-find-derivatives#logarithmetic-differentiation'>Logarithmetic Differentiation</a>];
+    LogDiff[<a href='../books/calculus/3-1-how-to-find-derivatives#logarithmic-differentiation'>Logarithmic Differentiation</a>];
     Fermat[<a href='../books/calculus/3-2-theorems-assuming-differentiability#fermats-theorem'>Fermat's theorem</a>];
     Roll[<a href='../books/calculus/3-2-theorems-assuming-differentiability#rolls-theorem'>Roll's theorem</a>];
     MVT[<a href='../books/calculus/3-2-theorems-assuming-differentiability#the-mean-value-theorem'>Mean value theorem</a>];

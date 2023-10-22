@@ -23,7 +23,7 @@ next_page: 3-2-theorems-assuming-differentiability
 | Arcsing ($\sin^{-1}(x)$) | $\frac{1}{\sqrt{1-x^2}}$               |
 | Arctangent ($\tan^{-1}(x)$) | $\frac{1}{1+x^2}$                   |
 
-# Differentaial rules
+# Differential rules
 
 1. Addition/substraction rule: $(f\pm g)' = f' \pm g'$
 2. Constant rule: $(cf)' = cf'$
