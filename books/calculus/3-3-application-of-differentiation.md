@@ -77,8 +77,51 @@ Suppose $f$ is a continuous function defined on a closed interval $I$, and let $
 - If $f''(x) > 0$, the graph is concave upward (convex) at $x$.
 - If $f''(x) < 0$, the graph is concave down (concave) at $x$.
 
-**Second Derivative Test.** Let $f$ be a twice-differentiable function on an open interval $I$ with a critical point at $c$.
+
+## Inflection points
+
+An *inflection point* of the curve $y = f(x)$ is defined as a point $(x, f(x))$ at which $f''$ changes sign on both sides of $x$.
+
+## Second Derivative Test
+
+Let $f$ be a twice-differentiable function on an open interval $I$ with a critical point at $c$.
 1. If $f'(c) = 0$ and $f''(c) > 0$, then $f(c)$ is a local minimum value.
 2. If $f'(c) = 0$ and $f''(c) < 0$, then $f(c)$ is a local maximum value.
 
 The Second Derivative Test offers a convenient way to determine the concavity of the graph at a critical point and can help identify local extrema with ease. However, it might be inconclusive for some cases, such as functions like $f(x) = x^4$. In such scenarios, we have to revert to using the First Derivative Test to make a definitive determination regarding local extrema.
+
+# Curve Sketching in Calculus 1
+
+Curve sketching is a valuable tool to test your comprehension of the material introduced in Calculus 1. When sketching a curve, you need to gather the following essential information:
+
+## 1. Calculate $y'$ and $y''$
+| Aspect | Details |
+|--------|---------|
+| **Domain** | 1. Find the domain of $f(x)$ |
+| **Asymptotes** | 2. Determine vertical asymptotes |
+| **$y$-Intercept** | 3. Find the $y$-intercept (0, f(0)) |
+| **$x$-Intercepts** | 4. Find the $x$-intercepts (Solve $f(x) = 0$) |
+| **Critical Points** | 5. Find critical points (Solve $y' = 0$ and locate where $f'$ is undefined) |
+| **Inflection Points** | 6. Find potential inflection points (Solve $y'' = 0$ and locate where $y''$ is undefined) |
+
+## 2. Analyze Trending
+| Aspect | Details |
+|--------|---------|
+| **Increasing/Decreasing** | 1. Identify increasing intervals ($f' > 0$) and decreasing intervals ($f' < 0$) |
+| **Concavity** | 2. Determine concave up intervals ($f'' > 0$) and concave down intervals ($f'' < 0$) |
+| **Extreme Points** | 3. Utilize the above information to identify local maximum/minimum points and inflection points |
+
+## 3. Consider Behavior at Infinity
+- Determine if a horizontal or slant asymptote exists.
+
+This structured approach will help you effectively sketch curves in calculus and understand the key aspects of a function's behavior.
+
+# Optimization Problems
+
+An optimization problem requires you to find the maximum or minimum value of a quantity. To tackle such problems, follow these steps:
+
+**Step 1. Building a Model:** Use the information provided in the question to create a function that describes the relationship between the dependent and independent variables.
+
+**Step 2. Find Local Extremes:** Determine the local maximums and minimums of the function.
+
+**Step 3. Apply Common Sense:** Eliminate answers that are not feasible based on the problem's context. Then, identify the global maximum or minimum of the function, which serves as the final solution.

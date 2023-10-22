@@ -9,9 +9,7 @@ preview_page: 3-definition-of-derivatives
 next_page: 3-2-theorems-assuming-differentiability
 ---
 
-# How to find derivatives
-
-## Derivatives of basic functions
+# Derivatives of basic functions
 
 | Function $f(x)$          | Derivative $\frac{d}{dx} (f(x))$       |
 |--------------------------|----------------------------------------|
@@ -25,7 +23,7 @@ next_page: 3-2-theorems-assuming-differentiability
 | Arcsing ($\sin^{-1}(x)$) | $\frac{1}{\sqrt{1-x^2}}$               |
 | Arctangent ($\tan^{-1}(x)$) | $\frac{1}{1+x^2}$                   |
 
-## Differentaial rules
+# Differentaial rules
 
 1. Addition/substraction rule: $(f\pm g)' = f' \pm g'$
 2. Constant rule: $(cf)' = cf'$
@@ -34,7 +32,7 @@ next_page: 3-2-theorems-assuming-differentiability
 5. Quotient rule: $(\frac{f}{g})' = \frac{f'g-fg'}{g^2}$ (上微減下微除以下面平方)
 
 
-## Implicit Differentiation
+# Implicit Differentiation
 
 Implicit differentiation is a technique used to find the derivative of a function when the relationship between its variables is described implicitly rather than explicitly. To perform implicit differentiation, follow these steps:
 
@@ -52,7 +50,7 @@ Implicit differentiation is particularly useful for finding derivatives of equat
 
 **Remark.** To find the second derivative of $y$ with respect to $x$, you'll follow the same process. The only difference is that you'll need to substitute $y'$ in terms of $x$ at the end to express the second derivative in a form that depends solely on $x$.
 
-## Derivatives of Inverse Functions
+# Derivatives of Inverse Functions
 
 We can utilize implicit differentiation to find the derivatives of inverse functions. Let $y=f^{-1}(x)$. We have $f(y)=x$, so $f'(y)\frac{dy}{dx} = 1$. We then need to use the relationship $f(f^{-1}(x))=x$ to express $f'(f^{-1}(x))$ in terms of $x$.
 
@@ -64,7 +62,7 @@ We can utilize implicit differentiation to find the derivatives of inverse funct
 
 **Example 4.** $\frac{d}{dx}(\ln(x)) = \frac{1}{x}.$
 
-## Logarithmic Differentiation
+# Logarithmic Differentiation
 
 1. Application in handling functions of the form $f(x)^{g(x)}$ or $\frac{f_1(x)f_2(x)\cdots f_n(x)}{g_1(x)g_2(x)\cdots g_m(x)}$
 2. Two-Step Process:

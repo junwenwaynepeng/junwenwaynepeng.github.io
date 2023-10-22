@@ -52,10 +52,10 @@ Curve sketching is a valuable tool to test your comprehension of the material in
 |--------|---------|
 | **Domain** | 1. Find the domain of $f(x)$ |
 | **Asymptotes** | 2. Determine vertical asymptotes |
-| **$y$-Intercept** | 3. Find the $y$-intercept (typically denoted as (0, f(0))) |
+| **$y$-Intercept** | 3. Find the $y$-intercept (0, f(0)) |
 | **$x$-Intercepts** | 4. Find the $x$-intercepts (Solve $f(x) = 0$) |
 | **Critical Points** | 5. Find critical points (Solve $y' = 0$ and locate where $f'$ is undefined) |
-| **Inflection Points** | 6. Find potential inflection points (Solve $y'' = 0$) |
+| **Inflection Points** | 6. Find potential inflection points (Solve $y'' = 0$ and locate where $y''$ is undefined) |
 
 #### 2. Analyze Trending
 | Aspect | Details |

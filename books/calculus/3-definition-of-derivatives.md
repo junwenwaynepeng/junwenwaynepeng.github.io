@@ -8,8 +8,6 @@ book: calculus
 preview_page: 3-2-theorems-assuming-differentiability
 ---
 
-# Definition of Derivatives
-
 For a function $f(x)$, the *derivative* $f'(x)$ at a point $x$ is defined as the limit of the difference quotient as it approaches zero:
 $$f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}.$$
 

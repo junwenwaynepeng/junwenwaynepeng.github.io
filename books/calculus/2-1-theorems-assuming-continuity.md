@@ -9,13 +9,11 @@ preview_page: 2-definition-of-continuity
 next_page: 3-definition-of-derivatives
 ---
 
-# Theorems Assuming Continuity
-
-## Extreme Value Theorem
+# Extreme Value Theorem
 
 **Theorem(Weierstrass)** If $f(x)$ is a continuous function on a closed interval $[a,b]$, then $f(x)$ attains its local extreme values on $[a,b]$.
 
-## Intermediate Value Theorem
+# Intermediate Value Theorem
 
 **Theorem** If a function $f(x)$ is continuous on a closed interval $[a, b]$ and $L$ is any number between $f(a)$ and $f(b)$, where $f(a) \neq f(b)$, then there exists at least one number $c$ in the open interval $(a, b)$ such that $f(c) = L$.
 

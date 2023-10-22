@@ -9,8 +9,6 @@ preview_page: 1-2-asymptotes
 next_page: 2-1-theorems-assuming-continuity
 ---
 
-# Definition of Continuity
-
 We say a function $f(x)$ is *continuous* at $x=a$ if $f$ satisfies
 
 $$\lim_{x\to a^+}f(x)=\lim_{x\to a^-}=f(a).$$

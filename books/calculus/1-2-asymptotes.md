@@ -9,21 +9,19 @@ preview_page: 1-1-how-to-evaluate-limits
 next_page: 2-definition-of-continuity
 ---
 
-# Asymptotes
-
-## Vertical Asymptotes
+# Vertical Asymptotes
 
 We say $x=a$ is a *vertical asysmptote* of a curve $y=f(x)$ if one of the following is true:
 
 $$\lim_{x\to a^+}f(x)=\pm\infty\text{ or }\lim_{x\to a^-}f(x)=\pm\infty.$$
 
-## Horizontal Asymptotes
+# Horizontal Asymptotes
 
 We say $y=a$ is a *horizontal asymptote* of a curve $y=f(x)$ if one of the following is true:
 
 $$\lim_{x\to \infty}f(x)=a\text{ or }\lim_{x\to-\infty}f(x)=a.$$
 
-## Slant Asymptotes
+# Slant Asymptotes
 
 We say $y=(ax + b)$ is a *slant asymptote* of a curve $y=f(x)$ if
 
