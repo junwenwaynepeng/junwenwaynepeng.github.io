@@ -22,7 +22,9 @@ exist. Then,
 4. $\displaystyle\lim_{x\to a} (f(x))^{(b/c)} = \left(\lim_{x\to a}f(x)\right)^{(b/c)}$ if $c$ is not odd and $b/c$ is in its lowest terms (最簡分數形式).
 
 
-## Kill a common zero and the rationalization
+## Algebraic tricks
+
+### Kill a common zero and the rationalization
 
 There are two scenarios where you might want to consider employing this technique. The first scenario arises when you encounter an indeterminate form, specifically $\frac{0}{0}$, and the denominator takes the form of $\sqrt{\cdot}-\sqrt{\cdot}$ or $1-\cos(x)$. The second scenario occurs when you are working with a limit as $x$ approaches infinity, and direct evaluation leads to the indeterminate form $\infty - \infty$. These are two common situations where the technique we'll discuss becomes particularly useful.
 
@@ -35,7 +37,7 @@ To illustrate these scenarios, let's explore several typical examples.
 **Example 3.** $\displaystyle\lim_{x\to 0}\frac{x^2}{1-\cos(x)}$
 
 
-## Help from some well-known limits
+### Help from some well-known limits
 
 The following limits are useful when we tried to evaluate other limits:
 - $\displaystyle\lim_{x\to 0}\frac{\sin(x)}{x}=1$.
