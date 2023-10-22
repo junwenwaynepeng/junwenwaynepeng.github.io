@@ -110,7 +110,7 @@ Let $f$ be a twice-differentiable function on an open interval $I$ with a critic
 
 The Second Derivative Test offers a convenient way to determine the concavity of the graph at a critical point and can help identify local extrema with ease. However, it might be inconclusive for some cases, such as functions like $f(x) = x^4$. In such scenarios, we have to revert to using the First Derivative Test to make a definitive determination regarding local extrema.
 
-# Curve Sketching in Calculus 1
+# Curve Sketching
 
 Curve sketching is a valuable tool to test your comprehension of the material introduced in Calculus 1. When sketching a curve, you need to gather the following essential information:
 
