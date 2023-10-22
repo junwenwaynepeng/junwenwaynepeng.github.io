@@ -42,6 +42,14 @@ $$\Delta y \approx f'(x) dx.$$
 
 We call $\Delta y$ the *Absolute error*, and $\frac{\Delta y}{y}$ the *relative error*.
 
+# Extreme Values
+
+We say a point $(a,f(a))$ is a *local maximum* (*minimum*) if $f(a)\geq f(x)$ ($f(a)\leq f(x)$) for $x$ near $a$. 
+
+![Fermat's theorem](../books/calculus/3-2-theorems-assuming-differentiability#fermats-theorem) implies that the set of $c$ such that $f(c)$ is a local extreme values is a subset of the critical points of $f$. Therefore, to identify local extreme values, our initial step is to find all critical points of $f$. The largest/smallest value among the set of local extreme values $f(c)$ corresponds to the *global(absolute) maximum/minimum* of $f$. 
+
+**Remark.** Note that if $f$ is defined on a closed interval $[a,b]$, the boundary points, namely, $a$ and $b$, may also serve as critical points.
+
 # Increasing and Decreasing Intervals
 
 **Definition.** We define a function $f(x)$ as *increasing* (*decreasing*) on an interval $I$ if, for any two values $x_1$ and $x_2$ within $I$, the condition $x_1 < x_2$ implies that $f(x_1) \leq f(x_2)$ ($f(x_1) \geq f(x_2)$).
@@ -56,3 +64,21 @@ Conversely, suppose $x_1$ and $x_2$ are in $I$ with $x_1<x_2$. By the mean value
 $$f(x_2)-f(x_1)=f'(c)(x_2-x_1)\geq 0.$$
 Therefore, $f$ is increasing on $I$.<div style="text-align: right;">∎</div>
 
+An increasing interval is one on which $f'$ is positive, while a decreasing interval is one on which $f'$ is negative.
+
+## The first derivative test 
+Suppose $f$ is a continuous function defined on a closed interval $I$, and let $c$ belong to $I$. Assume $f$ is differentiable on $I$, possibly excluding the point $c$.
+1. If $f'(x) < 0$ for $x < c$ in the vicinity of $c$ and $f'(x) > 0$ for $x > c$ in the vicinity of $c$, then $f(c)$ represents a local minimum value.
+2. If $f'(x) > 0$ for $x < c$ in the vicinity of $c$ and $f'(x) < 0$ for $x > c$ in the vicinity of $c$, then $f(c)$ represents a local maximum value.
+
+# Concavity
+
+**Definition.** If $f$ is twice differentiable, the second derivative tells us about the concavity of the graph. Specifically:
+- If $f''(x) > 0$, the graph is concave upward (convex) at $x$.
+- If $f''(x) < 0$, the graph is concave down (concave) at $x$.
+
+**Second Derivative Test.** Let $f$ be a twice-differentiable function on an open interval $I$ with a critical point at $c$.
+1. If $f'(c) = 0$ and $f''(c) > 0$, then $f(c)$ is a local minimum value.
+2. If $f'(c) = 0$ and $f''(c) < 0$, then $f(c)$ is a local maximum value.
+
+The Second Derivative Test offers a convenient way to determine the concavity of the graph at a critical point and can help identify local extrema with ease. However, it might be inconclusive for some cases, such as functions like $f(x) = x^4$. In such scenarios, we have to revert to using the First Derivative Test to make a definitive determination regarding local extrema.

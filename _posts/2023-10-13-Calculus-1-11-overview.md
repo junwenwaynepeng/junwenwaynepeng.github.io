@@ -129,7 +129,7 @@ Note that the point $c$ in the above test is a critical point of $f$, meaning $f
 
 **Definition.** If $f$ is twice differentiable, the second derivative tells us about the concavity of the graph. Specifically:
 - If $f''(x) > 0$, the graph is concave upward (convex) at $x$.
-- If $f''(x) < 0$, the graph is concave down(concave) at $x$.
+- If $f''(x) < 0$, the graph is concave down (concave) at $x$.
 
 **Second Derivative Test.** Let $f$ be a twice-differentiable function on an open interval $I$ with a critical point at $c$.
 1. If $f'(c) = 0$ and $f''(c) > 0$, then $f(c)$ is a local minimum value.
