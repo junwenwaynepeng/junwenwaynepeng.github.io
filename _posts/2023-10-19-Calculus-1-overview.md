@@ -18,7 +18,7 @@ flowchart LR;
     LimitLaw[<a href='../books/calculus/1-1-how-to-evaluate-limits#limit-laws'>Limit laws</a>];
     LimitTech[<a href='../books/calculus/1-1-how-to-evaluate-limits#algebraic-tricks'>Useful algebraic techniques of evaluating limits</a>];
     Squeeze[<a href='../books/calculus/1-1-how-to-evaluate-limits#the-squeeze-theorem'>The squeeze theorem</a>];
-    LHopital[<a href='../books/calculus/1-1-how-to-evaluate-limits#lhopital-rule'>L'Hopital Rule</a>];
+    LHopital[<a href='../books/calculus/1-1-how-to-evaluate-limits#lhpitals-rule'>L'Hopital Rule</a>];
     Asymptote[<a href='../books/calculus/1-2-asymptotes'>Vertical asymptote
     Horizontal asymptote
     Slant asymptote</a>];
@@ -26,11 +26,11 @@ flowchart LR;
     EVT[<a href='../books/calculus/2-1-theorems-assuming-continuity#EVT'>Extreme value theorem</a>];
     IVT[<a href='../books/calculus/2-1-theorems-assuming-continuity#IVT'>Intermediate value theorem</a>];
     Diff[<a href='../books/calculus/3-definition-of-derivatives'>Definition of derivative</a>];
-    BasicFunction[<a href='../books/calculus/3-1-how-to-do-derivatives#derivatives-of-basic-functions'>Derivative of basic functions</a>];
-    BasicRules[<a href='../books/calculus/3-1-how-to-do-derivatives#differential-rules'>Differentiation v.s. operation of functions</a>];
-    ImplicitDiff[<a href='../books/calculus/3-1-how-to-do-derivatives#implicit-differentiation'>Implicit Differentiation</a>];
-    DiffInverse[<a href='../books/calculus/3-1-how-to-do-derivatives#derivatives-of-inverse-functions'>Derivatives of inverse functions</a>];
-    LogDiff[<a href='../books/calculus/3-1-how-to-do-derivatives#logarithmetic-differentiation'>Logarithmetic Differentiation</a>];
+    BasicFunction[<a href='../books/calculus/3-1-how-to-find-derivatives#derivatives-of-basic-functions'>Derivative of basic functions</a>];
+    BasicRules[<a href='../books/calculus/3-1-how-to-find-derivatives#differential-rules'>Differentiation v.s. operation of functions</a>];
+    ImplicitDiff[<a href='../books/calculus/3-1-how-to-find-derivatives#implicit-differentiation'>Implicit Differentiation</a>];
+    DiffInverse[<a href='../books/calculus/3-1-how-to-find-derivatives#derivatives-of-inverse-functions'>Derivatives of inverse functions</a>];
+    LogDiff[<a href='../books/calculus/3-1-how-to-find-derivatives#logarithmetic-differentiation'>Logarithmetic Differentiation</a>];
     Fermat[<a href='../books/calculus/3-2-theorems-assuming-differentiability#fermats-theorem'>Fermat's theorem</a>];
     Roll[<a href='../books/calculus/3-2-theorems-assuming-differentiability#rolls-theorem'>Roll's theorem</a>];
     MVT[<a href='../books/calculus/3-2-theorems-assuming-differentiability#the-mean-value-theorem'>Mean value theorem</a>];
