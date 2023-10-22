@@ -7,19 +7,6 @@ left-toc: true
 book: calculus
 preview_page: 3-2-theorems-assuming-differentiability
 ---
-
-# Tangent lines
-
-The general definition of tangent lines to a curve comes after the definition of derivative. Let $P=(x_0,y_0)$ be a point on a curve,  and suppose the first derivative $\frac{dy}{dx}$ exists at that point. Then, we define the tangent line of the curve at $P$ as
-$$y-y_0 = \left.\frac{dy}{dx}\right|_{(x_0,y_0)}(x-x_0).$$
-
-**Remark.** Let $m_1$ and $m_2$ represent the slopes of lines $L_1$ and $L_2$ respectively. If $L_1$ and $L_2$ are perpendicular to each other, then their slopes satisfy the relation $m_1\cdot m_2=-1$. We use this relation to define the normal line to a curve at a point $P$ as
-$$y-y_0 = -\left.\frac{dx}{dy}\right|_{(x_0,y_0)}(x-x_0).$$
-
-# Linear Approximation
-
-A linear function $L(x)=mx+b$ is called the linearization of a function $f(x)$ at $x=a$ if $y=L(x)$ is the tangent line to the curve $y=f(x)$ at $x=a$. We can use estimate the value $f(a')$ by evaluating $L(a')$ when $a'$ is near $a$.
-
 # Related Rates
 
 Related rate problems typically present a scenario where the rate of one change is given, and you are asked to determine the rate of another change when a specific event occurs. These problems often involve geometric relationships. Let's illustrate this with an example:
@@ -39,6 +26,20 @@ Moreover, <span style="color:red;">we know that $r:h = 2:4$ using similar triang
 $$\frac{dV}{dt} = \frac{1}{4}\pi h^2\frac{dh}{dt},$$
 
 so $\frac{dh}{dt}\mid_{h=3} = 2\cdot 4\cdot \frac{1}{3^2\pi}$.
+
+
+# Tangent lines
+
+The general definition of tangent lines to a curve comes after the definition of derivative. Let $P=(x_0,y_0)$ be a point on a curve,  and suppose the first derivative $\frac{dy}{dx}$ exists at that point. Then, we define the tangent line of the curve at $P$ as
+$$y-y_0 = \left.\frac{dy}{dx}\right|_{(x_0,y_0)}(x-x_0).$$
+
+**Remark.** Let $m_1$ and $m_2$ represent the slopes of lines $L_1$ and $L_2$ respectively. If $L_1$ and $L_2$ are perpendicular to each other, then their slopes satisfy the relation $m_1\cdot m_2=-1$. We use this relation to define the normal line to a curve at a point $P$ as
+$$y-y_0 = -\left.\frac{dx}{dy}\right|_{(x_0,y_0)}(x-x_0).$$
+
+# Linear Approximation
+
+A linear function $L(x)=mx+b$ is called the linearization of a function $f(x)$ at $x=a$ if $y=L(x)$ is the tangent line to the curve $y=f(x)$ at $x=a$. We can use estimate the value $f(a')$ by evaluating $L(a')$ when $a'$ is near $a$.
+
 
 ## Concavity v.s. over(under)estimation 
 
