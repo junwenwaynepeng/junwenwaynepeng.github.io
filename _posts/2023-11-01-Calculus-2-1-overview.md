@@ -45,7 +45,7 @@ def _(f=input_box("x^2+3", 'function'), a=input_box(1,type=float), b=input_box(3
     riemann_sums = []
     for delta in [1/i for i in range(1,number_of_frames+1)]:
         partition = [a]
-        while partition[-1]+delta<b:
+        while partition[-1]+delta < b:
             x_i = RealField().random_element(partition[-1], partition[-1]+delta)
             if x_i not in partition:
                 partition.append(x_i)
