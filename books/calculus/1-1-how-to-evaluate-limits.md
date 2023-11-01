@@ -18,7 +18,7 @@ exist. Then,
 1. $\displaystyle\lim_{x\to a} f(x)\pm g(x) = \lim_{x\to a}$
 2. $\displaystyle\lim_{x\to a} f(x)g(x) = \lim_{x\to a}f(x)\lim_{x\to a}g(x)$
 3. $\displaystyle\lim_{x\to a} \frac{f(x)}{g(x)} = \frac{\lim_{x\to a}f(x)}{\lim_{x\to a}g(x)}$ if $\displaystyle\lim_{x\to a}g(x)\neq 0$
-4. $\displaystyle\lim_{x\to a} (f(x))^{(b/c)} = \left(\lim_{x\to a}f(x)\right)^{(b/c)}$ if $c$ is not odd and $b/c$ is in its lowest terms (最簡分數形式).
+4. $\displaystyle\lim_{x\to a} (f(x))^{(b/c)} = \left(\lim_{x\to a}f(x)\right)^{(b/c)}$ if $c$ is odd and $b/c$ is in its lowest terms (最簡分數形式).
 
 
 # Algebraic tricks
