@@ -7,7 +7,7 @@ head-package:
   -
     file: "package/sagecell.html"
 ---
-Let $f(x)$ be a real-valued function on $[a,b]$. To give a Riemann sum of $f$ on $[a,b]$, we employ the following two steps:
+Let $f(x)$ be a real-valued function on $[a,b]$. To give a *Riemann sum* of $f$ on $[a,b]$, we follow two steps:
 1. Give a partition $a=x_0<x_1<\cdots<x_n=b$  of $[a,b]$.
 2. Choose sample points $x_i^\*$ in each subinterval $[x_{i},x_{i+1}]$ for $i=0,1,\ldots, n-1$.
 Then, a Riemann sum is
@@ -32,10 +32,11 @@ def _(f=input_box("x^2+3", 'function'), a=input_box(1,type=float), b=input_box(3
 </div>
 
 **Definition of Definite Integral** We say a function $f(x)$ is integrable on $[a,b]$ and has an integral $S$ if, for every $\varepsilon>0$, there exists a $\delta>0$ such that, for all partitions $a=x_0<x_1<\cdots<x_n=b$ with $\displaystyle\max_{i=1,2,\ldots, n}\{x_{i}-x_{i-1}\}<\delta$ and for arbitrary sample points $x_i^\*\in[x_{i},x_{i-1}]$ with $i=1,2,\ldots,n$, we have
-$$|S-\sum_{i=1}^nf(x_{i}^*)(x_i-x_{i-1})|<\varepsilon.$$ 
+$$\left|S-\sum_{i=1}^nf(x_{i}^*)(x_i-x_{i-1})\right|<\varepsilon.$$ 
 
 We denote the integral of $f$ from $a$ to $b$ by $\int_{a}^b f(x)dx$.
 
+Intuitively, we consider a function to be Riemann integrable if we can effectively use Riemann sums to approximate the area under the function. (This animation illustrates that as we refine the size of rectangles, Riemann sums converge to the area under the given curve.)
 <div class='hide_code'>
 x = var('x')
 @interact
@@ -67,7 +68,13 @@ def _(f=input_box("x^2+3", 'function'), a=input_box(1,type=float), b=input_box(3
 There are three types of special Riemann sums:
 - Left Riemann sum: $\displaystyle L_n=\sum_{i=1}^n f(x_{i-1})(x_i-x_{i-1})$.
 - Right Riemann sum: $\displaystyle R_n=\sum_{i=1}^n f(x_{i})(x_i-x_{i-1})$.
-- Midpoint Riemann sum: $\displaystyle M_n=\sum_{i=1}^n f(\frac{x_i+x_{i-1}}{2})(x_i-x_{i-1})$.
+- Midpoint Riemann sum: $\displaystyle M_n=\sum_{i=1}^n f\left(\frac{x_i+x_{i-1}}{2}\right)(x_i-x_{i-1})$.
 
 **Theorem.** If $f(x)$ is integrable, then
 $$\lim_{n\to\infty}L_n=\lim_{n\to\infty}R_n=\lim_{n\to\infty}M_n=\int_{a}^bf(x)dx.$$
+
+This is the theorem makes the left (right, or midpoint) Riemann sum becomes useful. Some useful formula might help you calculate a left (right, or midpoint) Riemann sum:
+- $\displaystyle\sum_{i=1}^n 1 = n$
+- $\displaystyle\sum_{i=1}^n i = \frac{n(n+1)}{2}$
+- $\displaystyle\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}$
+- $\displaystyle\sum_{i=1}^n i^3 = \left(\frac{n(n+1)}{2}\right)^2$ 
