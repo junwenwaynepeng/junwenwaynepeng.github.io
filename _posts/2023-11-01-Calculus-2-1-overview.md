@@ -73,7 +73,7 @@ There are three types of special Riemann sums:
 **Theorem.** If $f(x)$ is integrable, then
 $$\lim_{n\to\infty}L_n=\lim_{n\to\infty}R_n=\lim_{n\to\infty}M_n=\int_{a}^bf(x)dx.$$
 
-This is the theorem makes the left (right, or midpoint) Riemann sum becomes useful. Some useful formula might help you calculate a left (right, or midpoint) Riemann sum:
+This theorem is what makes the left (right, or midpoint) Riemann sums a useful tool. Here are some helpful formulas that can assist you in calculating a left (right, or midpoint) Riemann sum:
 - $\displaystyle\sum_{i=1}^n 1 = n$
 - $\displaystyle\sum_{i=1}^n i = \frac{n(n+1)}{2}$
 - $\displaystyle\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}$
