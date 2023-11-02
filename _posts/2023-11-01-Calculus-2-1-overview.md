@@ -31,7 +31,7 @@ def _(f=input_box("x^2+3", 'function'), a=input_box(1,type=float), b=input_box(3
     print('This Riemann sum is '+ str(sum([f.subs(x == sample_points[i])*(partition[i+1]-partition[i]) for i in range(number_of_partition)]))+',and the area under the curve from '+str(a)+' to '+str(b)+' is '+str(f.integral(x,a,b)))
 </div>
 
-**Definition of Definite Integral** We say a function $f(x)$ is integrable on $[a,b]$ and has an integral $S$ if, for every $\varepsilon>0$, there exists a $\delta>0$ such that, for all partitions $a=x_0<x_1<\cdots<x_n=b$ with $\displaystyle\max_{i=1,2,\ldots, n}\{x_{i}-x_{i-1}\}<\delta$ and for arbitrary sample points $x_i^\*\in[x_{i},x_{i-1}]$ with $i=1,2,\ldots,n$, we have
+**Definition of Definite Integral** We say a function $f(x)$ is integrable on $[a,b]$ and has an integral $S$ if, for every $\varepsilon>0$, there exists a $\delta>0$ such that, for all partitions $a=x_0<x_1<\cdots<x_n=b$ with $\displaystyle\max_{i=1,2,\ldots, n}\\{x_{i}-x_{i-1}\\}<\delta$ and for arbitrary sample points $x_i^\*\in[x_{i},x_{i-1}]$ with $i=1,2,\ldots,n$, we have
 $$\left|S-\sum_{i=1}^nf(x_{i}^*)(x_i-x_{i-1})\right|<\varepsilon.$$ 
 
 We denote the integral of $f$ from $a$ to $b$ by $\int_{a}^b f(x)dx$.
