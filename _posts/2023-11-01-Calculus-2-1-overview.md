@@ -1,6 +1,6 @@
 ---
 title: Definition of Integral
-subtitle: 
+subtitle: Riemann sums and integrable
 tags: [calculus, calculus-2, overview]
 sagecell: true
 head-package:
@@ -59,7 +59,7 @@ def _(f=input_box("x^2+3", 'function'), a=input_box(1,type=float), b=input_box(3
         riemann_sums.append(sum([f.subs(x == sample_points[i])*(partition[i+1]-partition[i]) for i in range(number_of_partition-1)]))
     movie = animate(frames, aspect_ratio='automatic')
     movie.show()
-    print('The above animation shows a sequence of Riemann sums with thiner and thiner rectangulars (the nth frame uses the condition max(x_i-x_{i+1})<1/n). We list these Riemann sums:')
+    print('The above animation shows a sequence of Riemann sums with thinner and thinner rectangles (the nth frame uses the condition max(x_i-x_{i+1})<1/n). We list these Riemann sums:')
     for s in riemann_sums:
         print(str(s))
     print('The definite integral of '+str(f)+' from '+str(a)+' to '+str(b)+' is '+str(f.integral(x,a,b)))
