@@ -60,4 +60,5 @@ $$
 \begin{align*}
 F(b)-F(a) &= F(x_n)-[-F(x_{n-1})+F(x_{n-1})]+\cdots [-F(x_1)+F(x_1)]-F(x_0)\\\\
 &= [F(x_n)-F(x_{n-1})]+[F(x_{n-1})-F(x_{n-2})]+\cdots [F(x_1)-F(x_0)]
+\end{align*}
 $$
