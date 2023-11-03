@@ -62,3 +62,8 @@ F(b)-F(a) &= F(x_n)-[-F(x_{n-1})+F(x_{n-1})]+\cdots [-F(x_1)+F(x_1)]-F(x_0)\\\\
 &= [F(x_n)-F(x_{n-1})]+[F(x_{n-1})-F(x_{n-2})]+\cdots [F(x_1)-F(x_0)]
 \end{align*}
 $$
+Applying the mean value theorem to each subinterval $[x_{i},x_{i+1}]$, we further rewrite
+$$
+F(b)-F(a) = \sum_{i=0}^{n-1}F(x_{i+1})-F(x_{i}) = \sum_{i=0}^{n-1}F'(c_i^\*)(x_{i+1}-x_i)
+$$
+for some $c_i^\*\in(x_{i},x_{i+1})$. The sum is a Riemann sum of $f$. Since we assume $f$ is integrable, as $\displaystyle\max_{i=0}^{n-1}\{x_{i+1}-x_i\}\to 0$, the Riemann sum will approach $\int_{a}^bf(t)dt$. Therefore, we can conclude that $\int_{a}^bf(t)dt=F(b)-F(a)$. 
