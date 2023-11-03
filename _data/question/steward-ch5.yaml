@@ -5,4 +5,6 @@ ProblemsPlus-2:
 ProblemsPlus-3:
   question: If $\int_0^4e^{(x-2)^4}dx$, find the value of $\int_0^4xe^{(x-2)^4}dx$.
 ProblemsPlus-19:
-  question: Evaluate $$\lim_{n\to\infty}\left(\frac{1}{\sqrt{n}{n+1}}+\frac{1}{\sqrt{n}\sqrt{n+2}}+\cdots+\frac{1}{\sqrt{n}\sqrt{n+n}\right).$$
+  question: |
+    Evaluate 
+    $$\lim_{n\to\infty}\left(\frac{1}{\sqrt{n}{n+1}}+\frac{1}{\sqrt{n}\sqrt{n+2}}+\cdots+\frac{1}{\sqrt{n}\sqrt{n+n}\right).$$
