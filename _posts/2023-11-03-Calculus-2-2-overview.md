@@ -6,10 +6,14 @@ sagecell: true
 head-package:
   -
     file: "package/pyscript.html"
+pyenv:
+  - matplotlib
+  - matplotlib_venn
+
 ---
 
-<div id='venn diagram'></div>
-<py-script output='venn diagram'>
+<div id='venndiagram'></div>
+<py-script output='venndiagram'>
 import matplotlib.pyplot as plt
 from matplotlib_venn import venn2
 
