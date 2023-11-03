@@ -26,3 +26,17 @@ data:
 show-answer: false
 expandable-answer: true
 ---
+
+1. <div id='question-question-steward-ch5-ProblemsPlus-1'></div>
+
+2. <div id='question-question-steward-ch5-ProblemsPlus-2'></div>
+
+3. <div id='question-question-steward-ch5-ProblemsPlus-3'></div>
+
+4. <div id='question-question-steward-ch5-ProblemsPlus-4'></div>
+
+Algorithm Homework:
+
+<div id='question-question-calculus2-algorithm-riemann-sum'></div>
+
+<div class='compute'>You can try your code here!</div>
