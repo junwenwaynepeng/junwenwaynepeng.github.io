@@ -150,7 +150,7 @@
       {% include {{ plugin.file }} src=plugin.src local-parameter=local-parameter %}
     {% endfor %}
   {% endif %}
-  {% if site.pyenv %}
+  {% if page.pyenv %}
     <py-env>
       {% for env in site.pyenv %}
         - {{ env }}
