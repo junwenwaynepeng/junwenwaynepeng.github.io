@@ -67,3 +67,9 @@ $$
 F(b)-F(a) = \sum_{i=0}^{n-1}F(x_{i+1})-F(x_{i}) = \sum_{i=0}^{n-1}F'(c_i^\*)(x_{i+1}-x_i)
 $$
 for some $c_i^\*\in(x_{i},x_{i+1})$. The sum is a Riemann sum of $f$. Since we assume $f$ is integrable, as $\displaystyle\max_{i=0}^{n-1}\{x_{i+1}-x_i\}\to 0$, the Riemann sum will approach $\int_{a}^bf(t)dt$. Therefore, we can conclude that $\int_{a}^bf(t)dt=F(b)-F(a)$. 
+
+**Example 1.** $\int_1^3 x^2dx = \left.\frac{x^3}{3}\right|_1^3 = \frac{3^3}{3}-\frac{1^3}{1} = 6.$
+
+**Example 2.** $\frac{d}{dx}\left(\int_{1}^x\sec(t)dt\right) = \sec(x)$.
+
+**Example 3.** $\frac{d}{dx}\int_0^{x^4}\sec(t)dt = \frac{d}{du}\left(\int_0^{u}\sec(t)dt\right)\cdot \frac{dy}{dx}$ where we let $u=x^4$. It follows $\frac{d}{dx}\int_0^{x^4}\sec(t)dt = \sec(u)\cdot 4x^3 = 4x^3\sec(x^4)$.
