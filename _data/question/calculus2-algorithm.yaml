@@ -1,0 +1,9 @@
+riemann-sum:
+  question: |
+    1. Implement a Python program that calculates the left, right, and midpoint Riemann sums for a given function $f(x)$ over a specified interval $[a, b]$. Your program should allow the user to input the function, the interval, and the number of subintervals ($n$) they want to use for the Riemann sum. It should then compute and display the results for each type of Riemann sum (left, right, and midpoint).
+
+    2. Create a Python program that generates a random Riemann sum. This program should do the following:
+       1. Generate random partition points $x_0, x_1, x_2, \ldots, x_n$ that satisfy the condition $\max(x_{i+1} - x_i) < \delta$ for a given small positive value $\delta$, which also allows the user to select.
+       2. Randomly select sample points $x_i^\*$ within each subinterval.
+       3. Evaluate the Riemann sum using these randomly generated values and display the result.
+   
