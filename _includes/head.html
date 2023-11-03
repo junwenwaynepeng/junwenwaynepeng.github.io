@@ -150,19 +150,21 @@
       {% include {{ plugin.file }} src=plugin.src local-parameter=local-parameter %}
     {% endfor %}
   {% endif %}
+
   {% if page.pyenv %}
     <py-env>
-      {% for env in site.pyenv %}
+      {% for env in page.pyenv %}
         - {{ env }}
         {% if local %}
         - paths:
-          {% for file in local %}
+          {% for file in env %}
           - file
           {% endfor %}
         {% endif %}
       {% endfor %}
     </py-env>
   {% endif %}
+  
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {
