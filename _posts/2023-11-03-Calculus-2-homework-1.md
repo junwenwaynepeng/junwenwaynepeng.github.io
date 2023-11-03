@@ -33,7 +33,7 @@ expandable-answer: true
 
 3. <div id='question-question-steward-ch5-ProblemsPlus-3'></div>
 
-4. <div id='question-question-steward-ch5-ProblemsPlus-4'></div>
+4. <div id='question-question-steward-ch5-ProblemsPlus-19'></div>
 
 Algorithm Homework:
 
