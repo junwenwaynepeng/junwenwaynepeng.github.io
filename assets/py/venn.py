@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
-from matplotlib_venn import venn2
+from data import make_x_and_y
 
+x, y = make_x_and_y(n=1000)
 
-print('hello')
+fig, ax = plt.subplots()
+ax.scatter(x, y)
+fig
