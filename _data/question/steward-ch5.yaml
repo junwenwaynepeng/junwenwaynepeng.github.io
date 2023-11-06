@@ -7,4 +7,4 @@ ProblemsPlus-3:
 ProblemsPlus-19:
   question: |
     Evaluate 
-    $$\lim_{n\to\infty}\left(\frac{1}{\sqrt{n}{n+1}}+\frac{1}{\sqrt{n}\sqrt{n+2}}+\cdots+\frac{1}{\sqrt{n}\sqrt{n+n}}\right).$$
+    $$\lim_{n\to\infty}\left(\frac{1}{\sqrt{n}\sqrt{n+1}}+\frac{1}{\sqrt{n}\sqrt{n+2}}+\cdots+\frac{1}{\sqrt{n}\sqrt{n+n}}\right).$$
