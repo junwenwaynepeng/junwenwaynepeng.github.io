@@ -40,10 +40,10 @@ $$V=\int_{a}^bdV = \int_a^b f(x)^2\pi dx.$$
 
 Find the volume of the solid of revolution generated when the finite region $S$ that lines between $x=a$, $x=b$, $y=f(x)$, and $y=g(x)$ with $f(x)>g(x)$ on $[a,b]$ is revolved about $x$-axis.
 
-$$V=\int_{a}^bdV = \int_a^b f(x)^2-g(x)^2\pi dx.$$
+$$V=\int_{a}^bdV = \int_a^b \left(f(x)^2-g(x)^2\right)\pi dx.$$
 
 ## The cylinder method
 
 Find the volume of the solid of revolution generated when the finite region $S$ that lines between $x=a$, $x=b$, and $y=f(x)$ is revolved about $x=c$ with $b>a>c$.
 
-$$V=\int_a^bdV = \int_a^b2 (x-c)\pi f(x)dx.$$
+$$V=\int_a^bdV = \int_a^b2 (x-c)\pi f(x)dx.$$y
