@@ -43,7 +43,7 @@ $$
 f(u)\leq \frac{F(x+h)-F(x)}{h}\leq f(v).
 $$
 
-Now, we let $h$ approach $0$, and so both $u$ and $v$ approach $x$. Hence, we conclude that $\displaystyle\lim_{h\to 0^+}\frac{F(x+h)-F(x)}{h} = f'(x)$. A similar argument will be carried out for the left limit. Therefore, we can conclude that $F'=f$.
+Now, we let $h$ approach $0$, and so both $u$ and $v$ approach $x$. Hence, we conclude that $\displaystyle\lim_{h\to 0^+}\frac{F(x+h)-F(x)}{h} = f(x)$. A similar argument will be carried out for the left limit. Therefore, we can conclude that $F'=f$.
 
 **Theorem(the Fundamental Theorem of Calculus, Part 2)** Let $f$ be a real-valued function on a closed interval $[a,b]$ and $F$ a continuous function on $[a,b]$ which is an antiderivative of $f$ in $(a,b)$:
 $$F'=f.$$
@@ -72,4 +72,4 @@ for some $c_i^\*\in(x_{i},x_{i+1})$. The sum is a Riemann sum of $f$. Since we a
 
 **Example 2.** $\frac{d}{dx}\left(\int_{1}^x\sec(t)dt\right) = \sec(x)$.
 
-**Example 3.** $\frac{d}{dx}\int_0^{x^4}\sec(t)dt = \frac{d}{du}\left(\int_0^{u}\sec(t)dt\right)\cdot \frac{dy}{dx}$ where we let $u=x^4$. It follows $\frac{d}{dx}\int_0^{x^4}\sec(t)dt = \sec(u)\cdot 4x^3 = 4x^3\sec(x^4)$.
+**Example 3.** $\frac{d}{dx}\int_0^{x^4}\sec(t)dt = \frac{d}{du}\left(\int_0^{u}\sec(t)dt\right)\cdot \frac{du}{dx}$ where we let $u=x^4$. It follows $\frac{d}{dx}\int_0^{x^4}\sec(t)dt = \sec(u)\cdot 4x^3 = 4x^3\sec(x^4)$.

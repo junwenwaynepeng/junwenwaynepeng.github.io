@@ -52,7 +52,7 @@ There are three major types:
 
 Let me use another way to explain how we use the fundamental theorem of Calculus to solve $\frac{d}{dx}\int_{f(x)}^{g(x)} h(t)dt$ where $h(t)$ is a continuous function, and $f$ and $g$ are differentiable function. Let $H(x)$ is an antiderivative of $h(x)$. Then, by the fundamental theorem of Calculus, we know
 
-$$\int_{f(x)}^{g(x)}h(t)dt = \left.H(t)\right\mid_{f(x)}^{g(x)} = H(g(x))-H(f(x)).$$
+$$\int_{f(x)}^{g(x)}h(t)dt = \left.H(t)\right|_{f(x)}^{g(x)} = H(g(x))-H(f(x)).$$
 
 Thus, its derivative is
 
