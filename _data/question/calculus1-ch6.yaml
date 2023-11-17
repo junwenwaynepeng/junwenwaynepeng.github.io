@@ -1,6 +1,6 @@
 s-1:
-	question: |
-    Find the volume of a solid torus which is obtained by rotating the circle $(x-R)^2+y^2=r^2$ with $R>r>0$, bout the $y$-axis.
+  question: |
+    Find the volume of a solid torus which is obtained by rotating the circle $(x-R)^2+y^2=r^2$ with $R>r>0$ about the $y$-axis.
 s-2:
   question: |
     Let $C$ be a curve parametrized by $(x(t),y(t))$. We assume: 
