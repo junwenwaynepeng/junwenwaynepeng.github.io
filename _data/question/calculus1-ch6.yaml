@@ -1,0 +1,5 @@
+s-4:
+  question: |
+  Consider a segment of the curve described by the equation $x^{2/3}+y^{2/3}=1$ in the first quaudrant. 
+  1. Find the arc length of the curve.
+  2. Find the area of the surface revolving the curve about $x$-axis.
