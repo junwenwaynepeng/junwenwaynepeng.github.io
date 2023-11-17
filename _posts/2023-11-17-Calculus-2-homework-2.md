@@ -1,5 +1,5 @@
 ---
-title: Calculus 2 Homework 1
+title: Calculus 2 Homework 2
 subtitle: Arc length, volumen, surface area, and substitution rule
 tags: [calculus 2, calculus, homework]
 sagecell: true
