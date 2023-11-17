@@ -1,0 +1,19 @@
+s-1:
+	question: Find the volume of a solid torus which is obtained by rotating the circle $(x-R)^2+y^2=r^2$ with $R>r>0$, bout the $y$-axis.
+s-2:
+  question: |
+    Let $C$ be a curve parametrized by $(x(t),y(t))$. We assume: 
+    1. the curve intersects $y$-axis at $t=a$ and $t=b$ with $y(a)<y(b)$;
+    2. the curve intersects with $y=c$ at exactly one point for all $c$ between $y(a)$ and $y(b)$;
+    3. $x(t)>0$ for all $t\in (a,b)$.
+    Explain that the area inclosed by $C$ and $y$-axis is
+    $$\int_a^b x(t)y'(t)dt.$$
+    (I want to see how you partition the entire area into tiny rectangles, and use $x(t)$ and $y(t)$ to express the area of the rectangles.) 
+s-3:
+  question: |
+    Suppose $f(x)$ is a nonegative and continuous function on $[a,b]$. Find the area of the surface revolving the curve about $x$-axis, and explain your formula. 
+s-4:
+  question: |
+  Consider a segment of the curve described by the equation $x^{2/3}+y^{2/3}=1$ in the first quaudrant. 
+  1. Find the arc length of the curve.
+  2. Find the area of the surface revolving the curve about $x$-axis.
