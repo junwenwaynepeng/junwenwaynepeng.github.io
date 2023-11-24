@@ -33,6 +33,7 @@ The first part of the integral belong the the case where $n$ is even and nonzero
 # Trigonometric substitution
 
 | pattern | trig identity | substitution |
+|:--------:|:------------:|:------------:|
 | $a^2-x^2$ | $1-\sin^2(x) = \cos^2(x)$ ($1-\cos^2(x)=\sin^2(x)$) | $u=a\sin(x)$ ($u=a\cos(x)$) |
 | $x^2 -a^2$  | $\tan^2(x) = \sec^2(x)-1$ | $u=a\sec(x)$ |
 | $x^2+a^2$ | $\sec^2(x) = \tan^2(x)+1$ | $u=a\tan(x)$ |
