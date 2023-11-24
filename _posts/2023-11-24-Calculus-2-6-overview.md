@@ -40,4 +40,4 @@ The first part of the integral belong the the case where $n$ is even and nonzero
 
 ## Complete Square
 
-When ever we see somthing like $x^2+2ax$ in an integral, and substitution is not applicable. Try to complete the square.
+Whenever we see somthing like $x^2+2ax$ in an integral, and substitution is not applicable. Try to complete the square.
