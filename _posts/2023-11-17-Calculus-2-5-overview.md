@@ -37,3 +37,8 @@ To integrate $\sin^{m}(x)\cos^{n}(x)$, we consider the following cases:
 $$\sin^2(\theta) = \frac{1-\cos(2\theta)}{2}\text{ and }\cos^{2}(\theta)=\frac{1+\cos(2\theta)}{2}.$$
 
 
+|m\n| $n$ is odd | $n$ is even |
+|---|:----------:|:-----------:|
+| $m$ is odd | use 1. by setting either $u=\cos(x)$ or $u=\sin(x)$ | use 1. by seeting $u=\cos(x)$ |
+| $m$ is even| use 1. by setting $u=\sin(x)$ | Use double angle formula or integration by part to reduce the degree $m$ and $n$ until do able |  
+
