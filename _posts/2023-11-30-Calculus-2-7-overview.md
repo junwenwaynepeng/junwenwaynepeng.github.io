@@ -45,12 +45,12 @@ where $r_i^{(j)}(x) = A_{i,j}^{(d-1)}X^{d-1}+\cdots A_{i,j}^{(d-2)}X^{d-2}+\cdot
 %%{init: {"flowchart":{"useMaxWidth": 0}}}%%
 flowchart LR;
   Start;
-  AntiderivativeTable;
-  USub;
-  IBP;
-  TrigIntegral;
-  TrigSub;
-  PF;
+  AntiderivativeTable[<a href='#'>Antiderivative table</a>];
+  USub[<a href='#'>U sub</a>];
+  IBP[<a href='#'>Integration by part</a>];
+  TrigIntegral[<a href='#'>Trig integrals</a>];
+  TrigSub[<a href='#'>Trig sub</a>];
+  PF[<a href='#'>Partial fraction</a>];
   SC[<a href='#'>Special case</a>];
   Start-->AntiderivativeTable;
   Start-->USub;
@@ -81,7 +81,7 @@ When we integrate $f(x)$ from $a$ to $b$ where $a$ or $b$ is a pole of $f$, or $
 
 **Case (a is negative infinity)** $\displaystyle\int_{-\infty}^bf(x)dx = \lim_{t\to -\infty}\int_t^bf(x)dx$
 
-**Case (b is infinity)** $\displaystyle\int_a^\inftyf(x)dx = \lim_{t\to \infty}\int_a^\inftyf(x)dx$
+**Case (b is infinity)** $\displaystyle\int_a^\infty f(x)dx = \lim_{t\to \infty}\int_a^\infty f(x)dx$
 
 # The Comparison Theorem
 
