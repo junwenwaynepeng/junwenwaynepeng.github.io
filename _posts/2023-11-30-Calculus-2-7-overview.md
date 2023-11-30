@@ -34,7 +34,7 @@ $$
 \end{align}
 $$
 
-where $r_i^{(j)} = A_{i,j}^{(d-1)}X^{d-1}+\cdots A_{i,j}^{(d-2)}X^{d-2}+\cdot +A_{i,j}^{(0)}$ and $A_{i,j}^{(k)} are some variables.
+where $r_i^{(j)}(x) = A_{i,j}^{(d-1)}X^{d-1}+\cdots A_{i,j}^{(d-2)}X^{d-2}+\cdot +A_{i,j}^{(0)}$ and $A_{i,j}^{(k)}$ are some variables.
 
 **STEP 4.** Common the denominator, and compare the coefficients. We can set up an system of linear equations.
 
