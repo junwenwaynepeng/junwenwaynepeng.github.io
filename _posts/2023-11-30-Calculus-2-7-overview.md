@@ -51,7 +51,7 @@ flowchart LR;
   TrigIntegral;
   TrigSub;
   PF;
-  SC;
+  SC[<a href='#'>Special case</a>];
   Start-->AntiderivativeTable;
   Start-->USub;
   Start-->IBP;
