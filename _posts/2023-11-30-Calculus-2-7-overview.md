@@ -44,7 +44,7 @@ where $r_i^{(j)}(x) = A_{i,j}^{(d-1)}X^{d-1}+\cdots A_{i,j}^{(d-2)}X^{d-2}+\cdot
 ```mermaid
 %%{init: {"flowchart":{"useMaxWidth": 0}}}%%
 flowchart LR;
-  Start[<a href='#'>$\int_a^b f(x)dx$</a>];
+  Start;
   AntiderivativeTable[<a href='#'>Antiderivative table</a>];
   USub[<a href='#'>U sub</a>];
   IBP[<a href='#'>Integration by part</a>];
