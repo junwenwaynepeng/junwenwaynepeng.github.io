@@ -27,10 +27,10 @@ with $q_i\neq q_j$ for all $i\neq j$ and with $a_i\geq 1$ for all $i$.
 
 $$
 \begin{align}
-\frac{r(x)}{q(x)}  = & \frac{r_{1}^{(1)(x)}}{q_1(x)} + \frac{r_{1}^{(2)(x)}}{q_1^2(x)} + \cdots \frac{r_1^{(a_1)}}{q_1^{a_1}(x)}+\\\\
-&  \frac{r_{2}^{(1)(x)}}{q_2(x)} + \frac{r_{2}^{(2)(x)}}{q_2^2(x)} + \cdots \frac{r_2^{(a_2)}}{q_2^{a_2}(x)}+\\\\
+\frac{r(x)}{q(x)}  = & \frac{r_{1}^{(1)}(x)}{q_1(x)} + \frac{r_{1}^{(2)}(x)}{q_1^2(x)} + \cdots \frac{r_1^{(a_1)}(x)}{q_1^{a_1}(x)}+\\\\
+&  \frac{r_{2}^{(1)}(x)}{q_2(x)} + \frac{r_{2}^{(2)}(x)}{q_2^2(x)} + \cdots \frac{r_2^{(a_2)}(x)}{q_2^{a_2}(x)}+\\\\
 & \cdots +\\\\
-& \frac{r_{n}^{(1)(x)}}{q_n(x)} + \frac{r_{n}^{(2)(x)}}{q_n^2(x)} + \cdots \frac{r_n^{(a_n)}}{q_n^{a_1}(x)}
+& \frac{r_{n}^{(1)}(x)}{q_n(x)} + \frac{r_{n}^{(2)}(x)}{q_n^2(x)} + \cdots \frac{r_n^{(a_n)}(x)}{q_n^{a_1}(x)}
 \end{align}
 $$
 
