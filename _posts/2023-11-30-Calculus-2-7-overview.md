@@ -59,11 +59,11 @@ flowchart LR;
   Start-->TrigSub;
   Start-->PF;
   Start-->SC;
-  USub-->AntiderivativeTable
+  USub-->AntiderivativeTable;
   USub-->IBP;
   USub-->TrigSub;
   USub-->PF;
-  IBP-->AntiderivativeTable
+  IBP-->AntiderivativeTable;
   IBP-->TrigIntegral;
   IBP-->TrigSub;
   IBP-->SC;
