@@ -27,7 +27,7 @@ The followings are examples:
 
 **Example 6** $\int \sin^2(x)dx$
 
-# Trigonometric integrals
+# Trigonometric integrals $\int \sin^{m}(x)\cos^n(x)dx$
 
 To integrate $\sin^{m}(x)\cos^{n}(x)$, we consider the following cases:
 
