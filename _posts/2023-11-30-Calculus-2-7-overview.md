@@ -44,14 +44,14 @@ where $r_i^{(j)}(x) = A_{i,j}^{(d-1)}X^{d-1}+\cdots A_{i,j}^{(d-2)}X^{d-2}+\cdot
 ```mermaid
 %%{init: {"flowchart":{"useMaxWidth": 0}}}%%
 flowchart LR;
-  Start[<a href='#'>$\int f(x)dx$</a>];
-  AntiderivativeTable[<a href='#'>Antiderivative table</a>];
-  USub[<a href='#'>U sub</a>];
-  IBP[<a href='#'>Integration by part</a>];
-  TrigIntegral[<a href='#'>Trig integrals</a>];
-  TrigSub[<a href='#'>Trig sub</a>];
-  PF[<a href='#'>Partial fraction</a>];
-  SC[<a href='#'>Special case</a>];
+  Start;
+  AntiderivativeTable;
+  USub;
+  IBP;
+  TrigIntegral;
+  TrigSub;
+  PF;
+  SC;
   Start-->AntiderivativeTable;
   Start-->USub;
   Start-->IBP;
