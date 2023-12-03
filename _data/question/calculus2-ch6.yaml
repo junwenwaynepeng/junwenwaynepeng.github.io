@@ -18,15 +18,17 @@ s-2:
     2. the curve intersects with $y=c$ at exactly one point for all $c$ between $y(a)$ and $y(b)$;
     3. $x(t)>0$ for all $t\in (a,b)$.
     Explain that the area inclosed by $C$ and $y$-axis is
-    $$\int_a^b x(t)y'(t)dt.$$
+    $$\left|\int_a^b x(t)y'(t)dt\right|.$$
     (I want to see how you partition the entire area into tiny rectangles, and use $x(t)$ and $y(t)$ to express the area of the rectangles.) 
   answer: |
-    te
-s-3:
+    The following figure demonstrate how we are going to partition the area. ![figure](../assets/img/question/calculus2-ch6-s-2.png)
+    The tiny area is $x(t)y'(t)dt$, so the area of the region enclosed by the curves is $\left|\int_{a}^b x(t)y'(t)dt\right|$
+
   question: |
     Suppose $f(x)$ is a nonegative and continuous function on $[a,b]$. Find the area of the surface revolving the curve about $x$-axis, and explain your formula. 
   answer: |
-    t
+    We can partition the surface into bands (see [figure](https://www.desmos.com/3d/3d838851e2)). To estimate the area of a band,  we can pretend it is a rectangle when we unfold the band on table. The width of the band can be denote by $\sqrt{dx^2+dy^2}$, and the length can is $2\pi f(x)$. Thus, we derive that the area of the surface is
+    $$\int_a^b 2pi f(x)\sqrt{dx^2+dy^2} = \int_a^b 2\pi f(x)\sqrt{1+f'(x)^2}dx.$$
 s-4:
   question: |
     Consider a segment of the curve described by the equation $x^{2/3}+y^{2/3}=1$ in the first quaudrant. 
