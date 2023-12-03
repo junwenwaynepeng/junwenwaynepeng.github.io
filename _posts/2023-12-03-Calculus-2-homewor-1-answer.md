@@ -23,7 +23,7 @@ data:
     folder: question
     file: calculus2-algorithm
     id: riemann-sum
-show-answer: false
+show-answer: true
 expandable-answer: true
 ---
 
