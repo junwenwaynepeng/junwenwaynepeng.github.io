@@ -2,15 +2,29 @@ ProblemsPlus-1:
   question: If $x\sin(\pi x) = \int_0^{x^2}f(t)dt$, where $f$ is a continuous function, find $f(4)$.
   answer: |
     Let $F(x)$ be an antiderivative of $f(t)$, so $\int_0^{x^2}f(t)dt = F(x^2)-F(0)$ by the fundamental theorem of Calculus. Apply differentiation to $x$ on the integral, we get $\frac{d}{dx}\left(\int_0^{x^2}f(t)dt\right) = F'(x^2)\cdot 2x = 2xf(x^2)$. On the other hand $(x\sin(\pi x))' = \sin(\pi x) + \pi x\cos(\pi x)$. By setting $x=2$, we conclude that $f(4) = \frac{\pi}{2}$.
+
 ProblemsPlus-2:
   question: Suppose $f$ is continuous, $f(0)=0$, $f(1)=1$, $f'(x)>0$, and $\int_0^1f(x)dx=\frac{1}{3}$. Find the value of the integral $\int_0^1f^{-1}(y)dy$.
   answer: |
     The following graph explains that the integral is $1-\frac{1}{3}$. The area of the red shadow part is the integral. ![Figure 1](../assets/question/steward-ch5-ProblemPlus-2)
+
 ProblemsPlus-3:
   question: If $\int_0^4e^{(x-2)^4}dx=k$, find the value of $\int_0^4xe^{(x-2)^4}dx$.
   answer: |
+    Let $u=x-2$, then $x=u+2$. Thus, we have
+    $$\int_{0}^4 x e^{(x-2)^4}dx = \int_{-2}^{2} (u+2)e^{u^4}du = \int_{-2}^{2}ue^{u^4}du + 2\int_{-2}^{2}e^{u^4}du$$.
+    Since $ue^{u^4}$ is an odd function, the integral $\int_{-2}^{2}ue^{u^4}du$ is $0$ and $\int_{-2}^{2}e^{u^4}du = \int_0^4 e^{(x-2)^4}dx$. Hence, the desired integral is $2k$.
 
 ProblemsPlus-19:
   question: |
     Evaluate 
     $$\lim_{n\to\infty}\left(\frac{1}{\sqrt{n}\sqrt{n+1}}+\frac{1}{\sqrt{n}\sqrt{n+2}}+\cdots+\frac{1}{\sqrt{n}\sqrt{n+n}}\right).$$
+  answer: |
+    We have 
+    $$
+    \begin{align}
+    \lim_{n\to\infty}\left(\frac{1}{\sqrt{n}\sqrt{n+1}}+\frac{1}{\sqrt{n}\sqrt{n+2}}+\cdots+\frac{1}{\sqrt{n}\sqrt{n+n}}\right) \\\\
+    = \lim_{n\to\infty}\left(\frac{1}{n}\sqrt{\frac{1}{1+1/n}} + \frac{1}{n}\sqrt{\frac{1}{1+2/n}} + \cdots + \frac{1}{n}\sqrt{\frac{1}{1+1}}\right).
+    \end{align}
+    $$
+    This is the limit of the right Riemann sum of $R_n$ for the function $\frac{1}{1+x}$ from $0$ to $1$. Since this function is integrable, the limit of the right Riemann sum will converge to the integral $\int_0^1\frac{1}{\sqrt{1+x}}$. We then can conclude that the limit is $\left.\sqrt{1+x}\right|_{0}^1 = \sqrt{2}-1$.
