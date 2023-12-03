@@ -27,7 +27,7 @@ The followings are examples:
 
 **Example 6** $\int \sin^2(x)dx$
 
-# Trigonometric integrals
+# Trigonometric integrals $\int \sin^{m}(x)\cos^n(x)dx$
 
 To integrate $\sin^{m}(x)\cos^{n}(x)$, we consider the following cases:
 
@@ -36,4 +36,9 @@ To integrate $\sin^{m}(x)\cos^{n}(x)$, we consider the following cases:
 2. If both $m$ and $n$ are even, we can use integration by part to reduce the $m$ and $n$ by $2$, i.e. an integral of $\sin^m(x)\cos^n(x)$ becomes an integral of $\sin^{m-2}(x)\cos^n(x)$ or $\sin^{m}(x)\cos^{n-2}(x)$ depending on how you set up your $u$ and $dv$. Another simpler method is use the double angle formulas:
 $$\sin^2(\theta) = \frac{1-\cos(2\theta)}{2}\text{ and }\cos^{2}(\theta)=\frac{1+\cos(2\theta)}{2}.$$
 
+
+|m\n| $n$ is odd | $n$ is even |
+|---|:----------:|:-----------:|
+| $m$ is odd | use 1. by setting either $u=\cos(x)$ or $u=\sin(x)$ | use 1. by seeting $u=\cos(x)$ |
+| $m$ is even| use 1. by setting $u=\sin(x)$ | Use double angle formula or integration by part to reduce the degree $m$ and $n$ until do able |  
 
