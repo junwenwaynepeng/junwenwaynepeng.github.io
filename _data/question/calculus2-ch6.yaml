@@ -5,12 +5,19 @@ s-1:
     **Method 1 (Cylindrical Sehlls Method)** The integral
     $$\int_{R-r}^{R+r}2\pi\cdot x\cdot 2\sqrt{r^2-(x-R)^2}dx$$
     is the volume. We apply the trig sub by letting $x-R = r\sin\theta$ and $dx = r\cos\theta d\theta$ with $\theta\in[-\pi/2, \pi/2]$ to calculate this integral. That is
-    $$\int 2\pi\cdot x\cdot 2\sqrt{r^2-(x-R)^2}dx = \int 4\pi (R+r\sin\theta)\cdot r\sin\theta\cdot r\cos\theta d\theta = \int 4\pi r^2R\sin\theta\cos\theta + 4\pi r^3\sin^2\theta\cos\theta d\theta.$$
-    We use double angle formula to simplify the first part of the above integral, and use $u$-sub to deal with the second part. Therefore, we have
-    $$\int 2\pi r^2R 2\sin\theta\cos\theta d\theta = \int 2\pi r^2R\sin(2\theta)d \theta = -rR^2\cos(2\theta)d \theta$$
-    and, let $u=\sin\theta$ and $du =\cos\theta d\theta$,
-    $$\int 4\pi r^3\sin^2\theta\cos\theta d\theta =\int 4\pi r^3 u^2du = \frac{4}{3}r^3u^3 = \frac{4}{3}r^3\sin^3\theta.$$
-    Putting everything together, we can conclude that the desire integral is $\frac{32}{3}r^3$.   
+    $$\int 2\pi\cdot x\cdot 2\sqrt{r^2-(x-R)^2}dx = \int 4\pi (R+r\sin\theta)\cdot r\cos\theta\cdot r\cos\theta d\theta = \int 4\pi r^2R\cos^2\theta + 4\pi r^3\sin\theta\cos^2\theta d\theta.$$
+    Note that the second integral is an odd function and $\theta$ is from $-\pi/2$ to $\pi/2$, so this integral is $0$.
+    We use double angle formula to simplify the first part. It follows
+    $$\int 4\pi r^2R \cos^2\theta d\theta = \int 4\pi r^2R  \frac{\cos(2\theta)+1}{2} d\theta = \int 2\pi r^2R\cos(2\theta)d\theta + \int 2\pi r^2R d\theta$$.
+    We can again ignore the first integral because $2\theta$ will be range from $-\pi$ to $\pi$ and the definite integral of cosine function on a period is $0$. The second integral is $2\pi^2 r^2R$.
+
+    **Method 2 (Washer Method)** The integral
+    $$\int_{-r}^r \pi [(\sqrt{r^2-y^2}+R)^2 - (-\sqrt{r^2-y^2}+R)^2] dy$$
+    is the volume. We simplify the integral
+    $$\int_{-r}^r \pi [(\sqrt{r^2-y^2}+R)^2 - (-\sqrt{r^2-y^2}+R)^2] dy = \int_{-r}^r \pi 4R\sqrt{r^2-y^2}d\theta.$$
+    Let $y=r\sin\theta$, $dy = r\cos\theta d\theta$, and the range of $\theta$ is from $-\pi/2$ to $\pi/2$. It follows
+    $$\int_{-r}^r \pi 4R\sqrt{r^2-y^2}d\theta = \int_{-\pi/2}^{\pi/2} 4\pi r^2R \cos^2\theta d\theta = 2\pi^2r^2R.$$
+
 
 s-2:
   question: |
