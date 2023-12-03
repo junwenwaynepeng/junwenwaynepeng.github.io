@@ -11,6 +11,7 @@ s-1:
     and, let $u=\sin\theta$ and $du =\cos\theta d\theta$,
     $$\int 4\pi r^3\sin^2\theta\cos\theta d\theta =\int 4\pi r^3 u^2du = \frac{4}{3}r^3u^3 = \frac{4}{3}r^3\sin^3\theta.$$
     Putting everything together, we can conclude that the desire integral is $\frac{32}{3}r^3$.   
+
 s-2:
   question: |
     Let $C$ be a curve parametrized by $(x(t),y(t))$. We assume: 
@@ -24,15 +25,19 @@ s-2:
     The following figure demonstrate how we are going to partition the area. ![figure](../assets/img/question/calculus2-ch6-s-2.png)
     The tiny area is $x(t)y'(t)dt$, so the area of the region enclosed by the curves is $\left|\int_{a}^b x(t)y'(t)dt\right|$
 
+s-3:
   question: |
     Suppose $f(x)$ is a nonegative and continuous function on $[a,b]$. Find the area of the surface revolving the curve about $x$-axis, and explain your formula. 
   answer: |
     We can partition the surface into bands (see [figure](https://www.desmos.com/3d/3d838851e2)). To estimate the area of a band,  we can pretend it is a rectangle when we unfold the band on table. The width of the band can be denote by $\sqrt{dx^2+dy^2}$, and the length can is $2\pi f(x)$. Thus, we derive that the area of the surface is
     $$\int_a^b 2pi f(x)\sqrt{dx^2+dy^2} = \int_a^b 2\pi f(x)\sqrt{1+f'(x)^2}dx.$$
+
 s-4:
   question: |
     Consider a segment of the curve described by the equation $x^{2/3}+y^{2/3}=1$ in the first quaudrant. 
     1. Find the arc length of the curve.
     2. Find the area of the surface revolving the curve about $x$-axis.
   answer: |
-    t
+    1. Apply the implicit differentiation to the equation, we get $\frac{2}{3}x^{-1/3} + \frac{2}{3}y^{1/3}y' = 0$. Thus, $y' = -\left(\frac{x}{y}\right)^{1/3}$. Using the formula of arc length, we have
+    $$L = \int_{0}^1 \sqrt{1+\frac{x}{y}^{2/3}}dx = 1.$$
+    2. Using the formula that we found in the last question, the area of the surface is $2\pi $
