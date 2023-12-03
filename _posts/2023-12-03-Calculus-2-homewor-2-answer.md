@@ -2,7 +2,6 @@
 title: Calculus 2 Homework 2 Answers
 subtitle: Arc length, volumen, surface area, and substitution rule
 tags: [calculus 2, calculus, homework]
-sagecell: true
 head-package:
   -
     file: "package/sagecell.html"

@@ -2,6 +2,7 @@
 title: Calculus 2 Homework 1 Answer
 subtitle: Riemann sums and the fundamental theorem of Calculus
 tags: [calculus 2, calculus, homework]
+sagecell: true
 data:
   -
     folder: question

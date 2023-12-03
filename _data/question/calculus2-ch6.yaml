@@ -1,6 +1,16 @@
 s-1:
   question: |
     Find the volume of a solid torus which is obtained by rotating the circle $(x-R)^2+y^2=r^2$ with $R>r>0$ about the $y$-axis.
+  answer: |
+    **Method 1 (Cylindrical Sehlls Method)** The integral
+    $$\int_{R-r}^{R+r}2\pi\cdot x\cdot 2\sqrt{r^2-(x-R)^2}dx$$
+    is the volume. We apply the trig sub by letting $x-R = r\sin\theta$ and $dx = r\cos\theta d\theta$ with $\theta\in[-\pi/2, \pi/2]$ to calculate this integral. That is
+    $$\int 2\pi\cdot x\cdot 2\sqrt{r^2-(x-R)^2}dx = \int 4\pi (R+r\sin\theta)\cdot r\sin\theta\cdot r\cos\theta d\theta = \int 4\pi r^2R\sin\theta\cos\theta + 4\pi r^3\sin^2\theta\cos\theta d\theta.$$
+    We use double angle formula to simplify the first part of the above integral, and use $u$-sub to deal with the second part. Therefore, we have
+    $$\int 2\pi r^2R 2\sin\theta\cos\theta d\theta = \int 2\pi r^2R\sin(2\theta)d \theta = -rR^2\cos(2\theta)d \theta$$
+    and, let $u=\sin\theta$ and $du =\cos\theta d\theta$,
+    $$\int 4\pi r^3\sin^2\theta\cos\theta d\theta =\int 4\pi r^3 u^2du = \frac{4}{3}r^3u^3 = \frac{4}{3}r^3\sin^3\theta.$$
+    Putting everything together, we can conclude that the desire integral is $\frac{32}{3}r^3$.   
 s-2:
   question: |
     Let $C$ be a curve parametrized by $(x(t),y(t))$. We assume: 
@@ -10,11 +20,17 @@ s-2:
     Explain that the area inclosed by $C$ and $y$-axis is
     $$\int_a^b x(t)y'(t)dt.$$
     (I want to see how you partition the entire area into tiny rectangles, and use $x(t)$ and $y(t)$ to express the area of the rectangles.) 
+  answer: |
+    te
 s-3:
   question: |
     Suppose $f(x)$ is a nonegative and continuous function on $[a,b]$. Find the area of the surface revolving the curve about $x$-axis, and explain your formula. 
+  answer: |
+    t
 s-4:
   question: |
     Consider a segment of the curve described by the equation $x^{2/3}+y^{2/3}=1$ in the first quaudrant. 
     1. Find the arc length of the curve.
     2. Find the area of the surface revolving the curve about $x$-axis.
+  answer: |
+    t
