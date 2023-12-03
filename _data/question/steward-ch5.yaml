@@ -12,7 +12,7 @@ ProblemsPlus-3:
   question: If $\int_0^4e^{(x-2)^4}dx=k$, find the value of $\int_0^4xe^{(x-2)^4}dx$.
   answer: |
     Let $u=x-2$, then $x=u+2$. Thus, we have
-    $$\int_{0}^4 x e^{(x-2)^4}dx = \int_{-2}^{2} (u+2)e^{u^4}du = \int_{-2}^{2}ue^{u^4}du + 2\int_{-2}^{2}e^{u^4}du$$.
+    $$\int_{0}^4 x e^{(x-2)^4}dx = \int_{-2}^{2} (u+2)e^{u^4}du = \int_{-2}^{2}ue^{u^4}du + 2\int_{-2}^{2}e^{u^4}du.$$
     Since $ue^{u^4}$ is an odd function, the integral $\int_{-2}^{2}ue^{u^4}du$ is $0$ and $\int_{-2}^{2}e^{u^4}du = \int_0^4 e^{(x-2)^4}dx$. Hence, the desired integral is $2k$.
 
 ProblemsPlus-19:
