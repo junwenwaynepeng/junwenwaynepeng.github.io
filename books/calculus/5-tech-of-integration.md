@@ -6,7 +6,7 @@ right-toc: true
 left-toc: true
 book: calculus
 preview_page: 4-1-the-fundamental-theorem-of-calculus
-next_page: 6-application-of-integrals
+next_page: 6-applications-of-integration
 ---
 
 # Antiderivative Table
