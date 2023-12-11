@@ -199,3 +199,11 @@ where $r_i^{(j)}(x) = A_{i,j}^{(d-1)}X^{d-1}+\cdots A_{i,j}^{(d-2)}X^{d-2}+\cdot
 **Theorem.** Let $f$ be a continuous function on $[-a,a]$. Then, 
 1. If $f$ is even, i.e. $f(-x)=f(x)$, then $\int_{-a}^{a}fdx = 2\int_0^afdx$.
 2. If $f$ is odd, i.e. $f(-x)=-f(x)$, then $\int_{-a}^{a}fdx = 0$.
+
+## integral of $\tan(x)$ and $\sec(x)$
+
+Special treatment is required when integrating tangent and secant functions.
+
+- $\int \tan(x) dx = \int \frac{\sin(x)}{\cos(x)}dx = \ln|\cos(x)|+C$ (Use $u$ sub by letting $u=\cos(x)$).
+
+- $\displaystyle\int \sec(x) dx = \int\frac{sec(x)(\sec(x)+\tan(x))}{\sec(x)+\tan(x)}dx = \ln|\sec(x)+\tan(x)|$ (use $u$ sub by letting $u=\sec(x)+\tan(x)$).
