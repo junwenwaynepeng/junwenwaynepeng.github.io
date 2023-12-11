@@ -6,6 +6,7 @@ right-toc: true
 left-toc: true
 book: calculus
 preview_page: 3-2-theorems-assuming-differentiability
+next_page: 4-definite-and-indefinite-integral
 ---
 
 For a function $f(x)$, the *derivative* $f'(x)$ at a point $x$ is defined as the limit of the difference quotient as it approaches zero:
