@@ -28,6 +28,8 @@ ArcLength[<a href='#'>Arc length</a>];
 Volume[<a href='#'>Volume</a>];
 CenterOfMass[<a href='#'>Center of Mass</a>];
 Probability[<a href='#'>Probability</a>];
+Limit[];
+ImproperIntegral[<a href='#'>Improper integral</a>]
 SeparableForm[<a href='#'>Separable form</a>];
 Order1DiffEq[<a href='#'>Order 1 differentail equation</a>];
 OrthTraj[<a href='#'>Orthogonal Trajectories</a>]
@@ -66,4 +68,5 @@ DefiniteIntegral<-.->|<a href='../books/calculus/4-1-the-fundamental-theorem-of-
 IndefiniteIntegral-->AppOfIntegral;
 DefiniteIntegral-->TechOfIntegration;
 TechOfIntegration-->ODE-->AppOfODE;
+Limit & DefiniteIntegral-->ImproperIntegral
 ```
