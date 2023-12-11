@@ -6,7 +6,7 @@ right-toc: true
 left-toc: true
 book: calculus
 preview_page: 3-3-applications-of-differentiation
-nex_page: 4-1-the-fundamental-theorem-of-calculus
+next_page: 4-1-the-fundamental-theorem-of-calculus
 sagecell: true
 head-package:
   -
