@@ -6,7 +6,7 @@ right-toc: true
 left-toc: true
 book: calculus
 preview_page: 6-1-geometic-applications-of-integration
-next_page: 7-Improper Integral
+next_page: 7-improper-integrals
 ---
 
 # Probability density function
