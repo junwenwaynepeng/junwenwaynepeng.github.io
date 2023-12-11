@@ -45,7 +45,7 @@ Find the volume of the solid of revolution generated when the finite region $S$ 
 
 $$V=\int_a^bdV = \int_a^b2 (x-c)\pi f(x)dx.$$
 
-## Center of Mass
+# Center of Mass
 
 Consider two particles with masses $m_1$ and $m_2$, located at positions $x_1$ and $x_2$, respectively. The center of mass for these two particles is given by:
 

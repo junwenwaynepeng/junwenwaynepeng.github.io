@@ -25,11 +25,11 @@ TrigIntegral[<a href='../books/calculus/5-techs-of-integration/#trig-integrals'>
 TrigSub[<a href='../books/calculus/5-techs-of-integration/#trigonometric-substitution'>Trig sub</a>];
 PF[<a href='../books/calculus/5-techs-of-integration/#partial-fraction'>Partial fraction</a>];
 SC[<a href='../books/calculus/5-techs-of-integration/#special-cases'>Special cases</a>];
-Area[<a href='#'>Area</a>];
-ArcLength[<a href='#'>Arc length</a>];
-Volume[<a href='#'>Volume</a>];
-CenterOfMass[<a href='#'>Center of Mass</a>];
-Probability[<a href='#'>Probability</a>];
+Area[<a href='../books/calculus/6-1-geometric-applications-of-integration/#area'>Area</a>];
+ArcLength[<a href='../books/calculus/6-1-geometric-applications-of-integration/#arc-length>Arc length</a>];
+Volume[<a href='../books/calculus/6-1-geometric-applications-of-integration/#volume-of-a-solid'>Volume</a>];
+CenterOfMass[<a href='../books/calculus/6-1-geometric-applications-of-integration/#center-of-mass'>Center of Mass</a>];
+Probability[<a href='../books/calculus/6-2-probability/'>Probability</a>];
 SeparableForm[<a href='#'>Separable form</a>];
 Order1DiffEq[<a href='#'>Order 1 differentail equation</a>];
 OrthTraj[<a href='#'>Orthogonal Trajectories</a>]
@@ -44,7 +44,7 @@ subgraph TechOfIntegration [<a href='../books/calculus/5-tech-of-integration'>Te
     PF;
     SC;
 end;
-subgraph AppOfIntegral [<a href='#'>Application of Integrals</a>];
+subgraph AppOfIntegral [<a href='../books/calculus/6-applications-of-integration'>Application of Integrals</a>];
     direction TB;
     Area~~~ArcLength~~~Volume~~~CenterOfMass~~~Probability;
 end;
