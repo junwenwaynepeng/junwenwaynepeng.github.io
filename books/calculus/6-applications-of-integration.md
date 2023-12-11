@@ -5,7 +5,7 @@ subtitle:
 right-toc: true
 left-toc: true
 book: calculus
-preview_page: 5-tech-of-integration
+preview_page: 5-techs-of-integration
 next_page: 6-1-geometic-applications-of-integration
 ---
 

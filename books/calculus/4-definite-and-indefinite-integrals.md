@@ -1,6 +1,6 @@
 ---
 layout: page
-title: definite and indefinite integral
+title: definite and indefinite integrals
 subtitle: 
 right-toc: true
 left-toc: true

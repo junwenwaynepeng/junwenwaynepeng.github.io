@@ -5,8 +5,8 @@ subtitle:
 right-toc: true
 left-toc: true
 book: calculus
-preview_page: 4-definite-and-indefinite-integral
-next_page: 5-tech-of-integration
+preview_page: 4-definite-and-indefinite-integrals
+next_page: 5-techs-of-integration
 ---
 **Theorem(the Fundamental Theorem of Calculus, Part 1)** Let $f$ be a continuous real-valued function defined on a closed interval $[a,b]$. Let $F$ be the function defined by
 $$F(x)=\int_{a}^x f(t)dt$$
