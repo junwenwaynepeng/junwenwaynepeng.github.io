@@ -35,7 +35,7 @@ Order1DiffEq[<a href='#'>Order 1 differentail equation</a>];
 OrthTraj[<a href='#'>Orthogonal Trajectories</a>]
 MixingProblem[<a href='#'>Mixing Problem</a>]
 subgraph TechOfIntegration [<a href='../books/calculus/5-tech-of-integration'>Techniques of Integrations</a>];
-    direction LR
+    direction LR;
     AntiderivativeTable;
     USub;
     IBP;
@@ -45,20 +45,20 @@ subgraph TechOfIntegration [<a href='../books/calculus/5-tech-of-integration'>Te
     SC;
 end;
 subgraph AppOfIntegral [<a href='#'>Application of Integrals</a>];
-    direction LR
+    direction LR;
     Area~~~ArcLength~~~Volume~~~CenterOfMass~~~Probability;
 end;
 subgraph ODE [<a href='#'>Ordinary differential equation</a>];
-    direction LR
-    SeparableForm
-    Order1DiffEq
+    direction LR;
+    SeparableForm;
+    Order1DiffEq;
 end;
 subgraph AppOfODE [<a href='#'>A pplication of ODE</a>];
-    direction TB
-    OrthTraj~~~MixingProblem
+    direction TB;
+    OrthTraj~~~MixingProblem;
 end;
 subgraph align[" "];
-    direction LR
+    direction LR;
     Derivative;
     RiemannSum;
 end;
@@ -68,5 +68,5 @@ DefiniteIntegral<-.->|<a href='../books/calculus/4-1-the-fundamental-theorem-of-
 IndefiniteIntegral-->AppOfIntegral;
 DefiniteIntegral-->TechOfIntegration;
 TechOfIntegration-->ODE-->AppOfODE;
-Limit & DefiniteIntegral-->ImproperIntegral
+Limit & DefiniteIntegral-->ImproperIntegral;
 ```
