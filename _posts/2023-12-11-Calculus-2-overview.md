@@ -12,10 +12,10 @@ mermaid: true
 ```mermaid
 %%{init: {"flowchart":{"useMaxWidth": 0}}}%%
 flowchart LR;
-RiemannSum[<a href='#'>Riemann Sum</a>];
+RiemannSum[<a href='../books/calculus/4-definite-and-indefinite-integral/#riemann-sum'>Riemann Sum</a>];
 Derivative[<a href='#'>Derivative</a>];
-DefiniteIntegral[<a href='#'>Definite Integral a.k.a antiderivative</a>];
-IndefiniteIntegral[<a href='#'>Indefinite Integral</a>];
+DefiniteIntegral[<a href='../books/calculus/4-definite-and-indefinite-integral/#definition-of-indefinite-integral'>Definite Integral</a>];
+IndefiniteIntegral[<a href='../books/calculus/4-definite-and-indefinite-integral/#definition-of-indefinite-integral-aka-antiderivatives'>Indefinite Integral a.k.a antiderivative</a>];
 AntiderivativeTable[<a href='#'>Antiderivative table</a>];
 USub[<a href='#'>U sub</a>];
 IBP[<a href='#'>Integration by part</a>];
