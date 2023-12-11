@@ -32,7 +32,7 @@ CenterOfMass[<a href='../books/calculus/6-1-geometric-applications-of-integratio
 Probability[<a href='../books/calculus/6-2-probability/'>Probability</a>];
 SeparableForm[<a href='../books/calculus/8-1-how-to-solve-order-1-odes/#separable-form'>Separable form</a>];
 Order1DiffEq[<a href='../books/calculus/8-1-how-to-solve-order-1-odes/#integral-factor-non-separable-form'>Integral Factors</a>];
-OrthTraj[<a href='../8-2-applications-of-odes/#orthogonal-trajectories'>Orthogonal Trajectories</a>]
+OrthTraj[<a href='../books/calculus/8-2-applications-of-odes/#orthogonal-trajectories'>Orthogonal Trajectories</a>]
 MixingProblem[<a href='../books/calculus/8-2-applications-of-odes/#mixing-problem'>Mixing Problem</a>]
 subgraph TechOfIntegration [<a href='../books/calculus/5-tech-of-integration'>Techniques of Integrations</a>];
     direction LR;
