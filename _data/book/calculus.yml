@@ -26,3 +26,12 @@ content:
   -
     title: 3-3. Applications of Differentiation
     url: ./books/calculus/3-3-applications-of-differentiation
+  - 
+    title: 4. Definite and Indefinite Integral
+    url: ./books/calculus/4-definite and indefinite integral
+  -
+    title: 4.1 The Fundamental Theorem of Calculus
+    url: ./books/calculus/4-1-the-fundamental-theorem-of-calculus
+  -
+    title: 5 Techniques of Integration
+    url: ./books/calculus/5-tech-of-integration
