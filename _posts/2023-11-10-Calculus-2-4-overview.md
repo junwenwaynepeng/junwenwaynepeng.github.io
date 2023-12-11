@@ -40,22 +40,13 @@ There are three major types:
 
 **Example 9.** $\int\frac{\ln(x)}{x}dx$
 
-# Use geometry to solve a definite integral
+# Integration by part
+
+# Special Cases
+## Use geometry to solve a definite integral
 
 **Example 10.** $\int_-1^1\sqrt{1-t^2}dt$ is the area of upper semicircle.
 
 **Theorem.** Let $f$ be a continuous function on $[-a,a]$. Then, 
 1. If $f$ is even, i.e. $f(-x)=f(x)$, then $\int_{-a}^{a}fdx = 2\int_0^afdx$.
 2. If $f$ is odd, i.e. $f(-x)=-f(x)$, then $\int_{-a}^{a}fdx = 0$.
-
-# Reminder of an application of the Fundamental theorem of Calculus
-
-Let me use another way to explain how we use the fundamental theorem of Calculus to solve $\frac{d}{dx}\int_{f(x)}^{g(x)} h(t)dt$ where $h(t)$ is a continuous function, and $f$ and $g$ are differentiable function. Let $H(x)$ is an antiderivative of $h(x)$. Then, by the fundamental theorem of Calculus, we know
-
-$$\int_{f(x)}^{g(x)}h(t)dt = \left.H(t)\right|_{f(x)}^{g(x)} = H(g(x))-H(f(x)).$$
-
-Thus, its derivative is
-
-$$\frac{d}{dx}\int_{f(x)}^{g(x)}h(t)dt = H'(g(x))g'(x)-H'(f(x))f'(x).$$
-
-Since $H$ is an antiderivative of $h$, we then can write the above derivative as $(h\circ g)g' - (h\circ f)f'$.
