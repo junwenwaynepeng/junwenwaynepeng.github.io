@@ -1,12 +1,13 @@
 ---
 layout: page
-title: definite-and-indefinite-integral.md
+title: definite and indefinite integral
 subtitle: 
 right-toc: true
 left-toc: true
 book: calculus
 preview_page: 3-3-applications-of-differentiation
 nex_page: 4-1-the-fundamental-theorem-of-calculus
+sagecell: true
 ---
 
 # Definition of Indefinite Integral (a.k.a. Antiderivatives)
