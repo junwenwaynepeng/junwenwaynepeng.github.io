@@ -27,4 +27,4 @@ ProblemsPlus-19:
     = \lim_{n\to\infty}\left(\frac{1}{n}\sqrt{\frac{1}{1+1/n}} + \frac{1}{n}\sqrt{\frac{1}{1+2/n}} + \cdots + \frac{1}{n}\sqrt{\frac{1}{1+1}}\right).
     \end{align}
     $$
-    This is the limit of the right Riemann sum of $R_n$ for the function $\frac{1}{1+x}$ from $0$ to $1$. Since this function is integrable, the limit of the right Riemann sum will converge to the integral $\int_0^1\frac{1}{\sqrt{1+x}}$. We then can conclude that the limit is $\left.\sqrt{1+x}\right|_{0}^1 = \sqrt{2}-1$.
+    This is the limit of the right Riemann sum of $R_n$ for the function $\frac{1}{1+x}$ from $0$ to $1$. Since this function is integrable, the limit of the right Riemann sum will converge to the integral $\int_0^1\frac{1}{\sqrt{1+x}}dx$. We then can conclude that the limit is $\left.\sqrt{1+x}\right|_{0}^1 = \sqrt{2}-1$.
