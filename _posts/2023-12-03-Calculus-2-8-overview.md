@@ -37,7 +37,7 @@ $$ \bar{y} = \frac{\int_a^b \frac{\delta}{2}f^2(x) \, dx}{\int_a^b f(x) dx} $$
 
 An ordinary differential equation (ODE) of order $n$ is represented as:
 
-$$ f_n(x,y) y^{(n)} + f_{n-1}(x,y)^{(n-1)} + \cdots + f_0(x,y) = 0 $$
+$$ f_n(x,y) y^{(n)} + f_{n-1}(x,y)y^{(n-1)} + \cdots + f_0(x,y) = 0 $$
 
 Here, $y^{(i)}$ denotes the $i$-th derivative of $y$. If $f_n(x,y)$ is non-zero, a solution $y$ of the ODE is a function in $x$.
 
