@@ -61,7 +61,7 @@ There are three major types:
 
 **Example 9.** $\int\frac{\ln(x)}{x}dx$
 
-## Important
+## Hidden case
 
 Sometime it is not easy to see we have to use u sub as our first step. 
 
