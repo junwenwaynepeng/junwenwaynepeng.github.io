@@ -32,5 +32,4 @@ SeparableForm[<a href='#'>Separable form</a>];
 Order1DiffEq[<a href='#'>Order 1 differentail equation</a>];
 RiemannSum-->DefiniteIntegral
 Derivative-->IndefiniteIntegral
-DefiniteIntegral<-->IndefiniteIntegral[<a href='#'>Fundamental Theorem of Calculus</a>];
 ```
