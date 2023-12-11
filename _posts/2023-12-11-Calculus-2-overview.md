@@ -16,7 +16,7 @@ RiemannSum[<a href='../books/calculus/4-definite-and-indefinite-integral/#rieman
 Derivative[<a href='#'>Derivative</a>];
 DefiniteIntegral[<a href='../books/calculus/4-definite-and-indefinite-integral/#definition-of-indefinite-integral'>Definite Integral</a>];
 IndefiniteIntegral[<a href='../books/calculus/4-definite-and-indefinite-integral/#definition-of-indefinite-integral-aka-antiderivatives'>Indefinite Integral a.k.a antiderivative</a>];
-AntiderivativeTable[<a href='#'>Antiderivative table</a>];
+AntiderivativeTable[<a href='../books/calculus/5-tech-of-integration/#antiderivative-table'>Antiderivative table</a>];
 USub[<a href='#'>U sub</a>];
 IBP[<a href='#'>Integration by part</a>];
 TrigIntegral[<a href='#'>Trig integrals</a>];
@@ -32,7 +32,7 @@ SeparableForm[<a href='#'>Separable form</a>];
 Order1DiffEq[<a href='#'>Order 1 differentail equation</a>];
 OrthTraj[<a href='#'>Orthogonal Trajectories</a>]
 MixingProblem[<a href='#'>Mixing Problem</a>]
-subgraph TechOfIntegration [<a href='#'>Techniques of Integrations</a>];
+subgraph TechOfIntegration [<a href='../books/calculus/5-tech-of-integration'>Techniques of Integrations</a>];
     direction LR
     AntiderivativeTable;
     USub;
@@ -62,7 +62,7 @@ subgraph align[" "];
 end;
 RiemannSum-->DefiniteIntegral;
 Derivative-->IndefiniteIntegral;
-DefiniteIntegral<-.->|<a href='#'>The Fundamental Theorem of Calculus</a>|IndefiniteIntegral;
+DefiniteIntegral<-.->|<a href='../books/calculus/4-1-the-fundamental-theorem-of-calculus/'>The Fundamental Theorem of Calculus</a>|IndefiniteIntegral;
 IndefiniteIntegral-->AppOfIntegral;
 DefiniteIntegral-->TechOfIntegration;
 TechOfIntegration-->ODE-->AppOfODE;
