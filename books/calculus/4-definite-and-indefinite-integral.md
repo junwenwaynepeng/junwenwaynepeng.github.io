@@ -8,6 +8,9 @@ book: calculus
 preview_page: 3-3-applications-of-differentiation
 nex_page: 4-1-the-fundamental-theorem-of-calculus
 sagecell: true
+head-package:
+  -
+    file: "package/sagecell.html"
 ---
 
 # Definition of Indefinite Integral (a.k.a. Antiderivatives)
