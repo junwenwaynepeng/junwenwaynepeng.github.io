@@ -26,7 +26,7 @@ The remanining cases:
 
 * Case 1 ($m=0$) We will use the trig identity $\tan^2(x)=\sec^2(x)-1$, so $\int\tan^2k(x)dx$ becomses
 $$\int\tan^{2(k-1)}(x)(\sec^2(x)-1)dx = \int\tan^{2(k-1)}(x)\sec^2(x) - \int\tan^{2(k-1)}.$$
-The first part of the integral belong the the case where $n$ is even and nonzero, and the second part has degree less than the previous integral. We will repeat this process untill we reduce the degree to $1$ or $0$.
+The first part of the integral belongs the the case where $n$ is even and nonzero, and the second part has degree less than the previous integral. We will repeat this process untill we reduce the degree to $1$ or $0$.
 
 * Case 2 ($m$ is odd and $n$ is even) We will use integration by part.
 
