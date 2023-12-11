@@ -12,17 +12,17 @@ mermaid: true
 ```mermaid
 %%{init: {"flowchart":{"useMaxWidth": 0}}}%%
 flowchart LR;
-RiemannSum[<a href='../books/calculus/4-definite-and-indefinite-integral/#riemann-sum'>Riemann Sum</a>];
-Derivative[<a href='#'>Derivative</a>];
-DefiniteIntegral[<a href='../books/calculus/4-definite-and-indefinite-integral/#definition-of-indefinite-integral'>Definite Integral</a>];
-IndefiniteIntegral[<a href='../books/calculus/4-definite-and-indefinite-integral/#definition-of-indefinite-integral-aka-antiderivatives'>Indefinite Integral a.k.a antiderivative</a>];
-AntiderivativeTable[<a href='../books/calculus/5-tech-of-integration/#antiderivative-table'>Antiderivative table</a>];
-USub[<a href='../books/calculus/5-tech-of-integration/#the-substitution-rule'>U sub</a>];
-IBP[<a href='../books/calculus/5-tech-of-integration/#integration-by-part'>Integration by part</a>];
-TrigIntegral[<a href='../books/calculus/5-tech-of-integration/#trig-integrals'>Trig integrals</a>];
-TrigSub[<a href='../books/calculus/5-tech-of-integration/#trigonometric-substitution'>Trig sub</a>];
-PF[<a href='../books/calculus/5-tech-of-integration/#partial-fraction'>Partial fraction</a>];
-SC[<a href='../books/calculus/5-tech-of-integration/#special-cases'>Special cases</a>];
+RiemannSum[<a href='../books/calculus/4-definite-and-indefinite-integrals/#riemann-sum'>Riemann Sums</a>];
+Derivatives[<a href='#'>Derivatives</a>];
+DefiniteIntegral[<a href='../books/calculus/4-definite-and-indefinite-integrals/#definition-of-indefinite-integral'>Definite Integrals</a>];
+IndefiniteIntegral[<a href='../books/calculus/4-definite-and-indefinite-integrals/#definition-of-indefinite-integral-aka-antiderivatives'>Indefinite Integrals a.k.a antiderivatives</a>];
+AntiderivativeTable[<a href='../books/calculus/5-techs-of-integration/#antiderivative-table'>Antiderivative table</a>];
+USub[<a href='../books/calculus/5-techs-of-integration/#the-substitution-rule'>U sub</a>];
+IBP[<a href='../books/calculus/5-techs-of-integration/#integration-by-part'>Integration by part</a>];
+TrigIntegral[<a href='../books/calculus/5-techs-of-integration/#trig-integrals'>Trig integrals</a>];
+TrigSub[<a href='../books/calculus/5-techs-of-integration/#trigonometric-substitution'>Trig sub</a>];
+PF[<a href='../books/calculus/5-techs-of-integration/#partial-fraction'>Partial fraction</a>];
+SC[<a href='../books/calculus/5-techs-of-integration/#special-cases'>Special cases</a>];
 Area[<a href='#'>Area</a>];
 ArcLength[<a href='#'>Arc length</a>];
 Volume[<a href='#'>Volume</a>];
