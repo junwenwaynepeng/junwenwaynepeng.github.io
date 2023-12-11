@@ -6,7 +6,7 @@ right-toc: true
 left-toc: true
 book: calculus
 preview_page: 7-improper-integrals
-next_page: 8-1-how-to-solve-order-1-ode
+next_page: 8-1-how-to-solve-order-1-odes
 ---
 
 An order $n$ ordinary differential equation (ODE) is an equation of the form

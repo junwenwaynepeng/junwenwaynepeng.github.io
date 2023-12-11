@@ -5,7 +5,7 @@ subtitle:
 right-toc: true
 left-toc: true
 book: calculus
-preview_page: 8-1-how-to-solve-ode
+preview_page: 8-1-how-to-solve-odes
 ---
 
 # Orthogonal trajectories
