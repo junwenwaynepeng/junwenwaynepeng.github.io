@@ -62,6 +62,7 @@ subgraph align[" "];
     Derivative;
     RiemannSum;
 end;
+Limit-->RiemannSum
 Limit & DefiniteIntegral-->ImproperIntegral;
 RiemannSum-->DefiniteIntegral;
 Derivative-->IndefiniteIntegral;
