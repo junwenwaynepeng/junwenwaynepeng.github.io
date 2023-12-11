@@ -13,9 +13,11 @@ mermaid: true
 %%{init: {"flowchart":{"useMaxWidth": 0}}}%%
 flowchart LR;
 RiemannSum[<a href='../books/calculus/4-definite-and-indefinite-integrals/#riemann-sum'>Riemann Sums</a>];
-Derivatives[<a href='#'>Derivatives</a>];
-DefiniteIntegral[<a href='../books/calculus/4-definite-and-indefinite-integrals/#definition-of-indefinite-integral'>Definite Integrals</a>];
+Derivative[<a href='#'>Derivatives</a>];
+Limit["limit"];
 IndefiniteIntegral[<a href='../books/calculus/4-definite-and-indefinite-integrals/#definition-of-indefinite-integral-aka-antiderivatives'>Indefinite Integrals a.k.a antiderivatives</a>];
+DefiniteIntegral[<a href='../books/calculus/4-definite-and-indefinite-integrals/#definition-of-indefinite-integral'>Definite Integrals</a>];
+ImproperIntegral[<a href='#'>Improper integral</a>];
 AntiderivativeTable[<a href='../books/calculus/5-techs-of-integration/#antiderivative-table'>Antiderivative table</a>];
 USub[<a href='../books/calculus/5-techs-of-integration/#the-substitution-rule'>U sub</a>];
 IBP[<a href='../books/calculus/5-techs-of-integration/#integration-by-part'>Integration by part</a>];
@@ -28,8 +30,6 @@ ArcLength[<a href='#'>Arc length</a>];
 Volume[<a href='#'>Volume</a>];
 CenterOfMass[<a href='#'>Center of Mass</a>];
 Probability[<a href='#'>Probability</a>];
-Limit[];
-ImproperIntegral[<a href='#'>Improper integral</a>]
 SeparableForm[<a href='#'>Separable form</a>];
 Order1DiffEq[<a href='#'>Order 1 differentail equation</a>];
 OrthTraj[<a href='#'>Orthogonal Trajectories</a>]
@@ -45,7 +45,7 @@ subgraph TechOfIntegration [<a href='../books/calculus/5-tech-of-integration'>Te
     SC;
 end;
 subgraph AppOfIntegral [<a href='#'>Application of Integrals</a>];
-    direction LR;
+    direction TB;
     Area~~~ArcLength~~~Volume~~~CenterOfMass~~~Probability;
 end;
 subgraph ODE [<a href='#'>Ordinary differential equation</a>];
@@ -62,11 +62,12 @@ subgraph align[" "];
     Derivative;
     RiemannSum;
 end;
+Limit & DefiniteIntegral-->ImproperIntegral;
 RiemannSum-->DefiniteIntegral;
 Derivative-->IndefiniteIntegral;
-DefiniteIntegral<-.->|<a href='../books/calculus/4-1-the-fundamental-theorem-of-calculus/'>The Fundamental Theorem of Calculus</a>|IndefiniteIntegral;
+IndefiniteIntegral<-.->|<a href='../books/calculus/4-1-the-fundamental-theorem-of-calculus/'>The Fundamental Theorem of Calculus</a>|DefiniteIntegral;
 IndefiniteIntegral-->AppOfIntegral;
 DefiniteIntegral-->TechOfIntegration;
 TechOfIntegration-->ODE-->AppOfODE;
-Limit & DefiniteIntegral-->ImproperIntegral;
+
 ```
