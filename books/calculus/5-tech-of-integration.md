@@ -131,6 +131,35 @@ The first part of the integral belongs the the case where $n$ is even and nonzer
 
 ## Multiplication of trig functions with distinct angles
 
+To integrate one of the following forms:
+
+$$\sin(Ax)\cos(Bx),\\ \sin(Ax)\sin(Bx),\\ \cos(Ax)\cos(Bx),$$
+
+we consider the following Product-to-sum Identities:
+
+- $\sin(A)\cos(B) = \frac{1}{2}[\sin(A+B)+\sin(A-B)]$
+- $\sin(A)\sin(B) = \frac{1}{2}[\cos(A-B)-\cos(A+B)]$
+- $\cos(A)\cos(B) = \frac{1}{2}[\cos(A+B)+\cos(A-B)]$
+
+# Trigonometric substitution
+
+Trigonometric substitution, trig sub for short, is a kind of $u$ sub. The following table is the rules to do substitution.
+
+| pattern | trig identity | substitution |
+|:--------:|:------------:|:------------:|
+| $a^2-x^2$ | $1-\sin^2(x) = \cos^2(x)$ ($1-\cos^2(x)=\sin^2(x)$) | $u=a\sin(x)$ ($u=a\cos(x)$) |
+| $x^2 -a^2$  | $\tan^2(x) = \sec^2(x)-1$ | $u=a\sec(x)$ |
+| $x^2+a^2$ | $\sec^2(x) = \tan^2(x)+1$ | $u=a\tan(x)$ |
+
+## Complete Square
+
+Whenever we see somthing like $ax^2+bx+c$ in an integral, and substitution is not applicable. Try to complete the square.
+
+## When to use
+
+If a quadratic polynomial in the form of $ax^2 + bx + c$ appears in the denominator or as part of a square expression, it is imperative to employ trigonometric substitution without exception.
+
+
 # Partial Fraction
 
 To integrate a rational function $\frac{p(x)}{q(x)}$ where both $p(x)$ and $q(x)$ are polynomials, we will employee this technique to write this rational function as sum rational functions. We follows the following process to rewrite $\frac{p(x)}{q(x)}$.
