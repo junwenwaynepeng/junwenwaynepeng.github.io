@@ -40,7 +40,8 @@ To illustrate these scenarios, let's explore several typical examples.
 
 The following limits are useful when we tried to evaluate other limits:
 - $\displaystyle\lim_{x\to 0}\frac{\sin(x)}{x}=1$.
-	> **Example.** $\displaystyle\lim_{x\to 0}\frac{\sin(2x)}{\sin(3x)} = \lim_{x\to 0}\frac{\sin(2x)\cdot 3x}{2x\cdot\sin(3x)}\cdot\frac{3x}{2x} = \frac{3}{2}$.
+
+**Example.** $\displaystyle\lim_{x\to 0}\frac{\sin(2x)}{\sin(3x)} = \lim_{x\to 0}\frac{\sin(2x)\cdot 3x}{2x\cdot\sin(3x)}\cdot\frac{3x}{2x} = \frac{3}{2}$.
 
 ## Change of variables
 
@@ -73,7 +74,7 @@ $$\frac{0}{0},\\ \pm\frac{\infty}{\infty},\\ 0\cdot\infty,\\ \infty-\infty,\\ 0^
 # L'Hôpital's Rule
 
 **Theorem(L'Hôpital's rule)**
-Let $f(x)$ and $g(x)$ be differentiable at $x=a$, and $g'(x)\neq 0$ for some interval containing $a$. If the limit $\displaystyle\lim_{x\to a}\frac{f(x)}{g(x)}$ is indeterminate form and $\displaystyle\lim_{x\to a}\frac{f'(x)}{g'(x)}$ is DNE and not equal to $\pm\infty$, then
+Let $f(x)$ and $g(x)$ be differentiable at $x=a$, and $g'(x)\neq 0$ for some interval containing $a$. If the limit $\displaystyle\lim_{x\to a}\frac{f(x)}{g(x)}$ is indeterminate form and $\displaystyle\lim_{x\to a}\frac{f'(x)}{g'(x)}$ is not DNE or is equal to $\pm\infty$, then
 $$
 \lim_{x\to a}\frac{f(x)}{g(x)}=\lim_{x\to a}\frac{f'(x)}{g'(x)}.
 $$
