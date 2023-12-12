@@ -27,15 +27,15 @@ A general mixing problem in calculus, often modeled by ordinary differential equ
 Here's a typical setup for a mixing problem:
 
 **Problem Statement:**
-Consider a tank $V$ containing a solution, and the volume of a substance is $A_0$. Let \(C(t)\) represent the concentration of the substance in the tank at time \(t\). The tank has an inlet through which a solution with concentration \(A\) is flowing in at a rate of \(R_a\) and an outlet through which the mixture is flowing out at a rate of \(R_o\).
+Consider a tank $V$ containing a solution, and the volume of a substance is $A_0$. Let $C(t)$ represent the concentration of the substance in the tank at time $t$. The tank has an inlet through which a solution with concentration $A$ is flowing in at a rate of $R_a$ and an outlet through which the mixture is flowing out at a rate of $R_o$.
 
 **Key Variables:**
 - $V$: the volume of the tank.
 - $A_0$: the initial volume of the substance.
-- \(C(t)\): Concentration of the substance in the tank at time \(t\).
-- \(A\): Concentration of the incoming solution.
-- \(R_a\): Inflow rate.
-- \(R_o\): Outflow rate.
+- $C(t)$: Concentration of the substance in the tank at time $t$.
+- $A$: Concentration of the incoming solution.
+- $R_a$: Inflow rate.
+- $R_o$: Outflow rate.
 
 **ODE Model:**
 The general ODE representing this mixing problem is often expressed as:
@@ -44,10 +44,10 @@ $$\frac{dC}{dt} = A R_a  - C(t) R_o$$
 
 with the initial condition $C(0)=\frac{A_0}{V}$.
 
-where \(V\) is the volume of the tank.
+where $V$ is the volume of the tank.
 
 **Strategy to Solve:**
 
 The above differential equation is of separable form. Indeed, we can rearrange the equation to
 
-$$\frac{dC}{dt} = R_o(\frac{A R_a - C(t) R_o}{R_o})\Righarrow (\frac{R_o}{A R_a - C(t) R_o}) dC= \frac{1}{R_o} dt.$$
+$$\frac{dC}{dt} = R_o(\frac{A R_a - C(t) R_o}{R_o})\Rightarrow (\frac{R_o}{A R_a - C(t) R_o}) dC= \frac{1}{R_o} dt.$$
