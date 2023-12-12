@@ -26,3 +26,33 @@ content:
   -
     title: 3-3. Applications of Differentiation
     url: ./books/calculus/3-3-applications-of-differentiation
+  - 
+    title: 4. Definite and Indefinite Integrals
+    url: ./books/calculus/4-definite-and-indefinite-integrals
+  -
+    title: 4-1. The Fundamental Theorem of Calculus
+    url: ./books/calculus/4-1-the-fundamental-theorem-of-calculus
+  -
+    title: 5. Techniques of Integration
+    url: ./books/calculus/5-techs-of-integration
+  - 
+    title: 6. Applications of Integration
+    url: ./books/calculus/6-applications-of-integration
+  -
+    title: 6-1. Geometric Applications of Integration
+    url: ./books/calculus/6-1-geometric-applications-of-integration
+  -
+    title: 6-2. Probability
+    url: ./books/calculus/6-2-probability
+  -
+    title: 7. Improper Integrals
+    url: ./books/calculus/7-improper-integrals
+  -
+    title: 8. Ordinary Differential Equations
+    url: ./books/calculus/8-ordinary-differential-equations
+  -
+    title: 8-1. How to Solve Order 1 ODEs
+    url: ./books/calculus/8-1-how-to-solve-order-1-odes
+  -
+    title: 8-2. Applications of ODEs
+    url: ./books/calculus/8-2-applications-of-odes

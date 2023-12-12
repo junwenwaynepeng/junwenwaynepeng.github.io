@@ -40,6 +40,28 @@ There are three major types:
 
 **Example 9.** $\int\frac{\ln(x)}{x}dx$
 
+# Integration by part
+
+The integration by part is a consequent of the multiplication rule of derivative and the fundamental theorem of Calculus. Using $d(uv) = udv + vdu$, we derive
+$$\int udv = uv-\int vdu.$$
+
+The followings are examples:
+
+**Example 1** $\int \ln(x) dx$
+
+**Example 2** $\int x\sin(x) dx$
+
+**Example 3** $\int x^2e^x dx$
+
+**Example 4** $\int e^x\sin(x) dx$
+
+**Example 5** $\int tan^{-1}(x)dx$ and $\int\sin^{-1}(x)dx$.
+
+**Example 6** $\int \sin^2(x)dx$
+
+If an integral is of the form of a multiplication of two different types of functions, then we can almost certain we will use the integration by part as our first step. However, it is the only situation we will consider the integration by part. For example, the Example 6 above is not a multiplication of two different types of functions.
+
+
 # Use geometry to solve a definite integral
 
 **Example 10.** $\int_-1^1\sqrt{1-t^2}dt$ is the area of upper semicircle.
@@ -59,3 +81,4 @@ Thus, its derivative is
 $$\frac{d}{dx}\int_{f(x)}^{g(x)}h(t)dt = H'(g(x))g'(x)-H'(f(x))f'(x).$$
 
 Since $H$ is an antiderivative of $h$, we then can write the above derivative as $(h\circ g)g' - (h\circ f)f'$.
+2. If $f$ is odd, i.e. $f(-x)=-f(x)$, then $\int_{-a}^{a}fdx = 0$.
