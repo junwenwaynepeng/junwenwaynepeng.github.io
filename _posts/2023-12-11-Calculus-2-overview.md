@@ -67,8 +67,8 @@ Limit & DefiniteIntegral-->ImproperIntegral;
 RiemannSum-->DefiniteIntegral;
 Derivative-->IndefiniteIntegral;
 IndefiniteIntegral<-.->|<a href='../books/calculus/4-1-the-fundamental-theorem-of-calculus/'>The Fundamental Theorem of Calculus</a>|DefiniteIntegral;
-IndefiniteIntegral-->AppOfIntegral;
-DefiniteIntegral-->TechOfIntegration;
+DefiniteIntegral-->AppOfIntegral;
+IndefiniteIntegral-->TechOfIntegration;
 TechOfIntegration-->ODE-->AppOfODE;
 
 ```
