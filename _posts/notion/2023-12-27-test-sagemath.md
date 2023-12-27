@@ -6,7 +6,7 @@ title: Test SageMath
 tags:
   - test
 
-head-package:
+
 ---
 
 <div class=”compute”>
@@ -14,3 +14,4 @@ head-package:
 
 </div>
 
+undefined
