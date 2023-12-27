@@ -2,7 +2,7 @@
 comments: false
 date: 2023-12-27
 title: Test SageMath
-subtitle: undefined
+subtitle: [object Object]
 tags:
   - test
 head-package:
