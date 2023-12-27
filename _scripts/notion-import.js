@@ -141,7 +141,6 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 		fs.unlink(path.join(root, ftitle), (err) => {
 			if (err) throw err; 
 			console.log('file-delete');
-			
 		});
 	}
 })();
