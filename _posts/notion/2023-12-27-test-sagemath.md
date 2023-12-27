@@ -5,8 +5,8 @@ title: Test SageMath
 tags:
   - test
 head-package:
-	-
-		file: "package/sagecell.html"
+  -
+    file: "package/sagecell.html"
 sagecell: true
 ---
 
