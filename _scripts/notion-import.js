@@ -85,14 +85,13 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		}
 		if (sagecell) {
 			fmHeadPackage += 'head-package:\n';
-			fmHeadPackage += '	- file: "package/sagecell.html"';
+			fmHeadPackage += '	- file: "package/sagecell.html"' + '\n';
 		}
 		const fm = `---
 layout: post
 comments: ${comments}
 date: ${date}
-title: ${title}${fmTags}${fmCats}
-${fmHeadPackage}
+title: ${title}${fmTags}${fmCats}${fmHeadPackage}
 ---
 `
 		const mdblocks = await n2m.pageToMarkdown(id);
