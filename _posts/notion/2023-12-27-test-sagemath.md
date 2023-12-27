@@ -7,7 +7,7 @@ tags:
   - test
 head-package:
 	- file: "package/sagecell.html"
-
+sagecell: true
 ---
 
 <div class=”compute”>
@@ -15,4 +15,4 @@ head-package:
 
 </div>
 
-true
+sagecell: true
