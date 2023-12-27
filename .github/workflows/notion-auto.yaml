@@ -24,6 +24,14 @@ jobs:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           DATABASE_ID: ${{ secrets.DATABASE_ID }}
 
+      - name: Check for untracked files
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "Save local changes before pull"
+          fi
+
       - name: Pull latest changes from main
         run: git pull origin main
         
