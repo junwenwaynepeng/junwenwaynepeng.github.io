@@ -7,4 +7,5 @@ gemspec
 group :jekyll_plugins do
   gem 'jekyll-commonmark-ghpages'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-notion'
 end
