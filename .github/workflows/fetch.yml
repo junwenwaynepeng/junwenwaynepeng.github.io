@@ -1,0 +1,23 @@
+name: merge
+
+on:
+  push:
+  schedule:
+  workflow_dispatch:
+
+jobs:
+  importer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@main
+      
+      - name: Check for untracked files
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name importer-bot 🤖
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "Save local changes before pull"
+          fi
