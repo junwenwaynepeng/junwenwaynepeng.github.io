@@ -140,7 +140,8 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 		// delete file
 		const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
 		fs.unlink(path.join(root, ftitle), (err => {
-			if (err) throw err; 
+			if (err) throw err;
+			
 			console.log('file-delete');
 		}));
 	}
