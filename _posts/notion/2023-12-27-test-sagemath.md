@@ -14,4 +14,4 @@ head-package:-file:"package/sagecell.html"
 
 </div>
 
-[object Object]
+true
