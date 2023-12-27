@@ -44,6 +44,9 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		if (ptitle?.length > 0) {
 			title = ptitle[0]?.['plain_text']
 		}
+		// Sagecell
+		let sagecell = r.Sagecell
+
 		// tags
 		let tags = []
 		let ptags = r.properties?.['Tags']?.['multi_select']
@@ -65,25 +68,30 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		// comments
 		const comments = r.properties?.['No Comments']?.['checkbox'] == false
 		// frontmatter
-		let fmtags = ''
-		let fmcats = ''
+		let fmTags = '';
+		let fmCats = '';
+		let fmHeadPackage = 'head-package:';
 		if (tags.length > 0) {
-			fmtags += '\ntags:\n'
+			fmTags += '\ntags:\n'
 			for (const t of tags) {
-				fmtags += '  - ' + t + '\n'
+				fmTags += '  - ' + t + '\n';
 			}
 		}
 		if (cats.length > 0) {
-			fmcats += '\ncategories:\n'
+			fmCats += '\ncategories:\n'
 			for (const t of cats) {
-				fmcats += '  - ' + t + '\n'
+				fmCats += '  - ' + t + '\n';
 			}
+		}
+		if (sagecell) {
+			fmHeadPackage += '-file:"package/sagecell.html"';
 		}
 		const fm = `---
 layout: post
 comments: ${comments}
 date: ${date}
-title: ${title}${fmtags}${fmcats}
+title: ${title}${fmTags}${fmCats}
+${fmHeadPackage}
 ---
 `
 		const mdblocks = await n2m.pageToMarkdown(id);

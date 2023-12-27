@@ -36,17 +36,3 @@ jobs:
           commit_user_name: importer-bot 🤖
           commit_user_email: actions@github.com
           commit_author: importer-bot 🤖 <actions@github.com>
-  build:
-    name: Build Jekyll
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Build the site in the jekyll/builder container
-        run: |
-          export JEKYLL_VERSION=latest
-          export NOTION_TOKEN=${{ secrets.NOTION_TOKEN }}
-          docker run \
-          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          -e PAGES_REPO_NWO=${{ github.repository }} \
-          -e NOTION_TOKEN=$NOTION_TOKEN \
-          jekyll/builder:$JEKYLL_VERSION /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
