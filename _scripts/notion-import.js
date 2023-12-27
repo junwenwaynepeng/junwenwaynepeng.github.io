@@ -39,7 +39,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 			date = moment(pdate).format('YYYY-MM-DD')
 		}
 		// title
-		let title = id
+		let title = r.Post
 		let ptitle = r.properties?.['Post']?.['title']
 		if (ptitle?.length > 0) {
 			title = ptitle[0]?.['plain_text']
