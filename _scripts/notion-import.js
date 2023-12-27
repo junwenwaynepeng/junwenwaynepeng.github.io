@@ -30,7 +30,6 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		}
 	})
 	for (const r of response.results) {
-		console.log(r)
 		const id = r.id
 		// date
 		let date = moment(r.created_time).format("YYYY-MM-DD")
@@ -98,6 +97,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 			sagecell = '';
 		}
 		const fm = `---
+id: ${id}
 comments: ${comments}
 date: ${date}
 title: ${title}
@@ -108,11 +108,40 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 		const md = n2m.toMarkdownString(mdblocks);
 
 		//writing to file
-		const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`
+		const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
 		fs.writeFile(path.join(root, ftitle), fm + md.parent + sagecell, (err) => {
 			if (err) {
 				console.log(err);
 			}
+		});
+	}
+	const deletFiles = await notion.databases.query({
+		database_id: databaseId,
+		filter: {
+			property: "Publish",
+			checkbox: {
+				equals: false
+			}
+		}
+	})
+	for (const r of deletFiles.results)	{
+		// date
+		let date = moment(r.created_time).format("YYYY-MM-DD")
+		let pdate = r.properties?.['Date']?.['date']?.['start']
+		if (pdate) {
+			date = moment(pdate).format('YYYY-MM-DD')
+		}
+		// title
+		let title = r.Post
+		let ptitle = r.properties?.['Post']?.['title']
+		if (ptitle?.length > 0) {
+			title = ptitle[0]?.['plain_text']
+		}
+		const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+		fs.unlink(path.join(root, ftitle), (err) => {
+			if (err) throw err; 
+			console.log('file-delete');
+			
 		});
 	}
 })();
