@@ -32,11 +32,11 @@ jobs:
             git commit -m "Save local changes before pull"
           fi
         with:
-        commit_message: Update Importer posts
-        branch: main
-        commit_user_name: importer-bot 🤖
-        commit_user_email: actions@github.com
-        commit_author: importer-bot 🤖 <actions@github.com>
+          commit_message: Update Importer posts
+          branch: main
+          commit_user_name: importer-bot 🤖
+          commit_user_email: actions@github.com
+          commit_author: importer-bot 🤖 <actions@github.com>
 
       - name: Pull latest changes from main
         run: git pull origin main
