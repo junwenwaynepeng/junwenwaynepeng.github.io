@@ -46,7 +46,6 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		}
 		// subtitle
 		let subtitle = r.properties?.['Subtitle']?.['plain_text']
-
 		// Sagecell
 		let sagecell = r.properties?.['Sagecell']?.['checkbox']
 
