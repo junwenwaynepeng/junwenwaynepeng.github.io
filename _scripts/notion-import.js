@@ -44,6 +44,9 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		if (ptitle?.length > 0) {
 			title = ptitle[0]?.['plain_text']
 		}
+		// subtitle
+		let subtitle = r.properties?.['Subtitle']?.['plain_text']
+
 		// Sagecell
 		let sagecell = r.properties?.['Sagecell']?.['checkbox']
 
@@ -94,7 +97,8 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		const fm = `---
 comments: ${comments}
 date: ${date}
-title: ${title}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
+title: ${title}
+subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 ---
 `
 		const mdblocks = await n2m.pageToMarkdown(id);
