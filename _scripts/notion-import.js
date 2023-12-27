@@ -139,6 +139,13 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 		}
 		// delete file
 		const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
-		fs.unlinkSync(path.join(root, ftitle));
+		try {
+			fs.unlink(path.join(root, ftitle), (err => {
+				console.log('file delted')
+			}));	
+		} catch (err) {
+			console.log('file does not exist')
+		}
+		
 	}
 })();
