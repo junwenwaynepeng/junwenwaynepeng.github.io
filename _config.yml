@@ -312,6 +312,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-notion
 
 ########################
 # ---  額外套件管理 --- #
