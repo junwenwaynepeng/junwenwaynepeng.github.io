@@ -115,7 +115,7 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 			}
 		});
 	}
-	const deletFiles = await notion.databases.query({
+	const deleteFiles = await notion.databases.query({
 		database_id: databaseId,
 		filter: {
 			property: "Publish",
@@ -124,7 +124,7 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 			}
 		}
 	})
-	for (const r of deletFiles.results)	{
+	for (const r of deleteFiles.results)	{
 		// date
 		let date = moment(r.created_time).format("YYYY-MM-DD")
 		let pdate = r.properties?.['Date']?.['date']?.['start']
@@ -137,6 +137,7 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 		if (ptitle?.length > 0) {
 			title = ptitle[0]?.['plain_text']
 		}
+		// delete file
 		const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
 		fs.unlink(path.join(root, ftitle), (err) => {
 			if (err) throw err; 
