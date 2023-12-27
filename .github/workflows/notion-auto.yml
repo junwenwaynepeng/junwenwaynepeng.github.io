@@ -43,7 +43,7 @@ jobs:
       - uses: actions/checkout@main
       - name: Build the site in the jekyll/builder container
         run: |
-          export JEKYLL_VERSION=3.8
+          export JEKYLL_VERSION=3.9
           export NOTION_TOKEN=${{ secrets.NOTION_TOKEN }}
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
