@@ -70,7 +70,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		// frontmatter
 		let fmTags = '';
 		let fmCats = '';
-		let fmHeadPackage = 'head-package:';
+		let fmHeadPackage = '';
 		if (tags.length > 0) {
 			fmTags += '\ntags:\n'
 			for (const t of tags) {
@@ -84,6 +84,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 			}
 		}
 		if (sagecell) {
+			fmHeadPackage += 'head-package:';
 			fmHeadPackage += '-file:"package/sagecell.html"';
 		}
 		const fm = `---
@@ -99,7 +100,7 @@ ${fmHeadPackage}
 
 		//writing to file
 		const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`
-		fs.writeFile(path.join(root, ftitle), fm + md.parent, (err) => {
+		fs.writeFile(path.join(root, ftitle), fm + md.parent + sagecell, (err) => {
 			if (err) {
 				console.log(err);
 			}
