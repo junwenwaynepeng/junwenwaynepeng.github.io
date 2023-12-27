@@ -84,8 +84,8 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 			}
 		}
 		if (sagecell) {
-			fmHeadPackage += 'head-package:';
-			fmHeadPackage += '-file:"package/sagecell.html"';
+			fmHeadPackage += 'head-package:\n';
+			fmHeadPackage += '	- file: "package/sagecell.html"';
 		}
 		const fm = `---
 layout: post
