@@ -45,7 +45,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 			title = ptitle[0]?.['plain_text']
 		}
 		// Sagecell
-		let sagecell = r.properties?.['Sagecell']
+		let sagecell = r.properties?.['Sagecell'].['checkbox']
 
 		// tags
 		let tags = []
