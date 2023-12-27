@@ -92,7 +92,6 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 			sagecell = '';
 		}
 		const fm = `---
-layout: post
 comments: ${comments}
 date: ${date}
 title: ${title}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
