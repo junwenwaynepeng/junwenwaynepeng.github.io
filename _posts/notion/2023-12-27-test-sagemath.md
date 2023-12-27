@@ -10,9 +10,6 @@ head-package:
 sagecell: true
 ---
 
-<div class=”compute”>
-
-
-</div>
+<div class='compute'>You can try your code here!</div>
 
 sagecell: true
