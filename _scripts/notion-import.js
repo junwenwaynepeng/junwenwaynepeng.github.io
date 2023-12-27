@@ -45,7 +45,10 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 			title = ptitle[0]?.['plain_text']
 		}
 		// subtitle
-		let subtitle = r.properties?.['Subtitle']?.['rich_text'][0]
+		let subtitle = r.properties?.['Subtitle']?.['rich_text']?.['plain_text']
+		if subtitle == 'undefined' {
+			subtitle = ''
+		}
 		// Sagecell
 		let sagecell = r.properties?.['Sagecell']?.['checkbox']
 
