@@ -46,7 +46,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		}
 		// subtitle
 		let subtitle = r.properties?.['Subtitle']?.['rich_text']?.['plain_text']
-		if subtitle == 'undefined' {
+		if (subtitle == 'undefined') {
 			subtitle = ''
 		}
 		// Sagecell
