@@ -86,7 +86,8 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		if (sagecell) {
 			sagecell = 'sagecell: true';
 			fmHeadPackage += 'head-package:\n';
-			fmHeadPackage += '	- file: "package/sagecell.html"' + '\n';
+			fmHeadPackage += '	-\n';
+			fmHeadPackage += '		file: "package/sagecell.html"' + '\n'
 		} else {
 			sagecell = '';
 		}
