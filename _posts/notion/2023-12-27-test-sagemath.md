@@ -6,7 +6,8 @@ title: Test SageMath
 tags:
   - test
 
-head-package:-file:"package/sagecell.html"
+head-package:
+	- file: "package/sagecell.html"
 ---
 
 <div class=”compute”>
