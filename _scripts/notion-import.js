@@ -115,14 +115,14 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 	const deleteFiles = await notion.databases.query({
 		database_id: databaseId,
 		filter: {
-			property: "Publish",
-			checkbox: {
-				equals: false
+			timestamp: "last_edited_time",
+			"last_edited_time": {
+				"after": "2023-12-28T11:50"
 			}
 		}
 	})
 	for (const r of deleteFiles.results) {
-		console.log(moment(r.last_edited_time).format("YYYY-MM-DD"))
+		console.log(moment(r.last_edited_time).format("YYYY-MM-DD:HH"))
 		// date
 		let date = moment(r.created_time).format("YYYY-MM-DD")
 		let pdate = r.properties?.['Date']?.['date']?.['start']
