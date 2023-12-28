@@ -41,6 +41,7 @@ function truncateMinutesToZero() {
 			}
 		}
 	})
+	console.log(response.results)
 	for (const r of response.results) {
 		const id = r.id;
 		// date
