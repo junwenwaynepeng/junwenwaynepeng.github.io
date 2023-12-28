@@ -3,8 +3,6 @@ const { NotionToMarkdown } = require("notion-to-md");
 const moment = require('moment');
 const path = require('path');
 const fs = require('fs');
-// or
-// import {NotionToMarkdown} from "notion-to-md";
 
 const notion = new Client({
 	auth: process.env.NOTION_TOKEN,
@@ -23,7 +21,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 	const response = await notion.databases.query({
 		database_id: databaseId,
 		filter: {
-			property: "Publish",
+			property: "Last edited time",
 			checkbox: {
 				equals: true
 			}
@@ -45,13 +43,11 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		}
 		// subtitle
 		let subtitle = r.properties?.['Subtitle']?.['rich_text'][0]?.['plain_text']
-		console.log(subtitle)
 		if (typeof subtitle == 'undefined') {
 			subtitle = ''
 		}
 		// Sagecell
 		let sagecell = r.properties?.['Sagecell']?.['checkbox']
-
 		// tags
 		let tags = []
 		let ptags = r.properties?.['Tags']?.['multi_select']
@@ -115,6 +111,7 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 			}
 		});
 	}
+	// Delete files
 	const deleteFiles = await notion.databases.query({
 		database_id: databaseId,
 		filter: {
@@ -124,7 +121,8 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 			}
 		}
 	})
-	for (const r of deleteFiles.results)	{
+	for (const r of deleteFiles.results) {
+		console.log(r.last_edited_time.format("YYYY-MM-DD"))
 		// date
 		let date = moment(r.created_time).format("YYYY-MM-DD")
 		let pdate = r.properties?.['Date']?.['date']?.['start']
@@ -141,7 +139,7 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 		const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
 		try {
 			fs.unlink(path.join(root, ftitle), (err => {
-				console.log('file delted')
+				console.log('file deleted')
 			}));	
 		} catch (err) {
 			console.log('file does not exist')
