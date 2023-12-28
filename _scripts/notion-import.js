@@ -122,7 +122,7 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 		}
 	})
 	for (const r of deleteFiles.results) {
-		console.log(r.last_edited_time.format("YYYY-MM-DD"))
+		console.log(moment(r.last_edited_time).format("YYYY-MM-DD"))
 		// date
 		let date = moment(r.created_time).format("YYYY-MM-DD")
 		let pdate = r.properties?.['Date']?.['date']?.['start']
