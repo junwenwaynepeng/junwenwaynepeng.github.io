@@ -130,7 +130,7 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 			let date = moment(r.created_time).format("YYYY-MM-DD")
 			let pDate = r.properties?.['Date']?.['date']?.['start']
 			if (pDate) {
-				date = moment(pdate).format('YYYY-MM-DD')
+				date = moment(pDate).format('YYYY-MM-DD')
 			}
 			// title
 			let title = r.Post
