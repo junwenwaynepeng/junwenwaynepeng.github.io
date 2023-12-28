@@ -117,7 +117,7 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 		filter: {
 			timestamp: "last_edited_time",
 			"last_edited_time": {
-				"after": "2023-12-28T11:50"
+				"after": "2023-12-27T23:50"
 			}
 		}
 	})
