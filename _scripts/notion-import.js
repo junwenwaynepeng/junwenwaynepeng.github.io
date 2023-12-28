@@ -11,6 +11,22 @@ const notion = new Client({
 // passing notion client to the option
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
+function truncateMinutesToZero() {
+  const currentDateTime = new Date();
+  
+  // Truncate the minutes part to zero
+  currentDateTime.setMinutes(0);
+
+  // Format the date and time as "YYYY-MM-DDTHH:00"
+  const formattedDateTime = currentDateTime.toISOString().slice(0, 16);
+
+  return formattedDateTime;
+}
+
+// Example usage
+const result = truncateMinutesToZero();
+console.log(result);
+
 (async () => {
 	// ensure directory exists
 	const root = path.join('_posts', 'notion')
@@ -21,9 +37,9 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 	const response = await notion.databases.query({
 		database_id: databaseId,
 		filter: {
-			property: "Publish",
-			checkbox: {
-				equals: true
+			timestamp: "last_edited_time",
+			"last_edited_time": {
+				"after": "2023-12-27T15:50"
 			}
 		}
 	})
