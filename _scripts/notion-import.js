@@ -26,7 +26,7 @@ function truncateMinutesToZero() {
 
 (async () => {
 	// ensure directory exists
-	const root = path.join('_posts', 'notion')
+	const root = path.join('_posts')  // const root = path.join('_posts', 'notion');  // set root at _post/notion
 	fs.mkdirSync(root, { recursive: true })
 
 	const databaseId = process.env.DATABASE_ID;
