@@ -31,43 +31,42 @@ function truncateMinutesToZero() {
 
 	const databaseId = process.env.DATABASE_ID;
 	// query data from notion
-	const filter_time_after = truncateMinutesToZero();
+	const filterTimeAfter = truncateMinutesToZero();
 	const response = await notion.databases.query({
 		database_id: databaseId,
 		filter: {
 			timestamp: "last_edited_time",
 			"last_edited_time": {
-				"after": filter_time_after
+				"after": filterTimeAfter
 			}
 		}
 	})
-	console.log(response.results)
 	for (const r of response.results) {
-		if (r.properties?.['Publish']?.['checkbox']) {
+		if (r.properties?.['Publish']?.['checkbox']) { // update publish == true
 			const id = r.id;
 			// date
 			let date = moment(r.created_time).format("YYYY-MM-DD");
-			let pdate = r.properties?.['Date']?.['date']?.['start']
-			if (pdate) {
-				date = moment(pdate).format('YYYY-MM-DD')
+			let pDate = r.properties?.['Date']?.['date']?.['start']
+			if (pDate) {
+				date = moment(pDate).format('YYYY-MM-DD')
 			}
 			// title
 			let title = r.Post
-			let ptitle = r.properties?.['Post']?.['title']
-			if (ptitle?.length > 0) {
-				title = ptitle[0]?.['plain_text']
+			let pTitle = r.properties?.['Post']?.['title']
+			if (pTitle?.length > 0) {
+				title = pTitle[0]?.['plain_text']
 			}
 			// subtitle
 			let subtitle = r.properties?.['Subtitle']?.['rich_text'][0]?.['plain_text']
 			if (typeof subtitle == 'undefined') {
 				subtitle = ''
 			}
-			// Sagecell
+			// sagecell
 			let sagecell = r.properties?.['Sagecell']?.['checkbox']
 			// tags
 			let tags = []
-			let ptags = r.properties?.['Tags']?.['multi_select']
-			for (const t of ptags) {
+			let pTags = r.properties?.['Tags']?.['multi_select']
+			for (const t of pTags) {
 				const n = t?.['name']
 				if (n) {
 					tags.push(n)
@@ -75,8 +74,8 @@ function truncateMinutesToZero() {
 			}
 			// categories
 			let cats = []
-			let pcats = r.properties?.['Categories']?.['multi_select']
-			for (const t of pcats) {
+			let pCats = r.properties?.['Categories']?.['multi_select']
+			for (const t of pCats) {
 				const n = t?.['name']
 				if (n) {
 					tags.push(n)
@@ -116,39 +115,35 @@ title: ${title}
 subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 ---
 `
-			const mdblocks = await n2m.pageToMarkdown(id);
-			const md = n2m.toMarkdownString(mdblocks);
+			const mdBlocks = await n2m.pageToMarkdown(id);
+			const md = n2m.toMarkdownString(mdBlocks);
 
 			//writing to file
-			const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
-			fs.writeFile(path.join(root, ftitle), fm + md.parent + sagecell, (err) => {
+			const fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+			fs.writeFile(path.join(root, fTitle), fm + md.parent + sagecell, (err) => {
 				if (err) {
 					console.log(err);
 				}
 			});
-		} else {
-
-			console.log(moment(r.last_edited_time).format("YYYY-MM-DD:HH"))
+		} else { // delete publish == false 
 			// date
 			let date = moment(r.created_time).format("YYYY-MM-DD")
-			let pdate = r.properties?.['Date']?.['date']?.['start']
-			if (pdate) {
+			let pDate = r.properties?.['Date']?.['date']?.['start']
+			if (pDate) {
 				date = moment(pdate).format('YYYY-MM-DD')
 			}
 			// title
 			let title = r.Post
-			let ptitle = r.properties?.['Post']?.['title']
-			if (ptitle?.length > 0) {
-				title = ptitle[0]?.['plain_text']
+			let pTitle = r.properties?.['Post']?.['title']
+			if (pTitle?.length > 0) {
+				title = pTitle[0]?.['plain_text']
 			}
 			// delete file
-			const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+			const fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
 			try {
-				fs.unlink(path.join(root, ftitle), (err => {
-					console.log('file deleted')
+				fs.unlink(path.join(root, fTitle), (err => {
+					// Do nothing
 				}));	
-			} catch (err) {
-				console.log('file does not exist')
 			}
 		}
 	}
