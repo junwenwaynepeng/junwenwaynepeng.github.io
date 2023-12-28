@@ -126,29 +126,30 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 					console.log(err);
 				}
 			});
-		}
-	} else {
-		console.log(moment(r.last_edited_time).format("YYYY-MM-DD:HH"))
-		// date
-		let date = moment(r.created_time).format("YYYY-MM-DD")
-		let pdate = r.properties?.['Date']?.['date']?.['start']
-		if (pdate) {
-			date = moment(pdate).format('YYYY-MM-DD')
-		}
-		// title
-		let title = r.Post
-		let ptitle = r.properties?.['Post']?.['title']
-		if (ptitle?.length > 0) {
-			title = ptitle[0]?.['plain_text']
-		}
-		// delete file
-		const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
-		try {
-			fs.unlink(path.join(root, ftitle), (err => {
-				console.log('file deleted')
-			}));	
-		} catch (err) {
-			console.log('file does not exist')
+		} else {
+
+			console.log(moment(r.last_edited_time).format("YYYY-MM-DD:HH"))
+			// date
+			let date = moment(r.created_time).format("YYYY-MM-DD")
+			let pdate = r.properties?.['Date']?.['date']?.['start']
+			if (pdate) {
+				date = moment(pdate).format('YYYY-MM-DD')
+			}
+			// title
+			let title = r.Post
+			let ptitle = r.properties?.['Post']?.['title']
+			if (ptitle?.length > 0) {
+				title = ptitle[0]?.['plain_text']
+			}
+			// delete file
+			const ftitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+			try {
+				fs.unlink(path.join(root, ftitle), (err => {
+					console.log('file deleted')
+				}));	
+			} catch (err) {
+				console.log('file does not exist')
+			}
 		}
 	}
 })();
