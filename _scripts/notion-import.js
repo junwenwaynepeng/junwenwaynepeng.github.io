@@ -23,9 +23,6 @@ function truncateMinutesToZero() {
   return formattedDateTime;
 }
 
-// Example usage
-const result = truncateMinutesToZero();
-console.log(result);
 
 (async () => {
 	// ensure directory exists
@@ -33,20 +30,21 @@ console.log(result);
 	fs.mkdirSync(root, { recursive: true })
 
 	const databaseId = process.env.DATABASE_ID;
-	// TODO has_more
+	// query data from notion
+	const filter_time_after = truncateMinutesToZero();
 	const response = await notion.databases.query({
 		database_id: databaseId,
 		filter: {
 			timestamp: "last_edited_time",
 			"last_edited_time": {
-				"after": "2023-12-27T15:50"
+				"after": filter_time_after
 			}
 		}
 	})
 	for (const r of response.results) {
-		const id = r.id
+		const id = r.id;
 		// date
-		let date = moment(r.created_time).format("YYYY-MM-DD")
+		let date = moment(r.created_time).format("YYYY-MM-DD");
 		let pdate = r.properties?.['Date']?.['date']?.['start']
 		if (pdate) {
 			date = moment(pdate).format('YYYY-MM-DD')
