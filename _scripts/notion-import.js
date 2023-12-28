@@ -21,7 +21,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 	const response = await notion.databases.query({
 		database_id: databaseId,
 		filter: {
-			property: "Last edited time",
+			property: "Publish",
 			checkbox: {
 				equals: true
 			}
