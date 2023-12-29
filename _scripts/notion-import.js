@@ -25,7 +25,6 @@ function truncateMinutesToZero() {
 
 
 (async () => {
-
 	const databaseId = process.env.DATABASE_ID;
 	// query data from notion
 	const filterTimeAfter = truncateMinutesToZero();
@@ -107,7 +106,7 @@ function truncateMinutesToZero() {
 			} else {
 				sagecell = '';
 			}
-			console.log(cats)
+			console.log(cats.includes('page'))
 			if (cats.includes('page') || cats.includes('book')) {
 				const fm = `---
 id: ${id}
