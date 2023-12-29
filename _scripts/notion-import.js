@@ -25,6 +25,9 @@ function truncateMinutesToZero() {
 
 
 (async () => {
+	let fTitle;
+	let fm;
+	let root;
 	const databaseId = process.env.DATABASE_ID;
 	// query data from notion
 	const filterTimeAfter = truncateMinutesToZero();
