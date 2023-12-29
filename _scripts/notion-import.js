@@ -164,6 +164,7 @@ categories: [${cats}]${fmHeadPackage}
 			// Log values for debugging
 		    console.log('root:', root);
 		    console.log('fTitle:', fTitle);
+		    console.log('fm:', fm);
 			fs.mkdirSync(root, { recursive: true })	
 			fs.writeFile(path.join(root, fTitle), fm + md.parent, (err) => {
 				if (err) {
