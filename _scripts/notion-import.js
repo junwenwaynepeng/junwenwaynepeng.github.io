@@ -29,7 +29,7 @@ function truncateMinutesToZero() {
 	let fm;
 	let root;
 	let cats;
-	
+
 	const databaseId = process.env.DATABASE_ID;
 	// query data from notion
 	const filterTimeAfter = truncateMinutesToZero();
@@ -82,6 +82,7 @@ function truncateMinutesToZero() {
 					cats.push(n)
 				}
 			}
+			console.log(cats)
 			// comments
 			const comments = r.properties?.['No Comments']?.['checkbox'] == false
 			// left-toc
