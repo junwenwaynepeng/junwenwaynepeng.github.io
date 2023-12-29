@@ -139,7 +139,6 @@ categories: [${cats}]${fmHeadPackage}
 ---
 `
 			}
-			console.log(fm)
 			const mdBlocks = await n2m.pageToMarkdown(id);
 			const md = n2m.toMarkdownString(mdBlocks);
 
