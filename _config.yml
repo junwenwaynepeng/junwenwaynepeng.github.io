@@ -36,7 +36,7 @@ navbar-links:
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Build yourown blog: "books/jekyll-intro/0-intro"
     - Calculus: "books/calculus/1-definition-of-limits"
-    - Connections: "connections"
+    - Connections: "connection"
     - Database: "database"
   Slides: "all-slides"
   Publication: "publication"
