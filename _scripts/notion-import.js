@@ -83,9 +83,9 @@ function truncateMinutesToZero() {
 			// comments
 			const comments = r.properties?.['No Comments']?.['checkbox'] == false
 			// left-toc
-			let leftToc = r.properties?.['Left toc']?.['checkbox']
+			const leftToc = r.properties?.['Left toc']?.['checkbox']
 			// right-toc
-			let rightToc = r.properties?.['Right toc']?.['checkbox']
+			const rightToc = r.properties?.['Right toc']?.['checkbox']
 			// frontmatter
 			let fmTags = '';
 			let fmCats = '';
@@ -109,9 +109,8 @@ function truncateMinutesToZero() {
 			} else {
 				sagecell = '';
 			}
-			console.log(cats.includes('page'))
 			if (cats.includes('page') || cats.includes('book')) {
-				const fm = `---
+				fm = `---
 id: ${id}
 layout: page
 date: ${date}
@@ -125,11 +124,11 @@ tags: [${tags}]
 categories: [${cats}]${fmHeadPackage}
 ---
 `;
-				const fTitle = `${title.replaceAll(' ', '-').toLowerCase()}.md`;
+				fTitle = `${title.replaceAll(' ', '-').toLowerCase()}.md`;
 				console.log('there')
 			}
 			if (cats.includes('post')) {
-				const fm = `---			
+				fm = `---			
 id: ${id}
 layout: post
 date: ${date}
@@ -143,7 +142,7 @@ tags: [${tags}]
 categories: [${cats}]${fmHeadPackage}
 ---
 `;
-				const fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+				fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
 				console.log('here')
 			}
 			const mdBlocks = await n2m.pageToMarkdown(id);
