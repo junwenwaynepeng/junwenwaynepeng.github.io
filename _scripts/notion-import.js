@@ -25,9 +25,6 @@ function truncateMinutesToZero() {
 
 
 (async () => {
-	// ensure directory exists
-	const root = path.join('_posts')  // const root = path.join('_posts', 'notion');  // set root at _post/notion
-	fs.mkdirSync(root, { recursive: true })
 
 	const databaseId = process.env.DATABASE_ID;
 	// query data from notion
@@ -78,11 +75,15 @@ function truncateMinutesToZero() {
 			for (const t of pCats) {
 				const n = t?.['name']
 				if (n) {
-					tags.push(n)
+					cats.push(n)
 				}
 			}
 			// comments
 			const comments = r.properties?.['No Comments']?.['checkbox'] == false
+			// left-toc
+			let leftToc = r.properties?.['Left toc']?.['checkbox']
+			// right-toc
+			let rightToc = r.properties?.['Right toc']?.['checkbox']
 			// frontmatter
 			let fmTags = '';
 			let fmCats = '';
@@ -100,27 +101,61 @@ function truncateMinutesToZero() {
 				}
 			}
 			if (sagecell) {
-				sagecell = 'sagecell: true';
 				fmHeadPackage += 'head-package:\n';
 				fmHeadPackage += '  -\n';
 				fmHeadPackage += '    file: "package/sagecell.html"' + '\n';
 			} else {
 				sagecell = '';
 			}
-			const fm = `---
+			if (cats.includes('page') || cats.includes('book')) {
+				const fm = `---
 id: ${id}
-comments: ${comments}
+layout: page
 date: ${date}
 title: ${title}
-subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
+subtitle: ${subtitle}
+comments: ${comments}
+leftToc: ${leftToc}
+rightToc: ${rightToc}
+sagecell: ${sagecell}
+tags: [${tags}]
+categories: [${cats}]${fmHeadPackage}
 ---
 `
+			}
+			if (cats.includes('post')) {
+				const fm = `---			
+id: ${id}
+layout: post
+date: ${date}
+title: ${title}
+subtitle: ${subtitle}
+comments: ${comments}
+leftToc: ${leftToc}
+rightToc: ${rightToc}
+sagecell: ${sagecell}
+tags: [${tags}]
+categories: [${cats}]${fmHeadPackage}
+---
+`
+			}
 			const mdBlocks = await n2m.pageToMarkdown(id);
 			const md = n2m.toMarkdownString(mdBlocks);
 
 			//writing to file
 			const fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
-			fs.writeFile(path.join(root, fTitle), fm + md.parent + sagecell, (err) => {
+			if (cats.includes('post')) {
+				root = path.join('_posts')
+			} 
+			if (cats.includes('page')) {
+				root = path.join('')
+			}
+			if (cats.includes('book')) {
+				root = path.join('_books')
+			}
+			// ensure directory exists
+			fs.mkdirSync(root, { recursive: true })	
+			fs.writeFile(path.join(root, fTitle), fm + md.parent, (err) => {
 				if (err) {
 					console.log(err);
 				}
@@ -140,6 +175,17 @@ subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
 			}
 			// delete file
 			const fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+			if (cats.includes('post')) {
+				root = path.join('_posts')
+			} 
+			if (cats.includes('page')) {
+				root = path.join('')
+			}
+			if (cats.includes('book')) {
+				root = path.join('_books')
+			}
+			// ensure directory exists
+			fs.mkdirSync(root, { recursive: true })
 			fs.unlink(path.join(root, fTitle), (err => {
 				// Do nothing
 			}));	
