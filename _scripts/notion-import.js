@@ -25,11 +25,6 @@ function truncateMinutesToZero() {
 
 
 (async () => {
-	let fTitle;
-	let fm;
-	let root;
-	let cats;
-
 	const databaseId = process.env.DATABASE_ID;
 	// query data from notion
 	const filterTimeAfter = truncateMinutesToZero();
@@ -43,20 +38,45 @@ function truncateMinutesToZero() {
 		}
 	})
 	for (const r of response.results) {
+		// category
+		let cats = []
+		let pCats = r.properties?.['Categories']?.['multi_select']
+		for (const t of pCats) {
+			const n = t?.['name']
+			if (n) {
+				cats.push(n)
+			}
+		}
+		// date
+		let date = moment(r.created_time).format("YYYY-MM-DD")
+		let pDate = r.properties?.['Date']?.['date']?.['start']
+		if (pDate) {
+			date = moment(pDate).format('YYYY-MM-DD')
+		}
+		// title
+		let title = r.Post
+		let pTitle = r.properties?.['Post']?.['title']
+		if (pTitle?.length > 0) {
+			title = pTitle[0]?.['plain_text']
+		}
+		// delete file
+		let root;
+		let fTitle;
+		if (cats.includes('post')) {
+			root = path.join('_posts')
+			fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+		} 
+		if (cats.includes('page')) {
+			root = path.join('')
+			fTitle = `${title.replaceAll(' ', '-').toLowerCase()}.md`;
+		}
+		if (cats.includes('book')) {
+			root = path.join('_books')
+			fTitle = `${title.replaceAll(' ', '-').toLowerCase()}.md`;
+		}
+		fs.mkdirSync(root, { recursive: true })	
 		if (r.properties?.['Publish']?.['checkbox']) { // update publish == true
 			const id = r.id;
-			// date
-			let date = moment(r.created_time).format("YYYY-MM-DD");
-			let pDate = r.properties?.['Date']?.['date']?.['start']
-			if (pDate) {
-				date = moment(pDate).format('YYYY-MM-DD')
-			}
-			// title
-			let title = r.Post
-			let pTitle = r.properties?.['Post']?.['title']
-			if (pTitle?.length > 0) {
-				title = pTitle[0]?.['plain_text']
-			}
 			// subtitle
 			let subtitle = r.properties?.['Subtitle']?.['rich_text'][0]?.['plain_text']
 			if (typeof subtitle == 'undefined') {
@@ -73,16 +93,6 @@ function truncateMinutesToZero() {
 					tags.push(n)
 				}
 			}
-			// categories
-			cats = []
-			let pCats = r.properties?.['Categories']?.['multi_select']
-			for (const t of pCats) {
-				const n = t?.['name']
-				if (n) {
-					cats.push(n)
-				}
-			}
-			console.log(cats)
 			// comments
 			const comments = r.properties?.['No Comments']?.['checkbox'] == false
 			// left-toc
@@ -93,6 +103,7 @@ function truncateMinutesToZero() {
 			let fmTags = '';
 			let fmCats = '';
 			let fmHeadPackage = '';
+			let fm;
 			if (tags.length > 0) {
 				fmTags += '\ntags:\n'
 				for (const t of tags) {
@@ -127,7 +138,6 @@ tags: [${tags}]
 categories: [${cats}]${fmHeadPackage}
 ---
 `;
-				fTitle = `${title.replaceAll(' ', '-').toLowerCase()}.md`;
 				console.log('there')
 			}
 			if (cats.includes('post')) {
@@ -153,50 +163,14 @@ categories: [${cats}]${fmHeadPackage}
 
 			//writing to file
 			
-			if (cats.includes('post')) {
-				root = path.join('_posts')
-			} 
-			if (cats.includes('page')) {
-				root = path.join('')
-			}
-			if (cats.includes('book')) {
-				root = path.join('_books')
-			}
-			// ensure directory exists
-			// Log values for debugging
-		    console.log('root:', root);
-		    console.log('fTitle:', fTitle);
-		    console.log('fm:', fm);
-			fs.mkdirSync(root, { recursive: true })	
+
 			fs.writeFile(path.join(root, fTitle), fm + md.parent, (err) => {
 				if (err) {
 					console.log(err);
 				}
 			});
 		} else { // delete publish == false 
-			// date
-			let date = moment(r.created_time).format("YYYY-MM-DD")
-			let pDate = r.properties?.['Date']?.['date']?.['start']
-			if (pDate) {
-				date = moment(pDate).format('YYYY-MM-DD')
-			}
-			// title
-			let title = r.Post
-			let pTitle = r.properties?.['Post']?.['title']
-			if (pTitle?.length > 0) {
-				title = pTitle[0]?.['plain_text']
-			}
-			// delete file
-			const fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
-			if (cats.includes('post')) {
-				root = path.join('_posts')
-			} 
-			if (cats.includes('page')) {
-				root = path.join('')
-			}
-			if (cats.includes('book')) {
-				root = path.join('_books')
-			}
+
 			// ensure directory exists
 			fs.mkdirSync(root, { recursive: true })
 			fs.unlink(path.join(root, fTitle), (err => {
