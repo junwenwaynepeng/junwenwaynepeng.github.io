@@ -3,8 +3,7 @@ id: 87d986c9-980c-4137-9d8f-2551e9b762ab
 layout: page
 date: 2023-12-29
 title: Publication
-subtitle: I have a broad interest in anything. 
-I enjoy both theory and application!
+subtitle: I have a broad interest in anything. <br> I enjoy both theory and application!
 comments: false
 leftToc: false
 rightToc: false
