@@ -121,7 +121,8 @@ sagecell: ${sagecell}
 tags: [${tags}]
 categories: [${cats}]${fmHeadPackage}
 ---
-`
+`;
+				const fTitle = `${title.replaceAll(' ', '-').toLowerCase()}.md`;
 			}
 			if (cats.includes('post')) {
 				const fm = `---			
@@ -137,13 +138,14 @@ sagecell: ${sagecell}
 tags: [${tags}]
 categories: [${cats}]${fmHeadPackage}
 ---
-`
+`;
+				const fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
 			}
 			const mdBlocks = await n2m.pageToMarkdown(id);
 			const md = n2m.toMarkdownString(mdBlocks);
 
 			//writing to file
-			const fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+			
 			if (cats.includes('post')) {
 				root = path.join('_posts')
 			} 
