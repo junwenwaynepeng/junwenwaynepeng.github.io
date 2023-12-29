@@ -107,6 +107,7 @@ function truncateMinutesToZero() {
 			} else {
 				sagecell = '';
 			}
+			console.log(cats)
 			if (cats.includes('page') || cats.includes('book')) {
 				const fm = `---
 id: ${id}
