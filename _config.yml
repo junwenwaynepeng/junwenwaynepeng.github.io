@@ -29,7 +29,7 @@ keywords: "數學網站、理論中心、數學、math、calculus、微積分、
 #########################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "about-me"
   Resources:
     - ChatGPT: "https://chat.openai.com/chat"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
