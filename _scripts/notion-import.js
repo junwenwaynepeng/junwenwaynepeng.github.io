@@ -28,6 +28,8 @@ function truncateMinutesToZero() {
 	let fTitle;
 	let fm;
 	let root;
+	let cats;
+	
 	const databaseId = process.env.DATABASE_ID;
 	// query data from notion
 	const filterTimeAfter = truncateMinutesToZero();
@@ -72,7 +74,7 @@ function truncateMinutesToZero() {
 				}
 			}
 			// categories
-			let cats = []
+			cats = []
 			let pCats = r.properties?.['Categories']?.['multi_select']
 			for (const t of pCats) {
 				const n = t?.['name']
