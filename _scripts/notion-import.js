@@ -123,6 +123,7 @@ categories: [${cats}]${fmHeadPackage}
 ---
 `;
 				const fTitle = `${title.replaceAll(' ', '-').toLowerCase()}.md`;
+				console.log('there')
 			}
 			if (cats.includes('post')) {
 				const fm = `---			
@@ -140,6 +141,7 @@ categories: [${cats}]${fmHeadPackage}
 ---
 `;
 				const fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+				console.log('here')
 			}
 			const mdBlocks = await n2m.pageToMarkdown(id);
 			const md = n2m.toMarkdownString(mdBlocks);
