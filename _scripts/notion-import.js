@@ -23,6 +23,10 @@ function truncateMinutesToZero() {
   return formattedDateTime;
 }
 
+function pageIdToUrl(md, id, url) {
+	return md.replace(id, url)
+}
+
 
 (async () => {
 	const databaseId = process.env.DATABASE_ID;
@@ -71,7 +75,8 @@ function truncateMinutesToZero() {
 			fTitle = `${title.replaceAll(' ', '-').toLowerCase()}.md`;
 		}
 		if (cats.includes('book')) {
-			root = path.join('_books')
+			const bookTitle = r.properties?.['Book title']?.['rich_text'][0]?.['plain_text']
+			root = path.join('_books', bookTitle)
 			fTitle = `${title.replaceAll(' ', '-').toLowerCase()}.md`;
 		}
 		fs.mkdirSync(root, { recursive: true })	
