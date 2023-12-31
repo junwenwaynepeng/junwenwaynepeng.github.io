@@ -1,12 +1,20 @@
 ---
+id: 87d986c9-980c-4137-9d8f-2551e9b762ab
 layout: page
+date: 2023-12-29
 title: Publication
 subtitle: I have a broad interest in anything. <br> I enjoy both theory and application!
+comments: false
+leftToc: false
+rightToc: false
+sagecell: 
+tags: []
+categories: [page]
 ---
 1. W. Peng. Application of perfectoid spaces on dynamical system of lift of p-th power
 Journal of Number Theory, 2023 ([link](https://www.sciencedirect.com/science/article/pii/S0022314X23000392))
 2. W. Peng. A unique chief series in the arboreal galois group of belyi maps, 2020,
-arXiv:2010.04846 (Submitted to Manuscripta Mathematica) 
+arXiv:2010.04846 (Submitted to Manuscripta Mathematica)
 3. H. Benham, A. Galaraga, B. Hutz, J. Lupo, W. Peng, and A. Towsley. Integrality
 and thurston rigidity for bicritical pcf polynomials, 2022, arXiv:2001.06164* (To
 appear in Periodica Mathematica Hungarica) ([arXiv](https://arxiv.org/abs/2212.02558))
@@ -23,3 +31,4 @@ polynomials: iteration of shift and inversion maps over finite fields, 2019, 191
 8. G. Grell and W. Peng. Wall’s conjecture and the abc conjecutre, 2015, ([arXiv](https://arxiv.org/abs/1511.01210))
 
 [UniMath](https://sites.google.com/a/g2.nctu.edu.tw/unimath/): UniMath 是台灣少數的數學電子媒體，其致力於推廣數學教育與傳播最新的數學話題。創辦人是中興大學[陳宏賓教授](http://www.amath.nchu.edu.tw/member_detail.php?Key=65)並與數個大學教授（交大[高竹嵐](https://stat.nycu.edu.tw/zh_tw/members/teacher/-%E9%AB%98%E7%AB%B9%E5%B5%90-16291129)，師大[郭君逸](https://scholar.lib.ntnu.edu.tw/zh/persons/jun-yi-guo)，與交大[魏澤人](https://scholar.nycu.edu.tw/zh/persons/tzer-jen-wei)）一起合力編輯。好些年前寫了些[文章](https://sites.google.com/a/g2.nctu.edu.tw/unimath/%E4%BD%9C%E8%80%85/%E5%BD%AD%E4%BF%8A%E6%96%87?authuser=0)在上面，之後陸陸續續的也有一些短篇小品在[UniMaht的FB粉專](https://www.facebook.com/UniMathTw)上發表，希望讓數學從課本中走出來，進入人們的視野。
+

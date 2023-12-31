@@ -29,14 +29,14 @@ keywords: "數學網站、理論中心、數學、math、calculus、微積分、
 #########################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "about-me"
   Resources:
     - ChatGPT: "https://chat.openai.com/chat"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Build yourown blog: "books/jekyll-intro/0-intro"
     - Calculus: "books/calculus/1-definition-of-limits"
-    - Connections: "connections"
+    - Connection: "connection"
     - Database: "database"
   Slides: "all-slides"
   Publication: "publication"

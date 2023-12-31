@@ -23,12 +23,12 @@ function truncateMinutesToZero() {
   return formattedDateTime;
 }
 
+function pageIdToUrl(md, id, url) {
+	return md.replace(id, url)
+}
+
 
 (async () => {
-	// ensure directory exists
-	const root = path.join('_posts')  // const root = path.join('_posts', 'notion');  // set root at _post/notion
-	fs.mkdirSync(root, { recursive: true })
-
 	const databaseId = process.env.DATABASE_ID;
 	// query data from notion
 	const filterTimeAfter = truncateMinutesToZero();
@@ -42,20 +42,46 @@ function truncateMinutesToZero() {
 		}
 	})
 	for (const r of response.results) {
+		// category
+		let cats = []
+		let pCats = r.properties?.['Categories']?.['multi_select']
+		for (const t of pCats) {
+			const n = t?.['name']
+			if (n) {
+				cats.push(n)
+			}
+		}
+		// date
+		let date = moment(r.created_time).format("YYYY-MM-DD")
+		let pDate = r.properties?.['Date']?.['date']?.['start']
+		if (pDate) {
+			date = moment(pDate).format('YYYY-MM-DD')
+		}
+		// title
+		let title = r.Post
+		let pTitle = r.properties?.['Post']?.['title']
+		if (pTitle?.length > 0) {
+			title = pTitle[0]?.['plain_text']
+		}
+		// delete file
+		let root;
+		let fTitle;
+		if (cats.includes('post')) {
+			root = path.join('_posts')
+			fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+		} 
+		if (cats.includes('page')) {
+			root = path.join('')
+			fTitle = `${title.replaceAll(' ', '-').toLowerCase()}.md`;
+		}
+		if (cats.includes('book')) {
+			const bookTitle = r.properties?.['Book title']?.['rich_text'][0]?.['plain_text']
+			root = path.join('_books', bookTitle)
+			fTitle = `${title.replaceAll(' ', '-').toLowerCase()}.md`;
+		}
+		fs.mkdirSync(root, { recursive: true })	
 		if (r.properties?.['Publish']?.['checkbox']) { // update publish == true
 			const id = r.id;
-			// date
-			let date = moment(r.created_time).format("YYYY-MM-DD");
-			let pDate = r.properties?.['Date']?.['date']?.['start']
-			if (pDate) {
-				date = moment(pDate).format('YYYY-MM-DD')
-			}
-			// title
-			let title = r.Post
-			let pTitle = r.properties?.['Post']?.['title']
-			if (pTitle?.length > 0) {
-				title = pTitle[0]?.['plain_text']
-			}
 			// subtitle
 			let subtitle = r.properties?.['Subtitle']?.['rich_text'][0]?.['plain_text']
 			if (typeof subtitle == 'undefined') {
@@ -72,21 +98,17 @@ function truncateMinutesToZero() {
 					tags.push(n)
 				}
 			}
-			// categories
-			let cats = []
-			let pCats = r.properties?.['Categories']?.['multi_select']
-			for (const t of pCats) {
-				const n = t?.['name']
-				if (n) {
-					tags.push(n)
-				}
-			}
 			// comments
 			const comments = r.properties?.['No Comments']?.['checkbox'] == false
+			// left-toc
+			const leftToc = r.properties?.['Left toc']?.['checkbox']
+			// right-toc
+			const rightToc = r.properties?.['Right toc']?.['checkbox']
 			// frontmatter
 			let fmTags = '';
 			let fmCats = '';
 			let fmHeadPackage = '';
+			let fm;
 			if (tags.length > 0) {
 				fmTags += '\ntags:\n'
 				for (const t of tags) {
@@ -100,46 +122,62 @@ function truncateMinutesToZero() {
 				}
 			}
 			if (sagecell) {
-				sagecell = 'sagecell: true';
 				fmHeadPackage += 'head-package:\n';
 				fmHeadPackage += '  -\n';
 				fmHeadPackage += '    file: "package/sagecell.html"' + '\n';
 			} else {
 				sagecell = '';
 			}
-			const fm = `---
+			if (cats.includes('page') || cats.includes('book')) {
+				fm = `---
 id: ${id}
-comments: ${comments}
+layout: page
 date: ${date}
 title: ${title}
-subtitle: ${subtitle}${fmTags}${fmCats}${fmHeadPackage}${sagecell}
+subtitle: ${subtitle}
+comments: ${comments}
+leftToc: ${leftToc}
+rightToc: ${rightToc}
+sagecell: ${sagecell}
+tags: [${tags}]
+categories: [${cats}]${fmHeadPackage}
 ---
-`
+`;
+				console.log('there')
+			}
+			if (cats.includes('post')) {
+				fm = `---			
+id: ${id}
+layout: post
+date: ${date}
+title: ${title}
+subtitle: ${subtitle}
+comments: ${comments}
+leftToc: ${leftToc}
+rightToc: ${rightToc}
+sagecell: ${sagecell}
+tags: [${tags}]
+categories: [${cats}]${fmHeadPackage}
+---
+`;
+				fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+				console.log('here')
+			}
 			const mdBlocks = await n2m.pageToMarkdown(id);
 			const md = n2m.toMarkdownString(mdBlocks);
 
 			//writing to file
-			const fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
-			fs.writeFile(path.join(root, fTitle), fm + md.parent + sagecell, (err) => {
+			
+
+			fs.writeFile(path.join(root, fTitle), fm + md.parent, (err) => {
 				if (err) {
 					console.log(err);
 				}
 			});
 		} else { // delete publish == false 
-			// date
-			let date = moment(r.created_time).format("YYYY-MM-DD")
-			let pDate = r.properties?.['Date']?.['date']?.['start']
-			if (pDate) {
-				date = moment(pDate).format('YYYY-MM-DD')
-			}
-			// title
-			let title = r.Post
-			let pTitle = r.properties?.['Post']?.['title']
-			if (pTitle?.length > 0) {
-				title = pTitle[0]?.['plain_text']
-			}
-			// delete file
-			const fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
+
+			// ensure directory exists
+			fs.mkdirSync(root, { recursive: true })
 			fs.unlink(path.join(root, fTitle), (err => {
 				// Do nothing
 			}));	
