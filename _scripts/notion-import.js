@@ -18,7 +18,7 @@ function truncateMinutesToZero() {
   currentDateTime.setMinutes(0);
 
   // Format the date and time as "YYYY-MM-DDTHH:00"
-  const formattedDateTime = currentDateTime.toISOString().slice(0, 16);
+  const formattedDateTime = currentDateTime.toISOString().slice(0, 13);
 
   return formattedDateTime;
 }
