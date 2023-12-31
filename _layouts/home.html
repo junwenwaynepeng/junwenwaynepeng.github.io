@@ -125,38 +125,51 @@ layout: base
         </ul>
       </nav>
       {% endif %}
-      {% if paginator.total_pages > 1 %}
-        <nav aria-label="Page navigation example">
-          <ul class="pagination main-pager justify-content-center">
-            {% if paginator.previous_page %}
-              <li class="page-item">
-                <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">&laquo;</a>
-              </li>
-            {% endif %}
-
-            {% assign firstPages = 5 %}
-            {% assign lastPages = 5 %}
-            {% assign middlePages = 3 %}
-
-            {% for page in (1..paginator.total_pages) %}
-              {% assign pageDiffFromCurrent = page | minus: paginator.page | abs | plus: 1 %}
-              
-              {% if pageDiffFromCurrent <= firstPages or paginator.page < firstPages %}
-                <li class="page-item{% if page == paginator.page %} active{% endif %}">
-                  <a class="page-link" href="{% if page == 1 %}{{ '/' | relative_url }}{% else %}{{ site.paginate_path | relative_url | replace: ':num', page }}{% endif %}">{{ pageDiffFromCurrent }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-
-            {% if paginator.next_page %}
-              <li class="page-item">
-                <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">&raquo;</a>
-              </li>
-            {% endif %}
-          </ul>
-        </nav>
+{% if paginator.total_pages > 1 %}
+  <nav aria-label="Page navigation example">
+    <ul class="pagination main-pager justify-content-center">
+      {% if paginator.previous_page %}
+        <li class="page-item">
+          <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">&laquo;</a>
+        </li>
       {% endif %}
-      
+
+      {% assign firstPages = 5 %}
+      {% assign lastPages = 5 %}
+      {% assign middlePages = 3 %}
+      {% assign currentPage = paginator.page | plus: 0 %}
+
+      {% for page in (1..paginator.total_pages) %}
+        {% assign pageDiffFromCurrent = page | minus: currentPage | abs | plus: 1 %}
+        
+        {% if page <= firstPages or paginator.total_pages - page < lastPages %}
+          <li class="page-item{% if page == currentPage %} active{% endif %}">
+            <a class="page-link" href="{% if page == 1 %}{{ '/' | relative_url }}{% else %}{{ site.paginate_path | relative_url | replace: ':num', page }}{% endif %}">{{ page }}</a>
+          </li>
+        {% elsif pageDiffFromCurrent <= middlePages %}
+          {% unless middlePagesAdded %}
+            <li class="page-item">
+              <span class="page-link">&hellip;</span>
+            </li>
+            {% assign middlePagesAdded = true %}
+          {% endunless %}
+        {% elsif paginator.total_pages - page >= lastPages %}
+          <li class="page-item{% if page == currentPage %} active{% endif %}">
+            <a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <li class="page-item">
+          <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">&raquo;</a>
+        </li>
+      {% endif %}
+    </ul>
+  </nav>
+{% endif %}
+
+
     </div>
   </div>
 </div>
