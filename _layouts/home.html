@@ -143,7 +143,7 @@ layout: base
               
               {% if pageDiffFromCurrent <= firstPages or paginator.page < firstPages %}
                 <li class="page-item{% if page == paginator.page %} active{% endif %}">
-                  <a class="page-link" href="{% if page == 1 %}{{ '/' | relative_url }}{% else %}{{ site.paginate_path | relative_url | replace: ':num', page }}{% endif %}">{{ page }}</a>
+                  <a class="page-link" href="{% if page == 1 %}{{ '/' | relative_url }}{% else %}{{ site.paginate_path | relative_url | replace: ':num', page }}{% endif %}">{{ pageDiffFromCurrent }}</a>
                 </li>
               {% endif %}
             {% endfor %}
