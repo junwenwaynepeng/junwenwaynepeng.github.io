@@ -144,7 +144,7 @@ layout: base
             {% if toPage > paginator.total_pages %}
               {% assign toPage = paginator.total_pages %}
             {% endif %}
-            <li>{{ fromPage }}{{ toPage }}{{ site.show_paginator }}</li>
+            
             {% if fromPage == 1 %}
               {% for page in (1..toPage) %}
                 <li class="page-item{% if page == paginator.page %} active{% endif %}">
@@ -170,10 +170,10 @@ layout: base
             {% endif %}
             {% if toPage != paginator.total_pages %}
               <li class="page-item">
-                <span class="page-link">&hellip;hi</span>
+                <span class="page-link">&hellip;</span>
               </li>
               <li class="page-item">
-                <span class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ paginator.total_pages }}</span>
+                <span class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', paginator.total_pages }}">{{ paginator.total_pages }}</span>
               </li>
             {% else %}
               {% if paginator.next_page %}
