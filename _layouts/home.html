@@ -101,31 +101,6 @@ layout: base
       </ul>
 
       {% if paginator.total_pages > 1 %}
-      <nav aria-label="Page navigation example">
-        <ul class="pagination main-pager justify-content-center">
-          {% if paginator.previous_page %}
-          <li class="page-item">
-            <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">&laquo;</a>
-          </li>
-          {% endif %}
-          {% for page in (1..paginator.total_pages) %}
-          <li class="page-item{% if page == paginator.page %} active{% endif %}">
-            {% if page == 1 %}
-              <a class="page-link" href="{{ '/' | relative_url }}">{{ page }}</a>
-            {% else %}
-              <a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-            {% endif %}
-          </li>
-          {% endfor %}
-          {% if paginator.next_page %}
-          <li class="page-item">
-            <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">&raquo;</a>
-          </li>
-          {% endif %}
-        </ul>
-      </nav>
-      {% endif %}
-      {% if paginator.total_pages > 1 %}
         <nav aria-label="Page navigation example">
           <ul class="pagination main-pager justify-content-center">
             {% if paginator.previous_page %}
