@@ -170,7 +170,8 @@ layout: base
               {% endfor %}
             {% endif %}
             {% if toPage != paginator.total_pages %}
-              {% if toPage != paginator.total_pages | minus: 1 %}
+              {% assign beforeLastPage = paginator.total_pages | minus: 1 %}
+              {% if toPage !=  beforeLastPage %}
                 <li class="page-item">
                   <span class="page-link">&hellip;</span>
                 </li>
