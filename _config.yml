@@ -267,7 +267,7 @@ date_format: "%B %d, %Y" # 目前格式 March 27, 2023
 markdown: CommonMarkGhPages
 highlighter: rouge
 permalink: /:year-:month-:day-:title/    # permalink是用來設定網址是如何顯示的，不需要更動
-paginate: 5    # 部落格每頁顯現多少文章
+paginate: 8    # 部落格每頁顯現多少文章
 #kramdown:
 #  syntax_highlighter: rouge
 #  input: GFM
