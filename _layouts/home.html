@@ -144,7 +144,7 @@ layout: base
             {% if toPage > paginator.total_pages %}
               {% assign toPage = paginator.total_pages %}
             {% endif %}
-
+            <li>{{ fromPage }}{{ toPage }}</li>
             {% if fromPage == 1 %}
               {% for page in (1..toPage) %}
                 <li class="page-item{% if page == paginator.page %} active{% endif %}">
