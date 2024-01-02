@@ -139,10 +139,12 @@ layout: base
       
       {% if fromPage <= 0 %}
         {% assign fromPage = 1}
+      {% endif %}
 
       {% if toPage > paginator.total_pages %}
         {% assign toPage = paginator.total_pages}
-
+      {% endif %}
+      
       {% if fromPage == 1 %}
         {% for page in (1..toPage) %}
           <li class="page-item{% if page == paginator.page %} active{% endif %}">
