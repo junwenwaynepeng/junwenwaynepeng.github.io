@@ -268,7 +268,7 @@ markdown: CommonMarkGhPages
 highlighter: rouge
 permalink: /:year-:month-:day-:title/    # permalink是用來設定網址是如何顯示的，不需要更動
 paginate: 8    # 部落格每頁顯現多少文章
-show_paginate: 3
+show_paginator: 3
 #kramdown:
 #  syntax_highlighter: rouge
 #  input: GFM
