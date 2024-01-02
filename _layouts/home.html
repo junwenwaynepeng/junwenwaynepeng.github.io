@@ -136,7 +136,7 @@ layout: base
 
             {% assign fromPage = paginator.page - site.show_paginator %}
             {% assign toPage = paginator.page + site.show_paginator %}
-            
+            <li>{{ fromPage }}{{ toPage }}</li>
             {% if fromPage <= 0 %}
               {% assign fromPage = 1 %}
             {% endif %}
