@@ -123,3 +123,31 @@
 .lemma p {
   padding: 15px 15px 15px 15px;
 }
+
+.conjecture {
+  display: block;
+  font-style: italic;
+  font-size: 24px;
+  font-family: "Times New Roman";
+  color: black;
+  border-radius: 10px;
+  background-color: rgb(255, 230, 211); /* Adjusted background color for conjecture */
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.conjecture::before {
+  content: "Conjecture. ";
+  font-weight: bold;
+  font-style: normal;
+  display: inline-block;
+  width: -webkit-fill-available;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 5px 5px 15px;
+  background-color: rgb(204, 51, 0); /* Adjusted background color for conjecture */
+  text-align: left;
+}
+
+.conjecture p {
+  padding: 15px 15px 15px 15px;
+}
