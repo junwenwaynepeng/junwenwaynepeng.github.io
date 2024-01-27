@@ -145,8 +145,15 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       <div class="lemma">
-        <p>Let $G$ be a group acting on a set $X$. Let $A$ and $B$ be disjoint subsets of $X$. For $g, h\in G$, assume $$g:A\to B$$ and $$h:B\to A.$$ Then, $\langle g,h\rangle$ is a free group of rank $2$.</p>
+        <p>Let $G$ be a group acting on a set $X$. Let $A$ and $B$ be disjoint subsets of $X$. For $f, g\in G$, assume $$f^n:A\to B$$ and $$g^n:B\to A$$ for any $n\in\mathbb{Z}\setminus\{0\}$. Then, $\langle f,g\rangle$ is a free group of rank $2$.</p>
       </div>
+      _sketch of proof_:
+      Note that 
+      $$f^*g^*\cdots f^*:A\to B$$
+      cannot be an identity.
+      - case ($w=g^*f^*\cdots g^*$): we consider $f^nwf^{-n}$.
+      - case ($w=f^ag^*\cdots g^*$): for $n\neq a$ and $0$, we consider $f^{n}wf^{-n}$.
+      - case ($w=g^*f^*\cdots f^a$): for $n\neq a$ and $0$, we consider $f^{n}wf^{-n}$. 
     </textarea>
   </section>
 </section>
