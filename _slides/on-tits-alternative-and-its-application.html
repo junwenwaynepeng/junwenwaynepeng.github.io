@@ -277,18 +277,16 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
 <section>
   <section>
     <h4>In terms of growth rate</h4>
-    <p class="fragment" data-fragment-index="2">Consider a set of characters $\Sigma=\{f,g\}$, and define $\Sigma^*$ as the collection of words composed using characters from $\Sigma$.</p>
-    <p class="fragment" data-fragment-index="3">Let $\Sigma^*_n$ denote the set of words from $\Sigma^*$ of the length $n$.</p>
-    <p class="fragment" data-fragment-index="4">The existence of any relation between $f$ and $g$ results in a reduction in the count of distinct words within $\Sigma^*_n$, leading to the inequality $\#\Sigma^*_n\leq 2^n$.</p>
-  </section>
-  <section>
-    <div class="example">
+    <p class="fragment" data-fragment-index="1">The existence of any relation between $f$ and $g$ results in a reduction in the count of distinct words within $\Sigma^*_n$, leading to the inequality $\#\Sigma^*_n\leq 2^n$.</p>
+    <div class="example fragment" data-fragment-index="2">
       <p>Let $\sigma=\{f_1,\ f_2,\ \ldots,\ f_m\}$, and assume $f_if_j=f_jf_i$ for all $i$ and $j$.</p>
       <ul>
         <li>For $n=2$, $\#\Sigma_n^*=n+1$.</li>
         <li>For $n>2$, $\#\Sigma_n^*=H^m_n$.</li>
       </ul>
     </div>
+  </section>
+  <section>
     <div class="definition fragment" data-fragment-index="2">
       <p>We say the <em>growth rate</em> of the semigroup $\langle f,g\rangle$ is $f(n)$ if $\#\Sigma^*_n=O(f(n))$. A <em>polynomially bounded growth</em> corresponds to $f(n)$ being a polynomial, while an <em>exponentially growth</em> corresponds to $f(n)$ being an exponential function.</p>
     </div>
