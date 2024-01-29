@@ -75,9 +75,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
     ## Banach-Tarski paradox
     <p>Can we divide a unit sphere into a finite number of pieces and then reconstruct these pieces, using only translations, into two identical spheres?</p>
-    <p align="center">
+    <p><center>
       <img src="/assets/img/slides/on-tits-alternative-and-its-application/banach-tarski-paradox.png" align="center"/>
-    </p>
+    </center></p>
     </textarea>
   </section>
   <section data-markdown>
@@ -332,7 +332,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section>
     <h3>Algorithm:$\langle f,g\rangle$ contains free semigroup</h3>
     <p class="fragment">Input: polarized morphisms $f$ and $g$, and an integer $n$</p>
-    <p class="fragment">Output: A Boolean indicating whether $f$ and $g$ have a composition relation, or "indeterminable" if the algorithm cannot determine by the binary tree under level $n$.</p>
+    <p class="fragment">Output: A Boolean indicating whether $f$ and $g$ have a composition relation, or "indeterminable" if the algorithm cannot determine by searching on a binary tree up to level $n$.</p>
   </section>
   <section>
     <h4>Idea of Algorithm</h4>
@@ -342,7 +342,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         $$
         h_1\circ f = h_2\circ f\implies h_1=h_2.
         $$
-        <p class="fragment">Therefore, to check if we have nontrivial composition relation, we can simply assume that the first (the most right) function is not the same.</p></li>
+        <p class="fragment">Therefore, to check if we have a nontrivial composition relation, we can simply assume that the first (the most right) function is not the same.</p></li>
     </ol>
   </section>
   <section>
@@ -352,7 +352,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         $$
           B\left(h\left(\dfrac{A(\alpha)}{d^n}\right),\dfrac{C}{(d-1)d^n}\right)\bigcap B\left(h\left(\dfrac{B(\alpha)}{d^n}\right),\dfrac{C}{(d-1)d^n}\right)=\varnothing
         $$</span>
-        where $C=\max\{C_f, C_g\}$, $A=A_n\circ\cdots\circ A_1$ and $B=B_n\circ\cdots\circ B_1$, then any composition that starts with $A_n\circ\cdots\circ A_1$ won't be equal to one that starts with $B_n\circ\cdots\circ B_1$.
+        where $C=\max\{C_f, C_g\}$, $A=A_n\circ\cdots\circ A_1$ and $B=B_n\circ\cdots\circ B_1$, then any composition that starts with $A$ won't be equal to one that starts with $B$.
       </li>
     </ol>
   </section>
@@ -506,7 +506,7 @@ def check(a_pair):
   <section>
     <h4>:) - Tsai (2023)</h4>
     <div class="theorem">
-      <p>If $G$ is a finitely generated semigroup satisfying the three given conditions, then the cardinality of $\mathcal{R}$ is finite and independent of how we choose relations. Moreover, the search can be completed in a finite number of steps.</p>
+      <p>If $G$ is a finitely generated semigroup that meets the three specified conditions, then the cardinality of $\mathcal{R}$ is finite and does not depend on our choice of relations. Furthermore, the process of finding relations can be finished in a finite number of steps.</p>
     </div>
   </section>
 </section>
