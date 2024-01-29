@@ -279,7 +279,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <h4>In terms of growth rate</h4>
     <p class="fragment" data-fragment-index="1">The existence of any relation between $f$ and $g$ results in a reduction in the count of distinct words within $\Sigma^*_n$, leading to the inequality $\#\Sigma^*_n\leq 2^n$.</p>
     <div class="example fragment" data-fragment-index="2">
-      <p>Let $\sigma=\{f_1,\ f_2,\ \ldots,\ f_m\}$, and assume $f_if_j=f_jf_i$ for all $i$ and $j$.</p>
+      <p>Let $\Sigma=\{f_1,\ f_2,\ \ldots,\ f_m\}$, and assume $f_if_j=f_jf_i$ for all $i$ and $j$.</p>
       <ul>
         <li>For $n=2$, $\#\Sigma_n^*=n+1$.</li>
         <li>For $n>2$, $\#\Sigma_n^*=H^m_n$.</li>
@@ -295,16 +295,16 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <h4>A Tits alternative for endomorphisms of the projective line</h4>
     <h5>(Bell - Huang - :) - Tucker, upcoming on JEMS)</h5>
     <div class="theorem fragment" data-fragment-index="2">
-      <p>Let $\mathcal{S}\subset\mathbb{C}(x)$ be a finitely generated semigroup of endomorphisms of $\mathbb{P}^1$. Then either $\mathcal{S}$ has polynomially bounded growth or  contains a nonabelian free semigroup (exponentially bounded growth).</p>
+      <p>Let $\mathcal{S}\subset\mathbb{C}(x)$ be a finitely generated semigroup of endomorphisms of $\mathbb{P}^1$. Then either $\mathcal{S}$ has polynomially bounded growth or  contains a nonabelian free semigroup (exponential growth).</p>
     </div>
   </section>
   <section>
     <p>
       <ul>
-        <li>We answered a conjecture posed by Cabrera and Makienko. If the measures of maximal entropy for $f$ and $g$ are distinct, then there is a $j$ such that $\langle f^j, g^j\rangle$ is a free semigroup on two generators.</li>
+        <li>We answered a conjecture posed by Cabrera and Makienko. If the measures of maximal entropy (julia set) for $f$ and $g$ are distinct, then there is a $j$ such that $\langle f^j, g^j\rangle$ is a free semigroup on two generators.</li>
         <li class="fragment" data-fragment-index="1">Let $A$ be an abelian variety. Then $\text{End}(A)$ (finite morphisms from $A$ to itself) satisfies tits alternative.</li>
       </ul>
-    </p>x
+    </p>
   </section>
   <section>
     <div class="collorary">
@@ -318,21 +318,6 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         <li class="fragment" data-fragment-index="7">for any $l>0$, the semigroup $\langle f^l,g^l\rangle$ is not free on two generators.
       </ol>
     </div>
-  </section>
-  <section>
-    <h4>A counterexample</h4>
-    <p style="font-size:90%">Let $f(x_1,\ldots,x_n)=(x_1^{a_{11}}\cdots x_n^{a_{1n}},\ldots,x_{1}^{a_{n1}}\cdots x_{n}^{a_{nn}})$. The degree matrix of $f$ is</p>
-    $$
-    \deg(f)=\begin{bmatrix}
-    a_{11} & \cdots & a_{1n}\\
-    \vdots & \ddots & \vdots\\
-    a_{n1} & \cdots & a_{nn}
-    \end{bmatrix}.
-    $$
-    <p style="font-size:90%">Let $g$ be anothor map of the same form like $f$. Then we have $\deg(f\circ g)=\deg(f)\deg(g)$.</p>
-  </section>
-  <section>
-    <p>It can be demonstrated that if neither $\deg f$ nor $\deg g$ has $1$ as an eigenvalue, then we have $\text{Prep}(f) = \text{Prep}(g) = (S^1)^n \cup \bigcup_{\text{some } i} Z_i$, where $Z_i = {x_i=0}$. We can indeed select $f$ and $g$ in such a way that $\langle \deg(f), \deg(g) \rangle$ contains a freely generated semigroup, by the Tits alternative for semigroups. Consequently, $\langle f, g \rangle$ contains a freely generated semigroup.</p>
   </section>
 </section>
 <section>
