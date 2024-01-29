@@ -235,10 +235,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       <h3>Multi-system dynamical canonical height</h3>
-      <p>Consider a sequence $$\{f_1(\alpha),\ f_2f_1(\alpha),\ f_3f_2f_1(\alpha),\ \cdots \}$$ where $f_i$ is either $f$ or $g$. Let $w_n= f_n\ldots f_2f_1$, and let $w$ be the formal composition $\ldots f_3f_2f_1$ (w\in\Sigma^*_\infty). We define
+      <p>Consider a sequence $$\{f_1(\alpha),\ f_2f_1(\alpha),\ f_3f_2f_1(\alpha),\ \cdots \}$$ where $f_i$ is equal to $f$ or $g$. Let $w_n= f_n\ldots f_2f_1$, and let $w$ be the formal composition $\ldots f_3f_2f_1$ (w\in\Sigma^*_\infty). We define
       $$h_w(\alpha) = \lim_{n\to\infty}\frac{h(w_n(\alpha))}{\deg(w_n)}.$$
       </p>
-
     </textarea>
   </section>
   <section data-markdown>
@@ -247,8 +246,27 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <p>
         Given $\alpha\in\mathbb{Q}\setminus\text{Perp}(f)$, we define
         $$X=\{h_w(\alpha)| w\in\Sigma^*_\infty\}.$$
+      </p>
+      <p class="fragment" data-fragment-index="2">
         And, we define
         $$fX = \{h_{wf}(\alpha)| w\in\Sigma^*_\infty\}.$$
+        $
+      </p>
+      <p class="fragment" data-fragment-index="3">
+        Note that $fX\subset B(h_f(\alpha), \frac{C}{\deg(f)}).$
+      </p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h2>Define $A$ and $B$</h2>
+      <p class="fragment" data-fragment-index="2">
+        Suppose $h_f(\alpha)\neq h_g(\alpha)$. Then, there exists an integer $n$ such that $f^nX\cap g^nX=\varnothing$. Let
+        $$A = f^nX\text{ and }B=g^nX.$$
+      </p>
+        Obviously, $f^{nk}:B\to A$ and $g^{nk}:A\to B$ for any positive integer $k$.
+      <p class="fragment" data-fragment-index="3">
+        Thus, by the ping-pong lemma, we can conclude that $\langle f^n, g^n\rangle$ is a free semigroup of rank $2$.
       </p>
     </textarea>
   </section>
