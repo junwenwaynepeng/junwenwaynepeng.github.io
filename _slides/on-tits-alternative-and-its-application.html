@@ -182,14 +182,14 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       ## characters, words, and language
       Consider a set of _characters_ $\Sigma=\{f,g\}$, and define _language_ $\Sigma^*$ as the collection of (finite and infinite) _words_ composed using characters from $\Sigma$.
-      Let $\Sigma^*_n$ denote the set of words from $\Sigma^*$ of the length $n$.
+      Let $\Sigma^*_n$ denote the set of words from $\Sigma^*$ of the length $n$, and let $\Sigma^*_\infty$ be the set of infinite word from $\Sigma$.
     </textarea>
   </section>
   <section data-markdown>
     <textarea data-template>
       To comprehend the essence of our proof for the main result, perform the following steps:
       - Use a naive height function
-      - Let $f$ and $g$ be rational functions. Define both the dynamical canonical height of $f$ and the general multi-system dynamical canonical height $h_w$, where $w\in \{f,g\}^*$.
+      - Let $f$ and $g$ be rational functions. Define both the dynamical canonical height of $f$ and the general multi-system dynamical canonical height $h_w$, where $w\in \Sigma^*=\{f,g\}^*$.
       - Given $\alpha\in\mathbb{Q}$, define $X$ as the set of all $h_w(\alpha)$ where $w\in\sigma^*$.
       - Explain the action of $f$ and $g$ on $X$.
       - Identify $A$ and $B$, which are disjoint subsets of $X$, and apply the ping-pong lemma.
@@ -235,8 +235,8 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       <h3>Multi-system dynamical canonical height</h3>
-      <p>Consider a sequence $$\{f_1(\alpha),\ f_2f_1(\alpha),\ f_3f_2f_1(\alpha),\ \cdots \}$$ where $f_i$ is either $f$ or $g$. Let $w_n= f_n\ldots f_2f_1$, and let $w$ be the formal composition $\ldots f_3f_2f_1$. We define
-      $$h_w(\alpha) = \lim_{n\to\infty}\frac{w_n(\alpha)}{\deg(w_n)}.$$
+      <p>Consider a sequence $$\{f_1(\alpha),\ f_2f_1(\alpha),\ f_3f_2f_1(\alpha),\ \cdots \}$$ where $f_i$ is either $f$ or $g$. Let $w_n= f_n\ldots f_2f_1$, and let $w$ be the formal composition $\ldots f_3f_2f_1$ (w\in\Sigma^*_\infty). We define
+      $$h_w(\alpha) = \lim_{n\to\infty}\frac{h(w_n(\alpha))}{\deg(w_n)}.$$
       </p>
 
     </textarea>
@@ -246,7 +246,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <h2>Define $X$</h2>
       <p>
         Given $\alpha\in\mathbb{Q}\setminus\text{Perp}(f)$, we define
-        $$X=\\{\\}$$
+        $$X=\{h_w(\alpha)| w\in\Sigma^*_\infty\}.$$
+        And, we define
+        $$fX = \{h_{wf}(\alpha)| w\in\Sigma^*_\infty\}.$$
       </p>
     </textarea>
   </section>
