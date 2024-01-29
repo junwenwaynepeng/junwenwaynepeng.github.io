@@ -426,7 +426,7 @@ check_list = [(f,g)]
 while check_list != []:
   a_pair = check_list.pop(0)
   check_list.extend(check(a_pair))
-  if a_pair>n:
+  if length of a_pair[0]>n:
     return "Undecidable"
   return "Have no relation"
       ```
@@ -439,12 +439,12 @@ def check(a_pair):
   C = max(f.resultant(),g.resultant())
   err = 2C/((d-1)d^n)
   if diff/2 > err:
-      return []
+    return []
   else:
-      if A==B
-          return "find a relation A=B"
-      else:
-          return [(fA,fB),(fA,gB),(gA,fB),(gA,gB)]
+    if A==B
+      return "find a relation A=B"
+    else:
+      return [(fA,fB),(fA,gB),(gA,fB),(gA,gB)]
       ```
     </textarea>
   </section>
