@@ -211,7 +211,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       ## A well-known inequality
       Let $f$ be a rational function. Let $d$ be the degree of $f$. Then, we have a constant $C$, dependent only on $f$, such that
-      $$|h(f(\alpha))-dh(f(\alpha))|<C $$
+      $$|h(f(\alpha))-dh(f(\alpha))| < C $$
     </textarea>
   </section>
   <section data-markdown>
@@ -221,8 +221,14 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         $$h_f(\alpha)=\lim_{n\to\infty}\frac{h(f^n(\alpha))}{d^n}$$
       </p>
       <p class="fragment" data-fragment-index="2">
-        Key argument:<br>
-        \left|\frac{h(f^m(\alpha))}{d^m} - \frac{h(f^n(\alpha))}{d^n}\right| < ||
+        Key argument: For $m>n$,<br>
+        $$
+          \begin{align*}
+            \left|\frac{h(f^m(\alpha))}{d^m} - \frac{h(f^n(\alpha))}{d^n}\right| < \left|\frac{h(f^m(\alpha))}{d^m} - \frac{h(f^{m-1}(\alpha))}{d^{m-1}}+\frac{h(f^{m-1}(\alpha))}{d^{m-1}} - \frac{h(f^{m-2}(\alpha))}{d^{m-2}} + \cdots + \frac{h(f^{n+1}(\alpha))}{d^{n+1}} - \frac{h(f^n(\alpha))}{d^n}\right|\\\\
+            \left|\frac{h(f^m(\alpha))}{d^m} - \frac{h(f^{m-1}(\alpha))}{d^{m-1}} \right| + \left|\frac{h(f^{m-1}(\alpha))}{d^{m-1}} - \frac{h(f^{m-2}(\alpha))}{d^{m-2}}\right| + \cdots + \left|\frac{h(f^{n+1}(\alpha))}{d^{n+1}} - \frac{h(f^n(\alpha))}{d^n}\right|\\\\
+            \frac{C}{d^{m}} + \frac{C}{d^{m-1}} + \cdots + \frac{C}{d^{n+1}} = \frac{\frac{C}{d^{m+1}}-\frac{C}{d^{n+1}}}{\frac{1}{d}-1}
+          \end{align*}
+        $$
       </p>
 
     </textarea>
