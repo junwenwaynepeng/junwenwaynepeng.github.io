@@ -272,7 +272,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <p>To comprehend the essence of our proof for the main result, perform the following steps:</p>
       <ul>
         <li class="fragment custom blur" data-fragment-index="2">Use a naive height function $h:\mathbb{Q}^\times\to\mathbb{R}_{\geq 0}$.</li>
-        <li class="fragment custom blur" data-fragment-index="3">Let $f$ and $g$ be rational functions. Define both the dynamical canonical height of $f$ and the general multi-system dynamical canonical height $h_w$, where $w\in \Sigma^*=\{f,g\}^*$.</li>
+        <li class="fragment custom blur" data-fragment-index="3">Let $f$ and $g$ be rational functions. Define both the dynamical canonical height of $f$ and the general multi-system dynamical canonical height $h_w$, where $w\in \Sigma^*$.</li>
         <li class="fragment custom blur" data-fragment-index="4">Given $\alpha\in\mathbb{Q}$, define $X$ as the set of all $h_w(\alpha)$ where $w\in\Sigma^*$.</li>
         <li class="fragment custom blur" data-fragment-index="5">Explain the action of $f$ and $g$ on $X$.</li>
         <li class="fragment custom blur" data-fragment-index="6">Identify $A$ and $B$, which are disjoint subsets of $X$, and apply the ping-pong lemma.</li>
@@ -294,6 +294,14 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         \end{align*}
       $$
       e.g. $h(\frac{1}{2})=\log(2)$ and $h(\frac{1001}{2000})=\log(2000)$.
+      <aside class="notes">
+        <ul>
+          <li>The naive height of a rational number, when expressed in lowest terms, is the maximum of the absolute values of the denominator and numerator.</li>
+          <li>The concept of naive height can be more easily understood by considering it as storage space.</li>
+          <li>For instance, "one-half" and "one thousand and one over two thousand" are numerically similar. Yet, the latter requires more space for storage compared to the former. It's evident that the naive height of "one thousand and one over two thousand" is greater than that of "one-half", thus demonstrating that the naive height reflects a number's complexity.</li>
+          <li>This is a crucial tool in the study of arithmetic number theory.</li>
+        </ul>
+      </aside>
     </textarea>
   </section>
   <section data-markdown>
@@ -301,6 +309,13 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       ## A well-known inequality
       Let $f$ be a rational function. Let $d$ be the degree of $f$. Then, we have a constant $C$, dependent only on $f$, such that
       $$|h(f(\alpha))-dh(\alpha)| < C $$
+      <aside class="notes">
+        <ul>
+          <li>To utilize a naive height effectively in a dynamical system, it's necessary to examine how a naive height interacts with a rational function.</li>
+          <li>This lemma suggests that the naive height of an image, produced by applying a function of degree d to a number, resides within a ball. The center of this ball is positioned at 'd' times the naive height of the original number, and its radius is a constant dependent solely on the function.</li>
+          <li>By applying this lemma, ... (next page)</li>
+        </ul>
+      </aside>
     </textarea>
   </section>
   <section data-markdown>
@@ -319,6 +334,13 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
           \end{align*}
         $$
       </small></p>
+      <aside class="notes">
+        <ul>
+          <li>we can demonstrate that the sequence of $f^n(\alpha)/d^n$, indexed by 'n', forms a Cauchy sequence.</li>
+          <li>This height is called canonical dynamical height, which draws parallels to the Weil height on an elliptic curve.</li>
+          <li>The proof involves a simple trick in analysis.</li>
+        </ul>
+      </aside>
     </textarea>
   </section>
   <section data-markdown>
@@ -327,6 +349,12 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <p>Consider a sequence $$\{f_1(\alpha),\ f_2f_1(\alpha),\ f_3f_2f_1(\alpha),\ \cdots \}$$ where $f_i$ is equal to $f$ or $g$. Let $w_n= f_n\ldots f_2f_1$, and let $w$ be the formal composition $\ldots f_3f_2f_1$ ($w\in\Sigma^*_\infty$). We define
       $$h_w(\alpha) = \lim_{n\to\infty}\frac{h(w_n(\alpha))}{\deg(w_n)}.$$
       </p>
+      <aside class="notes">
+        <ul>
+          <li>The same trick can also be used to define a more general canonical dynamical height.</li>
+          <li>Instead of considering a sequence of iteration of a single function, Our dynamical system is pushed by two function, f and g</li>
+        </ul>
+      </aside>
     </textarea>
   </section>
   <section data-markdown>
@@ -343,6 +371,11 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <p class="fragment" data-fragment-index="3">
         Note that $f^nX\subset B\left(\frac{h(f^n(\alpha))}{d^n}, \frac{C}{(\deg(f)-1)\deg(f)^n}\right).$
       </p>
+      <aside class="notes">
+        <ul>
+          <li>Now, we define $X$ as the set of all general dynamical canonical height.</li>
+        </ul>
+      </aside>
     </textarea>
   </section>
   <section data-markdown>
@@ -364,8 +397,8 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
 <section>
   <section>
     <h4>In terms of growth rate</h4>
-    <p class="fragment" data-fragment-index="1">The existence of any relation between $f$ and $g$ results in a reduction in the count of distinct words within $\Sigma^*_n$, leading to the inequality $\#\Sigma^*_n\leq (\#\Sigma)^n$.</p>
-    <div class="example fragment" data-fragment-index="2">
+    <p class="fragment" data-fragment-index="2">The existence of any relation between generators results in a reduction in the count of distinct words within $\Sigma^*_n$, leading to the inequality $\#\Sigma^*_n\leq (\#\Sigma)^n$.</p>
+    <div class="example fragment" data-fragment-index="3">
       <p>
           Let $\Sigma=\{f_1,\ f_2,\ \ldots,\ f_m\}$, and assume $f_if_j=f_jf_i$ for all $i$ and $j$.
         <ul>
@@ -374,6 +407,12 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         </ul>
       </p>
     </div>
+    <aside class="notes">
+      <ul>
+        <li>We choose to use growth rate to format our main result. Any relation between generators will reduce the number of distinct element in $\Sigma^*n$.</li>
+        <li>Carefully explain the examples.</li>
+      </ul>
+    </aside>
   </section>
   <section>
     <div class="definition">
@@ -409,6 +448,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         </ol>
       </p>
     </div>
+    <aside class="notes">
+      A significant part of arithmetical dynamics involves identifying equivalent relationships that can conclusively determine whether two morphisms are fundamentally identical.
+    </aside>
   </section>
 </section>
 <section>
@@ -419,6 +461,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <span style="font-size:65%">$$h_f(\alpha)\neq h_g(\alpha)\Rightarrow \langle f^j, g^j\rangle\text{ is a free group of rank }2\text{ for some $j$}$$</span></p>
       <p class="fragment" data-frgment-index="2">$j=1$?</p>
     </textarea>
+    <aside class="notes">
+      In the remainder of this talk, I will discuss some forthcoming work with Prof. Tsai that is yet to be published. The first question arises directly from our main result. In this result, we demonstrated the existence of an integer that leads to a free semigroup. Naturally, we are intrigued to determine whether this integer could be one.
+    </aside>
   </section>
   <section>
     <h3>Algorithm:$\langle f,g\rangle$ contains free semigroup</h3>
@@ -429,11 +474,11 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <h4>Idea of Algorithm</h4>
     <ol>
       <li class="fragment"> For simplicity, we assume $\deg f=\deg g$.</li>
-      <li class="fragment"> Composition has right cancellation, i.e.
+      <li class="fragment"> Composition has the property of right cancellation, i.e.
         $$
         h_1\circ f = h_2\circ f\implies h_1=h_2.
         $$
-        <p class="fragment">Therefore, to check if we have a nontrivial composition relation, we can simply assume that the first (the most right) function is not the same.</p></li>
+        <p class="fragment">Therefore, to verify a nontrivial composition relation, we can simply assume that the rightmost functions are distinct.</p></li>
     </ol>
   </section>
   <section>
@@ -446,6 +491,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         where $C=\max\{C_f, C_g\}$, $A=A_n\circ\cdots\circ A_1$ and $B=B_n\circ\cdots\circ B_1$, then any composition that starts with $A$ won't be equal to one that starts with $B$.
       </li>
     </ol>
+    <aside class="notes">
+      The condition on the intersection will be used to tell computer when we should stop search for relation with $A$ and $B$ to be rightmost functions.
+    </aside>
   </section>
   <section>
     <ol start="4">
@@ -510,37 +558,40 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       #### Psudocode
-```py [1-2|3|4-5|6-8]
-Q = random()
-check_list = [(f,g)] 
-while check_list != []:
-  a_pair = check_list.pop(0)
-  check_list.extend(check(a_pair))
-  if length of a_pair[0]>n:
-    return "Undecidable"
-  return "Have no relation"
-```
-```py [1|2-4|5-7|8-9|10-14]
-def check(a_pair):
-  A = a_pair[0]
-  B = a_pair[1]
-  d = f.degree()
-  diff = h(A(Q)/A.degree())-h(B(Q)/B.degree())
-  C = max(f.resultant(),g.resultant())
-  err = 2C/((d-1)d^n)
-  if diff/2 > err:
-    return []
-  else:
-    if A==B:
-     return "find a relation A=B"
-    else:
-     return [(fA,fB),(fA,gB),(gA,fB),(gA,gB)]
-```
+    ```py [1-2|3|4-5|6-8]
+    Q = random()
+    check_list = [(f,g)] 
+    while check_list != []:
+      a_pair = check_list.pop(0)
+      check_list.extend(check(a_pair))
+      if length of a_pair[0]>n:
+        return "Undecidable"
+      return "Have no relation"
+    ```
+    ```py [1|2-4|5-7|8-9|10-14]
+    def check(a_pair):
+      A = a_pair[0]
+      B = a_pair[1]
+      d = f.degree()
+      diff = h(A(Q)/A.degree())-h(B(Q)/B.degree())
+      C = max(f.resultant(),g.resultant())
+      err = 2C/((d-1)d^n)
+      if diff/2 > err:
+        return []
+      else:
+        if A==B:
+          return "find a relation A=B"
+        else:
+          return [(fA,fB),(fA,gB),(gA,fB),(gA,gB)]
+    ```
     </textarea>
   </section>
   <section data-markdown>
     <textarea data-template>
       [demo](/2023-04-17-algorithm-to-determine-composition-relation/)
+      <aside class="notes">
+        Our experiment shows that there are 98% pairs of functions from a random samples confirms that $j=1$. The rest 2% fails to determine within the search on the tree upto level 10th. 
+      </aside>
     </textarea>
   </section>
 </section>
@@ -585,20 +636,25 @@ def check(a_pair):
         </ol>
       </div>
     </div>
+    <aside class="notes">Even though the semigroup is generated by very simple monomials, it could result in complex relations. For example, ...</aside>
   </section>
   <section>
     <p>A finitely generated semigroup $G=\Sigma^*/\mathcal{R}$ with the following properties:</p>
     <ol>
-      <li>Let equivalent classes $[w_1]$ and $[w_2]$ belong to $G$. If $[w_1]=[w_2]$, then $|w_1|_s = |w_2|_s$ for all $s\in\Sigma$.</li>
-      <li>There exists a positive integer $N$ such that $\#\mathcal{U}_I/\mathcal{R}\leq N$ for all indices $I$.</li>
+      <li>Let equivalent classes $[w_1]$ and $[w_2]$ belong to $G$. If $[w_1]=[w_2]$, then $|w_1|_s = |w_2|_s$ (counting the number of characters to be $s$) for all $s\in\Sigma$ <span style="color:#A15F9A;">(If two composition are the same, then they use the same number of $f$ and $g$.)</span></li>
+      <li>There exists a positive integer $N$ such that $\#\mathcal{U}_I/\mathcal{R}\leq N$ for all indices $I$ <span style="color:#A15F9A;">(Number of possible composition result is bounded.)</span></li>
       <li>The semigroup $G$ has one-side cancellation property.</li>
     </ol>
+    <aside class="notes">
+      We abstract the operation's properties that the semigroup generated by $x^2$ and $\zeta x^3$ has.
+    </aside>
   </section>
   <section>
     <h4>:) - Tsai (2023)</h4>
     <div class="theorem">
       <p>If $G$ is a finitely generated semigroup that meets the three specified conditions, then the cardinality of $\mathcal{R}$ is finite and does not depend on our choice of relations. Furthermore, the process of finding relations can be finished in a finite number of steps.</p>
     </div>
+    <aside class="notes">We confirms that the number of relations is an invariant of a semigroup like the example.</aside>
   </section>
 </section>
 <section>
@@ -613,4 +669,5 @@ def check(a_pair):
       <li>We demonstrate two subsequent research studies.</li>
     </ul>
   </small>
+  <aside class="notes">That is all that I want to share. Thank you.</aside>
 </section>
