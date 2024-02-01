@@ -82,10 +82,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <aside class="notes">
         <ul>
           <li>Tits Alternative is a concept in group theory that presents a dichotomy.</li>
-          <li>This principle asserts that if any subgroup of a group satisfies a dichotomous statement, we say that this group exhibits the Tits Alternative.</li>
-          <li>The first group found to have this characteristic was the linear group. Tits demonstrated that any finitely generated linear group either contains a finite index solvable subgroup or a free non-commutative subgroup.</li>
-          <li>Here, 'solvability' means that we can find a series of normal subgroups where the quotient of each adjacent pair is abelian. On the other hand, a 'free group' signifies that there are no relations between generators, thus no cancellations can occur. This can be thought of as analogous to linear independence. We refer to the number of generators in a free group as its 'rank'.</li>
-          <li>These concepts may initially appear abstract, but they are actually rooted in an intriguing paradox.</li>
+          <li>Read the theorem</li>
+          <li>Here, 'solvability' means that we can find a series of normal subgroups where the quotient of each adjacent pair is abelian. On the other hand, a 'free group' signifies that there are no relations between generators, thus no cancellations can occur. We refer to the number of generators in a free group as its 'rank'. This can be thought of as analogous to the dimension of a linear space.</li>
+          <li>Tits alternative may initially appear abstract, but they are actually rooted in an intriguing paradox.</li>
         </ul>
       </aside>
     </textarea>
@@ -99,7 +98,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       </center></p>
       <aside class="notes">
         <ul>
-          <li>The Banach-Tarski paradox proposes the seemingly absurd idea that a ball can be dissected into a finite number of non-overlapping point sets, which can then be reassembled to form two balls identical to the original.</li>
+          <li>The Banach-Tarski paradox says the seemingly absurd idea that a ball can be dissected into a finite number of non-overlapping point sets, which can then be reassembled to form two balls identical to the original.</li>
           <li>At first glance, this proposition might seem nonsensical, even ridiculous. However, upon deeper examination, the concept is not entirely beyond the realm of possibility.</li>
         </ul>
       </aside>
@@ -310,7 +309,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       ## A well-known inequality
       Let $f$ be a rational function. Let $d$ be the degree of $f$. Then, we have a constant $C$, dependent only on $f$, such that
-      $$\left|\frac{h(f(\alpha))}{d}-h(\alpha)\right| < C $$
+      $$|h(f(\alpha))-dh(\alpha)| < C $$
       <aside class="notes">
         <ul>
           <li>To utilize a naive height effectively in a dynamical system, it's necessary to examine how a naive height interacts with a rational function.</li>
@@ -363,7 +362,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       <h2>Define $X$</h2>
       <p>
-        Given $\alpha\in\mathbb{Q}\setminus\text{Perp}(f)\cap\text{Prep}(g)$, we define
+        Given $\alpha\in\mathbb{Q}\setminus\text{Perp}(f)$, we define
         $$X=\{h_w(\alpha)| w\in\Sigma^*_\infty\}.$$
       </p>
       <p class="fragment" data-fragment-index="2">
@@ -384,14 +383,14 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       <h2>Define $A$ and $B$</h2>
       <p>
-        Suppose <span style="color:#A15F9A;">$h_f(\alpha)\neq h_g(\alpha)$</span>. Then, there exists an integer $n$ such that $f^nX\cap g^nX=\varnothing$. Let
+        Suppose $h_f(\alpha)\neq h_g(\alpha)$. Then, there exists an integer $n$ such that $f^nX\cap g^nX=\varnothing$. Let
         $$A = f^nX\text{ and }B=g^nX.$$
       </p>
       <p class="fragment" data-fragment-index="2">
         Obviously, $f^{nk}:B\to A$ and $g^{nk}:A\to B$ for any positive integer $k$.
       </p>
       <p class="fragment" data-fragment-index="3">
-        Thus, by the ping-pong lemma, we can conclude that <span style="color:#A15F9A;">$\langle f^n, g^n\rangle$ is a free semigroup of rank $2$</span>.
+        Thus, by the ping-pong lemma, we can conclude that $\langle f^n, g^n\rangle$ is a free semigroup of rank $2$.
       </p>
     </textarea>
   </section>
@@ -560,7 +559,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       #### Psudocode
-```py [1-2|3,8|4-5|6-7]
+```py [1-2|3|4-5|6-8]
 Q = random()
 check_list = [(f,g)] 
 while check_list != []:
@@ -568,7 +567,7 @@ while check_list != []:
   check_list.extend(check(a_pair))
   if length of a_pair[0]>n:
     return "Undecidable"
-return "Have no relation"
+  return "Have no relation"
 ```
 ```py [1|2-4|5-7|8-9|10-14]
 def check(a_pair):  
@@ -638,7 +637,7 @@ else:
         </ol>
       </div>
     </div>
-    <aside class="notes">Even though the semigroup is generated by very simple monomials, it could result in complex relations. For example, ...</aside>
+    <aside class="notes">Even though the semigroup is generated by very simple monomials, it could result in complicated relations. For example, ...</aside>
   </section>
   <section>
     <p>A finitely generated semigroup $G=\Sigma^*/\mathcal{R}$ with the following properties:</p>
