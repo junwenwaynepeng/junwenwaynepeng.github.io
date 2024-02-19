@@ -81,7 +81,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       </ul>
       <aside class="notes">
         <ul>
-          <li>Tits Alternative is a concept in group theory that presents a dichotomy.</li>
+          <li>Tits Alternative is a theorem in group theory that presents a dichotomy.</li>
           <li>Read the theorem</li>
           <li>Here, 'solvability' means that we can find a series of normal subgroups where the quotient of each adjacent pair is abelian. On the other hand, a 'free group' signifies that there are no relations between generators, thus no cancellations can occur. We refer to the number of generators in a free group as its 'rank'. This can be thought of as analogous to the dimension of a linear space.</li>
           <li>Tits alternative may initially appear abstract, but they are actually rooted in an intriguing paradox.</li>
@@ -221,6 +221,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <aside class="notes">
         <ul>
           <li>The proof of the Ping-Pong Lemma is also beautiful. I regard it as one of the many elegant proofs that can be easily understood by undergraduate students.</li>
+          <li>To show that there is no relation between f and g, we have to show that any combination of f and g is not identity.</li>
+          <li>We first show that elements of this form is not identity.</li>
+          <li>Then, we bring other cases back to the initial case.</li>
         </ul>
       </aside>
     </textarea>
@@ -283,6 +286,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <aside class="notes">
         <ul>
           <li>let us take a look of how we utilize the Ping-Pong Lemma in our work.</li>
+          <li>Now, let's proceed with a detailed introduction of each one</li>
         </ul>
       </aside>
     </textarea>
@@ -339,8 +343,8 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       </small></p>
       <aside class="notes">
         <ul>
-          <li>we can demonstrate that the sequence of $f^n(\alpha)/d^n$, indexed by 'n', forms a Cauchy sequence.</li>
-          <li>This height is called canonical dynamical height, which draws parallels to the Weil height on an elliptic curve.</li>
+          <li>we can demonstrate that the sequence of f^n(\alpha)/d^n, indexed by 'n', forms a Cauchy sequence.</li>
+          <li>This height is called dynamical canonical height, which draws parallels to the Weil height on an elliptic curve.</li>
           <li>The proof involves a simple trick in analysis.</li>
         </ul>
       </aside>
@@ -356,6 +360,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         <ul>
           <li>The same trick can also be used to define a more general canonical dynamical height.</li>
           <li>Instead of considering a sequence of iteration of a single function, Our dynamical system is pushed by two function, f and g</li>
+          <li>Note that the rightmost element is the first element of an infinite word because this will match the order of composition.</li>
         </ul>
       </aside>
     </textarea>
@@ -376,7 +381,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       </p>
       <aside class="notes">
         <ul>
-          <li>Now, we define $X$ as the set of all general dynamical canonical height.</li>
+          <li>Now, we define X as the set of all general dynamical canonical height.</li>
         </ul>
       </aside>
     </textarea>
@@ -412,8 +417,8 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     </div>
     <aside class="notes">
       <ul>
-        <li>We choose to use growth rate to format our main result. Any relation between generators will reduce the number of distinct element in $\Sigma^*n$.</li>
-        <li>Carefully explain the examples.</li>
+        <li>We choose to use growth rate to format our main result. Any relation between generators will reduce the number of distinct element in Sigma*n.</li>
+        <li>Let me use this example to explain.</li>
       </ul>
     </aside>
   </section>
@@ -495,7 +500,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       </li>
     </ol>
     <aside class="notes">
-      The condition on the intersection will be used to tell computer when we should stop search for relation with $A$ and $B$ to be rightmost functions.
+      The condition on the intersection will be used to tell computer when we should stop search for relation with A and B to be rightmost functions.
     </aside>
   </section>
   <section>
@@ -569,7 +574,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         check_list.extend(check(a_pair))
         if length of a_pair[0]>n:
           return "Undecidable"
-        return "Have no relation"
+      return "Have no relation"
       ```
       ```py [1|2-4|5-7|8-9|10-14]
       def check(a_pair):  
@@ -593,7 +598,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       [demo](/2023-04-17-algorithm-to-determine-composition-relation/)
       <aside class="notes">
-        Our experiment shows that there are 98% pairs of functions from a random samples confirms that $j=1$. The rest 2% fails to determine within the search on the tree upto level 10th. 
+        Our experiment indicates that 98% of function pairs from random samples confirm that j=1. The remaining 2% fail to determine within the search on the tree up to the 10th level.
       </aside>
     </textarea>
   </section>
@@ -617,6 +622,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       $$
         \langle \zeta_1x^{n_1},\zeta_2x^{n_2},\ldots,\zeta_mx^{n_m}\rangle.
       $$</p>
+      <aside class="notes">x^2, x+1/x, x^2-2</aside>
   </section>
   <section>
     <p>If $\zeta$ is a primitive fifth root of unity, then the semigroup generated by $f=x^2$ and $g=\zeta x^3$ has the following nine relations, none of which is generated by the other:</p>
