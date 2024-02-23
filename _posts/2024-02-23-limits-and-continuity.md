@@ -55,25 +55,25 @@ Here, $a$ and $b$ are nonzero real numbers, and $n$ and $m$ are integers.
 **Example.** Evaluale the limit $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2-y^2}{x^2+y^2}$ if it exists.
 
 
-	Along $(0, t)$: $\displaystyle\lim_{(x,y)\to (0,0)} \frac{x^2-y^2}{x^2+y^2} = \lim_{t\to 0}\frac{-t^2}{t^2} = -1$.
+Along $(0, t)$: $\displaystyle\lim_{(x,y)\to (0,0)} \frac{x^2-y^2}{x^2+y^2} = \lim_{t\to 0}\frac{-t^2}{t^2} = -1$.
 
 
-	Along $(t, 0)$: $\displaystyle\lim_{(x,y)\to (0,0)} \frac{x^2-y^2}{x^2+y^2} = \lim_{t\to 0}\frac{t^2}{t^2} = 1$.
+Along $(t, 0)$: $\displaystyle\lim_{(x,y)\to (0,0)} \frac{x^2-y^2}{x^2+y^2} = \lim_{t\to 0}\frac{t^2}{t^2} = 1$.
 
 
-	Thus, we can conclude that the limit doesn't exist.
+Thus, we can conclude that the limit doesn't exist.
 
 
 Example. Evaluate the limit $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^4}$ if it exists.
 
 
-	Along $(at,bt)$: $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^4} = \lim_{t\to 0}\frac{a^2bt^3}{a^2t^2+b^4t^4} = 0$.
+Along $(at,bt)$: $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^4} = \lim_{t\to 0}\frac{a^2bt^3}{a^2t^2+b^4t^4} = 0$.
 
 
-	Along $(at^2,bt)$: $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^4} = \lim_{t\to 0}\frac{a^2bt^4}{a^2t^4+b^4t^4} = \frac{a^2b}{a^2+b^4}$.
+Along $(at^2,bt)$: $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^4} = \lim_{t\to 0}\frac{a^2bt^4}{a^2t^4+b^4t^4} = \frac{a^2b}{a^2+b^4}$.
 
 
-	Thus, we can conclude that the limit doesn't exists.
+Thus, we can conclude that the limit doesn't exists.
 
 
 ---
@@ -91,7 +91,4 @@ contour_plot((x*y^2)/(x^2+y^4), (x, -1, 1), (y, -1, 1))
 
 
 Observing the contour map of the function near $\frac{xy^2}{x^2+y^4}$, we notice that the level curves intersects at the origin. This reflects the value of the limit along the path $ax=by^2$ are dependent on $a$ and $b$.
-
-
-‘''
 
