@@ -166,11 +166,10 @@ ${fmHeadPackage}
 			}
 			const mdBlocks = await n2m.pageToMarkdown(id);
 			let md = n2m.toMarkdownString(mdBlocks);
-			md = md.replace(/’/g, "'");
 			//writing to file
 			
 
-			fs.writeFile(path.join(root, fTitle), fm + md.parent, (err) => {
+			fs.writeFile(path.join(root, fTitle), fm + md.parent.replace(/’/g, "'"), (err) => {
 				if (err) {
 					console.log(err);
 				}
