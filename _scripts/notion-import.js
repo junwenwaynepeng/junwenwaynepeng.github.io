@@ -146,7 +146,7 @@ categories: [${cats}]${fmHeadPackage}
 				console.log('there')
 			}
 			if (cats.includes('post')) {
-				fm = `---			
+				fm = `---
 id: ${id}
 layout: post
 date: ${date}
@@ -157,7 +157,8 @@ leftToc: ${leftToc}
 rightToc: ${rightToc}
 sagecell: ${sagecell}
 tags: [${tags}]
-categories: [${cats}]${fmHeadPackage}
+categories: [${cats}]
+${fmHeadPackage}
 ---
 `;
 				fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
