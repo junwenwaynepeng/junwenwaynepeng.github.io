@@ -82,7 +82,7 @@ Example. Evaluate the limit $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^
 # The latest example
 
 
-<div class=”compute”>
+<div class=compute>
 x, y = var(’x,y’)
 
 
