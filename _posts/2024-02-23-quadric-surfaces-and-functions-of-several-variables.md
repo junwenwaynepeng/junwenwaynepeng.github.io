@@ -1,4 +1,4 @@
----			
+---
 id: 3b396ddc-3397-4a4e-853f-335db4f36ba0
 layout: post
 date: 2024-02-23
@@ -9,7 +9,8 @@ leftToc: false
 rightToc: false
 sagecell: true
 tags: [overview,calculus,calculus-3]
-categories: [post]head-package:
+categories: [post]
+head-package:
   -
     file: "package/sagecell.html"
 
