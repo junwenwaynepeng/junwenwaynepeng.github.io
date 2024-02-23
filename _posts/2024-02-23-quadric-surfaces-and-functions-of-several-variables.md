@@ -103,10 +103,10 @@ graph TD
 
 	Without loss of generality, we can assume $C>0$, and we three cases:
 
-		- $AB\neq 0$
-			- $AB>0$: Elliptic paraboloid
-			- $AB<0$: Hyberbolic paraboloid
-		- $B=0$: Parabolic cylinder
+	- $AB\neq 0$
+		- $AB>0$: Elliptic paraboloid
+		- $AB<0$: Hyberbolic paraboloid
+	- $B=0$: Parabolic cylinder
 
 		---
 
