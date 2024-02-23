@@ -165,7 +165,7 @@ ${fmHeadPackage}
 				console.log('here')
 			}
 			const mdBlocks = await n2m.pageToMarkdown(id);
-			const md = n2m.toMarkdownString(mdBlocks);
+			const md = n2m.toMarkdownString(mdBlocks).replace(/’/g, "'");
 
 			//writing to file
 			
