@@ -83,7 +83,7 @@ Example. Evaluate the limit $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^
 
 
 <div class=compute>
-x, y = var(`x,y’)
+x, y = var(\`x,y\`)
 
 
 contour_plot((x*y^2)/(x^2+y^4), (x, -1, 1), (y, -1, 1))
@@ -91,4 +91,7 @@ contour_plot((x*y^2)/(x^2+y^4), (x, -1, 1), (y, -1, 1))
 
 
 Observing the contour map of the function near $\frac{xy^2}{x^2+y^4}$, we notice that the level curves intersects at the origin. This reflects the value of the limit along the path $ax=by^2$ are dependent on $a$ and $b$.
+
+
+` ‘ “ ＂’’ 
 
