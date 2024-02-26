@@ -64,7 +64,7 @@ Along $(t, 0)$: $\displaystyle\lim_{(x,y)\to (0,0)} \frac{x^2-y^2}{x^2+y^2} = \l
 Thus, we can conclude that the limit doesn't exist.
 
 
-Example. Evaluate the limit $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^4}$ if it exists.
+**Example.** Evaluate the limit $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^4}$ if it exists.
 
 
 Along $(at,bt)$: $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^4} = \lim_{t\to 0}\frac{a^2bt^3}{a^2t^2+b^4t^4} = 0$.
@@ -90,5 +90,5 @@ contour_plot((x*y^2)/(x^2+y^4), (x, -1, 1), (y, -1, 1))
 </div>
 
 
-Observing the contour map of the function near $\frac{xy^2}{x^2+y^4}$, we notice that the level curves intersects at the origin. This reflects the value of the limit along the path $ax=by^2$ are dependent on $a$ and $b$.
+Observing the contour map of the function $\frac{xy^2}{x^2+y^4}$, we notice that the level curves intersects at the origin. This reflects the value of the limit along the path $ax=by^2$ are dependent on $a$ and $b$.
 
