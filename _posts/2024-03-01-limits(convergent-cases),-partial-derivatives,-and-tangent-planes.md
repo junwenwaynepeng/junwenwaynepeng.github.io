@@ -32,7 +32,7 @@ Here, we provide two methods that differ from the one presented in class. Since 
 
 
 $$
-\left|\frac{5x^3y^3}{x^2+y^2}\right|<\min\left\{5\left|\frac{x^3}{x^2+y^2}\right|, 5\left|\frac{y^3}{x^2+y^2}\right|\right\}\leq 5\min\{|x|,|y|\}
+\left|\frac{5x^3y^3}{x^2+y^2}\right|
 $$
 
 
@@ -188,7 +188,6 @@ Consider the graph $z=f(x,y)$. If it exists, the tangent plane of $f$ at $(a,b)$
 
 
 $$
-
 f_x(a,b)(x-a)+f_y(a,b)(y-b)-(z-f(a,b))=0
 $$
 
