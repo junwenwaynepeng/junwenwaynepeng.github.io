@@ -32,7 +32,7 @@ Here, we provide two methods that differ from the one presented in class. Since 
 
 
 $$
-\left|\frac{5x^3y^3}{x^2+y^2}\right|
+\left|\frac{5x^3y^3}{x^2+y^2}\right|<\min\left\{\right\}\leq 5\min\{|x|,|y|\}
 $$
 
 
