@@ -65,7 +65,7 @@ graph TD
 
 ```
 
-- The following diagram shows all possible cases if we assume $J\neq 0$, and, without loss of generality, we can assume $J>0.$
+- The following diagram shows all possible cases if we assume $J\neq 0$, and, without loss of generality, we can assume $J<0.$
 
 	```mermaid
 	graph TD
@@ -76,9 +76,9 @@ graph TD
 		3P0N["All positive"]
 		E["Ellipsoid"]
 		2P1N["Two positive, one negative"]
-		H1["Hyperboloid of two sheet"]
+		H1["Hyperboloid of one sheet"]
 		1P2N["One positive, two negative"]
-		H2["Hyperboloid of one sheets"]
+		H2["Hyperboloid of two sheets"]
 		2P0N["All positive"]
 		Cy["Cylinder"]
 		1P1N["One positive, one negative"]
