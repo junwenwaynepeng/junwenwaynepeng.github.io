@@ -20,7 +20,7 @@ Let $\vec{u}=(\cos(\theta),\sin(\theta))$ represent a unit vector, $z=f(x,y)$ de
 
 
 $$
-\nabla_{\vec{u}}f(p)\coloneqq \lim_{t\to 0}\frac{f(p+t\vec{u})-f(p)}{t}
+\nabla_{\vec{u}}f(p)= \lim_{t\to 0}\frac{f(p+t\vec{u})-f(p)}{t}
 $$
 
 
