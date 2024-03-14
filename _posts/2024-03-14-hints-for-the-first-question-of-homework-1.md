@@ -13,7 +13,7 @@ categories: [post]
 
 ---
 
-Let's apply what we learned in Calculus 1 to the first question of this homework. Given a function $f(x)=x^3$ and $x_0=100$, we want to estimate the relative error of $f(x_0+\Delta x)$, given that the relative error $\frac{\Delta x}{x_0}$ is less than $1\%$.
+Let's apply what we learned in Calculus 1 to the first question of this homework. Given a function $f(x)=x^3$ and $x_0=100$, we want to estimate the relative error of $f(x_0+\Delta x)$, given that the relative error $\frac{\Delta x}{x_0}$ is less than $1\\%$.
 What we need to do here is to estimate
 
 
@@ -26,7 +26,7 @@ By expanding $f(x_0+\Delta x)$, we obtain $x_0^3+3x_0^2\Delta x +3x_0\Delta x^2+
 
 
 $$
-\frac{3x_0^2\Delta x}{x_0^3} = 3\frac{\Delta x}{x_0} = 3\%.
+\frac{3x_0^2\Delta x}{x_0^3} = 3\frac{\Delta x}{x_0} = 3\\%.
 $$
 
 
