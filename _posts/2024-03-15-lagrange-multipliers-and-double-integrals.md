@@ -38,11 +38,11 @@ If we aim to find the extreme value of $f(x,y)$, subject to $g(x,y)\leq c$, we m
 
 
 We want to define the double integral of a function $f(x,y)$ over a rectangle. Given
-a rectangle $A=\\{(x,y)\mid a<x<b,c<y<d\\}$, we can create a partition of $A$ by partitioning both $[a,b]$ and $[c,d]$. Let $\\{x_1,x_2,\ldots, x_m\\}$ be a partition of $[a,b]$, and let $\\{y_1,y_2,\ldots, y_n\\}$ be a partition of $[c,d]$, We also assign sample points $x_i^{*}\in[x_{i},x_{i+1}]$ and $y_i^{*}\in [y_i,y_{i+1}]$. Thus, the double integral of $f$ over $A$ is denoted and defined as follows:
+a rectangle $A=\\{(x,y)\mid a<x<b,c<y<d\\}$, we can create a partition of $A$ by partitioning both $[a,b]$ and $[c,d]$. Let $\\{x_1,x_2,\ldots, x_m\\}$ be a partition of $[a,b]$, and let $\\{y_1,y_2,\ldots, y_n\\}$ be a partition of $[c,d]$, We also assign sample points $x_i^{\ast}\in[x_{i},x_{i+1}]$ and $y_i^{\ast}\in [y_i,y_{i+1}]$. Thus, the double integral of $f$ over $A$ is denoted and defined as follows:
 
 
 $$
-\int\int_Af(x,y)dA = \lim_{\max(|x_i-x_{i+1}|,|y_i-y_{i+1}|)\to 0}\sum_{i=1}^m\sum_{j=1}^nf(x_i^*,y_j^*)|x_i-x_{i+1}||y_i-y_{i+1}|
+\int\int_Af(x,y)dA = \lim_{\max(|x_i-x_{i+1}|,|y_i-y_{i+1}|)\to 0}\sum_{i=1}^m\sum_{j=1}^nf(x_i^{\ast},y_j^{\ast})|x_i-x_{i+1}||y_i-y_{i+1}|
 $$
 
 
