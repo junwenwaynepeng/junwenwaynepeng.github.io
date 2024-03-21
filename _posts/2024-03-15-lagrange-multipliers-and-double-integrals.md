@@ -49,7 +49,7 @@ $$
 From the given definition, we can see that the double integral of $f(x,y)$ over $A$ represents the volume beneath the surface $y=f(x,y)$ above $A$. 
 
 
-**Theorem (Fibini)** If $f$ is continuous on $A$, then we have
+**Theorem (Fubini)** If $f$ is continuous on $A$, then we have
 
 
 $$
