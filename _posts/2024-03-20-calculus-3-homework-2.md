@@ -23,4 +23,4 @@ This homework is due on 4/3.
 	2. Find the maximum value of $f(x_1,\ldots,x_n)=\sqrt[n]{x_1\cdots x_n}$.
 3. 
 	1. Find volume of the solid that enclosed by $x=0$, $y=0$, $z=0$, and the plane $Ax+By+Cz=D$ where $A$, $B$, $C$, and $D$ are positive.
-	2. Use the above result to show that the volume of a regular tetrahedron is $\frac{a^3}{6\sqrt{2}}$ if the edge length is $a$_._
+	2. Use the above result to show that the volume of a Trirectangular tetrahedron is $\frac{a^3}{6}$ if the edge length is $a$_._
