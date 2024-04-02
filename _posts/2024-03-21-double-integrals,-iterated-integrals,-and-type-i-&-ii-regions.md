@@ -48,7 +48,7 @@ $$
 Then, the order of iterated integral of $f$ matters. The following figure illustrates how we assign the value of $f$.
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/1637e985-0ddd-45a8-8718-90703f953a1b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240401%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240401T095330Z&X-Amz-Expires=3600&X-Amz-Signature=72cbac06b795950197fa0af44f24d809cfcd37ff817af68c06348b58558c68af&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/1637e985-0ddd-45a8-8718-90703f953a1b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240402%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240402T082343Z&X-Amz-Expires=3600&X-Amz-Signature=a69353963f25bd218d1581b6d7d843c416bacb26bcc40711649a81b7ce686bd2&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ## Example 2
@@ -107,7 +107,7 @@ $$
 $$
 
 
-imay appear difficult to integrate at first glance. However, after changing the expression to Type II, the integral becomes
+may appear difficult to integrate at first glance. However, after changing the expression to Type II, the integral becomes
 
 
 $$
@@ -117,3 +117,8 @@ $$
 
 should be easier to handle.
 
+
+**citations:**
+
+1. The graphs for type I and II regions are directly sourced from [https://web.ma.utexas.edu/users/m408s/m408d/CurrentWeb/LM15-3-2.php](https://web.ma.utexas.edu/users/m408s/m408d/CurrentWeb/LM15-3-2.php)
+2. The graph used to illustrate the counterexample of Fubini's theorem is sourced from [https://personal.math.ubc.ca/~feldman/m226/fubini.pdf](https://personal.math.ubc.ca/~feldman/m226/fubini.pdf)
