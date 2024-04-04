@@ -16,7 +16,7 @@ categories: [post]
 Spherical coordinates, also known as spherical polar coordinates, are a system of coordinates used in three-dimensional space. They are especially useful in fields such as physics and engineering where problems often involve three dimensions. In spherical coordinates, a point in space is represented by three values: the radial distance from the origin, the polar angle, and the azimuthal angle.
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/2d8079fe-ddfe-4256-9118-667990d391a3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240404%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240404T050334Z&X-Amz-Expires=3600&X-Amz-Signature=bad6e94abe79696b198c9360a118242ed1e1784e5e6930e7cec8576074aac789&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/2d8079fe-ddfe-4256-9118-667990d391a3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240404%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240404T050649Z&X-Amz-Expires=3600&X-Amz-Signature=86c33f58c5fd5e95a5eec0f4b279f65ae7edc11d25985841eb00532c21ebada7&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 A point $(x,y,z)$ in Euclidean coordinate can be obtained from its spherical coordinate $(\rho, \phi, \theta)$, where $r\in[0,\infty]$, $\phi\in[0,\pi]$, and $\theta\in[0,2\pi]$, by 
@@ -60,7 +60,7 @@ $$
 The following graph illustrates our estimation of a small cube partition using spherical coordinates.
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/29aa01f9-6047-4b2b-8da1-62518115c978/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240404%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240404T050334Z&X-Amz-Expires=3600&X-Amz-Signature=b25214899ff17b815357f7fdef120103a4f5afd9074849c0837cc67980467ed0&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/29aa01f9-6047-4b2b-8da1-62518115c978/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240404%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240404T050649Z&X-Amz-Expires=3600&X-Amz-Signature=c1ed7af94ed432c097c0de6b9d3b443897c8d9a374edc157e36b3bee44179f8d&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 We can interpret $\rho^2\sin(\phi)$ as the ratio of volume change when we switch the measure from $dxdydz$ to $d\rho d\phi d\theta$.
