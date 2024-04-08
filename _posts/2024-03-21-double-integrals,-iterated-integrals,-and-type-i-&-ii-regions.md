@@ -48,7 +48,7 @@ $$
 Then, the order of iterated integral of $f$ matters. The following figure illustrates how we assign the value of $f$.
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/1637e985-0ddd-45a8-8718-90703f953a1b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240402%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240402T082343Z&X-Amz-Expires=3600&X-Amz-Signature=a69353963f25bd218d1581b6d7d843c416bacb26bcc40711649a81b7ce686bd2&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://junwenwaynepeng.github.io/assets/img/posts/2024-03-21-01.png)
 
 
 ## Example 2
