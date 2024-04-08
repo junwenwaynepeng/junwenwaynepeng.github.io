@@ -66,7 +66,7 @@ $$
 $$
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/e33531d4-69ea-461b-a149-c93b93bd85cd/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240402%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240402T082343Z&X-Amz-Expires=3600&X-Amz-Signature=096c82557e124106363ad480a0b18d64a2a6e5b78626e59cc2593aca3d86dbad&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-02-01.png)
 
 
 **Type II** **regions** Let $D$ represent the projection of $R$ onto the $yz$-plane, and, for any fix $(y,z)$, $x$ is bounded above and below by $u_2(x,y)$ and $u_1(x,y)$ respectively. Then, we can express $R$ as
@@ -77,7 +77,7 @@ $$
 $$
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/c36bfc33-fd83-433b-8632-ab5ec31d4132/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240402%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240402T082343Z&X-Amz-Expires=3600&X-Amz-Signature=ea5dd8ee0f310856a32c9e56b91fd2cbdb954c585f6b49c0aebe9ea8abea857d&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-02-02.png)
 
 
 **Type I** **regions** Let $D$ represent the projection of $R$ onto the $xz$-plane, and, for any fix $(x,z)$, $y$ is bounded above and below by $u_2(x,y)$ and $u_1(x,y)$ respectively. Then, we can express $R$ as
@@ -88,7 +88,7 @@ $$
 $$
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/2245ef8f-5d49-4531-98be-8d2aa999830a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240402%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240402T082343Z&X-Amz-Expires=3600&X-Amz-Signature=ca5745d251a5911f94ef759a837765235ae5ddc118f4ec0f23db3b71c7a81da3&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-02-03.png)
 
 
 ## Region D
