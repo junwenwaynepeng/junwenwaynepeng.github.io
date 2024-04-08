@@ -63,6 +63,15 @@ graph LR
 9. 極限值問題是重要的題目來源，可以大致分類成沒有條件與有條件兩種，有條件的極值問題還可以再分類成條件是等式或不等式
 10. 極限值問題時常以應用題的方式出現，有可能你要自行列出函數或是限制條件。如果你對於找級值方法(the second derivative test and lagrange multipliers)沒有太大的問題，那請花一點時間確認自己有沒有閱讀障礙。
 
+```mermaid
+graph 
+  iint[Double integral] --> Rectangle & 2DTypes[Type I & II regions] & Polar[Polar coordinate]
+  iiint[Triple Integral] --> Box & 3DTypes[Type I, II, and III regions] & Cylin[Cylindrical coordinate] & Spher[Spherical coordinate]
+  Fubini[Fubini's theorem] -.-> iint & iiint
+  Polar & Cylin & Spher --> CV[Change of variable]
+```
+
+
 考試重點：
 
 1. (觀念，很重要，但是很難真的出成考題) Fubini's theorem 的意義類似於 Fundamental theorem of calculus，他告訴我們什麼情況下我們可以把一個二重或三重積分用 iterated integral 來計算。
@@ -93,13 +102,4 @@ graph LR
 
 
 		如果題目有告訴你$u$或$v$的範圍($\Phi$的定義域的一個範圍)，那就直接用，例如 webwork 有一個題目說讓$R=\\{(x,y)|0\leq x\leq 7, 0\leq y\leq 8\\}$是一個 box ，然後給你一個 transformation $\Phi$ 要你對某個函數在$\Phi(R)$上面積分，這題$u$和$v$的範圍就是0~7與0~8，因為$R$是在$\Phi$的定義域，所以$R$的範圍就是我們需要的範圍。如果題目沒有告訴你$u$或$v$的範圍，那我們需要找出$\Phi^{-1}$，然後再慢慢推敲分析出正確的範圍。
-
-
-```mermaid
-graph 
-  iint[Double integral] --> Rectangle & 2DTypes[Type I & II regions] & Polar[Polar coordinate]
-  iiint[Triple Integral] --> Box & 3DTypes[Type I, II, and III regions] & Cylin[Cylindrical coordinate] & Spher[Spherical coordinate]
-  Fubini[Fubini's theorem] -.-> iint & iiint
-  Polar & Cylin & Spher --> CV[Change of variable]
-```
 
