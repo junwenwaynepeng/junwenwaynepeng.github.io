@@ -68,7 +68,7 @@ graph
   iint[Double integral] --> Rectangle & 2DTypes[Type I & II regions] & Polar[Polar coordinate]
   iiint[Triple Integral] --> Box & 3DTypes[Type I, II, and III regions] & Cylin[Cylindrical coordinate] & Spher[Spherical coordinate]
   Fubini[Fubini's theorem] -.-> iint & iiint
-  Polar & Cylin & Spher --> CV[Change of variable]
+  Polar & Cylin & Spher -.-> CV[Change of variable]
 ```
 
 
