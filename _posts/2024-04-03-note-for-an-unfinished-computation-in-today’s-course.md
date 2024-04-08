@@ -16,7 +16,7 @@ categories: [post]
 We're considering a change of variables where $x=u^2-v^2$ and $y=2uv$. We aim to express the solid $E=\\{(x,y)|0\leq y\leq 2,\frac{y^2+4}{4}\leq x\leq -\frac{y^2+4}{4}\\}$ in terms of $u$ and $v$. Let's examine the following graph to better understand what we're trying to achieve. We are seeking the area on the left-hand side marked by ??? which will transform into the area enclosed by the blue curves on the right-hand side. 
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/e279f658-a426-4ab0-a158-f71e7abd3b45/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240404%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240404T050650Z&X-Amz-Expires=3600&X-Amz-Signature=a8786032677826baf6d3157db5608133dd0f99db60295f2b59e6fa28815c61d7&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-03-01.png)
 
 
 If we can find the inverse function of $(u^2-v^2,2uv)$, and express $u$ and $v$ in terms of $x$ and $y$, we can directly map the area on the right to the area of interest. 
@@ -34,14 +34,14 @@ Then, the boundary (blue curves) must map to the boundary of ??? (why). Therefor
 The three items mentioned above can be simplified and represented in the following graph.
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/96c29bd7-9676-48f5-97d4-85f96574bdc5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240404%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240404T050650Z&X-Amz-Expires=3600&X-Amz-Signature=8f402ab7242f72c4083452c4be249cd460566ad38bed4a24a556119285f83263&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-03-02.png)
 
 
 The “田” shapes are possible lines that maps to the blue curves in the first picture via the map $(u^2-v^2,2uv)$. Moreover, we know that $2uv>0$, so the only possibilities are the green square and purple square in the following figure.
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/de346120-2c2a-4451-b2fb-81b78990be77/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240404%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240404T050650Z&X-Amz-Expires=3600&X-Amz-Signature=46e1918268a12df1deeff1c7c258f8e9c2b487b1d0c88725dceff68cc1f62937&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-03-03.png)
 
 
-Regarding the integration of $\iint_RydA$ by changing the variables, which squre should we use? The answer is “it doesn't matter.” You can check this yourself.
+Regarding the integration of $\iint_RydA$ by changing the variables, which square should we use? The answer is “it doesn't matter.” You can check this yourself.
 

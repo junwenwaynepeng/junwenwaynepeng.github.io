@@ -41,7 +41,7 @@ $$
 respectively. Let's set $x = r\cos(\theta)$ and $y = r\sin(\theta)$. We can promptly observe that both have a pole (i.e., the limits tend to infinity) at $(0,0)$.) at $(0,0)$. The following is the graph of $z=\frac{xy}{x^2+y^2}$. We note that the graph exhibits "infinitely many wedges" near the origin, a behavior similar to $\frac{\sin(x)}{x}$ near $x=0$.
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/80d6f196-f6e3-4f52-b55c-5f6c0a2c90ad/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240307%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240307T064652Z&X-Amz-Expires=3600&X-Amz-Signature=a7c76e08d84cac7194b74b635ff4656f3090bd295bcb1e846c4153f923431913&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://junwenwaynepeng.github.io/assets/img/posts/2024-03-07-01.png)
 
 
 # Tangent Planes
@@ -55,7 +55,7 @@ F_x(p)(x-a)+F_y(p)(y-a)+F_z(p)(z-c)=0
 $$
 
 
-A graph $z=f(x,y)$ can be seem as a surface $z-f(x,y)$=0, where we set $F(x,y,z)=z-f(x,y)$. Therefore, the tangent plane at a point $(a,b)$ is
+A graph $z=f(x,y)$ can be seem as a surface $z-f(x,y)=0$, where we set $F(x,y,z)=z-f(x,y)$. Therefore, the tangent plane at a point $(a,b)$ is
 
 
 $$
