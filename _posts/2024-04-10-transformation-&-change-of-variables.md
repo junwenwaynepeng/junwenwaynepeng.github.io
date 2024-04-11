@@ -16,9 +16,6 @@ categories: [post]
 ![](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-10-01.png)
 
 
-![](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-10-01.png)
-
-
 $$
 \iint_{R'}f(x(u,v),y(u,v))\left|\frac{\partial(x,y)}{\partial(u,v)}\right|dudv =\iint_{R}f(x,y)dxdy 
 $$
@@ -64,19 +61,13 @@ $$
 $$
 
 
-**Example 3. (Only give** $R$**)** Evaluate $\displaystyle\int_{1/4}^{1}\int_{1/x}^{4/x^2}\ln(x^2y)dydx + \int_{1}^4\int_{1/x^2}^{4/x}\ln(x^2y)dydx.$
+**Example 3. (Only give** $R$**)** Evaluate $\displaystyle\int_{1/4}^{1}\int_{1/x^2}^{4/x}\ln(x^2y)dydx + \int_{1}^4\int_{1/x}^{4/x^2}\ln(x^2y)dydx.$
 
 
-> 💡 Strategy: Draw the region $R$, and we will find that $R$ is inclosed by the curve $u(x,y)=c_1$, $u(x,y)=c_2$, $v(x,y)=c_1'$, and $v(x,y)=c_2'$. Then, we will define $\Psi(x,y)=(u(x,y),v(x,y))$ and $R'=[c_1, c_2]\times[c_1',c_2']$. Finally, we will find $\Phi$ and use formula to evaluate the integral.
-
-
-![](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-10-02.png)
+> 💡 Strategy: Draw the region $R$, and we will find that $R$ is inclosed by the curve $u(x,y)=c_1$, $u(x,y)=c_2$, $v(x,y)=c_1'$, and $v(x,y)=c_2'$. Then, we will define $\Psi(x,y)=(u(x,y),v(x,y))$ and $R'=[c_1, c_2]\times[c_1',c_2']$. Finally, we will find $\Phi$ and use formula to evaluate the integral.Draw the range $R_1=\\{(x,y)|\frac{1}{4}\leq x\leq 1, \frac{1}{x}\leq y\leq\frac{4}{x^2} \\}$ and $R_2=\\{(x,y)|1\leq x\leq 4, \frac{1}{x^2}\leq y\leq \frac{4}{x}\\}$ toegther. We note that $R_1\cup R_2$ are enclosed by $xy=1$, $xy=4$, $x^2y=1$, and $x^2y=4$. Hence, we define $\Psi(x,y)=(xy, x^2y)$ and $R' = [1,4]\times[1,4]$. To find $\Phi$, we have to solve the following system of equations
 
 
 ![](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-10-02.png)
-
-
-Draw the range $R_1=\\{(x,y)|\frac{1}{4}\leq x\leq 1, \frac{1}{x}\leq y\leq\frac{4}{x^2} \\}$ and $R_2=\\{(x,y)|1\leq x\leq 4, \frac{1}{x^2}\leq y\leq \frac{4}{x}\\}$ toegther. We note that $R_1\cup R_2$ are enclosed by $xy=1$, $xy=4$, $x^2y=1$, and $x^2y=4$. Hence, we define $\Psi(x,y)=(xy, x^2y)$ and $R' = [1,4]\times[1,4]$. To find $\Phi$, we have to solve the following system of equations
 
 
 $$
