@@ -21,7 +21,6 @@ A vector field $F$ is a function that maps from $\mathbb{R^n}$ to $\mathbb{R}^n$
 
 $$
 P(x,y)i+Q(x,y)j=\langle P(x,y),Q(x,y)\rangle
-
 $$
 
 
