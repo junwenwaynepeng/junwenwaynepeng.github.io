@@ -36,7 +36,7 @@ $$
 We can visualize $F$ by drawing corresponding vectors in its space.
 
 
-**Example.** $F(x,y)=-yi+xj=\langle -y,x\rangle$ are vectors perpendicular to $\langle x,y\rangle$. Then, the following graph visualizes $F$.
+**Example.** $F(x,y)=-yi+xj=\langle -y,x\rangle$ are vectors perpendicular to $\langle x,y\rangle$. Then, the following graph visualizes $F$. (The following is a link to Desmos that draws the vector field $F$)
 
 
 [embed](https://www.desmos.com/calculator/yi7sig3nfj)
@@ -118,7 +118,7 @@ $$
 $$
 
 
-## Line Integral with repsect to $x$ and $y$
+## Line Integral with respsect to $x$ and $y$
 
 
 The definitions of line integrals along a smooth curve $C$ with respect to $x$ and $y$ are given by the limits
@@ -140,7 +140,7 @@ $$
 $$
 
 
-Let $F(x,y)=P(x,y)i+Q(x,y)j$. In this case, line inetgrals with respect to $x$ and $y$ often appear together. We then will write
+Let $F(x,y)=P(x,y)i+Q(x,y)j$. In this case, line integrals with respect to $x$ and $y$ often appear together. We then will write
 
 
 $$
