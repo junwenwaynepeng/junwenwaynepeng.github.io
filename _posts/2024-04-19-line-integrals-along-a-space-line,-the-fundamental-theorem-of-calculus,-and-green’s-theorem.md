@@ -154,5 +154,5 @@ Now, let's delve into the specifics of this inverse statement.
 **Theorem.** Suppose $D$ is an open, connected domain, and $F$ is a vector field on $D$ that is of class $C^1$. If $\int_C F\cdot d\gamma$ is path independent for every path $C$ in $D$, then $F$ is a conservative vector field, that is, $F=\nabla f$ for some potential function $f$ on $D$.
 
 
-**Proof.** The proof of this theorem is multifaceted, involving the use of Stoke's theorem, the properties of a simply-connected domain, and the fundamental theorem for line integrals. Detailed proof is outside the scope of this document and can be found in advanced calculus textbooks.
+We will prove this result after we introduce Green's theorem.
 
