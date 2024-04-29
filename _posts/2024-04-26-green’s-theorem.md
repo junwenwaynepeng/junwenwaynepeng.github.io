@@ -103,7 +103,7 @@ $$
 To extend the application of Green's theorem to more general regions, consider the example of a donut-shaped region, also known as an annular region $D$ (bounded by outer and inner circles). This region is not simple as it contains a hole. To apply Green's theorem, divide the annular region into upper and lower half. For the upper half of the semiannular, we provide a positively oriented path represented by $C_1+C_2+C_3+C_4$. Similarly, for the lower half of the semiannular, the positively oriented path is represented by $C_1'+C_4'+C_3'+C_2'$.
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/dbb9e4df-e818-42c1-bab8-63d8d729d9e5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240429T060946Z&X-Amz-Expires=3600&X-Amz-Signature=911a08cae03129d27ec5a7769c3067c247fe01e5130684f8579123d35fdd2433&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/dbb9e4df-e818-42c1-bab8-63d8d729d9e5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240429T063711Z&X-Amz-Expires=3600&X-Amz-Signature=7c106ced246c1220f894efca8878294e10955405e57b866b0a0f2fd7f52ce578&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 Since $C_2$ and $C_2'$ (as well as $C_4$ and $C_4'$) are in opposite directions, their line integrals will cancel out. That is
@@ -129,4 +129,16 @@ $$
 
 
 The extended version of Green's theorem is frequently used to demonstrate that the integral of a loop does not depend on the loop's path or initial point, but solely on the number of poles (undefined point) provided by the function.
+
+
+# Proof of the Criteria for a Conservative Vector Field
+
+
+Recall the theorem of the criteria for a conservative vector field.
+
+
+**Theorem.** Suppose $D$ is an open, connected domain, and $F$ is a vector field on $D$ that is of class $C^1$. If $\int_C F\cdot d\gamma$ is path independent for every path $C$ in $D$, then $F$ is a conservative vector field, that is, $F=\nabla f$ for some potential function $f$ on $D$.
+
+
+We need to demonstrate that for every closed curve $C$, we have $\int_CF\cdot d\gamma=0$. This claim is straightforward for a simple closed curve $C$ due to Green's theorem. To generalize this argument for non-simple closed curves, consider a curve $C$ in the shape of an 8, for example. It can be broken down into two simple closed curves, which allows us to extend the result to any closed curve.
 
