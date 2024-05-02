@@ -19,8 +19,8 @@ categories: [post]
 
 		![](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-29-03.png)
 
-2. Let $z$ be a complex number $x+yi$ where $i$ is the imaginary number, i.e., $i^2=-1$.
-	1. Rewrite the complex function $f(z)=\frac{1}{z}$ as a vector field $F$ in $\mathbb{R}^2$.
-	2. Prove that $\int_{C_1}F\cdot d\gamma=\int_{C_2}F\cdot d\gamma$ for any closed simple curve $C_1$ and $C_2$ enclosing the origin.
-	3. Show that $\int_{C}F\cdot d\gamma =2\pi$ for any closed simple curve $C$ enclosing the origin.
-	4. Demonstrate that $\int_{C_n}F\cdot d\gamma =2n\pi$ for any closed curve $C_n$ enclosing the origin, where $n$ denotes the number of times the curve circles the origin.
+2. Let $z$ be a complex number $x+yi$ where $i$ is the imaginary number, i.e., $i^2=-1$.  In the following questions, we will step-by-step demonstrate that $\int_C\frac{1}{z}dz=2\pi i$ for any simply closed curve that encloses the origin.
+	1. Rewrite the complex function $f(z)=\frac{1}{z}$ as a vector field $F(x,y)=P(x,y)\mathbf{i}+Q(x,y)\mathbf{j}$ in $\mathbb{R}^2$.
+	2. Suppose $dz=dx+idy$. Find vector fields $G_1$ and $G_2$ such that $\frac{1}{z}dz=G_1\cdot\gamma + iG_2\cdot d\gamma$.
+	3. Show that, for $i=1$ and $2$, $\int_{C_1}G_id\gamma=\int_{C_2}G_id\gamma$ for any two simply closed paths that enclose the origin.
+	4. Show that $\int_{C}G_1\cdot d\gamma =0$ and $\int_CG_2\cdot d\gamma=2\pi$ for any closed simple curve $C$ enclosing the origin.
