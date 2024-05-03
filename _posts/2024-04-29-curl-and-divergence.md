@@ -109,6 +109,9 @@ Let's use the following graphs to better understand what a curl measures.
 ![Fig 1](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-29-01.svg)
 
 
+![Fig 1](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-29-01.svg)
+
+
 ![Fig 2](https://junwenwaynepeng.github.io/assets/img/posts/2024-04-29-02.svg)
 
 
