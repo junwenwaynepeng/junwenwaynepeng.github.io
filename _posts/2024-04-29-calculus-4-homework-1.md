@@ -21,6 +21,6 @@ categories: [post]
 
 2. Let $z$ be a complex number $x+yi$ where $i$ is the imaginary number, i.e., $i^2=-1$.  In the following questions, we will step-by-step demonstrate that $\int_C\frac{1}{z}dz=2\pi i$ for any simply closed curve that encloses the origin.
 	1. Rewrite the complex function $f(z)=\frac{1}{z}$ as a vector field $F(x,y)=P(x,y)\mathbf{i}+Q(x,y)\mathbf{j}$ in $\mathbb{R}^2$.
-	2. Suppose $dz=dx+idy$. Find vector fields $G_1$ and $G_2$ such that $\frac{1}{z}dz=G_1\cdot\gamma + iG_2\cdot d\gamma$.
-	3. Show that, for $i=1$ and $2$, $\int_{C_1}G_id\gamma=\int_{C_2}G_id\gamma$ for any two simply closed paths that enclose the origin.
+	2. Suppose $dz=dx+idy$. Find vector fields $G_1$ and $G_2$ such that $\frac{1}{z}dz=G_1\cdot d \gamma + iG_2\cdot d\gamma$.
+	3. Show that, for $l=1$ and $2$, $\int_{C_1}G_ld\gamma=\int_{C_2}G_ld\gamma$ for any two simply closed paths that enclose the origin.
 	4. Show that $\int_{C}G_1\cdot d\gamma =0$ and $\int_CG_2\cdot d\gamma=2\pi$ for any closed simple curve $C$ enclosing the origin.
