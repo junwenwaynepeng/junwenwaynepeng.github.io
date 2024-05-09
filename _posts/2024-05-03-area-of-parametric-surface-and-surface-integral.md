@@ -33,3 +33,22 @@ Thus, the surface area $A(S)$ can be approximate by its Riemann sum $\displaysty
 
 **Remark.** If you're wondering why we use a definition here, it's because there's no direct way to compute the surface area. All computations are approximations, so a formula for surface area can only be assessed based on its sensibility. A sensible formula means that the estimated result matches the value computed from other methods and aligns with the area that we can directly compute.
 
+
+# Surface Integral
+
+
+Let $f:K\subseteq\mathbb{R}^3\to \mathbb{R}$ represent a real-valued function defined on $K$. Let $S$ denote a surface with a parametric surface $r:D\to S$, and $K$ contains $S$. We define the double integral over $S$, $\iint_SfdS$, as the limit of the Riemann sum
+
+
+$$
+\sum_{i=1}^m\sum_{j=1}^nf(x_i^\ast,y_i^\ast,z_i^\ast)A(S_{ij})
+$$
+
+
+Using the relation $A(S_{ij})\approx |r_u\times r_v|\Delta u\Delta v$, the following formula can be derived:
+
+
+$$
+\iint_SfdS = \iint_Df(r(u,v))|r_u\times r_v|dudv.
+$$
+
