@@ -1,0 +1,290 @@
+---
+layout: slide
+title: Introduction of SageMath
+date: 2024-05-21
+author: Wayne Peng
+to: National Normal Taiwan University
+description: Some slides for a git and GitHub workshop using reveal.js
+categories: lecture
+abstract: Polarized morphisms are important objects in various mathematical and computational fields, and their composition is a fundamental operation. In this talk, we present a new algorithm to efficiently compute the composition relationship of two polarized morphisms using the concept of dynamical canonical height. Our approach utilizes the properties of dynamical systems and the theory of heights to represent polarized morphisms in a computationally efficient manner, while still allowing for flexibility in handling more complex cases. We also provide an analysis of the time and space complexity of our algorithm and compare its performance to existing approaches on a set of benchmarks. Our experimental results suggest that our proposed algorithm has the potential to outperform state-of-the-art methods and can handle a wide range of cases, which could make it a valuable tool for practical applications of polarized morphisms composition.
+tags:
+  - lecture
+  - academic
+  - slides
+  - programming
+front-img: "/assets/img/slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms/binary-tree.png"
+---
+<section>
+	<section data-markdown>
+		<textarea data-template>
+			### What is Sage?
+			SageMath is a <p style="color: red;">free open-source mathematics software system</p> licensed under the GPL. It builds on top of many existing open-source packages: NumPy, SciPy, matplotlib, Sympy, Maxima, GAP, FLINT, R and many more. Access their combined power through a common, <p style="color: red;">Python-based language</p> or directly via interfaces or wrappers.
+		</textarea>
+	</section>
+	<section>
+		<textarea data-template>
+			Mission: Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab.
+		</textarea>
+	</section>
+</section>
+<section>
+  <section>
+	  <h3>Composition and Decomposition</h3>
+	  <p>
+    Performing composition with rational functions $f$ and $g$ is straightforward. However, decomposing a function $F$ can be a challenging task.
+    $$ \frac{x^2+1}{2x}\circ \frac{2x+1}{x^2-1}=\frac{5x^2+4x}{4x^3+x^2-4x-1}$$
+  	</p>
+    <ul>
+    	<li class="fragment" data-fragment-index="2"><strong>trivial decomposition</strong>: a decomposition $F=F_1\circ F_2$ is trivial if $F_1$ or $F_2$ is a linear map.</li>
+    	<li class="fragment" data-fragment-index="3"><strong>indecomposible</strong>: we say a morphism $F$ is indecomposible if any decomposition of $F$ is trivial.</li>
+    </ul>
+  </section>
+	<section>
+		<h4>Ritt's Decomposition Theorem</h4>
+		<p>We say $F=F_1\circ F_2\circ\cdots\circ F_n$ is a complete decomposition of $F$ if each $F_i$ is indecomoposible.</p>
+		<div class="theorem fragment" data-fragment-index="2">
+	 		<ol>
+  			<li class="fragment" data-fragment-index="2">Complete decomposition exists and is unique in some sense.</li>
+  			<li class="fragment" data-fragment-index="3">For any two complete decompositions,
+  				$$
+          f_1^{d_1}\circ f_2^{d_2}\circ\cdots\circ f_n^{d_n} = g_1^{e_1}\circ g_2^{e_2}\circ\cdots\circ g_n^{e_n}.
+          $$
+  				we have an algorithm that can move from the left to the right in finitely many steps.</li>
+  		</ol>
+	 	</div>
+	</section>
+	<section data-markdown>
+		<textarea data-template>
+			Each step of Ritt's algorithm involves solving the following functional equations
+			$$f_i\circ f_{i+1} = g_i\circ g_{i+1}.$$\
+			Ritt shows that, with linear transformations $l_1$, $l_2$, $l_3$, and $l_4$, there are only two possible solutions for the above functional equation. Either
+			- $x^n\circ x^sh(x^n) = x^s(h(x))^n\circ x^n$
+			- $T_n\circ T_m = T_m\circ T_n$ where $T_m$ and $T_n$ are Chebychev polynomials of degree $m$ and $n$.
+		</textarea>
+	</section>
+	<section>
+		<h4>L&uuml;roth's Theorem</h4>
+		<div class="theorem">
+			<p>Let $K$ be a field and $M$ be an intermediate field between $K$ and $K(X)$, for some transcendental element $X$ over $K$. Then there exists a rational function $f(X)\in K(X)$ such that $M=K(f(X))$. In other words, every intermediate extension between $K$ and $K(X)$ is a simple extension.</p>
+		</div>
+		<ul>
+			<li class="fragment" data-fragment-index="2">An effective version of L&uuml;roth Theorem provides an algorithm for decomposing rational functions. Alonso, Gutierrez, and Recio published the first paper on this topic on JSC in 1995.</li>
+			<li class="fragment" data-fragment-index="3">Higher dimensional cases remain unclear.</li>
+		</ul>
+	</section>
+</section>
+<section>
+	<section>
+		<h3>Composition Relation</h3>
+		<p>We say two functions $f$ and $g$ have <em>composition relation</em> if there exist nontrivial solutions for
+    $$
+    A_n\circ A_{n-1}\circ\cdots\circ A_1 = B_n\circ B_{n-1}\circ\cdots\circ B_1
+    $$
+    where $A_i$ and $B_i$ are either $f$ or $g$. </p>
+    <div class="definition fragment" data-fragment-index="2">
+    	<p>We say that $\langle f,\ g\rangle$ is a rank 2 free generated semigroup with composition as the operation if $f$ and $g$ have no compositional relation.</p>
+    </div>
+    <p class="fragment" data-fragment-index="3">p.s. If we further consider the addition of functions, then we call the structure near ring.</p>
+	</section>
+	<section>
+		<h4>Composition relation: commutativity</h4>
+		<div class="definition">
+			<p>A rational map $f$ of degree two or more will be called a finite quotient of an affine map if there is a flat surface $\mathbb{C}/\Lambda$, an affine map $L(t) = at+b$ from $\mathbb{C}/\Lambda$ to itself, and a finite-to-one holomorphic map $\theta: \mathbb{C}/\Lambda \to \mathbb{C}\setminus \mathcal{E}_f$ which satisfies the semiconjugacy relation $f \circ \theta = \theta \circ L$, i.e. the following diagram commute:</p>
+			<iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsNCxbMCwwLCJcXG1hdGhiYntDfS9cXExhbWJkYSJdLFsxLDAsIlxcbWF0aGJie0N9L1xcTGFtYmRhIl0sWzAsMSwiXFxtYXRoYmJ7Q31cXHNldG1pbnVzXFxtYXRoY2Fse0V9X2YiXSxbMSwxLCJcXG1hdGhiYntDfVxcc2V0bWludXNcXG1hdGhjYWx7RX1fZiJdLFswLDEsIkwiXSxbMCwyLCJcXHRoZXRhIl0sWzEsMywiXFx0aGV0YSJdLFsyLDMsImYiLDJdXQ==&embed" width="344" height="290" style="border-radius: 8px; border: none;"></iframe>
+		</div>
+	</section>
+	<section>
+		<h4>Composition relation: odd function</h4>
+		<div class="example fragment" data-fragment-index="2">
+			<p>
+				Let $f(x)=x^3+x$ and $g(x)=-x^3-x$. We have
+				$$
+				f\circ f = g\circ g.
+				$$
+			</p>
+		</div>
+		<p class="fragment" data-fragment-index="3">Is there any $f$ and $g$ where their Julia sets are not the "same" and satisfy
+		$$f\circ g\circ f=g\circ f\circ g?$$</p>
+	</section>
+	<section>
+		<h4>Our Result</h4>
+		<div class="theorem" data-name="Bell-Huang-P.-Tucker, JEMS, 2021">
+			$h_f\neq h_g$ if and only if there exists an integer $j$ such that $\langle f^j,g^j\rangle$ is a rank 2 free generated semigroup.
+		</div>
+		<hr>
+		<div class="collorary fragment" data-fragment-index="2">
+			The followings are equivalent:
+			<ul>
+				<li>$\text{Prep}(f)\cap\text{Prep}(g)$ is infinite;</li>
+     		<li>$\text{Prep}(f)=\text{Prep}(g)$;</li>
+    		<li>for any $w_1,w_2\in\langle f,g\rangle$, we have $\text{Prep}(w_1)=\text{Prep}(w_2)$;</li>
+    		<li>$\langle f,g\rangle$ has polynomial growth;</li>
+    		<li>$\langle f,g\rangle$ does not contain a nonabelian free semigroup;</li>
+    		<li>for any $l>0$, the semigroup $\langle f^l,g^l\rangle$ is not a free semigroup on two generators.</li>
+    		<li>$h_f=h_g$.</li>
+			</ul>
+		</div>
+	</section>
+</section>
+<section>
+	<section>
+		<h3> Height and Canonical Height</h3>
+		<p class="fragment" data-fragment-index="2">
+			Let $\alpha=\frac{p}{q}\in\mathbb{Q}$ be a rational number in lowest terms. The naive height $h:\mathbb{Q}\to\mathbb{R}_{\geq 0}$ is
+			$$
+			h(\alpha)=\log(\max\{|p|,|q|\}).
+			$$
+		</p>
+		<p class="fragment" data-fragment-index="3">
+			If we allow $\alpha$ not in lowest terms, the naive height is equivalent to
+			$$
+			h(\alpha) = \sum_{p\in M_{\mathbb{Q}}} \log(\max\{1,|\alpha|_p\})
+			$$
+			where $M_{\mathbb{Q}}$ is the set of all places (absolute values) over $\mathbb{Q}$.  
+		</p>
+	</section>
+	<section>
+		<ul>
+			<li>There exists a unique extension of height over any number field $K$.</li>
+			<li class="fragment" data-fragment-index="2">It is possible to define a height function on any global field.</li>
+			<li class="fragment" data-fragment-index="3">Our paper introduces a broader concept of height functions.</li>
+			<li class="fragment" data-fragment-index="4">Let $f$ be a degree $d$ rational function. We have a constant $C_f$ such that the following inequality
+	    $$
+	    |h(f(\alpha))-dh(\alpha)|\leq C_f
+	    $$
+	    holds for any $\alpha\in K$. In other word, $h(f(\alpha))\sim dh(\alpha)$, so $h(f^n(\alpha))\sim d^nh(\alpha)$.</li>
+		</ul>
+	</section>
+	<section>
+		<p>Suppose $d=\deg(f)>1$, and let $n>m>0$. We have
+			$$
+			\begin{aligned}
+		    &\left|\dfrac{h(f^n(\alpha))}{d^n}-\dfrac{h(f^m(\alpha))}{d^m}\right|\\
+		    &=\left|\dfrac{h(f^n(\alpha))}{d^n}-\dfrac{h(f^{n-1}(\alpha))}{d^{n-1}}\right.\\
+		    &\left.+\dfrac{h(f^{n-1}(\alpha))}{d^{n-1}}-\cdots +\dfrac{h(f^{m+1}(\alpha))}{d^{m+1}}-\dfrac{h^m(\alpha)}{d^m}\right|\\
+		    &\leq \dfrac{C_f}{d^n}+\dfrac{C_f}{d^{n-1}}+\cdots+\dfrac{C_f}{d^{m+1}}
+			\end{aligned}
+			$$
+		</p>
+	</section>
+	<section>
+		<p>Therefore, the following limit, called <em>canonical height</em>, exists
+		$$
+		h_f(\alpha) = \lim_{n\to\infty}\frac{h(f^n(\alpha))}{d^n}.
+		$$</p>
+	</section>
+</section>
+<section>
+	<section>
+		<h3>keys</h3>
+		<div class="lemma">
+		<p>
+		Let $f$ and $g$ be rational functions of degrees greater than $1$. Let $\omega=\phi_m\cdots\phi_1$ where $\phi_j$ is equal to $f$ or $g$ for each $i$. Let $s_j=\phi_j\cdots \phi_1$ for $j\leq m$.</p><p class="fragment" data-fragment-index="2"> With the notation as above, we have
+		$$
+		\left|\dfrac{h(w(\alpha))}{\deg\omega}-\dfrac{h(s_j(\alpha))}{\deg s_j}\right|<\dfrac{\max\{C_f,C_g\}}{\min\{\deg(f),\deg(g)\}^j}
+		$$
+		for $j=1,\ldots,m$.<p>
+		</div>
+	</section>
+	<section>
+		<h4>Prove a direction of our theorem</h4>
+		<p class="fragment">By the assumption, we choose an $\varepsilon< |h_f(\alpha)-h_g(\alpha)|/2\neq 0$. Then $B(h_f,\varepsilon)\cap B(h_g,\varepsilon)=\emptyset$.</p><p class="fragment"> By the previews lemma, we know there is a $j$ such that, for all words starting with $j$ many $f$, their canonical heights at $\alpha$ will stay in $B(h_f,\varepsilon)$.</p><p class="fragment"> Similarly, for all words starting with $j$ many $g$, their canonical heights at $\alpha$ will stay in $B(h_g,\varepsilon)$.</p><p class="fragment"> Thus we can conclude that any word starting with $j$ many $f$ won't equal to one starting with $j$ many $g$.</p>
+	</section>
+</section>
+<section>
+	<section>
+		<h3>Algorithm</h3>
+		<p class="fragment">Input: polarized morphism $f$ and $g$, and an integer $n$</p>
+		<p class="fragment">Output:  A Boolean indicating whether $f$ and $g$ have a composition relation, or "indeterminable" if the algorithm cannot determine by the binary tree under level $n$.</p>
+	</section>
+	<section>
+		<h4>Idea of Algorithm</h4>
+		<ol>
+			<li class="fragment"> For simplicity, we assume $\deg f=\deg g$.</li>
+			<li class="fragment"> Composition has right cancellation, i.e.
+				$$
+				h_1\circ f = h_2\circ f\implies h_1=h_2.
+				$$
+				<p class="fragment">Therefore, to check if we have nontrivial composition relation, we can simply assume that the first (the most right) function is not the same.</p></li>
+    </ol>
+	</section>
+	<section>
+		<ol start="3">
+			<li>By previews lemma, if there exists some $\alpha$ such that
+				<span style="font-size:65%">
+				$$
+				 	B\left(h\left(\dfrac{A(\alpha)}{d^n}\right),\dfrac{C}{(d-1)d^n}\right)\bigcap B\left(h\left(\dfrac{B(\alpha)}{d^n}\right),\dfrac{C}{(d-1)d^n}\right)=\emptyset
+				$$</span>
+        where $C=\max\{C_f, C_g\}$, $A=A_n\circ\cdots\circ A_1$ and $B=B_n\circ\cdots\circ B_1$, then any composition that starts with $A_n\circ\cdots\circ A_1$ won't be equal to one that starts with $B_n\circ\cdots\circ B_1$.
+			</li>
+		</ol>
+	</section>
+	<section>
+		<ol start="4">
+			<li><br><img src=/assets/img/slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms/binary-tree.png width="540" height="420"></li>
+		</ol>
+	</section>
+	<section data-markdown>
+		<textarea data-template>
+			#### Psudocode
+			```py [1-2|3|4-5|6-8]
+Q = random()
+check_list = [(f,g)] 
+while check_list != []:
+  a_pair = check_list.pop(0)
+  check_list.extend(check(a_pair))
+  if a_pair>n:
+    return "Undecidable"
+  return "Have no relation"
+			```
+			```py [1|2-4|5-7|8-9|10-14]
+def check(a_pair):
+	A = a_pair[0]
+	B = a_pair[1]
+	d = f.degree()
+	diff = h(A(Q)/A.degree())-h(B(Q)/B.degree())
+  C = max(f.resultant(),g.resultant())
+  err = 2C/((d-1)d^n)
+  if diff/2 > err:
+      return []
+  else:
+      if A==B
+          return "find a relation A=B"
+      else:
+          return [(fA,fB),(fA,gB),(gA,fB),(gA,gB)]
+			```
+		</textarea>
+	</section>
+	<section data-markdown>
+		<textarea data-template>
+			[demo](/2023-04-17-algorithm-to-determine-composition-relation/)
+		</textarea>
+	</section>
+</section>
+<section>
+	<section>
+		<h3>Datas and Discussion</h3>
+		<p>We conducted an experiment on 10,000 cases, randomly selecting coefficients for degree 3 rational functions. For each case, we randomly chose a value for alpha and set the limit level to 9, before performing a test. We continued the test until we either achieved success or reached 10 attempts, after which we deemed the result indeterminable</p>
+	</section>
+	<section>
+		<h4>Datas: Time(ms)</h4>
+		<img src="/assets/img/slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms/success-time.png" width="960" height="720">
+	</section>
+	<section>
+		<h4>Datas: Level</h4>
+		<img src="/assets/img/slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms/success-level.png" width="600">
+		<figcaption>level-number</figcaption>
+	</section>
+	<section>
+		<h4>Discussion</h4>
+		<ol>
+			<li class="fragment">Out of 10,000 cases tested, 82 (1.38%) failed the check but did not demonstrate any composition relation</li>
+    	<li class="fragment">The algorithm is forced to be efficient. It is hard to determine the lower bound of
+    	$$|h_f(\alpha)-h_g(\alpha)|$$
+    	when the difference is not zero.</li>
+		</ol>
+	</section>
+</section>
+<section>
+	<h3>Thank you</h3>
+</section>
