@@ -41,7 +41,7 @@ $$
 $$
 
 
- for $0\leq\phi\leq \pi$ and $0\leq\theta<2\pi$. Then we find
+for $0\leq\phi\leq \pi$ and $0\leq\theta<2\pi$. Then we find
 
 
 $$

@@ -24,6 +24,26 @@ front-img: "/assets/img/slides/an-efficient-algorithm-for-determining-the-compos
 	<section data-markdown>
 		<textarea data-template>
 			Mission: Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab.
+			```mermaid
+graph LR
+  Limit ==> Existness[Exist or not]
+  Limit --> Continuity ==> checkContinuity[Check if a point is continuous or not]
+  Limit --> PD[Partial Derivative] & Differentiability & DD
+  Differentiability -.-> PD
+  CR[Chain Rules] -.-> PD
+  DD[Directional Derivative] -.-> Gradient
+  PD --> Gradient
+  Gradient ==> MaxDirection[Geometric properties of gradients]
+  Gradient ==> LA[Tangent Plane & Linear Approximation]
+  Gradient --> CP[Critical Points] 
+  SDT[Second Derivative Test] -.-> CP
+  LM[Lagrange Multiplier]
+  EV[Extreme value problem] --> noRe[No constraint] & Re[With constraint]
+  noRe & ineq -.-> SDT
+  Re --> eq[Constraint is an equality] & ineq[Constraint is an inequality]
+  ineq & eq -.-> LM
+```
+
 		</textarea>
 	</section>
 </section>
@@ -31,13 +51,8 @@ front-img: "/assets/img/slides/an-efficient-algorithm-for-determining-the-compos
   <section>
 	  <h3>Installation</h3>
 	  <p>
-    Performing composition with rational functions $f$ and $g$ is straightforward. However, decomposing a function $F$ can be a challenging task.
-    $$ \frac{x^2+1}{2x}\circ \frac{2x+1}{x^2-1}=\frac{5x^2+4x}{4x^3+x^2-4x-1}$$
-  	</p>
-    <ul>
-    	<li class="fragment" data-fragment-index="2"><strong>trivial decomposition</strong>: a decomposition $F=F_1\circ F_2$ is trivial if $F_1$ or $F_2$ is a linear map.</li>
-    	<li class="fragment" data-fragment-index="3"><strong>indecomposible</strong>: we say a morphism $F$ is indecomposible if any decomposition of $F$ is trivial.</li>
-    </ul>
+
+    </p>
   </section>
 </section>
 

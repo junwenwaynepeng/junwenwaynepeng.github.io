@@ -40,7 +40,7 @@ $$
 $$
 
 
-where $F^t = -Q\mathbb{i}+Pj$ is the vector field perpendicular to $F$. Thus, by Green's theorem, we have
+where $F^t = -Q\mathbf{i}+P\mathbf{j}$ is the vector field perpendicular to $F$. Thus, by Green's theorem, we have
 
 
 $$
