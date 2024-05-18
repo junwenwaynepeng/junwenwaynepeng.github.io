@@ -14,7 +14,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css" integrity="sha512-USp+nLNMZ1hR0Ll/LpYDxIq47Ypcm3KfjIleOnyFrB1N5KfHLXjfPQD1wQlhv7kVHRRgPvNVtendDS72LyHviA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css" integrity="sha512-USp+nLNMZ1hR0Ll/LpYDxIq47Ypcm3KfjIleOnyFrB1N5KfHLXjfPQD1wQlhv7kVHRRgPvNVtendDS72LyHviA==" crossorigin="anonymous" rmeferrerpolicy="no-referrer" />
     {%if page.theme %}
       <link rel="stylesheet" href="{{ "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/" | prepend: site.baseurl | append: page.theme | append: '.css' }}" integrity="sha512-TzNEhkjNeiWrW7MYy7MlzBqBxqD7Ho7HtFpcW0rAQW4OK8pwZ37fvHKKpJPAmUdHbUnmmKdGwhB5ulLWgQ/l0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {% else %}
@@ -63,6 +63,7 @@
         {{ content }}
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.3.0/plugin/mermaid/mermaid.js"></script>
     <script type="module">
         import Reveal from '/assets/reveal.js/dist/reveal.esm.js';
         import Markdown from '/assets/reveal.js/plugin/markdown/markdown.esm.js';
@@ -93,7 +94,10 @@
             skipHtmlTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
           }
         },
-        plugins: [ Markdown, Highlight, MathJax3, Note, Search, Zoom ]
+        mermaid: {
+
+        },
+        plugins: [ Markdown, Highlight, MathJax3, Note, Search, Zoom, RevealMermaid ]
       });
       Reveal.addEventListener('ready', function (/*e*/) {
         const aTags = document.getElementsByTagName('a');

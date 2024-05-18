@@ -24,26 +24,17 @@ front-img: "/assets/img/slides/an-efficient-algorithm-for-determining-the-compos
 	<section data-markdown>
 		<textarea data-template>
 			Mission: Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab.
-			```mermaid
-graph LR
-  Limit ==> Existness[Exist or not]
-  Limit --> Continuity ==> checkContinuity[Check if a point is continuous or not]
-  Limit --> PD[Partial Derivative] & Differentiability & DD
-  Differentiability -.-> PD
-  CR[Chain Rules] -.-> PD
-  DD[Directional Derivative] -.-> Gradient
-  PD --> Gradient
-  Gradient ==> MaxDirection[Geometric properties of gradients]
-  Gradient ==> LA[Tangent Plane & Linear Approximation]
-  Gradient --> CP[Critical Points] 
-  SDT[Second Derivative Test] -.-> CP
-  LM[Lagrange Multiplier]
-  EV[Extreme value problem] --> noRe[No constraint] & Re[With constraint]
-  noRe & ineq -.-> SDT
-  Re --> eq[Constraint is an equality] & ineq[Constraint is an inequality]
-  ineq & eq -.-> LM
-```
-
+      <div class="mermaid">
+        <pre>
+          %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%%
+          flowchart TD
+            A[Start] --> B{Is it?};
+            B -- Yes --> C[OK];
+            C --> D[Rethink];
+            D --> B;
+            B -- No ----> E[End];
+        </pre>
+      </div>
 		</textarea>
 	</section>
 </section>
