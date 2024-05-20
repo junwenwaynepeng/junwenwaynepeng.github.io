@@ -47,7 +47,14 @@ front-img: "/assets/img/slides/an-efficient-algorithm-for-determining-the-compos
           Linux --> Uni[Universal method];
           Uni --> Development[Do you want to do SageMath Development?];
           Development -- Yes --> Git[<a href='https://doc.sagemath.org/html/en/developer/walkthrough.html#chapter-walkthrough'>Instruction</a>]
-          Development -- No -->  TwoMethod[<ul><li><a href='https://doc.sagemath.org/html/en/installation/conda.html#sec-installation-conda'>Conda</a></li><li><a href='https://doc.sagemath.org/html/en/installation/source.html#sec-installation-from-sources'>Source code</a></li></ul>]
+          Development -- No -->  TwoMethod[Choose conda or source code]
+          TwoMethod --> Conda
+          TwoMethod --> SourceCode[Install from source code]
+          click binary "https://github.com/3-manifolds/Sage_macOS/releases" "This is a tooltip for a link"
+          click WSL "https://docs.microsoft.com/en-us/windows/wsl/install-win10" "This is a tooltip for a link"
+          click Git "https://doc.sagemath.org/html/en/developer/walkthrough.html#chapter-walkthrough" "This is a tooltip for a link"
+          click Conda "https://doc.sagemath.org/html/en/installation/conda.html#sec-installation-conda" "This is a tooltip for a link"
+          click SourceCode "https://doc.sagemath.org/html/en/installation/source.html#sec-installation-from-sources"
       </pre>
     </div>
   </section>
