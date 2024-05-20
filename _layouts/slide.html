@@ -99,6 +99,9 @@
         },
         plugins: [ Markdown, Highlight, MathJax3, Note, Search, Zoom, RevealMermaid ]
       });
+      mermaidAPI.initialize({
+          securityLevel: 'loose'
+      });
       Reveal.addEventListener('ready', function (/*e*/) {
         const aTags = document.getElementsByTagName('a');
         for (let i = 0; i < aTags.length; i++) {
