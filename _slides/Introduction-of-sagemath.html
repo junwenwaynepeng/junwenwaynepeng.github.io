@@ -24,26 +24,31 @@ front-img: "/assets/img/slides/an-efficient-algorithm-for-determining-the-compos
 	<section data-markdown>
 		<textarea data-template>
 			Mission: Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab.
-      <div class="mermaid">
-        <pre>
-          %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%%
-          flowchart TD
-            A[Start] --> B{Is it?};
-            B -- Yes --> C[OK];
-            C --> D[Rethink];
-            D --> B;
-            B -- No ----> E[End];
-        </pre>
-      </div>
+
 		</textarea>
 	</section>
 </section>
 <section>
   <section>
 	  <h3>Installation</h3>
-	  <p>
-
-    </p>
+    <div class="mermaid">
+      <pre>
+        %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%%
+        flowchart TD
+          A[Start] --> OS{OS};
+          OS --> Win[Windows];
+          OS --> Linux;
+          Linux --> apt[sudo apt install sagemath sagemath-jupyter sagemath-doc-en]
+          OS --> MacOS;
+          MacOS --> binary[<a href="https://github.com/3-manifolds/Sage_macOS/releases">Download</a>]
+          Win --> WSL[<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows subsystem for Linux</a>];
+          WSL --> Linux;
+          Linux --> Uni[Universal method];
+          Uni --> Development[Do you want to do SageMath Development?];
+          Development -- Yes --> Git[<a href="https://doc.sagemath.org/html/en/developer/walkthrough.html#chapter-walkthrough">Instruction</a>]
+          Development -- No -->  TwoMethod[<ul><li><a href="https://doc.sagemath.org/html/en/installation/conda.html#sec-installation-conda">Conda</a></li><li><a href="https://doc.sagemath.org/html/en/installation/source.html#sec-installation-from-sources">Source code</a></li></ul>]
+      </pre>
+    </div>
   </section>
 </section>
 
