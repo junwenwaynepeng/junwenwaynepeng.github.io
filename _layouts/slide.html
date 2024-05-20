@@ -72,47 +72,61 @@
         import Note from '/assets/reveal.js/plugin/notes/notes.esm.js'
         import Zoom from '/assets/reveal.js/plugin/zoom/zoom.esm.js'
         import Search from '/assets/reveal.js/plugin/search/search.esm.js'
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-        keyboard: true,
-        overview: true,
-        {%if page.transition %}
-          transition: '{{page.transition}}',
-        {% else %}
-          transition: 'slide', // none/fade/slide/convex/concave/zoom
-        {% endif %}
-        // Optional reveal.js plugins
-        mathjax3: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-          tex: {
-            inlineMath: [ [ '$', '$' ], [ '\\(', '\\)' ]  ],
+        Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+          keyboard: true,
+          overview: true,
+          {%if page.transition %}
+            transition: '{{page.transition}}',
+          {% else %}
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+          {% endif %}
+          // Optional reveal.js plugins
+          mathjax3: {
+            mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+            tex: {
+              inlineMath: [ [ '$', '$' ], [ '\\(', '\\)' ]  ],
+            },
+            options: {
+              skipHtmlTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
+            }
           },
-          options: {
-            skipHtmlTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
-          }
-        },
-        mermaid: {
-          securityLevel: 'loose'
-        },
-        plugins: [ Markdown, Highlight, MathJax3, Note, Search, Zoom, RevealMermaid ]
-      });
-      mermaidAPI.initialize({
-          securityLevel: 'loose'
-      });
-      Reveal.addEventListener('ready', function (/*e*/) {
-        const aTags = document.getElementsByTagName('a');
-        for (let i = 0; i < aTags.length; i++) {
-          aTags[i].setAttribute('target', '_blank');
-          aTags[i].setAttribute('rel', 'noopener noreferrer');
-        }
-        const vals = document.querySelectorAll('code');
-        vals.forEach(function (c) {
-          c.classList.add('hljs');
+          mermaid: {
+            securityLevel: 'loose'
+          },
+          plugins: [ Markdown, Highlight, MathJax3, Note, Search, Zoom, RevealMermaid ]
         });
-      });
+        mermaid.initialize({
+          startOnLoad: true,
+          securityLevel: "loose",
+          er: { useMaxWidth: false },
+          mermaid: {callback: function(objId) {
+            var svg = document.getElementById(objId);
+            var nodeName;
+            for(nodeName in links) {
+              var gErd = svg.getElementById(nodeName);
+              gErd.addEventListener("click",
+                function (evt) {
+                  location.href = links[this.id];
+                }
+              );
+            }
+          }}
+        });
+        Reveal.addEventListener('ready', function (/*e*/) {
+          const aTags = document.getElementsByTagName('a');
+          for (let i = 0; i < aTags.length; i++) {
+            aTags[i].setAttribute('target', '_blank');
+            aTags[i].setAttribute('rel', 'noopener noreferrer');
+          }
+          const vals = document.querySelectorAll('code');
+          vals.forEach(function (c) {
+            c.classList.add('hljs');
+          });
+        });
     </script>
   </body>
 </html>
