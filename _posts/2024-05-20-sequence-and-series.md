@@ -16,7 +16,7 @@ categories: [post]
 # Sequence
 
 
-**Definition.** A sequence in calculus is a list of numbers that are ordered in a specific manner. Each number in the list is called a term. In mathematical notation, a sequence is often represented as $a_1$, $a_2$, $a_3$, $\ldots$, where $a_1$ is the first term, $a_2$ is the second term, and so on. It is often abbreviated as $\\{a_n\\}_{n=1}^\infty$, $\\{a_n\\}_{n\in\mathbb{N}}$
+**Definition.** A sequence in calculus is a list of numbers that are ordered in a specific manner. Each number in the list is called a term. In mathematical notation, a sequence is often represented as $a_1$, $a_2$, $a_3$, $\ldots$, where $a_1$ is the first term, $a_2$ is the second term, and so on. It is often abbreviated as $\\{a_n\\}_{n=1}^\infty$, $\\{a_n\\}$
 
 
 ## A Sequence Derived from a Function
