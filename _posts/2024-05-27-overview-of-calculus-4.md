@@ -123,7 +123,7 @@ graph LR;
 1. 數列是否收斂。
 2. 級數是否收斂
 	1. 我們透過數列收斂來定義級數收斂。
-	2. 注意! 只有當級數是 Geometric series 或是 Telescoping series 的時候有辦法請你計算級數收斂的值。
+	2. 注意! 只有當級數是 Geometric series，Telescoping series，或是由某個泰勒展示得到的級數 有辦法計算級數收斂的值。
 3. Power series 的收斂半徑，以及檢查收斂區間的 boundary point 是否也是收斂的，以此判斷是 conditional convergence 或 absolute convergence。
 4. The term 'power series' is often used interchangeably with 'Taylor expansion'. However, there are subtle differences between the two. We typically refer to a power series as a 'Taylor series' when we represent a function in a closed form using a power series. It's important to note that not all power series can be represented in a closed form.
 5. 算出某個函數的泰勒展開式，例如 $\int_0^{x^3}\tan(t)dt$ 或 $\sqrt{x^2+4x}$ 在 $x=-2$的泰勒展開式。
