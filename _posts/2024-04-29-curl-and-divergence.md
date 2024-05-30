@@ -78,7 +78,6 @@ Following this, we introduce the _Laplace operator_, defined as:
 
 $$
 \nabla^2=\nabla\cdot\nabla
-
 $$
 
 
@@ -132,7 +131,6 @@ The formula
 
 $$
 \int_{\partial D}F\cdot d\gamma= \iint_D\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}dA
-
 $$
 
 
