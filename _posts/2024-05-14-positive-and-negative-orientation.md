@@ -60,12 +60,9 @@ $$
 $$
 
 
-and Therefore, the orientation induced by $\mathbf{r}(\phi,\theta)$ is defined by the unit normal vector
+and $|\mathbf{r}_\phi\times\mathbf{r}_\theta|=a^2\sin\phi$. Therefore, the orientation induced by $\mathbf{r}(\phi,\theta)$ is defined by the unit normal vector
 
 
-$$
-\mathbf{N}=\frac{\mathbf{r}_\phi\times \mathbf{r}_\theta}{|\mathbf{r}_\phi\times \mathbf{r}_\theta|} =\frac{1}{a}\mathbf{r}(\phi,\theta).
-$$
 
 
 We can also consider $\vec{S}=(\mathbf{r}(\phi,\theta),\frac{1}{a}\mathbf{r}(\phi,\theta))$ where the first coordinate contains the information about the point on the surface, while the second coordinate holds the information about the orientation at correspondent points.
