@@ -45,7 +45,7 @@ for $0\leq\phi\leq \pi$ and $0\leq\theta<2\pi$. Then we find
 
 
 $$
-\bm{r}_{\psi} \bm{r}_\theta = -a\sin\phi\sin\theta\mathbf{i}+a\sin\phi\cos\theta\mathbf{j}
+\mathsf{r}_{\psi} \mathsf{r}_\theta = -a\sin\phi\sin\theta\mathbf{i}+a\sin\phi\cos\theta\mathbf{j}
 $$
 
 
