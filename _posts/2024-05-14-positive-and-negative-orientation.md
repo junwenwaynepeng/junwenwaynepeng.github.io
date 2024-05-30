@@ -52,18 +52,6 @@ $$
 $$
 
 
-and so we have
-
-
-$$
-\mathbf{r}_\phi\times\mathbf{r}_\theta=a^2\sin^2\phi\cos\theta\mathbf{i}+a^2\sin^2\phi\sin\theta\mathbf{j}+a^2\sin\phi\cos\phi\mathbf{k}
-$$
-
-
-and $|\mathbf{r}_\phi\times\mathbf{r}_\theta|=a^2\sin\phi$. Therefore, the orientation induced by $\mathbf{r}(\phi,\theta)$ is defined by the unit normal vector
-
-
-
 
 We can also consider $\vec{S}=(\mathbf{r}(\phi,\theta),\frac{1}{a}\mathbf{r}(\phi,\theta))$ where the first coordinate contains the information about the point on the surface, while the second coordinate holds the information about the orientation at correspondent points.
 
