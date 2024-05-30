@@ -37,7 +37,7 @@ In many instances, the choice between these two depends on the context of the qu
 
 
 $$
-\mathbf{r}(\phi,\theta)=a\sin\phi\cos\theta\mathbf{i}+a\sin\phi\sin\theta\mathbf{j}
+\mathbf{r}(\phi,\theta)=a\sin\phi\cos\theta\mathbf{i}+a\sin\phi\sin\theta\mathbf{j}+a\cos\phi\mathbf{k}
 $$
 
 
