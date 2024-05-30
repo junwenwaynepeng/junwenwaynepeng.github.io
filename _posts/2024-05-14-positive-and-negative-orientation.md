@@ -56,15 +56,15 @@ and so we have
 
 
 $$
-\mathbf{r}_\phi\times\mathbf{r}_\theta=a^2\sin^2\phi\cos\theta\mathbf{i}+a^2\sin^2\phi\sin\theta\mathbf{j}+a^2\sin\phi\cos\phi\mathbf{k}
+r_\phi\times r_\theta=a^2\sin^2\phi\cos\theta\mathbf{i}+a^2\sin^2\phi\sin\theta\mathbf{j}+a^2\sin\phi\cos\phi\mathbf{k}
 $$
 
 
-and $|\mathbf{r}_\phi\times\mathbf{r}_\theta|=a^2\sin\phi$. Therefore, the orientation induced by $\mathbf{r}(\phi,\theta)$ is defined by the unit normal vector
+and $|r_\phi\times r_\theta|=a^2\sin\phi$. Therefore, the orientation induced by $r(\phi,\theta)$ is defined by the unit normal vector
 
 
 $$
-\mathbf{N}=\frac{\mathbf{r}_\phi\times \mathbf{r}_\theta}{|\mathbf{r}_\phi\times \mathbf{r}_\theta|} =\frac{1}{a}\mathbf{r}(\phi,\theta).
+\mathbf{N}=\frac{r_\phi\times r_\theta}{|r_\phi\times r_\theta|} =\frac{1}{a}r(\phi,\theta).
 $$
 
 
