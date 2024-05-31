@@ -78,10 +78,28 @@ Following this, we introduce the _Laplace operator_, defined as:
 
 $$
 \nabla^2=\nabla\cdot\nabla
+
 $$
 
 
 The Laplace operator, also known as the Laplacian, plays a significant role in many areas of physics, such as in the study of heat conduction, electricity, and magnetism. It is a second-order differential operator in the n-dimensional Euclidean space, defined as the divergence of the gradient of a function. In simple terms, it measures the difference between a function's average value around a point and the function's value at that point.
+
+
+## $\text{Div}(\text{curl(F)})$
+
+
+We have the following theorem:
+
+
+**Theorem.** If all of the component function of $F$ have a continuous second order partial differentiation, then we have
+
+
+$$
+\text{div}(\text{curl}(F))=0.
+$$
+
+
+This theorem allows us to determine whether a vector field $F$ exists, such that $\text{curl}(F)=G$, by checking if $\text{div}(G)=0$.
 
 
 # Criteria for a Conservative Vector Field in $\mathbb{R}^3$ and the Meaning of Curl
@@ -131,6 +149,7 @@ The formula
 
 $$
 \int_{\partial D}F\cdot d\gamma= \iint_D\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}dA
+
 $$
 
 
