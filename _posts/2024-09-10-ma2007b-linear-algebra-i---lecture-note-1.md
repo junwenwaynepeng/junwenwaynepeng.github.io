@@ -63,7 +63,7 @@ which we can easily see that the solution is $x_1=1$ and 2.
 
 
 $$
-x_2=\frac{\left|\begin{matrix}1 & 3\\ 1 & -3\end{matrix}\right|}{\left|\begin{matrix} 1 & 1\\ 1 & -2\end{matrix}\right|} = 2
+x_2=\frac{\left|\begin{matrix}1 & 3\\\\ 1 & -3\end{matrix}\right|}{\left|\begin{matrix} 1 & 1\\\\ 1 & -2\end{matrix}\right|} = 2
 $$
 
 
