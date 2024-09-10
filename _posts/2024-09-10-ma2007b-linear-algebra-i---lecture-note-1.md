@@ -114,24 +114,24 @@ has no solutions. This is because when we add the first equation to the second e
 
 **Remark.** 
 
-	1. Let's consider n equations in m unknowns:
+1. Let's consider n equations in m unknowns:
 
-		$$
-		\begin{cases}
-		\begin{array}{rcl}
-		a_{11}x_1+a_{12}x_2+\cdots+a_{1m}x_m &= &b_1\\
-		a_{21}x_1+a_{22}x_2+\cdots+a_{2m}x_m&=&b_2\\
-		\vdots&&\\
-		a_{n1}x_1+a_{n2}x_2+\cdots+a_{nm}x_m&=&b_n\\
-		\end{array}
-		\end{cases}
-		$$
+	$$
+	\begin{cases}
+	\begin{array}{rcl}
+	a_{11}x_1+a_{12}x_2+\cdots+a_{1m}x_m &= &b_1\\
+	a_{21}x_1+a_{22}x_2+\cdots+a_{2m}x_m&=&b_2\\
+	\vdots&&\\
+	a_{n1}x_1+a_{n2}x_2+\cdots+a_{nm}x_m&=&b_n\\
+	\end{array}
+	\end{cases}
+	$$
 
 
-		The three examples above cover all possible scenarios regarding the solutions to this system of linear equations.
+	The three examples above cover all possible scenarios regarding the solutions to this system of linear equations.
 
-	2. Existence and uniqueness are fundamental properties we'll continually explore in mathematics courses. You'll encounter many such statements in your future studies.
-	3. When comparing elimination and determinant methods, Gaussian Elimination is generally the superior approach.
+2. Existence and uniqueness are fundamental properties we'll continually explore in mathematics courses. You'll encounter many such statements in your future studies.
+3. When comparing elimination and determinant methods, Gaussian Elimination is generally the superior approach.
 
 ---
 
