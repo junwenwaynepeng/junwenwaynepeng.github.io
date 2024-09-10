@@ -41,6 +41,7 @@ function pageIdToUrl(md, id, url) {
 			}
 		}
 	})
+	console.log(response)
 	for (const r of response.results) {
 		// category
 		let cats = []
