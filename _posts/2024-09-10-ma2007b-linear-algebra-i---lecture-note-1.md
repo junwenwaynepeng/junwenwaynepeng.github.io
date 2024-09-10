@@ -33,7 +33,7 @@ Linear Algebra is a branch of mathematics that focuses on finding solutions to s
 
 $$
 \begin{cases}
-x_1+x_2=3\\
+x_1+x_2=3\\\\
 x_1-2x_2=-3
 \end{cases}
 $$
@@ -47,7 +47,7 @@ has a unique solution. We can use elimination or determinant to solve this syste
 
 $$
 \begin{cases}
-x_1+x_3=3\\
+x_1+x_3=3\\\\
 -3x_2=-6
 \end{cases}
 $$
@@ -72,7 +72,7 @@ $$
 
 $$
 \begin{cases}
-ax+by=k\\
+ax+by=k\\\\
 cx+dy=l
 \end{cases}
 $$
@@ -86,8 +86,8 @@ is non-zero, then this system has a solution.
 
 $$
 \begin{cases}
-x_1+x_2=3\\
--2x_1-2x_2=-6\\
+x_1+x_2=3\\\\
+-2x_1-2x_2=-6
 \end{cases}
 $$
 
@@ -103,7 +103,7 @@ has infinitely many solutions. This is because when we add $2$ times the first e
 
 $$
 \begin{cases}
-x_1+x_2=3\\
+x_1+x_2=3\\\\
 -2x_1-2x_2=-3
 \end{cases}
 $$
@@ -119,10 +119,10 @@ has no solutions. This is because when we add the first equation to the second e
 	$$
 	\begin{cases}
 	\begin{array}{rcl}
-	a_{11}x_1+a_{12}x_2+\cdots+a_{1m}x_m &= &b_1\\
-	a_{21}x_1+a_{22}x_2+\cdots+a_{2m}x_m&=&b_2\\
-	\vdots&&\\
-	a_{n1}x_1+a_{n2}x_2+\cdots+a_{nm}x_m&=&b_n\\
+	a_{11}x_1+a_{12}x_2+\cdots+a_{1m}x_m &= &b_1\\\\
+	a_{21}x_1+a_{22}x_2+\cdots+a_{2m}x_m&=&b_2\\\\
+	\vdots&&\\\\
+	a_{n1}x_1+a_{n2}x_2+\cdots+a_{nm}x_m&=&b_n
 	\end{array}
 	\end{cases}
 	$$
