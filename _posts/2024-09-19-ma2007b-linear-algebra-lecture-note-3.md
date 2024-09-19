@@ -187,6 +187,9 @@ Matrix multiplication is not commutative in general. One obvious reason, as illu
 **Lemma.** If $AB = BA$, then $A$ and $B$ must be square matrices of the same size.
 
 
+**Proof.** Assume that $AB=BA$, and also assume that $A$ is of size $m$ by $n$. For $AB$ to be well-defined, $B$ must be an $n$ by $k$ matrix for some integer $k$. The resulting matrix $AB$ is then of size $n$ by $k$. 
+
+
 However, even if $A$ and $B$ are square matrices of the same size, it's still unlikely that $AB=BA$.
 
 
