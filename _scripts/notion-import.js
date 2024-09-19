@@ -171,6 +171,7 @@ ${fmHeadPackage}
 
 			fs.writeFile(path.join(root, fTitle), fm + md.parent.replace(/’/g, "'"), (err) => {
 				if (err) {
+					console.log('???')
 					console.log(err);
 				}
 			});
