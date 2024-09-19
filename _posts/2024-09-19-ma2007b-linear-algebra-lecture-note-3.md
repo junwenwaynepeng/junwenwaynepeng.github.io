@@ -109,18 +109,18 @@ Let's define matrix multiplication. Given an $m$ by $n$ matrix $M$ and an $n$ by
 
 
 $$
-M=\begin{bmatrix}
+M=\left[\begin{array}{cccc}
 a_{11} & a_{12} & \cdots & a_{1n}\\\\
 a_{21} & a_{22} & \cdots & a_{2n}\\\\
 \vdots & \vdots & \ddots & \vdots\\\\
 a_{m1} & a_{m2} & \cdots & a_{mn}
-\end{bmatrix}_{m\times n}\quad\text{and}\quad
-M'=\begin{bmatrix}
+\end{array}\right]_{m\times n}\quad\text{and}\quad
+M'=\left[\begin{array}{cccc}
 a'_{11} & a'_{12} & \cdots & a'_{1k}\\\\
 a'_{21} & a'_{22} & \cdots & a'_{2k}\\\\
 \vdots & \vdots & \ddots & \vdots\\\\
 a'_{n1} & a'_{n2} & \cdots & a'_{nk}
-\end{bmatrix}_{n\times k},
+\end{array}\right]_{m\times n},
 $$
 
 
@@ -156,6 +156,32 @@ Then, $AB = \begin{bmatrix}
 2 & 0 & 1\\\\
 -2 & -6 & -10
 \end{bmatrix}$.
+
+
+**Remark.** The addition of two $m$ by $n$ matrix $A$ and $B$ results in an $m$ by $n$ matrix with the general terms $a_{ij}+b_{ij}$ where $a_{ij}$ and $b_{ij}$ are the general terms of $A$ and $B$ respectively.
+
+
+**Example.**
+
+
+$$
+\begin{bmatrix}
+1 & 2 & 3\\\\
+3 & 2 & 1
+\end{bmatrix}+\begin{bmatrix}
+1 & 0 & 1\\\\
+0 & 1 & 0
+\end{bmatrix}=\begin{bmatrix}
+2 & 2 & 4\\\\
+3 & 3 & 1
+\end{bmatrix}
+$$
+
+
+### Operation rules
+
+
+Matrix multiplication is not commutative in general. One obvious reason, as illustrated by the lemma below, is that the dimensions of $AB$ and $BA$ may differ if $A$ and $B$ are not square matrices.
 
 
 **Example.** Let's consider
