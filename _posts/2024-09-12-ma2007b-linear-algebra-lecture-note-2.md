@@ -48,7 +48,7 @@ $$
 By row (horizontal), this system of course represents two straight line in the $xy$-plane (see Figure 1). 
 
 
-![Figure 1](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/58c2a8e8-204a-484b-9e37-7ba4c9f5f522/%E5%9C%96%E7%89%87.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240912%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240912T163039Z&X-Amz-Expires=3600&X-Amz-Signature=36db75ff7cd4e488408000c7423b26ad903219a6c3b0f097e0c882db2ed300a4&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Figure 1](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/58c2a8e8-204a-484b-9e37-7ba4c9f5f522/%E5%9C%96%E7%89%87.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240919%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240919T161847Z&X-Amz-Expires=3600&X-Amz-Signature=d215e43be8ba734f9ef82d8f2f3d756a0e55578ae6574c4a40877f3bf3960086&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 By column (vertical), the two separate equations are really one vector equation:
@@ -62,7 +62,7 @@ $$
 The goal is to find a combination of the column vectors on the left side that yields the vector on the right side. Geometrically, we're seeking the proper scales for the two vectors $\begin{bmatrix}2\\\\1\end{bmatrix}$ and $\begin{bmatrix}-1\\\\1\end{bmatrix}$ so that $\begin{bmatrix}1\\\\5\end{bmatrix}$ is at the vertex opposite the origin in the parallelogram formed by these two vectors (see Figure 2).
 
 
-![Figure 2](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/ce64f2a2-700d-4a38-8cff-d332020e7507/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240912%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240912T163039Z&X-Amz-Expires=3600&X-Amz-Signature=5512e5644c528e2672f3353cf6887731888d38dfc205249807e6908a84031223&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Figure 2](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/ce64f2a2-700d-4a38-8cff-d332020e7507/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240919%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240919T161846Z&X-Amz-Expires=3600&X-Amz-Signature=5dae571b4ab044c0be331843f21198aa3678085573ba9c065f82e19ad728bce1&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 **Example.**
@@ -77,7 +77,7 @@ $$
 $$
 
 
-![Figure 3](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/0f352b9a-f28f-46ab-855f-30be2df3711d/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240912%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240912T163039Z&X-Amz-Expires=3600&X-Amz-Signature=d11a468bee1cbdc71f9f1bd655ee3b4e7200b48f7f29765f4d99016efd407e1f&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Figure 3](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/0f352b9a-f28f-46ab-855f-30be2df3711d/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240919%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240919T161846Z&X-Amz-Expires=3600&X-Amz-Signature=143fde8ec4d9ba49ecac59645ad3ffff93a418e5cdd5b5ac8341f907579a9f0a&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 For three planes in general positions, they intersect at a point (Figure 3). The correspondent vector equation is
@@ -91,7 +91,7 @@ $$
 Similarly, we are seeking a combination of the three column vectors on the left-hand side that yields the column vector on the right-hand side (Figure 4).
 
 
-![Figure 4](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/5eaf2d8e-20a0-43a7-a269-e01087985381/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240912%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240912T163039Z&X-Amz-Expires=3600&X-Amz-Signature=5a67e0762b0aec75b594c8c0c7b395315177715ff157fd795f03284096a8937a&X-Amz-SignedHeaders=host&x-id=GetObject)
+![Figure 4](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/5eaf2d8e-20a0-43a7-a269-e01087985381/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240919%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240919T161846Z&X-Amz-Expires=3600&X-Amz-Signature=65d025216d2a6e1ab38909662964b087d0fd441f7ee6ff2e414777bb4324a2eb&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 **Remark.** We use parentheses and commas for vectors written horizontally, e.g. $(1,2,3)$, and square brackets for vectors written vertically, e.g. $\begin{bmatrix}1\\\\2\\\\3\end{bmatrix}$.
@@ -143,10 +143,10 @@ x\begin{bmatrix}1\\\\2\\\\3\end{bmatrix}+y\begin{bmatrix}1\\\\0\\\\1\end{bmatrix
 $$
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/d5c3c9f0-22ae-480b-b927-49d2862d2226/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240912%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240912T163039Z&X-Amz-Expires=3600&X-Amz-Signature=d0917cc15fa31e506815ad39bdef4c18a15e1e18262fcfa178afdf8ba69978cd&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/d5c3c9f0-22ae-480b-b927-49d2862d2226/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240919%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240919T161847Z&X-Amz-Expires=3600&X-Amz-Signature=8e1495846b9645ced93489a9e8472357292b61a6bcee5e490bc6026e212c316a&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/2d8cf9da-7c95-4530-a2c9-d5d95d5bbd2c/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240912%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240912T163039Z&X-Amz-Expires=3600&X-Amz-Signature=67d7eed444d29ba4a635521eebfa7f6ea95bb90f069b771541a917d98676a710&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/f3729b31-bf77-46d4-bbc6-78af90557bc4/2d8cf9da-7c95-4530-a2c9-d5d95d5bbd2c/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240919%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240919T161847Z&X-Amz-Expires=3600&X-Amz-Signature=ce523ac3366bafd66f4ef477a1d3f9f27ae46f88fce89ff5f40a2ffe0162fc08&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 Note that the zero vector $\begin{bmatrix}0\\\\0\\\\0\end{bmatrix}$ is a combination of the column vectors $\begin{bmatrix}1\\\\2\\\\3\end{bmatrix}$, $\begin{bmatrix}1\\\\0\\\\1\end{bmatrix}$, and $\begin{bmatrix}1\\\\3\\\\4\end{bmatrix}$. Allow me to directly writhe the solution
@@ -178,10 +178,10 @@ A concise way to represent a linear equation system is to omit the variables and
 $$
 \begin{cases}
 \begin{array}{rcl}
-a_{11}x_1+a_{12}x_2+\cdots+a_{1m}x_m &= &b_1\\\\
-a_{21}x_1+a_{22}x_2+\cdots+a_{2m}x_m&=&b_2\\\\
+a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n &= &b_1\\\\
+a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n&=&b_2\\\\
 \vdots&&\\\\
-a_{n1}x_1+a_{n2}x_2+\cdots+a_{nm}x_m&=&b_n
+a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n&=&b_m
 \end{array}
 \end{cases}
 \quad\longleftrightarrow\quad
