@@ -163,6 +163,7 @@ ${fmHeadPackage}
 `;
 				fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
 				console.log('here')
+				console.log(fTitle)
 			}
 			const mdBlocks = await n2m.pageToMarkdown(id);
 			let md = n2m.toMarkdownString(mdBlocks);
