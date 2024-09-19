@@ -184,6 +184,12 @@ $$
 Matrix multiplication is not commutative in general. One obvious reason, as illustrated by the lemma below, is that the dimensions of $AB$ and $BA$ may differ if $A$ and $B$ are not square matrices.
 
 
+**Lemma.** If $AB = BA$, then $A$ and $B$ must be square matrices of the same size.
+
+
+However, even if $A$ and $B$ are square matrices of the same size, it's still unlikely that $AB=BA$.
+
+
 **Example.** Let's consider
 
 
