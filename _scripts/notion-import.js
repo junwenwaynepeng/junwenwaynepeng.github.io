@@ -170,7 +170,7 @@ ${fmHeadPackage}
 			
 			console.log("check!")
 			console.log(md);
-			console.log(md.parent)
+			console.log(n2m)
 			fs.writeFile(path.join(root, fTitle), fm + md.parent.replace(/’/g, "'"), (err) => {
 				if (err) {
 					console.log('???')
