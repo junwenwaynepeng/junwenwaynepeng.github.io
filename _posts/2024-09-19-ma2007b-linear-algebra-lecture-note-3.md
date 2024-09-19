@@ -114,13 +114,13 @@ a_{11} & a_{12} & \cdots & a_{1n}\\\\
 a_{21} & a_{22} & \cdots & a_{2n}\\\\
 \vdots & \vdots & \ddots & \vdots\\\\
 a_{m1} & a_{m2} & \cdots & a_{mn}
-\end{array}\right]_{m\times n}\quad\text{and}\quad
+\end{array}\right]\quad\text{and}\quad
 M'=\left[\begin{array}{cccc}
 a'_{11} & a'_{12} & \cdots & a'_{1k}\\\\
 a'_{21} & a'_{22} & \cdots & a'_{2k}\\\\
 \vdots & \vdots & \ddots & \vdots\\\\
 a'_{n1} & a'_{n2} & \cdots & a'_{nk}
-\end{array}\right]_{m\times n},
+\end{array}\right],
 $$
 
 
