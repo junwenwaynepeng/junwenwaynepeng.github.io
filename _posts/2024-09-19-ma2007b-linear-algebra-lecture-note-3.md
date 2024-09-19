@@ -77,6 +77,45 @@ $$
 $$
 
 
+Clearly, this system has no solution, even after a row exchange. When we encounter a row of the form $[0\\ 0 \\\cdots 0\\ |\\ b]$, where $b$ represents any number, we can halt the algorithm and declare the original system singular. If $b$ is zero (i.e., the row is $[0\\ 0 \\\cdots 0\\ |\\ 0]$), it indicates that the original system has infinitely many solutions. However, if $b$ is nonzero, it means the original system has no solution at all.
+
+
+## A flowchart of Gaussian Elimination
+
+
+```mermaid
+flowchart TD
+    Start["The origional system (an origional system)"] --> Triangle{Is a triangle system?} -->|no| Pivot{Check if the i-th pivot is zero}
+    Pivot -->|yes| RowEx{Row exchange}
+    Pivot -->|no| Elimination[Elimination]
+    Elimination --> Start
+    RowEx -->|success| Elimination
+    RowEx -->|unsuccess| Singular[A singular case]
+    Triangle -->|yes| nonSingular[Solve it!]
+    Singular --> details[Infinite or no solution]
+```
+
+
+**Example.** Let's consider
+
+
+
+$$
+A=\begin{bmatrix}
+1 & 0\\\\
+1 & 1
+\end{bmatrix}
+\quad\text{and}\quad
+B=\begin{bmatrix}
+1 & 1\\\\
+0 & 1
+\end{bmatrix}.
+$$
+
+
+It is easy to verify that $AB\neq BA$. In fact, any order of multiplication between $A$ and $B$ yeilds different result.
+
+
 # English booster
 
 <details>
