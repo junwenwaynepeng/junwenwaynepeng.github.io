@@ -77,7 +77,7 @@ $$
 $$
 
 
-Clearly, this system has no solution, even after a row exchange. When we encounter a row of the form $[0\\ 0 \\\cdots 0\\ |\\ b]$, where $b$ represents any number, we can halt the algorithm and declare the original system singular. If $b$ is zero (i.e., the row is $[0\\ 0 \\\cdots 0\\ |\\ 0]$), it indicates that the original system has infinitely many solutions. However, if $b$ is nonzero, it means the original system has no solution at all.
+Clearly, this system has no solution, even after a row exchange. When we encounter a row of the form $[0\\ 0 \\ \cdots 0\\ |\\ b]$, where $b$ represents any number, we can halt the algorithm and declare the original system singular. If $b$ is zero (i.e., the row is $[0\\ 0 \\ \cdots 0\\ |\\ 0]$), it indicates that the original system has infinitely many solutions. However, if $b$ is nonzero, it means the original system has no solution at all.
 
 
 ## A flowchart of Gaussian Elimination
@@ -94,6 +94,68 @@ flowchart TD
     Triangle -->|yes| nonSingular[Solve it!]
     Singular --> details[Infinite or no solution]
 ```
+
+
+# Matrix Multiplication
+
+
+## General multiplication
+
+
+### basic definition
+
+
+Let's define matrix multiplication. Given an $m$ by $n$ matrix $M$ and an $n$ by $k$ matrix $M'$,
+
+
+$$
+M=\begin{bmatrix}
+a_{11} & a_{12} & \cdots & a_{1n}\\\\
+a_{21} & a_{22} & \cdots & a_{2n}\\\\
+\vdots & \vdots & \ddots & \vdots\\\\
+a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{bmatrix}_{m\times n}\quad\text{and}\quad
+M'=\begin{bmatrix}
+a'_{11} & a'_{12} & \cdots & a'_{1k}\\\\
+a'_{21} & a'_{22} & \cdots & a'_{2k}\\\\
+\vdots & \vdots & \ddots & \vdots\\\\
+a'_{n1} & a'_{n2} & \cdots & a'_{nk}
+\end{bmatrix}_{n\times k},
+$$
+
+
+the result of the matrix multiplication $MM'$ is an $m$ by $k$ matrix where its general entry is
+
+
+$$
+b_{ij}=(\text{the }i\text{-th row vector})\cdot(\text{the }j\text{-th column vector})=\sum_{l=1}^na_{il}a'_{lj}.
+$$
+
+
+**Example.** Let
+
+
+
+$$
+A=\begin{bmatrix}
+1 & 2 & 3 \\\\
+1 & 0 & -1
+\end{bmatrix}\quad\text{and}\quad B=\begin{bmatrix}
+1 & -1\\\\
+0 & 2\\\\
+-3 & 1
+\end{bmatrix}.
+$$
+
+
+Then, $AB = \begin{bmatrix}
+-8 &6\\\\
+4 & -2
+\end{bmatrix}$ and $BA=\begin{bmatrix}
+0 & 2 & 4\\\\
+2 & 0 & 1\\\\
+-2 & -6 & -10
+\end{bmatrix}$.
 
 
 **Example.** Let's consider
