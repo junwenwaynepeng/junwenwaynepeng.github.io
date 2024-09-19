@@ -115,7 +115,9 @@ a_{21} & a_{22} & \cdots & a_{2n}\\\\
 \vdots & \vdots & \ddots & \vdots\\\\
 a_{m1} & a_{m2} & \cdots & a_{mn}
 \end{bmatrix}_{m\times n}\quad\text{and}\quad
-M^\prime
+M^\prime=\begin{bmatrix}
+a^\prime_{11} & a^\prime_{12} & \cdots & a^\prime_{1k}
+\end{bmatrix}_{n\times k},
 $$
 
 
