@@ -109,12 +109,18 @@ Let's define matrix multiplication. Given an $m$ by $n$ matrix $M$ and an $n$ by
 
 
 $$
-M=\left[\begin{array}{cccc}
+M=\begin{bmatrix}
 a_{11} & a_{12} & \cdots & a_{1n}\\\\
 a_{21} & a_{22} & \cdots & a_{2n}\\\\
 \vdots & \vdots & \ddots & \vdots\\\\
 a_{m1} & a_{m2} & \cdots & a_{mn}
-\end{array}\right]_{mn}\quad\text{and}
+\end{bmatrix}_{mn}\quad\text{and}\quad
+M^\prime=\begin{bmatrix}
+a^\prime_{11} & a^\prime_{12} & \cdots & a^\prime_{1k}\\\\
+a^\prime_{21} & a^\prime_{22} & \cdots & a^\prime_{2k}\\\\
+\vdots & \vdots & \ddots & \vdots\\\\
+a^\prime_{n1} & a^\prime_{n2} & \cdots & a^\prime_{nk}
+\end{bmatrix}_{n\times k},
 $$
 
 
