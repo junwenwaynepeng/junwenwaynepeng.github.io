@@ -76,3 +76,23 @@ $$
 \right]
 $$
 
+
+# English booster
+
+<details>
+  <summary>$m\times n$</summary>
+
+
+This symbol has many different ways to read it depending on the context. The most common way of reading it is "m times n" or "m multiplied by n". When this symbol is used to denote the size of a matrix, we read it as "m by n".
+
+
+
+  </details><details>
+  <summary>commutative</summary>
+
+
+交換
+
+
+
+  </details>
