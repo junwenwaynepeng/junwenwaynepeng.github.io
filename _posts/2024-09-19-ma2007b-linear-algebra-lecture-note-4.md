@@ -102,7 +102,7 @@ Again, we compare $AE$ with $EA$ to conclude that $a_{11}=a_{22}=\cdots =a_{nn}.
 $$
 A=\begin{bmatrix}a_{11} & 0 & \cdots & 0\\\\
 0 & a_{11} & \cdots & 0\\\\
-\vdots & \vdots & \ddots & \vdots\\\\\
+\vdots & \vdots & \ddots & \vdots\\\
 0 & 0 & \cdots & a_{11}\end{bmatrix}=a_{11}I_n
 $$
 
@@ -131,11 +131,11 @@ $$
 
 
 It results in an $n_1$ by $n_4$ matrix.
+**Proof of Associativity.**
 
 
+Let $A=(a_{ij})_{n_1\times n_2}$, $B=(b_{ij})_{n_2\times n_3}$, and $C=(c_{ij})_{n_3\times n_4}$. We compute the general terms of $A(BC)$ and $(AB)C$. For $A(BC)$, we have
 
-**proof of Associativity.**
-Let $A = (a_{ij})_{n_1 \times n_2}$, $B = (b_{ij})_{n_2 \times n_3}$, and $C = (c_{ij})_{n_3 \times n_4}$. We compute the general terms of $A(BC)$ and $(AB)C$. For $A(BC)$, we have
 
 $$
 a_{i1}\sum_{k=1}^{n_3} b_{1k}c_{kj}+a_{i2}\sum_{k=1}^{n_3} b_{2k}c_{kj}+\cdots +a_{in_2}\sum_{k=1}^{n_3}b_{n_2k}c_{kj}=\sum_{l=1}^{n_2}a_{il}\sum_{k=1}^{n_3}b_{lk}c_{kj}=\sum_{l=1}^{n_2}\sum_{k=1}^{n_3}a_{il}b_{lk}c_{kj}.
