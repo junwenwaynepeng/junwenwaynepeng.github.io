@@ -134,7 +134,7 @@ It results in an $n_1$ by $n_4$ matrix.
 **Proof of Associativity.**
 
 
-Let $A=(a_{ij})_{n_1\times n_2}$, $B=(b_{ij})_{n_2\times n_3}$, and $C=(c_{ij})_{n_3\times n_4}$. We compute the general terms of $A(BC)$ and $(AB)C$. For $A(BC)$, we have
+Let $A=(a_{ij})$ be an $n_1\times n_2$ matrix, $B=(b_{ij})$ be an $n_2\times n_3$ matrix, and $C=(c_{ij})$ an $n_3\times n_4$ matrix. We compute the general terms of $A(BC)$ and $(AB)C$. For $A(BC)$, we have
 
 
 
