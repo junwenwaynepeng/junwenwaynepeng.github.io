@@ -31,15 +31,16 @@ x+y+3z=1\\\\
 $$
 
 
-| **Matrix Notation**                                                                                    | **Matrix Form**                                                                                                                                                   |
-| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| $\left[
+$$
+\begin{array}{c|c}
+\textbf{Matrix Notation} & \textbf{Matrix Form}\\\\
+\left[
 \begin{array}{ccc|c}
 1 & 1 & 3& 1\\\\
 -1 & 2 & -4 & -3\\\\
 2 & 4 & -1 & 2
 \end{array}
-\right]$ | $\begin{bmatrix}
+\right] &\begin{bmatrix}
 1 & 1 & 3\\\\
 -1 & 2 & -4\\\\
 2 & 4 & -1
@@ -49,9 +50,11 @@ x \\\\ y \\\\z
 \end{bmatrix}
 =\begin{bmatrix}
 1\\\\-3\\\\2
-\end{bmatrix}$ |
+\end{bmatrix}
+\end{array}
+$$
 
-undefined
+
 The first action will be to eliminate the $(2,1)-$entry using the first pivot. We add the first row directly to the second row, and this action is equivalent to multiply an elementary matrix, denoted by $E_1$, from the left to the matrix form. By observation, $E_1$ is
 
 
@@ -64,13 +67,15 @@ E_1=\begin{bmatrix}
 $$
 
 
-| $\xrightarrow{(1)+(2)\to (2)}\left[
+$$
+\begin{array}{c|c}
+\xrightarrow{(1)+(2)\to (2)}\left[
 \begin{array}{ccc|c}
 1 & 1 & 3& 1\\\\
 0 & 3 & -1 & -2\\\\
 2 & 4 & -1 & 2
 \end{array}
-\right]$ | $\xRightarrow{E_1\times}E_1\begin{bmatrix}
+\right] & \substack{\xRightarrow{E_1\times}E_1\begin{bmatrix}
 1 & 1 & 3\\\\
 -1 & 2 & -4\\\\
 2 & 4 & -1
@@ -80,16 +85,17 @@ x \\\\ y \\\\z
 \end{bmatrix}
 =E_1\begin{bmatrix}
 1\\\\-3\\\\2
-\end{bmatrix}$
-$\Rightarrow\begin{bmatrix}
+\end{bmatrix}\\\\
+\Rightarrow\begin{bmatrix}
 1 & 1& 3\\\\
 0 & 3& -1\\\\
 2 & 4& -1\end{bmatrix}
 \begin{bmatrix}x\\\\y\\\\ z\end{bmatrix}=\begin{bmatrix}
-1\\\\-2\\\\2\end{bmatrix}$ |
-| --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+1\\\\-2\\\\2\end{bmatrix}}
+\end{array}
+$$
 
-undefined
+
 Again, we eliminate the $(3,1)-$entry using the first pivot. We subtract two times of the first row from the third row. The correspondent elementary matrix $E_2$ is
 
 
