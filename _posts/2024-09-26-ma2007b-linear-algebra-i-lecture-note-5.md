@@ -172,7 +172,6 @@ x \\\\ y \\\\z
 0 & 0& \frac{19}{3}\end{bmatrix}
 \begin{bmatrix}x\\\\y\\\\ z\end{bmatrix}=\begin{bmatrix}
 1\\\\-2\\\\\frac{4}{3}\end{bmatrix}}
-
 \end{array}
 $$
 
