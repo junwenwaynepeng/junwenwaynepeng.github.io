@@ -75,7 +75,7 @@ $$
 0 & 3 & -1 & -2\\\\
 2 & 4 & -1 & 2
 \end{array}
-\right] & \substack{\xrightarrow{E_1\times}E_1\begin{bmatrix}
+\right] & \substack{E_1\begin{bmatrix}
 1 & 1 & 3\\\\
 -1 & 2 & -4\\\\
 2 & 4 & -1
@@ -116,7 +116,7 @@ $$
 0 & 3 & -1 & -2\\\\
 0 & 2 & -7 & 0
 \end{array}
-\right] & \substack{\xrightarrow{E_2\times}E_2\begin{bmatrix}
+\right] & \substack{E_2\begin{bmatrix}
 1 & 1 & 3\\\\
 0 & 3 & -1\\\\
 2 & 4 & -1
@@ -148,32 +148,6 @@ E_3=\begin{bmatrix}
 $$
 
 
-| $\xrightarrow{-\frac{2}{3}\times(2)+(3)\to (3)}\left[
-\begin{array}{ccc|c}
-1 & 1 & 3& 1\\\\
-0 & 3 & -1 & -2\\\\
-0 & 0 & \frac{19}{3} & \frac{4}{3}
-\end{array}
-\right]$ | $\xRightarrow{E_3\times}E_3\begin{bmatrix}
-1 & 1 & 3\\\\
-0 & 3 & -1\\\\
-0 & 2 & -7
-\end{bmatrix}
-\begin{bmatrix}
-x \\\\ y \\\\z
-\end{bmatrix}
-=E_3\begin{bmatrix}
-1\\\\-2\\\\0
-\end{bmatrix}$
-$\Rightarrow\begin{bmatrix}
-1 & 1& 3\\\\
-0 & 3& -1\\\\
-0 & 0& \frac{19}{3}\end{bmatrix}
-\begin{bmatrix}x\\\\y\\\\ z\end{bmatrix}=\begin{bmatrix}
-1\\\\-2\\\\\frac{4}{3}\end{bmatrix}$ |   |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |
-
-undefined
 $$
 \begin{array}{c|c}
 \xrightarrow{-\frac{2}{3}\times(2)+(3)\to (3)}\left[
@@ -272,17 +246,14 @@ We have
 
 
 $$
-\begin{array}{}
-$$
-
-
-| $\xrightarrow{\frac{1}{3}\times(3)+(2)\to (2)}\left[
+\begin{array}{c|c}
+\xrightarrow{\frac{1}{3}\times(3)+(2)\to (2)}\left[
 \begin{array}{ccc|c}
 1 & 1 & 3& 1\\\\
 0 & 1 & 0 & -\frac{34}{57}\\\\
 0 & 0 & 1 & \frac{4}{19}
 \end{array}
-\right]$ | $\xRightarrow{E_6\times}E_6\begin{bmatrix}
+\right] & \substack{E_6\begin{bmatrix}
 1 & 1 & 3\\\\
 0 & 1 & -\frac{1}{3}\\\\
 0 & 0 & 1
@@ -292,16 +263,16 @@ x \\\\ y \\\\z
 \end{bmatrix}
 =E_6\begin{bmatrix}
 1\\\\-\frac{2}{3}\\\\\frac{4}{19}
-\end{bmatrix}$
-$\Rightarrow\begin{bmatrix}
+\end{bmatrix}\\\\\Rightarrow\begin{bmatrix}
 1 & 1& 3\\\\
 0 & 1& 0\\\\
 0 & 0& 1\end{bmatrix}
 \begin{bmatrix}x\\\\y\\\\ z\end{bmatrix}=\begin{bmatrix}
-1\\\\-\frac{34}{57}\\\\\frac{4}{19}\end{bmatrix}$ |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+1\\\\-\frac{34}{57}\\\\\frac{4}{19}\end{bmatrix}}
+\end{array}
+$$
 
-undefined
+
 We then take two final steps to eliminate the remaining entries.  We subtract three times the third row from the first row to eliminate $(1,3)-$entry. Similarly, we subtract the second row from the first row to eliminate $(1,2)-$entry. Their correspondent elementary matrices, $E_7$ and $E_8$, are
 
 
@@ -319,20 +290,21 @@ E_8=\begin{bmatrix}
 $$
 
 
-| $\xrightarrow{(1)-3\times(3)}\left[
+$$
+\begin{array}{c|c}
+\substack{\xrightarrow{(1)-3\times(3)}\left[
 \begin{array}{ccc|c}
 1 & 1 & 0& \frac{7}{19}\\\\
 0 & 1 & 0 & -\frac{34}{57}\\\\
 0 & 0 & 1 & \frac{4}{19}
 \end{array}
-\right]$
-$\xrightarrow{(1)-3\times(3)}\left[
+\right]\\\\\xrightarrow{(1)-3\times(3)}\left[
 \begin{array}{ccc|c}
 1 & 0 & 0& \frac{55}{57}\\\\
 0 & 1 & 0 & -\frac{34}{57}\\\\
 0 & 0 & 1 & \frac{4}{19}
 \end{array}
-\right]$ | $\xRightarrow{E_8E_7\times}E_8E_7\begin{bmatrix}
+\right]} & \substack{E_8E_7\begin{bmatrix}
 1 & 1 & 3\\\\
 0 & 1 & -\frac{1}{3}\\\\
 0 & 0 & 1
@@ -342,16 +314,16 @@ x \\\\ y \\\\z
 \end{bmatrix}
 =E_8E_7\begin{bmatrix}
 1\\\\-\frac{2}{3}\\\\\frac{4}{19}
-\end{bmatrix}$
-$\Rightarrow\begin{bmatrix}
+\end{bmatrix}\\\\\Rightarrow\begin{bmatrix}
 1 & 0& 0\\\\
 0 & 1& 0\\\\
 0 & 0& 1\end{bmatrix}
 \begin{bmatrix}x\\\\y\\\\ z\end{bmatrix}=\begin{bmatrix}
-\frac{55}{57}\\\\-\frac{34}{57}\\\\\frac{4}{19}\end{bmatrix}$ |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+\frac{55}{57}\\\\-\frac{34}{57}\\\\\frac{4}{19}\end{bmatrix}}
+\end{array}
+$$
 
-undefined
+
 **Remark.**
 
 1. This example demonstrates row elimination and row scaling. However, it lacks an illustration of row exchange—a crucial operation when encountering a zero pivot. We will showcase this operation in the subsequent example.
