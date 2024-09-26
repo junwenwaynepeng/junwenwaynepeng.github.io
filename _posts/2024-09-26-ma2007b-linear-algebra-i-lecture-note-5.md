@@ -174,6 +174,35 @@ $\Rightarrow\begin{bmatrix}
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |
 
 undefined
+$$
+\begin{array}{c|c}
+\xrightarrow{-\frac{2}{3}\times(2)+(3)\to (3)}\left[
+\begin{array}{ccc|c}
+1 & 1 & 3& 1\\\\
+0 & 3 & -1 & -2\\\\
+0 & 0 & \frac{19}{3} & \frac{4}{3}
+\end{array}
+\right] & \substack{E_3\begin{bmatrix}
+1 & 1 & 3\\\\
+0 & 3 & -1\\\\
+0 & 2 & -7
+\end{bmatrix}
+\begin{bmatrix}
+x \\\\ y \\\\z
+\end{bmatrix}
+=E_3\begin{bmatrix}
+1\\\\-2\\\\0
+\end{bmatrix}\\\\\Rightarrow\begin{bmatrix}
+1 & 1& 3\\\\
+0 & 3& -1\\\\
+0 & 0& \frac{19}{3}\end{bmatrix}
+\begin{bmatrix}x\\\\y\\\\ z\end{bmatrix}=\begin{bmatrix}
+1\\\\-2\\\\\frac{4}{3}\end{bmatrix}}
+
+\end{array}
+$$
+
+
 Before we perform back substitution, we can first make the diagonal of the coefficient matrix 1 on every entry. The correspondent matrix is
 
 
@@ -199,13 +228,15 @@ $$
 where the elementary matrices $E_4$ and $E_5$ is equivalent to multiplying the second row and third row, respectively, by constants.
 
 
-| $\xrightarrow{\substack{(2)/3\to (2)\\\\(3)\times\frac{19}{3}\to (3)}}\left[
+$$
+\begin{array}{c|c}
+\xrightarrow{\substack{(2)/3\to (2)\\\\(3)\times\frac{19}{3}\to (3)}}\left[
 \begin{array}{ccc|c}
 1 & 1 & 3& 1\\\\
 0 & 1 & -\frac{1}{3} & -\frac{2}{3}\\\\
 0 & 0 & 1 & \frac{4}{19}
 \end{array}
-\right]$ | $\xRightarrow{E\times}E\begin{bmatrix}
+\right] & \substack{E\begin{bmatrix}
 1 & 1 & 3\\\\
 0 & 3 & -1\\\\
 0 & 0 & \frac{19}{3}
@@ -215,16 +246,16 @@ x \\\\ y \\\\z
 \end{bmatrix}
 =E\begin{bmatrix}
 1\\\\-2\\\\\frac{4}{3}
-\end{bmatrix}$
-$\Rightarrow\begin{bmatrix}
+\end{bmatrix}\\\\\Rightarrow\begin{bmatrix}
 1 & 1& 3\\\\
 0 & 1& -\frac{1}{3}\\\\
 0 & 0& 1\end{bmatrix}
 \begin{bmatrix}x\\\\y\\\\ z\end{bmatrix}=\begin{bmatrix}
-1\\\\-\frac{2}{3}\\\\\frac{4}{19}\end{bmatrix}$ |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+1\\\\-\frac{2}{3}\\\\\frac{4}{19}\end{bmatrix}}
+\end{array}
+$$
 
-undefined
+
 Finally, we perform back substitution. The corresponding elementary matrix is similar to the one used for elimination, as back substitution is essentially reverse row elimination. This operation also involves multiplying one row by a constant and adding it to another row. Let
 
 
@@ -238,6 +269,11 @@ $$
 
 
 We have
+
+
+$$
+\begin{array}{}
+$$
 
 
 | $\xrightarrow{\frac{1}{3}\times(3)+(2)\to (2)}\left[
