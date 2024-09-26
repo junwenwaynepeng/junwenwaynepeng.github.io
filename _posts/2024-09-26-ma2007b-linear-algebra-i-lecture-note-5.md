@@ -89,30 +89,13 @@ E_1=\begin{bmatrix}
 $$
 
 
-$$
-\xrightarrow{(1)+(2)\to (2)}\left[
+| $\xrightarrow{(1)+(2)\to (2)}\left[
 \begin{array}{ccc|c}
 1 & 1 & 3& 1\\\\
 0 & 3 & -1 & -2\\\\
 2 & 4 & -1 & 2
 \end{array}
-\right]
-$$
-
-
-$$
-\xrightarrow{(1)+(2)\to (2)}\left[
-\begin{array}{ccc|c}
-1 & 1 & 3& 1\\\\
-0 & 3 & -1 & -2\\\\
-2 & 4 & -1 & 2
-\end{array}
-\right]
-$$
-
-
-$$
-\xRightarrow{E_1\times}E_1\begin{bmatrix}
+\right]$ | $\xRightarrow{E_1\times}E_1\begin{bmatrix}
 1 & 1 & 3\\\\
 -1 & 2 & -4\\\\
 2 & 4 & -1
@@ -122,20 +105,16 @@ x \\\\ y \\\\z
 \end{bmatrix}
 =E_1\begin{bmatrix}
 1\\\\-3\\\\2
-\end{bmatrix}
-$$
-
-
-$$
-\Rightarrow\begin{bmatrix}
+\end{bmatrix}$
+$\Rightarrow\begin{bmatrix}
 1 & 1& 3\\\\
 0 & 3& -1\\\\
 2 & 4& -1\end{bmatrix}
 \begin{bmatrix}x\\\\y\\\\ z\end{bmatrix}=\begin{bmatrix}
-1\\\\-2\\\\2\end{bmatrix}
-$$
+1\\\\-2\\\\2\end{bmatrix}$ |
+| --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-
+undefined
 Again, we eliminate the $(3,1)-$entry using the first pivot. We subtract two times of the first row from the third row. The correspondent elementary matrix $E_2$ is
 
 
@@ -148,30 +127,13 @@ E_2=\begin{bmatrix}
 $$
 
 
-$$
-\xrightarrow{-2\times(1)+(3)\to (3)}\left[
+| $\xrightarrow{-2\times(1)+(3)\to (3)}\left[
 \begin{array}{ccc|c}
 1 & 1 & 3& 1\\\\
 0 & 3 & -1 & -2\\\\
 0 & 2 & -7 & 0
 \end{array}
-\right]
-$$
-
-
-$$
-\xrightarrow{-2\times(1)+(3)\to (3)}\left[
-\begin{array}{ccc|c}
-1 & 1 & 3& 1\\\\
-0 & 3 & -1 & -2\\\\
-0 & 2 & -7 & 0
-\end{array}
-\right]
-$$
-
-
-$$
-\xRightarrow{E_2\times}E_2\begin{bmatrix}
+\right]$ | $\xRightarrow{E_2\times}E_2\begin{bmatrix}
 1 & 1 & 3\\\\
 0 & 3 & -1\\\\
 2 & 4 & -1
@@ -181,20 +143,16 @@ x \\\\ y \\\\z
 \end{bmatrix}
 =E_2\begin{bmatrix}
 1\\\\-2\\\\2
-\end{bmatrix}
-$$
-
-
-$$
-\Rightarrow\begin{bmatrix}
+\end{bmatrix}$
+$\Rightarrow\begin{bmatrix}
 1 & 1& 3\\\\
 0 & 3& -1\\\\
 0 & 2& -7\end{bmatrix}
 \begin{bmatrix}x\\\\y\\\\ z\end{bmatrix}=\begin{bmatrix}
-1\\\\-2\\\\0\end{bmatrix}
-$$
+1\\\\-2\\\\0\end{bmatrix}$ |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-
+undefined
 Now, the second pivot is the $(2,2)-$entry. We will eliminate the $(3,2)-$entry by subtract $\frac{2}{3}$ times the second row from the third row. The correspondent elementary matrix $E_3$ is
 
 
@@ -207,30 +165,13 @@ E_3=\begin{bmatrix}
 $$
 
 
-$$
-\xrightarrow{-\frac{2}{3}\times(2)+(3)\to (3)}\left[
+| $\xrightarrow{-\frac{2}{3}\times(2)+(3)\to (3)}\left[
 \begin{array}{ccc|c}
 1 & 1 & 3& 1\\\\
 0 & 3 & -1 & -2\\\\
 0 & 0 & \frac{19}{3} & \frac{4}{3}
 \end{array}
-\right]
-$$
-
-
-$$
-\xrightarrow{-\frac{2}{3}\times(2)+(3)\to (3)}\left[
-\begin{array}{ccc|c}
-1 & 1 & 3& 1\\\\
-0 & 3 & -1 & -2\\\\
-0 & 0 & \frac{19}{3} & \frac{4}{3}
-\end{array}
-\right]
-$$
-
-
-$$
-\xRightarrow{E_3\times}E_3\begin{bmatrix}
+\right]$ | $\xRightarrow{E_3\times}E_3\begin{bmatrix}
 1 & 1 & 3\\\\
 0 & 3 & -1\\\\
 0 & 2 & -7
@@ -240,20 +181,16 @@ x \\\\ y \\\\z
 \end{bmatrix}
 =E_3\begin{bmatrix}
 1\\\\-2\\\\0
-\end{bmatrix}
-$$
-
-
-$$
-\Rightarrow\begin{bmatrix}
+\end{bmatrix}$
+$\Rightarrow\begin{bmatrix}
 1 & 1& 3\\\\
 0 & 3& -1\\\\
 0 & 0& \frac{19}{3}\end{bmatrix}
 \begin{bmatrix}x\\\\y\\\\ z\end{bmatrix}=\begin{bmatrix}
-1\\\\-2\\\\\frac{4}{3}\end{bmatrix}
-$$
+1\\\\-2\\\\\frac{4}{3}\end{bmatrix}$ |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-
+undefined
 Before we perform back substitution, we can first make the diagonal of the coefficient matrix 1 on every entry. The correspondent matrix is
 
 
