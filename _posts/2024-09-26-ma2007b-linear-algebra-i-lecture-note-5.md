@@ -31,39 +31,15 @@ x+y+3z=1\\\\
 $$
 
 
-**Matrix Notation**
-
-
-$$
-\left[
+| **Matrix Notation**                                                                                    | **Matrix Form**                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $\left[
 \begin{array}{ccc|c}
 1 & 1 & 3& 1\\\\
 -1 & 2 & -4 & -3\\\\
 2 & 4 & -1 & 2
 \end{array}
-\right]
-$$
-
-
-**Matrix Notation**
-
-
-$$
-\left[
-\begin{array}{ccc|c}
-1 & 1 & 3& 1\\\\
--1 & 2 & -4 & -3\\\\
-2 & 4 & -1 & 2
-\end{array}
-\right]
-$$
-
-
-**Matrix Form**
-
-
-$$
-\begin{bmatrix}
+\right]$ | $\begin{bmatrix}
 1 & 1 & 3\\\\
 -1 & 2 & -4\\\\
 2 & 4 & -1
@@ -73,10 +49,9 @@ x \\\\ y \\\\z
 \end{bmatrix}
 =\begin{bmatrix}
 1\\\\-3\\\\2
-\end{bmatrix}
-$$
+\end{bmatrix}$ |
 
-
+undefined
 The first action will be to eliminate the $(2,1)-$entry using the first pivot. We add the first row directly to the second row, and this action is equivalent to multiply an elementary matrix, denoted by $E_1$, from the left to the matrix form. By observation, $E_1$ is
 
 
