@@ -102,6 +102,8 @@ The above argument also proves that if $Ax=b$ has a unique solution, then $A$ is
 
 
 **Theorem.** $Ax=b$ has a unique solution if and only if $A$ is invertible.
+
+
 **Remark.** By the end of this semester, we aim to expand this theorem into several equivalent statements.
 
 
@@ -112,11 +114,107 @@ The above argument also proves that if $Ax=b$ has a unique solution, then $A$ is
 4 & 7 & -3\\\\
 -1 & 3 & -1
 \end{bmatrix}$
+
+	$$
+	\left[\begin{array}{ccc|ccc}
+	2 & 4 &-2 & 1 &0 & 0\\\\
+	4 & 7 & -3 & 0 & 1 & 0\\\\
+	-1 & 3 & -1 & 0 & 0 & 1
+	\end{array}\right]
+	$$
+
+
+	$$
+	\xrightarrow{\substack{-2\times(1)+(2)\\\\(1)+(3)\to(3)}}\left[\begin{array}{ccc|ccc}
+	2 & 4 &-2 & 1 &0 & 0\\\\
+	0 & -1 & 1 & -2 & 1 & 0\\\\
+	0 & 5 & -2 & \frac{1}{2} & 0 & 1
+	\end{array}\right]
+	$$
+
+
+	$$
+	\xrightarrow{5\times(2)+(3)\to(3)}\left[\begin{array}{ccc|ccc}
+	2 & 4 &-2 & 1 &0 & 0\\\\
+	0 & -1 & 1 & -2 & 1 & 0\\\\
+	0 & 0 & 3 & \frac{-19}{2} & 5 & 1
+	\end{array}\right]
+	$$
+
+
+	$$
+	\xrightarrow{\substack{\frac{1}{2}(1)\to(1)\\\\-(2)\to(2)\\\\\frac{1}{3}(3)\to(3)}}\left[\begin{array}{ccc|ccc}
+	1 & 2 &-1 & \frac{1}{2} &0 & 0\\\\
+	0 & 1 & -1 & 2 & -1 & 0\\\\
+	0 & 0 & 1 & \frac{-19}{6} & \frac{5}{3} & \frac{1}{3}
+	\end{array}\right]
+	$$
+
+
+	$$
+	\xrightarrow{\substack{(3)+(2)\to(2)\\\\(3)+(1)\to(1)}}\left[\begin{array}{ccc|ccc}
+	1 & 2 & 0 & \frac{-8}{3} &\frac{5}{3} & \frac{1}{3}\\\\
+	0 & 1 & 0 & \frac{-7}{6} & \frac{2}{3} & \frac{1}{3}\\\\
+	0 & 0 & 1 & \frac{-19}{6} & \frac{5}{3} & \frac{1}{3}
+	\end{array}\right]
+	$$
+
+
+	$$
+	\xrightarrow{-2(2)+(1)\to(1)}\left[\begin{array}{ccc|ccc}
+	1 & 0 & 0 & \frac{-1}{3} &\frac{1}{3} & \frac{-1}{3}\\\\
+	0 & 1 & 0 & \frac{-7}{6} & \frac{2}{3} & \frac{1}{3}\\\\
+	0 & 0 & 1 & \frac{-19}{6} & \frac{5}{3} & \frac{1}{3}
+	\end{array}\right]
+	$$
+
+
+	Therefore, we can conclude that the matrix is invertible, and the inverse is
+
+
+	$$
+	\begin{bmatrix}
+	\frac{-1}{3} &\frac{1}{3} & \frac{-1}{3}\\\\
+	\frac{-7}{6} & \frac{2}{3} & \frac{1}{3}\\\\
+	\frac{-19}{6} & \frac{5}{3} & \frac{1}{3}
+	\end{bmatrix}.
+	$$
+
 2. $\begin{bmatrix}
 1 & -1 & 1\\\\
 -3 & 1 & 4\\\\
-1 & -1 & 6
+-1 & -1 & 6
 \end{bmatrix}$
 
-## 
+	This example illustrates the situation when the given matrix is not invertible.
+
+
+	$$
+	\left[\begin{array}{ccc|ccc}
+	1 & -1 & 1 & 1 &0 & 0\\\\
+	-3 & 1 & 4 & 0 & 1 & 0\\\\
+	-1 & -1 & 6 & 0 & 0 & 1
+	\end{array}\right]
+	$$
+
+
+	$$
+	\xrightarrow{\substack{3(1)+(2)\to(2)\\\\(1)+(3)\to(3)}}\left[\begin{array}{ccc|ccc}
+	1 & -1 & 1 & 1 &0 & 0\\\\
+	0 & -2 & 7 & 3 & 1 & 0\\\\
+	0 & -2 & 7 & 1 & 0 & 1
+	\end{array}\right]
+	$$
+
+
+	$$
+	\xrightarrow{-(2)+(3)\to(3)}\left[\begin{array}{ccc|ccc}
+	1 & -1 & 1 & 1 &0 & 0\\\\
+	0 & -2 & 7 & 3 & 1 & 0\\\\
+	0 & 0 & 0 & -2 & -1 & 1
+	\end{array}\right]
+	$$
+
+
+	If we find a row with zeros in every position, we can immediately conclude that the given matrix is not invertible. However, regardless of whether the given matrix $A$ is invertible or not, Gaussian elimination can always reduce the matrix notation $[A|I]$ to a matrix notation of the form $[U|L]$ where $U$ is an upper triangular matrix and $L$ is a lower triangular matrix. This highlights the possibility of writing every matrix as a product of an upper triangular matrix and a lower triangular matrix.
 
