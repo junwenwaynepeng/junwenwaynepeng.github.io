@@ -37,17 +37,15 @@ Compare to $M^2$, $D^2$ only requires $n$ many steps to determine. This reduces 
 ### LU and LDU decomposition
 
 
-> L: a lower triangular matrix  
-> D: a diagonal matrix  
+> - L: a lower triangular matrix  
 >   
-> U: an upper triangular matrix
+> - D: a diagonal matrix  
+>   
+> - U: an upper triangular matrix
 
-
-	D: a diagonal matrix
-
-
-	U: an upper triangular matrix
-
+	- L: a lower triangular matrix
+	- D: a diagonal matrix
+	- U: an upper triangular matrix
 
 As the name suggests, LU decomposition expresses a matrix as the product of a lower triangular matrix and an upper triangular matrix. LDU decomposition takes this a step further by isolating the row multiplication as a diagonal matrix between the lower and upper triangular matrices.
 Let's begin with a squared matrix $A$ (LU decomposition doesn't reuqire $A$ to be square; this assumption merely simplifies our discussion). Regardless of whether $A$ is invertible or not, Gaussian elimination can always produce an upper triangular matrix $U$ from $A$. Assuming no row interchange is necessary to obtain the matrix $U$, we know that through the elimination $e_1,\ldots,e_n$ with correspondent elementary matrices $E_1,\ldots, E_n$ (all lower triangular), we have $E_{n}\cdots E_1A=U$. It follows that $A= E_1^{-1}\cdots E_n^{-1}U$. Now, we need several lemmas.
