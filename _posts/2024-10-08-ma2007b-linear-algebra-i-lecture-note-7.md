@@ -72,7 +72,7 @@ v_2=\begin{bmatrix}0\\\\\vdots\\\\0\\\\\ast\\\\\vdots\\\\\ast\end{bmatrix},
 $$
 
 
-where the first $j$ components are zero. Therefore, because $j>i$, $v_2$ provides enough many $0$ to multiply with $*$ from $v_1$. Hence, we have $v_1v_2=*\cdot 0+\cdots+*\cdot 0+*\cdot0+\cdots+*\cdot0=0$. This is the desired result.
+where the first $j$ components are zero. Therefore, because $j>i$, $v_2$ provides enough many $0$ to multiply with $\ast$ from $v_1$. Hence, we have $v_1v_2=\ast\cdot 0+\cdots+\ast\cdot 0+\ast\cdot0+\cdots+\ast\cdot0=0$. This is the desired result.
 
 
 ---
