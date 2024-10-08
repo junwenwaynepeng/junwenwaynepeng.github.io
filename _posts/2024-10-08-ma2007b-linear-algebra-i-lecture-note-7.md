@@ -51,7 +51,11 @@ Compare to $M^2$, $D^2$ only requires $n$ many steps to determine. This reduces 
 
 As the name suggests, LU decomposition expresses a matrix as the product of a lower triangular matrix and an upper triangular matrix. LDU decomposition takes this a step further by isolating the row multiplication as a diagonal matrix between the lower and upper triangular matrices.
 Let's begin with a squared matrix $A$ (LU decomposition doesn't reuqire $A$ to be square; this assumption merely simplifies our discussion). Regardless of whether $A$ is invertible or not, Gaussian elimination can always produce an upper triangular matrix $U$ from $A$. Assuming no row interchange is necessary to obtain the matrix $U$, we know that through the elimination $e_1,\ldots,e_n$ with correspondent elementary matrices $E_1,\ldots, E_n$ (all lower triangular), we have $E_{n}\cdots E_1A=U$. It follows that $A= E_1^{-1}\cdots E_n^{-1}U$. Now, we need several lemmas.
+
+
 **Lemma.** The product of two lower (resp. upper) triangular matrices is still lower (resp. upper) triangular.
+
+
 **proof.** Let $L_1$ and $L_2$ be a lower triangular matrix. We only need to show that every $(i,j)$-entry of $L_1L_2$ for $i<j$ is zero. The $(i,j)-$entry is the product of the $i$-th row vector of $L_1$, denoted by $v_1$, and the $j$-th column of $L_2$, denoted by $v_2$. Note that
 
 
@@ -75,6 +79,8 @@ where the first $j$ components are zero. Therefore, because $j>i$, $v_2$ provide
 
 
 **Lemma.** The inverse matrix of a lower triangular matrix is lower triangular. Similarly, the inverse matrix of an upper triangular matrix is upper triangular.
+
+
 **proof.** (see [https://math.stackexchange.com/questions/245871/the-inverse-of-a-lower-triangular-matrix-is-lower-triangular](https://math.stackexchange.com/questions/245871/the-inverse-of-a-lower-triangular-matrix-is-lower-triangular))
 
 
