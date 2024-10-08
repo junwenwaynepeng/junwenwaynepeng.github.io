@@ -37,7 +37,7 @@ Compare to $M^2$, $D^2$ only requires $n$ many steps to determine. This reduces 
 ### LU and LDU decomposition
 
 
-> 💡 L: a lower triangular matrix  
+> L: a lower triangular matrix  
 > D: a diagonal matrix  
 >   
 > U: an upper triangular matrix
@@ -56,7 +56,7 @@ Let's begin with a squared matrix $A$ (LU decomposition doesn't reuqire $A$ to b
 
 
 $$
-v_1=[*,\ldots,*,0,\ldots,0],
+v_1=[\ast,\ldots,\ast,0,\ldots,0],
 $$
 
 
@@ -64,7 +64,7 @@ where the first $i$ components can be any number, and
 
 
 $$
-v_2=\begin{bmatrix}0\\\\\vdots\\\\0\\\\ *\\\\\vdots\\\\*\end{bmatrix},
+v_2=\begin{bmatrix}0\\\\\vdots\\\\0\\\\\ast\\\\\vdots\\\\\ast\end{bmatrix},
 $$
 
 
