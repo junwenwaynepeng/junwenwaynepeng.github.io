@@ -273,11 +273,11 @@ Consequently, the PA=LU decomposition of $A$ is
 
 
 $$
-P_{23}A=F^{-1}_{13}F^{-1}_{12}D_{3}^{-1}U
+P_{23}A=F_{13}^{-1}F_{12}^{-1}D_{3}^{-1}U
 $$
 
 
-where $F_{12}^{-1}=E_{12}$, $F^{-1}_{13}=E_{13}$, and $D_3^{-1}=\text{diag}(1,1,-1)$.
+where $F_{12}^{-1}=E_{12}$, $F_{13}^{-1}=E_{13}$, and $D_3^{-1}=\text{diag}(1,1,-1)$.
 
 
 # Vector Space
