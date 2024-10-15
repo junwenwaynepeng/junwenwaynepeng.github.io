@@ -289,9 +289,6 @@ When first introduced to vectors, we typically visualize them as arrows originat
 ![](https://junwenwaynepeng.github.io/assets/img/posts/2024-10-15-01.png)
 
 
-![](https://junwenwaynepeng.github.io/assets/img/posts/2024-10-15-01.png)
-
-
 ![](https://junwenwaynepeng.github.io/assets/img/posts/2024-10-15-02.png)
 
 
