@@ -49,7 +49,6 @@ a strategy for decomposition is to move $P$ all the way to the right, adjacent t
 	0 & 0 & 1\\\\
 	0 & 1 & 0
 	\end{bmatrix}
-	
 	$$
 
 2. $P_{23}E_{12}=E_{13}P_{23}$
@@ -287,6 +286,15 @@ where $F_{12}^{-1}=E_{12}$, $F^{-1}_{13}=E_{13}$, and $D_3=\text{diag}(1,1,-1)$.
 When first introduced to vectors, we typically visualize them as arrows originating from the origin in a plane (two-dimensional space) or in space (three-dimensional space). This representation provides a vivid mental image of vectors. Vector operations, such as addition, can also be visualized—for instance, using the parallelogram law for vectors.
 
 
+![](https://junwenwaynepeng.github.io/assets/img/posts/2024-10-15-01.png)
+
+
+![](https://junwenwaynepeng.github.io/assets/img/posts/2024-10-15-01.png)
+
+
+![](https://junwenwaynepeng.github.io/assets/img/posts/2024-10-15-02.png)
+
+
 However, visualizing vector additions in higher-dimensional spaces is impractical. Nonetheless, we can easily represent a vector in higher dimensions algebraically. For example, the sum of two four-dimensional vectors $(a_1,a_2,a_3,a_4)$ and $(b_1,b_2,b_3,b_4)$ is simply the sum of their coordinates:
 
 
@@ -321,3 +329,47 @@ $$
 
 Indeed, we see that a vector no longer resembles an arrow. This realization calls for an abstract, universal language to describe vectors.
 
+
+# English booster
+
+<details>
+  <summary>parallelogram </summary>
+
+
+平行四邊形
+
+
+
+  </details><details>
+  <summary>the origin</summary>
+
+
+原點
+
+
+
+  </details><details>
+  <summary>coordinate</summary>
+
+
+座標
+
+
+
+  </details><details>
+  <summary>differential</summary>
+
+
+微分的
+
+
+
+  </details><details>
+  <summary>linear combination</summary>
+
+
+線性組合
+
+
+
+  </details>
