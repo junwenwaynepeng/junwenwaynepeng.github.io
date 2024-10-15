@@ -3,7 +3,7 @@ id: 10dd3176-005d-8044-943e-dc865302f634
 layout: post
 date: 2024-09-26
 title: MA2007B Linear Algebra I Lecture Note 5
-subtitle: 
+subtitle: Elementary matrices
 comments: false
 leftToc: false
 rightToc: false

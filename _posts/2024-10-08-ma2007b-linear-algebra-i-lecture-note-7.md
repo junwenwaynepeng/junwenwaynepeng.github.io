@@ -3,7 +3,7 @@ id: 112d3176-005d-8093-9ff4-f876f83647d0
 layout: post
 date: 2024-10-08
 title: MA2007B Linear Algebra I Lecture Note 7
-subtitle: 
+subtitle: LU decomposition
 comments: false
 leftToc: false
 rightToc: false
@@ -157,3 +157,15 @@ $$
 
 This demonstrates an LDU decomposition of the original matrix.
 
+
+# English booster
+
+<details>
+  <summary>decomposition/decompose</summary>
+
+
+decompose 分解
+
+
+
+  </details>
