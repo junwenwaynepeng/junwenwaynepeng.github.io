@@ -153,4 +153,4 @@ $$
 	\end{align*}
 	$$
 
-	1. Similar to Statement $1$.
+3. Similar to Statement $1$.
