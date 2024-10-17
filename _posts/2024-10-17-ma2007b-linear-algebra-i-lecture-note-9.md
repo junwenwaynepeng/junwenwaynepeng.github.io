@@ -130,27 +130,27 @@ $$
 
 **proof.**
 
-	1. We may:
+1. We may:
 
-		$$
-		\begin{align*}
-		0x+0x&=(0+0)x\text{ (VS8)}\\\\
-		&=0x\text{ (}F\text{ is a field/0 is a number)}\\\\
-		&=0x+0\text{ (VS3)}
-		\end{align*}
-		$$
+	$$
+	\begin{align*}
+	0x+0x&=(0+0)x\text{ (VS8)}\\\\
+	&=0x\text{ (}F\text{ is a field/0 is a number)}\\\\
+	&=0x+0\text{ (VS3)}
+	\end{align*}
+	$$
 
 
-		Therefore, $0x=0$ follows from the cancellation law.
+	Therefore, $0x=0$ follows from the cancellation law.
 
-	2. Since we have shown that the inverse of an element is unique, we only need to show that $(-ax)+ax=0$. We may:
+2. Since we have shown that the inverse of an element is unique, we only need to show that $(-ax)+ax=0$. We may:
 
-		$$
-		\begin{align*}
-		(-ax)+ax&=(-a+a)x\text{ (VS8)}\\\\
-		&=0x\text{ (}a\text{ and }-a\text{ are numbers)}\\\\
-		&=0\text{ (by the first statement)}.
-		\end{align*}
-		$$
+	$$
+	\begin{align*}
+	(-ax)+ax&=(-a+a)x\text{ (VS8)}\\\\
+	&=0x\text{ (}a\text{ and }-a\text{ are numbers)}\\\\
+	&=0\text{ (by the first statement)}.
+	\end{align*}
+	$$
 
-		1. Similar to Statement $1$.
+	1. Similar to Statement $1$.
