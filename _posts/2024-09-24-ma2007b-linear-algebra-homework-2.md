@@ -16,7 +16,7 @@ categories: [post]
 In the following, $A$, $B$, $C$, $\ldots$ are matrices of appropriate sizes, depending on the context.
 
 1. Prove the following statements:
-	1. Prove that if $AA'=I$ and $A''A=I$, then $A'=A''$. (The left inverse equals the right inverse)
+	1. Prove that if $AA^\prime=I$ and $A^{\prime\prime}A=I$, then $A^\prime=A^{\prime\prime}$. (The left inverse equals the right inverse)
 	2. Prove that if $A$ is invertible, then $AB=O$ implies $B=O$ where $O$ iz the zero matrix.
 	3. Show that $(AB)^{-1}=B^{-1}A^{-1}$ if $A$ and $B$ are invertible. (Relationship between multiplication and inversion)
 2. Prove that $(AB)^\intercal=B^\intercal A^\intercal$ for properly defined matrices $A$ and $B$.
@@ -38,7 +38,10 @@ In the following, $A$, $B$, $C$, $\ldots$ are matrices of appropriate sizes, dep
 	\end{bmatrix}.
 	$$
 
-7. which three matrix $E_1$, $E_2$, and $E_3$ put $A$ into a upper triangular matrix $U?$
+
+	Show that $A(\theta_1)A(\theta_2)=A(\theta_1+\theta_2)$.
+
+7. Which three matrix $E_1$, $E_2$, and $E_3$ put $A$ into a upper triangular matrix $U?$
 
 	$$
 	A=\begin{bmatrix}
