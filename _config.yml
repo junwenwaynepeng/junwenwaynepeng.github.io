@@ -21,7 +21,7 @@ author: Junwen Wayne Peng
 ##############
 
 # 關鍵詞與您的網站相關聯，以便於搜索引擎優化（SEO）的目的
-keywords: "數學網站、理論中心、數學、math、calculus、微積分、微分、積分、架設教學網站、Jekyll、arithmetic dynamics、galois group、Junwen、 Wayne、 Peng、 Junwen Peng、 Wayne Peng、 Junwen Wayne Peng、 NCTS、數學組、算數動態系統、數論演算法、研究員、台大"
+keywords: "數學網站、中央大學、中央、央大、中大、中央數學系、中央數學系、央大數學系、中大數學系、中央數學、中央數學、央大數學、中大數學、數學、math、calculus、微積分、微分、積分、架設教學網站、Jekyll、arithmetic dynamics、galois group、Junwen、 Wayne、 Peng、 Junwen Peng、 Wayne Peng、 Junwen Wayne Peng、 算數動態系統、數論演算法"
 
 
 #########################################
@@ -37,7 +37,7 @@ navbar-links:
     - Build yourown blog: "books/jekyll-intro/0-intro"
     - Calculus: "books/calculus/1-definition-of-limits"
     - Connection: "connection"
-    - Database: "database"
+    - Database: "database-misc"
   Slides: "all-slides"
   Publication: "publication"
 
