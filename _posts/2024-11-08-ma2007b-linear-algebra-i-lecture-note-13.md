@@ -101,20 +101,21 @@ Given a set of vectors $\\{v_1,\ldots, v_n\\}$, how do we determine if the set i
 
 $$
 \begin{bmatrix}
- - & v_1 & -\\\\
+ {-} & v_1 & {-}\\\\
 & \vdots & \\\\
- - & v_i & -\\\\
+ {-} & v_i & {-}\\\\
 & \vdots & \\\\
- - & v_j & -\\\\
-& \vdots & \\\\- & v_n & -
+ {-} & v_j & {-}\\\\
+& \vdots & \\\\
+{-} & v_n & {-}
 \end{bmatrix}\xrightarrow{c\times(i)+(j)\to(j)}\begin{bmatrix}
- - & v_1 & -\\\\
+ {-} & v_1 & {-}\\\\
 & \vdots & \\\\
- - & v_i & -\\\\
+ {-} & v_i & {-}\\\\
 & \vdots & \\\\
- - & cv_i+v_j & -\\\\
+ {-} & cv_i+v_j & {-}\\\\
 & \vdots & \\\\
- - & v_n & -
+ {-} & v_n & {-}
 \end{bmatrix}
 $$
 
