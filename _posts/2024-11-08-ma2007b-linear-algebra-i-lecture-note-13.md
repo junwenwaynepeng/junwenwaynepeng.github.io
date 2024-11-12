@@ -20,7 +20,7 @@ Given a vector space $V$, we can find a set of axes by considering a chain of se
 
 
 $$
-\empty\subset\\{x_1\\}\subseteq\\{x_1,x_2\\}\subset\cdots
+\emptyset\subset\\{x_1\\}\subseteq\\{x_1,x_2\\}\subset\cdots
 $$
 
 
