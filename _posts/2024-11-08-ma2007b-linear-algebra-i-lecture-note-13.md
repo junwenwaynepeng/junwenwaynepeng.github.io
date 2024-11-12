@@ -174,35 +174,35 @@ Since the bottom row vector is zero, the set of row vectors is linearly dependen
 
 $$
 \begin{bmatrix}
-- & v_1 & -\\\\
-- & v_2 & -\\\\
-- & v_3 & -\\\\
-- & v_4 & -
+{-} & v_1 & {-}\\\\
+{-} & v_2 & {-}\\\\
+{-} & v_3 & {-}\\\\
+{-} & v_4 & {-}
 \end{bmatrix}\xrightarrow{(1)\leftrightarrow(2)}\begin{bmatrix}
-- & v_2 & -\\\\
-- & v_1 & -\\\\
-- & v_3 & -\\\\
-- & v_4 & -
+{-} & v_2 & -\\\\
+{-} & v_1 & -\\\\
+{-} & v_3 & -\\\\
+{-} & v_4 & -
 \end{bmatrix}\xrightarrow{\substack{-2\times(1)+(2)\to(2)\\\\-(1)+(4)\to(4)}}\begin{bmatrix}
-- & v_2 & -\\\\
-- & -2v_2+v_1 & -\\\\
-- & v_3 & -\\\\
-- & -v_2+v_4 & -
+{-} & v_2 & -\\\\
+{-} & -2v_2+v_1 & -\\\\
+{-} & v_3 & -\\\\
+{-} & -v_2+v_4 & -
 \end{bmatrix}
 $$
 
 
 $$
 \xrightarrow{\substack{2\times(2)+(3)\to(3)\\\\(2)+(4)\to(4)}}\begin{bmatrix}
-- & v_2 & -\\\\
-- & v_1-2v_2 & -\\\\
-- & 2v_1-4v_2+v_3 & -\\\\
-- & v_1-3v_2+v_4 & -
+{-} & v_2 & -\\\\
+{-} & v_1-2v_2 & -\\\\
+{-} & 2v_1-4v_2+v_3 & -\\\\
+{-} & v_1-3v_2+v_4 & -
 \end{bmatrix}\xrightarrow{-4\times(3)+(4)}\begin{bmatrix}
-- & v_2 & -\\\\
-- & v_1-2v_2 & -\\\\
-- & 2v_1-4v_2+v_3 & -\\\\
-- & -7v_1+13v_2-4v_3+v_4 & -
+{-} & v_2 & -\\\\
+{-} & v_1-2v_2 & -\\\\
+{-} & 2v_1-4v_2+v_3 & -\\\\
+{-} & -7v_1+13v_2-4v_3+v_4 & -
 \end{bmatrix}
 $$
 
