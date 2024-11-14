@@ -64,7 +64,7 @@ Without loss of generality, we may assume $a_1=1$. Thus, $x_1$ is a linear combi
 ---
 
 
-**Lemma.** Let $V$ be a vector space, and let $\beta $ be a basis for $V$. If $S$ is a finite set for $V$ with $\#S>\#\beta$, then $S$ is linearly dependent.
+**Lemma.** Let $V$ be a vector space, and let $\beta $ be a basis for $V$. If $S$ is a finite set for $V$ with $\sharp S>\sharp\beta$, then $S$ is linearly dependent.
 
 
 **Proof:** Let $S=\set{y_1,\ldots,y_m}$ and $\beta=\set{x_1,\ldots,x_n}$, where $m>n$. Since $\beta$ is a basis for V, each $y_i$ can be expressed as a linear combination of the basis elements. That is, for each $y_i$, there exist scalars $a_{i1},\ldots,a_{in}\in F$ such that
@@ -84,7 +84,7 @@ Let's consider the $m \times n$ matrix $A = (a_{ij})$. Since $m > n$, $A$ can be
 **Lemma.** Let $V$ be a vector space having a basis $\beta$ containing exactly $n$ elements. Let $S=\set{y_1,\ldots, y_m}$ be a linearly independent subset of $V$ containing exactly $m$ elements, where $m\leq n$. Then there exists a subset $S_1$ of $\beta$ containing exactly $n-m$ elements such that $S\cup S_1$ generates $V$.
 
 
-**Proof.** We proceed by induction. The statement is trivially true if $S$ is empty. For the inductive step, we assume the statement holds when $\#S=m\leq n$. We may assume $\# S<n$; if $\#S=n$, then $S$ adjoining another element would become linearly dependent, so $S$ is already a basis. Now, we need to show that the statement holds when $\#S=m+1$. Let $S=\set{y_1,\ldots,y_m,y_{m+1}}$. By the induction hypothesis, there exists $\set{x_1,\ldots,x_k}\subseteq \beta$ where $k=n-m$ such that $\set{y_1,\ldots,y_m,x_1,\ldots,x_k}$ is a basis. Furthermore, there exist scalars $a_1,\ldots, a_m,b_1,\ldots,b_k\in F$ such that
+**Proof.** We proceed by induction. The statement is trivially true if $S$ is empty. For the inductive step, we assume the statement holds when $\sharp S=m\leq n$. We may assume $\sharp S<n$; if $\sharp S=n$, then $S$ adjoining another element would become linearly dependent, so $S$ is already a basis. Now, we need to show that the statement holds when $\sharp S=m+1$. Let $S=\set{y_1,\ldots,y_m,y_{m+1}}$. By the induction hypothesis, there exists $\set{x_1,\ldots,x_k}\subseteq \beta$ where $k=n-m$ such that $\set{y_1,\ldots,y_m,x_1,\ldots,x_k}$ is a basis. Furthermore, there exist scalars $a_1,\ldots, a_m,b_1,\ldots,b_k\in F$ such that
 
 
 $$
