@@ -31,7 +31,7 @@ keywords: "數學網站、中央大學、中央、央大、中大、中央數學
 navbar-links:
   About Me: "about-me"
   Resources:
-    - ChatGPT: "https://chat.openai.com/chat"
+    - News about ABC conjecture: "https://nitaj.users.lmno.cnrs.fr/abc.html"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Build yourown blog: "books/jekyll-intro/0-intro"
