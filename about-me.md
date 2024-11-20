@@ -22,6 +22,8 @@ My name is Wayne Peng. Nice to meet you.
 
 - Name: Wayne Peng, Ph.D.
 - Education: Graduate from the [University of Rochester](https://www.sas.rochester.edu/mth/)
+- Current Position: Assistant Professor at National Center University in Taiwan
+- Email: wayne.peng@math.ncu.edu.tw
 
 ![](https://junwenwaynepeng.github.io/assets/img/rochester.jpg)
 
