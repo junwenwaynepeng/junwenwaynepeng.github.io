@@ -142,5 +142,5 @@ graph TD
 ```
 
 
-Note: The study of infinite-dimensional vector spaces marks the beginning of functional analysis.
+Note: The study of infinite-dimensional vector spaces marks the beginning of functional analysis. 
 
