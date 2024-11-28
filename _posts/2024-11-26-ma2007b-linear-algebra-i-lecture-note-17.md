@@ -13,9 +13,7 @@ categories: [post]
 
 ---
 
-<iframe src="https://deserted-fridge-1ed.notion.site/MA2007B-Linear-Algebra-I-Lecture-Note-17-14ad3176005d8074afeecae3c98536e5" width="100%" height="300">
-  <p>Your browser does not support iframes.</p>
-</iframe>
+<iframe src="https://v2-embednotion.com/14ad3176005d8074afeecae3c98536e5" style="width: 100%; height: 500px; border: 2px solid #ccc; border-radius: 10px; padding: none;"></iframe>
 
 ### Nullity-Rank Theorem
 
@@ -142,5 +140,5 @@ graph TD
 ```
 
 
-Note: The study of infinite-dimensional vector spaces marks the beginning of functional analysis. 
+Note: The study of infinite-dimensional vector spaces marks the beginning of functional analysis.
 
