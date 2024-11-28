@@ -160,6 +160,9 @@ tags: [${tags}]
 categories: [${cats}]
 ${fmHeadPackage}
 ---
+<iframe src="https://https://deserted-fridge-1ed.notion.site/${title}-${id}" width="100%" height="300">
+  <p>Your browser does not support iframes.</p>
+</iframe>
 `;
 				fTitle = `${date}-${title.replaceAll(' ', '-').toLowerCase()}.md`;
 				console.log('here')
