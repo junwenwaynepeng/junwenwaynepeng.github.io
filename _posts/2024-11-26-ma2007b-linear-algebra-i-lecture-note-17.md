@@ -12,7 +12,7 @@ tags: [EMI,MA2007B,linear algebra,overview]
 categories: [post]
 
 ---
-<iframe src="https://deserted-fridge-1ed.notion.site/ma2007b-linear-algebra-i-lecture-note-17-14ad3176-005d-8074-afee-cae3c98536e5" width="100%" height="300">
+<iframe src="https://deserted-fridge-1ed.notion.site/MA2007B-Linear-Algebra-I-Lecture-Note-17-14ad3176-005d-8074-afee-cae3c98536e5" width="100%" height="300">
   <p>Your browser does not support iframes.</p>
 </iframe>
 
@@ -141,5 +141,5 @@ graph TD
 ```
 
 
-Note: The study of infinite-dimensional vector spaces marks the beginning of functional analysis.   
+Note: The study of infinite-dimensional vector spaces marks the beginning of functional analysis.
 
