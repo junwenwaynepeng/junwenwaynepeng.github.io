@@ -13,8 +13,6 @@ categories: [post]
 
 ---
 
-<iframe src="https://v2-embednotion.com/14ad3176005d8074afeecae3c98536e5" style="width: 100%; height: 500px; border: 2px solid #ccc; border-radius: 10px; padding: none;"></iframe>
-
 ### Nullity-Rank Theorem
 
 
@@ -140,5 +138,5 @@ graph TD
 ```
 
 
-Note: The study of infinite-dimensional vector spaces marks the beginning of functional analysis.
+Note: The study of infinite-dimensional vector spaces marks the beginning of functional analysis. 
 
