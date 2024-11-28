@@ -160,7 +160,7 @@ tags: [${tags}]
 categories: [${cats}]
 ${fmHeadPackage}
 ---
-<iframe src="https://https://deserted-fridge-1ed.notion.site/${title}.replaceAll(' ', '-').toLowerCase()}-${id}" width="100%" height="300">
+<iframe src="https://https://deserted-fridge-1ed.notion.site/${title.replaceAll(' ', '-').toLowerCase()}-${id}" width="100%" height="300">
   <p>Your browser does not support iframes.</p>
 </iframe>
 `;
