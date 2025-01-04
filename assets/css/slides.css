@@ -24,3 +24,8 @@
 .fragment.blur.visible {
   filter: none;
   }
+
+.note {
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+}
