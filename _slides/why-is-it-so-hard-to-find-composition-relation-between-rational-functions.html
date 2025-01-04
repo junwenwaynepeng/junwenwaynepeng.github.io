@@ -488,18 +488,18 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       <div class="definition fragment" data-fragment-index="1">
         <p>
-          We say a group $G$ is nilpotent if $G$ has a series of normal subgroup
+          We say a group $G$ is _nilpotent_ if $G$ has a series of normal subgroup
           $$G=G_0\triangleleft G_1\triangleright G_2\triangleright\cdots \triangleright G_n=\{1\}$$
           where $G_i=[G,G_{i-1}]$.
         </p>
       </div>
       <div class="definition fragment" data-fragment-index="2">
         <p>
-          We say a cancellative seimgroup $S$ is nilpotent if the group of fraction of $S$ is nilpotent.
+          We say a cancellative seimgroup $S$ is _nilpotent_ if the group of fraction of $S$ is nilpotent.
         </p>
       </div>
       <p class="fragment" data-fragment-index="3">
-        A semigroup is cancellative if it satisfies
+        A semigroup is _cancellative_ if it satisfies
         $$\text{both } ac=bc\text{ and }ca=cb\implies a=b.$$
       </p>
     </textarea>
@@ -510,14 +510,24 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         <p>
           For $x$, $y$, $u_1$, $u_2$, $\ldots\in S$, we define $x_0=x$, $y_0=y$,
           $$x_i=y_{i-1}u_ix_{i-1}\text{ and }y_i=x_{i-1}u_iy_{i-1}.$$
-          We say a semigroup $S$ is nilpotent if for any $x$, $y$, $u_1$, $u_2$, $\ldots\in S$, there exists an integer $n$ such that $x_n=y_n$. 
+          We say a semigroup $S$ is _nilpotent_ if for any $x$, $y$, $u_1$, $u_2$, $\ldots\in S$, there exists an integer $n$ such that $x_n=y_n$. 
         </p>
       </div>
-      The problem for our situation is that composition is not cancellative.
+      <div class="definition fragment" data-fragment-index="2">
+        <p>
+          We say a sequence $\{u_i\}\subset S$ is $(x,y,n)-stable$ if $x_n=y_n$. If $\{u_i\}\subseteq \Sigma^*_{\leq n}$, we say $\{u_i\}$ is $(x,y,m,n)$-stable.  
+        </p>
+      </div>
+      <p class="fragment" data-fragment-index="3">The problem for our situation is that composition is not cancellative.</p>
+      </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
       <div class="definition fragment" data-fragment-index="1">
         <p>
           We say a Borel measurable semigroup $S$ is nilpotent-by-finite if there exists a positive measure subset $S'$ of $S$ such that for any $x,y\in S'$ and $u_i\in S$, we have
-          $$\frac{\sharp\{u_i\}_{i=1}^n|\{u_i\}_{i=1}^\infty\text{ is not }(m,n)-stable}{(\sharp \Sigma*_{\leq m})^n}$$
+          $$\frac{\sharp\{u_i\}_{i=1}^n|\{u_i\}_{i=1}^\infty\text{ is not }(x,y,m,n)-stable}{(\sharp \Sigma*_{\leq m})^n}\to 0\text{ as }n\to\infty$$
         </p>
       </div> 
     </textarea>
