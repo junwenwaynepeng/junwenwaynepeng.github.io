@@ -248,6 +248,8 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       ## A well-known inequality
       Let $f$ be a rational function. Let $d$ be the degree of $f$. Then, we have a constant $C_f$, dependent only on $f$, such that
       $$|h(f(\alpha))-dh(\alpha)| < C_f $$
+      We further define
+      $$C_\Phi=\sup_{P\in\mathbb{P}^N(\bar{\mathbb{Q}})}\left|\dfrac{h(\Phi(P))}{d}-h(P)\right|.$$
       <aside class="notes">
         <ul>
           <li>To utilize a naive height effectively in a dynamical system, it's necessary to examine how a naive height interacts with a rational function.</li>
@@ -340,11 +342,11 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <h4>Proof of $j=1$</h4>
       <div class="lemma fragment" data-fragment-index="2">
         <p>
-          We have
-          $$\dfrac{C_f}{d}\left(1-\dfrac{1}{d-1}\right)<|h_f(\alpha)-h(\alpha)|<\dfrac{C_f}{d-1}$$
+          Let $d_f$ be the degree of $f$. We have
+          $$\dfrac{C_f}{d_f}\left(1-\dfrac{1}{d_f-1}\right)<|h_f(\alpha)-h(\alpha)|<\dfrac{C_f}{d_f-1}$$
           and
-          $$\left|h_f(\alpha)-\dfrac{h(f^i(\alpha))}{d^i}\right|<\dfrac{C_f}{d^i(d-1)}$$
-          for $\alpha\in\mathbb{P}^N(\bar{Q})$.
+          $$\left|h_f(\alpha)-\dfrac{h(f^i(\alpha))}{d_f^i}\right|<\dfrac{C_f}{d_f^i(d_F-1)}$$
+          for $P\in\mathbb{P}^N(\bar{Q})$.
         </p>
       </div>
     </textarea>
