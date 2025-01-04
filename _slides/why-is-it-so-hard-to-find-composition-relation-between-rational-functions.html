@@ -395,13 +395,17 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       <div class="lemma">
-        For any $B>0$ and a number field $K$, we have $C_f>B$ for all but finitely many degree $d_f>1$ rational maps $f:\mathbb{P}^1(K)\to\mathbb{P}^1(K)$.
+        <p>
+          For any $B>0$ and a number field $K$, we have $C_f>B$ for all but finitely many degree $d_f>1$ rational maps $f:\mathbb{P}^1(K)\to\mathbb{P}^1(K)$.
+        </p>
       </div>
       <p>draft of proof:</p>
       <ul>
-        <li class="fragment custom blur" data-fragment-index="2">We know there are only finitely many rational function satisfies $h(f)<B$.</li>
+        <li class="fragment custom blur" data-fragment-index="2">We know there are only finitely many rational function satisfies $h(f)&lt B$.</li>
         <li class="fragment custom blur" data-fragment-index="3">When $f$ is a polynomial, it is a consequence of Vandermond matrices.</li>
+        <li class="fragment custom blur" data-fragment-index="4">When $f$ is a rational function on $\mathbb{P}^1(K)$, we need to cleverly applying a change of coordinate such that we can use the result from $f$ being a polynomial.</li>
       </ul>
+      <p class="fragment" data-fragment-index="5">J. Bell provides us a method to prove this result for the rational map on $\mathbb{P}^N(K)$ by nullstellensatz</p>
     </textarea>
   </section>
  </section>
