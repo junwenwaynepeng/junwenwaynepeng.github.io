@@ -246,8 +246,8 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       ## A well-known inequality
-      Let $f$ be a rational function. Let $d$ be the degree of $f$. Then, we have a constant $C$, dependent only on $f$, such that
-      $$|h(f(\alpha))-dh(\alpha)| < C $$
+      Let $f$ be a rational function. Let $d$ be the degree of $f$. Then, we have a constant $C_f$, dependent only on $f$, such that
+      $$|h(f(\alpha))-dh(\alpha)| < C_f $$
       <aside class="notes">
         <ul>
           <li>To utilize a naive height effectively in a dynamical system, it's necessary to examine how a naive height interacts with a rational function.</li>
@@ -343,7 +343,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
           We have
           $$\dfrac{C_f}{d}\left(1-\dfrac{1}{d-1}\right)<|h_f(\alpha)-h(\alpha)|<\dfrac{C_f}{d-1}$$
           and
-          $$|h_f(\alpha)-\dfrac{h(f^i(\alpha))}{d^i}|<\dfrac{C_f}{d^i(d-1)}$$
+          $$\left|h_f(\alpha)-\dfrac{h(f^i(\alpha))}{d^i}\right|<\dfrac{C_f}{d^i(d-1)}$$
           for $\alpha\in\mathbb{P}^N(\bar{Q})$.
         </p>
       </div>
@@ -351,30 +351,34 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
   <section data-markdown>
     <textarea data-template>
-        To show that $\langle \Phi^j, \Psi^j\rangle$ is free, we need to show that, for some $P\in\mathbb{P}^N(\bar{\mathbb{Q}})$,
-        
-        $$|\hat{h}_\Phi(P)-\hat{h}_\Psi(P)|\geq \left|\hat{h}_\Phi(P)-\dfrac{h(\Phi^j(P))}{d_\Phi^j}\right|+\left|\hat{h}_\Psi(P)-\dfrac{h(\Psi^j(P))}{d_\Psi^j}\right|.$$
+      <div class="small">
+        <p>
+          To show that $\langle \Phi^j, \Psi^j\rangle$ is free, we need to show that, for some $P\in\mathbb{P}^N(\bar{\mathbb{Q}})$,
+          
+          $$|\hat{h}_\Phi(P)-\hat{h}_\Psi(P)|\geq \left|\hat{h}_\Phi(P)-\dfrac{h(\Phi^j(P))}{d_\Phi^j}\right|+\left|\hat{h}_\Psi(P)-\dfrac{h(\Psi^j(P))}{d_\Psi^j}\right|.$$
 
-        By the lemma, we have
-        $$
-        \begin{align*}
-            |\hat{h}_\Phi(P)-\hat{h}_\Psi(P)|&\geq |\hat{h}_\Phi(P)-h(P)|-|h(P)-\hat{h}_\Psi(P)|\\
-            &\geq \dfrac{C_\Phi}{d_\Phi}\left(1-\dfrac{1}{d_\Phi-1}\right)-\frac{C_\Psi}{d_\Psi-1}.
-        \end{align*}
-        $$
-        By Lemma~\ref{lem: finiteness}, we have
-        $$
-        C_\Phi>\frac{d_\Phi(d_\Phi-1)(d_\Psi+1)}{(d_\Phi-3)d_\Psi(d_\Psi-1)}C_\Psi
-        $$
-        for all but finitely many $\Phi$ with $d_\Phi>3$. Then, it implies
-        $$
-        \begin{align*}
-        \dfrac{C_\Phi}{d_\Phi}\left(1-\dfrac{1}{d_\Phi-1}\right)-&\frac{C_\Psi}{d_\Psi-1} = \frac{(d_\Phi-2)d_\Psi(d_\Psi-1)C_\Phi-d_\Phi(d_\Phi-1)d_\Psi C_\Psi}{d_\Phi(d_\Phi-1)d_\Psi(d_\Psi-1)}\\
-        =& \frac{d_\Psi(d_\Psi-1)C_\Phi+d_\Phi(d_\Phi-1)C_\Psi+d_\Psi(d_\Psi-1)(d_\Phi-3)C_\Phi-d_\Phi(d_\Phi-1)(d_\Psi+1)C_\Psi}{d_\Phi(d_\Phi-1)d_\Psi(d_\Psi-1)}\\
-        >& \frac{C_\Phi}{d_\Phi(d_\Phi-1)}+\frac{C_\Psi}{d_\Psi(d_\Psi-1)}.
-        \end{align*}
-        $$
-        Therefore, we conclude that $j=1$.
+          By the lemma, we have
+          $$
+          \begin{align*}
+              |\hat{h}_\Phi(P)-\hat{h}_\Psi(P)|&\geq |\hat{h}_\Phi(P)-h(P)|-|h(P)-\hat{h}_\Psi(P)|\\
+              &\geq \dfrac{C_\Phi}{d_\Phi}\left(1-\dfrac{1}{d_\Phi-1}\right)-\frac{C_\Psi}{d_\Psi-1}.
+          \end{align*}
+          $$
+          By Lemma~\ref{lem: finiteness}, we have
+          $$
+          C_\Phi>\frac{d_\Phi(d_\Phi-1)(d_\Psi+1)}{(d_\Phi-3)d_\Psi(d_\Psi-1)}C_\Psi
+          $$
+          for all but finitely many $\Phi$ with $d_\Phi>3$. Then, it implies
+          $$
+          \begin{align*}
+          \dfrac{C_\Phi}{d_\Phi}\left(1-\dfrac{1}{d_\Phi-1}\right)-&\frac{C_\Psi}{d_\Psi-1} = \frac{(d_\Phi-2)d_\Psi(d_\Psi-1)C_\Phi-d_\Phi(d_\Phi-1)d_\Psi C_\Psi}{d_\Phi(d_\Phi-1)d_\Psi(d_\Psi-1)}\\
+          =& \frac{d_\Psi(d_\Psi-1)C_\Phi+d_\Phi(d_\Phi-1)C_\Psi+d_\Psi(d_\Psi-1)(d_\Phi-3)C_\Phi-d_\Phi(d_\Phi-1)(d_\Psi+1)C_\Psi}{d_\Phi(d_\Phi-1)d_\Psi(d_\Psi-1)}\\
+          >& \frac{C_\Phi}{d_\Phi(d_\Phi-1)}+\frac{C_\Psi}{d_\Psi(d_\Psi-1)}.
+          \end{align*}
+          $$
+          Therefore, we conclude that $j=1$.
+        </p>
+      </div>
     </textarea>
   </section>
  </section>
