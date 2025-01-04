@@ -462,7 +462,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
 </section>
 <section>
-    <section data-markdown>
+  <section data-markdown>
     <textarea data-template>
       #### Tits alternative(Tits, 1972)
       <div class="theorem fragment" data-fragment-index="2">
@@ -480,8 +480,28 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         </svg>
       </div>
       <div class="note fragment" data-fragment-index="3">
-        <p><strong>Question!</strong> does our definition of the finitely generated semigroup nilpotent-by-finite?</p>
+        <p><strong>Question!</strong> does our definition of the finitely generated semigroup nilpotent-by-finite? How can we define nilpotent-by-finite for semigroups?</p>
       </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <div class="definition fragment" data-fragment-index="1">
+        <p>
+          We say a group $G$ is nilpotent if $G$ has a series of normal subgroup
+          $$G=G_0\triangleleft G_1\triangleright G_2\triangleright\cdots \triangleright G_n=\{1\}$$
+          where $G_i=[G,G_{i-1}]$
+        </p>
+      </div>
+      <div class="definition fragment" data-fragment-index="2">
+        <p>
+          We say a cancellative seimgroup $S$ is nilpotent if the group of fraction of $S$ is nilpotent.
+        </p>
+      </div>
+      <p class="fragment" data-fragment-index="3">
+        A semigroup is cancellative if it satisfies
+        $$\text{both } ac=bc\text{ or }ca=cb\implies a=b.$$
+      </p>
     </textarea>
   </section>
 </section>
