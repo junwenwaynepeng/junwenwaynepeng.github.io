@@ -424,7 +424,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <h5>(:) - Tsai - Tucker, JEMS, 2023)</h5>
       <div class="theorem">
         <p>
-          Given a morphism $g:\mathbb{P}^1\to\mathbb{P}^1$ of degree $d_g>1$, the semigroup $\langle f,g\rangle$ is free for all but finitely many $f:\mathbb{P}^1\to\mathbb{P}^1$ of degree $d_f>3$. In particular, the semigroup $\langle f^2, g\rangle$  is free for all but finitely many $f$.
+          Given a morphism $g:\mathbb{P}^1\to\mathbb{P}^1$ of degree $d_g>1$, the semigroup $\langle f,g\rangle$ is free for all but finitely many $f:\mathbb{P}^1\to\mathbb{P}^1$ of degree $d_f>3$. In particular, the semigroup $\langle f^2, g\rangle$  is free for all but finitely many $f$ of degree $d_f$.
         </p>
       </div>
     </textarea>
@@ -454,7 +454,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
 
   <section>
-    <p>A finitely generated semigroup $G=S^*/\mathcal{R}$ is a semigroup with the following properties:</p>
+    <p>A finitely generated semigroup $G=\Sigma^*_{<\infty}/\mathcal{R}$ is a semigroup with the following properties:</p>
     <ol>
       <li>Let equivalent classes $[w_1]$ and $[w_2]$ belong to $G$. If $[w_1]=[w_2]$, then $|w_1|_s = |w_2|_s$ (counting the number of characters to be $s$) for all $s\in S$ <span style="color:#A15F9A;">(If two composition are the same, then they use the same number of $f$ and $g$.)</span></li>
       <li>There exists a positive integer $N$ such that $\#\mathcal{U}_I/\mathcal{R}\leq N$ for all indices $I$ <span style="color:#A15F9A;">(Number of possible composition result is bounded.)</span></li>
@@ -466,7 +466,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
   <section data-markdown>
     <textarea data-template>
-      A set of relations $\mathcal{R'}$ is called <em>basic relations</em> if no relation in $\mathcal{R'}$ can be deduced from any other relations in $\mathcal{R'}$, and all relations in $\R$ can be deduced from $R'$. 
+      A set of relations $\mathcal{R'}$ is called <em>basic relations</em> if no relation in $\mathcal{R'}$ can be deduced from any other relations in $\mathcal{R'}$, and all relations in $\mathcal{R}$ can be deduced from $R'$. 
     </textarea>
   </section>
   <section>
@@ -505,18 +505,18 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <h4>Attempt at defining nilpotent-by-finite semigroup</h4>
       <div class="definition fragment" data-fragment-index="1">
         <p>
-          We say a group $G$ is _nilpotent_ if $G$ has a series of normal subgroup
-          $$G=G_0\triangleleft G_1\triangleright G_2\triangleright\cdots \triangleright G_n=\{1\}$$
+          We say a group $G$ is <em>nilpotent</em> if $G$ has a series of normal subgroup
+          $$G=G_0\triangleright G_1\triangleright G_2\triangleright\cdots \triangleright G_n=\{1\}$$
           where $G_i=[G,G_{i-1}]$.
         </p>
       </div>
       <div class="definition fragment" data-fragment-index="2">
         <p>
-          We say a cancellative seimgroup $M$ is _nilpotent_ if the group of fraction of $M$ is nilpotent.
+          We say a cancellative seimgroup $M$ is <em>nilpotent</em> if the group of fraction of $M$ is nilpotent.
         </p>
       </div>
       <p class="fragment" data-fragment-index="3">
-        A semigroup is _cancellative_ if it satisfies
+        A semigroup is <em>cancellative</em> if it satisfies
         $$\text{both } ac=bc\text{ and }ca=cb\implies a=b.$$
       </p>
     </textarea>
@@ -527,7 +527,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         <p>
           For $x$, $y$, $u_1$, $u_2$, $\ldots\in S$, we define $x_0=x$, $y_0=y$,
           $$x_i=y_{i-1}u_ix_{i-1}\text{ and }y_i=x_{i-1}u_iy_{i-1}.$$
-          We say a semigroup $M$ is _nilpotent_ if for any $x$, $y$, $u_1$, $u_2$, $\ldots\in S$, there exists an integer $n$ such that $x_n=y_n$. 
+          We say a semigroup $M$ is <em>nilpotent</em> if for any $x$, $y$, $u_1$, $u_2$, $\ldots\in S$, there exists an integer $n$ such that $x_n=y_n$. 
         </p>
       </div>
       <div class="definition fragment" data-fragment-index="2">
