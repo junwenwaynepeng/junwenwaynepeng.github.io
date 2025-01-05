@@ -119,13 +119,13 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section data-markdown>
     <section data-template>
     <h4>Growth rate</h4>
-    <p class="fragment" data-fragment-index="1">The existence of any relation between generators results in a reduction in the count of distinct elements within $\Sigma^*_n$, leading to the inequality $\#\Sigma^*_n\leq (\#\Sigma)^n$.</p>
+    <p class="fragment" data-fragment-index="1">Let $\mathcal{R}$ be the set of composition relations. The existence of any relation between generators results in a reduction in the count of distinct elements within $\Sigma^*_n$, leading to the inequality $\#\Sigma^*_n/\mathcal{R}\leq (\#\Sigma)^n$.</p>
     <div class="example fragment" data-fragment-index="3">
       <p>
           Let $\Sigma=\{f_1,\ f_2,\ \ldots,\ f_m\}$, and assume $f_if_j=f_jf_i$ for all $i$ and $j$.
         <ul>
-          <li>For $n=2$, $\#\Sigma_n^*=n+1$.</li>
-          <li>For $n>2$, $\#\Sigma_n^*=H^m_n$.</li>
+          <li>For $n=2$, $\#\Sigma_n^*/\mathcal{R}=n+1$.</li>
+          <li>For $n>2$, $\#\Sigma_n^*/\mathcal{R}=H^m_n$.</li>
         </ul>
       </p>
     </div>
@@ -138,6 +138,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
   <section data-markdown>
     <textarea data-template>
+      Let $S_{\dot}=\Sigma^{\*}_{\dot}/\mathcal{R}$.
       <div class="definition">
         <p>We say the <em>growth rate</em> of the semigroup $\langle \Sigma\rangle$ is $f(n)$ if $\#\Sigma^*_n=O(f(n))$. A <em>polynomially bounded growth</em> corresponds to $f(n)$ being a polynomial, while an <em>exponentially growth</em> corresponds to $f(n)$ being an exponential function.</p>
       </div>
@@ -466,7 +467,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
   <section data-markdown>
     <textarea data-template>
-      A set of relations $\mathcal{R'}$ is called <em>basic relations</em> if no relation in $\mathcal{R'}$ can be deduced from any other relations in $\mathcal{R'}$, and all relations in $\mathcal{R}$ can be deduced from $R'$. 
+      A set of relations $\mathcal{R'}$ is called <em>basic relations</em> if no relation in $\mathcal{R'}$ can be deduced from any other relations in $\mathcal{R'}$, and all relations in $\mathcal{R}$ can be deduced from $\mathcal{R}'$. 
     </textarea>
   </section>
   <section>
