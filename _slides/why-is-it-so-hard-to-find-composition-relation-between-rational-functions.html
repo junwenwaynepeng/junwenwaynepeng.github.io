@@ -356,7 +356,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
           Let $d_f$ be the degree of $f$. We have
           $$\dfrac{C_f}{d_f}\left(1-\dfrac{1}{d_f-1}\right)<|h_f(\alpha)-h(\alpha)|<\dfrac{C_f}{d_f-1}$$
           and
-          $$\left|h_f(\alpha)-\dfrac{h(f^i(\alpha))}{d_f^i}\right|<\dfrac{C_f}{d_f^i(d_F-1)}$$
+          $$\left|h_f(\alpha)-\dfrac{h(f^i(\alpha))}{d_f^i}\right|<\dfrac{C_f}{d_f^i(d_f-1)}$$
           for $P\in\mathbb{P}^N(\bar{Q})$.
         </p>
       </div>
@@ -407,12 +407,12 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       <div class="lemma">
         <p>
-          For any $B>0$ and a number field $K$, we have $C_f>B$ for all but finitely many degree $d_f>1$ rational maps $f:\mathbb{P}^1(K)\to\mathbb{P}^1(K)$.
+          For any $B>0$, integer $d_f>1$, and a number field $K$, we have $C_f>B$ for all but finitely many degree $d_f$ rational maps $f:\mathbb{P}^1(K)\to\mathbb{P}^1(K)$.
         </p>
       </div>
       <p>draft of proof:</p>
       <ul>
-        <li class="fragment custom blur" data-fragment-index="2">We know there are only finitely many rational function satisfies $h(f)&lt B$.</li>
+        <li class="fragment custom blur" data-fragment-index="2">We know there are only finitely many rational function satisfies $h(f)&lt B$ (Northcott's Theorem).</li>
         <li class="fragment custom blur" data-fragment-index="3">When $f$ is a polynomial, it is a consequence of Vandermond matrices.</li>
         <li class="fragment custom blur" data-fragment-index="4">When $f$ is a rational function on $\mathbb{P}^1(K)$, we need to cleverly applying a change of coordinate such that we can use the result from $f$ being a polynomial.</li>
       </ul>
