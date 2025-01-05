@@ -26,8 +26,12 @@
   }
 
 .note {
-  background-color: #000000;
+  background-color: #ffdddd;
   border-left: 6px solid #f44336;
+
+}
+.note {
+  color: #000000;
 }
 
 .small p {
