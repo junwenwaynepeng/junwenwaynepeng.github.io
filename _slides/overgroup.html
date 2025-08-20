@@ -27,10 +27,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
 </style>
       <style>
 .three-column-list {
-  -webkit-column-count: 3; /* For older WebKit browsers */
-  -moz-column-count: 3;    /* For older Firefox browsers */
-  column-count: 3;         /* Standard property */
-  column-gap: 20px;        /* Spacing between columns */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 20px;
 }
 .polynomial-list li {
   margin-bottom: 8px;
