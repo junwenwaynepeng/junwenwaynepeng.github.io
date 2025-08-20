@@ -28,11 +28,12 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <style>
 .three-column-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);   /* always 3 columns */
+  gap: 20px;                               /* space between columns */
+  list-style-position: inside;
 }
-.polynomial-list li {
-  margin-bottom: 8px;
+.three-column-list li {
+  break-inside: avoid;   /* prevent formulas from breaking between rows */
 }
 </style>
 <section>
