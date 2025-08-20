@@ -8,7 +8,7 @@
   background-color: rgb(222,222,231);
   box-shadow: 5px 10px 8px #888888;
 }
-.theorem::before {
+/*.theorem::before {
   content: "Theorem. ";
   font-weight: bold;
   font-style: normal;
@@ -19,6 +19,26 @@
   padding: 10px 5px 5px 15px;
   background-color: rgb(38, 38, 134);
   text-align: left;
+}*/
+.theorem-header {
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  width: -webkit-fill-available;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 5px 5px 15px;
+  background-color: rgb(38, 38, 134);
+  text-align: left;
+}
+.theorem-header::before {
+  content: "Theorem";
+  margin-right: 6px;
+}
+.theorem-authors {
+  font-weight: normal;
+  font-style: italic;
+  margin-left: 8px;
 }
 .theorem p {
   padding: 15px 15px 15px 15px;
