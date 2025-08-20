@@ -26,11 +26,11 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   }
 </style>
       <style>
-.polynomial-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 10px 20px; /* row-gap, column-gap */
-  list-style-position: inside; /* keep numbering visible */
+.three-column-list {
+  -webkit-column-count: 3; /* For older WebKit browsers */
+  -moz-column-count: 3;    /* For older Firefox browsers */
+  column-count: 3;         /* Standard property */
+  column-gap: 20px;        /* Spacing between columns */
 }
 .polynomial-list li {
   margin-bottom: 8px;
@@ -103,7 +103,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <h4>
         List all degree $2$ PCF rational maps and degree $3$ PCF polynomials.
       </h4>
-      <ol class="polynomial-list">
+      <ol class="three-column-list">
         <li>\( z^{3} \)</li>
         <li>\( -z^{3} + 1 \)</li>
         <li>\( -2z^{3} + 3z^{2} + \tfrac{1}{2} \)</li>
@@ -120,7 +120,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         <li>\( -\tfrac{1}{4}z^{3} + \tfrac{3}{2}z + 2 \)</li>
         <li>\( -\tfrac{1}{28}z^{3} - \tfrac{3}{4}z + \tfrac{7}{2} \)</li>
       </ol>
-      <ol class="polynomial-list">
+      <ol class="three-column-list">
         <li>\( z^{2} \)</li>
         <li>\( \frac{1}{z^{2}} \)</li>
         <li>\( z^{2} - 2 \)</li>
