@@ -25,6 +25,17 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       flex: 1;
   }
 </style>
+      <style>
+.polynomial-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 10px 20px; /* row-gap, column-gap */
+  list-style-position: inside; /* keep numbering visible */
+}
+.polynomial-list li {
+  margin-bottom: 8px;
+}
+</style>
 <section>
   <section data-markdown>
     <textarea data-template>
@@ -51,11 +62,12 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
   <section data-markdown>
     <textarea>
-      <p class="fragment" data-fragment-index="0">
+      <h2>PCF maps</h2>
+      <p>
         Recall that a <em>critical point</em> $p$ of $f$ is a solution of $f'(x)=0$.
       </p>
       <p class="fragment" data-fragment-index="1"> 
-        A ratrional function $f$ is called <em>post-critically finite</em> map if all critical points of $f$ are preperiodic points.
+        A ratrional function $f$ is called <em>post-critically finite (PCF)</em> map if all critical points of $f$ are preperiodic points.
       </p>
       <div class="example fragment" data-fragment-index="2">
         <p>The following are PCF maps: $x^n$, $x^2-1$, $x^2-2$ ....</p>
@@ -72,12 +84,52 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
           For any fixed integers $d \geq 2$ and $B \geq 1$, there are only finitely many conjugacy classes of post-critically finite rational maps of degree $d$ which can be defined over a number field of degree at most $B$, except (when $d$ is a perfect square) for the infinite family of flexible Lattès maps.
         </p>
       </div>
-      
+      <p class="fragment" data-fragment-index="1">
+        Proposed by Silverman, it is natural to define
+        $$h_{crit}(f)=\sum_{p\in\mathbb{P}^1(\bar{K})}(e_p(f)-1)h_f(p)$$
+        where $e_p(f)$ is the ramification index of $f$ at $p$ for measuring the post-critical complexity of a rational map defined over $\bar{K}$ 
+      </p>
+      <p class="fragment" data-fragment-index="2">
+        It is immediately that $h_{crit}(f)=0$ if and only if $f$ is post-critically finite.
+      </p>
     </textarea>
   </section>
   <section>
     <textarea>
-      list all degree 2 pcf and degree 3 pcf poly
+      <h2>
+        List all degree $2$ PCF rational maps and degree $3$ PCF polynomials.
+      </h2>
+      <ol class="polynomial-list">
+        <li>\( z^{3} \)</li>
+        <li>\( -z^{3} + 1 \)</li>
+        <li>\( -2z^{3} + 3z^{2} + \tfrac{1}{2} \)</li>
+        <li>\( -2z^{3} + 3z^{2} \)</li>
+        <li>\( -z^{3} + \tfrac{3}{2}z^{2} - 1 \)</li>
+        <li>\( 2z^{3} - 3z^{2} + 1 \)</li>
+        <li>\( 2z^{3} - 3z^{2} + \tfrac{1}{2} \)</li>
+        <li>\( z^{3} - \tfrac{3}{2}z^{2} \)</li>
+        <li>\( -3z^{3} + \tfrac{9}{2}z^{2} \)</li>
+        <li>\( -4z^{3} + 6z^{2} - \tfrac{1}{2} \)</li>
+        <li>\( 4z^{3} - 6z^{2} + \tfrac{3}{2} \)</li>
+        <li>\( 3z^{3} - \tfrac{9}{2}z^{2} + 1 \)</li>
+        <li>\( -z^{3} + \tfrac{3}{2}z^{2} - 1 \)</li>
+        <li>\( -\tfrac{1}{4}z^{3} + \tfrac{3}{2}z + 2 \)</li>
+        <li>\( -\tfrac{1}{28}z^{3} - \tfrac{3}{4}z + \tfrac{7}{2} \)</li>
+      </ol>
+      <ol class="map-list">
+        <li>\( z^{2} \)</li>
+        <li>\( \frac{1}{z^{2}} \)</li>
+        <li>\( z^{2} - 2 \)</li>
+        <li>\( z^{2} - 1 \)</li>
+        <li>\( \tfrac{1}{2}(z - 1)^{2} \)</li>
+        <li>\( \frac{1}{(z - 1)^{2}} \)</li>
+        <li>\( -\frac{1}{4}z^{2} - 4z \)</li>
+        <li>\( -\frac{4}{9}z^{2} - 12z \)</li>
+        <li>\( \frac{2}{(z - 1)^{2}} \)</li>
+        <li>\( \frac{2z + 1}{4z - 2z^{2}} \)</li>
+        <li>\( -\frac{2z}{2z^{2} - 4z + 1} \)</li>
+        <li>\( \frac{3z^{2} - 4z + 1}{1 - 4z} \)</li>
+      </ol>
     </textarea>
   </section>
 </section>
