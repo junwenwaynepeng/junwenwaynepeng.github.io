@@ -25,16 +25,17 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       flex: 1;
   }
 </style>
-      <style>
-.three-column-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);   /* always 3 columns */
-  gap: 20px;                               /* space between columns */
-  list-style-position: inside;
-}
-.three-column-list li {
-  break-inside: avoid;   /* prevent formulas from breaking between rows */
-}
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 10px; /* Adds a gap between grid items */
+  }
+
+  .grid-item {
+    padding: 10px;
+    /* Add other styling like background-color, border, etc. */
+  }
 </style>
 <section>
   <section data-markdown>
@@ -103,37 +104,36 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <h4>
         List all degree $2$ PCF rational maps and degree $3$ PCF polynomials.
       </h4>
-      <ol class="three-column-list">
-        <li>\( z^{3} \)</li>
-        <li>\( -z^{3} + 1 \)</li>
-        <li>\( -2z^{3} + 3z^{2} + \tfrac{1}{2} \)</li>
-        <li>\( -2z^{3} + 3z^{2} \)</li>
-        <li>\( -z^{3} + \tfrac{3}{2}z^{2} - 1 \)</li>
-        <li>\( 2z^{3} - 3z^{2} + 1 \)</li>
-        <li>\( 2z^{3} - 3z^{2} + \tfrac{1}{2} \)</li>
-        <li>\( z^{3} - \tfrac{3}{2}z^{2} \)</li>
-        <li>\( -3z^{3} + \tfrac{9}{2}z^{2} \)</li>
-        <li>\( -4z^{3} + 6z^{2} - \tfrac{1}{2} \)</li>
-        <li>\( 4z^{3} - 6z^{2} + \tfrac{3}{2} \)</li>
-        <li>\( 3z^{3} - \tfrac{9}{2}z^{2} + 1 \)</li>
-        <li>\( -z^{3} + \tfrac{3}{2}z^{2} - 1 \)</li>
-        <li>\( -\tfrac{1}{4}z^{3} + \tfrac{3}{2}z + 2 \)</li>
-        <li>\( -\tfrac{1}{28}z^{3} - \tfrac{3}{4}z + \tfrac{7}{2} \)</li>
-      </ol>
-      <ol class="three-column-list">
-        <li>\( z^{2} \)</li>
-        <li>\( \frac{1}{z^{2}} \)</li>
-        <li>\( z^{2} - 2 \)</li>
-        <li>\( z^{2} - 1 \)</li>
-        <li>\( \tfrac{1}{2}(z - 1)^{2} \)</li>
-        <li>\( \frac{1}{(z - 1)^{2}} \)</li>
-        <li>\( -\frac{1}{4}z^{2} - 4z \)</li>
-        <li>\( -\frac{4}{9}z^{2} - 12z \)</li>
-        <li>\( \frac{2}{(z - 1)^{2}} \)</li>
-        <li>\( \frac{2z + 1}{4z - 2z^{2}} \)</li>
-        <li>\( -\frac{2z}{2z^{2} - 4z + 1} \)</li>
-        <li>\( \frac{3z^{2} - 4z + 1}{1 - 4z} \)</li>
-      </ol>
+      <div class="grid-container">
+        <div class="grid-item">\( z^{3} \)</div>
+        <div class="grid-item">\( -z^{3} + 1 \)</div>
+        <div class="grid-item">\( -2z^{3} + 3z^{2} + \tfrac{1}{2} \)</div>
+        <div class="grid-item">\( -2z^{3} + 3z^{2} \)</div>
+        <div class="grid-item">\( -z^{3} + \tfrac{3}{2}z^{2} - 1 \)</div>
+        <div class="grid-item">\( 2z^{3} - 3z^{2} + 1 \)</div>
+        <div class="grid-item">\( 2z^{3} - 3z^{2} + \tfrac{1}{2} \)</div>
+        <div class="grid-item">\( z^{3} - \tfrac{3}{2}z^{2} \)</div>
+        <div class="grid-item">\( -3z^{3} + \tfrac{9}{2}z^{2} \)</div>
+        <div class="grid-item">\( -4z^{3} + 6z^{2} - \tfrac{1}{2} \)</li>
+        <div class="grid-item">\( 4z^{3} - 6z^{2} + \tfrac{3}{2} \)</li>
+        <div class="grid-item">\( 3z^{3} - \tfrac{9}{2}z^{2} + 1 \)</div>
+        <div class="grid-item">\( -z^{3} + \tfrac{3}{2}z^{2} - 1 \)</div>
+        <div class="grid-item">\( -\tfrac{1}{4}z^{3} + \tfrac{3}{2}z + 2 \)</div>
+        <div class="grid-item">\( -\tfrac{1}{28}z^{3} - \tfrac{3}{4}z + \tfrac{7}{2} \)</div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">\( z^{2} \)</div>
+        <div class="grid-item">\( \frac{1}{z^{2}} \)</div>
+        <div class="grid-item">\( z^{2} - 2 \)</div>
+        <div class="grid-item">\( z^{2} - 1 \)</div>
+        <div class="grid-item">\( \tfrac{1}{2}(z - 1)^{2} \)</div>
+        <div class="grid-item">\( \frac{1}{(z - 1)^{2}} \)</div>
+        <div class="grid-item">\( -\frac{1}{4}z^{2} - 4z \)</div>
+        <div class="grid-item">\( -\frac{4}{9}z^{2} - 12z \)</div>
+        <div class="grid-item">\( \frac{2}{(z - 1)^{2}} \)</div>>
+        <div class="grid-item">\( -\frac{2z}{2z^{2} - 4z + 1} \)</div>
+        <div class="grid-item">\( \frac{3z^{2} - 4z + 1}{1 - 4z} \)</div>
+      </div>
     </textarea>
   </section>
 </section>
