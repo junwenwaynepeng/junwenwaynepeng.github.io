@@ -1,25 +1,21 @@
+/* ===== Shared look & feel ===== */
+:root{
+  --shadow: 5px 10px 8px #888888;
+  --font-stack: "Times New Roman", Times, serif;
+  --body-color: black;
+}
+
+/* ===== Theorem (navy) ===== */
 .theorem {
   display: block;
   font-style: italic;
   font-size: 24px;
-  font-family: "Times New Roman";
-  color: black;
+  font-family: var(--font-stack);
+  color: var(--body-color);
   border-radius: 10px;
-  background-color: rgb(222,222,231);
-  box-shadow: 5px 10px 8px #888888;
+  background-color: rgb(222, 222, 231); /* light navy-gray */
+  box-shadow: var(--shadow);
 }
-/*.theorem::before {
-  content: "Theorem. ";
-  font-weight: bold;
-  font-style: normal;
-  display: inline-block;
-  width: -webkit-fill-available;
-  color: white;
-  border-radius: 10px 10px 0 0;
-  padding: 10px 5px 5px 15px;
-  background-color: rgb(38, 38, 134);
-  text-align: left;
-}*/
 .theorem-header {
   font-weight: bold;
   font-style: normal;
@@ -28,7 +24,7 @@
   color: white;
   border-radius: 10px 10px 0 0;
   padding: 10px 5px 5px 15px;
-  background-color: rgb(38, 38, 134);
+  background-color: rgb(38, 38, 134); /* navy */
   text-align: left;
 }
 .theorem-header::before {
@@ -41,92 +37,19 @@
   margin-left: 8px;
 }
 .theorem p {
-  padding: 15px 15px 15px 15px;
-}
-.example {
-  display: block;
-  font-size: 24px;
-  font-family: "Times New Roman";
-  color: black;
-  border-radius: 10px;
-  background-color: rgb(222, 222, 231);
-  box-shadow: 5px 10px 8px #888888;
-}
-.example::before {
-  content: "Example. ";
-  font-weight: bold;
-  font-style: normal;
-  display: inline-block;
-  width: -webkit-fill-available;
-  color: white;
-  border-radius: 10px 10px 0 0;
-  padding: 10px 5px 5px 15px;
-  background-color: rgb(64, 142, 156); 
-  text-align: left;
-}
-
-.example p {
-  padding: 15px 15px 15px 15px;
-}
-.definition {
-  display: block;
-  font-size: 24px;
-  font-family: "Times New Roman";
-  color: black;
-  border-radius: 10px;
-  background-color: rgb(219, 233, 252);
-  box-shadow: 5px 10px 8px #888888;
-}
-.definition::before {
-  content: "Definition. ";
-  font-weight: bold;
-  font-style: normal;
-  display: inline-block;
-  width: -webkit-fill-available;
-  color: white;
-  border-radius: 10px 10px 0 0;
-  padding: 10px 5px 5px 15px;
-  background-color: rgb(37, 124, 189);
-  text-align: left;
-}
-.definition p {
   padding: 15px;
 }
-.collorary {
-  display: block;
-  font-style: italic;
-  font-size: 24px;
-  font-family: "Times New Roman";
-  color: black;
-  border-radius: 10px;
-  background-color: rgb(190, 150, 220);
-  box-shadow: 5px 10px 8px #888888;
-}
-.collorary::before {
-  content: "Collorary. ";
-  font-weight: bold;
-  font-style: normal;
-  display: inline-block;
-  width: -webkit-fill-available;
-  color: white;
-  border-radius: 10px 10px 0 0;
-  padding: 10px 5px 5px 15px;
-  background-color: rgb(80, 20, 120);
-  text-align: left;
-}
 
-.collorary p {
-  padding: 15px;
-}
+/* ===== Lemma (royal blue) ===== */
 .lemma {
   display: block;
   font-style: italic;
   font-size: 24px;
-  font-family: "Times New Roman";
-  color: black;
+  font-family: var(--font-stack);
+  color: var(--body-color);
   border-radius: 10px;
-  background-color: rgb(211, 227, 255);
-  box-shadow: 5px 10px 8px #888888;
+  background-color: rgb(211, 227, 255); /* very light blue */
+  box-shadow: var(--shadow);
 }
 .lemma::before {
   content: "Lemma. ";
@@ -137,24 +60,104 @@
   color: white;
   border-radius: 10px 10px 0 0;
   padding: 10px 5px 5px 15px;
-  background-color: rgb(0, 51, 204);
+  background-color: rgb(0, 51, 204); /* royal blue */
   text-align: left;
 }
 .lemma p {
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
 }
 
+/* ===== Definition (mid blue) ===== */
+.definition {
+  display: block;
+  font-size: 24px;
+  font-family: var(--font-stack);
+  color: var(--body-color);
+  border-radius: 10px;
+  background-color: rgb(219, 233, 252); /* light blue */
+  box-shadow: var(--shadow);
+}
+.definition::before {
+  content: "Definition. ";
+  font-weight: bold;
+  font-style: normal;
+  display: inline-block;
+  width: -webkit-fill-available;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 5px 5px 15px;
+  background-color: rgb(37, 124, 189); /* mid blue */
+  text-align: left;
+}
+.definition p {
+  padding: 15px;
+}
+
+/* ===== Example (teal) ===== */
+.example {
+  display: block;
+  font-size: 24px;
+  font-family: var(--font-stack);
+  color: var(--body-color);
+  border-radius: 10px;
+  background-color: rgb(224, 245, 245); /* light teal */
+  box-shadow: var(--shadow);
+}
+.example::before {
+  content: "Example. ";
+  font-weight: bold;
+  font-style: normal;
+  display: inline-block;
+  width: -webkit-fill-available;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 5px 5px 15px;
+  background-color: rgb(0, 128, 128); /* teal */
+  text-align: left;
+}
+.example p {
+  padding: 15px;
+}
+
+/* ===== Corollary (purple) ===== */
+/* Provide both .corollary (correct) and .collorary (legacy) */
+.corollary, .collorary {
+  display: block;
+  font-style: italic;
+  font-size: 24px;
+  font-family: var(--font-stack);
+  color: var(--body-color);
+  border-radius: 10px;
+  background-color: rgb(235, 220, 245); /* light purple */
+  box-shadow: var(--shadow);
+}
+.corollary::before, .collorary::before {
+  content: "Corollary. ";
+  font-weight: bold;
+  font-style: normal;
+  display: inline-block;
+  width: -webkit-fill-available;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 5px 5px 15px;
+  background-color: rgb(80, 20, 120); /* deep purple */
+  text-align: left;
+}
+.corollary p, .collorary p {
+  padding: 15px;
+}
+
+/* ===== Conjecture (orange-red) ===== */
 .conjecture {
   display: block;
   font-style: italic;
   font-size: 24px;
-  font-family: "Times New Roman";
-  color: black;
+  font-family: var(--font-stack);
+  color: var(--body-color);
   border-radius: 10px;
-  background-color: rgb(255, 230, 211); /* Adjusted background color for conjecture */
-  box-shadow: 5px 10px 8px #888888;
+  background-color: rgb(255, 235, 225); /* light peach */
+  box-shadow: var(--shadow);
 }
-
 .conjecture::before {
   content: "Conjecture. ";
   font-weight: bold;
@@ -164,25 +167,24 @@
   color: white;
   border-radius: 10px 10px 0 0;
   padding: 10px 5px 5px 15px;
-  background-color: rgb(204, 51, 0); /* Adjusted background color for conjecture */
+  background-color: rgb(204, 51, 0); /* orange-red */
   text-align: left;
 }
-
 .conjecture p {
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
 }
 
+/* ===== Proposition (green) ===== */
 .proposition {
   display: block;
   font-style: italic;
   font-size: 24px;
-  font-family: "Times New Roman";
-  color: black;
+  font-family: var(--font-stack);
+  color: var(--body-color);
   border-radius: 10px;
-  background-color: rgb(255, 230, 211); /* Adjusted background color for conjecture */
-  box-shadow: 5px 10px 8px #888888;
+  background-color: rgb(225, 245, 225); /* light green */
+  box-shadow: var(--shadow);
 }
-
 .proposition::before {
   content: "Proposition. ";
   font-weight: bold;
@@ -192,10 +194,9 @@
   color: white;
   border-radius: 10px 10px 0 0;
   padding: 10px 5px 5px 15px;
-  background-color: rgb(204, 51, 0); /* Adjusted background color for conjecture */
+  background-color: rgb(0, 128, 0); /* dark green */
   text-align: left;
 }
-
 .proposition p {
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
 }
