@@ -234,21 +234,74 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
   <section data-markdown>
     <textarea data-template>
-      <p class="fragment" data-fragment-index="1">
+      <p>
         A motivation for understanding the dynamical Galois group for number theorists is that this group can be used to estimate
         $$
         \dfrac{\# f^n(\mathbb{P}^1(\mathbb{F}_p))}{p+1}.
         $$
         This implies, for a generic rational function $p$,
         $$
-        \limsup_{p\to\infty}\dfrac{\Per(f_p,\mathbb{P}^1(\mathbb{F}_p))}{p} = 0.
+        \limsup_{p\to\infty}\dfrac{\text{Per}(f_p,\mathbb{P}^1(\mathbb{F}_p))}{p} = 0.
         $$
       </p>
     </textarea>
   </section>
   <section data-markdown>
     <textarea data-template>
-      <h3>When Will $\sigma$ be Surjective?</h3>
+      <h3>When Will $\phi$ be Surjective?</h3>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h2>Serre's open image theorem</h2>
+      <ul>
+        <li class="fragment">Let \(E\) be an elliptic curve over \(K\).</li>
+        <li class="fragment">For a prime integer \(l\), multiplication-by-\(l\) is a self-map of \(E\):  
+        \[
+        E \xrightarrow{[l]} E
+        \]
+        </li>
+        <li class="fragment">Let \(E[l^n]\) be the \(l^n\)-torsion points in \(E(\overline{K})\).  
+        (We know \(E[l^n]\cong (\mathbb{Z}/l^n\mathbb{Z})^2\).)</li>
+      </ul>
+      <p class="fragment">The inverse limit of the following chain is the Tate module:</p>
+
+      <p class="fragment">
+      $$
+      \{1\}\xleftarrow{[l]}E[l]\xleftarrow{[l]}E[l^2]\xleftarrow{[l]}E[l^3]\xleftarrow{[l]}\cdots
+      $$
+      </p>
+
+      <p class="fragment">
+      $$
+      \{1\}\xleftarrow{\times l}(\mathbb{Z}/l\mathbb{Z})^2
+      \xleftarrow{\times l}(\mathbb{Z}/l^2\mathbb{Z})^2
+      \xleftarrow{\times l}(\mathbb{Z}/l^3\mathbb{Z})^2
+      \xleftarrow{\times l}\cdots
+      $$
+      </p>
+
+      <p class="fragment">
+      $$
+      T_l(E)\cong \mathbb{Z}_l^2
+      $$
+      </p>
+
+      <p class="fragment">
+      Taking the Absolute Galois group \(G_K \coloneqq \mathrm{Gal}(\overline{K}/K)\) acting on \(T_l(E)\) induces an action of \(\mathrm{Gal}(\overline{K}/K)\) on a \(\mathbb{Z}_l\)-module, i.e. a representation
+      $$
+      G_K \xrightarrow{\rho} \mathrm{GL}_2(\mathbb{Z}_l)\subseteq \mathrm{GL}_2(\mathbb{Q}_l).
+      $$
+      </p>
+
+      <div class="theorem fragment">
+        <div class="theorem-header">
+          <span class="theorem-authors">(Serre's Open Image Theorem)</span>
+        </div>
+        <p>
+          If \(E\) is not a CM-curve, then \([\mathrm{GL}_2(\mathbb{Z}_l):\rho(G_K)]=1\) for almost all \(l\).
+        </p>
+      </div>
     </textarea>
   </section>
   <section data-markdown>
