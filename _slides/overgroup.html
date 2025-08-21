@@ -295,7 +295,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       <p class="fragment">
-      Taking the Absolute Galois group \(G_K \coloneqq \mathrm{Gal}(\overline{K}/K)\) acting on \(T_p(E)\) induces an action of \(\mathrm{Gal}(\overline{K}/K)\) on a \(\mathbb{Z}_l\)-module, i.e. a representation
+      Taking the Absolute Galois group \(G_K = \mathrm{Gal}(\overline{K}/K)\) acting on \(T_p(E)\) induces an action of \(\mathrm{Gal}(\overline{K}/K)\) on a \(\mathbb{Z}_l\)-module, i.e. a representation
       $$
       G_K \xrightarrow{\rho} \mathrm{GL}_2(\mathbb{Z}_p)\subseteq \mathrm{GL}_2(\mathbb{Q}_p).
       $$
@@ -309,6 +309,30 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
           If \(E\) is not a CM-curve, then \([\mathrm{GL}_2(\mathbb{Z}_l):\rho(G_K)]=1\) for almost all \(l\).
         </p>
       </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      ## A dynamic analog
+
+      <p class="fragment">Let \( f: K \to K \) be a rational map.</p>
+
+      <p class="fragment">
+      \[
+      \alpha \xleftarrow{f} f^{-1}(\alpha) \xleftarrow{f} f^{-2}(\alpha) \xleftarrow{f} f^{-3}(\alpha) \xleftarrow{f} \cdots
+      \]
+      </p>
+
+      <p class="fragment">
+      Taking the absolute Galois group action on the root tree \( \mathbb{T}_f(\alpha) \), the Galois action on the tree gives an embedding
+      \[
+      G_k \xrightarrow{\ \rho_{f,\alpha}\ } \operatorname{Aut}(\mathbb{T}_d).
+      \]
+      </p>
+
+      <p class="fragment">
+      (Abuse of notation) We call \([ \operatorname{Aut}(\mathbb{T}_d) : G_k ] = [ \operatorname{Aut}(\mathbb{T}_d) : G_\infty ]\) <em>Odoni's index</em>, and ask when the Odoni index is finite.
+      </p>
     </textarea>
   </section>
   <section data-markdown>
