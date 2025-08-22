@@ -341,9 +341,12 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       ## Infinite Odoni's index
       <p class="fragment">
-        We note that if the discriminant of a polynomial $f$ is a perfect square over the defining field of $f$, then the Galois action on the roots of $f$ is an even permutation. <span class="fragment">That is
-        $$[S_d:\oeperatorname{Gal}(Gal)(f)]\leq [S_d:A_d]=2$$ 
+        We note that if the discriminant of a polynomial $f$, denoted by $\operatorname{disc}(f)$ is a perfect square over the defining field of $f$, then the Galois action on the roots of $f$ is an even permutation. <span class="fragment">That is
+        $$[S_d:\operatorname{Gal}(Gal)(f)]\leq [S_d:A_d]=2$$ 
         </span>
+      </p>
+      <p class="fragment">
+        How can we create a sequence of squared $\operatorname{disc}(f^n-\alpha)$?
       </p>
     </textarea>
   </section>
@@ -368,8 +371,33 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       <h3>What's Special About PCF Maps for Arboreal Representation?</h3>
+      <p>PCF maps have infinite Odoni's index!</p>
     </textarea>
   </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h2>Geometric viewpoint (by Jones)</h2>
+      <ul>
+        <li class="fragment">
+          We refer to the $G_n\coloneqq\operatorname{Gal}(f^n(X)-t/K)$ as the arithmetic Galois group
+        </li>
+        <li class="fragment">
+          We refere to the $\overline{G_n}\coloneqq\operatorname{Gal}(f^n(X)-t/\overline{K})$. as the geometirc Galois group
+        </li>
+        <li class="fragment">
+           Let's consider the <em>stricktly post-critical orbit</em> $P\coloneqq \displaystyle \bigcup_{n\geq 1}f^n(C_f)$
+        </li>
+        <li class="fragment">
+          If $\#P<\infty$, then the geometric Galois group is isomorphic to the image of the monodromy representation
+          $$\rho:\pi_1(\PP^1_{\overline{K}}\setminus f^{-1}(P))\to \Aut(T_d)$$
+          where the kernel is isomorphic to
+          $$\cap_{n\in \N}\ker F_n$$
+          where $F_n:\pi_1(\PP^1_{\overline{K}}\setminus P)\to \text{Sym}f^{-n}(t)$. The quotient group is called <em>iteration monodromy group</em>, denoted by $\Tilde{G_n}$.}
+        </li>
+      </ul>
+    </textarea>
+  </section>
+
 </section>
 <section>
   <section data-markdown>
