@@ -44,7 +44,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         Arithmetic dynamics = number theory + dynamical systems</p> 
       <p class="fragment" data-fragment-index="1">
         A dynamical system here refers to the iteration of a rational function $f(x)$ over a number field $K$, and we denote
-        $$f^n=f\circ f^{n-1}\text{ and }f^0=x$$
+        $$f^n=f\circ f^{n-1},\quad f^0(x)=x$$
       </p>
     </textarea>
   </section>
@@ -54,7 +54,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <ul>
         <li class="fragment" data-fragment-index="1"><em>Orbit</em> of a point $p$ under $f$: $\{f^n(p)| n=0,\ 1,\ 2,\ \ldots \}$</li>
         <li class="fragment" data-fragment-index="2"><em>Preperiodic point</em> $p$: if $p$ has a finite orbit, i.e.
-        $$f^n(p)=f^m(p)\text{ for some }n< m.$$
+        $$f^n(p)=f^m(p)\quad\text{ for some }n< m.$$
         </li>
         <li class="fragment" data-fragment-index="3"><em>Periodic point</em> $p$: if $n=0$.</li>
         <li class="fragment" data-fragment-index="4"><em>Wandering point</em> $p$: if $p$ has an infinite orbit</li>
@@ -68,7 +68,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         Recall that a <em>critical point</em> $p$ of $f$ is a solution of $f'(x)=0$.
       </p>
       <p class="fragment" data-fragment-index="1"> 
-        A ratrional function $f$ is called <em>post-critically finite (PCF)</em> map if all critical points of $f$ are preperiodic points.
+        A rational function $f$ is called <em>post-critically finite (PCF)</em> map if all critical points of $f$ are preperiodic points.
       </p>
       <div class="example fragment" data-fragment-index="2">
         <p>The following are PCF maps: $x^n$, $x^2-1$, $x^2-2$ ....</p>
@@ -88,25 +88,25 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <p class="fragment" data-fragment-index="1">
         Proposed by Silverman, it is natural to define
         $$h_{crit}(f)=\sum_{p\in\mathbb{P}^1(\bar{K})}(e_p(f)-1)h_f(p)$$
-        where $e_p(f)$ is the ramification index of $f$ at $p$ for measuring the post-critical complexity of a rational map defined over $\bar{K}$ 
+        where $e_p(f)$ is the ramification index of $f$ at $p$ which measures the post-critical complexity of a rational map defined over $\bar{K}$ 
       </p>
     </textarea>
   </section>
   <section data-markdown>
     <textarea data-template>
       <p>
-        It is immediately that $h_{crit}(f)=0$ if and only if $f$ is post-critically finite.
+        It is immediate that $h_{crit}(f)=0$ if and only if $f$ is post-critically finite.
       </p>
       <p class="fragment" data-fragment-index="1">
-        Then, we have to show that $|h_{crit}(f)-h(f)|< C$. (This step is very subtle.)
+        We then show that $|h_{crit}(f)-h(f)|< C$. (This step is very subtle.)
       </p>
     </textarea>
   </section>
   <section data-markdown>
     <textarea data-template>
-      <h4>
-        List all degree $2$ PCF rational maps
-      </h4>
+      <p>
+        List of all degree $2$ PCF rational maps
+      </p>
       <div class="grid-container">
         <div class="grid-item">\( z^{2} \)</div>
         <div class="grid-item">\( \frac{1}{z^{2}} \)</div>
@@ -124,9 +124,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
   <section data-markdown>
     <textarea data-template>
-      <h4>
-        List all degree $3$ PCF polynomials.
-      </h4>
+      <p>
+        List of all degree $3$ PCF polynomials.
+      </p>
       <div class="grid-container">
         <div class="grid-item">\( z^{3} \)</div>
         <div class="grid-item">\( -z^{3} + 1 \)</div>
@@ -169,8 +169,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <p>The operation is defined as 
       $$((h_i)_{i\in I}; g)((h'_i)_{i\in I} ; g')=((h_{g'(i)})_{i\in I}(h'_i)_{i\in I};gg').$$</p>
       <p class="fragment" data-fragment-index="1">The index set $I$ is often omitted when it is clear from the context.</p>
-      <p class="fragment" data-fragment-index="2"></p>
-      <p class="fragment" data-fragment-index="3">We define
+      <p class="fragment" data-fragment-index="2">We define
       $$[G]^2=G\wr G\quad\text{and}\quad [G]^n=[G]^{n-1}\wr G\text{ for }n> 2$$
       </p>
     </textarea>
@@ -179,7 +178,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       <h3>Automorphisms of a $d$-ary Tree</h3>
       <p>
-        Let $T_d^n$ be a <em>(regular) level-$n$ $d$-ary tree</em>. An automorphism of tree, as an automorphism of a graph, is a map onto itself while preserving the edge-vertex connectivity.
+        Let $T_d^n$ be a <em>(regular) level-$n$ $d$-ary tree</em>. An automorphism of a tree (viewed as a graph) is a bijection on the vertices that preserves edge–vertex incidence.
       </p>
       <p class="fragment" data-fragment-index="1">
         Let's define $\operatorname{Aut}(T_d^n)$ be the group of automorphisms. We have
@@ -295,9 +294,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       <p class="fragment">
-      Taking the Absolute Galois group \(G_K = \mathrm{Gal}(\overline{K}/K)\) acting on \(T_p(E)\) induces an action of \(\mathrm{Gal}(\overline{K}/K)\) on a \(\mathbb{Z}_l\)-module, i.e. a representation
+      Taking the Absolute Galois group \(G_K = \operatorname{Gal}(\overline{K}/K)\) acting on \(T_p(E)\) induces an action of \(\operatorname{Gal}(\overline{K}/K)\) on a \(\mathbb{Z}_p\)-module, i.e. a representation
       $$
-      G_K \xrightarrow{\rho} \mathrm{GL}_2(\mathbb{Z}_p)\subseteq \mathrm{GL}_2(\mathbb{Q}_p).
+      G_K \xrightarrow{\rho} \operatorname{GL}_2(\mathbb{Z}_p)\subseteq \operatorname{GL}_2(\mathbb{Q}_p).
       $$
       </p>
 
@@ -306,7 +305,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
           <span class="theorem-authors">(Serre's Open Image Theorem)</span>
         </div>
         <p>
-          If \(E\) is not a CM-curve, then \([\mathrm{GL}_2(\mathbb{Z}_l):\rho(G_K)]=1\) for almost all \(l\).
+          If \(E\) is not a CM-curve, then \([\operatorname{GL}_2(\mathbb{Z}_p):\rho(G_K)]=1\) for almost all \(p\).
         </p>
       </div>
     </textarea>
@@ -323,7 +322,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       </p>
 
       <p class="fragment">
-      We call \([ \operatorname{Aut}(T_d) : G_k ] = [ \operatorname{Aut}(T_d) : G_\infty ]\) <em>Odoni's index</em>, and ask when the Odoni index is finite.
+      We call \([ \operatorname{Aut}(T_d) : G_k ] = [ \operatorname{Aut}(T_d) : G_\infty ]\) <em>Odoni's index</em>, and ask: when the Odoni index is finite?
       </p>
     </textarea>
   </section>
@@ -346,7 +345,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         </span>
       </p>
       <p class="fragment">
-        How can we create a sequence of squared $\operatorname{disc}(f^n-\alpha)$?
+        How can we construct a sequence where $\operatorname{disc}(f^n-\alpha)$ is always square?
       </p>
     </textarea>
   </section>
@@ -379,13 +378,13 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <h3>Geometric viewpoint (by Jones)</h3>
       <ul>
         <li class="fragment">
-          We refer to the $G_n=\operatorname{Gal}(f^n(X)-t/K)$ as the arithmetic Galois group.
+          We refer to $G_n=\operatorname{Gal}(f^n(X)-t/K)$ as the <em>arithmetic Galois group</em>.
         </li>
         <li class="fragment">
-          We refere to the $\overline{G_n}=\operatorname{Gal}(f^n(X)-t/\overline{K})$. as the geometirc Galois group.
+          We refer to $\overline{G_n}=\operatorname{Gal}(f^n(X)-t/\overline{K})$ as the <em>geometric Galois group</em>.
         </li>
         <li class="fragment">
-           Let's consider the <em>stricktly post-critical orbit</em> $P= \displaystyle \bigcup_{n\geq 1}f^n(C_f)$.
+           Let's consider the <em>strictly post-critical orbit</em> $P= \displaystyle \bigcup_{n\geq 1}f^n(C_f)$.
         </li>
       </ul>
     </textarea>
@@ -537,10 +536,10 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       Discussion:
       <ul>
         <li>
-          Can we found a PCF map that has dynamical Galois group isomorphic to $F_n^{(L+2O-1,L-1)}(d)$
+          Can we find a PCF map whose dynamical Galois group is isomorphic to $F_n^{(L+2O-1,L-1)}(d)$
         </li>
         <li>
-          We also show that $E_\infty^2$ has a unique chief series. Can we identify the normal series structrue of other normal group?
+          We also show that $E_\infty^2$ has a unique chief series. Can we identify the normal series structure of other normal subgroups?
         </li>
       </ul>
     </textarea>
