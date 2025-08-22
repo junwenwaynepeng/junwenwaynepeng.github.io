@@ -182,11 +182,11 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         Let $T_d^n$ be a <em>(regular) level-$n$ $d$-ary tree</em>. An automorphism of tree, as an automorphism of a graph, is a map onto itself while preserving the edge-vertex connectivity.
       </p>
       <p class="fragment" data-fragment-index="1">
-        Let's define $\text{Aut}(T_d^n)$ be the group of automorphisms. We have
+        Let's define $\operatorname{Aut}(T_d^n)$ be the group of automorphisms. We have
       </p>
       <div class="proposition">
         <p>
-          Let $\text{Aut}(T_d^n)\cong [S_d]^n$ where $S_d$ is the symmetric group of $d$ elements.
+          Let $\operatorname{Aut}(T_d^n)\cong [S_d]^n$ where $S_d$ is the symmetric group of $d$ elements.
         </p>
       </div>
     </textarea>
@@ -195,7 +195,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       <div class="example">
         <ol>
-          <li>$\text{Aut}(T_d^1)\cong S_d$</li>
+          <li>$\operatorname{Aut}(T_d^1)\cong S_d$</li>
           <li class="fragment" data-fragment-index="1">$((1,(13),(132));(23))[1,1]=[1,1]$</li>
           <li class="fragment" data-fragment-index="2">$((1,(13),(132));(23))[1,2]=[3,3]$</li>
           <li class="fragment" data-fragment-index="3">$((1,(13),(132));(23))[1,3]=[3,2]$</li>
@@ -227,7 +227,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       <h3>Arboreal Representation</h3>
       <p>
         This proposition yields an embedding
-        $$\phi:G_\infty\to \text{Aut}(T_d^\infty)$$
+        $$\phi:G_\infty\to \operatorname{Aut}(T_d^\infty)$$
         (by taking an inverse limit on $n$), and is refered to as as <em>arboreal representation.</em>
       </p>
     </textarea>
@@ -241,7 +241,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         $$
         This implies, for a generic rational function $p$,
         $$
-        \limsup_{p\to\infty}\dfrac{\text{Per}(f_p,\mathbb{P}^1(\mathbb{F}_p))}{p} = 0.
+        \limsup_{p\to\infty}\dfrac{\operatorname{Per}(f_p,\mathbb{P}^1(\mathbb{F}_p))}{p} = 0.
         $$
       </p>
     </textarea>
@@ -331,11 +331,32 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       ## Finite Odoni's index
       <ul>
-        <li class="fragment"> (Odoni, Juul, and etc.) For generic rational function defined over a global field $K$, $\Gal(f^n(X)-t/K)\cong [S_d]^n$, i.e. the Odoni's index is $1$.</li>
+        <li class="fragment"> (Odoni, Juul, and etc.) For generic rational function defined over a global field $K$, $\\operatorname{Gal}(f^n(X)-t/K)\cong [S_d]^n$, i.e. the Odoni's index is $1$.</li>
         <li class="fragment"> (Tucker, Bridy, Jones, H.-C. Li, L.-C. Hsia, and etc.) For certain families of rational functions, e.g. unit critical polynomial $x^n-c$, Odoni's index is finite.
         </li>
       </ul>
     </textarea>
+  </section>
+  <textarea data-template>
+    ## Infinite Odoni's index
+    <p>
+      We have the following proposition about discriminant of a polynomial.
+    </p>
+    <div class="proposition fragment">
+      <p>
+        Let $f$ be a polynomial over a field $K$, let $a_f$ be its leading coefficient, let $d$ be its degree, let $\alpha\in K$, and let $n\geq 2$ be an integer. The discriminant of the $n$-th iteration of $f$, with multiple roots considered to be different elements, is given by:
+        $$\disc(f^n(x)-\alpha)=(-1)^{A(d,n)}a_f^{B(d,n)}d^{d^n}\disc(f^{n-1}(x)-\alpha)^{d}\prod_{c\in \mathcal{C}_f}(f^n(c)-\alpha),$$
+        where
+        $$
+          \begin{align*}
+          A(d,n) & =d^n\left(\dfrac{d^n-1}{2}+\dfrac{d^{n-1}-1}{2}\right), \\
+          B(d,n) & =d^{2n-1}-1.
+          \end{align*}
+        $$
+        In particular, $(-1)^{A(d,n)}=\left(\frac{d}{4}\right)$ is equal to 1 if $d$ is even or if $d \equiv 1 \mod 4$, and equal to -1 otherwise.
+      </p>
+    </div>
+  </textarea>
   </section>
   <section data-markdown>
     <textarea data-template>
