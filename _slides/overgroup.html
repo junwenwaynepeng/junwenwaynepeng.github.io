@@ -412,7 +412,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         <li class="fragment">
           $G_\infty$ is finitely generated.
         </li>
-        <li>
+        <li class="fragment">
           $[S_d]^\infty$ is infinitely generated
         </li>
       </ul>
@@ -422,9 +422,23 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
 </section>
 <section>
   <section data-markdown>
-    <h1>What is the overgroup of the arboreal representation for PCF polynomials?</h1>
+    <textarea data-template>
+      <h1>What is the overgroup of the arboreal representation for PCF polynomials?</h1>
+    </textarea>
   </section>
-  <section>
+  <section data-markdown>
+    <textarea data-template>
+      ## A key lemma follows from the computation of discriminants
+      <div class="lemma">
+        Let $f$ be a PCF polynomial over $K$, and $\alpha\in K$. Let $L$ be the minimal integer such that $f^L(\mathcal{C}_f)$ is a periodic set, and let $O$ be the minimal integer such that $f^{L+O}(\mathcal{C}_f)=f^L(\mathcal{C}_f)$. Then, we have the following: 
+        <ol>
+          <li>\label{lemma:periodicdisc_1} Suppose that all critical points are periodic, and the degree of $f$ is odd. Then $\disc(f^{2O}-\alpha)$ is a square in $K$.</li>
+          <li>\label{lemma:periodicdisc_2} Suppose that all critical points are periodic, and the degree of $f$ is even. Then, $\disc(f^{O+1}-\alpha)$ is a square in $K_f^1(\alpha)$.</li>
+          <li>Suppose that a critical point is strictly preperiodic, and the degree of $f$ is odd. Then, $\disc(f^{L+2O-1}-\alpha)$ is a square in $K_f^{L-1}(\alpha)$. In particular, $K_f^{L-1}(\alpha)= K$ if $L=1$.</li>
+          <li>Suppose that a critical point is strictly preperiodic, and the degree of $f$ is even. Then,  $\disc(f^{L+O}-\alpha)$ is a square in $K_f^{L}$.</li>
+        </ol>
+      </div>
+    </textarea>
   </section>
 </section>
 
