@@ -1,0 +1,82 @@
+---
+layout: slide
+title: Overgroups of the arboreal representation of PCF polynomials
+date: 2025-8-1
+author: Wayne Peng
+coauthors:
+to: The 11th East Asia Number Theory Conference
+description: Some slides for a git and GitHub workshop using reveal.js
+categories: academic
+abstract: |
+  Consider a number field $K$ and a rational function $f$ of degree greater than 1 over $K$. By taking preimages of $\alpha\in K$ under successive iterates of $f$, an infinite $d$-ary tree $T_\infty$ rooted at $\alpha$ can be constructed. An edge is assigned between two preimages $x$ and $y$ if $f(x)=y$. The absolute Galois group of $K$, acting on $T_\infty$ through tree automorphisms, generates a subgroup $\Gal_f^\infty(\alpha)$ in the group of all automorphisms of $T_\infty$, $\Aut(T_\infty)$.
+
+  We have discovered a new class of natural overgroups in which the image of the Galois representation attached to a PCF polynomial must reside. Moreover, we have found that the image of the Galois representation of a new PCF polynomial is isomorphic to one of these overgroups. We also investigate the structure of these overgroups for specific maps, such as normalized dynamical Belyi polynomials, and show that the normal subgroups of these overgroups form a unique chief series. This allows us to bound the number of generators through group-theoretic analysis.
+tags:
+  - research
+  - academic
+  - slides
+front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morphisms/connected-graph.png"
+---
+<style>
+  .container{
+      display: flex;
+  }
+  .col{
+      flex: 1;
+  }
+</style>
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 10px; /* Adds a gap between grid items */
+  }
+
+  .grid-item {
+    padding: 10px;
+    /* Add other styling like background-color, border, etc. */
+  }
+</style>
+<section>
+  <section data-markdown>
+    <textarea data-template>
+      <ul>
+        <li class="fragment">$q$: a power of prime $p$.</li>
+        <li class="fragment">$\mathbb{F}_q$: a finite field of order $q$.</li>
+        <li class="fragment">$\mathbb{F}_q^\times=\mathbb{F}_q\setminus\{0\}</li>
+      </ul>
+      <p>A polynomial $f\in \mathbb{F}_q[x]$ is called a <em>permutation polynomial</em> if the map $f$ permutes the elements of $\mathbb{F}_q$.</p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <p>
+        What problems about permutation polynomials are studied?
+      </p>
+      <ul>
+        <li class="fragment">
+          Existence and classification (when is a polynomial a permutation?)
+        </li>
+        <li class="fragment">
+          Structure and cycle type (how does it act as a permutation?).
+        </li>
+        <li class="fragment">
+          Exceptional families (which permute infinitely many fields?).
+        </li>
+        <li class="fragment">
+          Applications and explicit constructions (geometry, cryptography, dynamics).
+        </li>
+      </ul>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <div class="definition">
+        For positive integers $n$ and $\alpha \in \mathbb{F}_q$, the Dickson polynomials (of the first kind) over $\mathbb{F}_q$ are given by
+        $$
+        D_{n}(x,\alpha)=\sum_{i=0}^{\lfloor {\frac{n}{2}}\rfloor}\frac{n}{n-i}\binom{n-i}{i}(-\alpha)^i x^{n-2i}.
+        $$
+      </div>
+    </textarea>
+  </section>
+</section>
