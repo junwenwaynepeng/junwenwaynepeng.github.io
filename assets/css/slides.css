@@ -21,6 +21,9 @@
   display: block;
   font-size: 28px;
 }
+.reveal li{
+  font-size: 28px;
+}
 .fragment.blur {
   filter: blur(5px);
 }
