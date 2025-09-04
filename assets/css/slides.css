@@ -15,9 +15,11 @@
 }
 .reveal ul {
   display: block;
+  font-size: 28px;
 }
 .reveal ol {
   display: block;
+  font-size: 28px;
 }
 .fragment.blur {
   filter: blur(5px);
