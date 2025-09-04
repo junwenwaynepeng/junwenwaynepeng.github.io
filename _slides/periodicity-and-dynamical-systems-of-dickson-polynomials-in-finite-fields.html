@@ -86,14 +86,52 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       </p>
     </textarea>
   </section>
-  <section>
-    <p>
-      The $D_n$ are also the unique monic polynomials satisfying the functional equation
-      $$D_n(u+\frac{\alpha}{u},\alpha)=u^n+\left(\frac{\alpha}{u}\right)^n$$
-      where $\alpha\in \mathbb{F}_q$ and $u\in\mathbb{F}_{q^2}^\times$. In particular, with $\phi_{\alpha}=u+\frac{\alpha}{u}$, we have
-    </p>
-    <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhjYWx7VH1fe1xcYWxwaGF9Il0sWzEsMCwiXFxtYXRoY2Fse1R9X3tcXGFscGhhXm59Il0sWzAsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzEsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzAsMSwieF5uIl0sWzAsMiwiXFxwaGlfXFxhbHBoYSIsMl0sWzIsMywiRF9uKHgsXFxhbHBoYSkiLDJdLFsxLDMsIlxccGhpX3tcXGFscGhhXm59Il1d -->
-    <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhjYWx7VH1fe1xcYWxwaGF9Il0sWzEsMCwiXFxtYXRoY2Fse1R9X3tcXGFscGhhXm59Il0sWzAsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzEsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzAsMSwieF5uIl0sWzAsMiwiXFxwaGlfXFxhbHBoYSIsMl0sWzIsMywiRF9uKHgsXFxhbHBoYSkiLDJdLFsxLDMsIlxccGhpX3tcXGFscGhhXm59Il1d&embed" width="304" height="304" style="border-radius: 8px; border: none;"></iframe>
-    <p>where $\mathcal{T}_\alpha=\phi^{-1}_\alpha(\mathbb{F}_q^\times)$.</p>
+  <section data-markdown>
+    <textarea data-template>
+      <p>
+        The $D_n$ are also the unique monic polynomials satisfying the functional equation
+        $$D_n(u+\frac{\alpha}{u},\alpha)=u^n+\left(\frac{\alpha}{u}\right)^n$$
+        where $\alpha\in \mathbb{F}_q$ and $u\in\mathbb{F}_{q^2}^\times$. In particular, with $\phi_{\alpha}=u+\frac{\alpha}{u}$, we have
+      </p>
+      <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhjYWx7VH1fe1xcYWxwaGF9Il0sWzEsMCwiXFxtYXRoY2Fse1R9X3tcXGFscGhhXm59Il0sWzAsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzEsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzAsMSwieF5uIl0sWzAsMiwiXFxwaGlfXFxhbHBoYSIsMl0sWzIsMywiRF9uKHgsXFxhbHBoYSkiLDJdLFsxLDMsIlxccGhpX3tcXGFscGhhXm59Il1d -->
+      <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhjYWx7VH1fe1xcYWxwaGF9Il0sWzEsMCwiXFxtYXRoY2Fse1R9X3tcXGFscGhhXm59Il0sWzAsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzEsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzAsMSwieF5uIl0sWzAsMiwiXFxwaGlfXFxhbHBoYSIsMl0sWzIsMywiRF9uKHgsXFxhbHBoYSkiLDJdLFsxLDMsIlxccGhpX3tcXGFscGhhXm59Il1d&embed" width="304" height="304" style="border-radius: 8px; border: none;"></iframe>
+      <p>where $\mathcal{T}_\alpha=\phi^{-1}_\alpha(\mathbb{F}_q^\times)$.</p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <p class="fragment">
+      For $\alpha\in \mathbb{F}_q$, there exists $u_{\alpha}$ with
+      $$
+        \alpha = u_\alpha + \frac{1}{u_\alpha}.
+      $$
+      </p>
+      <p>
+      <span class="fragment">We use the notation $(n)_r$ to denote $n(\mod r)$, the smallest postive integer congruent to $n$ modulo $r$. </span><span class="fragment">Let us also define
+      $$
+      S_{q-1}=\{\alpha\in\mathbb{F}_q:u_\alpha^{q-1}=1\},\qquad S_{q+1}=\{\alpha\in\mathbb{F}_q:u_{\alpha}^{q+1}=1\},\qquad S_p=\{\pm 2\}.
+      $$</span>
+      </p>
+      Then,
+      <div class="theorem fragment">
+        <div class="theorem-header">
+          <span class="theorem-authors">Q. Wang, J.L. Yucas</span>
+        </div>
+        <p>
+          As functions on $\mathbb{F}_q$, we have
+          $$
+            D_{n,k}(\alpha)=\begin{cases}
+            D_{(n)_{2p},k}(\alpha) &\text{if }\alpha\in S_p
+            D_{(n)_{q-1},k}(\alpha) &\text{if }\alpha\in S_{q-1}
+            D_{(n)_{q+2},k}(\alpha) &\text{if }\alpha\in S_{q+1}
+            \end{cases}
+          $$
+          where we denote
+          $$
+          S_{}
+          $$
+        </p>
+      </div>
+    </textarea>
   </section>
 </section>
