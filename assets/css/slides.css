@@ -11,7 +11,7 @@
 /* Apply styles to slides */
 .reveal p {
   text-align: left;
-  pedding: 15px;
+  padding: 15px;
 }
 .reveal ul {
   display: block;
