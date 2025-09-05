@@ -117,7 +117,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
   <section data-markdown>
     <textarea data-template>
-      <div class="theorem fragment">
+      <div class="theorem">
         <div class="theorem-header">
           <span class="theorem-authors">(Q. Wang, J.L. Yucas)</span>
         </div>
@@ -148,6 +148,18 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         </div>
         <p>
           Let $q$ be a prime power and $\alpha\in \mathbb{F}_{q}^\times$. The period of the sequence $[D_n(x,\alpha)\ \mathrm{mod} (x^q-x)]_{n}$ is $\frac{q^2-1}{2}$ if $2\nmid q$ and $\alpha$ is a square in $\mathbb{F}_q$, and is $q^2-1$ otherwise.
+        </p>
+      </div>
+      <div class="collorary fragment">
+        <p>
+          Let $q$ is a prime power and $\alpha\in \mathbb{F}_q^\times$. Then for $0\leq i \leq q^2-1$ we have
+          $$
+          D_{q^2-1-i}(x,\alpha) \equiv \alpha^{-i}D_{i}(x,\alpha)\ \mathrm{mod}(x^q-x).
+          $$
+          Moreover, if $2\nmid q$ and $\alpha\in \mathbb{F}_q^\times$ is a square in $\mathbb{F}_q$, then for $0\leq i \leq \frac{q^2-1}{2}$ we have
+          $$
+          D_{\frac{q^2-1}{2}-i}(x,\alpha) \equiv \alpha^{-i}D_{i}(x,\alpha)\ \mathrm{mod}(x^q-x).
+          $$
         </p>
       </div>
     </textarea>
