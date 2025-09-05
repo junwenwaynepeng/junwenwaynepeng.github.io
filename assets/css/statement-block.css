@@ -121,7 +121,7 @@
 
 /* ===== Corollary (purple) ===== */
 /* Provide both .corollary (correct) and .collorary (legacy) */
-.corollary, .collorary {
+.corollary{
   display: block;
   font-style: italic;
   font-size: 24px;
@@ -131,7 +131,7 @@
   background-color: rgb(235, 220, 245); /* light purple */
   box-shadow: var(--shadow);
 }
-.corollary::before, .collorary::before {
+.corollary::before{
   content: "Corollary. ";
   font-weight: bold;
   font-style: normal;
