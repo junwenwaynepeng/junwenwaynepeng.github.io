@@ -201,58 +201,36 @@
   padding: 10px;
 }
 
-/* ===== Proof (charcoal) ===== */
+/* Plain proof: no background, no border, no shadow */
 .proof {
-  display: block;
-  font-size: 24px;                 /* keep in sync with your other blocks */
-  font-family: var(--font-stack);
-  color: var(--body-color);
-  border-radius: 10px;
-  background-color: #f7f7f7;       /* subtle light gray */
-  box-shadow: var(--shadow);
-  position: relative;              /* enables bottom-right tombstone */
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
 }
 
-.proof::before {
-  content: "Proof.";
-  font-weight: bold;
-  font-style: normal;
-  display: block;
-  width: -webkit-fill-available;
-  color: white;
-  border-radius: 10px 10px 0 0;
-  padding: 10px 5px 5px 15px;
-  background-color: #444;          /* charcoal header */
-  text-align: left;
+/* Remove the old header strip */
+.proof::before { content: none; }
+
+/* Put "Proof." inline before the first paragraph */
+.proof > p:first-child::before {
+  content: "Proof. ";
+  font-weight: 700;
 }
 
-.proof p {
-  padding: 15px;                   /* distance from border */
-  font-style: normal;              /* proofs are usually upright, not italic */
-}
+/* No inner padding on proof content */
+.proof p { padding: 0; }
 
-/* Auto tombstone at bottom-right */
+/* Tombstone at the end (not absolutely positioned) */
 .proof::after {
   content: "∎";
-  position: absolute;
-  right: 12px;
-  bottom: 10px;
-  font-size: 1.1em;
-}
-
-/* ---- Optional controls ---- */
-
-/* If you want to disable auto tombstone for a particular proof */
-.proof.no-auto-qed::after { content: none; }
-
-/* Manual tombstone you can place anywhere inside the proof */
-.proof .qed {
+  position: static;        /* overrides earlier absolute positioning */
   display: block;
   text-align: right;
-  padding: 0 15px 12px 15px;       /* align with box padding */
+  margin-top: 0.25em;
 }
-.proof .qed::after { content: "∎"; }
 
-/* Compact proof variant */
-.proof.compact p { padding: 10px 12px; }
+/* Optional: turn off the auto tombstone when needed */
+.proof.no-auto-qed::after { content: none; }
+
 
