@@ -37,7 +37,7 @@
   margin-left: 8px;
 }
 .theorem p {
-  padding: 15px;
+  padding: 10px;
 }
 
 /* ===== Lemma (royal blue) ===== */
@@ -64,7 +64,7 @@
   text-align: left;
 }
 .lemma p {
-  padding: 15px;
+  padding: 10px;
 }
 
 /* ===== Definition (mid blue) ===== */
@@ -90,7 +90,7 @@
   text-align: left;
 }
 .definition p {
-  padding: 15px;
+  padding: 10px;
 }
 
 /* ===== Example (teal) ===== */
@@ -116,7 +116,7 @@
   text-align: left;
 }
 .example p {
-  padding: 15px;
+  padding: 10px;
 }
 
 /* ===== Corollary (purple) ===== */
@@ -143,8 +143,8 @@
   background-color: rgb(80, 20, 120); /* deep purple */
   text-align: left;
 }
-.corollary p, .collorary p {
-  padding: 15px;
+.corollary p{
+  padding: 10px;
 }
 
 /* ===== Conjecture (orange-red) ===== */
@@ -171,7 +171,7 @@
   text-align: left;
 }
 .conjecture p {
-  padding: 15px;
+  padding: 10px;
 }
 
 /* ===== Proposition (green) ===== */
@@ -198,5 +198,5 @@
   text-align: left;
 }
 .proposition p {
-  padding: 15px;
+  padding: 10px;
 }
