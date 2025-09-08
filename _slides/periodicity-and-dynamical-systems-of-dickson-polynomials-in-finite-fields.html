@@ -272,43 +272,38 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
 <section>
   <section data-markdown>
     <textarea data-template>
-      ### A detour
-      <figure id="tab-combined" class="latex-figure">
-        <div class="tables-two">
-
-          <!-- Subtable A -->
-          <figure class="subtable" id="tab-tableA">
-            <table class="grid-table">
-              <caption>D<sub>120</sub>(x, −1)</caption>
-              <tbody>
-                <tr><td>1</td><td>10</td><td>2</td><td>6</td><td>3</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>10</td><td>9</td><td>2</td><td>7</td><td>10</td><td>5</td><td>7</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>0</td><td>3</td><td>6</td><td>5</td><td>1</td><td>3</td><td>7</td><td>1</td><td>0</td><td>0</td></tr>
-                <tr><td>0</td><td>0</td><td>1</td><td>2</td><td>9</td><td>4</td><td>1</td><td>6</td><td>4</td><td>0</td></tr>
-                <tr><td>0</td><td>0</td><td>0</td><td>2</td><td>4</td><td>7</td><td>8</td><td>2</td><td>1</td><td>8</td></tr>
-                <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>6</td><td>1</td><td>10</td><td>2</td><td>6</td><td>3</td></tr>
-              </tbody>
-            </table>
-          </figure>
-
-          <!-- Subtable B -->
-          <figure class="subtable" id="tab-tableB">
-            <table class="grid-table">
-              <caption>3·D<sub>120</sub>(x, 2)</caption>
-              <tbody>
-                <tr><td>3</td><td>6</td><td>2</td><td>10</td><td>1</td><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>8</td><td>1</td><td>2</td><td>8</td><td>7</td><td>4</td><td>2</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>0</td><td>4</td><td>6</td><td>1</td><td>4</td><td>9</td><td>2</td><td>1</td><td>0</td><td>0</td></tr>
-                <tr><td>0</td><td>0</td><td>1</td><td>7</td><td>3</td><td>1</td><td>5</td><td>6</td><td>3</td><td>0</td></tr>
-                <tr><td>0</td><td>0</td><td>0</td><td>7</td><td>5</td><td>10</td><td>7</td><td>2</td><td>9</td><td>10</td></tr>
-                <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>3</td><td>6</td><td>2</td><td>10</td><td>1</td></tr>
-              </tbody>
-            </table>
-          </figure>
-
-        </div>
-        <figcaption>Rotate by 180°</figcaption>
+  <div id="tab-combined" style="margin:1rem auto;">
+    <div style="display:flex;gap:2%;align-items:flex-start;flex-wrap:wrap;">
+      <figure id="tab-tableA" style="flex:1 1 0;min-width:260px;margin:0;">
+        <figcaption style="font-weight:600;margin:0 0 .4rem 0;">D<sub>120</sub>(x, −1)</figcaption>
+        <table border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
+          <tbody>
+            <tr><td>1</td><td>10</td><td>2</td><td>6</td><td>3</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>10</td><td>9</td><td>2</td><td>7</td><td>10</td><td>5</td><td>7</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>3</td><td>6</td><td>5</td><td>1</td><td>3</td><td>7</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>0</td><td>1</td><td>2</td><td>9</td><td>4</td><td>1</td><td>6</td><td>4</td><td>0</td></tr>
+            <tr><td>0</td><td>0</td><td>0</td><td>2</td><td>4</td><td>7</td><td>8</td><td>2</td><td>1</td><td>8</td></tr>
+            <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>6</td><td>1</td><td>10</td><td>2</td><td>6</td><td>3</td></tr>
+          </tbody>
+        </table>
       </figure>
+
+      <figure id="tab-tableB" style="flex:1 1 0;min-width:260px;margin:0;">
+        <figcaption style="font-weight:600;margin:0 0 .4rem 0;">3·D<sub>120</sub>(x, 2)</figcaption>
+        <table border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
+          <tbody>
+            <tr><td>3</td><td>6</td><td>2</td><td>10</td><td>1</td><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>8</td><td>1</td><td>2</td><td>8</td><td>7</td><td>4</td><td>2</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>4</td><td>6</td><td>1</td><td>4</td><td>9</td><td>2</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>0</td><td>1</td><td>7</td><td>3</td><td>1</td><td>5</td><td>6</td><td>3</td><td>0</td></tr>
+            <tr><td>0</td><td>0</td><td>0</td><td>7</td><td>5</td><td>10</td><td>7</td><td>2</td><td>9</td><td>10</td></tr>
+            <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>3</td><td>6</td><td>2</td><td>10</td><td>1</td></tr>
+          </tbody>
+        </table>
+      </figure>
+    </div>
+    <div style="text-align:center;margin-top:.6rem;font-style:italic;">Rotate by 180°</div>
+  </div>
     </textarea>
   </section>
 </section>
