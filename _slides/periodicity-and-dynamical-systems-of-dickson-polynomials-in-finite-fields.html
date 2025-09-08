@@ -38,6 +38,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
 <section>
   <section data-markdown>
     <textarea data-template>
+      ### Set-up
       <ul>
         <li>$q$: a power of prime $p$.</li>
         <li class="fragment">$\mathbb{F}_q$: a finite field of order $q$.</li>
@@ -142,6 +143,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
 <section>
   <section data-markdown>
     <textarea data-template>
+      ### The first main theorem
       <div class="theorem">
         <div class="theorem-header">
           <span class="theorem-authors">(Y.-J. Chen, P.)</span>
@@ -167,7 +169,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       <div class="proof">
-        <p><span class="fragment">Induction + recurssive relation.</span></p>
+        <p><span>Induction + recurssive relation.</span></p>
         <p><span class="fragment">
             For $1< i\leq q^2-1$, we suppose
             $$
@@ -190,5 +192,24 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         </p>
       </div>
     </textarea>
+  </section>
+  <section>
+    ### Proof of the first main theorem
+    <div class="proposition">
+      <p>
+        We have
+        $$
+        D_{q^2-1}(x,\alpha) \equiv 2 \ \mathrm{mod}(x^q-x)
+        \quad \textrm{and}\quad 
+        D_{q^2}(x,\alpha) \equiv x \ \mathrm{mod}(x^q-x).
+        $$
+        If $\alpha\in\mathbb{F}_q^\times$$ is a square. Then, we have
+        $$
+        D_{\frac{q^2-1}{2}}(x,\alpha) \equiv 2 \ \mathrm{mod}(x^q-x)
+        \quad \textrm{and}\quad 
+        D_{\frac{q^2+1}{2}}(x,\alpha) \equiv x \ \mathrm{mod}(x^q-x).
+        $$
+      </p>
+    </div>
   </section>
 </section>
