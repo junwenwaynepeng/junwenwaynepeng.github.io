@@ -167,7 +167,27 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       <div class="proof">
-        <p>test</p>
+        <p><span class="fragment">Induction + recurssive relation.</span></p>
+        <p><span class="fragment">
+            For $1< i\leq q^2-1$, we suppose
+            $$
+              D_{q^2-1-i}(x-\alpha)\equiv \alpha^{-i}D_i(x,\alpha)\mod (x^q-x)
+            $$
+            and
+            $$
+              D_{q^2-1-(i+1)}(x,\alpha)\equiv\alpha^{-(i+1)}D_i(x,\alpha)\mod(x^q-x).
+            $$
+          </span><span class="fragment">
+            Then, we have
+            $$
+              \begin{align*}
+                D_{q^2-1-(i+2)}(x,\alpha)&=\dfrac{x}{\alpha} D_{q^2-1-(i+1)}(x,\alpha)-\dfrac{1}{\alpha}D_{q^2-1-i}(x,\lapha)\\
+                &\equiv \alpha^{-(i+2)}(xD_{i+1}(x,\alpha)-\alpha D_{i}(x,\alpha))\\
+                &\equiv\alpha^{-(i+2)}D_{i+2}(x,\alpha)\mod(x^q-x).
+              \end{align*}
+            $$
+          </span>
+        </p>
       </div>
     </textarea>
   </section>
