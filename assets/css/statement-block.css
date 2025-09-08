@@ -231,7 +231,18 @@
   margin-top: 0.25em;
 }
 
-/* Optional: turn off the auto tombstone when needed */
+/* ---- Optional controls ---- */
+
+/* If you want to disable auto tombstone for a particular proof */
 .proof.no-auto-qed::after { content: none; }
 
+/* Manual tombstone you can place anywhere inside the proof */
+.proof .qed {
+  display: block;
+  text-align: right;
+  padding: 0 15px 12px 15px;       /* align with box padding */
+}
+.proof .qed::after { content: "∎"; }
 
+/* Compact proof variant */
+.proof.compact p { padding: 10px 12px; }
