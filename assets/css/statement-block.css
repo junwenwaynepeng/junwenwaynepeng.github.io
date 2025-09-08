@@ -219,6 +219,11 @@
   font-weight: 700;
 }
 
+/* --- unlabelled: no leading label --- */
+.proof.no-auto-qed.unlabelled > :first-child::before {
+  content: none;
+}
+
 /* No inner padding on proof content */
 .proof p { padding: 0; }
 
