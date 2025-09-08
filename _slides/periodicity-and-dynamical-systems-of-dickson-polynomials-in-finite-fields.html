@@ -25,25 +25,68 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
 </style>
 <!-- ===== CSS ===== -->
 <style>
-  .latex-figure { margin: 1rem auto; }
-  .latex-figure .tables-two {
-    display: flex; gap: 2%; align-items: flex-start; flex-wrap: wrap;
+  /* ===== Two tables side-by-side, no overlap ===== */
+  .reveal .tables-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two equal columns */
+    gap: 16px;                      /* space between tables */
+    align-items: start;
   }
-  .latex-figure .subtable { flex: 1 1 0; min-width: 260px; }
-  .grid-table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
-  .grid-table caption { caption-side: top; font-weight: 600; margin-bottom: 0.4rem; }
-  .grid-table td { border: 1px solid #e6e6e6; text-align: center; padding: 4px 6px; }
-  .latex-figure figcaption { text-align: center; margin-top: 0.6rem; font-style: italic; }
-  /* Your original two-column layout probably used ~48% each with a small gap. */
-  .subtable { flex: 0 0 48%; max-width: 48%; } /* ensure a fixed basis */
 
-  .subtable.shrink-70 {
-    --s: .7;                                 /* 70% scale */
-    transform: scale(var(--s));
-    transform-origin: top left;
-    /* shrink the layout footprint so the flex item also becomes narrower */
-    flex-basis: calc(48% * var(--s));
-    max-width:  calc(48% * var(--s));
+  /* Stack on narrow screens */
+  @media (max-width: 900px) {
+    .reveal .tables-two { grid-template-columns: 1fr; }
+  }
+
+  /* ===== Subtable container reset ===== */
+  .reveal .subtable {
+    margin: 0;
+    position: static;   /* avoid accidental absolute/relative overlap */
+    /* transform: none;  If you previously scaled with transform, keep this */
+  }
+
+  /* ===== Base table styling (about 70% size) ===== */
+  .reveal .grid-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;   /* prevents width blow-ups */
+    font-size: 0.7em;      /* ~70% of normal text size */
+  }
+
+  .reveal .grid-table caption {
+    caption-side: top;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .reveal .grid-table th,
+  .reveal .grid-table td {
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 2px 4px;      /* tighter cells for dense data */
+    word-break: break-word;
+  }
+
+  /* Optional: make math/content inside cells behave nicely */
+  .reveal .grid-table td > .katex,
+  .reveal .grid-table td > math {
+    white-space: nowrap;
+  }
+
+  /* ===== (Optional) figure wrapper & global caption ===== */
+  .reveal .latex-figure { margin: 1rem auto; }
+  .reveal .latex-figure > figcaption {
+    text-align: center;
+    margin-top: 0.6rem;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+
+  /* ===== (Optional) utility: alternative shrink levels ===== */
+  .reveal .tables-two.shrink-80 .grid-table { font-size: 0.8em; }
+  .reveal .tables-two.shrink-60 .grid-table { font-size: 0.6em; }
 </style>
 <section>
   <section data-markdown>
@@ -282,11 +325,11 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
 <section>
   <section data-markdown>
     <textarea data-template>
-  <div id="tab-combined" style="margin:1rem auto;">
+  <div id="tables-two" style="margin:1rem auto;">
     <div style="display:flex;gap:2%;align-items:flex-start;flex-wrap:wrap;">
       <figure class="subtable shrink-70" id="tab-tableA" style="flex:1 1 0;min-width:260px;margin:0;">
         <figcaption style="font-weight:600;margin:0 0 .4rem 0;">D<sub>120</sub>(x, −1)</figcaption>
-        <table border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
+        <table class="grid-table" border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
           <tbody>
             <tr><td>1</td><td>10</td><td>2</td><td>6</td><td>3</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
             <tr><td>10</td><td>9</td><td>2</td><td>7</td><td>10</td><td>5</td><td>7</td><td>0</td><td>0</td><td>0</td></tr>
@@ -299,7 +342,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       </figure>
       <figure class="subtable shrink-70" id="tab-tableB" style="flex:1 1 0;min-width:260px;margin:0;">
         <figcaption style="font-weight:600;margin:0 0 .4rem 0;">3·D<sub>120</sub>(x, 2)</figcaption>
-        <table border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
+        <table class="grid-table" border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
           <tbody>
             <tr><td>3</td><td>6</td><td>2</td><td>10</td><td>1</td><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
             <tr><td>8</td><td>1</td><td>2</td><td>8</td><td>7</td><td>4</td><td>2</td><td>0</td><td>0</td><td>0</td></tr>
