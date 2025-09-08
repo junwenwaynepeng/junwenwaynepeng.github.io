@@ -212,12 +212,11 @@
 /* Remove the old header strip */
 .proof::before { content: none; }
 
+.proof { --proof-label: "Proof."; }
+
 .proof > p:first-child::before {
-  content: attr(data-label); 
-  font-weight:700; 
-}
-.proof:not([data-label]) > p:first-child::before { 
-  content: "Proof. "; 
+  content: var(--proof-label, "Proof. ");
+  font-weight: 700;
 }
 
 /* No inner padding on proof content */
