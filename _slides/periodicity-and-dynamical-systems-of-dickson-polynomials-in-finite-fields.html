@@ -34,6 +34,16 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   .grid-table caption { caption-side: top; font-weight: 600; margin-bottom: 0.4rem; }
   .grid-table td { border: 1px solid #e6e6e6; text-align: center; padding: 4px 6px; }
   .latex-figure figcaption { text-align: center; margin-top: 0.6rem; font-style: italic; }
+  /* Your original two-column layout probably used ~48% each with a small gap. */
+  .subtable { flex: 0 0 48%; max-width: 48%; } /* ensure a fixed basis */
+
+  .subtable.shrink-70 {
+    --s: .7;                                 /* 70% scale */
+    transform: scale(var(--s));
+    transform-origin: top left;
+    /* shrink the layout footprint so the flex item also becomes narrower */
+    flex-basis: calc(48% * var(--s));
+    max-width:  calc(48% * var(--s));
 </style>
 <section>
   <section data-markdown>
@@ -274,7 +284,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
   <div id="tab-combined" style="margin:1rem auto;">
     <div style="display:flex;gap:2%;align-items:flex-start;flex-wrap:wrap;">
-      <figure id="tab-tableA" style="flex:1 1 0;min-width:260px;margin:0;">
+      <figure class="subtable shrink-70" id="tab-tableA" style="flex:1 1 0;min-width:260px;margin:0;">
         <figcaption style="font-weight:600;margin:0 0 .4rem 0;">D<sub>120</sub>(x, −1)</figcaption>
         <table border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
           <tbody>
@@ -287,7 +297,7 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
           </tbody>
         </table>
       </figure>
-      <figure id="tab-tableB" style="flex:1 1 0;min-width:260px;margin:0;">
+      <figure class="subtable shrink-70" id="tab-tableB" style="flex:1 1 0;min-width:260px;margin:0;">
         <figcaption style="font-weight:600;margin:0 0 .4rem 0;">3·D<sub>120</sub>(x, 2)</figcaption>
         <table border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
           <tbody>
