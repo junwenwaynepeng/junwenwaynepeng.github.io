@@ -212,10 +212,12 @@
 /* Remove the old header strip */
 .proof::before { content: none; }
 
-/* Put "Proof." inline before the first paragraph */
 .proof > p:first-child::before {
-  content: "Proof. ";
-  font-weight: 700;
+  content: attr(data-label); 
+  font-weight:700; 
+}
+.proof:not([data-label]) > p:first-child::before { 
+  content: "Proof. "; 
 }
 
 /* No inner padding on proof content */
