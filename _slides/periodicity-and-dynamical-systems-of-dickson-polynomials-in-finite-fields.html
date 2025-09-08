@@ -23,17 +23,17 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       flex: 1;
   }
 </style>
+<!-- ===== CSS ===== -->
 <style>
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
-    gap: 10px; /* Adds a gap between grid items */
+  .latex-figure { margin: 1rem auto; }
+  .latex-figure .tables-two {
+    display: flex; gap: 2%; align-items: flex-start; flex-wrap: wrap;
   }
-
-  .grid-item {
-    padding: 10px;
-    /* Add other styling like background-color, border, etc. */
-  }
+  .latex-figure .subtable { flex: 1 1 0; min-width: 260px; }
+  .grid-table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+  .grid-table caption { caption-side: top; font-weight: 600; margin-bottom: 0.4rem; }
+  .grid-table td { border: 1px solid #e6e6e6; text-align: center; padding: 4px 6px; }
+  .latex-figure figcaption { text-align: center; margin-top: 0.6rem; font-style: italic; }
 </style>
 <section>
   <section data-markdown>
@@ -266,6 +266,49 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
         </p>
         <span class="qed fragment" data-fragment-index="2"></span>        
       </div>
+    </textarea>
+  </section>
+</section>
+<section>
+  <section data-markdown>
+    <textarea data-template>
+      ### A detour
+      <figure id="tab-combined" class="latex-figure">
+        <div class="tables-two">
+
+          <!-- Subtable A -->
+          <figure class="subtable" id="tab-tableA">
+            <table class="grid-table">
+              <caption>D<sub>120</sub>(x, −1)</caption>
+              <tbody>
+                <tr><td>1</td><td>10</td><td>2</td><td>6</td><td>3</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>10</td><td>9</td><td>2</td><td>7</td><td>10</td><td>5</td><td>7</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>0</td><td>3</td><td>6</td><td>5</td><td>1</td><td>3</td><td>7</td><td>1</td><td>0</td><td>0</td></tr>
+                <tr><td>0</td><td>0</td><td>1</td><td>2</td><td>9</td><td>4</td><td>1</td><td>6</td><td>4</td><td>0</td></tr>
+                <tr><td>0</td><td>0</td><td>0</td><td>2</td><td>4</td><td>7</td><td>8</td><td>2</td><td>1</td><td>8</td></tr>
+                <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>6</td><td>1</td><td>10</td><td>2</td><td>6</td><td>3</td></tr>
+              </tbody>
+            </table>
+          </figure>
+
+          <!-- Subtable B -->
+          <figure class="subtable" id="tab-tableB">
+            <table class="grid-table">
+              <caption>3·D<sub>120</sub>(x, 2)</caption>
+              <tbody>
+                <tr><td>3</td><td>6</td><td>2</td><td>10</td><td>1</td><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>8</td><td>1</td><td>2</td><td>8</td><td>7</td><td>4</td><td>2</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>0</td><td>4</td><td>6</td><td>1</td><td>4</td><td>9</td><td>2</td><td>1</td><td>0</td><td>0</td></tr>
+                <tr><td>0</td><td>0</td><td>1</td><td>7</td><td>3</td><td>1</td><td>5</td><td>6</td><td>3</td><td>0</td></tr>
+                <tr><td>0</td><td>0</td><td>0</td><td>7</td><td>5</td><td>10</td><td>7</td><td>2</td><td>9</td><td>10</td></tr>
+                <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>3</td><td>6</td><td>2</td><td>10</td><td>1</td></tr>
+              </tbody>
+            </table>
+          </figure>
+
+        </div>
+        <figcaption>Rotate by 180°</figcaption>
+      </figure>
     </textarea>
   </section>
 </section>
