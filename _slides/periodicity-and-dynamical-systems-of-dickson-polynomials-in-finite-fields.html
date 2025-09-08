@@ -325,37 +325,59 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
 <section>
   <section data-markdown>
     <textarea data-template>
-  <div id="tables-two" style="margin:1rem auto;">
-    <div style="display:flex;gap:2%;align-items:flex-start;flex-wrap:wrap;">
-      <figure class="subtable shrink-70" id="tab-tableA" style="flex:1 1 0;min-width:260px;margin:0;">
-        <figcaption style="font-weight:600;margin:0 0 .4rem 0;">$D_{120}(x, −1)$</figcaption>
-        <table class="grid-table" border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
-          <tbody>
-            <tr><td>1</td><td>10</td><td>2</td><td>6</td><td>3</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>10</td><td>9</td><td>2</td><td>7</td><td>10</td><td>5</td><td>7</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>0</td><td>3</td><td>6</td><td>5</td><td>1</td><td>3</td><td>7</td><td>1</td><td>0</td><td>0</td></tr>
-            <tr><td>0</td><td>0</td><td>1</td><td>2</td><td>9</td><td>4</td><td>1</td><td>6</td><td>4</td><td>0</td></tr>
-            <tr><td>0</td><td>0</td><td>0</td><td>2</td><td>4</td><td>7</td><td>8</td><td>2</td><td>1</td><td>8</td></tr>
-            <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>6</td><td>1</td><td>10</td><td>2</td><td>6</td><td>3</td></tr>
-          </tbody>
-        </table>
-      </figure>
-      <figure class="subtable shrink-70" id="tab-tableB" style="flex:1 1 0;min-width:260px;margin:0;">
-        <figcaption style="font-weight:600;margin:0 0 .4rem 0;">$3D_{120}(x,2)$</figcaption>
-        <table class="grid-table" border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
-          <tbody>
-            <tr><td>3</td><td>6</td><td>2</td><td>10</td><td>1</td><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>8</td><td>1</td><td>2</td><td>8</td><td>7</td><td>4</td><td>2</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>0</td><td>4</td><td>6</td><td>1</td><td>4</td><td>9</td><td>2</td><td>1</td><td>0</td><td>0</td></tr>
-            <tr><td>0</td><td>0</td><td>1</td><td>7</td><td>3</td><td>1</td><td>5</td><td>6</td><td>3</td><td>0</td></tr>
-            <tr><td>0</td><td>0</td><td>0</td><td>7</td><td>5</td><td>10</td><td>7</td><td>2</td><td>9</td><td>10</td></tr>
-            <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>3</td><td>6</td><td>2</td><td>10</td><td>1</td></tr>
-          </tbody>
-        </table>
-      </figure>
-    </div>
-    <div style="text-align:center;margin-top:.6rem;font-style:italic;">Rotate by 180°</div>
-  </div>
+      ### A Detour
+      <div id="tables-two" style="margin:1rem auto;">
+        <div style="display:flex;gap:2%;align-items:flex-start;flex-wrap:wrap;">
+          <figure class="subtable shrink-70" id="tab-tableA" style="flex:1 1 0;min-width:260px;margin:0;">
+            <figcaption style="font-weight:600;margin:0 0 .4rem 0;">$D_{120}(x, −1)$</figcaption>
+            <table class="grid-table" border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
+              <tbody>
+                <tr><td>1</td><td>10</td><td>2</td><td>6</td><td>3</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>10</td><td>9</td><td>2</td><td>7</td><td>10</td><td>5</td><td>7</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>0</td><td>3</td><td>6</td><td>5</td><td>1</td><td>3</td><td>7</td><td>1</td><td>0</td><td>0</td></tr>
+                <tr><td>0</td><td>0</td><td>1</td><td>2</td><td>9</td><td>4</td><td>1</td><td>6</td><td>4</td><td>0</td></tr>
+                <tr><td>0</td><td>0</td><td>0</td><td>2</td><td>4</td><td>7</td><td>8</td><td>2</td><td>1</td><td>8</td></tr>
+                <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>6</td><td>1</td><td>10</td><td>2</td><td>6</td><td>3</td></tr>
+              </tbody>
+            </table>
+          </figure>
+          <figure class="subtable shrink-70" id="tab-tableB" style="flex:1 1 0;min-width:260px;margin:0;">
+            <figcaption style="font-weight:600;margin:0 0 .4rem 0;">$3D_{120}(x,2)$</figcaption>
+            <table class="grid-table" border="1" cellpadding="4" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:.9em;">
+              <tbody>
+                <tr><td>3</td><td>6</td><td>2</td><td>10</td><td>1</td><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>8</td><td>1</td><td>2</td><td>8</td><td>7</td><td>4</td><td>2</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>0</td><td>4</td><td>6</td><td>1</td><td>4</td><td>9</td><td>2</td><td>1</td><td>0</td><td>0</td></tr>
+                <tr><td>0</td><td>0</td><td>1</td><td>7</td><td>3</td><td>1</td><td>5</td><td>6</td><td>3</td><td>0</td></tr>
+                <tr><td>0</td><td>0</td><td>0</td><td>7</td><td>5</td><td>10</td><td>7</td><td>2</td><td>9</td><td>10</td></tr>
+                <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>3</td><td>6</td><td>2</td><td>10</td><td>1</td></tr>
+              </tbody>
+            </table>
+          </figure>
+        </div>
+        <div style="text-align:center;margin-top:.6rem;font-style:italic;">Rotate by 180°</div>
+      </div>
+    </textarea>
+  </section>
+  <section data-markdwon>
+    <textarea data-template>
+      <div class="theorem">
+        <div class="theorem-header">
+          <span class="theorem-authors">(Y.-J. Chen, P.)</span>
+        </div>
+        <p>
+          Let $q$ be a power of an odd prime and $\alpha \in \mathbb{F}_q^\times$,
+          $$
+            x^{q^2+1}\left(D_{q^2-1}\left(x^{-1},\alpha\right) - 2\right)=(-4\alpha)^{-1} \left(D_{q^2-1}\left(x,(16\alpha)^{-1} \right)-2\right).
+          $$
+          Furthermore, if $\alpha \in\mathbb{F}_q^\times$ is square in $\mathbb{F}_q$, then 
+          $$
+          x^{\frac{q^2+1}{2}}D_{\frac{q^2-1}{2}}(x^{-1},\alpha)=2D_{\frac{q^2+1}{2}}\left(x, (16\alpha)^{-1}\right).
+          $$
+        </p>
+      </div>
+
+\end{theorem}
     </textarea>
   </section>
 </section>
