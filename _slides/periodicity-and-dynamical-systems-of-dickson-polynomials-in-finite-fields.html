@@ -405,13 +405,16 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
   <section data-markdown>
     <textarea data-template>
-      <p class="proof no-auto-qed">
+      <p class="proof">
         We can write the dickson polynomial of degree $q^2-1$ as the following double sum 
         $$
         \pm 1+\sum_{j=0}^{\frac{q-1}{2}}\sum_{k=0}^{q-2}\dfrac{q^2-1}{q^2-1-(j(q-1)+k)}\binom{q^2-1-(j(q-1)+k)}{j(q-1)+k}(-\alpha)^{(j(q-1)-k)}x^{q^2-1-2(j(q-1)+k))}.
         $$
         <span class="fragment">
           Note that $x^{q-1}\not\equiv 1\mod x^q-x$ because $0^{q-1}\not\equiv 1\mod x^q-x$. Therefore, the only term of a polynomial modulo $x^q-x$ that becomes a constant term is the polynomial's own constant term.
+        </span>
+        <span class="fragment">
+          The constant term is $j=\frac{q+1}{2}$ and $k=0$. Observing the expoenent and by the main theorem, we may conclude that $\sum_{j}a_{j,k}=0$.
         </span>
       </p>
     </textarea>
