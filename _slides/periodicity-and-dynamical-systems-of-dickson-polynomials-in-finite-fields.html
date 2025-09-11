@@ -583,9 +583,27 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
       </div>
     </textarea>
   </section>
-  <section>
-    ### When $n$ is not coprime to $q^2-1$
-    
+  <section data-markdown>
+    <textarea data-template>
+      ### When $n$ is not coprime to $q^2-1$
+      we denote the dynamic structure of $[n^k\mod\pi(\alpha)]_k$ by $(l,k)$, so we have
+      $$
+        D^{l+1}_n(x)=D_{n^{l+1}}(x)=D_{n^{l+1+k}}(x)=D_n^{l+1+k}(x).
+      $$
+      This equation implies $\mathscr{l}=l-\mathscr{m_l}\mathscr{k}$ and $k=\mathscr{m_k}\mathscr{k}$ for some integers $\mathscr{m_l}$ and $\mathscr{m_k}$. The integer $\mathscr{k}$ is the smallest positive integer such that $D_n^\mathscr{k}(x)$ is an identity map on the periodic points of $D_n(x)$ in $\mathbb{F}_q$.
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <div class="lemma">
+        <p>Using the notation defined above, we have $l=\mathscr{l}$.</p>
+      </div>
+      <div class="proof">
+        <p class="fragment">
+          Let $\gamma\in \mathbb{F}_q^\times$, and suppose $\gamma$ is not a periodic point under $x^n$, but $\phi_\alpha(\gamma)$ is a periodic point under $D_n$. Let $\mathscr{k}$ be the period of $[D_{n^m}(x,\alpha)\mod x^q-x]_{m}$. Then, both $\gamma$ and $\gamma^{n^\mathscr{k}}$ map to the same point under $\phi_\alpha$. That is $\phi_{\alpha}^{-1}(\gamma+\frac{\alpha}{\gamma})=\{\gamma,\gamma^{n^\mathrm{k}}\}$. Moreover, we know that $\phi_\alpha^{-1}(\gamma+\frac{\alpha}{\gamma})=\{\gamma, \frac{\alpha}{\gamma}\}$, so we have $\gamma^{n^\mathscr{k}}=\frac{\alpha}{\gamma}$. It implies $(\gamma^{n^\mathscr{k}})^{n^\mathscr{k}}=(\frac{\alpha}{\gamma})^{n^\mathscr{k}}=\frac{\alpha^{n^\mathscr{k}}}{\gamma^{n^{\mathscr{k}}}}=\frac{\alpha}{\alpha/\gamma}=\gamma$. This shows that $\gamma$ is a periodic point under $x^n$, contradicts with the assumption.
+        </p>
+      </div>
+    </textarea>
   </section>
 </section>
 <section>
