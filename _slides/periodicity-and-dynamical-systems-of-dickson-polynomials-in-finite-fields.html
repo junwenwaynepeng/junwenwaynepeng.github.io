@@ -447,14 +447,29 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       <div class="example">
         <p>
-          Conisdering $q=5$, we have
+          Conisdering $q=5^2$, we have
           $$
             D_{5}(x,1) \equiv x \equiv D_{7}(x,1)\ \mathrm{mod}(x^5-x)
           $$
-          despite both $5$ and $7$ are not congruent to $1\mod 24$ or $\mod\ 12$.
+          despite both $5$ and $7$ are not congruent to $1$ modulo $24$ or $12$.
         </p>
       </div>
-
+      <div class="theorem">
+        <div class="theorem-header">
+          <span class="theorem-authors">(Y.-J. Chen, P.)</span>
+        </div>
+        <p>
+          Let $\alpha\in\mathbb{F}_q^\times$. Then, $\mathcal{D}_{\alpha} = \{D_{n,\alpha}(x)\mod x^q-x|\alpha^n=\alpha\}$ is a group, whose operation is composition. Furthermore, $\mathcal{D}_n$ is isomorphic to a subgroup of
+          $$
+          \begin{cases}
+              (\mathbb{Z}/(q^2-1)\mathbb{Z})^{\times}/H_1, &\text{if }\alpha\text{ is not a square;}\\
+              (\mathbb{Z}/(\frac{q^2-1}{2})\mathbb{Z})^{\times}/H_1, &\text{if }\alpha\neq 1\text{ is a square;}\\
+              (\mathbb{Z}/(q^2-1)\mathbb{Z})^{\times}/H_2, &\text{if }\alpha=1.
+          \end{cases}
+          $$
+          where $H_1\cong\mathbb{Z}/2\mathbb{Z}$ and $H_2\cong\mathbb{Z}/2\mathbb{Z}\oplus\mathbb{Z}/2\mathbb{Z}$.
+        </p>
+      </div>
     </textarea>
   </section>
 </section>
