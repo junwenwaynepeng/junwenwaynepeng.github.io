@@ -536,17 +536,9 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   </section>
   <section data-markdown>
     <textarea data-template>
-      <div class="proof no-auto-qed" style="--proof-label:'Proof of 3.'">
+      <div class="proof no-auto-qed" style="--proof-label:'Proof of 2.'">
         <p>
-          Suppose $\alpha\neq 1$. First consider $1+\alpha \in \mathbb{F}_q$. Since $\phi_{\alpha}^{-1}(1 + \alpha) = \{1, \alpha\}$, we have
-          $$
-          1 + \alpha^n = \phi_{\alpha^n}(1^n) = D_{n}(1+\alpha,\alpha) = 1 + \alpha.
-          $$
-          Thus, $\alpha^{n} = \alpha$, and $\phi_{\alpha^n}(x) = \phi_{\alpha}(x) $. We have the following commute diagram.
-          <center>
-            <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhjYWx7VH1fXFxhbHBoYSJdLFsxLDAsIlxcbWF0aGNhbHtUfV9cXGFscGhhIl0sWzAsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzEsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzAsMSwieF5uIl0sWzAsMiwiXFxwaGlfXFxhbHBoYSIsMl0sWzEsMywiXFxwaGlfXFxhbHBoYSJdLFsyLDMsIkRfe24sXFxhbHBoYX0oeCkiLDJdXQ== -->
-            <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhjYWx7VH1fXFxhbHBoYSJdLFsxLDAsIlxcbWF0aGNhbHtUfV9cXGFscGhhIl0sWzAsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzEsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzAsMSwieF5uIl0sWzAsMiwiXFxwaGlfXFxhbHBoYSIsMl0sWzEsMywiXFxwaGlfXFxhbHBoYSJdLFsyLDMsIkRfe24sXFxhbHBoYX0oeCkiLDJdXQ==&embed" width="304" height="304" style="border-radius: 8px; border: none;"></iframe>
-          <center>
+          <span>Assuming $\alpha=1$ and letting $\zeta$ be a generator of $\mathbb{F}_q^\times$, we have $\zeta^n=\zeta$ or $\zeta^n=\zeta^{-1}$.</span><span class="fragment"> This implies $n\equiv \pm 1\mod q-1$.</span><span class="fragment"> There exists an element $u\mathcal{T}_\alpha$ of order $q+1$.</span><span class="fragment"> Since $u^n$ is either $u$ or $u^{-1}$, $u^{n-1}=1$ or $u^{n+1}=1$. Thus, $n-1$ or $n+1$ have to congruence to zero mod $q+1$.</span>
         </p>
       </div>
     </textarea>
@@ -555,21 +547,37 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
     <textarea data-template>
       <div class="proof no-auto-qed unlabelled">
         <p>
-          <span>Next, let $\zeta$ be a generator of  $\mathbb{F}_q^\times$ and consider $\zeta + \alpha\zeta^{-1},\zeta^{-1}+\alpha\zeta \in \mathbb{F}_q$. We have
+          It follows that we have the following four possible systems of congruence equations
+          $$\begin{align*}
+          &
+          \begin{cases}
+              n\equiv 1 & \mod q-1\\
+              n\equiv 1 & \mod q+1
+          \end{cases} 
+          & 
+          \begin{cases}
+              n\equiv -1 & \mod q-1\\
+              n\equiv 1  & \mod q+1
+          \end{cases}\\
+          &
+          \begin{cases}
+              n\equiv 1  & \mod q-1\\
+              n\equiv -1 & \mod q+1
+          \end{cases} 
+          &
+          \begin{cases}
+              n\equiv -1 & \mod q-1\\
+              n\equiv -1 & \mod q+1
+          \end{cases}
+          \end{align*}
           $$
-          \phi_{\alpha}^{-1}(\zeta+\alpha\zeta^{-1}) = \{\zeta,\alpha\zeta^{-1}\}
-          \quad \textrm{and} \quad
-          \phi_{\alpha}^{-1}(\zeta^{-1}+\alpha\zeta)=\{\zeta^{-1},\alpha\zeta\}.
-          $$</span><span class="fragment">
-          If $\zeta^{n} \neq \zeta$, then $(\zeta^{-1})^n\neq \zeta^{-1}$. It follows that
-          \[
-          \zeta^{n} = \alpha \zeta^{-1} \quad \textrm{and}\quad \zeta^{-n} = \alpha\zeta,
-          \]
-          and
-          \[
-          \zeta^{n+1} = \alpha = \zeta^{-(n+1)}.
-          \]
-          Hence $\alpha = \alpha^{-1}$.</span> 
+        </p>
+        <p class="fragment">
+          By the Chinese remainder theorem, we can conclude the following:
+          <ul>
+            <li>if $q$ is even, $n\equiv \pm 1,\ \pm q\mod q^2-1$.</li>
+            <li>if $q$ is odd, then $n\equiv \pm 1,\pm q\mod \frac{q^2-1}{2}$</li>
+          </ul>
         </p>
       </div>
     </textarea>
