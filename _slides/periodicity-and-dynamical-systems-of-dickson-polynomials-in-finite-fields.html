@@ -475,28 +475,29 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
   <section data-markdown>
     <textarea data-template>
       <div class="corollary">
-        1. Let $\alpha\in\mathbb{F}_q^\times$ satisfy $\alpha^n=\alpha$. The period of $D_{n,\alpha}(x)\mod (x^q-x)$ is $\delta_{n,\alpha}k$, where $k$ is the multiplicative order of $n$ modulo $\pi(\alpha)$ with
-        $$
-          \delta_{n,\alpha}=
+        <p>
+          1. Let $\alpha\in\mathbb{F}_q^\times$ satisfy $\alpha^n=\alpha$. The period of $D_{n,\alpha}(x)\mod (x^q-x)$ is $\delta_{n,\alpha}k$, where $k$ is the multiplicative order of $n$ modulo $\pi(\alpha)$ with
+          $$
+            \delta_{n,\alpha}=
+            \begin{cases}
+                \frac{1}{2}, &\text{ if } n \text{ and } \alpha \text{ satisfy the conditions we describe below,}\\
+                1, &\text{ otherwise. }
+            \end{cases}
+          $$
+          The condition is that 
+          when $\alpha = 1$, $-1,\pm q \not \in \{n^i \mod q^2-1| i=1,2,3\dots\}$, and that when $\alpha \neq 1$, $q \not \in \{n^i \mod \pi(\alpha) | i=1,2,3\dots\}$.
+          2. For $\alpha\in(\mathbb{F}_q)^\times$ with the multiplicative order $m$, let $m=2^{k'}p_{1}^{e'_{1}}\cdots p_{l}^{e'_{l}}$. Let $\pi(\alpha)=2^kp_1^{e_1}\cdots p_r^{e_r}q_1^{f_1}\cdots  q_s^{f_s}$ where $p_i$ and $q_i$ are odd primes that divide $q-1$ and $q+1$ respectively. Then there exists $n$ with $\alpha^n=\alpha$ such that $D_{n,\alpha}(x)$ has period 
+          $$\lcm\coloneqq
           \begin{cases}
-              \frac{1}{2}, &\text{ if } n \text{ and } \alpha \text{ satisfy the conditions we describe below,}\\
-              1, &\text{ otherwise. }
+              \lcm(\{2^{k-k'},p_1^{e_1-e'_1},\ldots,p_l^{e_l-e'_l},\phi(p_{l+1}^{e_{l+1}}),\ldots \phi(p_n^{e_n}),\phi(q_1^{f_1}),\ldots \phi(q_s^{f_s})\}) & \text{if }k' > 1\\
+              \lcm(\{2^{k-2},p_1^{e_1-e'_1},\ldots,p_l^{e_l-e'_l},\phi(p_{l+1}^{e_{l+1}}),\ldots \phi(p_n^{e_n}),\phi(q_1^{f_1}),\ldots \phi(q_s^{f_s})\}) & \text{if }k'=1\\
+              \lcm(\{p_1^{e_1-e'_1},\ldots,p_l^{e_l-e'_l},\phi(p_{l+1}^{e_{l+1}}),\ldots \phi(p_n^{e_n}),\phi(q_1^{f_1}),\ldots \phi(q_s^{f_s})\}) & \text{if }k'=0
           \end{cases}
-        $$
-        The condition is that 
-        when $\alpha = 1$, $-1,\pm q \not \in \{n^i \mod q^2-1| i=1,2,3\dots\}$, and that when $\alpha \neq 1$, $q \not \in \{n^i \mod \pi(\alpha) | i=1,2,3\dots\}$.
-        2. For $\alpha\in(\mathbb{F}_q)^\times$ with the multiplicative order $m$, let $m=2^{k'}p_{1}^{e'_{1}}\cdots p_{l}^{e'_{l}}$. Let $\pi(\alpha)=2^kp_1^{e_1}\cdots p_r^{e_r}q_1^{f_1}\cdots  q_s^{f_s}$ where $p_i$ and $q_i$ are odd primes that divide $q-1$ and $q+1$ respectively. Then there exists $n$ with $\alpha^n=\alpha$ such that $D_{n,\alpha}(x)$ has period 
-        $$\lcm\coloneqq
-        \begin{cases}
-            \lcm(\{2^{k-k'},p_1^{e_1-e'_1},\ldots,p_l^{e_l-e'_l},\phi(p_{l+1}^{e_{l+1}}),\ldots \phi(p_n^{e_n}),\phi(q_1^{f_1}),\ldots \phi(q_s^{f_s})\}) & \text{if }k' > 1\\
-            \lcm(\{2^{k-2},p_1^{e_1-e'_1},\ldots,p_l^{e_l-e'_l},\phi(p_{l+1}^{e_{l+1}}),\ldots \phi(p_n^{e_n}),\phi(q_1^{f_1}),\ldots \phi(q_s^{f_s})\}) & \text{if }k'=1\\
-            \lcm(\{p_1^{e_1-e'_1},\ldots,p_l^{e_l-e'_l},\phi(p_{l+1}^{e_{l+1}}),\ldots \phi(p_n^{e_n}),\phi(q_1^{f_1}),\ldots \phi(q_s^{f_s})\}) & \text{if }k'=0
-        \end{cases}
-        $$
-        where $\phi$ is the Euler's totient function.
-        3. Following the above notations, we have $\alpha$ such that the period of $D_{n,\alpha}(x)\mod x^q-x$ equals the maximum of the multiplicative order of $n$ in $\mathbb{Z}/(q^2-1)\mathbb{Z}$ if some $\phi(p_i^{e_i})$ or $\phi(q_i^{f_i})$ is divisible by $2^k$.
+          $$
+          where $\phi$ is the Euler's totient function.
+          3. Following the above notations, we have $\alpha$ such that the period of $D_{n,\alpha}(x)\mod x^q-x$ equals the maximum of the multiplicative order of $n$ in $\mathbb{Z}/(q^2-1)\mathbb{Z}$ if some $\phi(p_i^{e_i})$ or $\phi(q_i^{f_i})$ is divisible by $2^k$.
+        </p>
       </div>
-
     </textarea>
   </section>
 </section>
