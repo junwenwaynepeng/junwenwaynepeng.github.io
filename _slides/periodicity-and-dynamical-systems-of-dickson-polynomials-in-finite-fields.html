@@ -524,14 +524,29 @@ front-img: "/assets/img/slides/on-sub-semigroup-generated-by-finitely-many-morph
           <li>When $\alpha=1$, $n\equiv \pm 1,\ \pm q\mod \frac{q^2-1}{2}$.</li>
           <li>When $\alpha\neq 1$, $n\equiv 1\ \textrm{or}\ q\mod\pi(\alpha)$.</li>
           <li>We have 
-          $$
-            \{n|\alpha^n=\alpha\text{ and }D_{n,\alpha}(x)=x\mod x^q-x\}\cong\begin{cases}
-            \mathbb{Z}/2\mathbb{Z}, &\text{ if }\alpha\neq 1\\
-            \mathbb{Z}/2\mathbb{Z}\oplus\mathbb{Z}/2\mathbb{Z}, &\text{ if }\alpha=1.
-            \end{cases}
-          $$
+            $$
+              \{n|\alpha^n=\alpha\text{ and }D_{n,\alpha}(x)=x\mod x^q-x\}\cong\begin{cases}
+              \mathbb{Z}/2\mathbb{Z}, &\text{ if }\alpha\neq 1\\
+              \mathbb{Z}/2\mathbb{Z}\oplus\mathbb{Z}/2\mathbb{Z}, &\text{ if }\alpha=1.
+              \end{cases}
+            $$
           </li>
         </ol>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <div class="proof no-auto-qed">
+        <p>
+          Suppose $\alpha\neq 1$. First consider $1+\alpha \in \mathbb{F}_q$. Since $\phi_{\alpha}^{-1}(1 + \alpha) = \{1, \alpha\}$, we have
+          $$
+          1 + \alpha^n = \phi_{\alpha^n}(1^n) = D_{n}(1+\alpha,\alpha) = 1 + \alpha.
+          $$
+          Thus, $\alpha^{n} = \alpha$, and $\phi_{\alpha^n}(x) = \phi_{\alpha}(x) $. We have the following commute diagram.
+          <!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhjYWx7VH1fXFxhbHBoYSJdLFsxLDAsIlxcbWF0aGNhbHtUfV9cXGFscGhhIl0sWzAsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzEsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzAsMSwieF5uIl0sWzAsMiwiXFxwaGlfXFxhbHBoYSIsMl0sWzEsMywiXFxwaGlfXFxhbHBoYSJdLFsyLDMsIkRfe24sXFxhbHBoYX0oeCkiLDJdXQ== -->
+          <iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhjYWx7VH1fXFxhbHBoYSJdLFsxLDAsIlxcbWF0aGNhbHtUfV9cXGFscGhhIl0sWzAsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzEsMSwiXFxtYXRoYmJ7Rn1fcV5cXHRpbWVzIl0sWzAsMSwieF5uIl0sWzAsMiwiXFxwaGlfXFxhbHBoYSIsMl0sWzEsMywiXFxwaGlfXFxhbHBoYSJdLFsyLDMsIkRfe24sXFxhbHBoYX0oeCkiLDJdXQ==&embed" width="304" height="304" style="border-radius: 8px; border: none;"></iframe>
+        </p>
+      </div>
     </textarea>
   </section>
 </section>
