@@ -268,10 +268,11 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   <textarea data-template>
   ### 白話悖論示例：
 
-  - 理髮師悖論  
-  - 布告欄悖論  
-  - 說謊者悖論  
-
+  <ul>
+    <li class="fragment" data-fragment-index="2">理髮師悖論</li>  
+    <li class="fragment" data-fragment-index="3">布告欄悖論</li>  
+    <li class="fragment" data-fragment-index="4">說謊者悖論</li>  
+  </ul>
   這些就是集合論中「自我指涉」帶來的災難。  
   </textarea>
   </section>
@@ -281,11 +282,11 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   <textarea data-template>
   數學家給出三條出路：
 
-  1. **修改公理** → 像 ZF / ZFC  
-  2. **修改語意** → 類型論等  
-  3. **修改語法** → 限制哪些集合可以形成  
-
-  我們選定了前兩種（公理／語法）作為主流方案。  
+  <ol>
+    <li class="fragment" data-fragment-index="2"><strong>修改公理</strong> → 像 ZF / ZFC</li>
+    <li class="fragment" data-fragment-index="3"><strong>修改語法</strong> → Type Theory</li>
+    <li class="fragment" data-fragment-index="4"><strong>修改語意</strong> → Category Theory</li>
+  </ol>
   </textarea>
   </section>
 
@@ -305,14 +306,14 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   <!-- Slide 25: 牛頓 & 萊布尼茲革命 -->
   <section data-markdown>
   <textarea data-template>
-  牛頓與萊布尼茲引入 **infinitesimal (dx, dy)**，  
-  例如：
+  牛頓與萊布尼茲引入 **infinitesimal $dx$**，  
+  例如：先讓 $dx$ 是一個很小的非零數字
 
-  \[
+  $$
   \frac{(x_0 + dx)^2 - x_0^2}{dx} = 2x_0 + dx
-  \]
+  $$
 
-  然後把 dx 當作 0 → 進行微分計算。  
+  最後把 $dx$ 當作 $0$。  
   </textarea>
   </section>
 
@@ -322,7 +323,12 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   批評者 (Nieuwentyt, Berkeley …) 說：
 
   - 你不能一開始不把 dx 當 0，最後又把它當 0。  
-  - 這違背邏輯／嚴謹性。  
+  - 這違背邏輯／嚴謹性。
+
+  <div class="fragment" data-fragment-index="2">
+    <blackquote>Ghosts of Departed Quantities</blackquote>
+    Bishop Berkeley
+  </div>  
   </textarea>
   </section>
 
