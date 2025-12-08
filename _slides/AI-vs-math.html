@@ -64,7 +64,7 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   <textarea data-template>
   ### 為什麼這件事令人震撼？
 
-  - 陶本人是保守派數學家  
+  - 陶是當代頂尖科學家之一  
   - 連他都開始「全面擁抱 AI」  
   - 那我們還有什麼理由抗拒？
   </textarea>
@@ -75,9 +75,11 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   <textarea data-template>
   ## 我們可能的抗拒角度
 
-  - **學術倫理** — 把 AI 解答當自己成果，是不是問題？  
-  - **學習成長** — 把所有題目交給 AI，會不會喪失數學敏銳度？  
-  - **情感／心理** — 繼 AlphaGo 後，人類最後的聖域被攻破。  
+  <ul>
+    <li class="fragment" data-fragment-index="2"><strong>學術倫理</strong> — 把 AI 解答當自己成果，是不是問題？  </li>
+    <li class="fragment" data-fragment-index="3"><strong>學習成長</strong> — 把所有題目交給 AI，會不會喪失數學敏銳度？  </li>
+    <li class="fragment" data-fragment-index="4"><strong>情感／心理</strong> — 繼 AlphaGo 後，人類最後的聖域被攻破。  </li>
+  </ul>
   </textarea>
   </section>
 
@@ -94,13 +96,11 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   <!-- Slide 7: 大綱 -->
   <section data-markdown>
   <textarea data-template>
-  ## 今日大綱
+  ## 第一節的大綱
 
   1. 試看看 AlphaProof 怎麼做到  
   2. 什麼是公理化系統  
   3. 微積分嚴謹化的歷史  
-  4. （問答後）意識與意向性  
-  5. 哥德爾不完備定理
   </textarea>
   </section>
 
@@ -115,8 +115,6 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   ### 想像 —— AI 被關進一個不能說謊的小房間  
 
   - 房間裡有檢查器，只要一句話錯 → 全部不算。  
-  - 就像老師批改你寫的數學證明。  
-  - 所以我們不能找一群人來一條條審 —— 實在不可能。
   </textarea>
   </section>
 
@@ -133,9 +131,10 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
     <h3>AlphaProof 的工作流程</h3>
     <img src="/assets/img/slides/ai-vs-math/alphaproof.png" style="width: 70%; border: 1px solid #ccc;">
     <ul>
-      <li>大量數學文本 → 翻譯成 Lean（使用類 AlphaZero 的 AI）</li>
-      <li>用這些 Lean 文本訓練 Proof-AI → 生成證明</li>
-      <li>用 Lean 驗證證明是否通過</li>
+      <li  class="fragment" data-fragment-index="2">大量數學文本 → 翻譯成 Lean（使用類 AlphaZero 的 AI）</li>
+      <li  class="fragment" data-fragment-index="3">用這些 Lean 文本訓練 ＡlphaProof → 生成證明</li>
+      <li  class="fragment" data-fragment-index="4">用 Lean 驗證證明是否通過</li>
+      <li  class="fragment" data-fragment-index="5">如果有一個題目很難解的時候怎麼辦？</li>
     </ul>
   </section>
 
@@ -169,11 +168,16 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   <textarea data-template>
   ### 線性代數：我們第一堂真正接觸到的公理化系統
 
-  線性空間的定義由一組公設 (axioms) 決定：  
-  - 封閉性  
-  - 結合律／分配律  
-  - 單位元素／逆元素存在  
-  - ……
+  **Definition 3.1** A vector space (or linear space) $V$ over a field $F$ consists of a set in which two operations (called addition and scalar multiplication) are defined so that for each element $a$ in $F$ and each element $v$ in $V$ there is a unique element $av$ in $V$, such that the following conditions hold: let $u,\ v,\ w\in V$ and $a,\ b\in F$,
+
+  - (VS1) $u+v=v+u$ (addition is commutative).
+  - (VS2) $(u+v)+w=u+(v+w)$ (addition is associative).
+  - (VS3) there is an element $0\in V$ such that $u+0=u$ (additive unity exists).
+  - (VS4) For any $u$, there exists $v\in V$ such that $u+v=0$, and we will denote such $v$ as $-u$ (additive inverse exists).
+  - (VS5) For $1\in F$, $1u=u$.
+  - (VS6) $(ab)x=a(bx)$.
+  - (VS7) $a(u+v)=au+av$.
+  - (VS8) $(a+b)u=au+bu$.
 
   只要滿足這些 → 我們就稱它為「線性空間」，不需要再問「是否合理」。  
   </textarea>
