@@ -35,342 +35,327 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
     /* Add other styling like background-color, border, etc. */
   }
 </style>
-<section>
-  <section data-markdown>
-    <textarea data-template>
-      <img src="/assets/img/slides/ai-vs-math/tao.png"
-         alt="Tao's blog"
-         style="height: auto;" />
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      GPT 要如何避免胡言亂語？
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      ![[alphaproof](https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/)](/assets/img/slides/ai-vs-math/alphaproof.png)
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
+<!-- Slide 1 -->
+<section data-markdown>
+<textarea data-template>
 # AI 與數學：  
 ## 人類邏輯推理的最後堡壘？
 
----
+</textarea>
+</section>
 
-## 開場：陶哲軒的 10 分鐘  
-### Gemini DeepThink 解決 Erdős Problem 367
+<!-- Slide 2: 陶哲軒 + 引言 -->
+<section>
+  <h2>陶哲軒與 Gemini DeepThink</h2>
+  <img src="/assets/img/slides/ai-vs-math/tao.jpeg" style="width: 300px; float: right; margin: 10px;">
+  <p>上個月底，他在部落格寫到：他花了 10 分鐘透過 Gemini DeepThink 解決了 Erdős Problem 367。<br>
+  他認為：透過 AI 協助來解決 Erdős 問題，已經是這項數學工作的日常。</p>
+</section>
 
-- 2024 年 1 月：陶哲軒在部落格透露  
-- 他用 **10 分鐘** 透過 Gemini DeepThink 解決 Erdos 問題  
-- 他直言：  
-  > 「AI 協助解決 Erdős 問題，已經是這項工作的日常。」
+<!-- Slide 3: 陶哲軒部落格截圖 -->
+<section>
+  <h2>原始貼文</h2>
+  <img src="/assets/img/slides/ai-vs-math/tao_post.png" style="width: 80%; border: 1px solid #ccc;">
+</section>
 
----
+<!-- Slide 4: 為什麼這很震撼 -->
+<section data-markdown>
+<textarea data-template>
+### 為什麼這件事令人震撼？
 
-### 為何這件事令人震撼？
-
-- 陶本人是 AI 持保留態度的數學家  
+- 陶本人是保守派數學家  
 - 連他都開始「全面擁抱 AI」  
-- 我們還有理由抗拒嗎？
+- 那我們還有什麼理由抗拒？
+</textarea>
+</section>
 
----
+<!-- Slide 5: 抗拒的理由 -->
+<section data-markdown>
+<textarea data-template>
+## 我們可能的抗拒角度
 
-## 我們抗拒 AI 的理由？
+- **學術倫理** — 把 AI 解答當自己成果，是不是問題？  
+- **學習成長** — 把所有題目交給 AI，會不會喪失數學敏銳度？  
+- **情感／心理** — 繼 AlphaGo 後，人類最後的聖域被攻破。  
+</textarea>
+</section>
 
-### 學術倫理  
-- 我們能把 AI 的答案當成自己的成果嗎？
+<!-- Slide 6: 當前現實 -->
+<section data-markdown>
+<textarea data-template>
+> 現實是：從學生到教授，不少人已經開始用 AI 幫助理解數學。  
+> 那麼 ——  
+> 我們該擔心 AI 取代數學家嗎？  
+> 或者相信「人類的邏輯論證」永遠不可被取代？
+</textarea>
+</section>
 
-### 學習角度  
-- 會不會因此失去數學敏銳度？
+<!-- Slide 7: 大綱 -->
+<section data-markdown>
+<textarea data-template>
+## 今日大綱
 
-### 情感層面  
-- 繼 AlphaGo 後，人類最後的聖域再度被突破？
-
----
-
-## 無論如何──  
-### **現在從學生到教授都在用 AI 協助理解數學**
-
-- 這是否會讓 AI **取代數學家**？
-- 或是 ——  
-  **AI 永遠無法取代「人類的邏輯論證能力」？**
-
-接下來我會從這些方向展示：
-
----
-
-## 今日的大綱
-
-1. AlphaProof 如何奪下 IMO 銀牌  
+1. 試看看 AlphaProof 怎麼做到  
 2. 什麼是公理化系統  
 3. 微積分嚴謹化的歷史  
-4.（問答後）意識與意向性  
-5. 哥德爾不完備定理  
+4. （問答後）意識與意向性  
+5. 哥德爾不完備定理
+</textarea>
+</section>
 
----
+<!-- Slide 8: Part I 標題 -->
+<section>
+  <h2>Part I<br>AlphaProof：AI 如何通過「證明地獄」</h2>
+</section>
 
-# Part I  
-# AlphaProof：AI 如何通過「證明地獄」
+<!-- Slide 9: AlphaProof 的比喻 -->
+<section data-markdown>
+<textarea data-template>
+### 想像 —— AI 被關進一個不能說謊的小房間  
 
----
+- 房間裡有檢查器，只要一句話錯 → 全部不算。  
+- 就像老師批改你寫的數學證明。  
+- 所以我們不能找一群人來一條條審 —— 實在不可能。
+</textarea>
+</section>
 
-## AlphaProof 如何運作？
+<!-- Slide 10: 為何要 Lean -->
+<section>
+  <h3>那麼用什麼來檢查？</h3>
+  <p>答案是 <strong>Lean</strong>：一種形式化語言 / 定理證明器。</p>
+  <img src="/assets/img/slides/ai-vs-math/lean-logo.png" style="width: 150px; margin-top:10px;">
+  <p><small><a href="https://lean-lang.org" target="_blank">lean-lang.org</a></small></p>
+</section>
 
-**讓 AI 被關進一個不能說謊的小房間。**
+<!-- Slide 11: AlphaProof 流程圖 -->
+<section>
+  <h3>AlphaProof 的工作流程</h3>
+  <img src="/assets/img/slides/ai-vs-math/alphaproof.png" style="width: 70%; border: 1px solid #ccc;">
+  <ul>
+    <li>大量數學文本 → 翻譯成 Lean（使用類 AlphaZero 的 AI）</li>
+    <li>用這些 Lean 文本訓練 Proof-AI → 生成證明</li>
+    <li>用 Lean 驗證證明是否通過</li>
+  </ul>
+</section>
 
-- 房間 = Lean 定理檢查器  
-- 若證明錯一點點 → 全部不算  
-- 就像老師批改證明：一句話錯 → 零分
+<!-- Slide 12: 為什麼這麼有效 -->
+<section data-markdown>
+<textarea data-template>
+### 為什麼這樣可行？
 
----
+- Lean 是 **形式化 / 公理化** 的系統  
+- 多數奧林匹亞數學題目，其理論基礎早被公理化  
+- 所以 AI + Lean 的組合非常適合這種題目
+</textarea>
+</section>
 
-### 為何需要 Lean？
+<!-- Slide 13: 重要觀點 -->
+<section data-markdown>
+<textarea data-template>
+> **AlphaProof 的能力 = Lean 能處理的數學領域的能力**
 
-- 不能找數學家「一條條審閱」  
-- Lean 能做兩件事：
+若某個數學領域沒有公理化 → Lean 無法驗證 → AI 也就無從著手。
+</textarea>
+</section>
 
-1. **形式化公理系統**  
-2. **檢查證明是否正確**
+<!-- Slide 14: Part II 標題 -->
+<section>
+  <h2>Part II<br>什麼是公理化系統？</h2>
+</section>
 
----
+<!-- Slide 15: 線性代數示例 -->
+<section data-markdown>
+<textarea data-template>
+### 線性代數：我們第一堂真正接觸到的公理化系統
 
-## AlphaProof 的訓練流程
-
-1. AlphaZero 方法訓練一個「翻譯機器人」  
-2. 大量數學文本 → Lean 語言  
-3. 用這些 Lean 訓練寫證明的 AI → **AlphaProof**  
-4. 遇到難題時：  
-   - 生成簡化變體  
-   - 全部攻克  
-   - 回頭秒殺大魔王
-
----
-
-### 重要概念  
-# Lean 是最後的裁判
-
-AlphaProof 的能力  
-= Lean 能驗證的數學領域的能力
-
----
-
-# Part II  
-# 公理化系統是什麼？
-
----
-
-## 你第一個遇到的公理化系統：線性代數
-
-線性空間的八條公設：
-
+線性空間的定義由一組公設 (axioms) 決定：  
 - 封閉性  
-- 結合律  
-- 分配律  
+- 結合律／分配律  
+- 單位元素／逆元素存在  
 - ……
 
-只要滿足 → 就叫線性空間  
-不再管裡面長什麼樣。
+只要滿足這些 → 我們就稱它為「線性空間」，不需要再問「是否合理」。  
+</textarea>
+</section>
 
----
+<!-- Slide 16: 公理化系統的精神 -->
+<section data-markdown>
+<textarea data-template>
+> **公理化系統就是我們對「甚麼是合法數學」的基本約定。**  
+> 它讓我們不再對最根本的假設爭論，而專注於由這些假設推導出的結論。  
+</textarea>
+</section>
 
-### 公理化系統的精神：
+<!-- Slide 17: 歐幾里得公設 -->
+<section data-markdown>
+<textarea data-template>
+### 其實古人也做過公理化
 
-> **我們不再證明最基礎的敘述，只規定「什麼是對的」。**
+**歐幾里得的五大公設** —  
+它們就是幾何學的基礎假設，不需要證明。
 
-這和我們在其他場合被要求不能說「this is trivial」形成對比。
+就像今天的線性代數一樣。  
+</textarea>
+</section>
 
----
+<!-- Slide 18: Part III 標題 -->
+<section>
+  <h2>Part III<br>實數完備性與微積分的危機</h2>
+</section>
 
-## 歐幾里得的公設也是公理
+<!-- Slide 19: 完備性的多種敘述 -->
+<section data-markdown>
+<textarea data-template>
+### 完備性：看似不同，實則等價的敘述
 
-1. 兩點決定一直線  
-2. 直線可無限延伸  
-3. 任意圓可畫  
-4. 所有直角相等  
-5. 平行公設  
+- 無限不循環小數存在  
+- 上確界 (least upper bound) 存在  
+- Cauchy 序列必收斂  
+- 套套閉區間交集不空  
+- 有界單調序列必收斂  
+- Every bounded sequence has convergent subsequence (Bolzano-Weierstrass)  
+- 中間值定理 & 等等
+</textarea>
+</section>
 
-這些也不是證明來的，就是假設。
+<!-- Slide 20: 經典的兩難 -->
+<section data-markdown>
+<textarea data-template>
+> 如果我們直接相信「無限小數存在」——  
+> 就會有人問：「為什麼存在？」  
+> 再用「數列收斂」回答 → 又有人問：「收斂性怎麼保證？」  
+>  
+> → 這就像雞生蛋、蛋生雞：  
+> 我們似乎無法從更基本的東西起頭。  
+</textarea>
+</section>
 
----
+<!-- Slide 21: 第三次數學危機 — 羅素悖論 -->
+<section data-markdown>
+<textarea data-template>
+## 第三次數學危機
 
-# Part III  
-# 實數完備性的危機
+- 一開始我們假設：「對任何性質 P，集合 { x | P(x) } 都存在」  
+- 但 **羅素** 建構出：  
+  \[
+  R = \{ x \mid x \notin x \}
+  \]  
+- 產生矛盾：  
+  \[
+  R \in R \iff R \notin R
+  \]  
+</textarea>
+</section>
 
----
-
-## 完備性的五百種說法（其實都等價）
-
-1. 無限小數存在  
-2. 上確界存在  
-3. Cauchy 序列必收斂  
-4. 套套縮閉區間必有交集  
-5. 單調有界序列必收斂  
-6. BW 定理：有界序列有收斂子序列  
-7. 中間值定理  
-
----
-
-### 問題：  
-這些到底哪一個是最基本的？
-
-- 用小數定義實數  
-- 又需要收斂才知道極限存在  
-- 但收斂又需要完備性  
-
-###  
-# → 雞生蛋、蛋生雞
-
----
-
-### 就像歐幾里得幾何  
-> 我們必須承認一些不證自明的敘述  
-否則什麼都無法開始。
-
----
-
-# Part IV  
-# 第三次數學危機：羅素悖論
-
----
-
-## Frege 第五公理（問題來源）
-
-> 對任何性質 P，集合 { x | P(x) } 存在且唯一。
-
-然後 Russell 做了：
-
-\[
-R = \{ x \mid x \notin x \}
-\]
-
----
-
-## 產生矛盾：
-
-\[
-R \in R \iff R \notin R
-\]
-
----
-
-## 白話版（你們熟悉的）
+<!-- Slide 22: 悖論的白話版本 -->
+<section data-markdown>
+<textarea data-template>
+### 白話悖論示例：
 
 - 理髮師悖論  
-- 不能貼公告的布告欄  
-- 說謊者悖論（皮諾丘）
+- 布告欄悖論  
+- 說謊者悖論  
 
----
+這些就是集合論中「自我指涉」帶來的災難。  
+</textarea>
+</section>
 
-## 數學界的三條出路
+<!-- Slide 23: 三條解法之路 -->
+<section data-markdown>
+<textarea data-template>
+數學家給出三條出路：
 
-1. **修改公理**（ZF / ZFC）  
-2. **修改語意**（類型論等）  
-3. **修改語法**（限制可形成的語句）
+1. **修改公理** → 像 ZF / ZFC  
+2. **修改語意** → 類型論等  
+3. **修改語法** → 限制哪些集合可以形成  
 
----
+我們選定了前兩種（公理／語法）作為主流方案。  
+</textarea>
+</section>
 
-# Part V  
-# 微積分嚴謹化的歷史
+<!-- Slide 24: 微積分起源 -->
+<section data-markdown>
+<textarea data-template>
+## 微積分的起源，可追溯更早
 
----
+- 古希臘的割圓術  
+- 中國的劉徽：《九章算術》  
+- 芝諾悖論、莊子「一尺之棰，日取其半，萬世不竭」  
 
-## 追溯起源：割圓術與古代哲學
+這些都在探討「連續」「無窮分割」「極限」的概念。  
+</textarea>
+</section>
 
-- 安提豐  
-- 《九章算術》劉徽割圓  
-- 芝諾悖論  
-  - 阿基里斯追不上烏龜  
-  - 莊子：  
-    > 一尺之棰，日取其半，萬世不竭。
-
----
-
-## 牛頓與萊布尼茲：計算斜率的革命
-
-使用 infinitesimal dx  
+<!-- Slide 25: 牛頓 & 萊布尼茲革命 -->
+<section data-markdown>
+<textarea data-template>
+牛頓與萊布尼茲引入 **infinitesimal (dx, dy)**，  
 例如：
 
 \[
-\frac{(x_0+dx)^2 - x_0^2}{dx}
-= 2x_0 + dx
+\frac{(x_0 + dx)^2 - x_0^2}{dx} = 2x_0 + dx
 \]
 
-最後把 dx「丟掉」  
-→ 問題就在這裡。
+然後把 dx 當作 0 → 進行微分計算。  
+</textarea>
+</section>
 
----
+<!-- Slide 26: 批評與爭論 -->
+<section data-markdown>
+<textarea data-template>
+批評者 (Nieuwentyt, Berkeley …) 說：
 
-## Nieuwentyt 的批評
+- 你不能一開始不把 dx 當 0，最後又把它當 0。  
+- 這違背邏輯／嚴謹性。  
+</textarea>
+</section>
 
-- 你不能一開始不當 0，  
-- 最後又把它當成 0  
-- 「你到底是不是 0？」
+<!-- Slide 27: Cauchy 的嘗試 -->
+<section data-markdown>
+<textarea data-template>
+Cauchy 嘗試用「極限趨近」來取代 infinitesimal：  
+把 dx 當作「趨近 0 的量」。  
+但他仍使用描述性語言 (「任意小」等)，並沒有處理完備性。  
+</textarea>
+</section>
 
----
+<!-- Slide 28: Weierstrass 的 ε–δ 嚴謹化 -->
+<section data-markdown>
+<textarea data-template>
+1857 年起，Weierstrass 引入 **ε–δ 定義**，  
+剔除描述性語言，數學分析開始成為真正嚴謹的理論。  
+</textarea>
+</section>
 
-## Johan Bernoulli 的回擊
+<!-- Slide 29: Infinitesimal 的復活 — Nonstandard Analysis -->
+<section data-markdown>
+<textarea data-template>
+1960 年代  
+邏輯學家 <strong>Robinson</strong> 利用模型論 + ultrafilter + ultraproduct  
+成功構造出 **超實數 *ℝ**，其中包含真正的 infinitesimal  
 
-> Nieuwentyt 是不懂分析的老頑固  
-（史料記有類似批判）
+1977 年，<strong>Nelson</strong> 用 Internal Set Theory (IST) 給出了公理化系統  
+讓 infinitesimal 重回數學正統  
+</textarea>
+</section>
 
----
+<!-- Slide 30: 結語 / 提問 -->
+<section data-markdown>
+<textarea data-template>
+## 最終提問
 
-# Cauchy 的突破
+如果 AI 出現的時間，比 Weierstrass 發明 ε–δ 還早，  
+或比 Cauchy 還早 ——  
 
-- 把無窮小 dx 當作「動態趨近 0 的量」  
-- 但仍使用大量描述性語言：  
-  > 想要多小就多小
+**AI 會幫我們發明 ε–δ 定義嗎？**  
+還是會停留在 infinitesimal 的描述？  
 
-並未處理「實數完備性」問題。
-
----
-
-# Weierstrass：真正的嚴謹
-
-1857 年  
-引入 **ε–δ** 語言  
-完全丟掉描述性語言
-
----
-
-# Robinson：infinitesimal 回歸
-
-1960 年  
-利用邏輯工具（模型論、超濾子、超冪）  
-證明：
-
-> 牛頓與萊布尼茲的 infinitesimal  
-**不存在邏輯矛盾。**
-
-1977 Nelson 公理化 nonstandard analysis
-
----
-
-# 最後的提問  
-
-### 如果 AI 出現得比 Weierstrass 更早  
-或比 Cauchy 更早 ——  
-
----
-
-## AI 還會幫我們發明 ε–δ 嗎？
-
-還是會停留在 infinitesimal 的描述？
-
-這是值得我們一起思考的問題。
+值得我們一起思考。  
 
 ---
 
 # 謝謝大家  
-## Q & A
 
-  </textarea>
+## Q & A
+</textarea>
 </section>
