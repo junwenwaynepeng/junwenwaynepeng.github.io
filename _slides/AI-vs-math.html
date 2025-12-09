@@ -364,13 +364,22 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   </textarea>
   </section>
   <section>
-  <h3>甘特图</h3>
+  <h3>微積分發展史：人物與關鍵事件</h3>
   <div class="mermaid">
     <pre>
-%%{init: {'theme': 'light', 'themeVariables': { 'darkMode': false }}}%%
+%%{init: { 
+  'theme': 'light', 
+  'themeVariables': { 'darkMode': false },
+  'gantt': { 
+     'barHeight': 40,
+     'fontSize': 20, 
+     'sectionFontSize': 24,
+     'padding': 15,
+     'topMargin': 10
+  }
+}}%%
 gantt
     dateFormat  YYYY
-    title 微積分發展史：人物與關鍵事件 (修復版)
     axisFormat  %Y
 
     section 1. 創立與早期批評
@@ -394,8 +403,7 @@ gantt
     再次確認病態函數 (1861)     :crit, 1861, 1y
     無窮小公理可能性 (1960)     :crit, 1960, 1y
     提出無窮小公理系統 (1977)   :crit, 1977, 1y
-            </pre
-    >
+    </pre>
   </div>
   </section>
   <!-- Slide 30: 結語 / 提問 -->
