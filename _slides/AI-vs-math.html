@@ -363,6 +363,24 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   讓 infinitesimal 重回數學正統  
   </textarea>
   </section>
+  <section>
+  <h3>甘特图</h3>
+  <div class="mermaid">
+    <pre>
+              %%{init: {'theme': 'light', 'themeVariables': { 'darkMode': false }}}%%
+              gantt
+    title A Gantt Diagram
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2014-01-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2014-01-12, 12d
+        another task    :24d
+            </pre
+    >
+  </div>
+  </section>
   <!-- Slide 30: 結語 / 提問 -->
   <section data-markdown>
   <textarea data-template>
