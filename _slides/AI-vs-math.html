@@ -114,7 +114,7 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   <textarea data-template>
   ### 想像 —— AI 被關進一個不能說謊的小房間  
 
-  - 房間裡有檢查器，只要一句話錯 → 全部不算。  
+  房間裡有一個會檢查證明的教授，只要一句話錯 → 全部不算。  
   </textarea>
   </section>
 
@@ -213,11 +213,11 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   ### 完備性：看似不同，實則等價的敘述
 
   - 實數存在 e.g. $\pi$
-  - 上確界 (least upper bound) 存在  
+  - 最小上界 (least upper bound) 存在  
   - Cauchy 序列必收斂  
   - 套套閉區間交集不空  
   - 有界單調序列必收斂  
-  - Every bounded sequence has convergent subsequence (Bolzano-Weierstrass)  
+  - 有界數列必有收斂子數列 (Bolzano-Weierstrass)  
   - 中間值定理
 
   <img src="/assets/img/slides/ai-vs-math/ouroboros.png" style="width: 60%; border: 1px solid #ccc;">
@@ -363,7 +363,39 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   讓 infinitesimal 重回數學正統  
   </textarea>
   </section>
+  <section>
+  <h3>Flowchart</h3>
+  <div class="mermaid">
+    <pre>
+      gantt
+        dateFormat  YYYY
+        title 微積分發展史：人物與關鍵事件 (修復版)
+        axisFormat  %Y
 
+        section 1. 創立與早期批評
+        I. Newton (1643-1727)      :done, 1643, 1727
+        G. Leibniz (1646-1716)     :done, 1646, 1716
+        B. Nieuwentijt (1654-1718) :done, 1654, 1718
+        Bishop Berkeley (1684-1753):crit, 1684, 1753
+
+        section 2. 分析的嚴格化
+        A. Cauchy (1789-1851)      :done, 1789, 1851
+        K. Weierstrass (1815-1897) :done, 1815, 1897
+        B. Riemann (1826-1866)     :done, 1826, 1866
+
+        section 3. 無窮小的現代復興
+        A. Robinson (1918-1974)    :active, 1918, 1974
+        E. Nelson (1932-2014)      :active, 1932, 2014
+
+        section 關鍵事件
+        發現病態函數 (1817)         :crit, 1817, 1y
+        epsilon-delta 語言 (1857)  :crit, 1857, 1y
+        再次確認病態函數 (1861)     :crit, 1861, 1y
+        無窮小公理可能性 (1960)     :crit, 1960, 1y
+        提出無窮小公理系統 (1977)   :crit, 1977, 1y
+    </pre>
+  </div>
+  </section>
   <!-- Slide 30: 結語 / 提問 -->
   <section data-markdown>
   <textarea data-template>
