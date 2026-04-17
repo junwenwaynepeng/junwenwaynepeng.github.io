@@ -1,0 +1,567 @@
+---
+layout: slide
+title: Catching a spider: Automating the Spider Algorithm in Complex Dynamics 
+date: 2025-8-26s
+author: Wayne Peng
+coauthors:
+to: National University of Kaohsiung
+description: Some slides for a git and GitHub workshop using reveal.js
+categories: academic
+abstract: |
+  The Spider Algorithm is a well-known topological tool used to study the dynamics of polynomials and rational functions. However, implementing this algorithm computationally requires a system capable of distinguishing valid homotopic paths from tangled, intersecting ones. In this talk, we explore a computational framework that translates the continuous topological constraints of complex dynamics into discrete graph-theoretic algorithms.
+
+  We will outline the process of generating discretized paths (spider legs) from a chosen base point to the post-critical set of a rational map, utilizing projective coordinates and the chordal metric to seamlessly handle limits at infinity. We then introduce an algorithmic method to evaluate the resulting monodromy graphs. By searching for vertex-disjoint paths and applying cyclic ordering, our algorithm programmatically verifies the existence of a "good spider" without human visual intervention. This provides a robust computational pipeline for exploring the Iterated Monodromy Groups of high-degree rational functions.
+tags:
+  - research
+  - academic
+  - slides
+front-img: "/assets/img/slides/how-to-actch-a-good-spider/automata-1.png"
+---
+<style>
+  .container{
+      display: flex;
+  }
+  .col{
+      flex: 1;
+  }
+</style>
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 10px; /* Adds a gap between grid items */
+  }
+
+  .grid-item {
+    padding: 10px;
+    /* Add other styling like background-color, border, etc. */
+  }
+</style>
+<section>
+  <section data-markdown>
+    <textarea data-template>
+      <p class="fragment" data-fragment-index="0">
+        Arithmetic dynamics = number theory + dynamical systems</p> 
+      <p class="fragment" data-fragment-index="1">
+        A dynamical system here refers to the iteration of a rational function $f(x)$ over a number field $K$, and we denote
+        $$f^n=f\circ f^{n-1},\quad f^0(x)=x$$
+      </p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h2>Terminologies</h2>
+      <ul>
+        <li class="fragment" data-fragment-index="1"><em>Orbit</em> of a point $p$ under $f$: $\{f^n(p)| n=0,\ 1,\ 2,\ \ldots \}$</li>
+        <li class="fragment" data-fragment-index="2"><em>Preperiodic point</em> $p$: if $p$ has a finite orbit, i.e.
+        $$f^n(p)=f^m(p)\quad\text{ for some }n< m.$$
+        </li>
+        <li class="fragment" data-fragment-index="3"><em>Periodic point</em> $p$: if $n=0$.</li>
+        <li class="fragment" data-fragment-index="4"><em>Wandering point</em> $p$: if $p$ has an infinite orbit</li>
+      </ul>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h2>PCF maps</h2>
+      <p>
+        Recall that a <em>critical point</em> $p$ of $f$ is a solution of $f'(x)=0$.
+      </p>
+      <p class="fragment" data-fragment-index="1"> 
+        A rational function $f$ is called <em>post-critically finite (PCF)</em> map if all critical points of $f$ are preperiodic points.
+      </p>
+      <div class="example fragment" data-fragment-index="2">
+        <p>The following are PCF maps: $x^n$, $x^2-1$, $x^2-2$ ....</p>
+      </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <div class="theorem">
+        <div class="theorem-header">
+          <span class="theorem-authors">(Benedetto, Ingram, Jones, and Levy)</span>
+        </div>
+        <p>
+          For any fixed integers $d \geq 2$ and $B \geq 1$, there are only finitely many conjugacy classes of post-critically finite rational maps of degree $d$ which can be defined over a number field of degree at most $B$, except (when $d$ is a perfect square) for the infinite family of flexible Lattès maps.
+        </p>
+      </div>
+      <p class="fragment" data-fragment-index="1">
+        Proposed by Silverman, it is natural to define
+        $$h_{crit}(f)=\sum_{p\in\mathbb{P}^1(\bar{K})}(e_p(f)-1)h_f(p)$$
+        where $e_p(f)$ is the ramification index of $f$ at $p$ which measures the post-critical complexity of a rational map defined over $\bar{K}$ 
+      </p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <p>
+        It is immediate that $h_{crit}(f)=0$ if and only if $f$ is post-critically finite.
+      </p>
+      <p class="fragment" data-fragment-index="1">
+        We then show that $|h_{crit}(f)-h(f)|< C$. (This step is very subtle.)
+      </p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <p>
+        List of all degree $2$ PCF rational maps
+      </p>
+      <div class="grid-container">
+        <div class="grid-item">\( z^{2} - 2 \)</div>
+        <div class="grid-item">\( z^{2} - 1 \)</div>
+        <div class="grid-item">\( \tfrac{1}{2(z - 1)^{2}} \)</div>
+        <div class="grid-item">\( \frac{1}{(z - 1)^{2}} \)</div>
+        <div class="grid-item">\( -\frac{1}{4z^{2} - 4z} \)</div>
+        <div class="grid-item">\( -\frac{4}{9z^{2} - 12z} \)</div>
+        <div class="grid-item">\( \frac{2}{(z - 1)^{2}} \)</div>
+        <div class="grid-item">\( \frac{2z+1}{4z-2z^2} \)</div>
+        <div class="grid-item">\( -\frac{2z}{2z^{2} - 4z + 1} \)</div>
+        <div class="grid-item">\( \frac{3z^{2} - 4z + 1}{1 - 4z} \)</div>
+      </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <p>
+        List of all degree $2$ PCF rational maps
+      </p>
+      <div class="grid-container">
+        <div class="grid-item">\( \frac{z}{2}+\frac{1}{z} \)</div>
+        <div class="grid-item">\( \frac{z}{2}+\frac{1}{2z} \)</div>
+        <div class="grid-item">\( \frac{z}{2}-\frac{3}{2z} \)</div>
+        <div class="grid-item">\( \frac{z}{2}-\frac{1}{2z} \)</div>
+        <div class="grid-item">\( \frac{1}{z^2}\)</div>
+        <div class="grid-item">\( \frac{2}{z^2} \)</div>
+        <div class="grid-item">\( \frac{-z^2+2z+1}{z^2+2z-1} \)</div>
+        <div class="grid-item">\( -\frac{(z-2)z}{2z-1} \)</div>
+        <div class="grid-item">\( \frac{2z-1}{z^2-1} \)</div>
+        <div class="grid-item">\( \frac{z^2-4z+2}{z^2-2z+2} \)</div>
+        <div class="grid-item">\( \frac{-4z}{z^2+2} \)</div>
+      </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <p>
+        List of all degree $3$ PCF polynomials.
+      </p>
+      <div class="grid-container">
+        <div class="grid-item">\( z^{3} \)</div>
+        <div class="grid-item">\( -z^{3} + 1 \)</div>
+        <div class="grid-item">\( -2z^{3} + 3z^{2} + \tfrac{1}{2} \)</div>
+        <div class="grid-item">\( -2z^{3} + 3z^{2} \)</div>
+        <div class="grid-item">\( -z^{3} + \tfrac{3}{2}z^{2} - 1 \)</div>
+        <div class="grid-item">\( 2z^{3} - 3z^{2} + 1 \)</div>
+        <div class="grid-item">\( 2z^{3} - 3z^{2} + \tfrac{1}{2} \)</div>
+        <div class="grid-item">\( z^{3} - \tfrac{3}{2}z^{2} \)</div>
+        <div class="grid-item">\( -3z^{3} + \tfrac{9}{2}z^{2} \)</div>
+        <div class="grid-item">\( -4z^{3} + 6z^{2} - \tfrac{1}{2} \)</div>
+        <div class="grid-item">\( 4z^{3} - 6z^{2} + \tfrac{3}{2} \)</div>
+        <div class="grid-item">\( 3z^{3} - \tfrac{9}{2}z^{2} + 1 \)</div>
+        <div class="grid-item">\( -z^{3} + \tfrac{3}{2}z^{2} - 1 \)</div>
+        <div class="grid-item">\( -\tfrac{1}{4}z^{3} + \tfrac{3}{2}z + 2 \)</div>
+        <div class="grid-item">\( -\tfrac{1}{28}z^{3} - \tfrac{3}{4}z + \tfrac{7}{2} \)</div>
+      </div>
+    </textarea>
+  </section>
+</section>
+<section>
+  <section data-markdown>
+    <textarea data-template>
+      <h2>Arboreal representation</h2>
+      <img src="/assets/img/slides/overgroup/tree.png" alt="Tree diagram" width="400">
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h3>Wreath Product</h3>
+      <p class="fragment" data-fragment-index="1">Let $G$ and $H$ be two groups, and $G$ acts on the a index set $I=\{1,2,\ldots,d\}$.</p>
+      <p class="fragment" data-fragment-index="2">The <em>wreath product</em> of $H$ by $G$ is a group extension of $G$ by $H^{|I|}$.</p> 
+      <p class="fragment" data-fragment-index="3">An element in the wreath product $H\wr_{I} G$ is expressed as
+      $$((h_1,\ldots, h_d);g)$$
+      with $h_i\in H$ and $g\in G$.</p> 
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <p>The operation is defined as 
+      $$((h_i)_{i\in I}; g)((h'_i)_{i\in I} ; g')=((h_{g'(i)})_{i\in I}(h'_i)_{i\in I};gg').$$</p>
+      <p class="fragment" data-fragment-index="1">The index set $I$ is often omitted when it is clear from the context.</p>
+      <p class="fragment" data-fragment-index="2">We define
+      $$[G]^2=G\wr G\quad\text{and}\quad [G]^n=[G]^{n-1}\wr G\text{ for }n> 2$$
+      </p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h3>Automorphisms of a $d$-ary Tree</h3>
+      <p>
+        Let $T_d^n$ be a <em>(regular) level-$n$ $d$-ary tree</em>. An automorphism of a tree (viewed as a graph) is a bijection on the vertices that preserves edge–vertex incidence.
+      </p>
+      <p class="fragment" data-fragment-index="1">
+        Let's define $\operatorname{Aut}(T_d^n)$ be the group of automorphisms. We have
+      </p>
+      <div class="proposition fragment">
+        <p>
+          Let $\operatorname{Aut}(T_d^n)\cong [S_d]^n$ where $S_d$ is the symmetric group of $d$ elements.
+        </p>
+      </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <div class="example">
+        <ol>
+          <li>$\operatorname{Aut}(T_d^1)\cong S_d$</li>
+          <li class="fragment" data-fragment-index="1">$((1,(13),(132));(23))[1,1]=[1,1]$</li>
+          <li class="fragment" data-fragment-index="2">$((1,(13),(132));(23))[1,2]=[3,3]$</li>
+          <li class="fragment" data-fragment-index="3">$((1,(13),(132));(23))[1,3]=[3,2]$</li>
+        </ol>
+        <img src="/assets/img/slides/overgroup/3-ary-tree.png" alt="Tree diagram" width="600">
+      </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h3>Dynamical Galois Group</h3>
+      <ul>
+        <li class="fragment" data-fragment-index="1">Let \(K\) be a number field.</li>
+        <li class="fragment" data-fragment-index="2">Let \(f\) be a polynomial of degree \(d\) over \(K\).</li>
+        <li class="fragment" data-fragment-index="3">\(K_n(\alpha) = K(f^n(X)-\alpha)\) for some \(\alpha\in K\).</li>
+        <li class="fragment" data-fragment-index="4">\(\alpha\) is called <em>base point</em>.</li>
+        <li class="fragment" data-fragment-index="5">\(G_n(\alpha)= \mathrm{Gal}(K_n/K)\); \(G_\infty = \varprojlim_n G_n\).</li>
+      </ul>
+      <p class="fragment" data-fragment-index="6">We may define a tree structure on $\alpha$ and its preimages under $f$ by creating an edge between two points $a$ and $b$ if $f(a)=b$. This tree is denoted as \( \mathbb{T}_f(\alpha) \)</p>
+      <div class="proposition fragment" data-fragment-index="7">
+        <p>
+          For $\sigma\in G_n(\alpha)$, $\sigma$ is a tree automorphism.
+        </p>
+      </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h3>Arboreal Representation</h3>
+      <p>
+        This proposition yields an embedding
+        $$\phi:G_\infty\to \operatorname{Aut}(T_d^\infty)$$
+        (by taking an inverse limit on $n$), and is refered to as as <em>arboreal representation.</em>
+      </p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <p>
+        A motivation for understanding the dynamical Galois group for number theorists is that this group can be used to estimate
+        $$
+        \dfrac{\# f^n(\mathbb{P}^1(\mathbb{F}_p))}{p+1}.
+        $$
+        This implies, for a generic rational function $p$,
+        $$
+        \limsup_{p\to\infty}\dfrac{\operatorname{Per}(f_p,\mathbb{P}^1(\mathbb{F}_p))}{p} = 0.
+        $$
+      </p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h3>When Will $\phi$ be Surjective?</h3>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h2>Serre's open image theorem</h2>
+      <ul>
+        <li class="fragment">Let \(E\) be an elliptic curve over \(K\).</li>
+        <li class="fragment">For a prime integer \(p\), multiplication-by-\(p\) is a self-map of \(E\):  
+        \[
+        E \xrightarrow{[p]} E
+        \]
+        </li>
+        <li class="fragment">Let \(E[p^n]\) be the \(p^n\)-torsion points in \(E(\overline{K})\).  
+        (We know \(E[p^n]\cong (\mathbb{Z}/p^n\mathbb{Z})^2\).)</li>
+      </ul>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <p class="fragment">The inverse limit of the following chain is the Tate module:</p>
+
+      <p class="fragment">
+      $$
+      \{1\}\xleftarrow{[p]}E[p]\xleftarrow{[p]}E[p^2]\xleftarrow{[p]}E[p^3]\xleftarrow{[p]}\cdots
+      $$
+      </p>
+
+      <p class="fragment">
+      $$
+      \{1\}\xleftarrow{\times p}(\mathbb{Z}/p\mathbb{Z})^2
+      \xleftarrow{\times p}(\mathbb{Z}/p^2\mathbb{Z})^2
+      \xleftarrow{\times p}(\mathbb{Z}/p^3\mathbb{Z})^2
+      \xleftarrow{\times p}\cdots
+      $$
+      </p>
+
+      <p class="fragment">
+      $$
+      T_p(E)\cong \mathbb{Z}_p^2
+      $$
+      </p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <p class="fragment">
+      Taking the Absolute Galois group \(G_K = \operatorname{Gal}(\overline{K}/K)\) acting on \(T_p(E)\) induces an action of \(\operatorname{Gal}(\overline{K}/K)\) on a \(\mathbb{Z}_p\)-module, i.e. a representation
+      $$
+      G_K \xrightarrow{\rho} \operatorname{GL}_2(\mathbb{Z}_p)\subseteq \operatorname{GL}_2(\mathbb{Q}_p).
+      $$
+      </p>
+
+      <div class="theorem fragment">
+        <div class="theorem-header">
+          <span class="theorem-authors">(Serre's Open Image Theorem)</span>
+        </div>
+        <p>
+          If \(E\) is not a CM-curve, then \([\operatorname{GL}_2(\mathbb{Z}_p):\rho(G_K)]=1\) for almost all \(p\).
+        </p>
+      </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      ## A dynamic analog
+
+      <p class="fragment">
+      Taking the absolute Galois group action on the root tree \( \mathbb{T}_f(\alpha) \), the Galois action on the tree gives an embedding
+      \[
+      G_k \xrightarrow{\ \rho_{f,\alpha}\ } \operatorname{Aut}(T_d).
+      \]
+      </p>
+
+      <p class="fragment">
+      We call \([ \operatorname{Aut}(T_d) : G_k ] = [ \operatorname{Aut}(T_d) : G_\infty ]\) <em>Odoni's index</em>, and ask: when the Odoni index is finite?
+      </p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      ## Finite Odoni's index
+      <ul>
+        <li class="fragment">(Juul, Odoni, and etc.) For generic rational function defined over a global field $K$, $\operatorname{Gal}(f^n(X)-t/K)\cong [S_d]^n$, i.e. the Odoni's index is $1$.</li>
+        <li class="fragment">(Bridy, L.-C. Hsia, Jones, H.-C. Li, Tucker, and etc.) For certain families of rational functions, e.g. unit critical polynomial $x^n-c$, Odoni's index is finite.
+        </li>
+      </ul>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      ## Infinite Odoni's index
+      <p class="fragment">
+        We note that if the discriminant of a polynomial $f$, denoted by $\operatorname{disc}(f)$, is a perfect square over the defining field of $f$, then the Galois action on the roots of $f$ induces an even permutation. <span class="fragment">That is
+        $$[S_d:\operatorname{Gal}(f)]\leq [S_d:A_d]=2$$ 
+        </span>
+      </p>
+      <p class="fragment">
+        How can we construct a sequence where $\operatorname{disc}(f^n-\alpha)$ is always square?
+      </p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <div class="proposition fragment">
+        <p>
+          Let $f$ be a polynomial over a field $K$, let $a_f$ be its leading coefficient, let $d$ be its degree, let $\alpha\in K$, and let $n\geq 2$ be an integer. The discriminant of the $n$-th iteration of $f$, with multiple roots considered to be different elements, is given by:
+          $$\operatorname{disc}(f^n(x)-\alpha)=(-1)^{A(d,n)}a_f^{B(d,n)}d^{d^n}\operatorname{disc}(f^{n-1}(x)-\alpha)^{d}\prod_{c\in \mathcal{C}_f}(f^n(c)-\alpha),$$
+          where
+          $$
+            \begin{align*}
+            A(d,n) & =d^n\left(\dfrac{d^n-1}{2}+\dfrac{d^{n-1}-1}{2}\right), \\
+            B(d,n) & =d^{2n-1}-1.
+            \end{align*}
+          $$
+          In particular, $(-1)^{A(d,n)}=\left(\frac{d}{4}\right)$ is equal to $1$ if $d$ is even or if $d \equiv 1 \mod 4$, and equal to $-1$ otherwise.
+        </p>
+      </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h3>What's Special About PCF Maps for Arboreal Representation?</h3>
+      <p><center>PCF maps have infinite Odoni's index! They are the dynamical analogue of CM-curves.</center></p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <h3>Geometric viewpoint (by Jones)</h3>
+      <ul>
+        <li class="fragment">
+          We refer to $G_n=\operatorname{Gal}(f^n(X)-t/K)$ as the <em>arithmetic Galois group</em>.
+        </li>
+        <li class="fragment">
+          We refer to $\overline{G_n}=\operatorname{Gal}(f^n(X)-t/\overline{K})$ as the <em>geometric Galois group</em>.
+        </li>
+        <li class="fragment">
+           Let's consider the <em>strictly post-critical orbit</em> $P= \displaystyle \bigcup_{n\geq 1}f^n(C_f)$.
+        </li>
+      </ul>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <ul>
+        <li class="fragment">
+          If $\#P<\infty$, then the geometric Galois group is isomorphic to the image of the monodromy representation
+          $$\rho:\pi_1(\mathbb{P}^1_{\overline{K}}\setminus f^{-1}(P))\to \operatorname{Aut}(T_d)$$
+          where the kernel is isomorphic to
+          $$\cap_{n\in \mathbb{N}}\ker F_n$$
+          where $F_n:\pi_1(\operatorname{P}^1_{\overline{K}}\setminus P)\to \operatorname{Sym}f^{-n}(t)$. The quotient group is called <em>iteration monodromy group</em>, denoted by $\widetilde{G_n}$.
+        </li>
+      </ul>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      We have the following exact sequence
+      $$1\to \overline{G_\infty}\cong\widetilde{G_\infty}\to G_\infty\to \operatorname{Gal}(K'/K)\to 1$$
+      where $K'=\varinjlim_{n}K(f^n(x)-t)\cap \overline{K}$.
+      <ul>
+        <li class="fragment">
+          $G_\infty$ is finitely generated.
+        </li>
+        <li class="fragment">
+          $[S_d]^\infty$ is infinitely generated
+        </li>
+      </ul>
+      <p class="fragment">Therefore, Odoni's index is infinite.</p>
+    </textarea>
+  </section>
+</section>
+<section>
+  <section data-markdown>
+    <textarea data-template>
+      <h3>What is the overgroup of the arboreal representation for PCF polynomials?</h3>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      ### A key lemma follows from the computation of discriminants
+      <div class="lemma">
+        <p>
+          Let $f$ be a PCF polynomial over $K$, and $\alpha\in K$. Let $L$ be the minimal integer such that $f^L(\mathcal{C}_f)$ is a periodic set, and let $O$ be the minimal integer such that $f^{L+O}(\mathcal{C}_f)=f^L(\mathcal{C}_f)$. Then, we have the following: 
+          <ol>
+            <li>Suppose that all critical points are periodic, and the degree of $f$ is odd. Then $\operatorname{disc}(f^{2O}-\alpha)$ is a square in $K$.</li>
+            <li>Suppose that all critical points are periodic, and the degree of $f$ is even. Then, $\operatorname{disc}(f^{O+1}-\alpha)$ is a square in $K_f^1(\alpha)$.</li>
+            <li>Suppose that a critical point is strictly preperiodic, and the degree of $f$ is odd. Then, $\operatorname{disc}(f^{L+2O-1}-\alpha)$ is a square in $K_f^{L-1}(\alpha)$. In particular, $K_f^{L-1}(\alpha)= K$ if $L=1$.</li>
+            <li>Suppose that a critical point is strictly preperiodic, and the degree of $f$ is even. Then,  $\operatorname{disc}(f^{L+O}-\alpha)$ is a square in $K_f^{L}$.</li>
+          </ol>
+        </p>
+      </div>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      ### Construct sign functions
+      <ul>
+        <li>Recall that $\operatorname{sgn}:S_d\to\{\pm 1\}.$</li>
+        <li class="fragment">
+          Given $\sigma\in \operatorname{Aut}(T^n_d)\cong\operatorname{Aut}(T^{n-m}_d)\wr \operatorname{Aut}(T^m_d)$, we can express $\sigma$ as
+          $$\sigma = ((b_i)_{i\in I(T^m_d)};a)$$
+          with $b_i\in\operatorname{Aut}(T^{n-m}_d)$ and $a\in \operatorname{Aut}(T^m_d)$.
+        </li>
+        <li class="fragment">Define $\operatorname{res}_m(\sigma)=a$.</li>
+        <li class="fragment">Consider the natural sign s$\operatorname{sgn}:\operatorname{Aut}(T^n_d)\subseteq S_{d^n}\to\{\pm 1\}$ for any $n$</li>
+        <li class="fragment">Define $\operatorname{sgn}_m=\operatorname{sgn}\circ\operatorname{res}_m$.</li>
+      </ul>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <ul>
+        <li class="fragment">
+          Define $\operatorname{sgn}^m(((b_i)_{i\in I};a))=\displaystyle\prod_{i\in I}\operatorname{sgn}(b_i)$
+        </li>
+        <li class="fragment">
+          Finally, we define, for $n>m_1>m_2$,
+          $$\operatorname{sgn}^{(m_1,m_2)}_1=\operatorname{sgn}^{m_2}\circ\operatorname{res}_{m_1}\cdot \operatorname{sgn}_{m_1}$$
+          and 
+          $$\operatorname{sgn}^{(m_1,m_2)}_2=\operatorname{sgn}^{m_2}\circ\operatorname{res}_{m_1}$$
+        </li>
+      </ul><table class="fragment" style="margin:auto; border-collapse: collapse; text-align: center;">
+        <tr>
+          <th>\(\operatorname{sgn} \backslash d\)</th>
+          <th>even</th>
+          <th>odd</th>
+        </tr>
+        <tr>
+          <td>\(\operatorname{sgn}_1\)</td>
+          <td></td>
+          <td>natural</td>
+        </tr>
+        <tr>
+          <td>\(\operatorname{sgn}_2\)</td>
+          <td>natural</td>
+          <td></td>
+        </tr>
+      </table>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <p>
+        Now we can define the target overgroups. We let
+        $$
+        E_n^{(m_1,m_2)}(d)=
+        \begin{cases}
+        \operatorname{Aut}(T^n_d)\text{, if }n &lt m\\
+        E_{n-1}^m(d)\wr \operatorname{Aut}(T^1_d)\cap \ker(\operatorname{sgn}_1^{(m_1,m_2)})\text{, if }n\geq m_1
+        \end{cases}
+        $$
+        and
+        $$
+        F_n^{(m_1,m_2)}(d)=
+        \begin{cases}
+        \operatorname{Aut}(T^n_d)\text{, if }n &lt m\\
+        F_{n-1}^{(m_1,m_2)}(d)\wr \operatorname{Aut}(T^1_d)\cap \ker(\operatorname{sgn}_2^{(m_1,m_2)})\text{, if }n\geq m_1.
+        \end{cases}.
+        $$
+      </p>
+    </textarea>
+  </section>
+  <section data-markdown>
+    <textarea data-template>
+      <div class="theorem">
+        <div class="theorem-header"><span class="theorem-authors">(P.)</span></div>
+        <p>
+          Let $f$ be a degree $d$ PCF polynomial over a number field $K$, and let $\alpha\in K$ is not periodic under $f$. Let $a_f$ be the leading coefficient of $f$, let $\mathcal{C}_f$ be the set of all critical points of $f$, let $L$ be the minimal integer such that $f^L(\mathcal{C}_f)$ is a periodic set, and let $O$ be the minimal positive integer such that $f^{L+O}(\mathcal{C}_f)=f^{L}(\mathcal{C}_f)$.
+          <ol>
+            <li>If the degree of $f$ is odd and $L\leq 1$, then $\operatorname{Gal}_f^n(\alpha)$ is isomorphic to a subgroup of $E_n^{2O}(d)$.</li>
+            <li>If the degree of $f$ is odd and $L > 1$, then $\operatorname{Gal}_f^n(\alpha)$ is isomorphic to a subgroup of $F_n^{(L+2O-1,L-1)}(d)$.</li>
+            <li>If the degree of $f$ is even, then $\operatorname{Gal}_f^n(\alpha)$ is isomorphic to a subgroup of $E_n^{(m,m')}(d)$ with $(m,m')$ as follows:</li>
+            <ol>
+              <li>If $L=0$, then $(m,m') = (O+1,1)$.</li>
+              <li>$L>1$, then $(m,m') = (L+O,L)$.</li>
+            </ol>
+          </ol>
+        </p>
+      </div>
+    </textarea>
+  </section>
+</section>
+<section>
+  <section data-markdown>
+    <textarea>
+      Discussion:
+      <ul>
+        <li>
+          Can we find a PCF map whose dynamical Galois group is isomorphic to $F_n^{(L+2O-1,L-1)}(d)$
+        </li>
+        <li>
+          We also show that $E_\infty^2$ has a unique chief series. Can we identify the normal series structure of other normal subgroups?
+        </li>
+      </ul>
+    </textarea>
+  </section>
+</section>
+
