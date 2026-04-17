@@ -181,14 +181,14 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
     <textarea data-template>
       <h3>Automorphisms of a $d$-ary Tree</h3>
       <p>
-        Let $T_d^n$ be a <em>(regular) level-$n$ $d$-ary tree</em>. An automorphism of a tree (viewed as a graph) is a bijection on the vertices that preserves edge–vertex incidence.
+        Let $X={1,2,\ldots, d}$ be a set of characters. Let $X^n$ be the words of length $n$ from $X$. The union $\cup_{i\leq n} X^i$ is isomorphic to a <em>(regular) level-$n$ $d$-ary tree</em>. An automorphism of a tree (viewed as a graph) is a bijection on the vertices that preserves edge–vertex incidence. We denote the infinite tree (words of any length) by $X^*$.
       </p>
       <p class="fragment" data-fragment-index="1">
-        Let's define $\operatorname{Aut}(T_d^n)$ be the group of automorphisms. We have
+        Let's define $\operatorname{Aut}(X^n)$ be the group of automorphisms. We have
       </p>
       <div class="proposition fragment">
         <p>
-          Let $\operatorname{Aut}(T_d^n)\cong [S_d]^n$ where $S_d$ is the symmetric group of $d$ elements.
+          Let $\operatorname{Aut}(X^n)\cong [S_d]^n$ where $S_d$ is the symmetric group of $d$ elements.
         </p>
       </div>
     </textarea>
@@ -197,7 +197,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
     <textarea data-template>
       <div class="example">
         <ol>
-          <li>$\operatorname{Aut}(T_d^1)\cong S_d$</li>
+          <li>$\operatorname{Aut}(X^2)\cong [S_d]^2$</li>
           <li class="fragment" data-fragment-index="1">$((1,(13),(132));(23))[1,1]=[1,1]$</li>
           <li class="fragment" data-fragment-index="2">$((1,(13),(132));(23))[1,2]=[3,3]$</li>
           <li class="fragment" data-fragment-index="3">$((1,(13),(132));(23))[1,3]=[3,2]$</li>
@@ -229,10 +229,10 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
       <h3>Arboreal Representation</h3>
       <p>
         This proposition yields an embedding
-        $$\phi:G_\infty\to \operatorname{Aut}(T_d^\infty)$$
+        $$\phi:G_\infty\to \operatorname{Aut}(X^*)$$
         (by taking an inverse limit on $n$), and is refered to as as <em>arboreal representation.</em>
       </p>
-      <p>The index $[\operatorname{Aut}(T_d^\infty):\phi(G_\infty)]$ is called <em>Odoni's index</em>.</p>
+      <p>The index $[\operatorname{Aut}(X^*):\phi(G_\infty)]$ is called <em>Odoni's index</em>.</p>
     </textarea>
   </section>
   <section data-markdown>
@@ -262,7 +262,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
       <ul>
         <li class="fragment">
           If $\#P<\infty$, then the geometric Galois group is isomorphic to the image of the monodromy representation
-          $$\rho:\pi_1(\mathbb{P}^1_{\mathbb{C}}\setminus P)\to \operatorname{Aut}(T_d)$$
+          $$\rho:\pi_1(\mathbb{P}^1_{\mathbb{C}}\setminus P)\to \operatorname{Aut}(X^*)$$
           The image of $\rho$ is called <em>iteration monodromy group</em>, denoted by $\operatorname{IMG}(f)$. Obviously, it is also isomorphic to $\pi_1(\mathbb{P}^1_{\mathbb{C}}\setminus P)/\ker\rho$.
         </li>
       </ul>
@@ -290,9 +290,18 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 <section>
   <section data-markdown>
     <textarea data-template>
-      <h3>How to find the generators of $\operatorname{IMG}(f)$?</h3>
+      <h3>How to describe the generators of $\operatorname{IMG}(f)$?</h3>
     </textarea>
   </section>
-  
+  <section data-markdown>
+    <textarea data-template>
+      <div class="lemma">
+      <div class="theorem-header">
+        <span class="theorem-authors">(The unique path lifting property)</span>
+      </div>
+        Let $\gamma: [0,1] \to \mathcal{M}$ be a path in $\mathcal{M}$ with starting point $\gamma(0)=x$. For any preimage $y \in f^{-1}(x)$, there exists a unique path $\gamma': [0,1] \to \mathcal{M}$ such that $f \circ \gamma' = \gamma$ and $\gamma'(0)=y$.
+      </div>
+    </textarea>
+  </section>
 </section>
 
