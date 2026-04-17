@@ -166,31 +166,14 @@ front-img: "/assets/img/slides/how-to-actch-a-good-spider/automata-1.png"
     </textarea>
   </section>
 </section>
+
+
+
 <section>
   <section data-markdown>
     <textarea data-template>
       <h2>Arboreal representation</h2>
       <img src="/assets/img/slides/overgroup/tree.png" alt="Tree diagram" width="400">
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <h3>Wreath Product</h3>
-      <p class="fragment" data-fragment-index="1">Let $G$ and $H$ be two groups, and $G$ acts on the a index set $I=\{1,2,\ldots,d\}$.</p>
-      <p class="fragment" data-fragment-index="2">The <em>wreath product</em> of $H$ by $G$ is a group extension of $G$ by $H^{|I|}$.</p> 
-      <p class="fragment" data-fragment-index="3">An element in the wreath product $H\wr_{I} G$ is expressed as
-      $$((h_1,\ldots, h_d);g)$$
-      with $h_i\in H$ and $g\in G$.</p> 
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <p>The operation is defined as 
-      $$((h_i)_{i\in I}; g)((h'_i)_{i\in I} ; g')=((h_{g'(i)})_{i\in I}(h'_i)_{i\in I};gg').$$</p>
-      <p class="fragment" data-fragment-index="1">The index set $I$ is often omitted when it is clear from the context.</p>
-      <p class="fragment" data-fragment-index="2">We define
-      $$[G]^2=G\wr G\quad\text{and}\quad [G]^n=[G]^{n-1}\wr G\text{ for }n> 2$$
-      </p>
     </textarea>
   </section>
   <section data-markdown>
@@ -248,142 +231,7 @@ front-img: "/assets/img/slides/how-to-actch-a-good-spider/automata-1.png"
         $$\phi:G_\infty\to \operatorname{Aut}(T_d^\infty)$$
         (by taking an inverse limit on $n$), and is refered to as as <em>arboreal representation.</em>
       </p>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <p>
-        A motivation for understanding the dynamical Galois group for number theorists is that this group can be used to estimate
-        $$
-        \dfrac{\# f^n(\mathbb{P}^1(\mathbb{F}_p))}{p+1}.
-        $$
-        This implies, for a generic rational function $p$,
-        $$
-        \limsup_{p\to\infty}\dfrac{\operatorname{Per}(f_p,\mathbb{P}^1(\mathbb{F}_p))}{p} = 0.
-        $$
-      </p>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <h3>When Will $\phi$ be Surjective?</h3>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <h2>Serre's open image theorem</h2>
-      <ul>
-        <li class="fragment">Let \(E\) be an elliptic curve over \(K\).</li>
-        <li class="fragment">For a prime integer \(p\), multiplication-by-\(p\) is a self-map of \(E\):  
-        \[
-        E \xrightarrow{[p]} E
-        \]
-        </li>
-        <li class="fragment">Let \(E[p^n]\) be the \(p^n\)-torsion points in \(E(\overline{K})\).  
-        (We know \(E[p^n]\cong (\mathbb{Z}/p^n\mathbb{Z})^2\).)</li>
-      </ul>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <p class="fragment">The inverse limit of the following chain is the Tate module:</p>
-
-      <p class="fragment">
-      $$
-      \{1\}\xleftarrow{[p]}E[p]\xleftarrow{[p]}E[p^2]\xleftarrow{[p]}E[p^3]\xleftarrow{[p]}\cdots
-      $$
-      </p>
-
-      <p class="fragment">
-      $$
-      \{1\}\xleftarrow{\times p}(\mathbb{Z}/p\mathbb{Z})^2
-      \xleftarrow{\times p}(\mathbb{Z}/p^2\mathbb{Z})^2
-      \xleftarrow{\times p}(\mathbb{Z}/p^3\mathbb{Z})^2
-      \xleftarrow{\times p}\cdots
-      $$
-      </p>
-
-      <p class="fragment">
-      $$
-      T_p(E)\cong \mathbb{Z}_p^2
-      $$
-      </p>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <p class="fragment">
-      Taking the Absolute Galois group \(G_K = \operatorname{Gal}(\overline{K}/K)\) acting on \(T_p(E)\) induces an action of \(\operatorname{Gal}(\overline{K}/K)\) on a \(\mathbb{Z}_p\)-module, i.e. a representation
-      $$
-      G_K \xrightarrow{\rho} \operatorname{GL}_2(\mathbb{Z}_p)\subseteq \operatorname{GL}_2(\mathbb{Q}_p).
-      $$
-      </p>
-
-      <div class="theorem fragment">
-        <div class="theorem-header">
-          <span class="theorem-authors">(Serre's Open Image Theorem)</span>
-        </div>
-        <p>
-          If \(E\) is not a CM-curve, then \([\operatorname{GL}_2(\mathbb{Z}_p):\rho(G_K)]=1\) for almost all \(p\).
-        </p>
-      </div>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      ## A dynamic analog
-
-      <p class="fragment">
-      Taking the absolute Galois group action on the root tree \( \mathbb{T}_f(\alpha) \), the Galois action on the tree gives an embedding
-      \[
-      G_k \xrightarrow{\ \rho_{f,\alpha}\ } \operatorname{Aut}(T_d).
-      \]
-      </p>
-
-      <p class="fragment">
-      We call \([ \operatorname{Aut}(T_d) : G_k ] = [ \operatorname{Aut}(T_d) : G_\infty ]\) <em>Odoni's index</em>, and ask: when the Odoni index is finite?
-      </p>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      ## Finite Odoni's index
-      <ul>
-        <li class="fragment">(Juul, Odoni, and etc.) For generic rational function defined over a global field $K$, $\operatorname{Gal}(f^n(X)-t/K)\cong [S_d]^n$, i.e. the Odoni's index is $1$.</li>
-        <li class="fragment">(Bridy, L.-C. Hsia, Jones, H.-C. Li, Tucker, and etc.) For certain families of rational functions, e.g. unit critical polynomial $x^n-c$, Odoni's index is finite.
-        </li>
-      </ul>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      ## Infinite Odoni's index
-      <p class="fragment">
-        We note that if the discriminant of a polynomial $f$, denoted by $\operatorname{disc}(f)$, is a perfect square over the defining field of $f$, then the Galois action on the roots of $f$ induces an even permutation. <span class="fragment">That is
-        $$[S_d:\operatorname{Gal}(f)]\leq [S_d:A_d]=2$$ 
-        </span>
-      </p>
-      <p class="fragment">
-        How can we construct a sequence where $\operatorname{disc}(f^n-\alpha)$ is always square?
-      </p>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <div class="proposition fragment">
-        <p>
-          Let $f$ be a polynomial over a field $K$, let $a_f$ be its leading coefficient, let $d$ be its degree, let $\alpha\in K$, and let $n\geq 2$ be an integer. The discriminant of the $n$-th iteration of $f$, with multiple roots considered to be different elements, is given by:
-          $$\operatorname{disc}(f^n(x)-\alpha)=(-1)^{A(d,n)}a_f^{B(d,n)}d^{d^n}\operatorname{disc}(f^{n-1}(x)-\alpha)^{d}\prod_{c\in \mathcal{C}_f}(f^n(c)-\alpha),$$
-          where
-          $$
-            \begin{align*}
-            A(d,n) & =d^n\left(\dfrac{d^n-1}{2}+\dfrac{d^{n-1}-1}{2}\right), \\
-            B(d,n) & =d^{2n-1}-1.
-            \end{align*}
-          $$
-          In particular, $(-1)^{A(d,n)}=\left(\frac{d}{4}\right)$ is equal to $1$ if $d$ is even or if $d \equiv 1 \mod 4$, and equal to $-1$ otherwise.
-        </p>
-      </div>
+      <p>The index $[\operatorname{Aut}(T_d^\infty):\phi(G_\infty)]$ is called <em>Odoni's index</em>.</p>
     </textarea>
   </section>
   <section data-markdown>
@@ -400,10 +248,10 @@ front-img: "/assets/img/slides/how-to-actch-a-good-spider/automata-1.png"
           We refer to $G_n=\operatorname{Gal}(f^n(X)-t/K)$ as the <em>arithmetic Galois group</em>.
         </li>
         <li class="fragment">
-          We refer to $\overline{G_n}=\operatorname{Gal}(f^n(X)-t/\overline{K})$ as the <em>geometric Galois group</em>.
+          We refer to $\overline{G_n}=\operatorname{Gal}(f^n(X)-t/\overline{K})$ as the <em>geometric Galois group</em> where $\overline{K} is isomorphic to $\mathbb{C}$.
         </li>
         <li class="fragment">
-           Let's consider the <em>strictly post-critical orbit</em> $P= \displaystyle \bigcup_{n\geq 1}f^n(C_f)$.
+           Let's consider the <em>post-critical set</em> $P= \displaystyle \bigcup_{n\geq 1}f^n(C_f)$ with $C_f=\{p\in \mathbb{P}^1_{\mathbb{C}}|f'(p)=0\}$
         </li>
       </ul>
     </textarea>
@@ -413,10 +261,8 @@ front-img: "/assets/img/slides/how-to-actch-a-good-spider/automata-1.png"
       <ul>
         <li class="fragment">
           If $\#P<\infty$, then the geometric Galois group is isomorphic to the image of the monodromy representation
-          $$\rho:\pi_1(\mathbb{P}^1_{\overline{K}}\setminus f^{-1}(P))\to \operatorname{Aut}(T_d)$$
-          where the kernel is isomorphic to
-          $$\cap_{n\in \mathbb{N}}\ker F_n$$
-          where $F_n:\pi_1(\operatorname{P}^1_{\overline{K}}\setminus P)\to \operatorname{Sym}f^{-n}(t)$. The quotient group is called <em>iteration monodromy group</em>, denoted by $\widetilde{G_n}$.
+          $$\rho:\pi_1(\mathbb{P}^1_{\mathbb{C}}\setminus P)\to \operatorname{Aut}(T_d)$$
+          The image of $\rho$ is called <em>iteration monodromy group</em>, denoted by $\operatorname{IMG}(f)$. Obviously, it is also isomorphic to $\pi_1(\mathbb{P}^1_{\mathbb{C}}\setminus P)/\ker\rho$.
         </li>
       </ul>
     </textarea>
@@ -424,11 +270,11 @@ front-img: "/assets/img/slides/how-to-actch-a-good-spider/automata-1.png"
   <section data-markdown>
     <textarea data-template>
       We have the following exact sequence
-      $$1\to \overline{G_\infty}\cong\widetilde{G_\infty}\to G_\infty\to \operatorname{Gal}(K'/K)\to 1$$
+      $$1\to \overline{G_\infty}\cong\operatorname{IMG}(f)\to G_\infty\to \operatorname{Gal}(K'/K)\to 1$$
       where $K'=\varinjlim_{n}K(f^n(x)-t)\cap \overline{K}$.
       <ul>
         <li class="fragment">
-          $G_\infty$ is finitely generated.
+          $\operatorname{IMG}(f)$ is finitely generated because it is a quotient group of a finitely generated group.
         </li>
         <li class="fragment">
           $[S_d]^\infty$ is infinitely generated
@@ -438,130 +284,14 @@ front-img: "/assets/img/slides/how-to-actch-a-good-spider/automata-1.png"
     </textarea>
   </section>
 </section>
+
+
 <section>
   <section data-markdown>
     <textarea data-template>
-      <h3>What is the overgroup of the arboreal representation for PCF polynomials?</h3>
+      <h3>How to find the generators of $\operatorname{IMG}(f)$?</h3>
     </textarea>
   </section>
-  <section data-markdown>
-    <textarea data-template>
-      ### A key lemma follows from the computation of discriminants
-      <div class="lemma">
-        <p>
-          Let $f$ be a PCF polynomial over $K$, and $\alpha\in K$. Let $L$ be the minimal integer such that $f^L(\mathcal{C}_f)$ is a periodic set, and let $O$ be the minimal integer such that $f^{L+O}(\mathcal{C}_f)=f^L(\mathcal{C}_f)$. Then, we have the following: 
-          <ol>
-            <li>Suppose that all critical points are periodic, and the degree of $f$ is odd. Then $\operatorname{disc}(f^{2O}-\alpha)$ is a square in $K$.</li>
-            <li>Suppose that all critical points are periodic, and the degree of $f$ is even. Then, $\operatorname{disc}(f^{O+1}-\alpha)$ is a square in $K_f^1(\alpha)$.</li>
-            <li>Suppose that a critical point is strictly preperiodic, and the degree of $f$ is odd. Then, $\operatorname{disc}(f^{L+2O-1}-\alpha)$ is a square in $K_f^{L-1}(\alpha)$. In particular, $K_f^{L-1}(\alpha)= K$ if $L=1$.</li>
-            <li>Suppose that a critical point is strictly preperiodic, and the degree of $f$ is even. Then,  $\operatorname{disc}(f^{L+O}-\alpha)$ is a square in $K_f^{L}$.</li>
-          </ol>
-        </p>
-      </div>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      ### Construct sign functions
-      <ul>
-        <li>Recall that $\operatorname{sgn}:S_d\to\{\pm 1\}.$</li>
-        <li class="fragment">
-          Given $\sigma\in \operatorname{Aut}(T^n_d)\cong\operatorname{Aut}(T^{n-m}_d)\wr \operatorname{Aut}(T^m_d)$, we can express $\sigma$ as
-          $$\sigma = ((b_i)_{i\in I(T^m_d)};a)$$
-          with $b_i\in\operatorname{Aut}(T^{n-m}_d)$ and $a\in \operatorname{Aut}(T^m_d)$.
-        </li>
-        <li class="fragment">Define $\operatorname{res}_m(\sigma)=a$.</li>
-        <li class="fragment">Consider the natural sign s$\operatorname{sgn}:\operatorname{Aut}(T^n_d)\subseteq S_{d^n}\to\{\pm 1\}$ for any $n$</li>
-        <li class="fragment">Define $\operatorname{sgn}_m=\operatorname{sgn}\circ\operatorname{res}_m$.</li>
-      </ul>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <ul>
-        <li class="fragment">
-          Define $\operatorname{sgn}^m(((b_i)_{i\in I};a))=\displaystyle\prod_{i\in I}\operatorname{sgn}(b_i)$
-        </li>
-        <li class="fragment">
-          Finally, we define, for $n>m_1>m_2$,
-          $$\operatorname{sgn}^{(m_1,m_2)}_1=\operatorname{sgn}^{m_2}\circ\operatorname{res}_{m_1}\cdot \operatorname{sgn}_{m_1}$$
-          and 
-          $$\operatorname{sgn}^{(m_1,m_2)}_2=\operatorname{sgn}^{m_2}\circ\operatorname{res}_{m_1}$$
-        </li>
-      </ul><table class="fragment" style="margin:auto; border-collapse: collapse; text-align: center;">
-        <tr>
-          <th>\(\operatorname{sgn} \backslash d\)</th>
-          <th>even</th>
-          <th>odd</th>
-        </tr>
-        <tr>
-          <td>\(\operatorname{sgn}_1\)</td>
-          <td></td>
-          <td>natural</td>
-        </tr>
-        <tr>
-          <td>\(\operatorname{sgn}_2\)</td>
-          <td>natural</td>
-          <td></td>
-        </tr>
-      </table>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <p>
-        Now we can define the target overgroups. We let
-        $$
-        E_n^{(m_1,m_2)}(d)=
-        \begin{cases}
-        \operatorname{Aut}(T^n_d)\text{, if }n &lt m\\
-        E_{n-1}^m(d)\wr \operatorname{Aut}(T^1_d)\cap \ker(\operatorname{sgn}_1^{(m_1,m_2)})\text{, if }n\geq m_1
-        \end{cases}
-        $$
-        and
-        $$
-        F_n^{(m_1,m_2)}(d)=
-        \begin{cases}
-        \operatorname{Aut}(T^n_d)\text{, if }n &lt m\\
-        F_{n-1}^{(m_1,m_2)}(d)\wr \operatorname{Aut}(T^1_d)\cap \ker(\operatorname{sgn}_2^{(m_1,m_2)})\text{, if }n\geq m_1.
-        \end{cases}.
-        $$
-      </p>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <div class="theorem">
-        <div class="theorem-header"><span class="theorem-authors">(P.)</span></div>
-        <p>
-          Let $f$ be a degree $d$ PCF polynomial over a number field $K$, and let $\alpha\in K$ is not periodic under $f$. Let $a_f$ be the leading coefficient of $f$, let $\mathcal{C}_f$ be the set of all critical points of $f$, let $L$ be the minimal integer such that $f^L(\mathcal{C}_f)$ is a periodic set, and let $O$ be the minimal positive integer such that $f^{L+O}(\mathcal{C}_f)=f^{L}(\mathcal{C}_f)$.
-          <ol>
-            <li>If the degree of $f$ is odd and $L\leq 1$, then $\operatorname{Gal}_f^n(\alpha)$ is isomorphic to a subgroup of $E_n^{2O}(d)$.</li>
-            <li>If the degree of $f$ is odd and $L > 1$, then $\operatorname{Gal}_f^n(\alpha)$ is isomorphic to a subgroup of $F_n^{(L+2O-1,L-1)}(d)$.</li>
-            <li>If the degree of $f$ is even, then $\operatorname{Gal}_f^n(\alpha)$ is isomorphic to a subgroup of $E_n^{(m,m')}(d)$ with $(m,m')$ as follows:</li>
-            <ol>
-              <li>If $L=0$, then $(m,m') = (O+1,1)$.</li>
-              <li>$L>1$, then $(m,m') = (L+O,L)$.</li>
-            </ol>
-          </ol>
-        </p>
-      </div>
-    </textarea>
-  </section>
-</section>
-<section>
-  <section data-markdown>
-    <textarea>
-      Discussion:
-      <ul>
-        <li>
-          Can we find a PCF map whose dynamical Galois group is isomorphic to $F_n^{(L+2O-1,L-1)}(d)$
-        </li>
-        <li>
-          We also show that $E_\infty^2$ has a unique chief series. Can we identify the normal series structure of other normal subgroups?
-        </li>
-      </ul>
-    </textarea>
-  </section>
+  
 </section>
 
