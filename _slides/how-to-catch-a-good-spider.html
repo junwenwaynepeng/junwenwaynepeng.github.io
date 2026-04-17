@@ -362,16 +362,31 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
         Let $\phi_f$ be a virtual endomorphism of $\pi(\mathcal{M},t)$. Then, for every right coset transversal $\mathcal{T}=\{r_x\}_{x\in f^{-1}(t)}$ and sequence $\mathcal{C}=\{h_x\}_{x\in f^{-1}(t)}$ there exists a collection of paths $\mathcal L$ such that the respective IMG action is the action defined by the triple $(\phi, \mathcal T, \mathcal C)$.
       </p>
     </div>
+  
+    <p><b>Blackbox...</b></p>
+    <ul>
+      <li>To define the virtual endomorphism $\phi_f$, we need to fixed a preimage $z_0$ of $t$ and a path $l$ from $t$ to $z_0$.</li>
+      <li>$\mathcal{C}$ = \{1\}_x.</li>
+      <li>$r_x=f(\rho_x)$ are the image of path $\rho_x$ from $z_0$ to $x$.</li>
+      <li>The relationship to define an automata is given by
+        $$g\cdot x = y\cdot \phi_f(r_xgr_y^{-1})$$
+        where $phi_f(r_xgr_y^{-1}) = \rho_x f^{-1}(g)[x] \rho_y^{-1}$.
+      </li>
+    </ul>
   </section>
-  <p><b>Blackbox...</b></p>
-  <ul>
-    <li>To define the virtual endomorphism $\phi_f$, we need to fixed a preimage $z_0$ of $t$ and a path $l$ from $t$ to $z_0$.</li>
-    <li>$\mathcal{C}$ = \{1\}_x.</li>
-    <li>$r_x=f(\rho_x)$ are the image of path $\rho_x$ from $z_0$ to $x$.</li>
-    <li>The relationship to define an automata is given by
-      $$g\cdot x = y\cdot \phi_f(r_xgr_y^{-1})$$
-      where $phi_f(r_xgr_y^{-1}) = \rho_x f^{-1}(g)[x] \rho_y^{-1}$.
-    </li>
-  </ul>
+  <section>
+    <p><b>Goal:</b></p>
+    <p>
+      Find a collection of paths $\{\rho_x\}_{x\in f^{-1}(t)\setminus\{z_0\}}$ such that
+      $$\rho_x f^{-1}(g)[x]\rho_y^{-1}$$
+      is homotopic to the generators constructed from the spider $\mathcal S$.
+    </p>
+  </section>
+  <section>
+    <p>
+      We call a collection of paths $\{\rho_x\}$ <em>Lucas</em>, a good spider, if each leg $\rho_x$ only stands on a pole $p$.
+    </p>
+    <img src="/assets/img/how-to-catch-a-good-spider/Lucas.jpg">
+  </section>
 </section>
 
