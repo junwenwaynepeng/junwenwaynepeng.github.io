@@ -58,7 +58,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
         $$f^n(p)=f^m(p)\quad\text{ for some }n< m.$$
         </li>
         <li class="fragment" data-fragment-index="3"><em>Periodic point</em> $p$: if $n=0$.</li>
-        <li class="fragment" data-fragment-index="4"><em>Wandering point</em> $p$: if $p$ has an infinite orbit</li>
+        <li class="fragment" data-fragment-index="4"><em>Preimage</em> of $p$: ...</li>
       </ul>
     </textarea>
   </section>
@@ -363,5 +363,15 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
       </p>
     </div>
   </section>
+  <p><b>Blackbox...</b></p>
+  <ul>
+    <li>To define the virtual endomorphism $\phi_f$, we need to fixed a preimage $z_0$ of $t$ and a path $l$ from $t$ to $z_0$.</li>
+    <li>$\mathcal{C}$ = \{1\}_x.</li>
+    <li>$r_x=f(\rho_x)$ are the image of path $\rho_x$ from $z_0$ to $x$.</li>
+    <li>The relationship to define an automata is given by
+      $$g\cdot x = y\cdot \phi_f(r_xgr_y^{-1})$$
+      where $phi_f(r_xgr_y^{-1}) = \rho_x f^{-1}(g)[x] \rho_y^{-1}$.
+    </li>
+  </ul>
 </section>
 
