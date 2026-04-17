@@ -146,6 +146,7 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   - Lean 是 **形式化 / 公理化** 的系統  
   - 多數奧林匹亞數學題目，其理論基礎早被公理化  
   - 所以 AI + Lean 的組合非常適合這種題目
+  - [Erdős Problem 367](https://www.erdosproblems.com/367)
   </textarea>
   </section>
 
@@ -229,7 +230,7 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   <textarea data-template>
   > 如果我們直接相信「實數存在」——  
   > 就會有人問：「為什麼存在？」  
-  > 如果我們回答：因為可以找到數列收斂到那個實數
+  > 如果我們回答：因為可以找到某個數列收斂到那個實數
   > 就會又有人說：「要先存在才有收斂吧？」  
   >  
   > → 這就像雞生蛋、蛋生雞：  
@@ -251,10 +252,10 @@ front-img: "/assets/img/slides/overgroup/front-img.png"
   <textarea data-template>
   ## 第三次數學危機
 
-  - 一開始我們假設：「對任何性質 P，集合 $\{ x | P \}$ 都存在」  
+  - Frage's Axiom V：「對任何性質 P，集合 $\\{ x | P \\}$ 都存在」  
   - 但 **羅素** 建構出：  
     $$
-    R = \{ x \mid x \notin x \}
+    R = \\{ x \mid x \notin x \\}
     $$  
   - 產生矛盾：  
     $$
@@ -401,6 +402,10 @@ gantt
     發現連續不可微函數 (1817)    :crit, 1817, 1y
     epsilon-delta 語言 (1857)  :crit, 1857, 1y
     再次確認連續不可微函數 (1861) :crit, 1861, 1y
+    Frage's 嘗試公理化集合論（1884）:crit, 1884, 1y
+    線性代數公理化（1888）      :crit, 1888, 1y
+    羅素悖論 （1901）           :crit, 1901, 1y
+    希爾伯特問題與哥德爾不完備性（1931）:crit, 1931, 1y
     無窮小公理可能性 (1960)     :crit, 1960, 1y
     提出無窮小公理系統 (1977)   :crit, 1977, 1y
     </pre>
@@ -462,9 +467,11 @@ gantt
   </section>
   <section data-markdown>
     <textarea data-template>
-      1. (完備性) 存在有限多個公理使得我們可以決定任何的敘述都為真或假。
-      2. (一致性) 公理系統不存在內在矛盾，也不會有無法判定真假的句子。
-      3. (可判定性) 是否存在一種機械化的演算法（程序），對於任何數學敘述，都能在有限步驟內判定它是真還是假？
+      <ol>
+      	<li class="fragment" data-fragment-index="1">(完備性) 存在有限多個公理使得我們可以決定任何的敘述都為真或假。</li>
+      	<li class="fragment" data-fragment-index="2">(一致性) 公理系統不存在內在矛盾，也不會有無法判定真假的句子。</li>
+        <li class="fragment" data-fragment-index="3">(可判定性) 是否存在一種機械化的演算法（程序），對於任何數學敘述，都能在有限步驟內判定它是真還是假？</li>
+      </ol>
     </textarea>
   </section>
   <section data-markdown>
