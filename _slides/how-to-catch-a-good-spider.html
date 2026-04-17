@@ -181,7 +181,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
     <textarea data-template>
       <h3>Automorphisms of a $d$-ary Tree</h3>
       <p>
-        Let $X={1,2,\ldots, d}$ be a set of characters. Let $X^n$ be the words of length $n$ from $X$. The union $\cup_{i\leq n} X^i$ is isomorphic to a <em>(regular) level-$n$ $d$-ary tree</em>. An automorphism of a tree (viewed as a graph) is a bijection on the vertices that preserves edge–vertex incidence. We denote the infinite tree (words of any length) by $X^*$.
+        Let $X={1,2,\ldots, d}$ be an <em>alphabet</em>, a set of characters. Let $X^n$ be the words of length $n$ from $X$. The union $\cup_{i\leq n} X^i$ is isomorphic to a <em>(regular) level-$n$ $d$-ary tree</em>. An automorphism of a tree (viewed as a graph) is a bijection on the vertices that preserves edge–vertex incidence. We denote the infinite tree (words of any length) by $X^*$.
       </p>
       <p class="fragment" data-fragment-index="1">
         Let's define $\operatorname{Aut}(X^n)$ be the group of automorphisms. We have
@@ -323,9 +323,33 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
     </div>
     <div class="fragment">
     <p><b>STEP 3</b></p>
-    <p>Let $x,y\in f^{-1}(t)$, and let $f^{-1}(g)[x]$ be the lift from $x$ to $y$. Define $g' = l_x,f^{-1}(g)[x] ,l_y^{-1}$. Then, the following relationship gives IMG acting on trees $X^*$ 
+    <p>Let $x,y\in f^{-1}(t)$, and let $f^{-1}(g)[x]$ be the lift from $x$ to $y$. Define $g' = l_xf^{-1}(g)[x] l_y^{-1}$. Then, the following relationship gives IMG acting on trees $X^*$ 
     $$(xw)^g = yw^{g'}$$
     </p>
+    </div>
+  </section>
+  <section>
+    x^2-1
+  </section>
+  <section>
+    Is the loop $l_xf^{-1}(g)[x] l_y^{-1}\in\pi_1(\mathcal{M},t)$ a simple loop? Is it homotopic to the loop associated with a leg of the spider?
+  </section>
+  <section>
+    <div class="definition">
+      An <em>automaton</em> over the alphabet $X$ is given by
+      <ol>
+        <li>
+          set of the states $A$;
+        </li>
+        <li>
+          a map $\tao:A\times X\to X\times A$ g\cdot x = y\cdot g'.
+        </li>
+      </ol>
+    </div>
+    <div>
+      <p>
+        If $g'$ is homotopic to the loop associated with a leg of the spider for all $g$, then IMG acting on alphabet $X$ induces an automaton.
+      </p>
     </div>
   </section>
 </section>
