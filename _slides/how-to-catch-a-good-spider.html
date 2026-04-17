@@ -238,7 +238,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   <section data-markdown>
     <textarea data-template>
       <h3>What's Special About PCF Maps for Arboreal Representation?</h3>
-      <p><center>PCF maps have infinite Odoni's index! They are the dynamical analogue of CM-curves.</center></p>
+      <p>PCF maps have infinite Odoni's index! They are the dynamical analogue of CM-curves.</p>
     </textarea>
   </section>
   <section data-markdown>
@@ -301,7 +301,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
           <span class="lemma-authors">(The unique path lifting property)</span>
         </div>
         <p>
-          Let $\gamma: [0,1] \to \mathcal{M}$ be a path in $\mathcal{M}\coloneqq\mathbb{P}^1_\mathbb{C}\setminus P$ with starting point $\gamma(0)=x$. For any preimage $y \in f^{-1}(x)$, there exists a unique path $\gamma': [0,1] \to \mathcal{M}$ such that $f \circ \gamma' = \gamma$ and $\gamma'(0)=y$.
+          Let $\gamma: [0,1] \to \mathcal{M}$ be a path in $\mathcal{M}:=\mathbb{P}^1_\mathbb{C}\setminus P$ with starting point $\gamma(0)=x$. For any preimage $y \in f^{-1}(x)$, there exists a unique path $\gamma': [0,1] \to \mathcal{M}$ such that $f \circ \gamma' = \gamma$ and $\gamma'(0)=y$.
         </p>
       </div>
     </textarea>
@@ -311,13 +311,21 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
       <h4>Some ingredients...</h4>
       <div class="definition">
         <p>
-          Let $t\in\mathcal{M}$. A <em>spider</em> sitting at $t$ is a collection of pathes $\{L_x\}_{x\in P}$ where $L_x$ starts from $t$ and end at a pole of $x\in P$. 
+          Let $t\in\mathcal{M}$ be a basepoint to define a fundamental group. A <em>spider</em> sitting at $t$ is a collection of pathes $\mathcal{S} = \{l_x\}_{x\in P}$ where $L_x$ starts from $t$ and end at a pole of $x\in P$. 
         </p>
       </div>
     </textarea>
   </section>
   <section>
-    <h3>Three steps to find a </h3>
+    <h4>Three steps to define IMG action</h4>
+    <p><b>STEP 1</b></p>
+    <p>Give a collection of paths $\mathcal{L}=\{l_x\}_{x\in f^{-1}(t)} where $l_x$ starts at $t$ and ends at $x$.</p>
+    <p><b>STEP 2</b></p>
+    <p>Consider a spider and attach the foot of every leg with a small circle around each pole. These are loops starting from $t$ and then walk along legs and circle around a pole and travel back along the legs. Clearly, these loops are generators $g$ of $\pi_1(\mathcal{M},t)$</p>
+    <p><b>STEP 3</b></p>
+    <p>The preimages of $g$ under $f$ and the paths $l_x$ forms a new loop start from $t$. Suppose one of the preimages walks from $x$ to $y$ for some $x,y\in f^{-1}(t)$. Denote this preimage by $f^{-1}(g)[x]$ and $f^{-1}(g)[x]\cdot x=y$. Then, $l_xf^{-1}(g)[x]l_y^{-1}$ becomes a loop, denoted by $g'$. Then, we get the following relationship: considering a word $xw$, we have
+    $$(xw)^g = yw^{g'}.$$
+    </p>
   </section>
 </section>
 
