@@ -1,21 +1,21 @@
 ---
 layout: slide
-title: Overgroups of the arboreal representation of PCF polynomials
-date: 2025-8-26s
+title: Catching a spider: Automating the Spider Algorithm in Complex Dynamics 
+date: 2025-8-26
 author: Wayne Peng
 coauthors:
-to: The 11th East Asia Number Theory Conference
+to: National University of Kaohsiung
 description: Some slides for a git and GitHub workshop using reveal.js
 categories: academic
 abstract: |
-  Consider a number field $K$ and a rational function $f$ of degree greater than 1 over $K$. By taking preimages of $\alpha\in K$ under successive iterates of $f$, an infinite $d$-ary tree $T_\infty$ rooted at $\alpha$ can be constructed. An edge is assigned between two preimages $x$ and $y$ if $f(x)=y$. The absolute Galois group of $K$, acting on $T_\infty$ through tree automorphisms, generates a subgroup $\Gal_f^\infty(\alpha)$ in the group of all automorphisms of $T_\infty$, $\Aut(T_\infty)$.
+  The Spider Algorithm is a well-known topological tool used to study the dynamics of polynomials and rational functions. However, implementing this algorithm computationally requires a system capable of distinguishing valid homotopic paths from tangled, intersecting ones. In this talk, we explore a computational framework that translates the continuous topological constraints of complex dynamics into discrete graph-theoretic algorithms.
 
-  We have discovered a new class of natural overgroups in which the image of the Galois representation attached to a PCF polynomial must reside. Moreover, we have found that the image of the Galois representation of a new PCF polynomial is isomorphic to one of these overgroups. We also investigate the structure of these overgroups for specific maps, such as normalized dynamical Belyi polynomials, and show that the normal subgroups of these overgroups form a unique chief series. This allows us to bound the number of generators through group-theoretic analysis.
+  We will outline the process of generating discretized paths (spider legs) from a chosen base point to the post-critical set of a rational map, utilizing projective coordinates and the chordal metric to seamlessly handle limits at infinity. We then introduce an algorithmic method to evaluate the resulting monodromy graphs. By searching for vertex-disjoint paths and applying cyclic ordering, our algorithm programmatically verifies the existence of a "good spider" without human visual intervention. This provides a robust computational pipeline for exploring the Iterated Monodromy Groups of high-degree rational functions.
 tags:
   - research
   - academic
   - slides
-front-img: "/assets/img/slides/overgroup/front-img.png"
+front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 ---
 <style>
   .container{
