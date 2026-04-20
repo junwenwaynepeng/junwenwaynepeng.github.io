@@ -214,28 +214,28 @@
 }
 
 /* Plain proof: no background, no border, no shadow */
-.proof {
-  background: transparent;
-  box-shadow: none;
-  border: 0;
-  border-radius: 0;
+/* Remove any existing header strip */
+.proof::before {
+  content: none;
 }
 
-.proof::before { content: none; }
+/* Default label */
+.proof {
+  --proof-label: "Proof. ";
+}
 
-.proof { --proof-label: "Proof."; }
-
-.proof > p:first-child::before {
-  content: var(--proof-label, "Proof. ");
+/* Add "Proof." before the first paragraph */
+.proof > p:first-of-type::before {
+  content: var(--proof-label);
   font-weight: 700;
 }
 
-/* Corrected */
-.proof.unlabelled > p:first-child::before {
+/* --- Remove label for unlabelled proofs --- */
+.proof.unlabelled > p:first-of-type::before {
   content: none !important;
 }
 
-/* QED */
+/* --- QED symbol --- */
 .proof::after {
   content: "∎";
   display: block;
@@ -243,11 +243,27 @@
   margin-top: 0.25em;
 }
 
+/* Remove QED when requested */
 .proof.no-auto-qed::after {
   content: none;
 }
 
-/* Optional: tie unlabelled to no qed */
-.proof.unlabelled::after {
-  content: none;
+/* --- Optional manual QED placement --- */
+.proof .qed {
+  display: block;
+  text-align: right;
+}
+.proof .qed::after {
+  content: "∎";
+}
+
+/* --- Clean spacing --- */
+.proof p {
+  padding: 0;
+  margin: 0.5em 0;
+}
+
+/* --- Optional compact variant --- */
+.proof.compact p {
+  margin: 0.25em 0;
 }
