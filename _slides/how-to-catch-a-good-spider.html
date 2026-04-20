@@ -236,7 +236,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
           We refer to $G_n=\operatorname{Gal}(f^n(X)-t/K)$ as the <em>arithmetic Galois group</em> if $t$ is transcendental over a number field $K$.
         </li>
         <li class="fragment">
-          We call the group $\overline{G_n}=\operatorname{Gal}(f^n(X)-t/\overline{K})$ the <em>geometric Galois group</em>. ($\overline{G_n}\cong\operatorname{Gal}(f^n(X)-t\mathbb{C}$))
+          We call the group $\overline{G_n}=\operatorname{Gal}(f^n(X)-t/\overline{K})$ the <em>geometric Galois group</em>. ($\overline{G_n}\cong\operatorname{Gal}(f^n(X)-t/\mathbb{C}$))
         </li>
         <li class="fragment">
            Let's consider the <em>post-critical set</em> $P= \displaystyle \bigcup_{n\geq 1}f^n(C_f)$ with $C_f=\{p\in \mathbb{P}^1_{\mathbb{C}}|f'(p)=0\}$
@@ -255,19 +255,26 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   </section>
   <section data-markdown>
     <textarea data-template>
-      We have the following exact sequence
-      $$1\to \overline{G_\infty}\cong\operatorname{IMG}(f)\to G_\infty\to \operatorname{Gal}(K'/K)\to 1$$
-      where $K'=\varinjlim_{n}K(f^n(x)-t)\cap \overline{K}$.
       <ul>
         <li class="fragment">
           $\operatorname{IMG}(f)$ is finitely generated because it is an image of a homomorphism defined on a finitely generated group.
         </li>
         <li class="fragment">
-          $[S_d]^\infty$ is infinitely generated
+          $\operatorname{Aut}(X^*)\cong [S_d]^\infty$ is infinitely generated
         </li>
       </ul>
-      <p class="fragment">Therefore, Odoni's index is infinite.</p>
+      <p class="fragment">Therefore, Odoni's index of $\overline{G_\infty}$ is infinite.</p>
+      <p class="fragment">
+        Note that we have the following exact sequence
+        $$1\to \overline{G_\infty}\cong\operatorname{IMG}(f)\to G_\infty\to \operatorname{Gal}(K'/K)\to 1$$
+        where $K'=\varinjlim_{n}K(f^n(x)-t)\cap \overline{K}$.
+      </p>
     </textarea>
+  </section>
+  <section>
+    <p>
+      In general, we note that $K_\infty(\alpha)$ is unramified outside a finite set of places $S$. Then the dynamical Galois group is a quotient group of $G_S=\operatorname{Gal}(K_{S}/K)$ where $K_S$ is the maximal extension of $K$ unramified outside of $S$. Since $K$ has characteristic $0$, the ramification is tame. It then follows by Neukirch, Schmidt, and Wingberg that $G_S$ is finitely generated.
+    </p>
   </section>
 </section>
 
