@@ -230,7 +230,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
       <p>
         This proposition yields an embedding
         $$\phi:G_\infty\to \operatorname{Aut}(X^*)$$
-        (by taking an inverse limit on $n$), and is refered to as as <em>arboreal representation.</em>
+        (by taking an inverse limit over $n$), and is referred to as the <em>arboreal representation.</em>
       </p>
       <p>The index $[\operatorname{Aut}(X^*):\phi(G_\infty)]$ is called <em>Odoni's index</em>.</p>
     </textarea>
@@ -306,7 +306,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
       </div>
       <div class="definition fragment">
         <p>
-          Let $t\in\mathcal{M}$ be a basepoint to define a fundamental group. A <em>spider</em> sitting at $t$ is a collection of pathes $\mathcal{S} = \{l_x\}_{x\in P}$ where $L_x$ starts from $t$ and end at a pole of $x\in P$. 
+          Let $t\in\mathcal{M}$ be a basepoint to define a fundamental group. A <em>spider</em> sitting at $t$ is a collection of pathes $\mathcal{S} = \{l_x\}_{x\in P}$ where $L_x$ starts at $t$ and ends at a pole of $x\in P$. 
         </p>
       </div>
     </textarea>
@@ -345,7 +345,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
           a map $\tau:A\times X\to X\times A$ ($g\cdot x = y\cdot g'$).
         </li>
       </ol>
-      automato of x^2-1
+      automaton of x^2-1
     </div>
     <div>
       <p>
@@ -357,7 +357,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   </section>
   <section>
     <h4>Difficulties...</h4>
-    <p>Using infinite as a spider head is not always managuable.</p>
+    <p>Using infinity as the spider head is not always manageable.</p>
     <p>How to choose a good collection of paths $\mathcal{L}$?</p>
   </section>
   <section>
@@ -420,12 +420,12 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   <div>
     <div class="proof">
       <p>
-        Since the iterated monodromy group acts on $f^-1(t)$ transversaly, $G$ is connected. Since the legs of $\mathcal S$ only intersect at $t$, the graph $G$ is a topological graph by the unique lifting lemma. Let $l$ be a path from $t$ to $z_0$. Let $p_1$ and $p_2$ (if exists) be the direct poles of $z_0$ on $\{r_x\}$ By the assumption, there must be a path $l$ from $t$ to $z_0$ such that the path $\{l\cdot{z_0,p_1}, l\cdot (z_0,p_2)\}$ is homotopic to $\{l_{p_1}, l_{p_2}\}$.
-
-        Now, if $f^{-1}(l_p)[x]$ is not a pole, we can ignore it. If it is a pole, denoted by $p'$, then the poles enclosed by $r_x\cdot f^{-1}(l_p)[x]\cdot l_{p'}^{-1}$ appear in one of the following two cases:
-        <b>case 1: (graph)</b>
-        <b>case 1: (graph)</b>
-        Since for both cases, we can redefine the path $r_i$ so that the pole will live outside the loop, we can catch a Lucas.
+        Since the iterated monodromy group acts on $f^-1(t)$ transversely, $G$ is connected. Since the legs of $\mathcal S$ intersect only at $t$, the unique lifting lemma implies that $G$ is a topological graph. Let $l$ be a path from $t$ to $z_0$. Let $p_1$ and $p_2$ (if they exist) be the direct poles of $z_0$ on ${r_x}$. By assumption, there is a path $l$ from $t$ to $z_0$ such that $\{l\cdot\{z_0,p_1\},\; l\cdot(z_0,p_2)\}$ is homotopic to ${l_{p_1},; l_{p_2}}$.
+      
+        Now, if $f^{-1}(l_p)[x]$ is not a pole, we may ignore it. If it is a pole, denoted by $p'$, then the poles enclosed by $r_x\\cdot f^{-1}(l_p)[x]\\cdot l_{p'}^{-1}$ fall into one of the following two cases:
+          <b>case 1: (graph)</b>
+          <b>case 1: (graph)</b>
+        In either case, we can redefine the path $r_i$ so that the pole lies outside the loop, and thus we can catch a Lucas.
       </p>
     </div>
   </section>
