@@ -86,21 +86,6 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
           For any fixed integers $d \geq 2$ and $B \geq 1$, there are only finitely many conjugacy classes of post-critically finite rational maps of degree $d$ which can be defined over a number field of degree at most $B$, except (when $d$ is a perfect square) for the infinite family of flexible Lattès maps.
         </p>
       </div>
-      <p class="fragment" data-fragment-index="1">
-        Proposed by Silverman, it is natural to define
-        $$h_{crit}(f)=\sum_{p\in\mathbb{P}^1(\bar{K})}(e_p(f)-1)h_f(p)$$
-        where $e_p(f)$ is the ramification index of $f$ at $p$ which measures the post-critical complexity of a rational map defined over $\bar{K}$ 
-      </p>
-    </textarea>
-  </section>
-  <section data-markdown>
-    <textarea data-template>
-      <p>
-        It is immediate that $h_{crit}(f)=0$ if and only if $f$ is post-critically finite.
-      </p>
-      <p class="fragment" data-fragment-index="1">
-        We then show that $|h_{crit}(f)-h(f)|< C$. (This step is very subtle.)
-      </p>
     </textarea>
   </section>
   <section data-markdown>
@@ -181,7 +166,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
     <textarea data-template>
       <h3>Automorphisms of a $d$-ary Tree</h3>
       <p>
-        Let $X={1,2,\ldots, d}$ be an <em>alphabet</em>, a set of characters. Let $X^n$ be the words of length $n$ from $X$. The union $\cup_{i\leq n} X^i$ is isomorphic to a <em>(regular) level-$n$ $d$-ary tree</em>. An automorphism of a tree (viewed as a graph) is a bijection on the vertices that preserves edge–vertex incidence. We denote the infinite tree (words of any length) by $X^*$.
+        Let $X=\{1,2,\ldots, d\}$ be an <em>alphabet</em>, a set of characters. Let $X^n$ be the words of length $n$ from $X$. The union $\cup_{i\leq n} X^i$ is isomorphic to a <em>(regular) level-$n$ $d$-ary tree</em>. An automorphism of a tree (viewed as a graph) is a bijection on the vertices that preserves edge–vertex incidence. We denote the infinite tree (words of any length) by $X^*$.
       </p>
       <p class="fragment" data-fragment-index="1">
         Let's define $\operatorname{Aut}(X^n)$ be the group of automorphisms. We have
@@ -212,9 +197,9 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
       <ul>
         <li class="fragment" data-fragment-index="1">Let \(K\) be a number field.</li>
         <li class="fragment" data-fragment-index="2">Let \(f\) be a polynomial of degree \(d\) over \(K\).</li>
-        <li class="fragment" data-fragment-index="3">\(K_n(\alpha) = K(f^n(X)-\alpha)\) for some \(\alpha\in K\).</li>
-        <li class="fragment" data-fragment-index="4">\(\alpha\) is called <em>base point</em>.</li>
-        <li class="fragment" data-fragment-index="5">\(G_n(\alpha)= \mathrm{Gal}(K_n/K)\); \(G_\infty = \varprojlim_n G_n\).</li>
+        <li class="fragment" data-fragment-index="3">\(K_n(\alpha) = K(f^n(X)-\alpha)\) is the splitting field of $f^n(X)-\alpha$.</li>
+        <li class="fragment" data-fragment-index="4">\(\alpha\) is called <em>base point</em>. $\alpha$ can be algebraic or transendental over $K$.</li>
+        <li class="fragment" data-fragment-index="5">\(G_n(\alpha)= \mathrm{Gal}(K_n(\alpha)/K)\); \(G_\infty = \varprojlim_n G_n(\alpha)\).</li>
       </ul>
       <p class="fragment" data-fragment-index="6">We may define a tree structure on $\alpha$ and its preimages under $f$ by creating an edge between two points $a$ and $b$ if $f(a)=b$. This tree is denoted as \( \mathbb{T}_f(\alpha) \)</p>
       <div class="proposition fragment" data-fragment-index="7">
