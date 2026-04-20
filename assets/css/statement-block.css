@@ -231,6 +231,10 @@
   font-weight: 700;
 }
 
+.proof.unlabelled > :first-child::before {
+  content: none !important;
+}
+
 /* --- unlabelled: no leading label --- */
 .proof.no-auto-qed.unlabelled > :first-child::before {
   content: none;
