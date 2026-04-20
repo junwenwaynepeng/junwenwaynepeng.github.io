@@ -221,7 +221,6 @@
   border-radius: 0;
 }
 
-/* Remove the old header strip */
 .proof::before { content: none; }
 
 .proof { --proof-label: "Proof."; }
@@ -231,39 +230,24 @@
   font-weight: 700;
 }
 
-.proof.unlabelled > :first-child::before {
+/* Corrected */
+.proof.unlabelled > p:first-child::before {
   content: none !important;
 }
 
-/* --- unlabelled: no leading label --- */
-.proof.no-auto-qed.unlabelled > :first-child::before {
-  content: none;
-}
-
-/* No inner padding on proof content */
-.proof p { padding: 0; }
-
-/* Tombstone at the end (not absolutely positioned) */
+/* QED */
 .proof::after {
   content: "∎";
-  position: static;        /* overrides earlier absolute positioning */
   display: block;
   text-align: right;
   margin-top: 0.25em;
 }
 
-/* ---- Optional controls ---- */
-
-/* If you want to disable auto tombstone for a particular proof */
-.proof.no-auto-qed::after { content: none; }
-
-/* Manual tombstone you can place anywhere inside the proof */
-.proof .qed {
-  display: block;
-  text-align: right;
-  padding: 0 15px 12px 15px;       /* align with box padding */
+.proof.no-auto-qed::after {
+  content: none;
 }
-.proof .qed::after { content: "∎"; }
 
-/* Compact proof variant */
-.proof.compact p { padding: 10px 12px; }
+/* Optional: tie unlabelled to no qed */
+.proof.unlabelled::after {
+  content: none;
+}
