@@ -1,0 +1,120 @@
+---
+layout: slide
+title: Explicit Arithmetic Distance Motivated by Tits Alternative in Arithmetic Dynamics
+date: 2023-04-18
+author: Wayne Peng
+to: National Chung Hsing University
+description: Some slides for a git and GitHub workshop using reveal.js
+categories: academic
+abstract: |
+	Motivating by the study of Tits alternative in arithmetic dynamics, we investigate the arithmetic distance between distinct rational maps $f,\ g: \mathbb{P}^1(\mathbb{Q})\to  \mathbb{P}^1(\mathbb{Q})$ defined by
+
+	$$
+	\delta(f,g)=\sup_{x\in \mathbb{P}^1(\mathbb{Q})}|\hat{h}_f(x)-\hat{h}_g(x)|
+	$$
+
+	Moreover, when $g$ is monomial, the arithmetic distance is invariant under conjugation by elements of $\operatorname{PGL}_2$. This motivate the definition of the arithmetic complexity of a conjugacy class $[f]$ in the moduli space $\mathcal{M}_d$ by
+
+	$$
+	\mu([f]) =\delta(f,g)
+	$$
+
+	To compute this arithmetic complexity, we establish explicit and computable Hölder constants and exponents for the modified Green function with respect to the chordal metric. Under additional assumptions, we further obtain Lipschitz continuity. Using these analytic estimates, we develop a numerical algorithm to compute arithmetic distances between rational maps with good reduction at all finite places. The method combines a global coarse search with local optimization on $\mathbf{P}^1(\mathbb{Q})$.
+
+	We then apply the algorithm to families of unicritical maps $f:x\mapsto x^d+c$ and find $\mu([f])$. This talk is joint with You-Ting Chen.
+tags:
+  - research
+  - academic
+  - slides
+front-img: "/assets/img/slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms/binary-tree.png"
+---
+<section>
+	<section>
+		<h4>Our Result</h4>
+		<div class="theorem" data-name="Bell-Huang-P.-Tucker, JEMS, 2021">
+			$h_f\neq h_g$ if and only if there exists an integer $j$ such that $\langle f^j,g^j\rangle$ is a rank 2 free generated semigroup.
+		</div>
+		<hr>
+		<div class="collorary fragment" data-fragment-index="2">
+			The followings are equivalent:
+			<ul>
+				<li>$\text{Prep}(f)\cap\text{Prep}(g)$ is infinite;</li>
+     		<li>$\text{Prep}(f)=\text{Prep}(g)$;</li>
+    		<li>for any $w_1,w_2\in\langle f,g\rangle$, we have $\text{Prep}(w_1)=\text{Prep}(w_2)$;</li>
+    		<li>$\langle f,g\rangle$ has polynomial growth;</li>
+    		<li>$\langle f,g\rangle$ does not contain a nonabelian free semigroup;</li>
+    		<li>for any $l>0$, the semigroup $\langle f^l,g^l\rangle$ is not a free semigroup on two generators.</li>
+    		<li>$h_f=h_g$.</li>
+			</ul>
+		</div>
+	</section>
+</section>
+<section>
+	<section>
+		<h3> Height and Canonical Height</h3>
+		<p class="fragment" data-fragment-index="2">
+			Let $\alpha=\frac{p}{q}\in\mathbb{Q}$ be a rational number in lowest terms. The naive height $h:\mathbb{Q}\to\mathbb{R}_{\geq 0}$ is
+			$$
+			h(\alpha)=\log(\max\{|p|,|q|\}).
+			$$
+		</p>
+		<p class="fragment" data-fragment-index="3">
+			If we allow $\alpha$ not in lowest terms, the naive height is equivalent to
+			$$
+			h(\alpha) = \sum_{p\in M_{\mathbb{Q}}} \log(\max\{1,|\alpha|_p\})
+			$$
+			where $M_{\mathbb{Q}}$ is the set of all places (absolute values) over $\mathbb{Q}$.  
+		</p>
+	</section>
+	<section>
+		<ul>
+			<li>There exists a unique extension of height over any number field $K$.</li>
+			<li class="fragment" data-fragment-index="2">It is possible to define a height function on any global field.</li>
+			<li class="fragment" data-fragment-index="3">Our paper introduces a broader concept of height functions.</li>
+			<li class="fragment" data-fragment-index="4">Let $f$ be a degree $d$ rational function. We have a constant $C_f$ such that the following inequality
+	    $$
+	    |h(f(\alpha))-dh(\alpha)|\leq C_f
+	    $$
+	    holds for any $\alpha\in K$. In other word, $h(f(\alpha))\sim dh(\alpha)$, so $h(f^n(\alpha))\sim d^nh(\alpha)$.</li>
+		</ul>
+	</section>
+	<section>
+		<p>Suppose $d=\deg(f)>1$, and let $n>m>0$. We have
+			$$
+			\begin{aligned}
+		    &\left|\dfrac{h(f^n(\alpha))}{d^n}-\dfrac{h(f^m(\alpha))}{d^m}\right|\\
+		    &=\left|\dfrac{h(f^n(\alpha))}{d^n}-\dfrac{h(f^{n-1}(\alpha))}{d^{n-1}}\right.\\
+		    &\left.+\dfrac{h(f^{n-1}(\alpha))}{d^{n-1}}-\cdots +\dfrac{h(f^{m+1}(\alpha))}{d^{m+1}}-\dfrac{h^m(\alpha)}{d^m}\right|\\
+		    &\leq \dfrac{C_f}{d^n}+\dfrac{C_f}{d^{n-1}}+\cdots+\dfrac{C_f}{d^{m+1}}
+			\end{aligned}
+			$$
+		</p>
+	</section>
+	<section>
+		<p>Therefore, the following limit, called <em>canonical height</em>, exists
+		$$
+		h_f(\alpha) = \lim_{n\to\infty}\frac{h(f^n(\alpha))}{d^n}.
+		$$</p>
+	</section>
+</section>
+<section>
+	<section>
+		<h3>keys</h3>
+		<div class="lemma">
+		<p>
+		Let $f$ and $g$ be rational functions of degrees greater than $1$. Let $\omega=\phi_m\cdots\phi_1$ where $\phi_j$ is equal to $f$ or $g$ for each $i$. Let $s_j=\phi_j\cdots \phi_1$ for $j\leq m$.</p><p class="fragment" data-fragment-index="2"> With the notation as above, we have
+		$$
+		\left|\dfrac{h(w(\alpha))}{\deg\omega}-\dfrac{h(s_j(\alpha))}{\deg s_j}\right|<\dfrac{\max\{C_f,C_g\}}{\min\{\deg(f),\deg(g)\}^j}
+		$$
+		for $j=1,\ldots,m$.<p>
+		</div>
+	</section>
+	<section>
+		<h4>Prove a direction of our theorem</h4>
+		<p class="fragment">By the assumption, we choose an $\varepsilon< |h_f(\alpha)-h_g(\alpha)|/2\neq 0$. Then $B(h_f,\varepsilon)\cap B(h_g,\varepsilon)=\emptyset$.</p><p class="fragment"> By the previews lemma, we know there is a $j$ such that, for all words starting with $j$ many $f$, their canonical heights at $\alpha$ will stay in $B(h_f,\varepsilon)$.</p><p class="fragment"> Similarly, for all words starting with $j$ many $g$, their canonical heights at $\alpha$ will stay in $B(h_g,\varepsilon)$.</p><p class="fragment"> Thus we can conclude that any word starting with $j$ many $f$ won't equal to one starting with $j$ many $g$.</p>
+	</section>
+</section>
+
+<section>
+	<h3>Thank you</h3>
+</section>
