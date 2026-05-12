@@ -73,6 +73,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 	</section>
 	<section>
 		<div class="lemma">
+			<div class="lemma-header"></div> 
 			Fix a constant $B>0$ and an integer $d>1$. For any number field $K$, we have $C_f>B$ for all but finitely many degree $d>1$ rational maps $f:\mathbb{P}^1(K)\to\mathbb{P}^1(K)$.
 		</div>
 		<div class="proof">
@@ -85,26 +86,28 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 				If one of the degrees of $f$ or $g$ is strickly greather than $3$, then the semigroup $\langle f,g\rangle$ is free for all but finitely many $f$ and $g$. In particular, the semigroup $\langle f^2, g\rangle$  is free for all but finitely many $f$.
 			</div>
 			<div class="proof no-auto-qed">
-				We have
-        $$
-        \dfrac{C_f}{d}\left(1-\dfrac{1}{d-1}\right)<|h_f(a)-h(a)|<\dfrac{C_f}{d-1}
-        $$
-        and
-        $$
-        \left|h_f(P)-\dfrac{h(f^i(P))}{d^i}\right|<\dfrac{C_f}{d^i(d-1)}
-        $$
-        for $a\in\mathbb{P}^1(\bar{Q})$. It follows that
-        $$
-        	\begin{align*}
-            |\hat{h}_f(P)-\hat{h}_g(P)|&\geq |\hat{h}_f(P)-h(P)|-|h(P)-\hat{h}_g(P)|\\
-            &\geq \dfrac{C_f}{d_f}\left(1-\dfrac{1}{d_f-1}\right)-\frac{C_g}{d_g-1}.
-        	\end{align*}
-        $$
-        By the lemma, we have
-        $$
-        	C_f>\frac{d_f(d_f-1)(d_g+1)}{(d_g-3)d_g(d_g-1)}C_g
-        $$
-        for all but finitely many $g$ with $d_g>3$.
+				<p>
+					We have
+	        $$
+	        \dfrac{C_f}{d}\left(1-\dfrac{1}{d-1}\right)<|h_f(a)-h(a)|<\dfrac{C_f}{d-1}
+	        $$
+	        and
+	        $$
+	        \left|h_f(P)-\dfrac{h(f^i(P))}{d^i}\right|<\dfrac{C_f}{d^i(d-1)}
+	        $$
+	        for $a\in\mathbb{P}^1(\bar{Q})$. It follows that
+	        $$
+	        	\begin{align*}
+	            |\hat{h}_f(P)-\hat{h}_g(P)|&\geq |\hat{h}_f(P)-h(P)|-|h(P)-\hat{h}_g(P)|\\
+	            &\geq \dfrac{C_f}{d_f}\left(1-\dfrac{1}{d_f-1}\right)-\frac{C_g}{d_g-1}.
+	        	\end{align*}
+	        $$
+	        By the lemma, we have
+	        $$
+	        	C_f>\frac{d_f(d_f-1)(d_g+1)}{(d_g-3)d_g(d_g-1)}C_g
+	        $$
+	        for all but finitely many $g$ with $d_g>3$.
+	      </p>
 			</div>
 		</div>
 	</section>
