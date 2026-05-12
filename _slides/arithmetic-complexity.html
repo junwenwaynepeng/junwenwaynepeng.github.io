@@ -1,14 +1,17 @@
 ---
 layout: slide
-title: Explicit Arithmetic Distance Motivated by Tits Alternative in Arithmetic Dynamics
-date: 2026-4-26
+title: |
+  Catching a spider: Automating the Spider Algorithm in Complex Dynamics
+date: 2026-5-12
 author: Wayne Peng
 coauthors:
 to: National University of Kaohsiung
 description: Some slides for a git and GitHub workshop using reveal.js
 categories: academic
 abstract: |
-	We then apply the algorithm to families of unicritical maps $f:x\mapsto x^d+c$ and find $\mu([f])$. This talk is joint with You-Ting Chen.
+  The Spider Algorithm is a well-known topological tool used to study the dynamics of polynomials and rational functions. However, implementing this algorithm computationally requires a system capable of distinguishing valid homotopic paths from tangled, intersecting ones. In this talk, we explore a computational framework that translates the continuous topological constraints of complex dynamics into discrete graph-theoretic algorithms.
+
+  We will outline the process of generating discretized paths (spider legs) from a chosen base point to the post-critical set of a rational map, utilizing projective coordinates and the chordal metric to seamlessly handle limits at infinity. We then introduce an algorithmic method to evaluate the resulting monodromy graphs. By searching for vertex-disjoint paths and applying cyclic ordering, our algorithm programmatically verifies the existence of a "good spider" without human visual intervention. This provides a robust computational pipeline for exploring the Iterated Monodromy Groups of high-degree rational functions.
 tags:
   - research
   - academic
