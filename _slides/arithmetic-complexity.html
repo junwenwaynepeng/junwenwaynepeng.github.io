@@ -1,20 +1,22 @@
 ---
 layout: slide
-title: Explicit Arithmetic Distance Motivated by Tits Alternative in Arithmetic Dynamics
-date: 2026-05-12
+title: |
+  Catching a spider: Automating the Spider Algorithm in Complex Dynamics
+date: 2026-4-26
 author: Wayne Peng
-to: Academia Sinica
+coauthors:
+to: National University of Kaohsiung
 description: Some slides for a git and GitHub workshop using reveal.js
 categories: academic
 abstract: |
-	Motivating by the study of Tits alternative in arithmetic dynamics, we investigate the arithmetic distance $\delta(f,g)$ between distinct rational maps $f$ and $g$. Moreover, when $g$ is monomial, the arithmetic distance is invariant under conjugation by elements of $\operatorname{PGL}_2$. This motivate the definition of the arithmetic complexity of a conjugacy class $[f]$ in the moduli space $\mathcal{M}_d$ by $\mu([f]) =\delta(f,g)$
-	To compute this arithmetic complexity, we establish explicit and computable Hölder constants and exponents for the modified Green function with respect to the chordal metric. Under additional assumptions, we further obtain Lipschitz continuity. Using these analytic estimates, we develop a numerical algorithm to compute arithmetic distances between rational maps with good reduction at all finite places. The method combines a global coarse search with local optimization on $\mathbf{P}^1(\mathbb{Q})$.
-	We then apply the algorithm to families of unicritical maps $fx\mapsto x^d+c$ and find $\mu([f])$. This talk is joint with You-Ting Chen.
+  The Spider Algorithm is a well-known topological tool used to study the dynamics of polynomials and rational functions. However, implementing this algorithm computationally requires a system capable of distinguishing valid homotopic paths from tangled, intersecting ones. In this talk, we explore a computational framework that translates the continuous topological constraints of complex dynamics into discrete graph-theoretic algorithms.
+
+  We will outline the process of generating discretized paths (spider legs) from a chosen base point to the post-critical set of a rational map, utilizing projective coordinates and the chordal metric to seamlessly handle limits at infinity. We then introduce an algorithmic method to evaluate the resulting monodromy graphs. By searching for vertex-disjoint paths and applying cyclic ordering, our algorithm programmatically verifies the existence of a "good spider" without human visual intervention. This provides a robust computational pipeline for exploring the Iterated Monodromy Groups of high-degree rational functions.
 tags:
   - research
   - academic
   - slides
-front-img: "/assets/img/slides/an-efficient-algorithm-for-determining-the-composition-relationship-of-polarized-morphisms/binary-tree.png"
+front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 ---
 <style>
   .container{
