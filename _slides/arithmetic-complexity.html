@@ -147,12 +147,14 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 	</section>
 	<section>
 		<h4>A General Strategy</h4>
-		Let $\phi:I\to\mathbb{R}_{\geq 0}$ be H\"{o}lder continuous with H\"{older} constant $C$ and H\"{o}lder exponent $\alpha$. Given a partition $\mathcal P=\{x_0,x_1,\ldots, x_N\}\subset I$, let $\|\mathcal P\|=\max\{x_i-x_{i-1}|i=0,\ldots, N-1\}$. We then have
-		$$\forall $x\in (x_{i-1},x_{i+1}): |\phi(x)-\phi(x_i)|\leq C|x-x_i|^\alpha<\|\mathcal P\|^\alpha. $$
-		It implies
-		$$\phi(x)<\phi(x_i)+C\|\mathcal P\|^\alpha.$$
-		Thus, we may discard all $x_i$ if
-		$$|\phi(x_i)|<\max\{\phi(x)|x\in\mathcal {P}\}-C|\mathcal P|^alpha.$$
+		<p>
+			Let $\phi:I\to\mathbb{R}_{\geq 0}$ be H\"{o}lder continuous with H\"{older} constant $C$ and H\"{o}lder exponent $\alpha$. Given a partition $\mathcal P=\{x_0,x_1,\ldots, x_N\}\subset I$, let $\|\mathcal P\|=\max\{x_i-x_{i-1}|i=0,\ldots, N-1\}$. We then have
+			$$\forall $x\in (x_{i-1},x_{i+1}): |\phi(x)-\phi(x_i)|\leq C|x-x_i|^\alpha<\|\mathcal P\|^\alpha. $$
+			It implies
+			$$\phi(x)<\phi(x_i)+C\|\mathcal P\|^\alpha.$$
+			Thus, we may discard all $x_i$ if
+			$$|\phi(x_i)|<\max\{\phi(x)|x\in\mathcal {P}\}-C|\mathcal P|^alpha.$$
+		</p>
 	</section>
 </section>
 <section>
