@@ -174,6 +174,50 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 			</p>
 		</textarea>
 	</section>
+	<section data-markdown>
+		<textarea data-template>
+			<h4>Psudocode</h4>
+		</textarea>
+	</section>
+	<section data-markdown>
+		<textarea data-template>
+			<h4>Good Reduction</h4>
+			<div class="definition">
+				<p>
+					Let $\phi : \mathbb P^1(K) \to \mathbb P^1(K)$ be a rational map. We say that $\phi = [F:G]$ is in <em>normalized form</em> if 
+	    		$$
+	        	F(X,Y) = a_0 X^d + a_1 X^{d-1}Y + \cdots + a_{d-1} XY^{d-1} + a_d Y^d
+	    		$$
+			    and
+			    $$    
+			    	G(X,Y) = b_0 X^d + b_1 X^{d-1}Y + \cdots + b_{d-1} XY^{d-1} + b_d Y^d
+			    $$
+			    satisfy
+			    $$
+			      \min\{v(a_i), v(b_i) : i = 0, 1, \ldots, d\} = 0.
+			    $$
+			    and $F$, $G$ have no common factor.
+			  </p>
+			</div>
+			<div class="definition">
+				<p>
+					A rational map $\phi:\mathbb P^1(K) \to \mathbb P^1(K)$ is said to have <em>good reduction modulo $\mathfrak p$</em> if it satisfies any one of the conditions of Theorem \ref{thm:good_reduction}.
+				</p>
+			</div>
+		</textarea>
+	</section>
+	<section data-markdown>
+		<textarea data-template>
+			<div class="theorem">
+				<div class="theorem-header">
+					<span class="theorem-authors">Briend-Duval</span>
+				</div>
+				<p>
+					For an endomorphism $f$ on $\mathbb P^N$ over $\mathbb C$ of degeree $\mathbb d$, the field of complex numbers, take a lift $F = (F_0, ..., F_N) : \mathbb C^{N+1} \to \mathbb C^{N+1}$ of $f$, and denote by $G$ the Green function of $F$. Put $L = \sup_{G(z) \leq 0} \max |F'_0(z), ..., F'_N(z)|$. Then for any $\alpha < (log d)/(log L)$, $G$ is Hölder continuous with Hölder exponent alpha.
+				</p>
+			</div>
+		</textarea>
+	</section>
 </section>
 <section>
 	<h3>Thank you</h3>
