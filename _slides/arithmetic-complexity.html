@@ -181,27 +181,25 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 	</section>
 	<section data-markdown>
 		<textarea data-template>
+			<h4>Notations</h4>
+		</textarea>
+	</section>
+	<section data-markdown>
+		<textarea data-template>
 			<h4>Good Reduction</h4>
 			<div class="definition">
 				<p>
-					Let $\phi : \mathbb P^1(K) \to \mathbb P^1(K)$ be a rational map. We say that $\phi = [F:G]$ is in <em>normalized form</em> if 
-	    		$$
-	        	F(X,Y) = a_0 X^d + a_1 X^{d-1}Y + \cdots + a_{d-1} XY^{d-1} + a_d Y^d
-	    		$$
-			    and
-			    $$    
-			    	G(X,Y) = b_0 X^d + b_1 X^{d-1}Y + \cdots + b_{d-1} XY^{d-1} + b_d Y^d
-			    $$
-			    satisfy
-			    $$
-			      \min\{v(a_i), v(b_i) : i = 0, 1, \ldots, d\} = 0.
-			    $$
-			    and $F$, $G$ have no common factor.
-			  </p>
+					A rational map $\phi:\mathbb P^1(K) \to \mathbb P^1(K)$ is said to have <em>good reduction modulo $\mathfrak p$</em> if it satisfies $\deg\phi = \deg\Tilde{\phi}$ where $\Tilde{\phi}$ is the reduced rational map defined over $\mathfrak O_K/\mathfrak p$.
+				</p>
 			</div>
-			<div class="definition">
+			<div class="theorem">
+				<div class="theorem-header">
+				</div>
 				<p>
-					A rational map $\phi:\mathbb P^1(K) \to \mathbb P^1(K)$ is said to have <em>good reduction modulo $\mathfrak p$</em> if it satisfies any one of the conditions of Theorem \ref{thm:good_reduction}.
+					Let $K$ be a field with an absolute value $v$ and $\phi : \mathbb P^1 \to \mathbb P^1$ be a morphism of degree $d \ge 2$. Let $\Phi = (F,G) : \mathbb A^2 \to \mathbb A^2$ be a lift of $\phi$. If $v$ is nonarchimedean and the map $\phi = [F,G] : \mathbb P^1 \to \mathbb P^1$ has good reduction at $v$, then
+    			$$
+        		\forall\ (x,y) \in \mathbb A_*^2(K): \mathcal G_{\Phi, v}(x, y) = \log \max \{|x|_v, |y|_v\}.
+    			$$
 				</p>
 			</div>
 		</textarea>
