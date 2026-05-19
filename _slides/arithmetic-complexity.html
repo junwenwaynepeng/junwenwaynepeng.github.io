@@ -99,7 +99,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 				<div class="theorem-header">
 	        <span class="theorem-authors">(Bell-Huang-P.-Tom)</span>
 	      </div>
-				Let $f$ and $g$ be rational functions of degrees greater than $2$. Let $\hat{h_f}$ and $\hat{h_g}$ be the canonical height of $f$ and $g$ respectively. We have $\hat{h_f}\neq \hat{h_g}$ if and only if there exists an integer $j$ such that $\langle f^j,g^j\rangle$ is a rank 2 free generated semigroup.
+				Let $f$ and $g$ be rational functions of degrees greater than $2$. Let $\hat{h}_f$ and $\hat{h}_g$ be the canonical height of $f$ and $g$ respectively. We have $\hat{h}_f\neq \hat{h}_g$ if and only if there exists an integer $j$ such that $\langle f^j,g^j\rangle$ is a rank 2 free generated semigroup.
 			</div>
 			<div class="proof no-auto-qed">
 				<p>
@@ -140,7 +140,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 		<textarea data-template>
 			<div class="theorem">
 				<div class="theorem-header"></div>
-					If one of the degrees of $f$ or $g$ is strickly greather than $3$, then the semigroup $\langle f,g\rangle$ is free for all but finitely many $f$ and $g$. In particular, the semigroup $\langle f^2, g\rangle$  is free for all but finitely many $f$.
+					If one of the degrees of $f$ or $g$ is strickly greater than $3$, then the semigroup $\langle f,g\rangle$ is free for all but finitely many $f$ and $g$. In particular, the semigroup $\langle f^2, g\rangle$  is free for all but finitely many $f$.
 			</div>
 			<div class="proof no-auto-qed">
 				<p>
@@ -193,12 +193,12 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 				<p>
 					Let $f,g:\mathbb{P}^1(\mathbb{Q})\to \mathbb{P}^1(\mathbb{Q})$. The arithmetic distance between $f$ and $g$ is defined by
 					$$
-					\delta(f,g)=\sup_{x\in\mathbb{P}^1(\mathbb{Q})}|\hat{h_f}(x)-\hat{h_g}(x)|.
+					\delta(f,g)=\sup_{x\in\mathbb{P}^1(\mathbb{Q})}|\hat{h}_f(x)-\hat{h}_g(x)|.
 					$$
 				</p>
 			</div>
 			<p>
-				<b>Gaol</b>: find $\delta(f,g)$.
+				<b>Goal</b>: find $\delta(f,g)$.
 			</p>
 			<div class="definition">
 				<p>
@@ -216,7 +216,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 			<h4>A General Strategy</h4>
 			<p>
 				Let $\phi:I\to\mathbb{R}_{\geq 0}$ be Hölder continuous with Hölder constant $C$ and Hölder exponent $\alpha$. Given a partition $\mathcal P=\{x_0,x_1,\ldots, x_N\}\subset I$, let $\|\mathcal P\|=\max\{x_i-x_{i-1}|i=0,\ldots, N-1\}$. We then have
-				$$\forall $x\in (x_{i-1},x_{i+1}): |\phi(x)-\phi(x_i)|\leq C|x-x_i|^\alpha<\|\mathcal P\|^\alpha. $$
+				$$\forall x\in (x_{i-1},x_{i+1}): |\phi(x)-\phi(x_i)|\leq C|x-x_i|^\alpha<\|\mathcal P\|^\alpha. $$
 				It implies
 				$$\phi(x)<\phi(x_i)+C\|\mathcal P\|^\alpha.$$
 				Thus, we may discard all $x_i$ if
@@ -226,7 +226,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 	</section>
 	<section data-markdown>
 		<textarea data-template>
-			<h4>Psudocode</h4>
+			<h4>Pseudocode</h4>
 		</textarea>
 	</section>
 	<section data-markdown>
@@ -266,69 +266,68 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 			</div>
 		</textarea>
 	</section>
-	<section>
-		<section data-markdown>
-			<textarea data-template>
-				<h3>Canonical Height Bounding Flowchart</h3>
+	<section data-markdown>
+		<textarea data-template>
+			<h3>Canonical Height Bounding Flowchart</h3>
 
-				<div class="flow-container">
-				    
-				    <div class="global-box">
-				        <strong>Global Height Difference:</strong>
-				        $$|\hat{h}_\phi - \hat{h}_\psi|$$
-				        <div style="font-size: 0.85em; color: #555; margin-top: 5px;">
-				            <span>↙ Archimedean (Arithmetic)</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Non-Archimedean ↘</span>
-				        </div>
-				    </div>
-
-				    <div class="arrow">↓ For a place $v \in M_K$</div>
-
-				    <div class="columns">
-				        
-			        <div class="column">
-			            <h4>1. Localization & Pointwise Setup</h4>
-			            
-			            <div class="step-box">
-			                <span style="font-size:0.8em; color:#7f8c8d;">Local Green Functions</span>
-			                $$|G_{\Phi, v} - G_{\Psi, v}|$$
-			            </div>
-			            
-			            <div class="arrow">↓ Sum of Hölder continuous functions</div>
-			            
-			            <div class="step-box">
-			                <span style="font-size:0.8em; color:#7f8c8d;">Pointwise Evaluation</span>
-			                $$|G_{\Phi, v}(P) - G_{\Psi, v}(Q)|$$
-			                <div style="font-size:0.75em; color:#c0392b; font-style:italic; margin-top:3px;">
-			                    Constraint: $\|P, Q\|_v \ge \frac{1}{\sqrt{2}} \implies \text{Hölder continuity}$
-			                </div>
-			            </div>
+			<div class="flow-container">
+			    
+			    <div class="global-box">
+			        <strong>Global Height Difference:</strong>
+			        $$|\hat{h}_\phi - \hat{h}_\psi|$$
+			        <div style="font-size: 0.85em; color: #555; margin-top: 5px;">
+			            <span>↙ Archimedean (Arithmetic)</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Non-Archimedean ↘</span>
 			        </div>
+			    </div>
 
-			        <div class="column">
-			            <h4>2. Series Dynamics & Final Goal</h4>
-			            
-			            <div class="step-box">
-			                <span style="font-size:0.8em; color:#7f8c8d;">Modified Green Function</span>
-			                $$|\widehat{G}_{\Phi, v}(P) - \widehat{G}_{\Psi, v}(Q)| + |\log \|P\|_v + \log \|Q\|_v|$$
-			            </div>
-			            
-			            <div class="arrow">↓ Expand via map $\phi$ of degree $d$</div>
-			            
-			            <div class="step-box">
-			                <span style="font-size:0.8em; color:#7f8c8d;">Dynamical Infinite Series</span>
-			                $$\sum_{n=1}^{\infty} \frac{g(\phi^n(p))}{d^n} - \sum_{n=1}^{\infty} \frac{g(\phi^n(q))}{d^n}$$
-			            </div>
-			            
-			            <div class="arrow">↓ $g$ and $\phi$ are Lipschitz</div>
-			            
-			            <div class="step-box highlight-box">
-			                <strong style="color: #e74c3c;">Objective:</strong><br>
-			                Find explicit Hölder Constant and Exponent
-			            </div>
-				        </div>
-				    </div> 
-				</div> 
-			</textarea>
+			    <div class="arrow">↓ For a place $v \in M_K$</div>
+
+			    <div class="columns">
+			        
+		        <div class="column">
+		            <h4>1. Localization & Pointwise Setup</h4>
+		            
+		            <div class="step-box">
+		                <span style="font-size:0.8em; color:#7f8c8d;">Local Green Functions</span>
+		                $$|G_{\Phi, v} - G_{\Psi, v}|$$
+		            </div>
+		            
+		            <div class="arrow">↓ Sum of Hölder continuous functions</div>
+		            
+		            <div class="step-box">
+		                <span style="font-size:0.8em; color:#7f8c8d;">Pointwise Evaluation</span>
+		                $$|G_{\Phi, v}(P) - G_{\Psi, v}(Q)|$$
+		                <div style="font-size:0.75em; color:#c0392b; font-style:italic; margin-top:3px;">
+		                    Constraint: $\|P, Q\|_v \ge \frac{1}{\sqrt{2}} \implies \text{Hölder continuity}$
+		                </div>
+		            </div>
+		        </div>
+
+		        <div class="column">
+		            <h4>2. Series Dynamics & Final Goal</h4>
+		            
+		            <div class="step-box">
+		                <span style="font-size:0.8em; color:#7f8c8d;">Modified Green Function</span>
+		                $$|\widehat{G}_{\Phi, v}(P) - \widehat{G}_{\Psi, v}(Q)| + |\log \|P\|_v + \log \|Q\|_v|$$
+		            </div>
+		            
+		            <div class="arrow">↓ Expand via map $\phi$ of degree $d$</div>
+		            
+		            <div class="step-box">
+		                <span style="font-size:0.8em; color:#7f8c8d;">Dynamical Infinite Series</span>
+		                $$\sum_{n=1}^{\infty} \frac{g(\phi^n(p))}{d^n} - \sum_{n=1}^{\infty} \frac{g(\phi^n(q))}{d^n}$$
+		            </div>
+		            
+		            <div class="arrow">↓ $g$ and $\phi$ are Lipschitz</div>
+		            
+		            <div class="step-box highlight-box">
+		                <strong style="color: #e74c3c;">Objective:</strong><br>
+		                Find explicit Hölder Constant and Exponent
+		            </div>
+			        </div>
+			    </div> 
+			</div> 
+		</textarea>
 	</section>
 </section>
 <section>
