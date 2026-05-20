@@ -240,24 +240,9 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 				</div>
 				<p>
 					Let $K$ be a field with an absolute value $v$ and $\phi : \mathbb P^1 \to \mathbb P^1$ be a morphism of degree $d \ge 2$. Let $\Phi = (F,G) : \mathbb A^2 \to \mathbb A^2$ be a lift of $\phi$. If $v$ is nonarchimedean and the map $\phi = [F,G] : \mathbb P^1 \to \mathbb P^1$ has good reduction at $v$, then
-    			$$
-        		\forall (x,y) \in \mathbb A_*^2(K): \mathcal G_{\Phi, v}(x, y) = \log \max \{|x|_v, |y|_v\}.
-    			$$
+    			$$\forall (x,y) \in \mathbb A_*^2(K): \mathcal G_{\Phi, v}(x, y) = \log \max \{|x|_v, |y|_v\}.$$
 				</p>
 			</div>
-		</textarea>
-	</section>
-	<section data-markdown>
-		<textarea data-template>
-			<h3>Canonical Height Bounding Flowchart</h3>
-			<ul>
-				<li>$|\hat{h}_\phi-\hat{h}_\psi|$</li>
-				<li>$|G_{\Phi,v}-G_{\Psi,v}|$</li>
-				<li>$|G_{\Phi,v}(P)-G_{\Psi,v}(Q)|$</li>
-				<li>$|\hat{G}_{\Phi,v}(P)-\hat{G}_{\Psi,v}(Q)|+|\log\|P\|_v-\log\|Q\|_v|$</li>
-				<li>$\sum_{n=1}^\infty \dfrac{g(\phi^n(p))}{d^n}-\sum_{n=1}^\infty\dfrac{g(\phi^n(q))}{d^n}$</li>
-				<li>Using the fact that $\phi$ and $g$ are Lipschtiz, we find hölder constant and exponent.</li>
-			</ul>
 		</textarea>
 	</section>
 	<section data-markdown>
@@ -272,6 +257,20 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 			</div>
 		</textarea>
 	</section>
+	<section data-markdown>
+		<textarea data-template>
+			<h3>Canonical Height Bounding Flowchart</h3>
+			<ul>
+				<li>$|\hat{h}_\phi-\hat{h}_\psi|$</li>
+				<li>$|G_{\Phi,v}-G_{\Psi,v}|$</li>
+				<li>$|G_{\Phi,v}(P)-G_{\Psi,v}(Q)|$</li>
+				<li>$|\hat{G}_{\Phi,v}(P)-\hat{G}_{\Psi,v}(Q)|+|\log\|P\|_v-\log\|Q\|_v|$</li>
+				<li>$\sum_{n=1}^\infty \dfrac{g(\phi^n(p))}{d^n}-\sum_{n=1}^\infty\dfrac{g(\phi^n(q))}{d^n}$</li>
+				<li>Using the fact that $\phi$ and $g$ are Lipschtiz, we find hölder constant and exponent. In particular, $L_\phi$ is the Lipschtiz constant of $\phi$</li>
+			</ul>
+		</textarea>
+	</section>
+
 	<section data-markdown>
 		<textarea data-template>
 			<div class="theorem">
