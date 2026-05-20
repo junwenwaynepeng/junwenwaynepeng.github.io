@@ -43,53 +43,6 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
       color: #2c3e50;
       margin-bottom: 10px;
   }
-  .flow-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 0.55em; /* Scaled down to guarantee everything fits beautifully on one slide */
-  }
-  .global-box {
-      background-color: #f8f9fa;
-      border: 2px solid #2c3e50;
-      padding: 10px 20px;
-      border-radius: 4px;
-      text-align: center;
-      margin-bottom: 10px;
-  }
-  .columns {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      gap: 20px;
-  }
-  .column {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: rgba(0,0,0,0.02);
-      padding: 15px;
-      border-radius: 6px;
-  }
-  .step-box {
-      background-color: #ffffff;
-      border-left: 4px solid #34495e;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 8px 12px;
-      margin: 8px 0;
-      width: 90%;
-      text-align: center;
-  }
-  .arrow {
-      color: #7f8c8d;
-      font-weight: bold;
-      margin: 2px 0;
-  }
-  .highlight-box {
-      border: 2px dashed #e74c3c;
-      background-color: #fdf2e9;
-  }
 </style>
 <section>
 	<section data-markdown>
@@ -226,7 +179,44 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 	</section>
 	<section data-markdown>
 		<textarea data-template>
-			<h4>Pseudocode</h4>
+			### Algorithm: Hölder Maximum Search
+
+			**Input:**
+			- $\phi$ : Hölder continuous function
+			- $I$ : initial interval
+			- $C$ : Hölder constant
+			- $\alpha$ : Hölder exponent
+			- $\varepsilon$ : stopping tolerance
+			- $N$ : number of subdivisions per interval
+
+			**Output:**
+			- Midpoints of candidate intervals containing the global maximum
+
+			<pre><code>
+				1. ActiveIntervals ← {I}
+				2. while ∃ J ∈ ActiveIntervals with |J| > ε do
+				3.     NewIntervals ← ∅
+				4.     for each interval J=[a,b] ∈ ActiveIntervals do
+				5.         Partition J into
+				               P={x₀,x₁,...,xₙ}
+				6.         h ← max{xᵢ−xᵢ₋₁ : i=1,...,N}
+				7.         M ← max{φ(xᵢ) : xᵢ∈P}
+				8.         for i=1,...,N−1 do
+				9.             if φ(xᵢ) ≥ M − Chᵅ then
+				10.                 NewIntervals ← NewIntervals
+				                        ∪ {[xᵢ₋₁,xᵢ₊₁]}
+				11.            end if
+				12.        end for
+				13.    end for
+				14.    Merge overlapping intervals
+				15.    ActiveIntervals ← NewIntervals
+				16. end while
+				17. Result ← ∅
+				18. for each interval [a,b] ∈ ActiveIntervals do
+				19.     Result ← Result ∪ {(a+b)/2}
+				20. end for
+				21. return Result
+			</code></pre>
 		</textarea>
 	</section>
 	<section data-markdown>
