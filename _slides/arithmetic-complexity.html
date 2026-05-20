@@ -297,8 +297,8 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 					$$
 					\begin{align*}
 					\rho_v(\phi(p),\phi(q))&=\frac{\Phi(x_0,y_0)\Phi(x_1,y_1)-\Phi(x_1,y_1)\Phi(x_0,y_0)}{\|\Phi(x_0,y_0)\|_v\|\Phi(x_1,y_1)\|_v}\\
-					&\leq \dfrac{1}{\frac{\|\Phi(x_0,y_0)\|_v\|\Phi(x_1,y_1)\|_v}{\|(x_0,y_0)\|_v\|(x_1,y_1)\|_v}}|H(x_0,y_0,x_1,y_1)|_v|x_0y_1-x_1y_0|_v\\
-					&\leq \frac{1}{c^2}M_\phi\frac{|x_0y_1-x_1y_0|_v}{\|(x_0,y_0)\|_v\|(x_1,y_1)\|_v}
+					&\leq \dfrac{\|(x_0,y_0)\|_v\|(x_1,y_1)\|_v}{\|\Phi(x_0,y_0)\|_v\|\Phi(x_1,y_1)\|_v}\dfrac{|H(x_0,y_0,x_1,y_1)|_v|x_0y_1-x_1y_0|_v}{\|(x_0,y_0)\|_v\|(x_1,y_1)\|_v}\\
+					&\leq \frac{1}{c^2}M_\phi\frac{|x_0y_1-x_1y_0|_v}{\|(x_0,y_0)\|_v\|(x_1,y_1)\|_v}\leq \frac{2}{c^2}M_\phi\rho(p,q)
 					\end{align*}
 					$$
 				</p>
