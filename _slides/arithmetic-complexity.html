@@ -168,10 +168,10 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 					$$
 				</p>
 			</div>
-			<p>
+			<p class="fragment">
 				<b>Goal</b>: find $\hat\Delta(f,g)$.
 			</p>
-			<div class="definition">
+			<div class="definition fragment">
 				<p>
 					Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces, and $f: X \to Y$ be a function. The function $f$ is said to be <em>Hölder continuous</em> if
 		    	$$
@@ -185,9 +185,11 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 	<section data-markdown>
 		<textarea data-template>
 			<h4>A General Strategy</h4>
-			<p>
-				Let $\phi:I\to\mathbb{R}_{\geq 0}$ be Hölder continuous with Hölder constant $C$ and Hölder exponent $\alpha$. Given a partition $\mathcal P=\{x_0,x_1,\ldots, x_N\}\subset I$, let $\|\mathcal P\|=\max\{x_i-x_{i-1}|i=0,\ldots, N-1\}$. We then have
+			<p class="fragment">
+				Let $\phi:I\to\mathbb{R}_{\geq 0}$ be Hölder continuous with Hölder constant $C$ and Hölder exponent $\alpha$.</p><p class="fragment"> Given a partition $\mathcal P=\{x_0,x_1,\ldots, x_N\}\subset I$, let $\|\mathcal P\|=\max\{x_i-x_{i-1}|i=0,\ldots, N-1\}$.</p><p class="fragment"> We then have
 				$$\forall x\in (x_{i-1},x_{i+1}): |\phi(x)-\phi(x_i)|\leq C|x-x_i|^\alpha<\|\mathcal P\|^\alpha. $$
+			</p>
+			<p class="fragment">
 				It implies
 				$$\phi(x)<\phi(x_i)+C\|\mathcal P\|^\alpha.$$
 				Thus, we may discard all $x_i$ if
@@ -243,6 +245,17 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 	<section data-markdown>
 		<textarea data-template>
 			<h4>Notations</h4>
+			- $\Delta(f,g)(x)=|h_f(x)-h_g(x)|$
+			- $K$ a number field (usually just $\mathbb{Q}$)
+			- $\phi,\ \psi:\mathbb{P}^1(K)\to\mathbb{P}^1(K)$
+			- $\Phi,\ \Psi:\mathbb{A}^2(K)\to\mathbb{P}^2(K)$ be lifts of $\phi$ and $\psi$ respectively; a lift of $\phi$ makes the following diagram commutes
+			$$
+			\begin{cd}
+			\mathbb{A}^2(K) @>\Phi>> \mathbb{A}^2(K)\\
+			@VV\piV                  @VV\piV\\
+			\mathbb{P}^1(K) @>>\phi> \mathbb{P}^1(K)
+			\end{cd}
+			$$
 		</textarea>
 	</section>
 	<section data-markdown>
