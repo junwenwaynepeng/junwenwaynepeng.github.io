@@ -1,0 +1,280 @@
+---
+layout: slide
+title: Cryptography in 15 Minutes: Secrets, Adversaries, and Mathematics
+date: 2026-05-28
+author: Wayne Peng
+coauthors:
+to: First Class Introduction
+description: 15-minute first-class reveal.js slides introducing cryptography using an ODIR lesson flow.
+categories: mathematics cryptography teaching
+abstract: |
+  A short first-class introduction to cryptography designed with the ODIR structure: Objective, Diagnose, Instruction/Interaction, and Reflection.
+tags:
+  - cryptography
+  - mathematics
+  - course design
+  - reveal.js
+front-img: "/assets/img/slides/overgroup/front-img.png"
+---
+<style>
+  .container{ display:flex; gap: 1.2em; align-items: center; }
+  .col{ flex:1; }
+  .small{ font-size: 0.72em; }
+  .tiny{ font-size: 0.56em; }
+  .tag{ display:inline-block; padding:0.15em 0.45em; border-radius:999px; background:#eef2ff; color:#3730a3; font-size:0.58em; font-weight:700; }
+  .question{ font-size:1.35em; font-weight:700; color:#7c2d12; }
+  .box{ border: 2px solid #ddd; border-radius: 14px; padding: 0.55em 0.8em; margin: 0.35em 0; background:#fafafa; }
+  .flow{ display:flex; justify-content:space-around; gap:0.5em; align-items:stretch; }
+  .flow .box{ flex:1; text-align:center; }
+  .cipher{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:1.25em; letter-spacing:0.03em; }
+  .highlight{ color:#b91c1c; font-weight:700; }
+</style>
+
+<section>
+
+  <!-- Slide 1: Hook -->
+  <section data-markdown>
+    <textarea data-template>
+      # Cryptography in 15 Minutes
+      ## Secrets, adversaries, and mathematics
+    </textarea>
+  </section>
+
+  <!-- Slide 2: Objective -->
+  <section data-markdown>
+    <textarea data-template>
+      ## O — Today’s Learning Objectives
+
+      By the end of these 15 minutes, students should be able to:
+
+      1. Describe cryptography as communication in the presence of an adversary.
+      2. Distinguish **secret-key** and **public-key** cryptography.
+      3. Explain why “security” needs a mathematical definition.
+      4. Name one reason the quantum era changes modern cryptography.
+
+    </textarea>
+  </section>
+
+  <!-- Slide 3: Diagnose -->
+  <section data-markdown>
+    <textarea data-template>
+      ## D — Quick Diagnostic Poll
+
+      <div class="question">Which statement sounds most correct?</div>
+
+      A. A cryptosystem is secure if the algorithm is secret.  
+      B. A cryptosystem is secure if the key is secret.  
+      C. A cryptosystem is secure if nobody has broken it yet.  
+      D. A cryptosystem is secure if we can prove the adversary’s success probability is tiny.
+
+      <div class="fragment box">
+        Modern cryptography wants something close to **D**, but practical systems also need careful implementation.
+      </div>
+    </textarea>
+  </section>
+
+  <!-- Slide 4: Mini activity -->
+  <section data-markdown>
+    <textarea data-template>
+## D/I — A Tiny Cipher Challenge
+
+<div class="cipher box">
+Plaintext:  ATTACK AT DAWN<br>
+Rule: shift every letter by +3<br>
+Ciphertext: DWWDFN DW GDZQ
+</div>
+
+<div class="fragment">
+If the enemy knows the rule but not the shift, is it secure?
+</div>
+
+<div class="fragment highlight">
+Lesson: hiding the algorithm is fragile; hiding the key is the modern principle.
+</div>
+
+<aside class="notes">
+Time: 2 minutes. Ask students to decrypt or identify the shift. Connect to Kerckhoffs's principle.
+</aside>
+    </textarea>
+  </section>
+
+  <!-- Slide 5: Core model -->
+  <section>
+    <h2>I — The Basic Cryptographic Model</h2>
+    <div class="flow">
+      <div class="box"><strong>Alice</strong><br><span class="small">message $m$</span></div>
+      <div class="box"><strong>Encrypt</strong><br><span class="small">$c=E_k(m)$</span></div>
+      <div class="box"><strong>Public channel</strong><br><span class="small">adversary sees $c$</span></div>
+      <div class="box"><strong>Decrypt</strong><br><span class="small">$m=D_k(c)$</span></div>
+      <div class="box"><strong>Bob</strong><br><span class="small">message $m$</span></div>
+    </div>
+    <p class="fragment"><strong>Correctness:</strong> $D_k(E_k(m))=m$.</p>
+    <p class="fragment"><strong>Security:</strong> seeing $c$ should reveal almost nothing useful about $m$.</p>
+    <aside class="notes">
+Time: 1.5 minutes. Emphasize two different questions: does it work, and is it safe?
+    </aside>
+  </section>
+
+  <!-- Slide 6: Secret-key vs public-key -->
+  <section data-markdown>
+    <textarea data-template>
+## I — Two Big Worlds
+
+<div class="container">
+<div class="col box">
+<h3>Secret-key crypto</h3>
+<p>Alice and Bob share the same secret key.</p>
+<p>Fast; good for bulk data.</p>
+<p><strong>Problem:</strong> how do they share the key first?</p>
+</div>
+<div class="col box">
+<h3>Public-key crypto</h3>
+<p>Bob publishes a public key and keeps a private key.</p>
+<p>Enables key exchange and signatures.</p>
+<p><strong>Math:</strong> easy forward, hard backward.</p>
+</div>
+</div>
+
+<aside class="notes">
+Time: 1.5 minutes. Bridge toward RSA, Diffie-Hellman, ECC, and lattices.
+</aside>
+    </textarea>
+  </section>
+
+  <!-- Slide 7: One-way functions -->
+  <section data-markdown>
+    <textarea data-template>
+## I — The Mathematical Dream
+
+We want functions that are:
+
+<div class="box">
+<strong>Easy forward:</strong> compute $f(x)$ quickly.
+</div>
+
+<div class="box fragment">
+<strong>Hard backward:</strong> given $f(x)$, recover $x$ only with enormous effort.
+</div>
+
+Examples we will study:
+
+- Factoring: $p,q \mapsto N=pq$
+- Discrete logarithm: $a \mapsto g^a \pmod p$
+- Lattice problems: find unusually short vectors
+
+<aside class="notes">
+Time: 1.5 minutes. Keep it conceptual; the details come later in the course.
+</aside>
+    </textarea>
+  </section>
+
+  <!-- Slide 8: Security as proof -->
+  <section data-markdown>
+    <textarea data-template>
+## I — What Does “Secure” Mean?
+
+A modern security statement often looks like this:
+
+<div class="box">
+For every efficient adversary $\mathcal A$,  
+$$
+\operatorname{Adv}_{\mathcal A}(\lambda) \leq \varepsilon(\lambda),
+$$
+where $\varepsilon(\lambda)$ becomes negligible as the security parameter $\lambda$ grows.
+</div>
+
+<div class="fragment">
+This is the cryptographic analogue of making “small error” mathematically precise.
+</div>
+
+<aside class="notes">
+Time: 1.5 minutes. Connect to the user's epsilon-delta interest without overloading students.
+</aside>
+    </textarea>
+  </section>
+
+  <!-- Slide 9: Quantum era -->
+  <section data-markdown>
+    <textarea data-template>
+## I — Why the Quantum Era Matters
+
+Classical public-key crypto often relies on:
+
+- factoring large integers;
+- discrete logarithms in finite fields;
+- discrete logarithms on elliptic curves.
+
+<div class="fragment box">
+A sufficiently powerful quantum computer running Shor-type algorithms threatens these assumptions.
+</div>
+
+<div class="fragment box">
+Post-quantum cryptography searches for systems based on different hard problems, especially lattices and hash-based signatures.
+</div>
+
+<aside class="notes">
+Time: 1.5 minutes. Motivate why the course includes lattices and post-quantum standards.
+</aside>
+    </textarea>
+  </section>
+
+  <!-- Slide 10: Course map -->
+  <section data-markdown>
+    <textarea data-template>
+## I — Course Roadmap
+
+1. Classical ciphers and modular arithmetic  
+2. Diffie–Hellman, RSA, and discrete logarithms  
+3. Probability, security games, and reductions  
+4. Elliptic curves and digital signatures  
+5. Lattices, NTRU, and post-quantum cryptography  
+6. Hash functions, signatures, and modern standards
+
+<div class="fragment highlight">Theme: mathematics turns “trust me” into “prove what the adversary can do.”</div>
+
+<aside class="notes">
+Time: 1 minute. Show students where today's ideas will return later.
+</aside>
+    </textarea>
+  </section>
+
+  <!-- Slide 11: Reflection -->
+  <section data-markdown>
+    <textarea data-template>
+## R — Exit Ticket
+
+Write one sentence for each question:
+
+1. What is the difference between **correctness** and **security**?
+2. What is one mathematical problem that cryptography uses?
+3. What is one thing you are curious about for this course?
+
+<div class="fragment box">
+Next time: modular arithmetic — the language of many cryptographic systems.
+</div>
+
+<aside class="notes">
+Time: 2 minutes. Collect paper notes or ask students to submit online.
+</aside>
+    </textarea>
+  </section>
+
+  <!-- Slide 12: References -->
+  <section data-markdown>
+    <textarea data-template>
+## References for Students
+
+- Hoffstein–Pipher–Silverman, *An Introduction to Mathematical Cryptography*.
+- Brown MathCryptoHome: <https://www.math.brown.edu/johsilve/MathCryptoHome.html>
+- NIST Post-Quantum Cryptography Project: <https://csrc.nist.gov/projects/post-quantum-cryptography>
+- Shor, “Algorithms for quantum computation: discrete logarithms and factoring,” 1994.
+
+<span class="tiny">These slides are only the opening 15 minutes; the full course will develop the mathematics carefully.</span>
+
+<aside class="notes">
+Optional slide. Use only if time remains.
+</aside>
+    </textarea>
+  </section>
+
+</section>
