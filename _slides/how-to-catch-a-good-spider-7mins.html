@@ -5,7 +5,7 @@ title: |
 date: 2026-8-26
 author: Wayne Peng
 coauthors:
-to: National Central University
+to: National University of Kaohsiung
 description: A seven-minute research talk on automating the Spider Algorithm using embedded graphs and path search.
 categories: academic
 abstract: |
@@ -21,6 +21,13 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 <style>
   .reveal .slides section { text-align: left; }
   .reveal .slides h2, .reveal .slides h3 { text-align: left; }
+  .reveal .slides > section:first-child,
+  .reveal .slides > section:first-child h1,
+  .reveal .slides > section:first-child h2,
+  .reveal .slides > section:first-child h3,
+  .reveal .slides > section:first-child p {
+    text-align: center;
+  }
   .reveal .slides .center { text-align: center; }
   .reveal .slides .lead { font-size: 1.18em; line-height: 1.35; }
   .reveal .slides .question {
@@ -102,134 +109,133 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 <section class="overview-blank" aria-label="Research overview"></section>
 
 <section class="fit-slide setup-slide">
-  <h2>From PCF dynamics to a finite-state problem</h2>
-  <p class="lead">
-    Let $f$ be a rational map and
-    $$P_f=\bigcup_{n\geq 1} f^n(C_f)$$
-    its post-critical set. When $P_f$ is finite, $f$ is <em>post-critically finite</em> (PCF).
+  <h2>Start with a simple dynamical system</h2>
+  <p class="lead">Iteration means feeding the output of a function back into the same function.</p>
+  <p class="center">For $f(x)=x^2-1$:</p>
+  <p class="center equation">$$0\longmapsto -1\longmapsto 0\longmapsto -1\longmapsto\cdots$$</p>
+  <p class="fragment">
+    The important points eventually repeat. Such a map is called <em>post-critically finite</em>, or PCF.
   </p>
   <div class="fragment question">
-    Can we turn the topology of $\mathbb P^1(\mathbb C)\setminus P_f$ into an explicit finite automaton?
+    What can the infinitely many backward paths of this very simple system tell us?
   </div>
   <aside class="notes">
-    0:35. Give only the minimum background: critical points have finite forward orbits, so the punctured sphere has finitely many punctures. The goal is not to classify PCF maps here; it is to compute their monodromy.
+    0:40. Start with the idea of iteration, which requires no specialist background. In this example the critical orbit repeats. Say only that PCF maps have finitely many dynamically important points; do not give the formal definition unless someone asks.
   </aside>
 </section>
 
 <section class="fit-slide tree-slide">
-  <h2>Preimages form a rooted tree</h2>
+  <h2>Now run the process backward</h2>
   <div class="two-col">
     <div>
-      <p>Choose a base point $t\notin P_f$ and repeatedly take preimages:</p>
+      <p>Choose a point $t$. First solve $f(x)=t$, then solve $f^2(x)=t$, and continue.</p>
       <p class="center">$t \leftarrow f^{-1}(t) \leftarrow f^{-2}(t) \leftarrow \cdots$</p>
       <p class="fragment">
-        Loops in $\mathbb P^1(\mathbb C)\setminus P_f$ permute this tree by path lifting.
+        The answers branch into a tree. Moving $t$ around a special point can shuffle the branches.
       </p>
     </div>
     <img class="slide-figure" src="/assets/img/slides/overgroup/tree.png" alt="Rooted preimage tree">
   </div>
-  <p class="fragment center equation">
-    $$\operatorname{IMG}(f)=\operatorname{im}\!\left(\pi_1(\mathbb P^1\setminus P_f,t)\longrightarrow\operatorname{Aut}(X^*)\right).$$
+  <p class="fragment takeaway compact">
+    The <em>iterated monodromy group</em> records all of these shuffles.
   </p>
   <aside class="notes">
-    0:35. The iterated monodromy group records how loops permute all iterated preimages. Emphasize the picture rather than the formal construction.
+    0:40. A preimage is simply a possible previous value. Repeatedly solving backward creates a family-tree-like object. The iterated monodromy group is the symmetry group generated when the base point travels around the special points.
   </aside>
 </section>
 
 <section class="fit-slide spider-slide">
-  <h2>A spider gives generators</h2>
+  <h2>Why introduce a spider?</h2>
   <div class="two-col">
     <div>
       <p>
-        A <em>spider</em> $\mathcal S=\{l_p\}_{p\in P_f}$ is a collection of non-crossing legs from $t$ to the points of $P_f$.
+        We need a consistent way to draw one loop around each special point.
       </p>
       <p class="fragment">
-        Travel out along $l_p$, circle $p$, and return: these loops generate the fundamental group.
+        Draw non-crossing paths from one common base point. Travel out along one leg, circle its endpoint, and return along the same leg.
       </p>
+      <p class="fragment"><strong>This collection of legs is a spider.</strong></p>
     </div>
     <div class="center">
       <img class="slide-figure" src="/assets/img/slides/how-to-catch-a-good-spider/golden-1.png" alt="Spider and its legs">
     </div>
   </div>
   <aside class="notes">
-    0:35. A spider is a geometric coordinate system for the fundamental group. Each leg determines a standard loop around one post-critical point.
+    0:40. The spider is just a coordinate system for loops. Each leg gives a standard route to one special point. These standard loops are enough to recover the symmetries of the preimage tree.
   </aside>
 </section>
 
 <section class="fit-slide obstruction-slide">
-  <h2>The computational obstruction</h2>
-  <p class="lead">
-    After lifting a generator $g$, we must recognize the section
-    $$g'=\rho_x\,f^{-1}(g)[x]\,\rho_y^{-1}.$$
-  </p>
+  <h2>What is hard for a computer?</h2>
+  <p class="lead">A person can often see when one path can be smoothly deformed into another.</p>
   <div class="fragment question">
-    Is $g'$ homotopic to one of our standard spider loops—without asking a human to inspect a tangled picture?
+    Can a computer recognize the same path without continuously testing every possible deformation?
   </div>
   <ul class="fragment compact">
-    <li>continuous paths must be compared up to homotopy;</li>
-    <li>the paths must avoid the post-critical set and one another;</li>
-    <li>the point at infinity must be handled uniformly.</li>
+    <li>paths may bend, stretch, and look completely different;</li>
+    <li>they may not cross a special point or one another;</li>
+    <li>the method must also work near the point at infinity.</li>
   </ul>
   <aside class="notes">
-    0:40. This is the bottleneck. Path lifting is straightforward; recognizing the resulting loop is not. The goal is to replace visual judgment with a discrete certificate.
+    0:40. This is a homotopy problem: bending and stretching are allowed, but crossing a special point is not. Humans use the picture; a program needs finite data and an explicit certificate.
   </aside>
 </section>
 
 <section class="fit-slide web-slide">
-  <h2>Replace topology by a web</h2>
+  <h2>Key idea: replace the picture by a graph</h2>
   <div class="two-col">
     <div>
-      <p>Pull the spider back under $f$:</p>
-      <p class="center">$$G=f^{-1}(\mathcal S).$$</p>
-      <p class="fragment compact">The resulting embedded graph records:</p>
+      <p>Pull the spider backward through the function. The result is an embedded graph, which I call the <em>web</em>.</p>
+      <p class="fragment compact">The web records only finite information:</p>
       <ul class="fragment compact">
-        <li>the preimages $f^{-1}(t)$;</li>
-        <li>the preimages of post-critical points;</li>
-        <li>the cyclic order of edges around every vertex.</li>
+        <li>which important points are connected;</li>
+        <li>which paths share a vertex;</li>
+        <li>the clockwise order of edges around each vertex.</li>
       </ul>
     </div>
     <img class="slide-figure" src="/assets/img/slides/how-to-catch-a-good-spider/graph.png" alt="Pulled-back spider represented as a web">
   </div>
-  <p class="fragment center"><strong>A homotopy problem has become a graph-search problem.</strong></p>
+  <p class="fragment center"><strong>The continuous deformation problem is now a finite graph-search problem.</strong></p>
   <aside class="notes">
-    0:45. The key move is discretization. Projective coordinates and the chordal metric let the same construction work near infinity. The embedding, especially cyclic order, retains the topological information we need.
+    0:45. This is the main idea of the talk. The web remembers connection and clockwise order, which are the parts of the picture that survive bending. Projective coordinates and the chordal metric let the construction treat infinity like any other point.
   </aside>
 </section>
 
 <section class="fit-slide search-slide">
-  <h2>How the search works</h2>
+  <h2>The algorithm</h2>
   <div class="pipeline">
-    <div class="fragment"><strong>1</strong><br>Discretize and lift the spider</div>
-    <div class="fragment"><strong>2</strong><br>Build the labelled web</div>
-    <div class="fragment"><strong>3</strong><br>Search for compatible, vertex-disjoint paths</div>
-    <div class="fragment"><strong>4</strong><br>Check cyclic order and local pole conditions</div>
+    <div class="fragment"><strong>1</strong><br>Approximate each spider leg by finitely many points</div>
+    <div class="fragment"><strong>2</strong><br>Pull back the legs and build the web</div>
+    <div class="fragment"><strong>3</strong><br>Search for paths that do not conflict</div>
+    <div class="fragment"><strong>4</strong><br>Check every local neighborhood and its clockwise order</div>
   </div>
   <p class="fragment takeaway">
-    Output: a combinatorial certificate that the selected paths form a good spider.
+    Output: a finite certificate that the selected paths form a good spider.
   </p>
   <aside class="notes">
-    0:50. Explain that the program generates candidate paths from one chosen head to the other preimages. Vertex-disjointness prevents crossings; cyclic ordering distinguishes paths that look identical as abstract graphs but differ in the plane. The local conditions certify the required homotopies.
+    0:50. Stress that each step is finite. The program samples the curves, lifts them, searches the graph, and verifies local order. Clockwise order distinguishes two drawings that have the same abstract connections but different topology in the plane.
   </aside>
 </section>
 
 <section class="fit-slide criterion-slide">
-  <h2>A checkable sufficient criterion</h2>
-  <div class="theorem compact">
+  <h2>When does the computer say “good”?</h2>
+  <div class="definition compact">
     <div class="theorem-header">
-      <span class="theorem-authors">Good-spider criterion</span>
+      <span class="theorem-authors">Sufficient checks</span>
     </div>
-    <p>Let $z_0\in f^{-1}(t)$ be the head. Paths $\{\rho_x\}$ in the web form a good spider if:</p>
+    <p>The selected paths pass if:</p>
     <ol>
-      <li>the paths from $z_0$ to the other points of $f^{-1}(t)$ are mutually compatible in the embedded web;</li>
-      <li>$z_0$ is adjacent to at most two post-critical vertices, with no spider leg between them in cyclic order;</li>
-      <li>at each endpoint $x$, exactly one unused neighboring vertex is post-critical.</li>
+      <li>they connect one chosen head to all required endpoints;</li>
+      <li>they do not cross or compete for an interior vertex;</li>
+      <li>the unused edge at each endpoint points to the correct special point;</li>
+      <li>the clockwise order agrees with the original spider.</li>
     </ol>
   </div>
   <p class="fragment center">
-    These are finite, local conditions—so the verification can be automated.
+    Passing these checks guarantees that the lifted loops can be recognized automatically.
   </p>
   <aside class="notes">
-    0:55. State this as a sufficient criterion, not a complete characterization. The point is that global homotopy recognition is reduced to path compatibility plus local adjacency and cyclic-order checks.
+    0:50. These are sufficient checks, not a complete characterization of every possible good spider. The point is that a global deformation question is certified by path compatibility and local information in the web.
   </aside>
 </section>
 
@@ -246,26 +252,26 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
     </div>
   </div>
   <aside class="notes">
-    0:45. Use this slide to make the pipeline concrete: on the left is the web; on the right are the selected paths. The output is not merely a picture—the graph conditions certify that these paths represent the required spider loops.
+    0:45. Make the pipeline concrete. The left picture is the finite web; the right picture shows the paths chosen by the search. The graph checks, rather than visual inspection, certify the answer.
   </aside>
 </section>
 
 <section>
-  <h2>What we gain</h2>
+  <h2>Why this matters</h2>
   <div class="takeaway">
-    Continuous topology<br>
+    Continuous deformation problem<br>
     $\Downarrow$<br>
-    embedded graph + path search + cyclic order<br>
+    finite graph + path search + clockwise order<br>
     $\Downarrow$<br>
-    explicit automata for $\operatorname{IMG}(f)$
+    a compact automaton describing infinitely many tree symmetries
   </div>
   <p class="fragment center compact">
-    Next: heads or endpoints adjacent to three or more post-critical vertices, and systematic tests in higher degree.
+    This makes systematic experiments with higher-degree rational maps possible.
   </p>
   <p class="fragment center compact">
     <a href="https://www.notion.so/33dd3176005d808992abdd5017585d07?v=33dd3176005d806cabf5000c09fda3b0&amp;source=copy_link">Examples database</a>
   </p>
   <aside class="notes">
-    0:25. Finish with one sentence: the framework replaces human inspection of homotopy classes by a finite combinatorial certificate, making IMG computations scalable and reproducible.
+    0:25. Finish with one sentence: a continuous problem that previously required human visual judgment can now be checked by a finite and reproducible computation.
   </aside>
 </section>
