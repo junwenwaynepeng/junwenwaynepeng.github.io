@@ -8,7 +8,7 @@ coauthors:
 to: National Central University
 description: A seven-minute research talk on automating the Spider Algorithm using embedded graphs and path search.
 categories: academic
-abstract: |
+abstract: |   
   The Spider Algorithm is a well-known topological tool used to study the dynamics of polynomials and rational functions. However, implementing this algorithm computationally requires a system capable of distinguishing valid homotopic paths from tangled, intersecting ones. In this talk, we explore a computational framework that translates the continuous topological constraints of complex dynamics into discrete graph-theoretic algorithms.
 
   We will outline the process of generating discretized paths (spider legs) from a chosen base point to the post-critical set of a rational map, utilizing projective coordinates and the chordal metric to seamlessly handle limits at infinity. We then introduce an algorithmic method to evaluate the resulting monodromy graphs. By searching for vertex-disjoint paths and applying cyclic ordering, our algorithm programmatically verifies the existence of a "good spider" without human visual intervention. This provides a robust computational pipeline for exploring the Iterated Monodromy Groups of high-degree rational functions.
@@ -112,9 +112,9 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   <h2>Start with a simple dynamical system</h2>
   <p class="lead">Iteration means feeding the output of a function back into the same function.</p>
   <p class="center">For $f(x)=x^2-1$:</p>
-  <p class="center equation">$$0\longmapsto -1\longmapsto 0\longmapsto -1\longmapsto\cdots$$</p>
+  <p class="center equation">$$0\longmapsto -1\longmapsto 0\longmapsto -1\longmapsto\cdots\text{ and }\infity\to\infity$$</p>
   <p class="fragment">
-    The important points eventually repeat. Such a map is called <em>post-critically finite</em>, or PCF.
+    The critical points eventually repeat. Such a map is called <em>post-critically finite</em>, or PCF.
   </p>
   <div class="fragment question">
     What can the infinitely many backward paths of this very simple system tell us?
@@ -265,13 +265,14 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
     $\Downarrow$<br>
     a compact automaton describing infinitely many tree symmetries
   </div>
-  <p class="fragment center compact">
-    This makes systematic experiments with higher-degree rational maps possible.
-  </p>
-  <p class="fragment center compact">
-    <a href="https://www.notion.so/33dd3176005d808992abdd5017585d07?v=33dd3176005d806cabf5000c09fda3b0&amp;source=copy_link">Examples database</a>
-  </p>
   <aside class="notes">
     0:25. Finish with one sentence: a continuous problem that previously required human visual judgment can now be checked by a finite and reproducible computation.
   </aside>
+</section>
+
+<section>
+  <h1>Thank you!</h1>
+  <p class="fragment center compact">
+    <a href="https://www.notion.so/33dd3176005d808992abdd5017585d07?v=33dd3176005d806cabf5000c09fda3b0&amp;source=copy_link">Examples database</a>
+  </p>
 </section>
