@@ -5,7 +5,7 @@ title: |
 date: 2026-8-26
 author: Wayne Peng
 coauthors:
-to: National University of Kaohsiung
+to: National Central University
 description: A seven-minute research talk on automating the Spider Algorithm using embedded graphs and path search.
 categories: academic
 abstract: |
@@ -49,6 +49,37 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
     gap: 1.1em;
     align-items: center;
   }
+  .reveal .slides section.fit-slide {
+    font-size: 0.82em;
+  }
+  .reveal .slides section.fit-slide h2 {
+    margin-top: 0;
+    margin-bottom: 0.4em;
+  }
+  .reveal .slides section.fit-slide p,
+  .reveal .slides section.fit-slide ul,
+  .reveal .slides section.fit-slide ol {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+  }
+  .reveal .slides .slide-figure {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 310px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  .reveal .slides .equation {
+    font-size: 0.86em;
+  }
+  .reveal .slides .web-slide .two-col {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+  .reveal .slides .example-slide .slide-figure {
+    max-height: 300px;
+  }
   .reveal .slides .compact { font-size: 0.82em; line-height: 1.3; }
   .reveal .slides .takeaway {
     margin: 1.2em auto 0;
@@ -59,12 +90,18 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
     text-align: center;
     font-size: 1.2em;
   }
+  @media (max-height: 720px), (max-aspect-ratio: 4/3) {
+    .reveal .slides section.fit-slide { font-size: 0.74em; }
+    .reveal .slides .slide-figure { max-height: 260px; }
+    .reveal .slides .example-slide .slide-figure { max-height: 250px; }
+    .reveal .slides .pipeline { gap: 0.3em; }
+  }
 </style>
 
 <!-- Slide 2: deliberately blank for a 0:35 overview of recent work. -->
 <section class="overview-blank" aria-label="Research overview"></section>
 
-<section>
+<section class="fit-slide setup-slide">
   <h2>From PCF dynamics to a finite-state problem</h2>
   <p class="lead">
     Let $f$ be a rational map and
@@ -79,7 +116,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   </aside>
 </section>
 
-<section>
+<section class="fit-slide tree-slide">
   <h2>Preimages form a rooted tree</h2>
   <div class="two-col">
     <div>
@@ -89,9 +126,9 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
         Loops in $\mathbb P^1(\mathbb C)\setminus P_f$ permute this tree by path lifting.
       </p>
     </div>
-    <img src="/assets/img/slides/overgroup/tree.png" alt="Rooted preimage tree" width="440">
+    <img class="slide-figure" src="/assets/img/slides/overgroup/tree.png" alt="Rooted preimage tree">
   </div>
-  <p class="fragment center">
+  <p class="fragment center equation">
     $$\operatorname{IMG}(f)=\operatorname{im}\!\left(\pi_1(\mathbb P^1\setminus P_f,t)\longrightarrow\operatorname{Aut}(X^*)\right).$$
   </p>
   <aside class="notes">
@@ -99,7 +136,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   </aside>
 </section>
 
-<section>
+<section class="fit-slide spider-slide">
   <h2>A spider gives generators</h2>
   <div class="two-col">
     <div>
@@ -111,7 +148,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
       </p>
     </div>
     <div class="center">
-      <img src="/assets/img/slides/how-to-catch-a-good-spider/golden-1.png" alt="Spider and its legs" height="360">
+      <img class="slide-figure" src="/assets/img/slides/how-to-catch-a-good-spider/golden-1.png" alt="Spider and its legs">
     </div>
   </div>
   <aside class="notes">
@@ -119,7 +156,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   </aside>
 </section>
 
-<section>
+<section class="fit-slide obstruction-slide">
   <h2>The computational obstruction</h2>
   <p class="lead">
     After lifting a generator $g$, we must recognize the section
@@ -138,7 +175,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   </aside>
 </section>
 
-<section>
+<section class="fit-slide web-slide">
   <h2>Replace topology by a web</h2>
   <div class="two-col">
     <div>
@@ -151,7 +188,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
         <li>the cyclic order of edges around every vertex.</li>
       </ul>
     </div>
-    <img src="/assets/img/slides/how-to-catch-a-good-spider/graph.png" alt="Pulled-back spider represented as a web" height="420">
+    <img class="slide-figure" src="/assets/img/slides/how-to-catch-a-good-spider/graph.png" alt="Pulled-back spider represented as a web">
   </div>
   <p class="fragment center"><strong>A homotopy problem has become a graph-search problem.</strong></p>
   <aside class="notes">
@@ -159,7 +196,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   </aside>
 </section>
 
-<section>
+<section class="fit-slide search-slide">
   <h2>How the search works</h2>
   <div class="pipeline">
     <div class="fragment"><strong>1</strong><br>Discretize and lift the spider</div>
@@ -175,7 +212,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   </aside>
 </section>
 
-<section>
+<section class="fit-slide criterion-slide">
   <h2>A checkable sufficient criterion</h2>
   <div class="theorem compact">
     <div class="theorem-header">
@@ -196,15 +233,15 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   </aside>
 </section>
 
-<section>
+<section class="fit-slide example-slide">
   <h2>Example: $f(x)=2x^3-3x^2+1$</h2>
   <div class="two-col">
     <div class="center">
-      <img src="/assets/img/slides/how-to-catch-a-good-spider/graph.png" alt="Web for the cubic example" height="400">
+      <img class="slide-figure" src="/assets/img/slides/how-to-catch-a-good-spider/graph.png" alt="Web for the cubic example">
       <p class="compact">Pulled-back web</p>
     </div>
     <div class="center fragment">
-      <img src="/assets/img/slides/how-to-catch-a-good-spider/graph-path.png" alt="Selected paths forming a good spider" height="400">
+      <img class="slide-figure" src="/assets/img/slides/how-to-catch-a-good-spider/graph-path.png" alt="Selected paths forming a good spider">
       <p class="compact">Compatible paths found by the search</p>
     </div>
   </div>
