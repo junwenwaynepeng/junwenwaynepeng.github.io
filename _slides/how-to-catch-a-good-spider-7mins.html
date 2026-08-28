@@ -112,7 +112,7 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
   <h2>Start with a simple dynamical system</h2>
   <p class="lead">Iteration means feeding the output of a function back into the same function.</p>
   <p class="center">For $f(x)=x^2-1$:</p>
-  <p class="center equation">$$0\longmapsto -1\longmapsto 0\longmapsto -1\longmapsto\cdots\text{ and }\infity\to\infity$$</p>
+  <p class="center equation">$$0\longmapsto -1\longmapsto 0\longmapsto -1\longmapsto\cdots\text{ and }\infty\to\infty$$</p>
   <p class="fragment">
     The critical points eventually repeat. Such a map is called <em>post-critically finite</em>, or PCF.
   </p>
@@ -131,13 +131,19 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
       <p>Choose a point $t$. First solve $f(x)=t$, then solve $f^2(x)=t$, and continue.</p>
       <p class="center">$t \leftarrow f^{-1}(t) \leftarrow f^{-2}(t) \leftarrow \cdots$</p>
       <p class="fragment">
-        The answers branch into a tree. Moving $t$ around a special point can shuffle the branches.
+        The answers branch into a tree. The preimage of a loop from $t$ around a critical point is a path connect branches.
       </p>
     </div>
     <img class="slide-figure" src="/assets/img/slides/overgroup/tree.png" alt="Rooted preimage tree">
   </div>
   <p class="fragment takeaway compact">
     The <em>iterated monodromy group</em> records all of these shuffles.
+    $$
+    \rho_f \colon
+    \pi_1\!\left(\mathbb{P}^1(\mathbb{C})\setminus P_f,\,t\right)
+    \longrightarrow
+    \operatorname{Aut}(T_f),
+    $$
   </p>
   <aside class="notes">
     0:40. A preimage is simply a possible previous value. Repeatedly solving backward creates a family-tree-like object. The iterated monodromy group is the symmetry group generated when the base point travels around the special points.
