@@ -261,16 +261,33 @@ front-img: "/assets/img/slides/how-to-catch-a-good-spider/automata-1.png"
 
 <section class="fit-slide criterion-slide">
   <h2>When does the computer say “good”?</h2>
-  <div class="definition compact">
+  <div class="theorem">
     <div class="theorem-header">
-      <span class="theorem-authors">Sufficient checks</span>
+      <span class="theorem-authors">A criterion for finding a good spider</span>
     </div>
-    <p>The selected paths pass if:</p>
+
+    <p>
+      Let \(G\) be the web and let \(z_0\in f^{-1}(t)\) be the head.
+      A collection of paths \(\{\rho_x\}\) forms a good spider at \(z_0\)
+      if:
+    </p>
+
     <ol>
-      <li>they connect one chosen head to all required endpoints;</li>
-      <li>they do not cross or compete for an interior vertex;</li>
-      <li>the unused edge at each endpoint points to the correct special point;</li>
-      <li>the clockwise order agrees with the original spider.</li>
+      <li>
+        for every \(x\in f^{-1}(t)\setminus\{z_0\}\),
+        the path \(\rho_x\) lies in \(G\) and connects \(z_0\) to \(x\);
+      </li>
+
+      <li>
+        the head \(z_0\) is adjacent to at most two vertices labelled
+        \(p\), and if there are two, no leg of the original spider
+        \(\mathcal S\) lies between them;
+      </li>
+
+      <li>
+        for every endpoint \(x\), exactly one neighbor of \(x\)
+        that does not lie on \(\rho_x\) is labelled \(p\).
+      </li>
     </ol>
   </div>
   <p class="fragment center">
